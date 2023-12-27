@@ -1,0 +1,95 @@
+#include <Wire.h>
+#include <Adafruit_MCP4725.h>
+/*
+  Mermaid's Rest - Helm Controls
+
+  - Madison Kelly - digital.mermaid@gmail.com
+  - Last Updated  - Dec. 25, 2023
+
+  References and Sources
+  - MCP4725 Tutorial - Electronoobs
+    - https://www.youtube.com/watch?v=SgPbzAWIwlk
+  
+*/
+
+Adafruit_MCP4725 dac;
+// Set this value to 9, 8, 7, 6 or 5 to adjust the resolution
+#define DAC_RESOLUTION   (9)
+
+// Switches
+int mainSwitchPin = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // Setup so we can read the serial port
+  Serial.begin(9600);
+  Serial.println("MCP4725 Test");
+  dac.begin(0x62);
+}
+
+// Min Forward - 550
+// Max Forward - 765
+// Min Reverse - 465
+// Max Reverse - 250
+
+// the loop function runs over and over again forever
+void loop() {
+  // Read the control switch. If this is LOW, we set the motor control voltage to 2.5v / neutral
+  int mainSwitchVal = digitalRead(mainSwitchPin);
+  Serial.print("Main switch position: [");
+  if (mainSwitchVal == 1){
+    Serial.print("on");
+  } else {
+    Serial.print("off");
+  }
+  Serial.print("], pot value: [");
+
+  // Read the helm position potentiometer
+  int sensorValue = analogRead(A0);
+  // Show the pot reading.
+  Serial.print(sensorValue);
+  Serial.print("], ");
+  
+  int dacSteps = 12;    // This is how many steps we jump in dacValue per int change in sensorValue
+  int dacValue = 2084;  // Default to 2.5v
+  if (mainSwitchVal == 0){
+    // Switch is off, set DAC to 2084 / output voltage 2.5v to set the controller to neutral
+    dacValue = 2084;
+    Serial.print("switch off, DAC: [");
+  }
+  else if (sensorValue >= 265 && sensorValue <= 465){
+    // 465 = Min Reverse = DAC 1965 = 2358 mV
+    // 265 = Max Reverse = DAC    0 -    0 mV
+    dacValue = ((sensorValue - 265) * dacSteps) + 0;
+    Serial.print("reverse, DAC: [");
+  }
+  else if (sensorValue >= 550 && sensorValue <= 750){
+    // 750 = Max Forward = DAC 4095 = 4914 mV
+    // 550 = Min Forward = DAC 2130 = 2556 mV
+    dacValue = ((sensorValue - 550) * dacSteps) + 2130;
+    Serial.print("forward, DAC: [");
+  }
+  else if (sensorValue > 750){
+    // Still Max Forward, DAC 4095
+    dacValue = 4095;
+    Serial.print("max forward! DAC: [");
+  }
+  else if (sensorValue < 265){
+    // Still Max Reverse, DAC 0
+    dacValue = 0;
+    Serial.print("max reverse! DAC: [");
+  }
+  else
+  {
+    // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
+    dacValue = 2084;
+    Serial.print("neutral, DAC: [");
+  }
+  Serial.print(dacValue);
+  Serial.println("].");
+  
+  dac.setVoltage(dacValue, false);
+
+  // Read 10/sec
+  delay(100); 
+}
