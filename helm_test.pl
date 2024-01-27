@@ -1,21 +1,10 @@
 #!/usr/bin/perl
 #
-# This is for flushing out the math for 'helm-control' at the command line.
-# 
-#  Mermaid's Rest - Helm Controls
-#
-#  - Madison Kelly - digital.mermaid@gmail.com
-#  - Last Updated  - Jan. 26, 2024
 
 use strict;
 use warnings;
 use POSIX;
 
-# # Min Forward - 550
-# # Max Forward - 765 - 713/4086 ok - 714/4098 overflows, 751/4095 hard set 
-# # neutral     - 2010 = 2.500v
-# # Min Reverse - 465
-# # Max Reverse - 250
 
 ### Set static values
 # DAC ranges - It should be 000h = 0v, FFFh = 5000mv, but a given DAC can vary
@@ -113,7 +102,7 @@ sub run
 	my $IntegerDACValue = int($dacValue + 0.5);
 	my $DACVoltage      = $IntegerDACValue * $dacVoltageSteps;
 	my $IntegerVoltage  = int($DACVoltage + 0.5);
-	print "Sensor: [".$sensorValue."], DAC: [".$IntegerDACValue."], expected Voltage: [".$IntegerVoltage." mV]";
+	print "Sensor: [".$sensorValue."], DAC: [".$IntegerDACValue."] (".$IntegerVoltage." mV)";
 	
 	if ($sensorValue <= $reverseMaximum)
 	{
@@ -140,11 +129,13 @@ sub run
 	
 	if ($IntegerDACValue > $dacMaximum)
 	{
-		print " - Too Hish!\n";
+		$IntegerDACValue = $dacMaximum;
+		print " - Too Hish! Setting to: [".$IntegerDACValue."]\n";
 	}
 	elsif (($IntegerDACValue > $dacNeutralStart) && ($IntegerDACValue < $dacNeutralEnd) && ($IntegerDACValue != $dacNeutral))
 	{
-		print " - Into-Neutral!\n";
+		$IntegerDACValue = $dacNeutral;
+		print " - Into-Neutral!, setting to: [".$IntegerDACValue."]\n";
 	}
 	print "\n";
 	
