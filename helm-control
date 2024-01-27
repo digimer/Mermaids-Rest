@@ -130,18 +130,18 @@ void loop() {
   {
     Serial.print(" - Reverse 100%");
   }
-  elsif (sensorValue >= forwardMaximum)
+  else if (sensorValue >= forwardMaximum)
   {
     Serial.print(" - Forward 100%");
   }
-  elsif ((sensorValue >= reverseMaximum) && (sensorValue <= reverseMinimum))
+  else if ((sensorValue >= reverseMaximum) && (sensorValue <= reverseMinimum))
   {
     int percentage = int((reversePercentSteps * (reverseMinimum - sensorValue)) + 0.5);
     Serial.print(" - Forward ");
     Serial.print(percentage);
     Serial.print("%");
   }
-  elsif ((sensorValue >= forwardMinimum) && (sensorValue <= forwardMaximum))
+  else if ((sensorValue >= forwardMinimum) && (sensorValue <= forwardMaximum))
   {
     int percentage = int((forwardPercentSteps * (sensorValue - forwardMinimum)) + 0.5);
     Serial.print(" - Reverse ");
@@ -160,7 +160,7 @@ void loop() {
     Serial.print(IntegerDACValue);
     Serial.print("]");
   }
-  elsif ((IntegerDACValue > dacNeutralStart) && (IntegerDACValue < dacNeutralEnd) && (IntegerDACValue != dacNeutral))
+  else if ((IntegerDACValue > dacNeutralStart) && (IntegerDACValue < dacNeutralEnd) && (IntegerDACValue != dacNeutral))
   {
     IntegerDACValue = dacNeutral;
     Serial.print(" - Into neutral! Setting to: [");
