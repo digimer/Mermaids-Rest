@@ -4,7 +4,7 @@
   Mermaid's Rest - Helm Controls
 
   - Madison Kelly - digital.mermaid@gmail.com
-  - Last Updated  - Dec. 25, 2023
+  - Last Updated  - Jan. 26, 2024
 
   References and Sources
   - MCP4725 Tutorial - Electronoobs
@@ -52,10 +52,10 @@ void loop() {
   Serial.print("], ");
   
   int dacSteps = 12;    // This is how many steps we jump in dacValue per int change in sensorValue
-  int dacValue = 2084;  // Default to 2.5v
+  int dacValue = 2010;  // Default to 2.5v
   if (mainSwitchVal == 0){
     // Switch is off, set DAC to 2084 / output voltage 2.5v to set the controller to neutral
-    dacValue = 2084;
+    dacValue = 2010;
     Serial.print("switch off, DAC: [");
   }
   else if (sensorValue >= 265 && sensorValue <= 465){
