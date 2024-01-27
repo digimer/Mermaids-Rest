@@ -28,7 +28,8 @@ void setup() {
 }
 
 // Min Forward - 550
-// Max Forward - 765
+// Max Forward - 765 - 713/4086 ok - 714/4098 overflows, 751/4095 hard set 
+// neutral     - 2010 = 2.500v
 // Min Reverse - 465
 // Max Reverse - 250
 
@@ -82,7 +83,7 @@ void loop() {
   else
   {
     // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
-    dacValue = 2084;
+    dacValue = 2010;
     Serial.print("neutral, DAC: [");
   }
   Serial.print(dacValue);
@@ -91,5 +92,5 @@ void loop() {
   dac.setVoltage(dacValue, false);
 
   // Read 10/sec
-  delay(100); 
+  delay(500); 
 }
