@@ -1,10 +1,12 @@
 #include <Wire.h>
+#include <math.h>
+#include <inttypes.h>
 #include <Adafruit_MCP4725.h>
 /*
   Mermaid's Rest - Helm Controls
 
   - Madison Kelly - digital.mermaid@gmail.com
-  - Last Updated  - Jan. 26, 2024
+  - Last Updated  - Jan. 27, 2024
 
   References and Sources
   - MCP4725 Tutorial - Electronoobs
@@ -17,7 +19,7 @@ Adafruit_MCP4725 dac;
 #define DAC_RESOLUTION   (9)
 
 // Switches
-int mainSwitchPin = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
+int32_t mainSwitchPin = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -27,70 +29,153 @@ void setup() {
   dac.begin(0x62);
 }
 
-// Min Forward - 550
-// Max Forward - 765 - 713/4086 ok - 714/4098 overflows, 751/4095 hard set 
-// neutral     - 2010 = 2.500v
-// Min Reverse - 465
-// Max Reverse - 250
+// Range for a 12-bit DAC
+int32_t dacMinimum        = 0;
+int32_t dacMaximum        = 4095;
+int32_t dacVoltageMaximum = 5000;
+int32_t dacVoltageMinimum = 0;
+
+// How long to wait between loops (ms)
+int32_t delayTime = 500;
+
+// These might need to be tuned per helm control
+int32_t dacNeutral      = 2010;	// Tested on this DAC, not mathmatically accurate
+int32_t dacNeutralStart = 1965;
+int32_t dacNeutralEnd   = 2130;
+
+// -- Potentiometer values as read by digitalRead()
+// Reverse starts at high pot and counts down
+int32_t reverseMaximum = 265;
+int32_t reverseMinimum = 465;
+
+// Forward starts at low pot and counts up
+int32_t forwardMinimum = 550;
+int32_t forwardMaximum = 750;
+
+// Reverse starts at high pot and counts down
+int32_t reverseSensorSteps = (reverseMinimum - reverseMaximum);
+int32_t reverseDACSteps    = (dacNeutralStart - dacMinimum);
+
+// Forward starts at low pot and counts up
+int32_t forwardSensorSteps = (forwardMaximum - forwardMinimum);
+int32_t forwardDACSteps    = (dacMaximum - dacNeutralEnd);
+
+// Calulate the DAC steps per potentiometer steps
+int32_t reverseDACStepsPerSensorSteps = reverseDACSteps / reverseSensorSteps;
+int32_t forwardDACStepsPerSensorSteps = forwardDACSteps / forwardSensorSteps;
+
+// This is for showing percentages.
+int32_t reversePercentSteps = 100 / reverseSensorSteps;
+int32_t forwardPercentSteps = 100 / forwardSensorSteps;
 
 // the loop function runs over and over again forever
 void loop() {
   // Read the control switch. If this is LOW, we set the motor control voltage to 2.5v / neutral
-  int mainSwitchVal = digitalRead(mainSwitchPin);
-  Serial.print("Main switch position: [");
-  if (mainSwitchVal == 1){
-    Serial.print("on");
-  } else {
-    Serial.print("off");
-  }
-  Serial.print("], pot value: [");
+  int32_t mainSwitchVal = digitalRead(mainSwitchPin);
 
   // Read the helm position potentiometer
-  int sensorValue = analogRead(A0);
+  int32_t sensorValue = analogRead(A0);
   // Show the pot reading.
-  Serial.print(sensorValue);
-  Serial.print("], ");
-  
-  int dacSteps = 12;    // This is how many steps we jump in dacValue per int change in sensorValue
-  int dacValue = 2010;  // Default to 2.5v
-  if (mainSwitchVal == 0){
-    // Switch is off, set DAC to 2084 / output voltage 2.5v to set the controller to neutral
-    dacValue = 2010;
-    Serial.print("switch off, DAC: [");
+
+  int32_t dacValue = dacNeutral;  // Default to 2.5v
+  if (mainSwitchVal == 0) {
+    // Switch is off, set DAC to 2010 / output voltage 2.5v to set the controller to neutral
+    dacValue = dacNeutral;
   }
-  else if (sensorValue >= 265 && sensorValue <= 465){
+  else if ((sensorValue >= reverseMaximum) && (sensorValue <= reverseMinimum))
+  {
     // 465 = Min Reverse = DAC 1965 = 2358 mV
     // 265 = Max Reverse = DAC    0 -    0 mV
-    dacValue = ((sensorValue - 265) * dacSteps) + 0;
-    Serial.print("reverse, DAC: [");
+    dacValue = ((sensorValue - reverseMaximum) * reverseDACStepsPerSensorSteps) + dacMinimum;
   }
-  else if (sensorValue >= 550 && sensorValue <= 750){
+  else if ((sensorValue >= forwardMinimum) && (sensorValue <= forwardMaximum))
+  {
     // 750 = Max Forward = DAC 4095 = 4914 mV
     // 550 = Min Forward = DAC 2130 = 2556 mV
-    dacValue = ((sensorValue - 550) * dacSteps) + 2130;
-    Serial.print("forward, DAC: [");
+    dacValue = ((sensorValue - forwardMinimum) * forwardDACStepsPerSensorSteps) + dacNeutralEnd;
   }
-  else if (sensorValue > 750){
+  else if (sensorValue > forwardMaximum)
+  {
     // Still Max Forward, DAC 4095
-    dacValue = 4095;
-    Serial.print("max forward! DAC: [");
+    dacValue = dacMaximum;
   }
-  else if (sensorValue < 265){
+  else if (sensorValue < reverseMaximum)
+  {
     // Still Max Reverse, DAC 0
     dacValue = 0;
-    Serial.print("max reverse! DAC: [");
   }
   else
   {
     // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
-    dacValue = 2010;
-    Serial.print("neutral, DAC: [");
+    dacValue = dacNeutral;
   }
-  Serial.print(dacValue);
-  Serial.println("].");
+
+  // -- Here we calculate ranges.
+  int32_t IntegerDACValue = roundf(dacValue);
+  int32_t IntegerVoltage  = (IntegerDACValue * 5000) / 4095;
+
+  Serial.print("Switch: [");
+  Serial.print(mainSwitchVal);
+  Serial.print("], Sensor: [");
+  Serial.print(sensorValue);
+  Serial.print("], DAC: [");
+  Serial.print(IntegerDACValue);
+  Serial.print("] (");
+  Serial.print(IntegerVoltage);
+  Serial.print(" mV)");
   
+  if (sensorValue <= reverseMaximum)
+  {
+    Serial.print(" - Reverse 100%");
+  }
+  else if (sensorValue >= forwardMaximum)
+  {
+    Serial.print(" - Forward 100%");
+  }
+  else if ((sensorValue >= reverseMaximum) && (sensorValue <= reverseMinimum))
+  {
+    //float percentage = (reversePercentSteps * (reverseMinimum - sensorValue));
+    int32_t range      = reverseMinimum - reverseMaximum;
+    int32_t position   = sensorValue - reverseMinimum;
+    int32_t percentage = -(int)roundf(((float)position / (float)range) * 100.0f);
+    Serial.print(" - Reverse ");
+    Serial.print(percentage);
+    Serial.print("%");
+  }
+  else if ((sensorValue >= forwardMinimum) && (sensorValue <= forwardMaximum))
+  {
+    //float percentage = (float)((float)forwardPercentSteps * ((float)sensorValue - (float)forwardMinimum));
+    int32_t range      = forwardMaximum - forwardMinimum;
+    int32_t position   = sensorValue - forwardMinimum;
+    int32_t percentage = (int)roundf(((float)position / (float)range) * 100.0f);
+    Serial.print(" - Forward ");
+    Serial.print(percentage);
+    Serial.print("%");
+  }
+  else
+  {
+    Serial.print(" - Neutral");
+  }
+  
+  if (IntegerDACValue > dacMaximum)
+  {
+    IntegerDACValue = dacMaximum;
+    Serial.print(" - Too High! Setting to: [");
+    Serial.print(IntegerDACValue);
+    Serial.print("]");
+  }
+  else if ((IntegerDACValue > dacNeutralStart) && (IntegerDACValue < dacNeutralEnd) && (IntegerDACValue != dacNeutral))
+  {
+    IntegerDACValue = dacNeutral;
+    Serial.print(" - Into neutral! Setting to: [");
+    Serial.print(IntegerDACValue);
+    Serial.print("]");
+  }
+  Serial.println("");
+ 
+  // Update the DAC
   dac.setVoltage(dacValue, false);
 
   // Read 10/sec
-  delay(500); 
+  delay(delayTime); 
 }
