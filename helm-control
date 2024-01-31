@@ -74,7 +74,8 @@ void loop() {
   int32_t mainSwitchVal = digitalRead(mainSwitchPin);
 
   // Read the helm position potentiometer
-  int32_t sensorValue = constrain(analogRead(A0), reverseMaximum, forwardMaximum);
+  int32_t sensorValue = analogRead(A0);
+  sensorValue = constrain(sensorValue, reverseMaximum, forwardMaximum);
   // Show the pot reading.
 
   int32_t dacValue = dacNeutral;  // Default to 2.5v
@@ -164,7 +165,8 @@ void loop() {
   Serial.println("");
  
   // Update the DAC
-  dac.setVoltage(constrain(dacValue, dacMinimum, dacMaximum), false);
+  dacValue = constrain(dacValue, dacMinimum, dacMaximum)
+  dac.setVoltage(dacValue, false);
 
   // Read 10/sec
   delay(delayTime);
