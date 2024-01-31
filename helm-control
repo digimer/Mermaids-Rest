@@ -74,7 +74,7 @@ void loop() {
   int32_t mainSwitchVal = digitalRead(mainSwitchPin);
 
   // Read the helm position potentiometer
-  int32_t sensorValue = analogRead(A0);
+  int32_t sensorValue = constrain(analogRead(A0), reverseMaximum, forwardMaximum);
   // Show the pot reading.
 
   int32_t dacValue = dacNeutral;  // Default to 2.5v
@@ -82,27 +82,17 @@ void loop() {
     // Switch is off, set DAC to 2010 / output voltage 2.5v to set the controller to neutral
     dacValue = dacNeutral;
   }
-  else if ((sensorValue >= reverseMaximum) && (sensorValue <= reverseMinimum))
+  else if (sensorValue <= reverseMinimum)
   {
     // 465 = Min Reverse = DAC 1965 = 2358 mV
     // 265 = Max Reverse = DAC    0 -    0 mV
     dacValue = ((sensorValue - reverseMaximum) * reverseDACStepsPerSensorSteps) + dacMinimum;
   }
-  else if ((sensorValue >= forwardMinimum) && (sensorValue <= forwardMaximum))
+  else if (sensorValue >= forwardMinimum)
   {
     // 750 = Max Forward = DAC 4095 = 4914 mV
     // 550 = Min Forward = DAC 2130 = 2556 mV
     dacValue = ((sensorValue - forwardMinimum) * forwardDACStepsPerSensorSteps) + dacNeutralEnd;
-  }
-  else if (sensorValue > forwardMaximum)
-  {
-    // Still Max Forward, DAC 4095
-    dacValue = dacMaximum;
-  }
-  else if (sensorValue < reverseMaximum)
-  {
-    // Still Max Reverse, DAC 0
-    dacValue = 0;
   }
   else
   {
@@ -174,8 +164,8 @@ void loop() {
   Serial.println("");
  
   // Update the DAC
-  dac.setVoltage(dacValue, false);
+  dac.setVoltage(constrain(dacValue, dacMinimum, dacMaximum), false);
 
   // Read 10/sec
-  delay(delayTime); 
+  delay(delayTime);
 }
