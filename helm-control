@@ -14,59 +14,64 @@
   
 */
 
+// Reomve this define in order to stop outputting to serial
+#define DEBUG
+
 Adafruit_MCP4725 dac;
 // Set this value to 9, 8, 7, 6 or 5 to adjust the resolution
 #define DAC_RESOLUTION   (9)
 
 // Switches
-int32_t mainSwitchPin = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
+static const int32_t mainSwitchPin = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
 
 // the setup function runs once when you press reset or power the board
 void setup() {
   // Setup so we can read the serial port
+#ifdef DEBUG  
   Serial.begin(9600);
   Serial.println("MCP4725 Test");
+#endif
   dac.begin(0x62);
 }
 
 // Range for a 12-bit DAC
-int32_t dacMinimum        = 0;
-int32_t dacMaximum        = 4095;
-int32_t dacVoltageMaximum = 5000;
-int32_t dacVoltageMinimum = 0;
+static const int32_t dacMinimum        = 0;
+static const int32_t dacMaximum        = 4095;
+static const int32_t dacVoltageMaximum = 5000;
+static const int32_t dacVoltageMinimum = 0;
 
 // How long to wait between loops (ms)
-int32_t delayTime = 500;
+static const int32_t delayTime = 500;
 
 // These might need to be tuned per helm control
-int32_t dacNeutral      = 2010;	// Tested on this DAC, not mathmatically accurate
-int32_t dacNeutralStart = 1965;
-int32_t dacNeutralEnd   = 2130;
+static const int32_t dacNeutral      = 2010;	// Tested on this DAC, not mathmatically accurate
+static const int32_t dacNeutralStart = 1965;
+static const int32_t dacNeutralEnd   = 2130;
 
 // -- Potentiometer values as read by digitalRead()
 // Reverse starts at high pot and counts down
-int32_t reverseMaximum = 265;
-int32_t reverseMinimum = 465;
+static const int32_t reverseMaximum = 265;
+static const int32_t reverseMinimum = 465;
 
 // Forward starts at low pot and counts up
-int32_t forwardMinimum = 550;
-int32_t forwardMaximum = 750;
+static const int32_t forwardMinimum = 550;
+static const int32_t forwardMaximum = 750;
 
 // Reverse starts at high pot and counts down
-int32_t reverseSensorSteps = (reverseMinimum - reverseMaximum);
-int32_t reverseDACSteps    = (dacNeutralStart - dacMinimum);
+static const int32_t reverseSensorSteps = (reverseMinimum - reverseMaximum);
+static const int32_t reverseDACSteps    = (dacNeutralStart - dacMinimum);
 
 // Forward starts at low pot and counts up
-int32_t forwardSensorSteps = (forwardMaximum - forwardMinimum);
-int32_t forwardDACSteps    = (dacMaximum - dacNeutralEnd);
+static const int32_t forwardSensorSteps = (forwardMaximum - forwardMinimum);
+static const int32_t forwardDACSteps    = (dacMaximum - dacNeutralEnd);
 
 // Calulate the DAC steps per potentiometer steps
-int32_t reverseDACStepsPerSensorSteps = reverseDACSteps / reverseSensorSteps;
-int32_t forwardDACStepsPerSensorSteps = forwardDACSteps / forwardSensorSteps;
+static const int32_t reverseDACStepsPerSensorSteps = reverseDACSteps / reverseSensorSteps;
+static const int32_t forwardDACStepsPerSensorSteps = forwardDACSteps / forwardSensorSteps;
 
 // This is for showing percentages.
-int32_t reversePercentSteps = 100 / reverseSensorSteps;
-int32_t forwardPercentSteps = 100 / forwardSensorSteps;
+static const int32_t reversePercentSteps = 100 / reverseSensorSteps;
+static const int32_t forwardPercentSteps = 100 / forwardSensorSteps;
 
 // the loop function runs over and over again forever
 void loop() {
@@ -110,6 +115,7 @@ void loop() {
     dacValue = dacNeutral;
   }
 
+#ifdef DEBUG
   // -- Here we calculate ranges.
   int32_t IntegerDACValue = roundf(dacValue);
   int32_t IntegerVoltage  = (IntegerDACValue * 5000) / 4095;
@@ -172,7 +178,8 @@ void loop() {
     Serial.print("]");
   }
   Serial.println("");
- 
+ #endif
+
   // Update the DAC
   dac.setVoltage(dacValue, false);
 
