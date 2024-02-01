@@ -23,21 +23,10 @@ Adafruit_MCP4725 dac;
 // recognize them easily.
 
 // Switches
-// NOTE(jokke): We surely don't need 32bits of memory to store io pin number, nor we expect to change it
-// during execution.
-// NOTE(jokke): Calling it "main switch" is very unintuitive when you start get more complexity, lets
-// swap this to engine idle pin, that way the physical source doesn't really matter either.
-//int32_t ENGINE_IDLE_PIN = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
 // As we are fine with the 0-256 lets save the microcontroller some hassle
 const byte ENGINE_IDLE_PIN = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
 
 // Range for a 12-bit DAC
-// NOTE(jokke): Same over here, no reason to go for 32bit integers and waste double the memory to store
-// leading zeros.
-//int32_t DAC_MIN        = 0;
-//int32_t DAC_MAX        = 4095;
-//int32_t DAC_VOLT_MAX = 5000;
-//int32_t DAC_VOLT_MIN = 0;
 const int16_t DAC_MIN        = 0;
 const int16_t DAC_MAX        = 4095;
 const int16_t DAC_VOLT_MIN = 0;
@@ -47,7 +36,6 @@ const int16_t DAC_VOLT_MAX = 5000;
 const int16_t LOOP_DELAY_MS = 500;
 
 // These might need to be tuned per helm control
-// NOTE(jokke): We already established that these are 12bit, fits perfectly in 16bit regular uint.
 const int16_t DAC_NEUTRAL      = 2010;	// Tested on this DAC, not mathmatically accurate
 const int16_t DAC_NEUTRAL_START = 1965;
 const int16_t DAC_NEUTRAL_END   = 2130;
@@ -70,7 +58,6 @@ int16_t forwardMaximum = 750;
 // These variables might get populated in the loop
 bool engineIdleVal = 0; // We initialize with 0 to make sure we stay in neutral until successful read
 
-// NOTE(jokke): For the sake this system ever has other sensors too, lets call this throttleValue
 int16_t throttleValue = 505; // We initilize this in the neutral range too for safety.
 int16_t dacValue = DAC_NEUTRAL;
 int32 mappedThrottle = DAC_NEUTRAL; // ATTN: This is _not_ unsigned integer for safety.
@@ -78,24 +65,6 @@ int16_t integerVoltage = 0;
 
 byte precentage = 0;
 
-// Reverse starts at high pot and counts down
-// NOTE(jokke): We don't need to store these at all, which will simplify our life a lot.
-/*
-  int32_t reverseSensorSteps = (reverseMinimum - reverseMaximum);
-  int32_t reverseDACSteps    = (DAC_NEUTRAL_START - DAC_MIN);
-
-  // Forward starts at low pot and counts up
-  int32_t forwardSensorSteps = (forwardMaximum - forwardMinimum);
-  int32_t forwardDACSteps    = (DAC_MAX - DAC_NEUTRAL_END);
-
-  // Calulate the DAC steps per potentiometer steps
-  int32_t reverseDACStepsPerSensorSteps = reverseDACSteps / reverseSensorSteps;
-  int32_t forwardDACStepsPerSensorSteps = forwardDACSteps / forwardSensorSteps;
-
-  // This is for showing percentages.
-  int32_t reversePercentSteps = 100 / reverseSensorSteps;
-  int32_t forwardPercentSteps = 100 / forwardSensorSteps;
-*/
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -108,62 +77,15 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   // Read the control switch. If this is LOW, we set the motor control voltage to 2.5v / neutral
-  // Arduino digital read returns either HIGH or LOW which also relates to true or false or 0 or 1
-  // we are literally returning 1 bit of data, no reason to reserve 32 bit variable and initialize
-  // it twice a second.
-  //int32_t EngineIdleVal = digitalRead(ENGINE_IDLE_PIN);
   engineIdleVal = digitalRead(ENGINE_IDLE_PIN);
 
   // Read the helm position potentiometer
-  // NOTE(jokke): Arduino DAC is 10bit, we have no reason to initialize 32bit uint every loop,
-  // these are heavy operations for the compiler and the microcontroller.
-  //int32_t throttleValue = analogRead(A0);
   throttleValue = analogRead(A0);
   // Show the pot reading.
 
-  // NOTE(jokke): There is no reason to redefine this every loop to neutral, lets do that above with
-  // the rest.
-  //int32_t dacValue = DAC_NEUTRAL;  // Default to 2.5v
-  if (EngineIdleVal == 0) {
+  if (EngineIdleVal == 0) || ((throttleValue > reverseMinimum) && (throttleValue < forwardMinimum))
+  {
     // Switch is off, set DAC to 2010 / output voltage 2.5v to set the controller to neutral
-    dacValue = DAC_NEUTRAL;
-  }
-  // NOTE(jokke): We should be able to simplify this a lot here
-  /*
-  else if ((throttleValue >= reverseMaximum) && (throttleValue <= reverseMinimum))
-  {
-    // 465 = Min Reverse = DAC 1965 = 2358 mV
-    // 265 = Max Reverse = DAC    0 -    0 mV
-    dacValue = ((throttleValue - reverseMaximum) * reverseDACStepsPerSensorSteps) + DAC_MIN;
-  }
-  else if ((throttleValue >= forwardMinimum) && (throttleValue <= forwardMaximum))
-  {
-    // 750 = Max Forward = DAC 4095 = 4914 mV
-    // 550 = Min Forward = DAC 2130 = 2556 mV
-    dacValue = ((throttleValue - forwardMinimum) * forwardDACStepsPerSensorSteps) + DAC_NEUTRAL_END;
-  }
-  else if (throttleValue > forwardMaximum)
-  {
-    // Still Max Forward, DAC 4095
-    dacValue = DAC_MAX;
-  }
-  else if (throttleValue < reverseMaximum)
-  {
-    // Still Max Reverse, DAC 0
-    dacValue = 0;
-  }
-  else
-  {
-    // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
-    dacValue = DAC_NEUTRAL;
-  }
-  */
-  // NOTE(jokke): I left this here for readability, but you could as well do all these checks in the
-  // first if statement and eliminate this block too which is kind of repetitive.
-  else if (throttleValue > reverseMinimum) && (throttleValue < forwardMinimum)
-  {
-    // NOTE(jokke): This should not be required, but it gives bit more assurance in case the dac
-    // or the controller are not exactly stable.
     dacValue = DAC_NEUTRAL;
   }
   else
@@ -174,12 +96,7 @@ void loop() {
     // The map(x, fromLOW, fromHigh, toLow, toHigh) just does all that math of step sizes and their
     // rounding to integers. _But_ it does not constrain the values to the range. So we need:
     dacValue = constrain(mappedThrottle, DAC_MIN, DAC_MAX); // this ensures that we're in the range.
-
   }
-
-  // -- Here we calculate ranges.
-  // NOTE(jokke): We won't be needing this anymore as map() gives us integers
-  // int32_t IntegerDACValue = roundf(dacValue);
 
   integerVoltage  = (dacValue * 5000) / 4095;
 
@@ -193,7 +110,7 @@ void loop() {
   Serial.print(integerVoltage);
   Serial.print(" mV)");
 
-  if (dacValue == DAC_MIN) // due to the constrain() on L176 we will never again be out of bound
+  if (dacValue == DAC_MIN) // due to the constrain() on L98 we will never again be out of bound
   {
     Serial.print(" - Reverse 100%");
   }
@@ -204,12 +121,6 @@ void loop() {
   else if (dacValue < DAC_NEUTRAL_START)
   {
     // NOTE(jokke): Lets simplify this with the map too, we have already constrained the values
-    /*
-    //float percentage = (reversePercentSteps * (reverseMinimum - throttleValue));
-    int32_t range      = reverseMinimum - reverseMaximum;
-    int32_t position   = throttleValue - reverseMinimum;
-    int32_t percentage = -(int)roundf(((float)position / (float)range) * 100.0f);
-    */
     precentage = map(dacValue, DAC_MIN, DAC_MAX, 0, 100);
     Serial.print(" - Reverse ");
     Serial.print(percentage, DEC); // Here we use neat feature of print that allows printing byte in decimal
@@ -217,12 +128,6 @@ void loop() {
   }
   else if (dacValue > DAC_NEUTRAL_END)
   {
-    /*
-    //float percentage = (float)((float)forwardPercentSteps * ((float)throttleValue - (float)forwardMinimum));
-    int32_t range      = forwardMaximum - forwardMinimum;
-    int32_t position   = throttleValue - forwardMinimum;
-    int32_t percentage = (int)roundf(((float)position / (float)range) * 100.0f);
-    */
     precentage = map(dacValue, DAC_MIN, DAC_MAX, 0, 100);
     Serial.print(" - Forward ");
     Serial.print(percentage, DEC);
@@ -232,24 +137,6 @@ void loop() {
   {
     Serial.print(" - Neutral");
   }
-  // NOTE(jokke): This will never happen again due to the constrain() on L176
-  /*
-  if (dacValue > DAC_MAX)
-  {
-    dacValue = DAC_MAX;
-    Serial.print(" - Too High! Setting to: [");
-    Serial.print(dacValue);
-    Serial.print("]");
-  }
-  //Nor this due to the if block starting L163
-  if ((dacValue > DAC_NEUTRAL_START) && (dacValue < DAC_NEUTRAL_END) && (dacValue != DAC_NEUTRAL))
-  {
-    dacValue = DAC_NEUTRAL;
-    Serial.print(" - Into neutral! Setting to: [");
-    Serial.print(dacValue);
-    Serial.print("]");
-  }
-  */
   Serial.println("");
 
   // Update the DAC
