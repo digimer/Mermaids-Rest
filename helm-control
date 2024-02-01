@@ -60,7 +60,7 @@ bool engineIdleVal = 0; // We initialize with 0 to make sure we stay in neutral 
 
 int16_t throttleValue = 505; // We initilize this in the neutral range too for safety.
 int16_t dacValue = DAC_NEUTRAL;
-int32 mappedThrottle = DAC_NEUTRAL; // ATTN: This is _not_ unsigned integer for safety.
+int32_t mappedThrottle = DAC_NEUTRAL; // ATTN: This is _not_ unsigned integer for safety.
 int16_t integerVoltage = 0;
 
 byte precentage = 0;
