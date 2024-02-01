@@ -147,21 +147,7 @@ void loop() {
   {
     Serial.print(" - Neutral");
   }
-  
-  if (IntegerDACValue > dacMaximum)
-  {
-    IntegerDACValue = dacMaximum;
-    Serial.print(" - Too High! Setting to: [");
-    Serial.print(IntegerDACValue);
-    Serial.print("]");
-  }
-  else if ((IntegerDACValue > dacNeutralStart) && (IntegerDACValue < dacNeutralEnd) && (IntegerDACValue != dacNeutral))
-  {
-    IntegerDACValue = dacNeutral;
-    Serial.print(" - Into neutral! Setting to: [");
-    Serial.print(IntegerDACValue);
-    Serial.print("]");
-  }
+
   Serial.println("");
  
   // Update the DAC
