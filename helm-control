@@ -11,7 +11,7 @@
   References and Sources
   - MCP4725 Tutorial - Electronoobs
     - https://www.youtube.com/watch?v=SgPbzAWIwlk
-  
+
 */
 
 // Reomve this define in order to stop outputting to serial
@@ -59,18 +59,10 @@ static const int32_t forwardMaximum = 750;
 
 // Reverse starts at high pot and counts down
 static const int32_t reverseSensorSteps = (reverseMinimum - reverseMaximum);
-static const int32_t reverseDACSteps    = (dacNeutralStart - dacMinimum);
-
-// Forward starts at low pot and counts up
 static const int32_t forwardSensorSteps = (forwardMaximum - forwardMinimum);
-static const int32_t forwardDACSteps    = (dacMaximum - dacNeutralEnd);
 
 // Calculate the nuetral range midpoint
 static const int32_t neutralMidPoint = (reverseMinimum + forwardMinimum)/2;
-
-// Calulate the DAC steps per potentiometer steps
-static const int32_t reverseDACStepsPerSensorSteps = reverseDACSteps / reverseSensorSteps;
-static const int32_t forwardDACStepsPerSensorSteps = forwardDACSteps / forwardSensorSteps;
 
 // This is for showing percentages.
 static const int32_t reversePercentSteps = 100 / reverseSensorSteps;
@@ -97,13 +89,13 @@ void loop() {
   {
     // 465 = Min Reverse = DAC 1965 = 2358 mV
     // 265 = Max Reverse = DAC    0 -    0 mV
-    dacValue = ((sensorValue - reverseMaximum) * reverseDACStepsPerSensorSteps) + dacMinimum;
+    dacValue = map(sensorValue, reverseMaximum, reverseMinimum, dacVoltageMinimum, dacNeutralStart);
   }
   else if (sensorValue >= forwardMinimum)
   {
     // 750 = Max Forward = DAC 4095 = 4914 mV
     // 550 = Min Forward = DAC 2130 = 2556 mV
-    dacValue = ((sensorValue - forwardMinimum) * forwardDACStepsPerSensorSteps) + dacNeutralEnd;
+    dacValue = map(sensorValue, forwardMinimum, forwardMaximum, dacNeutralEnd, dacVoltageMaximum);
   }
   else
   {
@@ -125,7 +117,7 @@ void loop() {
   Serial.print("] (");
   Serial.print(IntegerVoltage);
   Serial.print(" mV)");
-  
+
   if (sensorValue <= reverseMaximum)
   {
     Serial.print(" - Reverse 100%");
