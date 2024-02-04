@@ -27,7 +27,7 @@ static const int32_t mainSwitchPin = 12; // When this switch is open, the motor 
 // the setup function runs once when you press reset or power the board
 void setup() {
   // Setup so we can read the serial port
-#ifdef DEBUG  
+#ifdef DEBUG
   Serial.begin(9600);
   Serial.println("MCP4725 Test");
 #endif
@@ -44,7 +44,7 @@ static const int32_t dacVoltageMinimum = 0;
 static const int32_t delayTime = 500;
 
 // These might need to be tuned per helm control
-static const int32_t dacNeutral      = 2010;	// Tested on this DAC, not mathmatically accurate
+static const int32_t dacNeutral      = 2010;    // Tested on this DAC, not mathmatically accurate
 static const int32_t dacNeutralStart = 1965;
 static const int32_t dacNeutralEnd   = 2130;
 
@@ -163,7 +163,7 @@ void loop() {
  #endif
 
   // Update the DAC
-  dacValue = constrain(dacValue, dacMinimum, dacMaximum)
+  dacValue = constrain(dacValue, dacMinimum, dacMaximum);
   dac.setVoltage(dacValue, false);
 
   // Read 10/sec
