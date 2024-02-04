@@ -60,6 +60,9 @@ int32_t reverseDACSteps    = (dacNeutralStart - dacMinimum);
 int32_t forwardSensorSteps = (forwardMaximum - forwardMinimum);
 int32_t forwardDACSteps    = (dacMaximum - dacNeutralEnd);
 
+// Calculate the nuetral range midpoint
+int32_t neutralMidPoint = (reverseMinimum + forwardMinimum)/2;
+
 // Calulate the DAC steps per potentiometer steps
 int32_t reverseDACStepsPerSensorSteps = reverseDACSteps / reverseSensorSteps;
 int32_t forwardDACStepsPerSensorSteps = forwardDACSteps / forwardSensorSteps;
@@ -73,16 +76,18 @@ void loop() {
   // Read the control switch. If this is LOW, we set the motor control voltage to 2.5v / neutral
   int32_t mainSwitchVal = digitalRead(mainSwitchPin);
 
-  // Read the helm position potentiometer
-  int32_t sensorValue = analogRead(A0);
-  // Show the pot reading.
+  // Read the helm position potentiometer if the main switch is on
+  int32_t sensorValue;
+  if (mainSwitchVal == 0) {
+    // Switch is off, force the sensorValue to the middle of the neutral range
+    sensorValue = neutralMidPoint;
+  } else {
+    // only read the sensor value if the main switch is on
+    sensorValue = analogRead(A0);
+  }
 
   int32_t dacValue = dacNeutral;  // Default to 2.5v
-  if (mainSwitchVal == 0) {
-    // Switch is off, set DAC to 2010 / output voltage 2.5v to set the controller to neutral
-    dacValue = dacNeutral;
-  }
-  else if ((sensorValue >= reverseMaximum) && (sensorValue <= reverseMinimum))
+  if ((sensorValue >= reverseMaximum) && (sensorValue <= reverseMinimum))
   {
     // 465 = Min Reverse = DAC 1965 = 2358 mV
     // 265 = Max Reverse = DAC    0 -    0 mV
