@@ -27,7 +27,7 @@ static const int32_t mainSwitchPin = 12; // When this switch is open, the motor 
 // the setup function runs once when you press reset or power the board
 void setup() {
   // Setup so we can read the serial port
-#ifdef DEBUG  
+#ifdef DEBUG
   Serial.begin(9600);
   Serial.println("MCP4725 Test");
 #endif
@@ -44,7 +44,7 @@ static const int32_t dacVoltageMinimum = 0;
 static const int32_t delayTime = 500;
 
 // These might need to be tuned per helm control
-static const int32_t dacNeutral      = 2010;	// Tested on this DAC, not mathmatically accurate
+static const int32_t dacNeutral      = 2010;    // Tested on this DAC, not mathmatically accurate
 static const int32_t dacNeutralStart = 1965;
 static const int32_t dacNeutralEnd   = 2130;
 
@@ -89,30 +89,21 @@ void loop() {
   } else {
     // only read the sensor value if the main switch is on
     sensorValue = analogRead(A0);
+    sensorValue = constrain(sensorValue, reverseMaximum, forwardMaximum);
   }
 
   int32_t dacValue = dacNeutral;  // Default to 2.5v
-  if ((sensorValue >= reverseMaximum) && (sensorValue <= reverseMinimum))
+  if (sensorValue <= reverseMinimum)
   {
     // 465 = Min Reverse = DAC 1965 = 2358 mV
     // 265 = Max Reverse = DAC    0 -    0 mV
     dacValue = ((sensorValue - reverseMaximum) * reverseDACStepsPerSensorSteps) + dacMinimum;
   }
-  else if ((sensorValue >= forwardMinimum) && (sensorValue <= forwardMaximum))
+  else if (sensorValue >= forwardMinimum)
   {
     // 750 = Max Forward = DAC 4095 = 4914 mV
     // 550 = Min Forward = DAC 2130 = 2556 mV
     dacValue = ((sensorValue - forwardMinimum) * forwardDACStepsPerSensorSteps) + dacNeutralEnd;
-  }
-  else if (sensorValue > forwardMaximum)
-  {
-    // Still Max Forward, DAC 4095
-    dacValue = dacMaximum;
-  }
-  else if (sensorValue < reverseMaximum)
-  {
-    // Still Max Reverse, DAC 0
-    dacValue = 0;
   }
   else
   {
@@ -167,27 +158,14 @@ void loop() {
   {
     Serial.print(" - Neutral");
   }
-  
-  if (IntegerDACValue > dacMaximum)
-  {
-    IntegerDACValue = dacMaximum;
-    Serial.print(" - Too High! Setting to: [");
-    Serial.print(IntegerDACValue);
-    Serial.print("]");
-  }
-  else if ((IntegerDACValue > dacNeutralStart) && (IntegerDACValue < dacNeutralEnd) && (IntegerDACValue != dacNeutral))
-  {
-    IntegerDACValue = dacNeutral;
-    Serial.print(" - Into neutral! Setting to: [");
-    Serial.print(IntegerDACValue);
-    Serial.print("]");
-  }
+
   Serial.println("");
  #endif
 
   // Update the DAC
+  dacValue = constrain(dacValue, dacMinimum, dacMaximum);
   dac.setVoltage(dacValue, false);
 
   // Read 10/sec
-  delay(delayTime); 
+  delay(delayTime);
 }
