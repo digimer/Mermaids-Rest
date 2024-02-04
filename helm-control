@@ -89,7 +89,7 @@ void loop() {
   {
     // 465 = Min Reverse = DAC 1965 = 2358 mV
     // 265 = Max Reverse = DAC    0 -    0 mV
-    dacValue = map(sensorValue, reverseMaximum, reverseMaximum, dacVoltageMinimum, dacNeutralStart);
+    dacValue = map(sensorValue, reverseMaximum, reverseMinimum, dacVoltageMinimum, dacNeutralStart);
   }
   else if (sensorValue >= forwardMinimum)
   {
