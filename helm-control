@@ -31,7 +31,10 @@ void setup() {
   Serial.begin(9600);
   Serial.println("MCP4725 Test");
 #endif
+  // Make sure to calculate correct sum for the very first sample  
+  pinMode(mainSwitchPin, INPUT_PULLUP);
   dac.begin(0x62);
+  dac.setVoltage(dacValue, false); // Just to be on the safe side
 }
 
 // Range for a 12-bit DAC
@@ -78,8 +81,8 @@ int32_t sampleOver       = 0;
 int32_t smoothedPotValue = 0;
 int32_t oldestPotIndex   = 0;  // This is the array index with the oldest value
 int32_t potTotal         = 0;
-int32_t potLoopCount     = 0;
 int32_t potArray[averageOver];
+
 
 // the loop function runs over and over again forever
 void loop() {
@@ -88,9 +91,12 @@ void loop() {
 
   // Read the helm position potentiometer if the main switch is on
   int32_t sensorValue;
-  if (mainSwitchVal == 0) {
+  if (mainSwitchVal == 1) {
     // Switch is off, force the sensorValue to the middle of the neutral range
     sensorValue = neutralMidPoint;
+    sampleOver = 0;
+    oldestPotIndex = 0;
+    potTotal = 0;
   } else {
     // only read the sensor value if the main switch is on
     sensorValue = analogRead(A0);
@@ -98,32 +104,33 @@ void loop() {
   }
 
   // Smooth out the sensorValue over 'averageOver' samples.
-  potArray[oldestPotIndex] = sensorValue;
-  oldestPotIndex = oldestPotIndex + 1;
-  if (oldestPotIndex >= averageOver) {
-    oldestPotIndex = 0;
-  }
-  potLoopCount = averageOver;
-  if (sampleOver < averageOver){
+
+  if (sampleOver < averageOver){    
+    // Array not yet full
     sampleOver++;
-    potLoopCount = sampleOver;
+
+    // Just sum up all the incoming samples
+    potTotal += sensorValue;
+  } else {
+    // We know that the potTotal is the sum of all values in the array
+    // So the new sum is this sum minus the sample to be replaced plus the new sample.
+    potTotal = potTotal + sensorValue - potArray[oldestPotIndex] ;
   }
-  potTotal = 0;
-  for (byte i = 0; i < potLoopCount; i = i + 1) {
-    potTotal = potTotal + potArray[i];
-  }
-  smoothedPotValue = (int)roundf((float)potTotal / (float)potLoopCount);
-//  Serial.print("Oldest pot Index: [");
-//  Serial.print(oldestPotIndex);
-//  Serial.print("], Sample over: [");
-//  Serial.print(sampleOver);
-//  Serial.print("], loop count: [");
-//  Serial.print(potLoopCount);
-//  Serial.print("], pot total: [");
-//  Serial.print(potTotal);
-//  Serial.print("], smoothed sensor: [");
-//  Serial.print(smoothedPotValue);
-//  Serial.println("]");
+
+  // Replace oldes value
+  potArray[oldestPotIndex] = sensorValue;
+  oldestPotIndex = (oldestPotIndex + 1) % averageOver; // Modulo
+  smoothedPotValue = potTotal / sampleOver;
+  
+  //Serial.print("Oldest pot Index: [");
+  //Serial.print(oldestPotIndex);
+  //Serial.print("], Sample over: [");
+  //Serial.print(sampleOver);
+  //Serial.print("], pot total: [");
+  //Serial.print(potTotal);
+  //Serial.print("], smoothed sensor: [");
+  //Serial.print(smoothedPotValue);
+  //Serial.println("]");
 
   int32_t dacValue = dacNeutral;  // Default to 2.5v
   if (smoothedPotValue <= reverseMinimum)
