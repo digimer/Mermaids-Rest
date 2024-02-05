@@ -14,7 +14,7 @@
 
 */
 
-// Reomve this define in order to stop outputting to serial
+// Remove this define in order to stop outputting to serial
 #define DEBUG
 
 Adafruit_MCP4725 dac;
@@ -41,7 +41,11 @@ static const int32_t dacVoltageMaximum = 5000;
 static const int32_t dacVoltageMinimum = 0;
 
 // How long to wait between loops (ms)
-static const int32_t delayTime = 500;
+static const int32_t delayTime = 100;
+
+// How many records to use when calculating our rolling average. This needs to
+// be proportional to 'delayTime'
+static const int32_t averageOver = 32;
 
 // These might need to be tuned per helm control
 static const int32_t dacNeutral      = 2010;    // Tested on this DAC, not mathmatically accurate
@@ -68,6 +72,15 @@ static const int32_t neutralMidPoint = (reverseMinimum + forwardMinimum)/2;
 static const int32_t reversePercentSteps = 100 / reverseSensorSteps;
 static const int32_t forwardPercentSteps = 100 / forwardSensorSteps;
 
+// This is used to know how many samples we have in our rolling average. It's
+// main use is to deal with start-up when we don't yet have a full array.
+int32_t sampleOver       = 0;
+int32_t smoothedPotValue = 0;
+int32_t oldestPotIndex   = 0;  // This is the array index with the oldest value
+int32_t potTotal         = 0;
+int32_t potLoopCount     = 0;
+int32_t potArray[averageOver];
+
 // the loop function runs over and over again forever
 void loop() {
   // Read the control switch. If this is LOW, we set the motor control voltage to 2.5v / neutral
@@ -84,18 +97,46 @@ void loop() {
     sensorValue = constrain(sensorValue, reverseMaximum, forwardMaximum);
   }
 
+  // Smooth out the sensorValue over 'averageOver' samples.
+  potArray[oldestPotIndex] = sensorValue;
+  oldestPotIndex = oldestPotIndex + 1;
+  if (oldestPotIndex >= averageOver) {
+    oldestPotIndex = 0;
+  }
+  potLoopCount = averageOver;
+  if (sampleOver < averageOver){
+    sampleOver++;
+    potLoopCount = sampleOver;
+  }
+  potTotal = 0;
+  for (byte i = 0; i < potLoopCount; i = i + 1) {
+    potTotal = potTotal + potArray[i];
+  }
+  smoothedPotValue = (int)roundf((float)potTotal / (float)potLoopCount);
+//  Serial.print("Oldest pot Index: [");
+//  Serial.print(oldestPotIndex);
+//  Serial.print("], Sample over: [");
+//  Serial.print(sampleOver);
+//  Serial.print("], loop count: [");
+//  Serial.print(potLoopCount);
+//  Serial.print("], pot total: [");
+//  Serial.print(potTotal);
+//  Serial.print("], smoothed sensor: [");
+//  Serial.print(smoothedPotValue);
+//  Serial.println("]");
+
   int32_t dacValue = dacNeutral;  // Default to 2.5v
-  if (sensorValue <= reverseMinimum)
+  if (smoothedPotValue <= reverseMinimum)
   {
     // 465 = Min Reverse = DAC 1965 = 2358 mV
     // 265 = Max Reverse = DAC    0 -    0 mV
-    dacValue = map(sensorValue, reverseMaximum, reverseMinimum, dacVoltageMinimum, dacNeutralStart);
+    dacValue = map(smoothedPotValue, reverseMaximum, reverseMinimum, dacVoltageMinimum, dacNeutralStart);
   }
-  else if (sensorValue >= forwardMinimum)
+  else if (smoothedPotValue >= forwardMinimum)
   {
     // 750 = Max Forward = DAC 4095 = 4914 mV
     // 550 = Min Forward = DAC 2130 = 2556 mV
-    dacValue = map(sensorValue, forwardMinimum, forwardMaximum, dacNeutralEnd, dacVoltageMaximum);
+    dacValue = map(smoothedPotValue, forwardMinimum, forwardMaximum, dacNeutralEnd, dacVoltageMaximum);
   }
   else
   {
@@ -110,37 +151,37 @@ void loop() {
 
   Serial.print("Switch: [");
   Serial.print(mainSwitchVal);
-  Serial.print("], Sensor: [");
+  Serial.print("], Raw Sensor: [");
   Serial.print(sensorValue);
+  Serial.print("], Smoothed Sensor: [");
+  Serial.print(smoothedPotValue);
   Serial.print("], DAC: [");
   Serial.print(IntegerDACValue);
   Serial.print("] (");
   Serial.print(IntegerVoltage);
   Serial.print(" mV)");
 
-  if (sensorValue <= reverseMaximum)
+  if (smoothedPotValue <= reverseMaximum)
   {
     Serial.print(" - Reverse 100%");
   }
-  else if (sensorValue >= forwardMaximum)
+  else if (smoothedPotValue >= forwardMaximum)
   {
     Serial.print(" - Forward 100%");
   }
-  else if ((sensorValue >= reverseMaximum) && (sensorValue <= reverseMinimum))
+  else if ((smoothedPotValue >= reverseMaximum) && (smoothedPotValue <= reverseMinimum))
   {
-    //float percentage = (reversePercentSteps * (reverseMinimum - sensorValue));
     int32_t range      = reverseMinimum - reverseMaximum;
-    int32_t position   = sensorValue - reverseMinimum;
+    int32_t position   = smoothedPotValue - reverseMinimum;
     int32_t percentage = -(int)roundf(((float)position / (float)range) * 100.0f);
     Serial.print(" - Reverse ");
     Serial.print(percentage);
     Serial.print("%");
   }
-  else if ((sensorValue >= forwardMinimum) && (sensorValue <= forwardMaximum))
+  else if ((smoothedPotValue >= forwardMinimum) && (smoothedPotValue <= forwardMaximum))
   {
-    //float percentage = (float)((float)forwardPercentSteps * ((float)sensorValue - (float)forwardMinimum));
     int32_t range      = forwardMaximum - forwardMinimum;
-    int32_t position   = sensorValue - forwardMinimum;
+    int32_t position   = smoothedPotValue - forwardMinimum;
     int32_t percentage = (int)roundf(((float)position / (float)range) * 100.0f);
     Serial.print(" - Forward ");
     Serial.print(percentage);
