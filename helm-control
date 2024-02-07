@@ -21,6 +21,9 @@ Adafruit_MCP4725 dac;
 // Set this value to 9, 8, 7, 6 or 5 to adjust the resolution
 #define DAC_RESOLUTION   (9)
 
+// Forward declaration of init function
+void initializeAverages();
+
 // Switches
 static const int32_t mainSwitchPin = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
 
@@ -31,10 +34,11 @@ void setup() {
   Serial.begin(9600);
   Serial.println("MCP4725 Test");
 #endif
-  // Make sure to calculate correct sum for the very first sample  
+  // Make sure to calculate correct sum for the very first sample
   pinMode(mainSwitchPin, INPUT_PULLUP);
-  dac.begin(0x62);
-  dac.setVoltage(dacValue, false); // Just to be on the safe side
+  //dac.begin(0x62);
+  // dac.setVoltage(dacValue, false); // Just to be on the safe side
+  initializeAverages();
 }
 
 // Range for a 12-bit DAC
@@ -69,20 +73,27 @@ static const int32_t reverseSensorSteps = (reverseMinimum - reverseMaximum);
 static const int32_t forwardSensorSteps = (forwardMaximum - forwardMinimum);
 
 // Calculate the nuetral range midpoint
-static const int32_t neutralMidPoint = (reverseMinimum + forwardMinimum)/2;
+static const int32_t neutralMidPoint = (reverseMinimum + forwardMinimum) / 2;
 
 // This is for showing percentages.
 static const int32_t reversePercentSteps = 100 / reverseSensorSteps;
 static const int32_t forwardPercentSteps = 100 / forwardSensorSteps;
 
+uint8_t oldSwitchVal = 1;
 // This is used to know how many samples we have in our rolling average. It's
 // main use is to deal with start-up when we don't yet have a full array.
-int32_t sampleOver       = 0;
 int32_t smoothedPotValue = 0;
 int32_t oldestPotIndex   = 0;  // This is the array index with the oldest value
 int32_t potTotal         = 0;
 int32_t potArray[averageOver];
 
+void initializeAverages() {
+  for (int i = 0; i < averageOver; ++i) {
+    potArray[i] = neutralMidPoint;
+  }
+  potTotal = averageOver * neutralMidPoint;
+  oldestPotIndex = 0;
+}
 
 // the loop function runs over and over again forever
 void loop() {
@@ -92,40 +103,35 @@ void loop() {
   // Read the helm position potentiometer if the main switch is on
   int32_t sensorValue;
   if (mainSwitchVal == 1) {
+    if (oldSwitchVal != mainSwitchVal) {
+      // We went from 0->1      
+      initializeAverages();
+    }
+
     // Switch is off, force the sensorValue to the middle of the neutral range
     sensorValue = neutralMidPoint;
-    sampleOver = 0;
-    oldestPotIndex = 0;
-    potTotal = 0;
   } else {
     // only read the sensor value if the main switch is on
     sensorValue = analogRead(A0);
     sensorValue = constrain(sensorValue, reverseMaximum, forwardMaximum);
   }
-
+  
+  oldSwitchVal = mainSwitchVal;
   // Smooth out the sensorValue over 'averageOver' samples.
 
-  if (sampleOver < averageOver){    
-    // Array not yet full
-    sampleOver++;
 
-    // Just sum up all the incoming samples
-    potTotal += sensorValue;
-  } else {
-    // We know that the potTotal is the sum of all values in the array
-    // So the new sum is this sum minus the sample to be replaced plus the new sample.
-    potTotal = potTotal + sensorValue - potArray[oldestPotIndex] ;
-  }
+  // We know that the potTotal is the sum of all values in the array
+  // So the new sum is this sum minus the sample to be replaced plus the new sample.
+  potTotal = potTotal + sensorValue - potArray[oldestPotIndex] ;
+
 
   // Replace oldes value
   potArray[oldestPotIndex] = sensorValue;
   oldestPotIndex = (oldestPotIndex + 1) % averageOver; // Modulo
-  smoothedPotValue = potTotal / sampleOver;
-  
+  smoothedPotValue = potTotal / averageOver;
+
   //Serial.print("Oldest pot Index: [");
   //Serial.print(oldestPotIndex);
-  //Serial.print("], Sample over: [");
-  //Serial.print(sampleOver);
   //Serial.print("], pot total: [");
   //Serial.print(potTotal);
   //Serial.print("], smoothed sensor: [");
@@ -200,7 +206,7 @@ void loop() {
   }
 
   Serial.println("");
- #endif
+#endif
 
   // Update the DAC
   dacValue = constrain(dacValue, dacMinimum, dacMaximum);
