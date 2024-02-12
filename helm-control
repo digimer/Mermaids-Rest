@@ -27,19 +27,7 @@ void initializeAverages();
 // Switches
 static const int32_t mainSwitchPin = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
 
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // Setup so we can read the serial port
-#ifdef DEBUG
-  Serial.begin(9600);
-  Serial.println("MCP4725 Test");
-#endif
-  // Make sure to calculate correct sum for the very first sample
-  pinMode(mainSwitchPin, INPUT_PULLUP);
-  dac.begin(0x62);
-  dac.setVoltage(dacValue, false); // Just to be on the safe side
-  initializeAverages();
-}
+
 
 // Range for a 12-bit DAC
 static const int32_t dacMinimum        = 0;
@@ -93,6 +81,20 @@ void initializeAverages() {
   }
   potTotal = averageOver * neutralMidPoint;
   oldestPotIndex = 0;
+}
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // Setup so we can read the serial port
+#ifdef DEBUG
+  Serial.begin(9600);
+  Serial.println("MCP4725 Test");
+#endif
+  // Make sure to calculate correct sum for the very first sample
+  pinMode(mainSwitchPin, INPUT_PULLUP);
+  dac.begin(0x62);
+  dac.setVoltage(neutralMidPoint, false); // Just to be on the safe side
+  initializeAverages();
 }
 
 // the loop function runs over and over again forever
