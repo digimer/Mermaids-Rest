@@ -36,8 +36,8 @@ void setup() {
 #endif
   // Make sure to calculate correct sum for the very first sample
   pinMode(mainSwitchPin, INPUT_PULLUP);
-  //dac.begin(0x62);
-  // dac.setVoltage(dacValue, false); // Just to be on the safe side
+  dac.begin(0x62);
+  dac.setVoltage(dacValue, false); // Just to be on the safe side
   initializeAverages();
 }
 
