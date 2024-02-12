@@ -6,12 +6,12 @@
   Mermaid's Rest - Helm Controls
 
   - Madison Kelly - digital.mermaid@gmail.com
-  - Last Updated  - Jan. 27, 2024
+    - Thanks to several contributors!
+  - Last Updated  - Feb. 11, 2024
 
   References and Sources
   - MCP4725 Tutorial - Electronoobs
     - https://www.youtube.com/watch?v=SgPbzAWIwlk
-
 */
 
 // Remove this define in order to stop outputting to serial
@@ -22,26 +22,27 @@ Adafruit_MCP4725 dac;
 #define DAC_RESOLUTION   (9)
 
 // Switches
-static const int32_t mainSwitchPin = 12; // When this switch is open, the motor signal will be set to 2.5v (idle)
+static const int32_t ThrottleStopSwitch = 12; // Sets DAC to 2.5v, sets FootSwitchPin to 0.
+
 
 // the setup function runs once when you press reset or power the board
 void setup() {
   // Setup so we can read the serial port
 #ifdef DEBUG
   Serial.begin(9600);
-  Serial.println("MCP4725 Test");
+  Serial.println("Mermaid's Rest - Helm Controls");
 #endif
   dac.begin(0x62);
 }
 
 // Range for a 12-bit DAC
-static const int32_t dacMinimum        = 0;
-static const int32_t dacMaximum        = 4095;
-static const int32_t dacVoltageMaximum = 5000;
-static const int32_t dacVoltageMinimum = 0;
+static const int32_t dacMinimum        = 4;    // The TPS Dead Low is set to 0.05vDC, 4 == 6.1vDC
+static const int32_t dacMaximum        = 4090; // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
+static const int32_t dacVoltageMaximum = 4950; // Anything above 4.95vDC is considered a shorted throttle
+static const int32_t dacVoltageMinimum = 50;   // Anything below 0.05vDC is considered disconnected throttle
 
 // How long to wait between loops (ms)
-static const int32_t delayTime = 100;
+static const int32_t delayTime = 500;
 
 // How many records to use when calculating our rolling average. This needs to
 // be proportional to 'delayTime'
@@ -84,7 +85,7 @@ int32_t potArray[averageOver];
 // the loop function runs over and over again forever
 void loop() {
   // Read the control switch. If this is LOW, we set the motor control voltage to 2.5v / neutral
-  int32_t mainSwitchVal = digitalRead(mainSwitchPin);
+  int32_t mainSwitchVal = digitalRead(ThrottleStopSwitch);
 
   // Read the helm position potentiometer if the main switch is on
   int32_t sensorValue;
