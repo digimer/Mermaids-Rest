@@ -23,7 +23,7 @@ Adafruit_MCP4725 dac;
 
 // Switches
 static const int32_t ThrottleStopSwitch = 12; // Sets DAC to 2.5v, sets FootSwitchPin to 0.
-
+static const int32_t FootSwitch         = 11; // Used to close the 12v circuit to Kelly Pin 15
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -36,13 +36,14 @@ void setup() {
 }
 
 // Range for a 12-bit DAC
-static const int32_t dacMinimum        = 4;    // The TPS Dead Low is set to 0.05vDC, 4 == 6.1vDC
-static const int32_t dacMaximum        = 4090; // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
-static const int32_t dacVoltageMaximum = 4950; // Anything above 4.95vDC is considered a shorted throttle
-static const int32_t dacVoltageMinimum = 50;   // Anything below 0.05vDC is considered disconnected throttle
+static const int32_t dacMinimum        = 50;     // The TPS Dead Low is set to 0.05vDC, 6 == 5.73vDC
+static const int32_t dacMaximum        = 4054;   // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
+static const int32_t dacVoltageMaximum = 4950;   // Anything above 4.95vDC is considered a shorted throttle
+static const int32_t dacVoltageMinimum = 50;     // Anything below 0.05vDC is considered disconnected throttle
+static const float   stepVoltage       = 1.2207; // mV per step, 1.2207v (5000mv / 4096 steps)
 
 // How long to wait between loops (ms)
-static const int32_t delayTime = 500;
+static const int32_t delayTime = 100;
 
 // How many records to use when calculating our rolling average. This needs to
 // be proportional to 'delayTime'
@@ -82,20 +83,27 @@ int32_t potTotal         = 0;
 int32_t potLoopCount     = 0;
 int32_t potArray[averageOver];
 
+// The foot switch (Kelly pin 15, 12v) needs to be '1' for the throttle to work.
+bool FootSwitchValue = 0;
+
 // the loop function runs over and over again forever
 void loop() {
   // Read the control switch. If this is LOW, we set the motor control voltage to 2.5v / neutral
   int32_t mainSwitchVal = digitalRead(ThrottleStopSwitch);
 
-  // Read the helm position potentiometer if the main switch is on
+  // Read the helm position potentiometer if the main switch is on. The switch goes to '1' if the switch is
+  // disconnected, so we need to see '0' to know the switch is properly engaged.
   int32_t sensorValue;
-  if (mainSwitchVal == 0) {
-    // Switch is off, force the sensorValue to the middle of the neutral range
+  if (mainSwitchVal == 1) {
+    // Switch is on (or disconnected), force the sensorValue to the middle of the neutral range
     sensorValue = neutralMidPoint;
+    // Open the Foot Switch, also
+    FootSwitchValue = 0;
   } else {
     // only read the sensor value if the main switch is on
-    sensorValue = analogRead(A0);
-    sensorValue = constrain(sensorValue, reverseMaximum, forwardMaximum);
+    sensorValue     = analogRead(A0);
+    sensorValue     = constrain(sensorValue, reverseMaximum, forwardMaximum);
+    FootSwitchValue = 1;
   }
 
   // Smooth out the sensorValue over 'averageOver' samples.
@@ -114,30 +122,21 @@ void loop() {
     potTotal = potTotal + potArray[i];
   }
   smoothedPotValue = (int)roundf((float)potTotal / (float)potLoopCount);
-//  Serial.print("Oldest pot Index: [");
-//  Serial.print(oldestPotIndex);
-//  Serial.print("], Sample over: [");
-//  Serial.print(sampleOver);
-//  Serial.print("], loop count: [");
-//  Serial.print(potLoopCount);
-//  Serial.print("], pot total: [");
-//  Serial.print(potTotal);
-//  Serial.print("], smoothed sensor: [");
-//  Serial.print(smoothedPotValue);
-//  Serial.println("]");
 
   int32_t dacValue = dacNeutral;  // Default to 2.5v
   if (smoothedPotValue <= reverseMinimum)
   {
     // 465 = Min Reverse = DAC 1965 = 2358 mV
     // 265 = Max Reverse = DAC    0 -    0 mV
-    dacValue = map(smoothedPotValue, reverseMaximum, reverseMinimum, dacVoltageMinimum, dacNeutralStart);
+    //dacValue = map(smoothedPotValue, reverseMaximum, reverseMinimum, dacVoltageMinimum, dacNeutralStart);
+    dacValue = map(smoothedPotValue, reverseMaximum, reverseMinimum, dacMinimum, dacNeutralStart);
   }
   else if (smoothedPotValue >= forwardMinimum)
   {
     // 750 = Max Forward = DAC 4095 = 4914 mV
     // 550 = Min Forward = DAC 2130 = 2556 mV
-    dacValue = map(smoothedPotValue, forwardMinimum, forwardMaximum, dacNeutralEnd, dacVoltageMaximum);
+    //dacValue = map(smoothedPotValue, forwardMinimum, forwardMaximum, dacNeutralEnd, dacVoltageMaximum);
+    dacValue = map(smoothedPotValue, forwardMinimum, forwardMaximum, dacNeutralEnd, dacMaximum);
   }
   else
   {
@@ -148,17 +147,22 @@ void loop() {
 #ifdef DEBUG
   // -- Here we calculate ranges.
   int32_t IntegerDACValue = roundf(dacValue);
-  int32_t IntegerVoltage  = (IntegerDACValue * 5000) / 4095;
+  int32_t IntegerVoltage  = IntegerDACValue * stepVoltage;
 
-  Serial.print("Switch: [");
+  Serial.print("Switches (Oh poo/foot): [");
   Serial.print(mainSwitchVal);
-  Serial.print("], Raw Sensor: [");
+  Serial.print("/");
+  Serial.print(FootSwitchValue);
+  Serial.print("], Sensor raw/smoothed: [");
   Serial.print(sensorValue);
-  Serial.print("], Smoothed Sensor: [");
+  Serial.print("/");
   Serial.print(smoothedPotValue);
   Serial.print("], DAC: [");
   Serial.print(IntegerDACValue);
   Serial.print("] (");
+  //Serial.print("step voltage: [");
+  //Serial.print(stepVoltage);
+  //Serial.print("], ");
   Serial.print(IntegerVoltage);
   Serial.print(" mV)");
 
@@ -199,6 +203,9 @@ void loop() {
   // Update the DAC
   dacValue = constrain(dacValue, dacMinimum, dacMaximum);
   dac.setVoltage(dacValue, false);
+
+  // Set the Foot Switch
+  //digitalWrite(FootSwitch, FootSwitchValue);
 
   // Read 10/sec
   delay(delayTime);
