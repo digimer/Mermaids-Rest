@@ -22,11 +22,20 @@ Adafruit_MCP4725 RegenDAC;
 // Set this value to 9, 8, 7, 6 or 5 to adjust the resolution
 #define DAC_RESOLUTION   (9)
 
+// Forward declaration of init function
+void initializeAverages();
+
 // Switches
 static const int32_t ThrottleStopSwitch = 12; // Sets DAC to 2.5v, sets FootSwitchPin to 0.
-static const int32_t FootSwitch         = 11; // Used to close the 12v circuit to Kelly Pin 15
-static const int32_t SpeedHigh          = 10; // Used to close the 12v circuit to Kelly Pin 12
-static const int32_t SpeedLow           = 9;  // Used to close the 12v circuit to Kelly Pin 22
+static const int32_t FootSwitchOut      = 11; // Used to close the 12v circuit to Kelly Pin 15
+static const int32_t SpeedHighSwitchIn  = 10; // Read physical switch for high speed
+static const int32_t SpeedLowSwitchIn   = 9;  // Read physical switch for Low speed
+static const int32_t SpeedHighSwitchOut = 8;  // Used to close the 12v circuit to Kelly Pin 12
+static const int32_t SpeedLowSwitchOut  = 7;  // Used to close the 12v circuit to Kelly Pin 22
+
+// Inputs
+static const int32_t ThrottleInput = A0;
+static const int32_t RegenInput    = A1;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -37,16 +46,17 @@ void setup() {
 #endif
   ThrottleDAC.begin(0x62); // Leave default
   RegenDAC.begin(0x63);    // Tie Regen DAC's A0 to VDD to
+  initializeAverages();
 }
 
 // Range for the Throttle's 12-bit DAC
-static const int32_t ThrottleDACMinimum  = 50;     // The TPS Dead Low is set to 0.05vDC, 6 == 5.73vDC
-static const int32_t ThrottleDACMaximum  = 4054;   // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
+static const int32_t ThrottleDACMinimum  = 6;     // The TPS Dead Low is set to 0.05vDC, 6 == 5.73vDC
+static const int32_t ThrottleDACMaximum  = 4090;   // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
 static const float   ThrottleStepVoltage = 1.2207; // mV per step, 1.2207v (5000mv / 4096 steps)
 
 // Range for the Regen's 12-bit DAC
-static const int32_t RegenDACMinimum  = 50;     // The TPS Dead Low is set to 0.05vDC, 6 == 5.73vDC
-static const int32_t RegenDACMaximum  = 4054;   // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
+static const int32_t RegenDACMinimum  = 6;     // The TPS Dead Low is set to 0.05vDC, 6 == 5.73vDC
+static const int32_t RegenDACMaximum  = 4090;   // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
 static const float   RegenStepVoltage = 1.2207; // mV per step, 1.2207v (5000mv / 4096 steps)
 
 // How long to wait between loops (ms)
@@ -55,6 +65,7 @@ static const int32_t delayTime = 100;
 // How many records to use when calculating our rolling average. This needs to
 // be proportional to 'delayTime'
 static const int32_t ThrottleAverageOver = 32;
+static const int32_t RegenAverageOver    = 32;
 
 // These might need to be tuned per helm control
 static const int32_t ThrottleDACNeutral      = 2010;    // Tested on this DAC, not mathmatically accurate
@@ -62,155 +73,224 @@ static const int32_t ThrottleDACNeutralStart = 1965;
 static const int32_t ThrottleDACNeutralEnd   = 2130;
 
 // -- Potentiometer values as read by digitalRead()
+// Regen is simple
+static const int32_t RegenPotMinimum = 0;
+static const int32_t RegenPotMaximum = 1023;
+
 // Reverse starts at high pot and counts down
-static const int32_t reverseMaximum = 265;
-static const int32_t reverseMinimum = 465;
+static const int32_t ThrottleReverseMaximum = 265;
+static const int32_t ThrottleReverseMinimum = 465;
 
 // Forward starts at low pot and counts up
-static const int32_t forwardMinimum = 550;
-static const int32_t forwardMaximum = 750;
+static const int32_t ThrottleForwardMinimum = 550;
+static const int32_t ThrottleForwardMaximum = 750;
 
 // Reverse starts at high pot and counts down
-static const int32_t reverseSensorSteps = (reverseMinimum - reverseMaximum);
-static const int32_t forwardSensorSteps = (forwardMaximum - forwardMinimum);
+static const int32_t reverseSensorSteps = (ThrottleReverseMinimum - ThrottleReverseMaximum);
+static const int32_t forwardSensorSteps = (ThrottleForwardMaximum - ThrottleForwardMinimum);
 
 // Calculate the nuetral range midpoint
-static const int32_t neutralMidPoint = (reverseMinimum + forwardMinimum)/2;
+static const int32_t neutralMidPoint = int(((ThrottleForwardMinimum - ThrottleReverseMinimum) / 2) + ThrottleReverseMinimum);
 
 // This is for showing percentages.
 static const int32_t reversePercentSteps = 100 / reverseSensorSteps;
 static const int32_t forwardPercentSteps = 100 / forwardSensorSteps;
 
-// This is used to know how many samples we have in our rolling average. It's
-// main use is to deal with start-up when we don't yet have a full array.
-int32_t sampleOver               = 0;
-int32_t ThrottleSmoothedPotValue = 0;
-int32_t oldestPotIndex           = 0;  // This is the array index with the oldest value
-int32_t potTotal                 = 0;
-int32_t potLoopCount             = 0;
-int32_t potArray[ThrottleAverageOver];
+// This averages the last 'ThrottleAverageOver' throttle reads to create a smoothed average
+int32_t ThrottleSmoothedPotValue = neutralMidPoint;
+int32_t ThrottleOldestPotIndex   = 0;  // This is the array index with the oldest value
+int32_t ThrottlePotTotal         = 0;
+int32_t ThrottlePotArray[ThrottleAverageOver];
+
+// Same, but for regen smoothing now
+int32_t RegenSmoothedPotValue = 0;
+int32_t RegenOldestPotIndex   = 0;  // This is the array index with the oldest value
+int32_t RegenPotTotal         = 0;
+int32_t RegenPotArray[RegenAverageOver];
+
+// Prepopulate the arrays.
+void initializeAverages() {
+  // First, throttle
+  for (byte i = 0; i < ThrottleAverageOver; i = i + 1) {
+    ThrottlePotArray[i] = neutralMidPoint;
+ }
+  ThrottleOldestPotIndex = 0;
+  
+  // Now regen.
+  for (byte i = 0; i < RegenAverageOver; i = i + 1) {
+    RegenPotArray[i] = RegenPotMinimum;
+  }
+  ThrottleOldestPotIndex = 0;
+}
 
 // The foot switch (Kelly pin 15, 12v) needs to be '1' for the throttle to work.
 bool FootSwitchValue = 0;
 
+// The speed switch values (formerly F-N-R). Both off is mid speed (or neutral).
+bool SpeedHighSwitchValue = 0;
+bool SpeedLowSwitchValue  = 0;
+
+// ====== Main Loop
 // the loop function runs over and over again forever
 void loop() {
-  // Read the control switch. If this is LOW, we set the motor control voltage to 2.5v / neutral
-  int32_t mainSwitchVal = digitalRead(ThrottleStopSwitch);
 
-  // Read the helm position potentiometer if the main switch is on. The switch goes to '1' if the switch is
-  // disconnected, so we need to see '0' to know the switch is properly engaged.
-  int32_t sensorValue;
-  if (mainSwitchVal == 1) {
-    // Switch is on (or disconnected), force the sensorValue to the middle of the neutral range
-    sensorValue = neutralMidPoint;
+  // Read the control switch. If this is LOW, we set the motor control voltage to 2.5v / neutral
+  int32_t mainSwitchValue = digitalRead(ThrottleStopSwitch);
+  
+  // These will be set if either pin is high. If neither are high, the controller treats it as mid-speed if
+  // he controller has been configured for joystick mode, or neutral if in the default 'F-N-R' mode. We
+  // always default to neural / mid as it's safest.
+  SpeedHighSwitchValue = 0;
+  SpeedLowSwitchValue  = 0;
+
+  // Read the helm throttle position and regen potentiometers if the main switch is on. The switch goes to
+  //'1' if the switch is disconnected, so we need to see '0' to know the switch is properly engaged.
+  int32_t ThrottlePotValue;
+  int32_t RegenPotValue;
+  if (mainSwitchValue == 1) {
+    // Switch is on (or disconnected), force the ThrottlePotValue to the middle of the neutral range
+    ThrottlePotValue = neutralMidPoint;
     // Open the Foot Switch, also
     FootSwitchValue = 0;
   } else {
     // only read the sensor value if the main switch is on
-    sensorValue     = analogRead(A0);
-    sensorValue     = constrain(sensorValue, reverseMaximum, forwardMaximum);
-    FootSwitchValue = 1;
+    RegenPotValue        = analogRead(RegenInput);
+    ThrottlePotValue     = analogRead(ThrottleInput);
+    SpeedHighSwitchValue = digitalRead(SpeedHighSwitchIn);
+    SpeedLowSwitchValue  = digitalRead(SpeedLowSwitchIn);
+    FootSwitchValue      = 1;
+    ThrottlePotValue     = constrain(ThrottlePotValue, ThrottleReverseMaximum, ThrottleForwardMaximum);
+    RegenPotValue        = constrain(RegenPotValue, RegenPotMinimum, RegenPotMaximum);
+    
+    // If both switches are 1, treat it like a fault.
+    if ((SpeedLowSwitchValue == 1) && (SpeedHighSwitchValue == 1)) {
+      // TODO: Add an alert here
+      SpeedHighSwitchValue = 0;
+      SpeedLowSwitchValue  = 0;
+    }
   }
 
-  // Smooth out the sensorValue over 'ThrottleAverageOver' samples.
-  potArray[oldestPotIndex] = sensorValue;
-  oldestPotIndex = oldestPotIndex + 1;
-  if (oldestPotIndex >= ThrottleAverageOver) {
-    oldestPotIndex = 0;
+  // Smooth out the ThrottlePotValue over 'ThrottleAverageOver' samples.
+  ThrottlePotArray[ThrottleOldestPotIndex] = ThrottlePotValue;
+  ThrottleOldestPotIndex = ThrottleOldestPotIndex + 1;
+  if (ThrottleOldestPotIndex >= ThrottleAverageOver) {
+    ThrottleOldestPotIndex = 0;
   }
-  potLoopCount = ThrottleAverageOver;
-  if (sampleOver < ThrottleAverageOver){
-    sampleOver++;
-    potLoopCount = sampleOver;
+  ThrottlePotTotal = 0;
+  for (byte i = 0; i < ThrottleAverageOver; i = i + 1) {
+    ThrottlePotTotal = ThrottlePotTotal + ThrottlePotArray[i];
   }
-  potTotal = 0;
-  for (byte i = 0; i < potLoopCount; i = i + 1) {
-    potTotal = potTotal + potArray[i];
+  ThrottleSmoothedPotValue = (int)roundf((float)ThrottlePotTotal / (float)ThrottleAverageOver);
+
+  // And now the regen
+  RegenPotArray[RegenOldestPotIndex] = RegenPotValue;
+  RegenOldestPotIndex = RegenOldestPotIndex + 1;
+  if (RegenOldestPotIndex >= RegenAverageOver) {
+    RegenOldestPotIndex = 0;
   }
-  ThrottleSmoothedPotValue = (int)roundf((float)potTotal / (float)potLoopCount);
+  RegenPotTotal = 0;
+  for (byte i = 0; i < RegenAverageOver; i = i + 1) {
+    RegenPotTotal = RegenPotTotal + RegenPotArray[i];
+  }
+  RegenSmoothedPotValue = (int)roundf((float)RegenPotTotal / (float)RegenAverageOver);
 
   int32_t ThrottleDACValue = ThrottleDACNeutral;  // Default to 2.5v
-  if (ThrottleSmoothedPotValue <= reverseMinimum)
-  {
-    // 465 = Min Reverse = DAC 1965 = 2358 mV
-    // 265 = Max Reverse = DAC    0 -    0 mV
-    ThrottleDACValue = map(ThrottleSmoothedPotValue, reverseMaximum, reverseMinimum, ThrottleDACMinimum, ThrottleDACNeutralStart);
-  }
-  else if (ThrottleSmoothedPotValue >= forwardMinimum)
-  {
-    // 750 = Max Forward = DAC 4095 = 4914 mV
-    // 550 = Min Forward = DAC 2130 = 2556 mV
-    ThrottleDACValue = map(ThrottleSmoothedPotValue, forwardMinimum, forwardMaximum, ThrottleDACNeutralEnd, ThrottleDACMaximum);
-  }
-  else
-  {
+  if (ThrottleSmoothedPotValue <= ThrottleReverseMinimum) {
+    // We're going in reverse, the lower the dac, the lower the voltage, the lower the speed.
+    // ThrottleReverseMaximum is the lowest dac value
+    // ThrottleReverseMinimum is the highest dac value
+    // ThrottleDACMinimum is 0v, max reverse
+    // NeutralStart is 2.4v the start of reverse
+    //                                               from low                from high               to low                   to high
+    ThrottleDACValue = map(ThrottleSmoothedPotValue, ThrottleReverseMaximum, ThrottleReverseMinimum, ThrottleDACNeutralStart, ThrottleDACMinimum);
+  } else if (ThrottleSmoothedPotValue >= ThrottleForwardMinimum) {
+    // ThrottleForwardMinimum is the lowest dac value
+    // ThrottleForwardMaximum is the highest dac value
+    // ThrottleDACNeutralEnd is 2.6v, minimum forward
+    // ThrottleDACMaximum is 5v, maximum forward
+    // We're going forward, the higher the dac, the higher the voltage, the higher the speed
+    //                                               from low                from high               to low                 to high (NeutralEnd is the start if forward)
+    ThrottleDACValue = map(ThrottleSmoothedPotValue, ThrottleForwardMinimum, ThrottleForwardMaximum, ThrottleDACNeutralEnd, ThrottleDACMaximum);
+  } else {
     // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
     ThrottleDACValue = ThrottleDACNeutral;
   }
+  
+  // Convert the Regen Pot value to a DAC value
+  int32_t RegenDACValue = map(RegenSmoothedPotValue, RegenPotMinimum, RegenPotMaximum, RegenDACMinimum, RegenDACMaximum);
+
+  int32_t IntegerThrottleDACValue = roundf(ThrottleDACValue);
+  int32_t IntegerRegenDACValue    = roundf(RegenDACValue);
+  
+  int32_t IntegerThrottleVoltage  = IntegerThrottleDACValue * ThrottleStepVoltage;
+  int32_t IntegerRegenVoltage  = IntegerRegenDACValue * RegenStepVoltage;
+  
+  // These are the values we'll send to the DAC
+  //ThrottleDACValue = constrain(IntegerThrottleDACValue, ThrottleDACMinimum, ThrottleDACMaximum);
+  //RegenDACValue    = constrain(RegenDACValue, RegenDACMinimum, RegenDACMaximum);
 
 #ifdef DEBUG
-  // -- Here we calculate ranges.
-  int32_t IntegerDACValue = roundf(ThrottleDACValue);
-  int32_t IntegerVoltage  = IntegerDACValue * ThrottleStepVoltage;
 
-  Serial.print("Switches (Oh poo/foot): [");
-  Serial.print(mainSwitchVal);
+  Serial.print("Switches (Main/foot/high/low): [");
+  Serial.print(mainSwitchValue);
   Serial.print("/");
   Serial.print(FootSwitchValue);
-  Serial.print("], Sensor raw/smoothed: [");
-  Serial.print(sensorValue);
+  Serial.print("/");
+  Serial.print(SpeedHighSwitchValue);
+  Serial.print("/");
+  Serial.print(SpeedLowSwitchValue);
+  Serial.print("], TPS (r/s): [");
+  Serial.print(ThrottlePotValue);
   Serial.print("/");
   Serial.print(ThrottleSmoothedPotValue);
-  Serial.print("], DAC: [");
-  Serial.print(IntegerDACValue);
+  Serial.print("], TPS DAC: [");
+  Serial.print(ThrottleDACValue);
   Serial.print("] (");
-  //Serial.print("step voltage: [");
-  //Serial.print(ThrottleStepVoltage);
-  //Serial.print("], ");
-  Serial.print(IntegerVoltage);
+  Serial.print(IntegerThrottleVoltage);
+  Serial.print(" mV), Regen (r/s): [");
+  Serial.print(RegenPotValue);
+  Serial.print("/");
+  Serial.print(ThrottleSmoothedPotValue);
+  Serial.print("], Regen DAC: [");
+  Serial.print(IntegerRegenDACValue);
+  Serial.print("] (");
+  Serial.print(IntegerRegenVoltage);
   Serial.print(" mV)");
 
-  if (ThrottleSmoothedPotValue <= reverseMaximum)
-  {
+  // Throttle Position Reporting
+  if (ThrottleSmoothedPotValue <= ThrottleReverseMaximum) {
     Serial.print(" - Reverse 100%");
-  }
-  else if (ThrottleSmoothedPotValue >= forwardMaximum)
-  {
+  } else if (ThrottleSmoothedPotValue >= ThrottleForwardMaximum) {
     Serial.print(" - Forward 100%");
-  }
-  else if ((ThrottleSmoothedPotValue >= reverseMaximum) && (ThrottleSmoothedPotValue <= reverseMinimum))
-  {
-    int32_t range      = reverseMinimum - reverseMaximum;
-    int32_t position   = ThrottleSmoothedPotValue - reverseMinimum;
+  } else if ((ThrottleSmoothedPotValue >= ThrottleReverseMaximum) && (ThrottleSmoothedPotValue <= ThrottleReverseMinimum)) {
+    int32_t range      = ThrottleReverseMinimum - ThrottleReverseMaximum;
+    int32_t position   = ThrottleSmoothedPotValue - ThrottleReverseMinimum;
     int32_t percentage = -(int)roundf(((float)position / (float)range) * 100.0f);
     Serial.print(" - Reverse ");
     Serial.print(percentage);
     Serial.print("%");
-  }
-  else if ((ThrottleSmoothedPotValue >= forwardMinimum) && (ThrottleSmoothedPotValue <= forwardMaximum))
-  {
-    int32_t range      = forwardMaximum - forwardMinimum;
-    int32_t position   = ThrottleSmoothedPotValue - forwardMinimum;
+  } else if ((ThrottleSmoothedPotValue >= ThrottleForwardMinimum) && (ThrottleSmoothedPotValue <= ThrottleForwardMaximum)) {
+    int32_t range      = ThrottleForwardMaximum - ThrottleForwardMinimum;
+    int32_t position   = ThrottleSmoothedPotValue - ThrottleForwardMinimum;
     int32_t percentage = (int)roundf(((float)position / (float)range) * 100.0f);
     Serial.print(" - Forward ");
     Serial.print(percentage);
     Serial.print("%");
-  }
-  else
-  {
+  } else {
     Serial.print(" - Neutral");
   }
 
   Serial.println("");
- #endif
+#endif
 
-  // Update the DAC
-  ThrottleDACValue = constrain(ThrottleDACValue, ThrottleDACMinimum, ThrottleDACMaximum);
+  // Update the DACs
   ThrottleDAC.setVoltage(ThrottleDACValue, false);
+  RegenDAC.setVoltage(RegenDACValue, false);
 
   // Set the Foot Switch
-  //digitalWrite(FootSwitch, FootSwitchValue);
+  digitalWrite(FootSwitchOut,      FootSwitchValue);
+  digitalWrite(SpeedHighSwitchOut, SpeedHighSwitchValue);
+  digitalWrite(SpeedLowSwitchOut,  SpeedLowSwitchValue);
 
   // Read 10/sec
   delay(delayTime);
