@@ -54,9 +54,10 @@ static const int32_t ThrottleDACMinimum  = 6;     // The TPS Dead Low is set to 
 static const int32_t ThrottleDACMaximum  = 4090;   // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
 static const float   ThrottleStepVoltage = 1.2207; // mV per step, 1.2207v (5000mv / 4096 steps)
 
+// TODO: Regen / brake thinks full clockwise / 0v is "brake off". Also, the regen dead high/low has a limit of 95/5, not 99/1.
 // Range for the Regen's 12-bit DAC
-static const int32_t RegenDACMinimum  = 6;     // The TPS Dead Low is set to 0.05vDC, 6 == 5.73vDC
-static const int32_t RegenDACMaximum  = 4090;   // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
+static const int32_t RegenDACMinimum  = 20;     // The TPS Dead Low is set to 0.25vDC, 20 == 25.64 mvDC
+static const int32_t RegenDACMaximum  = 4074;   // The TPS Dead High is set to 4.75vDC, 4074 == 4973.12 mvDC
 static const float   RegenStepVoltage = 1.2207; // mV per step, 1.2207v (5000mv / 4096 steps)
 
 // How long to wait between loops (ms)
