@@ -121,7 +121,8 @@ void initializeAverages() {
   for (byte i = 0; i < RegenAverageOver; i = i + 1) {
     RegenPotArray[i] = RegenPotMinimum;
   }
-  ThrottleOldestPotIndex = 0;
+  T
+RegenOldestPotIndex = 0;
 }
 
 // The foot switch (Kelly pin 15, 12v) needs to be '1' for the throttle to work.
