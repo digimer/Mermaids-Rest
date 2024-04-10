@@ -1,0 +1,276 @@
+ARM GAS  /tmp/ccNYqZdg.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.arch armv6s-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.file	"ioctl.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Core/Src/ioctl.c"
+  18              		.section	.text.ioctl_init,"ax",%progbits
+  19              		.align	1
+  20              		.global	ioctl_init
+  21              		.syntax unified
+  22              		.code	16
+  23              		.thumb_func
+  25              	ioctl_init:
+  26              	.LFB40:
+   1:Core/Src/ioctl.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/ioctl.c **** /**
+   3:Core/Src/ioctl.c ****   ******************************************************************************
+   4:Core/Src/ioctl.c ****   * @file           : ioctl.c
+   5:Core/Src/ioctl.c ****   * @brief          : I/O Control Setup
+   6:Core/Src/ioctl.c ****   ******************************************************************************
+   7:Core/Src/ioctl.c ****   * @attention
+   8:Core/Src/ioctl.c ****   *
+   9:Core/Src/ioctl.c ****   * Copyright (c) 2024 The Digital Mermaid.
+  10:Core/Src/ioctl.c ****   * All rights reserved.
+  11:Core/Src/ioctl.c ****   *
+  12:Core/Src/ioctl.c ****   * This software is licensed under the GPL v3, the terms can be found in the 
+  13:Core/Src/ioctl.c ****   * LICENSE file in the root directory of this software component.
+  14:Core/Src/ioctl.c ****   *
+  15:Core/Src/ioctl.c ****   ******************************************************************************
+  16:Core/Src/ioctl.c ****   */
+  17:Core/Src/ioctl.c **** 
+  18:Core/Src/ioctl.c **** #include "main.h"
+  19:Core/Src/ioctl.c **** #include "ioctl.h"
+  20:Core/Src/ioctl.c **** #include "config.h"
+  21:Core/Src/ioctl.c **** 
+  22:Core/Src/ioctl.c **** extern ADC_HandleTypeDef hadc;
+  23:Core/Src/ioctl.c **** 
+  24:Core/Src/ioctl.c **** struct ioctl_state {
+  25:Core/Src/ioctl.c ****   uint16_t adc_raw_vals[ADC_NUM_CHANS];
+  26:Core/Src/ioctl.c ****   uint16_t pot_vals[ADC_NUM_CHANS];
+  27:Core/Src/ioctl.c **** };
+  28:Core/Src/ioctl.c **** 
+  29:Core/Src/ioctl.c **** struct ioctl_state ios;
+  30:Core/Src/ioctl.c **** 
+  31:Core/Src/ioctl.c **** void ioctl_init(void) {
+  27              		.loc 1 31 23 view -0
+ARM GAS  /tmp/ccNYqZdg.s 			page 2
+
+
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 10B5     		push	{r4, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  32:Core/Src/ioctl.c ****   int i;
+  36              		.loc 1 32 3 view .LVU1
+  33:Core/Src/ioctl.c ****   for(i = 0; i < ADC_NUM_CHANS; i++) {
+  37              		.loc 1 33 3 view .LVU2
+  38              	.LVL0:
+  39              		.loc 1 33 9 is_stmt 0 view .LVU3
+  40 0002 0022     		movs	r2, #0
+  41              		.loc 1 33 3 view .LVU4
+  42 0004 05E0     		b	.L2
+  43              	.LVL1:
+  44              	.L3:
+  34:Core/Src/ioctl.c ****     ios.pot_vals[i] = 0;
+  45              		.loc 1 34 5 is_stmt 1 view .LVU5
+  46              		.loc 1 34 21 is_stmt 0 view .LVU6
+  47 0006 074B     		ldr	r3, .L4
+  48 0008 5100     		lsls	r1, r2, #1
+  49 000a 5B18     		adds	r3, r3, r1
+  50 000c 0021     		movs	r1, #0
+  51 000e 9980     		strh	r1, [r3, #4]
+  33:Core/Src/ioctl.c ****   for(i = 0; i < ADC_NUM_CHANS; i++) {
+  52              		.loc 1 33 34 is_stmt 1 discriminator 3 view .LVU7
+  53 0010 0132     		adds	r2, r2, #1
+  54              	.LVL2:
+  55              	.L2:
+  33:Core/Src/ioctl.c ****   for(i = 0; i < ADC_NUM_CHANS; i++) {
+  56              		.loc 1 33 16 discriminator 1 view .LVU8
+  57 0012 012A     		cmp	r2, #1
+  58 0014 F7DD     		ble	.L3
+  35:Core/Src/ioctl.c ****   }
+  36:Core/Src/ioctl.c ****   HAL_ADC_Start_DMA(&hadc, (uint32_t *)ios.adc_raw_vals, ADC_NUM_CHANS);
+  59              		.loc 1 36 3 view .LVU9
+  60 0016 0349     		ldr	r1, .L4
+  61 0018 0348     		ldr	r0, .L4+4
+  62 001a 0222     		movs	r2, #2
+  63              	.LVL3:
+  64              		.loc 1 36 3 is_stmt 0 view .LVU10
+  65 001c FFF7FEFF 		bl	HAL_ADC_Start_DMA
+  66              	.LVL4:
+  37:Core/Src/ioctl.c **** }
+  67              		.loc 1 37 1 view .LVU11
+  68              		@ sp needed
+  69 0020 10BD     		pop	{r4, pc}
+  70              	.L5:
+  71 0022 C046     		.align	2
+  72              	.L4:
+  73 0024 00000000 		.word	ios
+  74 0028 00000000 		.word	hadc
+  75              		.cfi_endproc
+  76              	.LFE40:
+ARM GAS  /tmp/ccNYqZdg.s 			page 3
+
+
+  78              		.section	.text.ioctl_get_pot,"ax",%progbits
+  79              		.align	1
+  80              		.global	ioctl_get_pot
+  81              		.syntax unified
+  82              		.code	16
+  83              		.thumb_func
+  85              	ioctl_get_pot:
+  86              	.LVL5:
+  87              	.LFB41:
+  38:Core/Src/ioctl.c **** 
+  39:Core/Src/ioctl.c **** // Get the requested pot value
+  40:Core/Src/ioctl.c **** uint16_t ioctl_get_pot(uint8_t chan) {
+  88              		.loc 1 40 38 is_stmt 1 view -0
+  89              		.cfi_startproc
+  90              		@ args = 0, pretend = 0, frame = 0
+  91              		@ frame_needed = 0, uses_anonymous_args = 0
+  92              		@ link register save eliminated.
+  41:Core/Src/ioctl.c ****   if (chan >= IOCTL_NUM_POTS) {
+  93              		.loc 1 41 3 view .LVU13
+  94              		.loc 1 41 6 is_stmt 0 view .LVU14
+  95 0000 0128     		cmp	r0, #1
+  96 0002 04D8     		bhi	.L8
+  42:Core/Src/ioctl.c ****     return 0;
+  43:Core/Src/ioctl.c ****   }
+  44:Core/Src/ioctl.c ****   return ios.pot_vals[chan];
+  97              		.loc 1 44 3 is_stmt 1 view .LVU15
+  98              		.loc 1 44 22 is_stmt 0 view .LVU16
+  99 0004 034B     		ldr	r3, .L9
+ 100 0006 4000     		lsls	r0, r0, #1
+ 101              	.LVL6:
+ 102              		.loc 1 44 22 view .LVU17
+ 103 0008 1B18     		adds	r3, r3, r0
+ 104 000a 9888     		ldrh	r0, [r3, #4]
+ 105              	.L7:
+  45:Core/Src/ioctl.c **** }
+ 106              		.loc 1 45 1 view .LVU18
+ 107              		@ sp needed
+ 108 000c 7047     		bx	lr
+ 109              	.LVL7:
+ 110              	.L8:
+  42:Core/Src/ioctl.c ****     return 0;
+ 111              		.loc 1 42 12 view .LVU19
+ 112 000e 0020     		movs	r0, #0
+ 113              	.LVL8:
+  42:Core/Src/ioctl.c ****     return 0;
+ 114              		.loc 1 42 12 view .LVU20
+ 115 0010 FCE7     		b	.L7
+ 116              	.L10:
+ 117 0012 C046     		.align	2
+ 118              	.L9:
+ 119 0014 00000000 		.word	ios
+ 120              		.cfi_endproc
+ 121              	.LFE41:
+ 123              		.section	.text.HAL_ADC_ConvCpltCallback,"ax",%progbits
+ 124              		.align	1
+ 125              		.global	HAL_ADC_ConvCpltCallback
+ 126              		.syntax unified
+ARM GAS  /tmp/ccNYqZdg.s 			page 4
+
+
+ 127              		.code	16
+ 128              		.thumb_func
+ 130              	HAL_ADC_ConvCpltCallback:
+ 131              	.LVL9:
+ 132              	.LFB42:
+  46:Core/Src/ioctl.c **** 
+  47:Core/Src/ioctl.c **** //
+  48:Core/Src/ioctl.c **** // Callbacks
+  49:Core/Src/ioctl.c **** //
+  50:Core/Src/ioctl.c **** void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
+ 133              		.loc 1 50 56 is_stmt 1 view -0
+ 134              		.cfi_startproc
+ 135              		@ args = 0, pretend = 0, frame = 0
+ 136              		@ frame_needed = 0, uses_anonymous_args = 0
+ 137              		@ link register save eliminated.
+  51:Core/Src/ioctl.c ****   int i;
+ 138              		.loc 1 51 3 view .LVU22
+  52:Core/Src/ioctl.c ****   for(i = 0; i < ADC_NUM_CHANS; i++) {
+ 139              		.loc 1 52 3 view .LVU23
+ 140              		.loc 1 52 9 is_stmt 0 view .LVU24
+ 141 0000 0022     		movs	r2, #0
+ 142              		.loc 1 52 3 view .LVU25
+ 143 0002 05E0     		b	.L12
+ 144              	.LVL10:
+ 145              	.L13:
+  53:Core/Src/ioctl.c ****     ios.pot_vals[i] = ios.adc_raw_vals[i];
+ 146              		.loc 1 53 5 is_stmt 1 view .LVU26
+ 147              		.loc 1 53 39 is_stmt 0 view .LVU27
+ 148 0004 044B     		ldr	r3, .L14
+ 149 0006 5100     		lsls	r1, r2, #1
+ 150 0008 C85A     		ldrh	r0, [r1, r3]
+ 151              		.loc 1 53 21 view .LVU28
+ 152 000a 5B18     		adds	r3, r3, r1
+ 153 000c 9880     		strh	r0, [r3, #4]
+  52:Core/Src/ioctl.c ****   for(i = 0; i < ADC_NUM_CHANS; i++) {
+ 154              		.loc 1 52 34 is_stmt 1 discriminator 3 view .LVU29
+ 155 000e 0132     		adds	r2, r2, #1
+ 156              	.LVL11:
+ 157              	.L12:
+  52:Core/Src/ioctl.c ****   for(i = 0; i < ADC_NUM_CHANS; i++) {
+ 158              		.loc 1 52 16 discriminator 1 view .LVU30
+ 159 0010 012A     		cmp	r2, #1
+ 160 0012 F7DD     		ble	.L13
+  54:Core/Src/ioctl.c ****   }
+  55:Core/Src/ioctl.c **** }
+ 161              		.loc 1 55 1 is_stmt 0 view .LVU31
+ 162              		@ sp needed
+ 163 0014 7047     		bx	lr
+ 164              	.L15:
+ 165 0016 C046     		.align	2
+ 166              	.L14:
+ 167 0018 00000000 		.word	ios
+ 168              		.cfi_endproc
+ 169              	.LFE42:
+ 171              		.global	ios
+ 172              		.section	.bss.ios,"aw",%nobits
+ 173              		.align	2
+ARM GAS  /tmp/ccNYqZdg.s 			page 5
+
+
+ 176              	ios:
+ 177 0000 00000000 		.space	8
+ 177      00000000 
+ 178              		.text
+ 179              	.Letext0:
+ 180              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 181              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 182              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h"
+ 183              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h"
+ 184              		.file 6 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
+ 185              		.file 7 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h"
+ 186              		.file 8 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc.h"
+ 187              		.file 9 "Core/Inc/ioctl.h"
+ARM GAS  /tmp/ccNYqZdg.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 ioctl.c
+     /tmp/ccNYqZdg.s:19     .text.ioctl_init:00000000 $t
+     /tmp/ccNYqZdg.s:25     .text.ioctl_init:00000000 ioctl_init
+     /tmp/ccNYqZdg.s:73     .text.ioctl_init:00000024 $d
+     /tmp/ccNYqZdg.s:176    .bss.ios:00000000 ios
+     /tmp/ccNYqZdg.s:79     .text.ioctl_get_pot:00000000 $t
+     /tmp/ccNYqZdg.s:85     .text.ioctl_get_pot:00000000 ioctl_get_pot
+     /tmp/ccNYqZdg.s:119    .text.ioctl_get_pot:00000014 $d
+     /tmp/ccNYqZdg.s:124    .text.HAL_ADC_ConvCpltCallback:00000000 $t
+     /tmp/ccNYqZdg.s:130    .text.HAL_ADC_ConvCpltCallback:00000000 HAL_ADC_ConvCpltCallback
+     /tmp/ccNYqZdg.s:167    .text.HAL_ADC_ConvCpltCallback:00000018 $d
+     /tmp/ccNYqZdg.s:173    .bss.ios:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_ADC_Start_DMA
+hadc
