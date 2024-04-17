@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccGscW5H.s 			page 1
+ARM GAS  /tmp/ccGP2Jql.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
   30:Core/Src/stm32f0xx_hal_msp.c **** /* Private typedef -----------------------------------------------------------*/
   31:Core/Src/stm32f0xx_hal_msp.c **** /* USER CODE BEGIN TD */
   32:Core/Src/stm32f0xx_hal_msp.c **** 
-ARM GAS  /tmp/ccGscW5H.s 			page 2
+ARM GAS  /tmp/ccGP2Jql.s 			page 2
 
 
   33:Core/Src/stm32f0xx_hal_msp.c **** /* USER CODE END TD */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
   39 0002 0A4B     		ldr	r3, .L2
   40 0004 9969     		ldr	r1, [r3, #24]
   41 0006 0122     		movs	r2, #1
-ARM GAS  /tmp/ccGscW5H.s 			page 3
+ARM GAS  /tmp/ccGP2Jql.s 			page 3
 
 
   42 0008 1143     		orrs	r1, r2
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
   83:Core/Src/stm32f0xx_hal_msp.c **** 
   84:Core/Src/stm32f0xx_hal_msp.c **** /**
   85:Core/Src/stm32f0xx_hal_msp.c **** * @brief ADC MSP Initialization
-ARM GAS  /tmp/ccGscW5H.s 			page 4
+ARM GAS  /tmp/ccGP2Jql.s 			page 4
 
 
   86:Core/Src/stm32f0xx_hal_msp.c **** * This function configures the hardware resources used in this example
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  109:Core/Src/stm32f0xx_hal_msp.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
  110:Core/Src/stm32f0xx_hal_msp.c **** 
  111:Core/Src/stm32f0xx_hal_msp.c ****     /* ADC1 DMA Init */
-ARM GAS  /tmp/ccGscW5H.s 			page 5
+ARM GAS  /tmp/ccGP2Jql.s 			page 5
 
 
  112:Core/Src/stm32f0xx_hal_msp.c ****     /* ADC Init */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
   99:Core/Src/stm32f0xx_hal_msp.c **** 
  146              		.loc 1 99 5 view .LVU29
  101:Core/Src/stm32f0xx_hal_msp.c ****     /**ADC GPIO Configuration
-ARM GAS  /tmp/ccGscW5H.s 			page 6
+ARM GAS  /tmp/ccGP2Jql.s 			page 6
 
 
  147              		.loc 1 101 5 view .LVU30
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  186 005a 4360     		str	r3, [r0, #4]
  115:Core/Src/stm32f0xx_hal_msp.c ****     hdma_adc.Init.MemInc = DMA_MINC_ENABLE;
  187              		.loc 1 115 5 is_stmt 1 view .LVU46
-ARM GAS  /tmp/ccGscW5H.s 			page 7
+ARM GAS  /tmp/ccGP2Jql.s 			page 7
 
 
  115:Core/Src/stm32f0xx_hal_msp.c ****     hdma_adc.Init.MemInc = DMA_MINC_ENABLE;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  225 0082 5C62     		str	r4, [r3, #36]
  126:Core/Src/stm32f0xx_hal_msp.c **** 
  226              		.loc 1 126 5 view .LVU64
-ARM GAS  /tmp/ccGscW5H.s 			page 8
+ARM GAS  /tmp/ccGP2Jql.s 			page 8
 
 
  129:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_EnableIRQ(ADC1_IRQn);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  271              		.cfi_def_cfa_offset 8
  272              		.cfi_offset 4, -8
  273              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccGscW5H.s 			page 9
+ARM GAS  /tmp/ccGP2Jql.s 			page 9
 
 
  274 0002 0400     		movs	r4, r0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  300              		.loc 1 157 5 is_stmt 0 view .LVU78
  301 001a 0321     		movs	r1, #3
  302 001c C005     		lsls	r0, r0, #23
-ARM GAS  /tmp/ccGscW5H.s 			page 10
+ARM GAS  /tmp/ccGP2Jql.s 			page 10
 
 
  303 001e FFF7FEFF 		bl	HAL_GPIO_DeInit
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  179:Core/Src/stm32f0xx_hal_msp.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
  348              		.loc 1 179 3 is_stmt 1 view .LVU84
  349              		.loc 1 179 20 is_stmt 0 view .LVU85
-ARM GAS  /tmp/ccGscW5H.s 			page 11
+ARM GAS  /tmp/ccGP2Jql.s 			page 11
 
 
  350 0006 1422     		movs	r2, #20
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  213:Core/Src/stm32f0xx_hal_msp.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
  214:Core/Src/stm32f0xx_hal_msp.c ****     /**I2C2 GPIO Configuration
  215:Core/Src/stm32f0xx_hal_msp.c ****     PB10     ------> I2C2_SCL
-ARM GAS  /tmp/ccGscW5H.s 			page 12
+ARM GAS  /tmp/ccGP2Jql.s 			page 12
 
 
  216:Core/Src/stm32f0xx_hal_msp.c ****     PB11     ------> I2C2_SDA
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  397              		.loc 1 191 5 view .LVU100
  191:Core/Src/stm32f0xx_hal_msp.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
  398              		.loc 1 191 25 is_stmt 0 view .LVU101
-ARM GAS  /tmp/ccGscW5H.s 			page 13
+ARM GAS  /tmp/ccGP2Jql.s 			page 13
 
 
  399 0036 C023     		movs	r3, #192
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  438 0062 0021     		movs	r1, #0
  439 0064 1720     		movs	r0, #23
  440 0066 FFF7FEFF 		bl	HAL_NVIC_SetPriority
-ARM GAS  /tmp/ccGscW5H.s 			page 14
+ARM GAS  /tmp/ccGP2Jql.s 			page 14
 
 
  441              	.LVL25:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  480              		.loc 1 221 27 is_stmt 0 view .LVU131
  481 0090 0F3B     		subs	r3, r3, #15
  482 0092 0893     		str	r3, [sp, #32]
-ARM GAS  /tmp/ccGscW5H.s 			page 15
+ARM GAS  /tmp/ccGP2Jql.s 			page 15
 
 
  222:Core/Src/stm32f0xx_hal_msp.c ****     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  526 00cc 00100240 		.word	1073876992
  527 00d0 00040048 		.word	1207960576
  528              		.cfi_endproc
-ARM GAS  /tmp/ccGscW5H.s 			page 16
+ARM GAS  /tmp/ccGP2Jql.s 			page 16
 
 
  529              	.LFE43:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  263:Core/Src/stm32f0xx_hal_msp.c ****   /* USER CODE BEGIN I2C1_MspDeInit 1 */
  264:Core/Src/stm32f0xx_hal_msp.c **** 
  265:Core/Src/stm32f0xx_hal_msp.c ****   /* USER CODE END I2C1_MspDeInit 1 */
-ARM GAS  /tmp/ccGscW5H.s 			page 17
+ARM GAS  /tmp/ccGP2Jql.s 			page 17
 
 
  266:Core/Src/stm32f0xx_hal_msp.c ****   }
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  259:Core/Src/stm32f0xx_hal_msp.c **** 
  584              		.loc 1 259 5 is_stmt 1 view .LVU155
  585 0026 8021     		movs	r1, #128
-ARM GAS  /tmp/ccGscW5H.s 			page 18
+ARM GAS  /tmp/ccGP2Jql.s 			page 18
 
 
  586 0028 2000     		movs	r0, r4
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  635              		.section	.text.HAL_TIM_Base_MspInit,"ax",%progbits
  636              		.align	1
  637              		.global	HAL_TIM_Base_MspInit
-ARM GAS  /tmp/ccGscW5H.s 			page 19
+ARM GAS  /tmp/ccGP2Jql.s 			page 19
 
 
  638              		.syntax unified
@@ -1123,9 +1123,9 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  305:Core/Src/stm32f0xx_hal_msp.c ****     /* Peripheral clock enable */
  306:Core/Src/stm32f0xx_hal_msp.c ****     __HAL_RCC_TIM1_CLK_ENABLE();
  307:Core/Src/stm32f0xx_hal_msp.c ****     /* TIM1 interrupt Init */
- 308:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_SetPriority(TIM1_BRK_UP_TRG_COM_IRQn, 0, 0);
+ 308:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_SetPriority(TIM1_BRK_UP_TRG_COM_IRQn, INT_PRIO_RT_TASK, 0);
  309:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_EnableIRQ(TIM1_BRK_UP_TRG_COM_IRQn);
- 310:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_SetPriority(TIM1_CC_IRQn, 0, 0);
+ 310:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_SetPriority(TIM1_CC_IRQn, INT_PRIO_RT_TASK, 0);
  311:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_EnableIRQ(TIM1_CC_IRQn);
  312:Core/Src/stm32f0xx_hal_msp.c ****   /* USER CODE BEGIN TIM1_MspInit 1 */
  313:Core/Src/stm32f0xx_hal_msp.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  667 000e 9342     		cmp	r3, r2
  668 0010 1CD0     		beq	.L34
  669              	.LVL45:
-ARM GAS  /tmp/ccGscW5H.s 			page 20
+ARM GAS  /tmp/ccGP2Jql.s 			page 20
 
 
  670              	.L30:
@@ -1190,15 +1190,15 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  308:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_EnableIRQ(TIM1_BRK_UP_TRG_COM_IRQn);
  695              		.loc 1 308 5 view .LVU177
  696 002a 0022     		movs	r2, #0
- 697 002c 0021     		movs	r1, #0
+ 697 002c 0621     		movs	r1, #6
  698 002e 0D20     		movs	r0, #13
  699              	.LVL47:
  308:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_EnableIRQ(TIM1_BRK_UP_TRG_COM_IRQn);
  700              		.loc 1 308 5 is_stmt 0 view .LVU178
  701 0030 FFF7FEFF 		bl	HAL_NVIC_SetPriority
  702              	.LVL48:
- 309:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_SetPriority(TIM1_CC_IRQn, 0, 0);
-ARM GAS  /tmp/ccGscW5H.s 			page 21
+ 309:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_SetPriority(TIM1_CC_IRQn, INT_PRIO_RT_TASK, 0);
+ARM GAS  /tmp/ccGP2Jql.s 			page 21
 
 
  703              		.loc 1 309 5 is_stmt 1 view .LVU179
@@ -1208,7 +1208,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  310:Core/Src/stm32f0xx_hal_msp.c ****     HAL_NVIC_EnableIRQ(TIM1_CC_IRQn);
  707              		.loc 1 310 5 view .LVU180
  708 003a 0022     		movs	r2, #0
- 709 003c 0021     		movs	r1, #0
+ 709 003c 0621     		movs	r1, #6
  710 003e 0E20     		movs	r0, #14
  711 0040 FFF7FEFF 		bl	HAL_NVIC_SetPriority
  712              	.LVL50:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  746 0068 1020     		movs	r0, #16
  747 006a FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
  748              	.LVL55:
-ARM GAS  /tmp/ccGscW5H.s 			page 22
+ARM GAS  /tmp/ccGP2Jql.s 			page 22
 
 
  749              		.loc 1 331 1 is_stmt 0 view .LVU191
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  800 0016 01D0     		beq	.L39
  801              	.LVL59:
  802              	.L37:
-ARM GAS  /tmp/ccGscW5H.s 			page 23
+ARM GAS  /tmp/ccGP2Jql.s 			page 23
 
 
  337:Core/Src/stm32f0xx_hal_msp.c ****   {
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  822 002c 0093     		str	r3, [sp]
  342:Core/Src/stm32f0xx_hal_msp.c ****     /**TIM3 GPIO Configuration
  823              		.loc 1 342 5 view .LVU205
-ARM GAS  /tmp/ccGscW5H.s 			page 24
+ARM GAS  /tmp/ccGP2Jql.s 			page 24
 
 
  824 002e 009B     		ldr	r3, [sp]
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  860 004e 0493     		str	r3, [sp, #16]
  359:Core/Src/stm32f0xx_hal_msp.c ****     HAL_GPIO_Init(LCD1_BL_BLUE_GPIO_Port, &GPIO_InitStruct);
  861              		.loc 1 359 5 is_stmt 1 view .LVU224
-ARM GAS  /tmp/ccGscW5H.s 			page 25
+ARM GAS  /tmp/ccGP2Jql.s 			page 25
 
 
  359:Core/Src/stm32f0xx_hal_msp.c ****     HAL_GPIO_Init(LCD1_BL_BLUE_GPIO_Port, &GPIO_InitStruct);
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  907 0008 03D0     		beq	.L45
  377:Core/Src/stm32f0xx_hal_msp.c ****   {
  378:Core/Src/stm32f0xx_hal_msp.c ****   /* USER CODE BEGIN TIM1_MspDeInit 0 */
-ARM GAS  /tmp/ccGscW5H.s 			page 26
+ARM GAS  /tmp/ccGP2Jql.s 			page 26
 
 
  379:Core/Src/stm32f0xx_hal_msp.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  931              	.LVL68:
  386:Core/Src/stm32f0xx_hal_msp.c ****   /* USER CODE BEGIN TIM1_MspDeInit 1 */
  932              		.loc 1 386 5 is_stmt 1 view .LVU239
-ARM GAS  /tmp/ccGscW5H.s 			page 27
+ARM GAS  /tmp/ccGP2Jql.s 			page 27
 
 
  933 0022 0E20     		movs	r0, #14
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  977              		.loc 1 415 1 is_stmt 0 view .LVU245
  978 0000 10B5     		push	{r4, lr}
  979              	.LCFI12:
-ARM GAS  /tmp/ccGscW5H.s 			page 28
+ARM GAS  /tmp/ccGP2Jql.s 			page 28
 
 
  980              		.cfi_def_cfa_offset 8
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  1007              	.LVL76:
  1008              		.loc 1 442 1 view .LVU253
  1009 001a 10BD     		pop	{r4, pc}
-ARM GAS  /tmp/ccGscW5H.s 			page 29
+ARM GAS  /tmp/ccGP2Jql.s 			page 29
 
 
  1010              	.LVL77:
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  1049              		.loc 1 431 5 is_stmt 1 view .LVU268
  431:Core/Src/stm32f0xx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
  1050              		.loc 1 431 26 is_stmt 0 view .LVU269
-ARM GAS  /tmp/ccGscW5H.s 			page 30
+ARM GAS  /tmp/ccGP2Jql.s 			page 30
 
 
  1051 0042 0A3B     		subs	r3, r3, #10
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  1093              		.cfi_offset 4, -8
  1094              		.cfi_offset 14, -4
  452:Core/Src/stm32f0xx_hal_msp.c ****   if(huart->Instance==USART2)
-ARM GAS  /tmp/ccGscW5H.s 			page 31
+ARM GAS  /tmp/ccGP2Jql.s 			page 31
 
 
  1095              		.loc 1 452 3 is_stmt 1 view .LVU278
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  1127              	.L57:
  1128 0024 00440040 		.word	1073759232
  1129 0028 00100240 		.word	1073876992
-ARM GAS  /tmp/ccGscW5H.s 			page 32
+ARM GAS  /tmp/ccGP2Jql.s 			page 32
 
 
  1130 002c FFFFFDFF 		.word	-131073
@@ -1880,41 +1880,41 @@ ARM GAS  /tmp/ccGscW5H.s 			page 1
  1147              		.file 13 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h"
  1148              		.file 14 "Core/Inc/main.h"
  1149              		.file 15 "<built-in>"
-ARM GAS  /tmp/ccGscW5H.s 			page 33
+ARM GAS  /tmp/ccGP2Jql.s 			page 33
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f0xx_hal_msp.c
-     /tmp/ccGscW5H.s:19     .text.HAL_MspInit:00000000 $t
-     /tmp/ccGscW5H.s:25     .text.HAL_MspInit:00000000 HAL_MspInit
-     /tmp/ccGscW5H.s:76     .text.HAL_MspInit:0000002c $d
-     /tmp/ccGscW5H.s:81     .text.HAL_ADC_MspInit:00000000 $t
-     /tmp/ccGscW5H.s:87     .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
-     /tmp/ccGscW5H.s:247    .text.HAL_ADC_MspInit:0000009c $d
-     /tmp/ccGscW5H.s:255    .text.HAL_ADC_MspDeInit:00000000 $t
-     /tmp/ccGscW5H.s:261    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
-     /tmp/ccGscW5H.s:318    .text.HAL_ADC_MspDeInit:00000030 $d
-     /tmp/ccGscW5H.s:325    .text.HAL_I2C_MspInit:00000000 $t
-     /tmp/ccGscW5H.s:331    .text.HAL_I2C_MspInit:00000000 HAL_I2C_MspInit
-     /tmp/ccGscW5H.s:524    .text.HAL_I2C_MspInit:000000c4 $d
-     /tmp/ccGscW5H.s:532    .text.HAL_I2C_MspDeInit:00000000 $t
-     /tmp/ccGscW5H.s:538    .text.HAL_I2C_MspDeInit:00000000 HAL_I2C_MspDeInit
-     /tmp/ccGscW5H.s:626    .text.HAL_I2C_MspDeInit:00000060 $d
-     /tmp/ccGscW5H.s:636    .text.HAL_TIM_Base_MspInit:00000000 $t
-     /tmp/ccGscW5H.s:642    .text.HAL_TIM_Base_MspInit:00000000 HAL_TIM_Base_MspInit
-     /tmp/ccGscW5H.s:754    .text.HAL_TIM_Base_MspInit:00000070 $d
-     /tmp/ccGscW5H.s:761    .text.HAL_TIM_MspPostInit:00000000 $t
-     /tmp/ccGscW5H.s:767    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
-     /tmp/ccGscW5H.s:875    .text.HAL_TIM_MspPostInit:00000060 $d
-     /tmp/ccGscW5H.s:882    .text.HAL_TIM_Base_MspDeInit:00000000 $t
-     /tmp/ccGscW5H.s:888    .text.HAL_TIM_Base_MspDeInit:00000000 HAL_TIM_Base_MspDeInit
-     /tmp/ccGscW5H.s:956    .text.HAL_TIM_Base_MspDeInit:0000003c $d
-     /tmp/ccGscW5H.s:964    .text.HAL_UART_MspInit:00000000 $t
-     /tmp/ccGscW5H.s:970    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-     /tmp/ccGscW5H.s:1070   .text.HAL_UART_MspInit:00000058 $d
-     /tmp/ccGscW5H.s:1076   .text.HAL_UART_MspDeInit:00000000 $t
-     /tmp/ccGscW5H.s:1082   .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-     /tmp/ccGscW5H.s:1128   .text.HAL_UART_MspDeInit:00000024 $d
+     /tmp/ccGP2Jql.s:19     .text.HAL_MspInit:00000000 $t
+     /tmp/ccGP2Jql.s:25     .text.HAL_MspInit:00000000 HAL_MspInit
+     /tmp/ccGP2Jql.s:76     .text.HAL_MspInit:0000002c $d
+     /tmp/ccGP2Jql.s:81     .text.HAL_ADC_MspInit:00000000 $t
+     /tmp/ccGP2Jql.s:87     .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
+     /tmp/ccGP2Jql.s:247    .text.HAL_ADC_MspInit:0000009c $d
+     /tmp/ccGP2Jql.s:255    .text.HAL_ADC_MspDeInit:00000000 $t
+     /tmp/ccGP2Jql.s:261    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
+     /tmp/ccGP2Jql.s:318    .text.HAL_ADC_MspDeInit:00000030 $d
+     /tmp/ccGP2Jql.s:325    .text.HAL_I2C_MspInit:00000000 $t
+     /tmp/ccGP2Jql.s:331    .text.HAL_I2C_MspInit:00000000 HAL_I2C_MspInit
+     /tmp/ccGP2Jql.s:524    .text.HAL_I2C_MspInit:000000c4 $d
+     /tmp/ccGP2Jql.s:532    .text.HAL_I2C_MspDeInit:00000000 $t
+     /tmp/ccGP2Jql.s:538    .text.HAL_I2C_MspDeInit:00000000 HAL_I2C_MspDeInit
+     /tmp/ccGP2Jql.s:626    .text.HAL_I2C_MspDeInit:00000060 $d
+     /tmp/ccGP2Jql.s:636    .text.HAL_TIM_Base_MspInit:00000000 $t
+     /tmp/ccGP2Jql.s:642    .text.HAL_TIM_Base_MspInit:00000000 HAL_TIM_Base_MspInit
+     /tmp/ccGP2Jql.s:754    .text.HAL_TIM_Base_MspInit:00000070 $d
+     /tmp/ccGP2Jql.s:761    .text.HAL_TIM_MspPostInit:00000000 $t
+     /tmp/ccGP2Jql.s:767    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
+     /tmp/ccGP2Jql.s:875    .text.HAL_TIM_MspPostInit:00000060 $d
+     /tmp/ccGP2Jql.s:882    .text.HAL_TIM_Base_MspDeInit:00000000 $t
+     /tmp/ccGP2Jql.s:888    .text.HAL_TIM_Base_MspDeInit:00000000 HAL_TIM_Base_MspDeInit
+     /tmp/ccGP2Jql.s:956    .text.HAL_TIM_Base_MspDeInit:0000003c $d
+     /tmp/ccGP2Jql.s:964    .text.HAL_UART_MspInit:00000000 $t
+     /tmp/ccGP2Jql.s:970    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
+     /tmp/ccGP2Jql.s:1070   .text.HAL_UART_MspInit:00000058 $d
+     /tmp/ccGP2Jql.s:1076   .text.HAL_UART_MspDeInit:00000000 $t
+     /tmp/ccGP2Jql.s:1082   .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
+     /tmp/ccGP2Jql.s:1128   .text.HAL_UART_MspDeInit:00000024 $d
 
 UNDEFINED SYMBOLS
 memset

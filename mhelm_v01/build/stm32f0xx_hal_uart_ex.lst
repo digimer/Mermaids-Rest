@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccoi6xL6.s 			page 1
+ARM GAS  /tmp/ccokZrrl.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
   29:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
   30:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     (#) For the UART RS485 Driver Enable mode, initialize the UART registers
   31:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         by calling the HAL_RS485Ex_Init() API.
-ARM GAS  /tmp/ccoi6xL6.s 			page 2
+ARM GAS  /tmp/ccokZrrl.s 			page 2
 
 
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
   86:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         (++) Stop Bit
   87:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         (++) Parity: If the parity is enabled, then the MSB bit of the data written
   88:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****              in the data register is transmitted but is changed by the parity bit.
-ARM GAS  /tmp/ccoi6xL6.s 			page 3
+ARM GAS  /tmp/ccokZrrl.s 			page 3
 
 
   89:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         (++) Hardware flow control
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  143:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @param DeassertionTime  Driver Enable deassertion time:
  144:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *       5-bit value defining the time between the end of the last stop bit, in a
  145:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *       transmitted message, and the de-activation of the DE (Driver Enable) signal.
-ARM GAS  /tmp/ccoi6xL6.s 			page 4
+ARM GAS  /tmp/ccokZrrl.s 			page 4
 
 
  146:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *       It is expressed in sample time units (1/8 or 1/16 bit time, depending on the
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
   55              		.loc 1 172 3 view .LVU9
   56              		.loc 1 172 12 is_stmt 0 view .LVU10
   57 000e C36F     		ldr	r3, [r0, #124]
-ARM GAS  /tmp/ccoi6xL6.s 			page 5
+ARM GAS  /tmp/ccokZrrl.s 			page 5
 
 
   58              	.LVL1:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  203:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  204:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   if (huart->AdvancedInit.AdvFeatureInit != UART_ADVFEATURE_NO_INIT)
   82              		.loc 1 204 3 is_stmt 1 view .LVU18
-ARM GAS  /tmp/ccoi6xL6.s 			page 6
+ARM GAS  /tmp/ccokZrrl.s 			page 6
 
 
   83              		.loc 1 204 26 is_stmt 0 view .LVU19
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  221:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   __HAL_UART_ENABLE(huart);
  121              		.loc 1 221 3 view .LVU29
  122 005c 2268     		ldr	r2, [r4]
-ARM GAS  /tmp/ccoi6xL6.s 			page 7
+ARM GAS  /tmp/ccokZrrl.s 			page 7
 
 
  123 005e 1368     		ldr	r3, [r2]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  165 0084 F2E7     		b	.L2
  166              	.L9:
  167 0086 C046     		.align	2
-ARM GAS  /tmp/ccoi6xL6.s 			page 8
+ARM GAS  /tmp/ccokZrrl.s 			page 8
 
 
  168              	.L8:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  266:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** }
  267:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  268:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** #endif /* USART_CR3_WUFIE */
-ARM GAS  /tmp/ccoi6xL6.s 			page 9
+ARM GAS  /tmp/ccokZrrl.s 			page 9
 
 
  269:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** #endif /* USART_CR1_UESM */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  323:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  324:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     (#) Non-Blocking mode API with DMA:
  325:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         (+) HAL_UARTEx_ReceiveToIdle_DMA()
-ARM GAS  /tmp/ccoi6xL6.s 			page 10
+ARM GAS  /tmp/ccokZrrl.s 			page 10
 
 
  326:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  358:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   __HAL_UART_DISABLE(huart);
  206              		.loc 1 358 3 is_stmt 1 view .LVU49
  207 000c 0168     		ldr	r1, [r0]
-ARM GAS  /tmp/ccoi6xL6.s 			page 11
+ARM GAS  /tmp/ccokZrrl.s 			page 11
 
 
  208              	.LVL17:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  251              		.thumb_func
  253              	HAL_UARTEx_ReceiveToIdle:
  254              	.LVL22:
-ARM GAS  /tmp/ccoi6xL6.s 			page 12
+ARM GAS  /tmp/ccokZrrl.s 			page 12
 
 
  255              	.LFB42:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  422:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   else
  423:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   {
  424:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     /* Initialize the UART State */
-ARM GAS  /tmp/ccoi6xL6.s 			page 13
+ARM GAS  /tmp/ccokZrrl.s 			page 13
 
 
  425:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     huart->gState = HAL_UART_STATE_READY;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  479:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *        In this case, RxLen output parameter indicates number of data available in reception buf
  480:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   * @note  When UART parity is not enabled (PCE = 0), and Word Length is configured to 9 bits (M1-M
  481:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *        the received data is handled as a set of uint16_t. In this case, Size must indicate the 
-ARM GAS  /tmp/ccoi6xL6.s 			page 14
+ARM GAS  /tmp/ccokZrrl.s 			page 14
 
 
  482:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   *        of uint16_t available through pData.
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  289              		.loc 1 502 3 view .LVU64
  503:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  504:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check that a Rx process is not already ongoing */
-ARM GAS  /tmp/ccoi6xL6.s 			page 15
+ARM GAS  /tmp/ccokZrrl.s 			page 15
 
 
  505:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   if (huart->RxState == HAL_UART_STATE_READY)
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  331              	.LCB285:
  332              	.L15:
  518:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       {
-ARM GAS  /tmp/ccoi6xL6.s 			page 16
+ARM GAS  /tmp/ccokZrrl.s 			page 16
 
 
  519:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         return  HAL_ERROR;
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  370 0064 A368     		ldr	r3, [r4, #8]
  371 0066 8022     		movs	r2, #128
  372 0068 5201     		lsls	r2, r2, #5
-ARM GAS  /tmp/ccoi6xL6.s 			page 17
+ARM GAS  /tmp/ccokZrrl.s 			page 17
 
 
  373 006a 9342     		cmp	r3, r2
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  423              		.loc 1 539 8 is_stmt 0 view .LVU109
  424 00aa 8022     		movs	r2, #128
  425 00ac 5201     		lsls	r2, r2, #5
-ARM GAS  /tmp/ccoi6xL6.s 			page 18
+ARM GAS  /tmp/ccokZrrl.s 			page 18
 
 
  426 00ae 9342     		cmp	r3, r2
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  459              	.LVL32:
  460              	.L43:
  555:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     {
-ARM GAS  /tmp/ccoi6xL6.s 			page 19
+ARM GAS  /tmp/ccokZrrl.s 			page 19
 
 
  556:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       /* Check if IDLE flag is set */
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  580:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         }
  581:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         else
  582:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         {
-ARM GAS  /tmp/ccoi6xL6.s 			page 20
+ARM GAS  /tmp/ccokZrrl.s 			page 20
 
 
  583:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****           *pdata8bits = (uint8_t)(huart->Instance->RDR & (uint8_t)uhMask);
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  564:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         {
  528              		.loc 1 564 9 view .LVU147
  564:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****         {
-ARM GAS  /tmp/ccoi6xL6.s 			page 21
+ARM GAS  /tmp/ccokZrrl.s 			page 21
 
 
  529              		.loc 1 564 13 is_stmt 0 view .LVU148
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  567              		.loc 1 594 29 discriminator 1 view .LVU165
  568 013a 4B46     		mov	r3, r9
  569 013c C01A     		subs	r0, r0, r3
-ARM GAS  /tmp/ccoi6xL6.s 			page 22
+ARM GAS  /tmp/ccokZrrl.s 			page 22
 
 
  570              		.loc 1 594 12 discriminator 1 view .LVU166
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  610              	.LVL38:
  611              	.L30:
  609:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   }
-ARM GAS  /tmp/ccoi6xL6.s 			page 23
+ARM GAS  /tmp/ccokZrrl.s 			page 23
 
 
  610:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   else
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  656              		.section	.text.HAL_UARTEx_ReceiveToIdle_IT,"ax",%progbits
  657              		.align	1
  658              		.global	HAL_UARTEx_ReceiveToIdle_IT
-ARM GAS  /tmp/ccoi6xL6.s 			page 24
+ARM GAS  /tmp/ccokZrrl.s 			page 24
 
 
  659              		.syntax unified
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  686              		.loc 1 642 8 is_stmt 0 view .LVU198
  687 000c 0029     		cmp	r1, #0
  688 000e 2AD0     		beq	.L52
-ARM GAS  /tmp/ccoi6xL6.s 			page 25
+ARM GAS  /tmp/ccokZrrl.s 			page 25
 
 
  689              		.loc 1 642 25 discriminator 1 view .LVU199
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  723              	.LVL51:
  663:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  664:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     /* Check Rx process has been successfully started */
-ARM GAS  /tmp/ccoi6xL6.s 			page 26
+ARM GAS  /tmp/ccokZrrl.s 			page 26
 
 
  665:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     if (status == HAL_OK)
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
    4:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @version  V5.0.4
    5:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @date     09. April 2018
    6:Drivers/CMSIS/Include/cmsis_gcc.h ****  ******************************************************************************/
-ARM GAS  /tmp/ccoi6xL6.s 			page 27
+ARM GAS  /tmp/ccokZrrl.s 			page 27
 
 
    7:Drivers/CMSIS/Include/cmsis_gcc.h **** /*
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
   61:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED
   62:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED                               __attribute__((packed, aligned(1)))
   63:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/ccoi6xL6.s 			page 28
+ARM GAS  /tmp/ccokZrrl.s 			page 28
 
 
   64:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_STRUCT
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  118:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
  119:Drivers/CMSIS/Include/cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
  120:Drivers/CMSIS/Include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
-ARM GAS  /tmp/ccoi6xL6.s 			page 29
+ARM GAS  /tmp/ccokZrrl.s 			page 29
 
 
  121:Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  175:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  176:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  177:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register
-ARM GAS  /tmp/ccoi6xL6.s 			page 30
+ARM GAS  /tmp/ccokZrrl.s 			page 30
 
 
  178:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the Control Register.
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  232:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  233:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_xPSR(void)
  234:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /tmp/ccoi6xL6.s 			page 31
+ARM GAS  /tmp/ccokZrrl.s 			page 31
 
 
  235:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  289:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_PSP_NS(uint32_t topOfProcStack)
  290:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  291:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR psp_ns, %0" : : "r" (topOfProcStack) : );
-ARM GAS  /tmp/ccoi6xL6.s 			page 32
+ARM GAS  /tmp/ccokZrrl.s 			page 32
 
 
  292:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  346:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  347:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  348:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccoi6xL6.s 			page 33
+ARM GAS  /tmp/ccokZrrl.s 			page 33
 
 
  349:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  670:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       }
  768              		.loc 1 670 9 is_stmt 1 discriminator 1 view .LVU230
  769              	.LBB19:
-ARM GAS  /tmp/ccoi6xL6.s 			page 34
+ARM GAS  /tmp/ccokZrrl.s 			page 34
 
 
  770              	.LBI19:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  794              		.loc 2 412 27 view .LVU236
  795              	.LBB22:
  796              		.loc 2 414 3 view .LVU237
-ARM GAS  /tmp/ccoi6xL6.s 			page 35
+ARM GAS  /tmp/ccokZrrl.s 			page 35
 
 
  797              		.syntax divided
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  840              	.LVL64:
  644:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     }
  841              		.loc 1 644 14 view .LVU248
-ARM GAS  /tmp/ccoi6xL6.s 			page 36
+ARM GAS  /tmp/ccokZrrl.s 			page 36
 
 
  842 006c FAE7     		b	.L48
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  871              		.loc 1 714 3 is_stmt 1 view .LVU252
  715:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c **** 
  716:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Check that a Rx process is not already ongoing */
-ARM GAS  /tmp/ccoi6xL6.s 			page 37
+ARM GAS  /tmp/ccokZrrl.s 			page 37
 
 
  717:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   if (huart->RxState == HAL_UART_STATE_READY)
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  906              		.loc 1 736 26 is_stmt 0 view .LVU267
  907 0028 0123     		movs	r3, #1
  908 002a 2366     		str	r3, [r4, #96]
-ARM GAS  /tmp/ccoi6xL6.s 			page 38
+ARM GAS  /tmp/ccokZrrl.s 			page 38
 
 
  737:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****     huart->RxEventType = HAL_UART_RXEVENT_TC;
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  939 0048 1962     		str	r1, [r3, #32]
  747:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       }
  940              		.loc 1 747 9 view .LVU281
-ARM GAS  /tmp/ccoi6xL6.s 			page 39
+ARM GAS  /tmp/ccokZrrl.s 			page 39
 
 
  941              	.LBB26:
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  747:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****       }
  983              		.loc 1 747 9 discriminator 2 view .LVU294
  984              	.LVL72:
-ARM GAS  /tmp/ccoi6xL6.s 			page 40
+ARM GAS  /tmp/ccokZrrl.s 			page 40
 
 
  985              	.LBB31:
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  1027              		.loc 1 721 14 view .LVU305
  1028 0068 FCE7     		b	.L58
  1029              	.LVL79:
-ARM GAS  /tmp/ccoi6xL6.s 			page 41
+ARM GAS  /tmp/ccokZrrl.s 			page 41
 
 
  1030              	.L63:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  1056              		@ frame_needed = 0, uses_anonymous_args = 0
  1057              		@ link register save eliminated.
  793:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   /* Return Rx Event type value, as stored in UART handle */
-ARM GAS  /tmp/ccoi6xL6.s 			page 42
+ARM GAS  /tmp/ccokZrrl.s 			page 42
 
 
  794:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c ****   return (huart->RxEventType);
@@ -2481,25 +2481,25 @@ ARM GAS  /tmp/ccoi6xL6.s 			page 1
  1074              		.file 7 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h"
  1075              		.file 8 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h"
  1076              		.file 9 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
-ARM GAS  /tmp/ccoi6xL6.s 			page 43
+ARM GAS  /tmp/ccokZrrl.s 			page 43
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f0xx_hal_uart_ex.c
-     /tmp/ccoi6xL6.s:19     .text.HAL_RS485Ex_Init:00000000 $t
-     /tmp/ccoi6xL6.s:25     .text.HAL_RS485Ex_Init:00000000 HAL_RS485Ex_Init
-     /tmp/ccoi6xL6.s:169    .text.HAL_RS485Ex_Init:00000088 $d
-     /tmp/ccoi6xL6.s:175    .text.HAL_MultiProcessorEx_AddressLength_Set:00000000 $t
-     /tmp/ccoi6xL6.s:181    .text.HAL_MultiProcessorEx_AddressLength_Set:00000000 HAL_MultiProcessorEx_AddressLength_Set
-     /tmp/ccoi6xL6.s:247    .text.HAL_UARTEx_ReceiveToIdle:00000000 $t
-     /tmp/ccoi6xL6.s:253    .text.HAL_UARTEx_ReceiveToIdle:00000000 HAL_UARTEx_ReceiveToIdle
-     /tmp/ccoi6xL6.s:652    .text.HAL_UARTEx_ReceiveToIdle:00000180 $d
-     /tmp/ccoi6xL6.s:657    .text.HAL_UARTEx_ReceiveToIdle_IT:00000000 $t
-     /tmp/ccoi6xL6.s:663    .text.HAL_UARTEx_ReceiveToIdle_IT:00000000 HAL_UARTEx_ReceiveToIdle_IT
-     /tmp/ccoi6xL6.s:851    .text.HAL_UARTEx_ReceiveToIdle_DMA:00000000 $t
-     /tmp/ccoi6xL6.s:857    .text.HAL_UARTEx_ReceiveToIdle_DMA:00000000 HAL_UARTEx_ReceiveToIdle_DMA
-     /tmp/ccoi6xL6.s:1044   .text.HAL_UARTEx_GetRxEventType:00000000 $t
-     /tmp/ccoi6xL6.s:1050   .text.HAL_UARTEx_GetRxEventType:00000000 HAL_UARTEx_GetRxEventType
+     /tmp/ccokZrrl.s:19     .text.HAL_RS485Ex_Init:00000000 $t
+     /tmp/ccokZrrl.s:25     .text.HAL_RS485Ex_Init:00000000 HAL_RS485Ex_Init
+     /tmp/ccokZrrl.s:169    .text.HAL_RS485Ex_Init:00000088 $d
+     /tmp/ccokZrrl.s:175    .text.HAL_MultiProcessorEx_AddressLength_Set:00000000 $t
+     /tmp/ccokZrrl.s:181    .text.HAL_MultiProcessorEx_AddressLength_Set:00000000 HAL_MultiProcessorEx_AddressLength_Set
+     /tmp/ccokZrrl.s:247    .text.HAL_UARTEx_ReceiveToIdle:00000000 $t
+     /tmp/ccokZrrl.s:253    .text.HAL_UARTEx_ReceiveToIdle:00000000 HAL_UARTEx_ReceiveToIdle
+     /tmp/ccokZrrl.s:652    .text.HAL_UARTEx_ReceiveToIdle:00000180 $d
+     /tmp/ccokZrrl.s:657    .text.HAL_UARTEx_ReceiveToIdle_IT:00000000 $t
+     /tmp/ccokZrrl.s:663    .text.HAL_UARTEx_ReceiveToIdle_IT:00000000 HAL_UARTEx_ReceiveToIdle_IT
+     /tmp/ccokZrrl.s:851    .text.HAL_UARTEx_ReceiveToIdle_DMA:00000000 $t
+     /tmp/ccokZrrl.s:857    .text.HAL_UARTEx_ReceiveToIdle_DMA:00000000 HAL_UARTEx_ReceiveToIdle_DMA
+     /tmp/ccokZrrl.s:1044   .text.HAL_UARTEx_GetRxEventType:00000000 $t
+     /tmp/ccokZrrl.s:1050   .text.HAL_UARTEx_GetRxEventType:00000000 HAL_UARTEx_GetRxEventType
 
 UNDEFINED SYMBOLS
 UART_SetConfig

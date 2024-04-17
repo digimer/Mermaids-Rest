@@ -25,5 +25,8 @@ enum {
 
 void ioctl_init(void);
 
+// run the timer task
+void ioctl_timer_task(void);
+
 // Get the requested pot value
 uint16_t ioctl_get_pot(uint8_t chan);

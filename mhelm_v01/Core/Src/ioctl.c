@@ -36,6 +36,14 @@ void ioctl_init(void) {
   HAL_ADC_Start_DMA(&hadc, (uint32_t *)ios.adc_raw_vals, ADC_NUM_CHANS);
 }
 
+// run the timer task
+void ioctl_timer_task(void) {
+    // restart ADC
+    if(HAL_ADC_GetState(&hadc) == HAL_ADC_STATE_READY) {
+        HAL_ADC_Start_DMA(&hadc, (uint32_t *)ios.adc_raw_vals, ADC_NUM_CHANS);
+    }
+}
+
 // Get the requested pot value
 uint16_t ioctl_get_pot(uint8_t chan) {
   if (chan >= IOCTL_NUM_POTS) {

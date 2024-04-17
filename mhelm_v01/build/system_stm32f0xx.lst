@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccNhRg2i.s 			page 1
+ARM GAS  /tmp/cck3eIYv.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccNhRg2i.s 			page 1
   30:Core/Src/system_stm32f0xx.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
   31:Core/Src/system_stm32f0xx.c ****   *
   32:Core/Src/system_stm32f0xx.c ****   ******************************************************************************
-ARM GAS  /tmp/ccNhRg2i.s 			page 2
+ARM GAS  /tmp/cck3eIYv.s 			page 2
 
 
   33:Core/Src/system_stm32f0xx.c ****   */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccNhRg2i.s 			page 1
   87:Core/Src/system_stm32f0xx.c ****   */
   88:Core/Src/system_stm32f0xx.c **** 
   89:Core/Src/system_stm32f0xx.c **** /** @addtogroup STM32F0xx_System_Private_Variables
-ARM GAS  /tmp/ccNhRg2i.s 			page 3
+ARM GAS  /tmp/cck3eIYv.s 			page 3
 
 
   90:Core/Src/system_stm32f0xx.c ****   * @{
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccNhRg2i.s 			page 1
   36              	.LFE40:
   38              		.global	__aeabi_uidiv
   39              		.section	.text.SystemCoreClockUpdate,"ax",%progbits
-ARM GAS  /tmp/ccNhRg2i.s 			page 4
+ARM GAS  /tmp/cck3eIYv.s 			page 4
 
 
   40              		.align	1
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccNhRg2i.s 			page 1
   50              		@ args = 0, pretend = 0, frame = 0
   51              		@ frame_needed = 0, uses_anonymous_args = 0
   52 0000 10B5     		push	{r4, lr}
-ARM GAS  /tmp/ccNhRg2i.s 			page 5
+ARM GAS  /tmp/cck3eIYv.s 			page 5
 
 
   53              	.LCFI0:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccNhRg2i.s 			page 1
  201:Core/Src/system_stm32f0xx.c ****       {
  202:Core/Src/system_stm32f0xx.c ****         /* HSE used as PLL clock source : SystemCoreClock = HSE/PREDIV * PLLMUL */
  203:Core/Src/system_stm32f0xx.c ****         SystemCoreClock = (HSE_VALUE/predivfactor) * pllmull;
-ARM GAS  /tmp/ccNhRg2i.s 			page 6
+ARM GAS  /tmp/cck3eIYv.s 			page 6
 
 
  204:Core/Src/system_stm32f0xx.c ****       }
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccNhRg2i.s 			page 1
  107              	.LVL6:
  108              	.L3:
  191:Core/Src/system_stm32f0xx.c ****       break;
-ARM GAS  /tmp/ccNhRg2i.s 			page 7
+ARM GAS  /tmp/cck3eIYv.s 			page 7
 
 
  109              		.loc 1 191 7 is_stmt 1 view .LVU20
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccNhRg2i.s 			page 1
  147 004c 1940     		ands	r1, r3
  198:Core/Src/system_stm32f0xx.c **** 
  148              		.loc 1 198 20 view .LVU37
-ARM GAS  /tmp/ccNhRg2i.s 			page 8
+ARM GAS  /tmp/cck3eIYv.s 			page 8
 
 
  149 004e 0131     		adds	r1, r1, #1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccNhRg2i.s 			page 1
  228:Core/Src/system_stm32f0xx.c ****       break;
  191              		.loc 1 228 23 view .LVU50
  192 007a 1A60     		str	r2, [r3]
-ARM GAS  /tmp/ccNhRg2i.s 			page 9
+ARM GAS  /tmp/cck3eIYv.s 			page 9
 
 
  229:Core/Src/system_stm32f0xx.c ****   }
@@ -519,22 +519,22 @@ ARM GAS  /tmp/ccNhRg2i.s 			page 1
  230              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
  231              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
  232              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h"
-ARM GAS  /tmp/ccNhRg2i.s 			page 10
+ARM GAS  /tmp/cck3eIYv.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 system_stm32f0xx.c
-     /tmp/ccNhRg2i.s:19     .text.SystemInit:00000000 $t
-     /tmp/ccNhRg2i.s:25     .text.SystemInit:00000000 SystemInit
-     /tmp/ccNhRg2i.s:40     .text.SystemCoreClockUpdate:00000000 $t
-     /tmp/ccNhRg2i.s:46     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
-     /tmp/ccNhRg2i.s:198    .text.SystemCoreClockUpdate:00000080 $d
-     /tmp/ccNhRg2i.s:225    .data.SystemCoreClock:00000000 SystemCoreClock
-     /tmp/ccNhRg2i.s:217    .rodata.AHBPrescTable:00000000 AHBPrescTable
-     /tmp/ccNhRg2i.s:210    .rodata.APBPrescTable:00000000 APBPrescTable
-     /tmp/ccNhRg2i.s:207    .rodata.APBPrescTable:00000000 $d
-     /tmp/ccNhRg2i.s:214    .rodata.AHBPrescTable:00000000 $d
-     /tmp/ccNhRg2i.s:222    .data.SystemCoreClock:00000000 $d
+     /tmp/cck3eIYv.s:19     .text.SystemInit:00000000 $t
+     /tmp/cck3eIYv.s:25     .text.SystemInit:00000000 SystemInit
+     /tmp/cck3eIYv.s:40     .text.SystemCoreClockUpdate:00000000 $t
+     /tmp/cck3eIYv.s:46     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
+     /tmp/cck3eIYv.s:198    .text.SystemCoreClockUpdate:00000080 $d
+     /tmp/cck3eIYv.s:225    .data.SystemCoreClock:00000000 SystemCoreClock
+     /tmp/cck3eIYv.s:217    .rodata.AHBPrescTable:00000000 AHBPrescTable
+     /tmp/cck3eIYv.s:210    .rodata.APBPrescTable:00000000 APBPrescTable
+     /tmp/cck3eIYv.s:207    .rodata.APBPrescTable:00000000 $d
+     /tmp/cck3eIYv.s:214    .rodata.AHBPrescTable:00000000 $d
+     /tmp/cck3eIYv.s:222    .data.SystemCoreClock:00000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_uidiv

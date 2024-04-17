@@ -134,7 +134,8 @@ void Error_Handler(void);
 #define DAC_SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-
+// main timer task
+void main_timer_task(void);
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

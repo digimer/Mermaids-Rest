@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccsKMbP0.s 			page 1
+ARM GAS  /tmp/ccLxWyJu.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
   30:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** 
   31:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** /** @defgroup PWR PWR
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   * @brief PWR HAL module driver
-ARM GAS  /tmp/ccsKMbP0.s 			page 2
+ARM GAS  /tmp/ccLxWyJu.s 			page 2
 
 
   33:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   * @{
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
   38 000a 1A61     		str	r2, [r3, #16]
   76:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   __HAL_RCC_PWR_RELEASE_RESET();
   39              		.loc 1 76 3 view .LVU2
-ARM GAS  /tmp/ccsKMbP0.s 			page 3
+ARM GAS  /tmp/ccLxWyJu.s 			page 3
 
 
   40 000c 1A69     		ldr	r2, [r3, #16]
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
   83              	.L5:
   84 0010 00700040 		.word	1073770496
   85              		.cfi_endproc
-ARM GAS  /tmp/ccsKMbP0.s 			page 4
+ARM GAS  /tmp/ccLxWyJu.s 			page 4
 
 
   86              	.LFE41:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  103:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** /**
  104:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   * @}
  105:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   */
-ARM GAS  /tmp/ccsKMbP0.s 			page 5
+ARM GAS  /tmp/ccLxWyJu.s 			page 5
 
 
  106:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  160:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****       To minimize the consumption.
  161:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** 
  162:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****       (+) Entry:
-ARM GAS  /tmp/ccsKMbP0.s 			page 6
+ARM GAS  /tmp/ccLxWyJu.s 			page 6
 
 
  163:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****           The Stop mode is entered using the HAL_PWR_EnterSTOPMode(PWR_MAINREGULATOR_ON, PWR_STOPEN
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  217:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****            (+++) Configure the comparator to generate the event.      
  218:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** @endverbatim
  219:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   * @{
-ARM GAS  /tmp/ccsKMbP0.s 			page 7
+ARM GAS  /tmp/ccLxWyJu.s 			page 7
 
 
  220:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  245:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** {
  162              		.loc 1 245 1 is_stmt 1 view -0
  163              		.cfi_startproc
-ARM GAS  /tmp/ccsKMbP0.s 			page 8
+ARM GAS  /tmp/ccLxWyJu.s 			page 8
 
 
  164              		@ args = 0, pretend = 0, frame = 0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  197              		@ link register save eliminated.
  269:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   /* Check the parameters */
  270:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   assert_param(IS_PWR_REGULATOR(Regulator));
-ARM GAS  /tmp/ccsKMbP0.s 			page 9
+ARM GAS  /tmp/ccLxWyJu.s 			page 9
 
 
  198              		.loc 1 270 3 view .LVU23
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  233              	.L19:
  280:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   }
  234              		.loc 1 280 5 is_stmt 1 view .LVU35
-ARM GAS  /tmp/ccsKMbP0.s 			page 10
+ARM GAS  /tmp/ccLxWyJu.s 			page 10
 
 
  235              		.syntax divided
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  312:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   uint32_t tmpreg = 0;
  269              		.loc 1 312 3 is_stmt 1 view .LVU38
  270              	.LVL5:
-ARM GAS  /tmp/ccsKMbP0.s 			page 11
+ARM GAS  /tmp/ccLxWyJu.s 			page 11
 
 
  313:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  303              		.loc 1 334 5 is_stmt 0 view .LVU54
  304 0018 0129     		cmp	r1, #1
  305 001a 08D0     		beq	.L25
-ARM GAS  /tmp/ccsKMbP0.s 			page 12
+ARM GAS  /tmp/ccLxWyJu.s 			page 12
 
 
  335:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c ****   {
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  344              		.syntax unified
  345 0030 F7E7     		b	.L24
  346              	.L27:
-ARM GAS  /tmp/ccsKMbP0.s 			page 13
+ARM GAS  /tmp/ccLxWyJu.s 			page 13
 
 
  347 0032 C046     		.align	2
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  381 000e 0231     		adds	r1, r1, #2
  382 0010 0B43     		orrs	r3, r1
  383 0012 1361     		str	r3, [r2, #16]
-ARM GAS  /tmp/ccsKMbP0.s 			page 14
+ARM GAS  /tmp/ccLxWyJu.s 			page 14
 
 
  372:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  419 0004 0221     		movs	r1, #2
  420 0006 0B43     		orrs	r3, r1
  421 0008 1361     		str	r3, [r2, #16]
-ARM GAS  /tmp/ccsKMbP0.s 			page 15
+ARM GAS  /tmp/ccLxWyJu.s 			page 15
 
 
  393:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c **** }
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  465              		.syntax unified
  466              		.code	16
  467              		.thumb_func
-ARM GAS  /tmp/ccsKMbP0.s 			page 16
+ARM GAS  /tmp/ccLxWyJu.s 			page 16
 
 
  469              	HAL_PWR_EnableSEVOnPend:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  501              		.loc 1 430 1 is_stmt 1 view -0
  502              		.cfi_startproc
  503              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccsKMbP0.s 			page 17
+ARM GAS  /tmp/ccLxWyJu.s 			page 17
 
 
  504              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -987,46 +987,46 @@ ARM GAS  /tmp/ccsKMbP0.s 			page 1
  525              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
  526              		.file 4 "Drivers/CMSIS/Include/core_cm0.h"
  527              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h"
-ARM GAS  /tmp/ccsKMbP0.s 			page 18
+ARM GAS  /tmp/ccLxWyJu.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f0xx_hal_pwr.c
-     /tmp/ccsKMbP0.s:19     .text.HAL_PWR_DeInit:00000000 $t
-     /tmp/ccsKMbP0.s:25     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
-     /tmp/ccsKMbP0.s:50     .text.HAL_PWR_DeInit:00000018 $d
-     /tmp/ccsKMbP0.s:56     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
-     /tmp/ccsKMbP0.s:62     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
-     /tmp/ccsKMbP0.s:84     .text.HAL_PWR_EnableBkUpAccess:00000010 $d
-     /tmp/ccsKMbP0.s:89     .text.HAL_PWR_DisableBkUpAccess:00000000 $t
-     /tmp/ccsKMbP0.s:95     .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
-     /tmp/ccsKMbP0.s:116    .text.HAL_PWR_DisableBkUpAccess:0000000c $d
-     /tmp/ccsKMbP0.s:122    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
-     /tmp/ccsKMbP0.s:128    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
-     /tmp/ccsKMbP0.s:148    .text.HAL_PWR_EnableWakeUpPin:0000000c $d
-     /tmp/ccsKMbP0.s:153    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
-     /tmp/ccsKMbP0.s:159    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
-     /tmp/ccsKMbP0.s:179    .text.HAL_PWR_DisableWakeUpPin:0000000c $d
-     /tmp/ccsKMbP0.s:184    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
-     /tmp/ccsKMbP0.s:190    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
-     /tmp/ccsKMbP0.s:245    .text.HAL_PWR_EnterSLEEPMode:0000001c $d
-     /tmp/ccsKMbP0.s:250    .text.HAL_PWR_EnterSTOPMode:00000000 $t
-     /tmp/ccsKMbP0.s:256    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
-     /tmp/ccsKMbP0.s:349    .text.HAL_PWR_EnterSTOPMode:00000034 $d
-     /tmp/ccsKMbP0.s:355    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
-     /tmp/ccsKMbP0.s:361    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
-     /tmp/ccsKMbP0.s:397    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
-     /tmp/ccsKMbP0.s:403    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
-     /tmp/ccsKMbP0.s:409    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
-     /tmp/ccsKMbP0.s:428    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
-     /tmp/ccsKMbP0.s:433    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
-     /tmp/ccsKMbP0.s:439    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
-     /tmp/ccsKMbP0.s:458    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
-     /tmp/ccsKMbP0.s:463    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
-     /tmp/ccsKMbP0.s:469    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
-     /tmp/ccsKMbP0.s:488    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
-     /tmp/ccsKMbP0.s:493    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
-     /tmp/ccsKMbP0.s:499    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
-     /tmp/ccsKMbP0.s:518    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
+     /tmp/ccLxWyJu.s:19     .text.HAL_PWR_DeInit:00000000 $t
+     /tmp/ccLxWyJu.s:25     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
+     /tmp/ccLxWyJu.s:50     .text.HAL_PWR_DeInit:00000018 $d
+     /tmp/ccLxWyJu.s:56     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
+     /tmp/ccLxWyJu.s:62     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
+     /tmp/ccLxWyJu.s:84     .text.HAL_PWR_EnableBkUpAccess:00000010 $d
+     /tmp/ccLxWyJu.s:89     .text.HAL_PWR_DisableBkUpAccess:00000000 $t
+     /tmp/ccLxWyJu.s:95     .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
+     /tmp/ccLxWyJu.s:116    .text.HAL_PWR_DisableBkUpAccess:0000000c $d
+     /tmp/ccLxWyJu.s:122    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
+     /tmp/ccLxWyJu.s:128    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
+     /tmp/ccLxWyJu.s:148    .text.HAL_PWR_EnableWakeUpPin:0000000c $d
+     /tmp/ccLxWyJu.s:153    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
+     /tmp/ccLxWyJu.s:159    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
+     /tmp/ccLxWyJu.s:179    .text.HAL_PWR_DisableWakeUpPin:0000000c $d
+     /tmp/ccLxWyJu.s:184    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
+     /tmp/ccLxWyJu.s:190    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
+     /tmp/ccLxWyJu.s:245    .text.HAL_PWR_EnterSLEEPMode:0000001c $d
+     /tmp/ccLxWyJu.s:250    .text.HAL_PWR_EnterSTOPMode:00000000 $t
+     /tmp/ccLxWyJu.s:256    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
+     /tmp/ccLxWyJu.s:349    .text.HAL_PWR_EnterSTOPMode:00000034 $d
+     /tmp/ccLxWyJu.s:355    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
+     /tmp/ccLxWyJu.s:361    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
+     /tmp/ccLxWyJu.s:397    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
+     /tmp/ccLxWyJu.s:403    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
+     /tmp/ccLxWyJu.s:409    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
+     /tmp/ccLxWyJu.s:428    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
+     /tmp/ccLxWyJu.s:433    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
+     /tmp/ccLxWyJu.s:439    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
+     /tmp/ccLxWyJu.s:458    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
+     /tmp/ccLxWyJu.s:463    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
+     /tmp/ccLxWyJu.s:469    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
+     /tmp/ccLxWyJu.s:488    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
+     /tmp/ccLxWyJu.s:493    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
+     /tmp/ccLxWyJu.s:499    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
+     /tmp/ccLxWyJu.s:518    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
 
 NO UNDEFINED SYMBOLS
