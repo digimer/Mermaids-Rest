@@ -134,7 +134,6 @@ int main(void)
   uint8_t lcd1SelPrevSwitchValue  = 0; // 0 = Off, 1 = Selected (inverted at GPIO read)
   uint8_t lcd1SelNextSwitchValue  = 0; // 0 = Off, 1 = Selected (inverted at GPIO read)
   uint8_t throttleStopSwitchValue = 0; // 0 = Run, 1 = Stop - This is the E-Stop 
-  uint8_t speedSelect             = 1; // 0 = Low, 1 = Med, 2 = High
   // NOTE: Eventually, if neither are selected, "remote control" will be enabled. For now, neither selected defaults to Stbd
   uint8_t throttleStbdSelect      = 0; // 0 = Not selected, 1 = selected
   uint8_t throttlePortSelect      = 0; // 0 = Not selected, 1 = selected
@@ -196,8 +195,8 @@ int main(void)
   uint8_t FootSwitchValue = 0;
 
   // The speed switch values (formerly F-N-R). Both off is mid speed (or neutral).
-  uint8_t SpeedHighSwitchValue = 1;
-  uint8_t SpeedLowSwitchValue  = 1;
+  uint8_t SpeedHighSwitchValue = 0;
+  uint8_t SpeedLowSwitchValue  = 0;
 
   // counter
   uint8_t counter = 0;
@@ -211,47 +210,39 @@ int main(void)
   while (1)
   {
     // Read the switch states (1 - X inverts the read value so that '1' is 'On')
-    speedSelect             = 1; // Medium speed is default
+    throttleStopSwitchValue = 1 - HAL_GPIO_ReadPin(THROTTLE_STOP_SW_IN_GPIO_Port, THROTTLE_STOP_SW_IN_Pin);
     mainSwitchValue         = 1 - HAL_GPIO_ReadPin(MAIN_SW_IN_GPIO_Port, MAIN_SW_IN_Pin);
-    speedHighSwitchValue    = 1 - HAL_GPIO_ReadPin(SPEED_HIGH_SW_IN_GPIO_Port, SPEED_HIGH_SW_IN_Pin);
-    speedLowSwitchValue     = 1 - HAL_GPIO_ReadPin(SPEED_LOW_SW_IN_GPIO_Port, SPEED_LOW_SW_IN_Pin);
     lcd1SelPrevSwitchValue  = 1 - HAL_GPIO_ReadPin(LCD1_SELECT_PREV_GPIO_Port, LCD1_SELECT_PREV_Pin);
     lcd1SelNextSwitchValue  = 1 - HAL_GPIO_ReadPin(LCD1_SELECT_NEXT_GPIO_Port, LCD1_SELECT_NEXT_Pin);
-    throttleStopSwitchValue = 1 - HAL_GPIO_ReadPin(THROTTLE_STOP_SW_IN_GPIO_Port, THROTTLE_STOP_SW_IN_Pin);
-    throttleStbdSelect      = 1 - HAL_GPIO_ReadPin(THROTTLE_STBD_SELECT_GPIO_Port, THROTTLE_STBD_SELECT_Pin);
-    throttlePortSelect      = 1 - HAL_GPIO_ReadPin(THROTTLE_PORT_SELECT_GPIO_Port, THROTTLE_PORT_SELECT_Pin);
 
+    // The main switch controls the dashboard lighting, not throttle
     if (mainSwitchValue == 0) {
+      // Turn off the helm lights and screens
       HAL_GPIO_WritePin(LCD1_BL_RED_GPIO_Port, LCD1_BL_RED_Pin, 0);
     } else {
+      // Turn on the helm lights and creens
       HAL_GPIO_WritePin(LCD1_BL_RED_GPIO_Port, LCD1_BL_RED_Pin, 1);
     }
     
     // Emergency Stop logic
-    if (throttleStopSwitchValue == 1){
-      // Shut everything down
-      speedLowSwitchValue  = 1;                      // Set slow speed
+    if (throttleStopSwitchValue == 1) {
+      // Shut everything down! Press the foot switch, change the speed to Low, put the throttle to neutral
+      // and Max regen
+      speedHighSwitchValue = 0;
+      speedLowSwitchValue  = 1;
       adcThrottleStbdValue = NEUTRAL_STBD_MID_POINT; // Set the throttle to neutral
       adcThrottlePortValue = NEUTRAL_PORT_MID_POINT; // Set the throttle to neutral
       adcRegenValue        = REGEN_DAC_MAXIMUM;      // Set the regen to max
     } else {
       // Do normal logic
       // Read in the potentiometers
-      adcThrottleStbdValue = ioctl_get_pot(IOCTL_THROTTLE_STBD_POT); // get the adc value for the starboard throttle 
-      adcThrottlePortValue = ioctl_get_pot(IOCTL_THROTTLE_PORT_POT); // get the adc value for the port throttle 
-      adcRegenValue        = ioctl_get_pot(IOCTL_REGEN_POT);    // get the adc value for the regen
-
-      // What speed?
-      if (speedLowSwitchValue == 1) {
-        // Slow speed
-        speedSelect = 0;
-      } else if (speedHighSwitchValue) {
-        // High speed
-        speedSelect = 2;
-      } else {
-        // Neither == mid-speed
-        speedSelect = 1;
-      }
+      speedHighSwitchValue    = 1 - HAL_GPIO_ReadPin(SPEED_HIGH_SW_IN_GPIO_Port, SPEED_HIGH_SW_IN_Pin);
+      speedLowSwitchValue     = 1 - HAL_GPIO_ReadPin(SPEED_LOW_SW_IN_GPIO_Port, SPEED_LOW_SW_IN_Pin);
+      throttleStbdSelect      = 1 - HAL_GPIO_ReadPin(THROTTLE_STBD_SELECT_GPIO_Port, THROTTLE_STBD_SELECT_Pin);
+      throttlePortSelect      = 1 - HAL_GPIO_ReadPin(THROTTLE_PORT_SELECT_GPIO_Port, THROTTLE_PORT_SELECT_Pin);
+      adcThrottleStbdValue    = ioctl_get_pot(IOCTL_THROTTLE_STBD_POT); // get the adc value for the starboard throttle 
+      adcThrottlePortValue    = ioctl_get_pot(IOCTL_THROTTLE_PORT_POT); // get the adc value for the port throttle 
+      adcRegenValue           = ioctl_get_pot(IOCTL_REGEN_POT);    // get the adc value for the regen
     }
     
     // Handle LCD paging
@@ -270,6 +261,9 @@ int main(void)
     }
     
     // Change output switch values 
+    HAL_GPIO_WritePin(FOOT_SW_OUT_GPIO_Port, FOOT_SW_OUT_Pin, throttleStopSwitchValue);
+    HAL_GPIO_WritePin(SPEED_HIGH_SW_OUT_GPIO_Port, SPEED_HIGH_SW_OUT_Pin, speedHighSwitchValue);
+    HAL_GPIO_WritePin(SPEED_LOW_SW_OUT_GPIO_Port, SPEED_LOW_SW_OUT_Pin, speedLowSwitchValue);
 
     // Display data
     if (lcd1ShowPage == 0) {
@@ -280,10 +274,10 @@ int main(void)
       // Page 2 - Speed 
       if (throttleStopSwitchValue == 1) {
         sprintf(Speed, "%d - Emegergency Stop!\n\r", counter);
-      } else if (speedSelect == 2) {
-        sprintf(Speed, "%d - Turbo speed!\n\r", counter);
-      } else if (speedSelect == 0) {
+      } else if (speedLowSwitchValue) {
         sprintf(Speed, "%d - Turtle speed.\n\r", counter);
+      } else if (speedHighSwitchValue) {
+        sprintf(Speed, "%d - Turbo speed!\n\r", counter);
       } else {
         sprintf(Speed, "%d - Normal speed\n\r", counter);
       }

@@ -124,10 +124,9 @@ void Error_Handler(void);
 // Enable/disable the controller
 #define FOOT_SW_OUT_Pin GPIO_PIN_9
 #define FOOT_SW_OUT_GPIO_Port GPIOA
-// Tell the controller to go to high speed
+// Tell the controller to go to high, Low (or medium for neither) speed
 #define SPEED_HIGH_SW_OUT_Pin GPIO_PIN_10
 #define SPEED_HIGH_SW_OUT_GPIO_Port GPIOA
-// Tell the controller to go to low speed
 #define SPEED_LOW_SW_OUT_Pin GPIO_PIN_11
 #define SPEED_LOW_SW_OUT_GPIO_Port GPIOA
 
