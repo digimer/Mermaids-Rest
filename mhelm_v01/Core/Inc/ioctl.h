@@ -18,8 +18,9 @@
 #include <inttypes.h>
 
 enum {
-  IOCTL_THROTTLE_POT = 0, 
+  IOCTL_THROTTLE_STBD_POT = 0, 
   IOCTL_REGEN_POT, 
+  IOCTL_THROTTLE_PORT_POT, 
   IOCTL_NUM_POTS
 };
 

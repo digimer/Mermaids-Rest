@@ -99,14 +99,22 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
     __HAL_RCC_ADC1_CLK_ENABLE();
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
+    __HAL_RCC_GPIOC_CLK_ENABLE();
     /**ADC GPIO Configuration
     PA0     ------> ADC_IN0
     PA1     ------> ADC_IN1
+    PC3     ------> ADC_IN13
     */
-    GPIO_InitStruct.Pin = THROTTLE_POT_Pin|REGEN_POT_Pin;
+    GPIO_InitStruct.Pin = THROTTLE_STBD_POT_Pin|REGEN_POT_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+    HAL_GPIO_Init(THROTTLE_STBD_POT_GPIO_Port, &GPIO_InitStruct);
+    
+    // I added this because PORT Pot is on PC3 / Port C
+    GPIO_InitStruct.Pin = THROTTLE_PORT_POT_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    HAL_GPIO_Init(THROTTLE_PORT_POT_GPIO_Port, &GPIO_InitStruct);
 
     /* ADC1 DMA Init */
     /* ADC Init */
@@ -153,8 +161,10 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
     /**ADC GPIO Configuration
     PA0     ------> ADC_IN0
     PA1     ------> ADC_IN1
+    PC3     ------> ADC_IN13
     */
-    HAL_GPIO_DeInit(GPIOA, THROTTLE_POT_Pin|REGEN_POT_Pin);
+    HAL_GPIO_DeInit(GPIOA, THROTTLE_STBD_POT_Pin|REGEN_POT_Pin);
+    HAL_GPIO_DeInit(GPIOC, THROTTLE_PORT_POT_Pin);
 
     /* ADC1 DMA DeInit */
     HAL_DMA_DeInit(hadc->DMA_Handle);

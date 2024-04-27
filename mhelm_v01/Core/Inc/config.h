@@ -20,7 +20,7 @@
 
 #define MAJOR_VERSION 0
 #define MINOR_VERSION 1
-#define ADC_NUM_CHANS 2
+#define ADC_NUM_CHANS 3
 
 // interrupt prios
 #define INT_PRIO_SYSTICK 0
