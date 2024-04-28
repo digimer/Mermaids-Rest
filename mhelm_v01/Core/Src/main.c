@@ -282,6 +282,7 @@ int main(void)
     HAL_GPIO_WritePin(SPEED_LOW_SW_OUT_GPIO_Port, SPEED_LOW_SW_OUT_Pin, speedLowSwitchValue);
 
     // Process and smooth out the ThrottlePotValue over 'THROTTLE_STBD_AVERAGE_OVER' samples.
+    // Starboard throttle
     // First, make sure the value is within the maximum range of the pot
     if (ThrottleStbdValueClean < THROTTLE_STBD_REVERSE_MAX) {
       // Beyond reverse max, so set to reverse max
@@ -291,10 +292,19 @@ int main(void)
       ThrottleStbdValueClean = THROTTLE_STBD_FORWARD_MAX;
     } else if ((ThrottleStbdValueClean > THROTTLE_STBD_REVERSE_MIN) && (ThrottleStbdValueClean < THROTTLE_STBD_FORWARD_MIN)) {
       // Somewhere in the neutral zone, set it to the middle of the neutral range
-      ThrottleStbdValueClean = THROTTLE_STBD_REVERSE_MIN + ((THROTTLE_STBD_FORWARD_MAX - THROTTLE_STBD_REVERSE_MIN) / 2);
+      ThrottleStbdValueClean = THROTTLE_STBD_REVERSE_MIN + ((THROTTLE_STBD_FORWARD_MIN - THROTTLE_STBD_REVERSE_MIN) / 2);
+    }
+    // Port throttle
+    if (ThrottlePortValueClean < THROTTLE_PORT_REVERSE_MAX) {
+      ThrottlePortValueClean = THROTTLE_PORT_REVERSE_MAX;
+    } else if (ThrottlePortValueClean > THROTTLE_PORT_FORWARD_MAX) {
+      ThrottlePortValueClean = THROTTLE_PORT_FORWARD_MAX;
+    } else if ((ThrottlePortValueClean > THROTTLE_PORT_REVERSE_MIN) && (ThrottlePortValueClean < THROTTLE_PORT_FORWARD_MIN)) {
+      ThrottlePortValueClean = THROTTLE_PORT_REVERSE_MIN + ((THROTTLE_PORT_FORWARD_MIN - THROTTLE_PORT_REVERSE_MIN) / 2);
     }
 
-    // Smooth out the value now.
+    // Smooth out the values now.
+    // Starboard Throttle
     ThrottleStbdPotArray[ThrottleStbdOldestPotIndex] = ThrottleStbdValueClean;
     ThrottleStbdOldestPotIndex++;
     if (ThrottleStbdOldestPotIndex >= THROTTLE_STBD_AVERAGE_OVER) {
@@ -306,8 +316,22 @@ int main(void)
     }
     // TODO: Make sure this is rounded properly
     ThrottleStbdValueSmooth = (ThrottleStbdPotTotal / THROTTLE_STBD_AVERAGE_OVER);
+    
+    // Port Throttle
+    ThrottlePortPotArray[ThrottlePortOldestPotIndex] = ThrottlePortValueClean;
+    ThrottlePortOldestPotIndex++;
+    if (ThrottlePortOldestPotIndex >= THROTTLE_PORT_AVERAGE_OVER) {
+      ThrottlePortOldestPotIndex = 0;
+    }
+    ThrottlePortPotTotal = 0;
+    for (uint8_t i = 0; i < THROTTLE_PORT_AVERAGE_OVER; i = i + 1) {
+      ThrottlePortPotTotal = ThrottlePortPotTotal + ThrottlePortPotArray[i];
+    }
+    // TODO: Make sure this is rounded properly
+    ThrottlePortValueSmooth = (ThrottlePortPotTotal / THROTTLE_PORT_AVERAGE_OVER);
 
     // Now make the smoothed value fit within the forward / reverse / neutral ranges.
+    // Starboard Throttle
     if (ThrottleStbdValueSmooth <= THROTTLE_STBD_REVERSE_MIN) {
       // We're going in reverse, the lower the dac, the lower the voltage, the lower the speed.
       // THROTTLE_STBD_REVERSE_MAX    is the lowest reverse dac value
@@ -326,6 +350,15 @@ int main(void)
       ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_FORWARD_MIN, THROTTLE_STBD_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
     } else {
       // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
+      ThrottleValueDAC = THROTTLE_DAC_NEUTRAL;
+    }
+
+    // Port Throttle
+    if (ThrottlePortValueSmooth <= THROTTLE_PORT_REVERSE_MIN) {
+      ThrottleValueDAC = map(ThrottlePortValueSmooth, THROTTLE_PORT_REVERSE_MAX, THROTTLE_PORT_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
+    } else if (ThrottlePortValueSmooth >= THROTTLE_PORT_FORWARD_MIN) {
+      ThrottleValueDAC = map(ThrottlePortValueSmooth, THROTTLE_PORT_FORWARD_MIN, THROTTLE_PORT_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
+    } else {
       ThrottleValueDAC = THROTTLE_DAC_NEUTRAL;
     }
 
@@ -352,11 +385,11 @@ int main(void)
         sprintf(Throttle, "%d - Emergency Stop! Speed set to neutral! Raw throttle positions are Starboard/Port: [%d/%d]\n\r", counter, ThrottleStbdValueRaw, ThrottlePortValueRaw);
       } else {
         if (throttlePortSelect) {
-          sprintf(Throttle, "%d - Selected Port throttle (raw): [%d].\n\r", counter, ThrottlePortValueRaw);
+          sprintf(Throttle, "%d - Port (selected) throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottlePortValueRaw, ThrottlePortValueClean, ThrottlePortValueSmooth, ThrottleValueDAC);
         } else if (throttleStbdSelect) {
-          sprintf(Throttle, "%d - Selected Starboad throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, ThrottleValueDAC);
+          sprintf(Throttle, "%d - Starboad (selected) throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, ThrottleValueDAC);
         } else {
-          sprintf(Throttle, "%d - Default to Starboard Throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, ThrottleValueDAC);
+          sprintf(Throttle, "%d - Starboard (default) Throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, ThrottleValueDAC);
         }
       }
       HAL_UART_Transmit(&huart2,Throttle,strlen(Throttle),1000);  // Sending in normal mode
