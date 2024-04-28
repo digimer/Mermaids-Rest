@@ -169,7 +169,7 @@ int main(void)
 
   // LCD1 Page Display
   uint8_t lcd1Pages    = 3; // Max page
-  uint8_t lcd1ShowPage = 2; // Integer changes the data shown on LCD1 (for now, serial)
+  uint8_t lcd1ShowPage = 3; // Integer changes the data shown on LCD1 (for now, serial)
    
   //uint8_t Test[] = "Mermaid's Rest - mhelm v0.1\r\n"; //Data to send
   uint8_t Test[128];
@@ -329,6 +329,19 @@ int main(void)
     }
     // TODO: Make sure this is rounded properly
     ThrottlePortValueSmooth = (ThrottlePortPotTotal / THROTTLE_PORT_AVERAGE_OVER);
+    
+    // Regen
+    RegenPotArray[RegenOldestPotIndex] = RegenValueClean;
+    RegenOldestPotIndex++;
+    if (RegenOldestPotIndex >= REGEN_AVERAGE_OVER) {
+      RegenOldestPotIndex = 0;
+    }
+    RegenPotTotal = 0;
+    for (uint8_t i = 0; i < REGEN_AVERAGE_OVER; i = i + 1) {
+      RegenPotTotal = RegenPotTotal + RegenPotArray[i];
+    }
+    // TODO: Make sure this is rounded properly
+    RegenValueSmooth = (RegenPotTotal / REGEN_AVERAGE_OVER);
 
     // Now make the smoothed value fit within the forward / reverse / neutral ranges.
     // Starboard Throttle
