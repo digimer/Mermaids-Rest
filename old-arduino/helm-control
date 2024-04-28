@@ -50,7 +50,7 @@ void setup() {
 }
 
 // Range for the Throttle's 12-bit DAC
-static const int32_t ThrottleDACMinimum  = 6;     // The TPS Dead Low is set to 0.05vDC, 6 == 5.73vDC
+static const int32_t ThrottleDACMinimum  = 6;      // The TPS Dead Low is set to 0.05vDC, 6 == 5.73vDC
 static const int32_t ThrottleDACMaximum  = 4090;   // The TPS Dead High is set to 4.95vDC, 4090 == 4993.4vDC
 static const float   ThrottleStepVoltage = 1.2207; // mV per step, 1.2207v (5000mv / 4096 steps)
 

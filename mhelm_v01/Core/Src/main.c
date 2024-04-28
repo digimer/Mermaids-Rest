@@ -65,7 +65,7 @@ TIM_HandleTypeDef htim3;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-
+int map(int, int, int, int, int); // Like arduino's map() function
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -138,37 +138,50 @@ int main(void)
   uint8_t throttleStbdSelect      = 0; // 0 = Not selected, 1 = selected
   uint8_t throttlePortSelect      = 0; // 0 = Not selected, 1 = selected
 
-  // ADC values
-  uint16_t adcThrottleStbdValue = 2047; // Mid-point is "neutral"
-  uint16_t adcThrottlePortValue = 2047; // Mid-point is "neutral"
-  uint16_t adcRegenValue        = 0;    // Disable regen
+  // Potentiometer, ADC and DAC Values
+  // Starboard Throttle
+  uint16_t ThrottleStbdValueRaw       = 2047; // raw value,       Mid-point is "neutral"
+  uint16_t ThrottleStbdValueClean     = 2047; // processed value, Mid-point is "neutral"
+  uint16_t ThrottleStbdValueSmooth    = 2047; // This will store the average of the last N reads
+  uint16_t ThrottleStbdOldestPotIndex = 0;    // This is the array index with the oldest value
+  uint16_t ThrottleStbdPotTotal       = 0;    // This is the sum of all values in the array
+  uint16_t ThrottleStbdDACValue       = NEUTRAL_STBD_MID_POINT;
+  uint16_t ThrottleStbdPotArray[THROTTLE_STBD_AVERAGE_OVER];
+  // Port Throttle
+  uint16_t ThrottlePortValueRaw       = 2047; // raw value,       Mid-point is "neutral"
+  uint16_t ThrottlePortValueClean     = 2047; // processed value, Mid-point is "neutral"
+  uint16_t ThrottlePortValueSmooth    = 2047; // This will store the average of the last N reads
+  uint16_t ThrottlePortOldestPotIndex = 0;    // This is the array index with the oldest value
+  uint16_t ThrottlePortPotTotal       = 0;    // This is the sum of all values in the array
+  uint16_t ThrottlePortDACValue       = NEUTRAL_PORT_MID_POINT;
+  uint16_t ThrottlePortPotArray[THROTTLE_PORT_AVERAGE_OVER];
+  // Regen
+  uint16_t RegenValueRaw       = 0;    // raw value,       Disable regen
+  uint16_t RegenValueClean     = 0;    // processed value, Disable regen
+  uint16_t RegenValueSmooth    = 0;    // This will store the average of the last N reads
+  uint16_t RegenOldestPotIndex = 0;
+  uint16_t RegenPotTotal       = 0;
+  uint16_t RegenPotArray[REGEN_AVERAGE_OVER];
+
+  // DAC values
+  uint16_t ThrottleValueDAC = THROTTLE_DAC_NEUTRAL; // Default to neutral
+  uint16_t RegenValueDAC    = 0;                    // Default to no regen
 
   // LCD1 Page Display
-  uint8_t lcd1Pages    = 2; // Max page
-  uint8_t lcd1ShowPage = 0; // Integer changes the data shown on LCD1 (for now, serial)
+  uint8_t lcd1Pages    = 3; // Max page
+  uint8_t lcd1ShowPage = 2; // Integer changes the data shown on LCD1 (for now, serial)
    
   //uint8_t Test[] = "Mermaid's Rest - mhelm v0.1\r\n"; //Data to send
   uint8_t Test[128];
   uint8_t Speed[16];
-  uint8_t Pots[128];
+  uint8_t Throttle[128];
+  uint8_t Regen[128];
 
   /* USER CODE END 2 */
   ioctl_init();
 
   // start timers
   HAL_TIM_Base_Start_IT(&htim1);
-
-  // Setup the potentiomete values
-  uint16_t ThrottleStbdOldestPotIndex = 0;  // This is the array index with the oldest value
-  uint16_t ThrottleStbdPotTotal       = 0;
-  uint16_t ThrottleStbdPotArray[THROTTLE_STBD_AVERAGE_OVER];
-  uint16_t ThrottlePortOldestPotIndex = 0;  // This is the array index with the oldest value
-  uint16_t ThrottlePortPotTotal       = 0;
-  uint16_t ThrottlePortPotArray[THROTTLE_PORT_AVERAGE_OVER];
-  uint16_t RegenSmoothedPotValue      = 0;
-  uint16_t RegenOldestPotIndex        = 0;  // This is the array index with the oldest value
-  uint16_t RegenPotTotal              = 0;
-  uint16_t RegenPotArray[REGEN_AVERAGE_OVER];
 
   // Prepopulate the arrays.
   void initializeAverages() {
@@ -214,6 +227,9 @@ int main(void)
     mainSwitchValue         = 1 - HAL_GPIO_ReadPin(MAIN_SW_IN_GPIO_Port, MAIN_SW_IN_Pin);
     lcd1SelPrevSwitchValue  = 1 - HAL_GPIO_ReadPin(LCD1_SELECT_PREV_GPIO_Port, LCD1_SELECT_PREV_Pin);
     lcd1SelNextSwitchValue  = 1 - HAL_GPIO_ReadPin(LCD1_SELECT_NEXT_GPIO_Port, LCD1_SELECT_NEXT_Pin);
+    ThrottleStbdValueRaw    = ioctl_get_pot(IOCTL_THROTTLE_STBD_POT); // get the adc value for the starboard throttle 
+    ThrottlePortValueRaw    = ioctl_get_pot(IOCTL_THROTTLE_PORT_POT); // get the adc value for the port throttle 
+    RegenValueRaw           = ioctl_get_pot(IOCTL_REGEN_POT);         // get the adc value for the regen
 
     // The main switch controls the dashboard lighting, not throttle
     if (mainSwitchValue == 0) {
@@ -230,25 +246,25 @@ int main(void)
       // and Max regen
       speedHighSwitchValue = 0;
       speedLowSwitchValue  = 1;
-      adcThrottleStbdValue = NEUTRAL_STBD_MID_POINT; // Set the throttle to neutral
-      adcThrottlePortValue = NEUTRAL_PORT_MID_POINT; // Set the throttle to neutral
-      adcRegenValue        = REGEN_DAC_MAXIMUM;      // Set the regen to max
+      ThrottleStbdValueClean = NEUTRAL_STBD_MID_POINT; // Set the throttle to neutral
+      ThrottlePortValueClean = NEUTRAL_PORT_MID_POINT; // Set the throttle to neutral
+      RegenValueClean        = REGEN_DAC_MAXIMUM;      // Set the regen to max
     } else {
       // Do normal logic
       // Read in the potentiometers
-      speedHighSwitchValue    = 1 - HAL_GPIO_ReadPin(SPEED_HIGH_SW_IN_GPIO_Port, SPEED_HIGH_SW_IN_Pin);
-      speedLowSwitchValue     = 1 - HAL_GPIO_ReadPin(SPEED_LOW_SW_IN_GPIO_Port, SPEED_LOW_SW_IN_Pin);
-      throttleStbdSelect      = 1 - HAL_GPIO_ReadPin(THROTTLE_STBD_SELECT_GPIO_Port, THROTTLE_STBD_SELECT_Pin);
-      throttlePortSelect      = 1 - HAL_GPIO_ReadPin(THROTTLE_PORT_SELECT_GPIO_Port, THROTTLE_PORT_SELECT_Pin);
-      adcThrottleStbdValue    = ioctl_get_pot(IOCTL_THROTTLE_STBD_POT); // get the adc value for the starboard throttle 
-      adcThrottlePortValue    = ioctl_get_pot(IOCTL_THROTTLE_PORT_POT); // get the adc value for the port throttle 
-      adcRegenValue           = ioctl_get_pot(IOCTL_REGEN_POT);    // get the adc value for the regen
+      speedHighSwitchValue = 1 - HAL_GPIO_ReadPin(SPEED_HIGH_SW_IN_GPIO_Port, SPEED_HIGH_SW_IN_Pin);
+      speedLowSwitchValue  = 1 - HAL_GPIO_ReadPin(SPEED_LOW_SW_IN_GPIO_Port, SPEED_LOW_SW_IN_Pin);
+      throttleStbdSelect   = 1 - HAL_GPIO_ReadPin(THROTTLE_STBD_SELECT_GPIO_Port, THROTTLE_STBD_SELECT_Pin);
+      throttlePortSelect   = 1 - HAL_GPIO_ReadPin(THROTTLE_PORT_SELECT_GPIO_Port, THROTTLE_PORT_SELECT_Pin);
+      ThrottleStbdValueClean = ThrottleStbdValueRaw;
+      ThrottlePortValueClean = ThrottlePortValueRaw;
+      RegenValueClean        = RegenValueRaw;
     }
     
     // Handle LCD paging
     if (lcd1SelPrevSwitchValue) {
       if (lcd1ShowPage < lcd1Pages) { 
-        lcd1ShowPage ++;
+        lcd1ShowPage++;
       } else {
         lcd1ShowPage = 0;
       }
@@ -256,7 +272,7 @@ int main(void)
       if (lcd1ShowPage == 0) { 
         lcd1ShowPage = lcd1Pages;
       } else {
-        lcd1ShowPage --;
+        lcd1ShowPage--;
       }
     }
     
@@ -265,10 +281,58 @@ int main(void)
     HAL_GPIO_WritePin(SPEED_HIGH_SW_OUT_GPIO_Port, SPEED_HIGH_SW_OUT_Pin, speedHighSwitchValue);
     HAL_GPIO_WritePin(SPEED_LOW_SW_OUT_GPIO_Port, SPEED_LOW_SW_OUT_Pin, speedLowSwitchValue);
 
+    // Process and smooth out the ThrottlePotValue over 'THROTTLE_STBD_AVERAGE_OVER' samples.
+    // First, make sure the value is within the maximum range of the pot
+    if (ThrottleStbdValueClean < THROTTLE_STBD_REVERSE_MAX) {
+      // Beyond reverse max, so set to reverse max
+      ThrottleStbdValueClean = THROTTLE_STBD_REVERSE_MAX;
+    } else if (ThrottleStbdValueClean > THROTTLE_STBD_FORWARD_MAX) {
+      // Beyond forward max, so set to forward max
+      ThrottleStbdValueClean = THROTTLE_STBD_FORWARD_MAX;
+    } else if ((ThrottleStbdValueClean > THROTTLE_STBD_REVERSE_MIN) && (ThrottleStbdValueClean < THROTTLE_STBD_FORWARD_MIN)) {
+      // Somewhere in the neutral zone, set it to the middle of the neutral range
+      ThrottleStbdValueClean = THROTTLE_STBD_REVERSE_MIN + ((THROTTLE_STBD_FORWARD_MAX - THROTTLE_STBD_REVERSE_MIN) / 2);
+    }
+
+    // Smooth out the value now.
+    ThrottleStbdPotArray[ThrottleStbdOldestPotIndex] = ThrottleStbdValueClean;
+    ThrottleStbdOldestPotIndex++;
+    if (ThrottleStbdOldestPotIndex >= THROTTLE_STBD_AVERAGE_OVER) {
+      ThrottleStbdOldestPotIndex = 0;
+    }
+    ThrottleStbdPotTotal = 0;
+    for (uint8_t i = 0; i < THROTTLE_STBD_AVERAGE_OVER; i = i + 1) {
+      ThrottleStbdPotTotal = ThrottleStbdPotTotal + ThrottleStbdPotArray[i];
+    }
+    // TODO: Make sure this is rounded properly
+    ThrottleStbdValueSmooth = (ThrottleStbdPotTotal / THROTTLE_STBD_AVERAGE_OVER);
+
+    // Now make the smoothed value fit within the forward / reverse / neutral ranges.
+    if (ThrottleStbdValueSmooth <= THROTTLE_STBD_REVERSE_MIN) {
+      // We're going in reverse, the lower the dac, the lower the voltage, the lower the speed.
+      // THROTTLE_STBD_REVERSE_MAX    is the lowest reverse dac value
+      // THROTTLE_STBD_REVERSE_MIN    is the highest reverse dac value
+      // THROTTLE_DAC_REVERSE_SLOWEST is 0.05v, max reverse
+      // THROTTLE_STBD_FORWARD_MIN    is 2.4v the start of reverse
+      //                                              from low                   from high                  to low                        to high
+      ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_REVERSE_MAX, THROTTLE_STBD_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
+    } else if (ThrottleStbdValueSmooth >= THROTTLE_STBD_FORWARD_MIN) {
+      // THROTTLE_STBD_FORWARD_MIN is the lowest dac value
+      // THROTTLE_STBD_FORWARD_MAX is the highest dac value
+      // THROTTLE_STBD_REVERSE_MIN is 2.6v, minimum forward
+      // THROTTLE_DAC_MAXIMUM      is 5v, maximum forward
+      // We're going forward, the higher the dac, the higher the voltage, the higher the speed
+      //                                              from low                   from high                  to low                        to high
+      ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_FORWARD_MIN, THROTTLE_STBD_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
+    } else {
+      // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
+      ThrottleValueDAC = THROTTLE_DAC_NEUTRAL;
+    }
+
     // Display data
     if (lcd1ShowPage == 0) {
       // Page 1 - Switch positions
-      sprintf(Test, "%d - Switches: Main: [%d], E-Stop: [%d], Speed High/Low: [%d/%d], Throttle Stbd/Port: [%d/%d]\n\r",        counter, mainSwitchValue, throttleStopSwitchValue, speedHighSwitchValue, speedLowSwitchValue, throttleStbdSelect, throttlePortSelect);
+      sprintf(Test, "%d - Switches: Main: [%d], E-Stop: [%d], Speed High/Low: [%d/%d], Throttle Stbd/Port: [%d/%d]\n\r", counter, mainSwitchValue, throttleStopSwitchValue, speedHighSwitchValue, speedLowSwitchValue, throttleStbdSelect, throttlePortSelect);
       HAL_UART_Transmit(&huart2,Test,strlen(Test),1000);  // Sending in normal mode
     } else if (lcd1ShowPage == 1) {
       // Page 2 - Speed 
@@ -283,19 +347,27 @@ int main(void)
       }
       HAL_UART_Transmit(&huart2,Speed,strlen(Speed),1000);  // Sending in normal mode
     } else if (lcd1ShowPage == 2) {
-      // Page 3 - ADC and DAC
+      // Page 3 - Throttle
       if (throttleStopSwitchValue == 1) {
-        sprintf(Pots, "%d - Emergency Stop! Max regen set and speed set to neutral! Throttle positions are Starboard/Port/Regen: [%d/%d/%d]\n\r", counter, adcThrottleStbdValue, adcThrottlePortValue, adcRegenValue);
+        sprintf(Throttle, "%d - Emergency Stop! Speed set to neutral! Raw throttle positions are Starboard/Port: [%d/%d]\n\r", counter, ThrottleStbdValueRaw, ThrottlePortValueRaw);
       } else {
         if (throttlePortSelect) {
-          sprintf(Pots, "%d - Selected Port throttle: [%d], out: [-], Regen is: [%d], out: [-].\n\r", counter, adcThrottlePortValue, adcRegenValue);
+          sprintf(Throttle, "%d - Selected Port throttle (raw): [%d].\n\r", counter, ThrottlePortValueRaw);
         } else if (throttleStbdSelect) {
-          sprintf(Pots, "%d - Selected Starboad throttle: [%d], out: [-], Regen in: [%d], out: [-].\n\r", counter, adcThrottleStbdValue, adcRegenValue);
+          sprintf(Throttle, "%d - Selected Starboad throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, ThrottleValueDAC);
         } else {
-          sprintf(Pots, "%d - Default to Starboard Throttle: [%d], out: [-], Regen in: [%d], out: [-] - Startboard Default.\n\r", counter, adcThrottleStbdValue, adcRegenValue);
+          sprintf(Throttle, "%d - Default to Starboard Throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, ThrottleValueDAC);
         }
       }
-      HAL_UART_Transmit(&huart2,Pots,strlen(Pots),1000);  // Sending in normal mode
+      HAL_UART_Transmit(&huart2,Throttle,strlen(Throttle),1000);  // Sending in normal mode
+    } else if (lcd1ShowPage == 3) {
+      // Page 4 - Regen
+      if (throttleStopSwitchValue == 1) {
+        sprintf(Regen, "%d - Emergency Stop! Max regen set! Raw/ADC: [%d/%d/%d]\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth);
+      } else {
+        sprintf(Regen, "%d - Regen (Raw/clean/smooth): [%d/%d/%d]\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth);
+      }
+      HAL_UART_Transmit(&huart2,Regen,strlen(Regen),1000);  // Sending in normal mode
     }
     
     HAL_Delay(MAIN_DELAY_TIME);
@@ -333,6 +405,26 @@ void init_LCD()
   I2C_stop(); 
 }
 */
+
+/** @brief similar to Arduino's map() function
+ * This take a value, and two ranges; fromLow, fromHigh and toLow, toHigh. The values relative position 
+ * between the 'from' values is used to find the corresponding relative function in the 'to' range.
+ * @param value: The value being mapped
+ * @param fromLow: The lowest integer that 'value' could be
+ * @param fromHigh: The highest integer that 'value' could be
+ * @param toLow: The lowest integer that 'value' can map to
+ * @param toHigh: The highest integer that 'value' can map to
+ * @retval int
+*/
+int map(int value, int fromLow, int fromHigh, int toLow, int toHigh) {
+    // Calculate the percentage of 'value' within the original range
+    int percentage = ((value - fromLow) * 100) / (fromHigh - fromLow);
+ 
+    // Map the percentage to the new range
+    int result = toLow + (percentage * (toHigh - toLow) / 100);
+ 
+    return result;
+}
 
 /**
   * @brief System Clock Configuration

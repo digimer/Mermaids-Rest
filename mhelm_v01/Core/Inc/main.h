@@ -143,57 +143,49 @@ void Error_Handler(void);
 #define DAC_SDA_GPIO_Port GPIOB
 
 // Static Values 
-// Throttle - Starboard
-#define THROTTLE_STBD_DAC_MINIMUM         6        // The TPS Dead Low is set to 0.05vDC, 6  5.73vDC
-#define THROTTLE_STBD_DAC_MAXIMUM         4090     // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
-#define THROTTLE_STBD_STEP_VOLTAGE        1.2207f  // float representing the voltage per step (5000/4096)
-#define THROTTLE_STBD_AVERAGE_OVER        8        // Average the reading over this many reads. Must be proportional to delayTime
-#define THROTTLE_STBD_REVERSE_MAX         2520     // The throttle pot value equalling the fastest speed in reverse
-#define THROTTLE_STBD_REVERSE_MIN         2100     // The throttle pot value equalling the slowest speed in reverse
-#define THROTTLE_STBD_FORWARD_MIN         1920     // The throttle pot value equalling the slowest speed forward
-#define THROTTLE_STBD_FORWARD_MAX         1450     // The throttle pot value equalling the fastest speed forward
-#define REVERSE_STBD_SENSOR_STEPS         (THROTTLE_STBD_REVERSE_MIN - THROTTLE_STBD_REVERSE_MAX);
-#define FORWARD_STBD_SENSOR_STEPS         (THROTTLE_STBD_FORWARD_MAX - THROTTLE_STBD_FORWARD_MIN);
-#define NEUTRAL_STBD_MID_POINT            (((THROTTLE_STBD_FORWARD_MIN - THROTTLE_STBD_REVERSE_MIN) / 2) + THROTTLE_STBD_REVERSE_MIN);
-#define REVERSE_STBD_PERCENT_STEPS        100 / REVERSE_STBD_SENSOR_STEPS;
-#define FORWARD_STBD_PERCENT_STEPS        100 / FORWARD_STBD_SENSOR_STEPS;
-#define THROTTLE_STBD_SMOOTHED_POT_VALUE  NEUTRAL_STBD_MID_POINT;
-// Throttle - Port
-#define THROTTLE_PORT_DAC_MINIMUM         6        // The TPS Dead Low is set to 0.05vDC, 6  5.73vDC
-#define THROTTLE_PORT_DAC_MAXIMUM         4090     // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
-#define THROTTLE_PORT_STEP_VOLTAGE        1.2207f  // float representing the voltage per step (5000/4096)
-#define THROTTLE_PORT_AVERAGE_OVER        8        // Average the reading over this many reads. Must be proportional to delayTime
-#define THROTTLE_PORT_REVERSE_MAX         2520     // The throttle pot value equalling the fastest speed in reverse
-#define THROTTLE_PORT_REVERSE_MIN         2100     // The throttle pot value equalling the slowest speed in reverse
-#define THROTTLE_PORT_FORWARD_MIN         1920     // The throttle pot value equalling the slowest speed forward
-#define THROTTLE_PORT_FORWARD_MAX         1450     // The throttle pot value equalling the fastest speed forward
-#define REVERSE_PORT_SENSOR_STEPS         (THROTTLE_PORT_REVERSE_MIN - THROTTLE_PORT_REVERSE_MAX);
-#define FORWARD_PORT_SENSOR_STEPS         (THROTTLE_PORT_FORWARD_MAX - THROTTLE_PORT_FORWARD_MIN);
-#define NEUTRAL_PORT_MID_POINT            (((THROTTLE_PORT_FORWARD_MIN - THROTTLE_PORT_REVERSE_MIN) / 2) + THROTTLE_PORT_REVERSE_MIN);
-#define REVERSE_PORT_PERCENT_STEPS        100 / REVERSE_PORT_SENSOR_STEPS;
-#define FORWARD_PORT_PERCENT_STEPS        100 / FORWARD_PORT_SENSOR_STEPS;
-#define THROTTLE_PORT_SMOOTHED_POT_VALUE  NEUTRAL_PORT_MID_POINT;
+// Calibrated Values - These need to be per-sensor, and ideally read from a user-editable field
+// DAC values (common regardless of the throttle in use, but needs to be tested/adjusted per DAC)
+#define THROTTLE_DAC_FORWARD_SLOWEST 2130 // Slowest forward, 1965 on this DAC is (2.4?)v
+#define THROTTLE_DAC_FORWARD_FASTEST 4090 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
+#define THROTTLE_DAC_NEUTRAL         2010 // The value that sets the motor to neutral, 2.5v
+#define THROTTLE_DAC_REVERSE_SLOWEST 1965 // Slowest reverse, 2130 on this DAC is (2.6?)v
+#define THROTTLE_DAC_REVERSE_FASTEST 6    // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
 
+// Throttle - Starboard
+#define THROTTLE_STBD_STEP_VOLTAGE 1.2207f  // float representing the voltage per step (5000/4096)
+#define THROTTLE_STBD_AVERAGE_OVER 8        // Average the reading over this many reads. Must be proportional to delayTime - Max 255
+#define THROTTLE_STBD_REVERSE_MAX  1140     // The throttle pot value equalling the fastest speed in reverse
+#define THROTTLE_STBD_REVERSE_MIN  1850     // The throttle pot value equalling the slowest speed in reverse
+#define THROTTLE_STBD_FORWARD_MIN  2040     // The throttle pot value equalling the slowest speed forward
+#define THROTTLE_STBD_FORWARD_MAX  2740     // The throttle pot value equalling the fastest speed forward
+#define REVERSE_STBD_SENSOR_STEPS  (THROTTLE_STBD_REVERSE_MIN - THROTTLE_STBD_REVERSE_MAX)
+#define FORWARD_STBD_SENSOR_STEPS  (THROTTLE_STBD_FORWARD_MAX - THROTTLE_STBD_FORWARD_MIN)
+#define NEUTRAL_STBD_MID_POINT     (((THROTTLE_STBD_FORWARD_MIN - THROTTLE_STBD_REVERSE_MIN) / 2) + THROTTLE_STBD_REVERSE_MIN)
+#define REVERSE_STBD_PERCENT_STEPS 100 / REVERSE_STBD_SENSOR_STEPS
+#define FORWARD_STBD_PERCENT_STEPS 100 / FORWARD_STBD_SENSOR_STEPS
+
+// Throttle - Port
+#define THROTTLE_PORT_STEP_VOLTAGE 1.2207f  // float representing the voltage per step (5000/4096)
+#define THROTTLE_PORT_AVERAGE_OVER 8        // Average the reading over this many reads. Must be proportional to delayTime - Max 255
+#define THROTTLE_PORT_REVERSE_MAX  1450     // The throttle pot value equalling the fastest speed in reverse
+#define THROTTLE_PORT_REVERSE_MIN  1920     // The throttle pot value equalling the slowest speed in reverse
+#define THROTTLE_PORT_FORWARD_MIN  2100     // The throttle pot value equalling the slowest speed forward
+#define THROTTLE_PORT_FORWARD_MAX  2520     // The throttle pot value equalling the fastest speed forward
+#define REVERSE_PORT_SENSOR_STEPS  (THROTTLE_PORT_REVERSE_MIN - THROTTLE_PORT_REVERSE_MAX)
+#define FORWARD_PORT_SENSOR_STEPS  (THROTTLE_PORT_FORWARD_MAX - THROTTLE_PORT_FORWARD_MIN)
+#define NEUTRAL_PORT_MID_POINT     (((THROTTLE_PORT_FORWARD_MIN - THROTTLE_PORT_REVERSE_MIN) / 2) + THROTTLE_PORT_REVERSE_MIN)
+#define REVERSE_PORT_PERCENT_STEPS 100 / REVERSE_PORT_SENSOR_STEPS
+#define FORWARD_PORT_PERCENT_STEPS 100 / FORWARD_PORT_SENSOR_STEPS
 
 // Regen 
 #define REGEN_DAC_MINIMUM   20           // The TPS Dead Low is set to 0.05vDC, 6  5.73vDC
 #define REGEN_DAC_MAXIMUM   4090        // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
 #define REGEN_STEP_VOLTAGE  1.2207f     // float representing the voltage per step (5000/4096)
-#define REGEN_AVERAGE_OVER  8           // Average the reading over this many reads. Must be proportional to delayTime
+#define REGEN_AVERAGE_OVER  8           // Average the reading over this many reads. Must be proportional to delayTime - Max 255
 #define REGEN_POT_MINIMUM   0
 #define REGEN_POT_MAXIMUM   4030        // By math, this should be 4095, but is less in practice and needs to be tested per pot
 // Others
 #define MAIN_DELAY_TIME 250                  // Time between loops
-
-// Calibrated Values - These need to be per-sensor, and ideally read from a user-editable field
-// Starboard
-#define THROTTLE_STBD_DAC_NEUTRAL       2010   // Tested on this DAC, not mathmatically accurate
-#define THROTTLE_STBD_DAC_NEUTRAL_START 1965
-#define THROTTLE_STBD_DAC_NEUTRAL_END   2130
-// Port
-#define THROTTLE_PORT_DAC_NEUTRAL       2010   // Tested on this DAC, not mathmatically accurate
-#define THROTTLE_PORT_DAC_NEUTRAL_START 1965
-#define THROTTLE_PORT_DAC_NEUTRAL_END   2130
 
 /* USER CODE BEGIN Private defines */
 // main timer task
