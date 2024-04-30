@@ -56,8 +56,8 @@
 ADC_HandleTypeDef hadc;
 DMA_HandleTypeDef hdma_adc;
 
-I2C_HandleTypeDef hi2c_dac;  // rename to 'hi2c_dac' DAC
-I2C_HandleTypeDef hi2c_lcd;  // rename to 'hi2c_lcd' LCD
+I2C_HandleTypeDef hi2c_dac;  // I2C for the DACs
+I2C_HandleTypeDef hi2c_lcd;  // I2C for the LCDs
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim3;
@@ -164,18 +164,22 @@ int main(void)
   uint16_t RegenPotArray[REGEN_AVERAGE_OVER];
 
   // DAC values
-  uint16_t ThrottleValueDAC = THROTTLE_DAC_NEUTRAL; // Default to neutral
-  uint16_t RegenValueDAC    = 0;                    // Default to no regen
+  uint16_t ThrottleValueDAC    = THROTTLE_DAC_NEUTRAL; // Value to set, Default to neutral
+  uint16_t oldThrottleValueDAC = 0;                    // Value read from the DAC
+  uint16_t RegenValueDAC       = 0;                    // Value to set, Default to no regen
+  uint16_t oldRegenValueDAC    = 0;                    // Value read from the DAC
 
   // LCD1 Page Display
   uint8_t lcd1Pages    = 3; // Max page
-  uint8_t lcd1ShowPage = 3; // Integer changes the data shown on LCD1 (for now, serial)
+  uint8_t lcd1ShowPage = 2; // Integer changes the data shown on LCD1 (for now, serial)
    
   //uint8_t Test[] = "Mermaid's Rest - mhelm v0.1\r\n"; //Data to send
   uint8_t Test[128];
   uint8_t Speed[16];
   uint8_t Throttle[128];
   uint8_t Regen[128];
+  // arrays for I2C
+  uint8_t dac_data[2];
 
   /* USER CODE END 2 */
   ioctl_init();
@@ -230,6 +234,7 @@ int main(void)
     ThrottleStbdValueRaw    = ioctl_get_pot(IOCTL_THROTTLE_STBD_POT); // get the adc value for the starboard throttle 
     ThrottlePortValueRaw    = ioctl_get_pot(IOCTL_THROTTLE_PORT_POT); // get the adc value for the port throttle 
     RegenValueRaw           = ioctl_get_pot(IOCTL_REGEN_POT);         // get the adc value for the regen
+    //oldThrottleValueDAC     = HAL_I2C_Slave_Receive(hi2c_dac, );
 
     // The main switch controls the dashboard lighting, not throttle
     if (mainSwitchValue == 0) {
@@ -345,35 +350,55 @@ int main(void)
 
     // Now make the smoothed value fit within the forward / reverse / neutral ranges.
     // Starboard Throttle
-    if (ThrottleStbdValueSmooth <= THROTTLE_STBD_REVERSE_MIN) {
-      // We're going in reverse, the lower the dac, the lower the voltage, the lower the speed.
-      // THROTTLE_STBD_REVERSE_MAX    is the lowest reverse dac value
-      // THROTTLE_STBD_REVERSE_MIN    is the highest reverse dac value
-      // THROTTLE_DAC_REVERSE_SLOWEST is 0.05v, max reverse
-      // THROTTLE_STBD_FORWARD_MIN    is 2.4v the start of reverse
-      //                                              from low                   from high                  to low                        to high
-      ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_REVERSE_MAX, THROTTLE_STBD_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
-    } else if (ThrottleStbdValueSmooth >= THROTTLE_STBD_FORWARD_MIN) {
-      // THROTTLE_STBD_FORWARD_MIN is the lowest dac value
-      // THROTTLE_STBD_FORWARD_MAX is the highest dac value
-      // THROTTLE_STBD_REVERSE_MIN is 2.6v, minimum forward
-      // THROTTLE_DAC_MAXIMUM      is 5v, maximum forward
-      // We're going forward, the higher the dac, the higher the voltage, the higher the speed
-      //                                              from low                   from high                  to low                        to high
-      ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_FORWARD_MIN, THROTTLE_STBD_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
+    if ((throttleStbdSelect) || (!throttlePortSelect)) {
+      if (ThrottleStbdValueSmooth <= THROTTLE_STBD_REVERSE_MIN) {
+        // We're going in reverse, the lower the dac, the lower the voltage, the lower the speed.
+        // THROTTLE_STBD_REVERSE_MAX    is the lowest reverse dac value
+        // THROTTLE_STBD_REVERSE_MIN    is the highest reverse dac value
+        // THROTTLE_DAC_REVERSE_SLOWEST is 0.05v, max reverse
+        // THROTTLE_STBD_FORWARD_MIN    is 2.4v the start of reverse
+        //                                              from low                   from high                  to low                        to high
+        ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_REVERSE_MAX, THROTTLE_STBD_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
+      } else if (ThrottleStbdValueSmooth >= THROTTLE_STBD_FORWARD_MIN) {
+        // THROTTLE_STBD_FORWARD_MIN is the lowest dac value
+        // THROTTLE_STBD_FORWARD_MAX is the highest dac value
+        // THROTTLE_STBD_REVERSE_MIN is 2.6v, minimum forward
+        // THROTTLE_DAC_MAXIMUM      is 5v, maximum forward
+        // We're going forward, the higher the dac, the higher the voltage, the higher the speed
+        //                                              from low                   from high                  to low                        to high
+        ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_FORWARD_MIN, THROTTLE_STBD_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
+      } else {
+        // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
+        ThrottleValueDAC = THROTTLE_DAC_NEUTRAL;
+      }
     } else {
-      // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
-      ThrottleValueDAC = THROTTLE_DAC_NEUTRAL;
+      // Port Throttle
+      if (ThrottlePortValueSmooth <= THROTTLE_PORT_REVERSE_MIN) {
+        ThrottleValueDAC = map(ThrottlePortValueSmooth, THROTTLE_PORT_REVERSE_MAX, THROTTLE_PORT_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
+      } else if (ThrottlePortValueSmooth >= THROTTLE_PORT_FORWARD_MIN) {
+        ThrottleValueDAC = map(ThrottlePortValueSmooth, THROTTLE_PORT_FORWARD_MIN, THROTTLE_PORT_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
+      } else {
+        ThrottleValueDAC = THROTTLE_DAC_NEUTRAL;
+      }
     }
 
-    // Port Throttle
-    if (ThrottlePortValueSmooth <= THROTTLE_PORT_REVERSE_MIN) {
-      ThrottleValueDAC = map(ThrottlePortValueSmooth, THROTTLE_PORT_REVERSE_MAX, THROTTLE_PORT_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
-    } else if (ThrottlePortValueSmooth >= THROTTLE_PORT_FORWARD_MIN) {
-      ThrottleValueDAC = map(ThrottlePortValueSmooth, THROTTLE_PORT_FORWARD_MIN, THROTTLE_PORT_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
-    } else {
-      ThrottleValueDAC = THROTTLE_DAC_NEUTRAL;
-    }
+    // Set the DAC values.
+    /*
+    THROTTLE_MCP4725_I2CADDR   (0x62) // Default i2c address
+    REGEN_MCP4725_I2CADDR      (0x63) // Default i2c address
+    MCP4725_CMD_WRITEDAC       (0x40) // Writes data to the DAC
+    MCP4725_CMD_WRITEDACEEPROM (0x60) // Writes data to the DAC and the EEPROM (persisting the assigned value after reset)
+    dac_data[];
+    HAL_I2C_Master_Transmit(hi2c_dac, 0x62, );
+    */
+    dac_data[0] = MCP4725_CMD_WRITEDAC;
+    dac_data[1] = ThrottleValueDAC / 16;        // Upper data bits (D11.D10.D9.D8.D7.D6.D5.D4)
+    dac_data[2] = (ThrottleValueDAC % 16) << 4; // Lower data bits (D3.D2.D1.D0.x.x.x.x)
+    //HAL_I2C_Master_Transmit(&hi2c_dac, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
+    //HAL_I2C_Master_Transmit(&hi2c_dac, 0xc0, dac_data, 2, 1000);
+    //dac_data[1] = 0xFF;
+    //dac_data[2] = 0xF0;
+    HAL_I2C_Master_Transmit(&hi2c_dac, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
 
     // Display data
     if (lcd1ShowPage == 0) {
@@ -873,7 +898,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, LD2_Pin|FOOT_SW_OUT_Pin|SPEED_HIGH_SW_OUT_Pin|SPEED_LOW_SW_OUT_Pin, GPIO_PIN_RESET);
 
-  /* TODO: Remove - Testing PB6, PB7 and PB8 (LCD1 Backlight Pins) */
+  /* TODO: Remove - Testing PC6, PC7 and PC8 (LCD1 Backlight Pins) */
   GPIO_InitStruct.Pin   = LCD1_BL_RED_Pin | LCD1_BL_GREEN_Pin | LCD1_BL_BLUE_Pin;
   GPIO_InitStruct.Mode  = GPIO_MODE_OUTPUT_OD;
   GPIO_InitStruct.Pull  = GPIO_NOPULL;

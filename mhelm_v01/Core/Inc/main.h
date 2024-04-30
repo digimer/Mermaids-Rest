@@ -79,16 +79,24 @@ void Error_Handler(void);
 #define DAC_SDA_Pin GPIO_PIN_7
 #define DAC_SDA_GPIO_Port GPIOB
 
+// MCP4725 definitions
+#define THROTTLE_MCP4725_I2CADDR   (0x62) << 1 // Default i2c address
+#define REGEN_MCP4725_I2CADDR      (0x63) << 1 // Default i2c address
+#define MCP4725_CMD_WRITEDAC       (0x40) // Writes data to the DAC
+#define MCP4725_CMD_WRITEDACEEPROM (0x60) // Writes data to the DAC and the EEPROM (persisting the assigned value after reset)
+
+// I2C for LCDs 
+#define LCD_SCL_Pin GPIO_PIN_10
+#define LCD_SCL_GPIO_Port GPIOB
+#define LCD_SDA_Pin GPIO_PIN_11
+#define LCD_SDA_GPIO_Port GPIOB
+
 #define USART_TX_Pin GPIO_PIN_2
 #define USART_TX_GPIO_Port GPIOA
 #define USART_RX_Pin GPIO_PIN_3
 #define USART_RX_GPIO_Port GPIOA
 #define LD2_Pin GPIO_PIN_5
 #define LD2_GPIO_Port GPIOA
-#define LCD_SCL_Pin GPIO_PIN_10
-#define LCD_SCL_GPIO_Port GPIOB
-#define LCD_SDA_Pin GPIO_PIN_11
-#define LCD_SDA_GPIO_Port GPIOB
 #define LCD1_BL_RED_Pin GPIO_PIN_6
 #define LCD1_BL_RED_GPIO_Port GPIOC
 #define LCD1_BL_GREEN_Pin GPIO_PIN_7
