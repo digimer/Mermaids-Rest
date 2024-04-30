@@ -382,23 +382,28 @@ int main(void)
       }
     }
 
-    // Set the DAC values.
-    /*
-    THROTTLE_MCP4725_I2CADDR   (0x62) // Default i2c address
-    REGEN_MCP4725_I2CADDR      (0x63) // Default i2c address
-    MCP4725_CMD_WRITEDAC       (0x40) // Writes data to the DAC
-    MCP4725_CMD_WRITEDACEEPROM (0x60) // Writes data to the DAC and the EEPROM (persisting the assigned value after reset)
-    dac_data[];
-    HAL_I2C_Master_Transmit(hi2c_dac, 0x62, );
-    */
+    // Regen pot is 1:1 to regen DAC, save for "snapping" at the end of the range
+    if (RegenValueSmooth < REGEN_DAC_MINIMUM)
+    {
+      RegenValueDAC = REGEN_DAC_MINIMUM;  // Lower than this and the Kelly Controller thinks there's an open circuit
+    } else if (RegenValueSmooth > REGEN_DAC_MAXIMUM) {
+      RegenValueDAC = REGEN_DAC_MAXIMUM;  // Higher than this and the Kelly Controller thinks there's a short
+    } else {
+      //RegenValueDAC = RegenValueSmooth;
+      RegenValueDAC = map(RegenValueSmooth, REGEN_POT_MINIMUM, REGEN_POT_MAXIMUM, REGEN_DAC_MINIMUM, REGEN_DAC_MAXIMUM);
+    }
+
+    // Set the Throttle DAC values.
     dac_data[0] = MCP4725_CMD_WRITEDAC;
-    dac_data[1] = ThrottleValueDAC / 16;        // Upper data bits (D11.D10.D9.D8.D7.D6.D5.D4)
-    dac_data[2] = (ThrottleValueDAC % 16) << 4; // Lower data bits (D3.D2.D1.D0.x.x.x.x)
-    //HAL_I2C_Master_Transmit(&hi2c_dac, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
-    //HAL_I2C_Master_Transmit(&hi2c_dac, 0xc0, dac_data, 2, 1000);
-    //dac_data[1] = 0xFF;
-    //dac_data[2] = 0xF0;
+    dac_data[1] = ThrottleValueDAC / 16;
+    dac_data[2] = (ThrottleValueDAC % 16) << 4;
     HAL_I2C_Master_Transmit(&hi2c_dac, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
+
+    // Set the Regen DAC values.
+    dac_data[0] = MCP4725_CMD_WRITEDAC;
+    dac_data[1] = RegenValueDAC / 16;
+    dac_data[2] = (RegenValueDAC % 16) << 4;
+    HAL_I2C_Master_Transmit(&hi2c_dac, REGEN_MCP4725_I2CADDR, dac_data, 3, 1000);
 
     // Display data
     if (lcd1ShowPage == 0) {
@@ -434,9 +439,9 @@ int main(void)
     } else if (lcd1ShowPage == 3) {
       // Page 4 - Regen
       if (throttleStopSwitchValue == 1) {
-        sprintf(Regen, "%d - Emergency Stop! Max regen set! Raw/ADC: [%d/%d/%d]\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth);
+        sprintf(Regen, "%d - Emergency Stop! Max regen set! Raw/ADC: [%d/%d/%d], out: [%d].\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth, RegenValueDAC);
       } else {
-        sprintf(Regen, "%d - Regen (Raw/clean/smooth): [%d/%d/%d]\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth);
+        sprintf(Regen, "%d - Regen (Raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth, RegenValueDAC);
       }
       HAL_UART_Transmit(&huart2,Regen,strlen(Regen),1000);  // Sending in normal mode
     }

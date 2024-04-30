@@ -157,7 +157,7 @@ void Error_Handler(void);
 #define THROTTLE_DAC_FORWARD_FASTEST 4090 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
 #define THROTTLE_DAC_NEUTRAL         2010 // The value that sets the motor to neutral, 2.5v
 #define THROTTLE_DAC_REVERSE_SLOWEST 1965 // Slowest reverse, 2130 on this DAC is (2.6?)v
-#define THROTTLE_DAC_REVERSE_FASTEST 6    // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
+#define THROTTLE_DAC_REVERSE_FASTEST 45   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
 
 // Throttle - Starboard
 #define THROTTLE_STBD_STEP_VOLTAGE 1.2207f  // float representing the voltage per step (5000/4096)
@@ -186,14 +186,14 @@ void Error_Handler(void);
 #define FORWARD_PORT_PERCENT_STEPS 100 / FORWARD_PORT_SENSOR_STEPS
 
 // Regen 
-#define REGEN_DAC_MINIMUM   20           // The TPS Dead Low is set to 0.05vDC, 6  5.73vDC
+#define REGEN_DAC_MINIMUM   45          // The TPS Dead Low is set to 0.05vDC, 6  5.73 mvDC
 #define REGEN_DAC_MAXIMUM   4090        // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
 #define REGEN_STEP_VOLTAGE  1.2207f     // float representing the voltage per step (5000/4096)
 #define REGEN_AVERAGE_OVER  8           // Average the reading over this many reads. Must be proportional to delayTime - Max 255
 #define REGEN_POT_MINIMUM   0
 #define REGEN_POT_MAXIMUM   4030        // By math, this should be 4095, but is less in practice and needs to be tested per pot
 // Others
-#define MAIN_DELAY_TIME 250                  // Time between loops
+#define MAIN_DELAY_TIME 250             // Time between loops
 
 /* USER CODE BEGIN Private defines */
 // main timer task
