@@ -169,15 +169,25 @@ int main(void)
   uint16_t RegenValueDAC       = 0;                    // Value to set, Default to no regen
   uint16_t oldRegenValueDAC    = 0;                    // Value read from the DAC
 
+  // Speed percentages.
+  uint16_t throttlePosition  = 0;
+  uint16_t regenPosition     = 0;
+  uint16_t throttleDirection = 0; // 0 = neutral, 1 = forward, 2 = reverse
+  uint16_t throttleActive    = 0; // 0 = port, 1 = remote, 2 = starboard
+  uint16_t range             = 1; // The range being calculated
+  uint16_t position          = 0; // The position in the range
+
   // LCD1 Page Display
-  uint8_t lcd1Pages    = 3; // Max page
-  uint8_t lcd1ShowPage = 2; // Integer changes the data shown on LCD1 (for now, serial)
+  uint8_t lcd1Pages    = 4; // Max page
+  uint8_t lcd1ShowPage = 4; // Integer changes the data shown on LCD1 (for now, serial)
    
   //uint8_t Test[] = "Mermaid's Rest - mhelm v0.1\r\n"; //Data to send
   uint8_t Test[128];
   uint8_t Speed[16];
   uint8_t Throttle[128];
   uint8_t Regen[128];
+  uint8_t Percentage[128];
+
   // arrays for I2C
   uint8_t dac_data[2];
 
@@ -351,6 +361,7 @@ int main(void)
     // Now make the smoothed value fit within the forward / reverse / neutral ranges.
     // Starboard Throttle
     if ((throttleStbdSelect) || (!throttlePortSelect)) {
+      throttleActive = 2; // 0 = port, 1 = remote, 2 = starboard
       if (ThrottleStbdValueSmooth <= THROTTLE_STBD_REVERSE_MIN) {
         // We're going in reverse, the lower the dac, the lower the voltage, the lower the speed.
         // THROTTLE_STBD_REVERSE_MAX    is the lowest reverse dac value
@@ -359,26 +370,52 @@ int main(void)
         // THROTTLE_STBD_FORWARD_MIN    is 2.4v the start of reverse
         //                                              from low                   from high                  to low                        to high
         ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_REVERSE_MAX, THROTTLE_STBD_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
+
+        // Calculate as a percentage
+        throttleDirection = 2; // 0 = neutral, 1 = forward, 2 = reverse
+        range             = THROTTLE_DAC_REVERSE_SLOWEST - THROTTLE_DAC_REVERSE_FASTEST;
+        position          = ThrottleValueDAC - THROTTLE_DAC_REVERSE_FASTEST;
+        throttlePosition  = 100 - ((position * 100) / range);
       } else if (ThrottleStbdValueSmooth >= THROTTLE_STBD_FORWARD_MIN) {
+        // We're going in forward
         // THROTTLE_STBD_FORWARD_MIN is the lowest dac value
         // THROTTLE_STBD_FORWARD_MAX is the highest dac value
         // THROTTLE_STBD_REVERSE_MIN is 2.6v, minimum forward
         // THROTTLE_DAC_MAXIMUM      is 5v, maximum forward
         // We're going forward, the higher the dac, the higher the voltage, the higher the speed
         //                                              from low                   from high                  to low                        to high
-        ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_FORWARD_MIN, THROTTLE_STBD_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
+
+        // Calculate as a percentage
+        ThrottleValueDAC  = map(ThrottleStbdValueSmooth, THROTTLE_STBD_FORWARD_MIN, THROTTLE_STBD_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
+        throttleDirection = 1; // 0 = neutral, 1 = forward, 2 = reverse
+        range             = THROTTLE_DAC_FORWARD_FASTEST - THROTTLE_DAC_FORWARD_SLOWEST;
+        position          = ThrottleValueDAC - THROTTLE_DAC_FORWARD_SLOWEST;
+        throttlePosition  = ((position * 100) / range);
       } else {
         // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
-        ThrottleValueDAC = THROTTLE_DAC_NEUTRAL;
+        ThrottleValueDAC  = THROTTLE_DAC_NEUTRAL;
+        throttleDirection = 0; // 0 = neutral, 1 = forward, 2 = reverse
       }
     } else {
       // Port Throttle
+      throttleActive = 0; // 0 = port, 1 = remote, 2 = starboard
       if (ThrottlePortValueSmooth <= THROTTLE_PORT_REVERSE_MIN) {
-        ThrottleValueDAC = map(ThrottlePortValueSmooth, THROTTLE_PORT_REVERSE_MAX, THROTTLE_PORT_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
+        // We're going in reverse
+        ThrottleValueDAC  = map(ThrottlePortValueSmooth, THROTTLE_PORT_REVERSE_MAX, THROTTLE_PORT_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
+        throttleDirection = 2; // 0 = neutral, 1 = forward, 2 = reverse
+        range             = THROTTLE_DAC_REVERSE_SLOWEST - THROTTLE_DAC_REVERSE_FASTEST;
+        position          = ThrottleValueDAC - THROTTLE_DAC_REVERSE_FASTEST;
+        throttlePosition  = 100 - ((position * 100) / range);
       } else if (ThrottlePortValueSmooth >= THROTTLE_PORT_FORWARD_MIN) {
-        ThrottleValueDAC = map(ThrottlePortValueSmooth, THROTTLE_PORT_FORWARD_MIN, THROTTLE_PORT_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
+        // We're going forward
+        ThrottleValueDAC  = map(ThrottlePortValueSmooth, THROTTLE_PORT_FORWARD_MIN, THROTTLE_PORT_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
+        throttleDirection = 1; // 0 = neutral, 1 = forward, 2 = reverse
+        range             = THROTTLE_DAC_FORWARD_FASTEST - THROTTLE_DAC_FORWARD_SLOWEST;
+        position          = ThrottleValueDAC - THROTTLE_DAC_FORWARD_SLOWEST;
+        throttlePosition  = ((position * 100) / range);
       } else {
-        ThrottleValueDAC = THROTTLE_DAC_NEUTRAL;
+        ThrottleValueDAC  = THROTTLE_DAC_NEUTRAL;
+        throttleDirection = 0; // 0 = neutral, 1 = forward, 2 = reverse
       }
     }
 
@@ -392,6 +429,9 @@ int main(void)
       //RegenValueDAC = RegenValueSmooth;
       RegenValueDAC = map(RegenValueSmooth, REGEN_POT_MINIMUM, REGEN_POT_MAXIMUM, REGEN_DAC_MINIMUM, REGEN_DAC_MAXIMUM);
     }
+    range         = REGEN_DAC_MAXIMUM - REGEN_DAC_MINIMUM;
+    position      = RegenValueDAC - REGEN_DAC_MINIMUM;
+    regenPosition = ((position * 100) / range);
 
     // Set the Throttle DAC values.
     dac_data[0] = MCP4725_CMD_WRITEDAC;
@@ -444,6 +484,44 @@ int main(void)
         sprintf(Regen, "%d - Regen (Raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth, RegenValueDAC);
       }
       HAL_UART_Transmit(&huart2,Regen,strlen(Regen),1000);  // Sending in normal mode
+    } else if (lcd1ShowPage == 4) {
+      // Page 4 - Throttle and Regen Percentage
+      if (throttleStopSwitchValue == 1) {
+        sprintf(Percentage, "%d - Emergency Stop! Throttle in Neutral, Regen Max!.\n\r", counter);
+      } else {
+        // throttleDirection: 0 = neutral, 1 = forward, 2 = reverse
+        if (throttleDirection == 0) {
+          // In neutral
+          sprintf(Percentage, "%d - Throttle in Neutral, Regen: [%d%%].\n\r", counter, regenPosition);
+        } else if (throttleDirection == 1) {
+          // Going forward
+          // throttleActive; 0 = port, 1 = remote, 2 = starboard
+          if (throttleActive == 0) {
+            // Port throttle active
+            sprintf(Percentage, "%d - Forward: [%%%d], Regen: [%d%%] (Port).\n\r", counter, throttlePosition, regenPosition);
+          } else if (throttleActive == 1) {
+            // Remote (eventually, Starboard now) throttle active
+            sprintf(Percentage, "%d - Forward: [%d%%], Regen: [%d%%] (Remote).\n\r", counter, throttlePosition, regenPosition);
+          } else {
+            // Starboard throttle active
+            sprintf(Percentage, "%d - Forward: [%d%%], Regen: [%d%%] (Stbd).\n\r", counter, throttlePosition, regenPosition);
+          }
+        } else {
+          // Going in reverse
+          // throttleActive; 0 = port, 1 = remote, 2 = starboard
+          if (throttleActive == 0) {
+            // Port throttle active
+            sprintf(Percentage, "%d - Reverse: [%d%%], Regen: [%d%%] (Port).\n\r", counter, throttlePosition, regenPosition);
+          } else if (throttleActive == 1) {
+            // Remote (eventually, Starboard now) throttle active
+            sprintf(Percentage, "%d - Reverse: [%d%%], Regen: [%d%%] (Remote).\n\r", counter, throttlePosition, regenPosition);
+          } else {
+            // Starboard throttle active
+            sprintf(Percentage, "%d - Reverse: [%d%%], Regen: [%d%%] (Stbd).\n\r", counter, throttlePosition, regenPosition);
+          }
+        }
+      }
+      HAL_UART_Transmit(&huart2,Percentage,strlen(Percentage),1000);  // Sending in normal mode
     }
     
     HAL_Delay(MAIN_DELAY_TIME);
