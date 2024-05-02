@@ -55,6 +55,10 @@ void Error_Handler(void);
 #define DEBUG_1_Pin GPIO_PIN_1
 #define DEBUG_1_GPIO_Port GPIOC
 
+// Motor select switch
+#define MOTOR_5KW_SELECT_Pin GPIO_PIN_5
+#define MOTOR_5KW_SELECT_GPIO_Port GPIOB
+
 // Starboard Throttle pot
 #define THROTTLE_STBD_POT_Pin GPIO_PIN_0
 #define THROTTLE_STBD_POT_GPIO_Port GPIOA
@@ -73,22 +77,33 @@ void Error_Handler(void);
 #define REGEN_POT_Pin GPIO_PIN_1
 #define REGEN_POT_GPIO_Port GPIOA
 
-// I2C to both Throttle and Regen DAC
-#define DAC_SCL_Pin GPIO_PIN_6
-#define DAC_SCL_GPIO_Port GPIOB
-#define DAC_SDA_Pin GPIO_PIN_7
-#define DAC_SDA_GPIO_Port GPIOB
+// I2C to 10KW motor Throttle and Regen DACs (and LCD1)
+#define M10KW_DAC_SCL_Pin GPIO_PIN_6
+#define M10KW_DAC_SCL_GPIO_Port GPIOB
+#define M10KW_DAC_SDA_Pin GPIO_PIN_7
+#define M10KW_DAC_SDA_GPIO_Port GPIOB
+
+// I2C to 5KW motor Throttle and Regen DACs
+#define M5KW_DAC_SCL_Pin GPIO_PIN_10
+#define M5KW_DAC_SCL_GPIO_Port GPIOB
+#define M5KW_DAC_SDA_Pin GPIO_PIN_11
+#define M5KW_DAC_SDA_GPIO_Port GPIOB
 
 // MCP4725 definitions
 #define THROTTLE_MCP4725_I2CADDR   (0x62) << 1 // Default i2c address
 #define REGEN_MCP4725_I2CADDR      (0x63) << 1 // Default i2c address
+#define LCD1_I2CADDR               (0x50) << 1 // The default I2C address is 80 (50 hex) when counting the R/W bit, and 40 (28 hex) if not.
 #define MCP4725_CMD_WRITEDAC       (0x40) // Writes data to the DAC
 #define MCP4725_CMD_WRITEDACEEPROM (0x60) // Writes data to the DAC and the EEPROM (persisting the assigned value after reset)
 
 // I2C for LCDs 
-#define LCD_SCL_Pin GPIO_PIN_10
+//#define LCD_SCL_Pin GPIO_PIN_10
+//#define LCD_SCL_GPIO_Port GPIOB
+//#define LCD_SDA_Pin GPIO_PIN_11
+//#define LCD_SDA_GPIO_Port GPIOB
+#define LCD_SCL_Pin GPIO_PIN_6   // LCD1 is not on the first I2C bus with the 10kw Motor
 #define LCD_SCL_GPIO_Port GPIOB
-#define LCD_SDA_Pin GPIO_PIN_11
+#define LCD_SDA_Pin GPIO_PIN_7
 #define LCD_SDA_GPIO_Port GPIOB
 
 #define USART_TX_Pin GPIO_PIN_2
@@ -144,23 +159,23 @@ void Error_Handler(void);
 #define TCK_Pin GPIO_PIN_14
 #define TCK_GPIO_Port GPIOA
 
-// DACs
-#define DAC_SCL_Pin GPIO_PIN_6
-#define DAC_SCL_GPIO_Port GPIOB
-#define DAC_SDA_Pin GPIO_PIN_7
-#define DAC_SDA_GPIO_Port GPIOB
-
 // Static Values 
 // Calibrated Values - These need to be per-sensor, and ideally read from a user-editable field
 // DAC values (common regardless of the throttle in use, but needs to be tested/adjusted per DAC)
-#define THROTTLE_DAC_FORWARD_SLOWEST 2130 // Slowest forward, 1965 on this DAC is (2.4?)v
-#define THROTTLE_DAC_FORWARD_FASTEST 4090 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
-#define THROTTLE_DAC_NEUTRAL         2010 // The value that sets the motor to neutral, 2.5v
-#define THROTTLE_DAC_REVERSE_SLOWEST 1965 // Slowest reverse, 2130 on this DAC is (2.6?)v
-#define THROTTLE_DAC_REVERSE_FASTEST 45   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
+// 10kw motor DACs
+#define THROTTLE_DAC_M10KW_FORWARD_SLOWEST 2130 // Slowest forward, 1965 on this DAC is (2.4?)v
+#define THROTTLE_DAC_M10KW_FORWARD_FASTEST 4090 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
+#define THROTTLE_DAC_M10KW_NEUTRAL         2070 // The value that sets the motor to neutral, 2.5v
+#define THROTTLE_DAC_M10KW_REVERSE_SLOWEST 1965 // Slowest reverse, 2130 on this DAC is (2.6?)v
+#define THROTTLE_DAC_M10KW_REVERSE_FASTEST 45   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
+// 5kw motor DACs
+#define THROTTLE_DAC_M5KW_FORWARD_SLOWEST 2130 // Slowest forward, 1965 on this DAC is (2.4?)v
+#define THROTTLE_DAC_M5KW_FORWARD_FASTEST 4090 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
+#define THROTTLE_DAC_M5KW_NEUTRAL         2070 // The value that sets the motor to neutral, 2.5v
+#define THROTTLE_DAC_M5KW_REVERSE_SLOWEST 1965 // Slowest reverse, 2130 on this DAC is (2.6?)v
+#define THROTTLE_DAC_M5KW_REVERSE_FASTEST 45   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
 
 // Throttle - Starboard
-#define THROTTLE_STBD_STEP_VOLTAGE 1.2207f  // float representing the voltage per step (5000/4096)
 #define THROTTLE_STBD_AVERAGE_OVER 8        // Average the reading over this many reads. Must be proportional to delayTime - Max 255
 #define THROTTLE_STBD_REVERSE_MAX  1140     // The throttle pot value equalling the fastest speed in reverse
 #define THROTTLE_STBD_REVERSE_MIN  1850     // The throttle pot value equalling the slowest speed in reverse
@@ -173,7 +188,6 @@ void Error_Handler(void);
 #define FORWARD_STBD_PERCENT_STEPS 100 / FORWARD_STBD_SENSOR_STEPS
 
 // Throttle - Port
-#define THROTTLE_PORT_STEP_VOLTAGE 1.2207f  // float representing the voltage per step (5000/4096)
 #define THROTTLE_PORT_AVERAGE_OVER 8        // Average the reading over this many reads. Must be proportional to delayTime - Max 255
 #define THROTTLE_PORT_REVERSE_MAX  1450     // The throttle pot value equalling the fastest speed in reverse
 #define THROTTLE_PORT_REVERSE_MIN  1920     // The throttle pot value equalling the slowest speed in reverse
@@ -186,12 +200,13 @@ void Error_Handler(void);
 #define FORWARD_PORT_PERCENT_STEPS 100 / FORWARD_PORT_SENSOR_STEPS
 
 // Regen 
-#define REGEN_DAC_MINIMUM   45          // The TPS Dead Low is set to 0.05vDC, 6  5.73 mvDC
-#define REGEN_DAC_MAXIMUM   4090        // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
-#define REGEN_STEP_VOLTAGE  1.2207f     // float representing the voltage per step (5000/4096)
-#define REGEN_AVERAGE_OVER  8           // Average the reading over this many reads. Must be proportional to delayTime - Max 255
-#define REGEN_POT_MINIMUM   0
-#define REGEN_POT_MAXIMUM   4030        // By math, this should be 4095, but is less in practice and needs to be tested per pot
+#define REGEN_DAC_M10KW_MINIMUM 45          // The TPS Dead Low is set to 0.05vDC, 6  5.73 mvDC
+#define REGEN_DAC_M10KW_MAXIMUM 4090        // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
+#define REGEN_DAC_M5KW_MINIMUM  45          // The TPS Dead Low is set to 0.05vDC, 6  5.73 mvDC
+#define REGEN_DAC_M5KW_MAXIMUM  4090        // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
+#define REGEN_AVERAGE_OVER      8           // Average the reading over this many reads. Must be proportional to delayTime - Max 255
+#define REGEN_POT_MINIMUM       0
+#define REGEN_POT_MAXIMUM       4030        // By math, this should be 4095, but is less in practice and needs to be tested per pot
 // Others
 #define MAIN_DELAY_TIME 250             // Time between loops
 

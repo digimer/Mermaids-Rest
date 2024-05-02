@@ -56,8 +56,8 @@
 ADC_HandleTypeDef hadc;
 DMA_HandleTypeDef hdma_adc;
 
-I2C_HandleTypeDef hi2c_dac;  // I2C for the DACs
-I2C_HandleTypeDef hi2c_lcd;  // I2C for the LCDs
+I2C_HandleTypeDef hi2c_m10kw;  // I2C for the DACs
+I2C_HandleTypeDef hi2c_m5kw;  // I2C for the LCDs
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim3;
@@ -137,6 +137,9 @@ int main(void)
   // NOTE: Eventually, if neither are selected, "remote control" will be enabled. For now, neither selected defaults to Stbd
   uint8_t throttleStbdSelect      = 0; // 0 = Not selected, 1 = selected
   uint8_t throttlePortSelect      = 0; // 0 = Not selected, 1 = selected
+  // NOTE: Eventuall, if neither are selected, both motors will be enabled. For now, neither selected will default to 10kw
+  uint8_t motor5kwSelect          = 0; // 0 = Not selected, 1 = selected
+  uint8_t motorSelected           = 0; // 5 = 5kw motor, 10 = 10kw motor
 
   // Potentiometer, ADC and DAC Values
   // Starboard Throttle
@@ -145,7 +148,6 @@ int main(void)
   uint16_t ThrottleStbdValueSmooth    = 2047; // This will store the average of the last N reads
   uint16_t ThrottleStbdOldestPotIndex = 0;    // This is the array index with the oldest value
   uint16_t ThrottleStbdPotTotal       = 0;    // This is the sum of all values in the array
-  uint16_t ThrottleStbdDACValue       = NEUTRAL_STBD_MID_POINT;
   uint16_t ThrottleStbdPotArray[THROTTLE_STBD_AVERAGE_OVER];
   // Port Throttle
   uint16_t ThrottlePortValueRaw       = 2047; // raw value,       Mid-point is "neutral"
@@ -153,7 +155,6 @@ int main(void)
   uint16_t ThrottlePortValueSmooth    = 2047; // This will store the average of the last N reads
   uint16_t ThrottlePortOldestPotIndex = 0;    // This is the array index with the oldest value
   uint16_t ThrottlePortPotTotal       = 0;    // This is the sum of all values in the array
-  uint16_t ThrottlePortDACValue       = NEUTRAL_PORT_MID_POINT;
   uint16_t ThrottlePortPotArray[THROTTLE_PORT_AVERAGE_OVER];
   // Regen
   uint16_t RegenValueRaw       = 0;    // raw value,       Disable regen
@@ -164,10 +165,12 @@ int main(void)
   uint16_t RegenPotArray[REGEN_AVERAGE_OVER];
 
   // DAC values
-  uint16_t ThrottleValueDAC    = THROTTLE_DAC_NEUTRAL; // Value to set, Default to neutral
-  uint16_t oldThrottleValueDAC = 0;                    // Value read from the DAC
-  uint16_t RegenValueDAC       = 0;                    // Value to set, Default to no regen
-  uint16_t oldRegenValueDAC    = 0;                    // Value read from the DAC
+  uint16_t ThrottleValueM10kwDAC = THROTTLE_DAC_M10KW_NEUTRAL; // Value to set for the 10kw motor, Default to neutral
+  uint16_t ThrottleValueM5kwDAC  = THROTTLE_DAC_M5KW_NEUTRAL;  // Value to set for the 5kw, Default to neutral
+  uint16_t RegenValueM10kwDAC    = 0;                          // Value to set for the 10kw, Default to no regen
+  uint16_t RegenValueM5kwDAC     = 0;                          // Value to set for the 5kw, Default to no regen
+  uint16_t sayThrottleValueDAC = 0;                            // Used for displaying the in-use DAC value
+  uint16_t sayRegenValueDAC    = 0;                            // Used for displaying the in-use DAC value
 
   // Speed percentages.
   uint16_t throttlePosition  = 0;
@@ -244,7 +247,14 @@ int main(void)
     ThrottleStbdValueRaw    = ioctl_get_pot(IOCTL_THROTTLE_STBD_POT); // get the adc value for the starboard throttle 
     ThrottlePortValueRaw    = ioctl_get_pot(IOCTL_THROTTLE_PORT_POT); // get the adc value for the port throttle 
     RegenValueRaw           = ioctl_get_pot(IOCTL_REGEN_POT);         // get the adc value for the regen
-    //oldThrottleValueDAC     = HAL_I2C_Slave_Receive(hi2c_dac, );
+    motor5kwSelect          = 1 - HAL_GPIO_ReadPin(MOTOR_5KW_SELECT_GPIO_Port, MOTOR_5KW_SELECT_Pin);
+    if (motor5kwSelect == 1) {
+      // 5kw motor
+      motorSelected = 5;
+    } else {
+      // 10kw motor
+      motorSelected = 10;
+    }
 
     // The main switch controls the dashboard lighting, not throttle
     if (mainSwitchValue == 0) {
@@ -263,14 +273,19 @@ int main(void)
       speedLowSwitchValue  = 1;
       ThrottleStbdValueClean = NEUTRAL_STBD_MID_POINT; // Set the throttle to neutral
       ThrottlePortValueClean = NEUTRAL_PORT_MID_POINT; // Set the throttle to neutral
-      RegenValueClean        = REGEN_DAC_MAXIMUM;      // Set the regen to max
+      // Set the regen to max for the selected motor
+      if (motor5kwSelect) {
+        RegenValueClean = REGEN_DAC_M5KW_MAXIMUM; 
+      } else {
+        RegenValueClean = REGEN_DAC_M10KW_MAXIMUM;
+      }
     } else {
       // Do normal logic
       // Read in the potentiometers
-      speedHighSwitchValue = 1 - HAL_GPIO_ReadPin(SPEED_HIGH_SW_IN_GPIO_Port, SPEED_HIGH_SW_IN_Pin);
-      speedLowSwitchValue  = 1 - HAL_GPIO_ReadPin(SPEED_LOW_SW_IN_GPIO_Port, SPEED_LOW_SW_IN_Pin);
-      throttleStbdSelect   = 1 - HAL_GPIO_ReadPin(THROTTLE_STBD_SELECT_GPIO_Port, THROTTLE_STBD_SELECT_Pin);
-      throttlePortSelect   = 1 - HAL_GPIO_ReadPin(THROTTLE_PORT_SELECT_GPIO_Port, THROTTLE_PORT_SELECT_Pin);
+      speedHighSwitchValue   = 1 - HAL_GPIO_ReadPin(SPEED_HIGH_SW_IN_GPIO_Port, SPEED_HIGH_SW_IN_Pin);
+      speedLowSwitchValue    = 1 - HAL_GPIO_ReadPin(SPEED_LOW_SW_IN_GPIO_Port, SPEED_LOW_SW_IN_Pin);
+      throttleStbdSelect     = 1 - HAL_GPIO_ReadPin(THROTTLE_STBD_SELECT_GPIO_Port, THROTTLE_STBD_SELECT_Pin);
+      throttlePortSelect     = 1 - HAL_GPIO_ReadPin(THROTTLE_PORT_SELECT_GPIO_Port, THROTTLE_PORT_SELECT_Pin);
       ThrottleStbdValueClean = ThrottleStbdValueRaw;
       ThrottlePortValueClean = ThrottlePortValueRaw;
       RegenValueClean        = RegenValueRaw;
@@ -368,14 +383,20 @@ int main(void)
         // THROTTLE_STBD_REVERSE_MIN    is the highest reverse dac value
         // THROTTLE_DAC_REVERSE_SLOWEST is 0.05v, max reverse
         // THROTTLE_STBD_FORWARD_MIN    is 2.4v the start of reverse
-        //                                              from low                   from high                  to low                        to high
-        ThrottleValueDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_REVERSE_MAX, THROTTLE_STBD_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
+        //                                                   from low                   from high                  to low                              to high
+        ThrottleValueM10kwDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_REVERSE_MAX, THROTTLE_STBD_REVERSE_MIN, THROTTLE_DAC_M10KW_REVERSE_FASTEST, THROTTLE_DAC_M10KW_REVERSE_SLOWEST);
+        ThrottleValueM5kwDAC  = map(ThrottleStbdValueSmooth, THROTTLE_STBD_REVERSE_MAX, THROTTLE_STBD_REVERSE_MIN, THROTTLE_DAC_M5KW_REVERSE_FASTEST,  THROTTLE_DAC_M5KW_REVERSE_SLOWEST);
 
         // Calculate as a percentage
-        throttleDirection = 2; // 0 = neutral, 1 = forward, 2 = reverse
-        range             = THROTTLE_DAC_REVERSE_SLOWEST - THROTTLE_DAC_REVERSE_FASTEST;
-        position          = ThrottleValueDAC - THROTTLE_DAC_REVERSE_FASTEST;
+        if (motor5kwSelect == 1) {
+          range    = THROTTLE_DAC_M5KW_REVERSE_SLOWEST - THROTTLE_DAC_M5KW_REVERSE_FASTEST;
+          position = ThrottleValueM5kwDAC - THROTTLE_DAC_M5KW_REVERSE_FASTEST;
+        } else {
+          range    = THROTTLE_DAC_M10KW_REVERSE_SLOWEST - THROTTLE_DAC_M10KW_REVERSE_FASTEST;
+          position = ThrottleValueM10kwDAC - THROTTLE_DAC_M10KW_REVERSE_FASTEST;
+        }
         throttlePosition  = 100 - ((position * 100) / range);
+        throttleDirection = 2; // 0 = neutral, 1 = forward, 2 = reverse
       } else if (ThrottleStbdValueSmooth >= THROTTLE_STBD_FORWARD_MIN) {
         // We're going in forward
         // THROTTLE_STBD_FORWARD_MIN is the lowest dac value
@@ -383,83 +404,145 @@ int main(void)
         // THROTTLE_STBD_REVERSE_MIN is 2.6v, minimum forward
         // THROTTLE_DAC_MAXIMUM      is 5v, maximum forward
         // We're going forward, the higher the dac, the higher the voltage, the higher the speed
-        //                                              from low                   from high                  to low                        to high
+        //                                                   from low                   from high                  to low                              to high
+        ThrottleValueM10kwDAC = map(ThrottleStbdValueSmooth, THROTTLE_STBD_FORWARD_MIN, THROTTLE_STBD_FORWARD_MAX, THROTTLE_DAC_M10KW_FORWARD_SLOWEST, THROTTLE_DAC_M10KW_FORWARD_FASTEST);
+        ThrottleValueM5kwDAC  = map(ThrottleStbdValueSmooth, THROTTLE_STBD_FORWARD_MIN, THROTTLE_STBD_FORWARD_MAX, THROTTLE_DAC_M5KW_FORWARD_SLOWEST,  THROTTLE_DAC_M5KW_FORWARD_FASTEST);
 
         // Calculate as a percentage
-        ThrottleValueDAC  = map(ThrottleStbdValueSmooth, THROTTLE_STBD_FORWARD_MIN, THROTTLE_STBD_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
-        throttleDirection = 1; // 0 = neutral, 1 = forward, 2 = reverse
-        range             = THROTTLE_DAC_FORWARD_FASTEST - THROTTLE_DAC_FORWARD_SLOWEST;
-        position          = ThrottleValueDAC - THROTTLE_DAC_FORWARD_SLOWEST;
+        if (motor5kwSelect == 1) {
+          range    = THROTTLE_DAC_M5KW_FORWARD_FASTEST - THROTTLE_DAC_M5KW_FORWARD_SLOWEST;
+          position = ThrottleValueM5kwDAC - THROTTLE_DAC_M5KW_FORWARD_SLOWEST;
+        } else {
+          range    = THROTTLE_DAC_M10KW_FORWARD_FASTEST - THROTTLE_DAC_M10KW_FORWARD_SLOWEST;
+          position = ThrottleValueM10kwDAC - THROTTLE_DAC_M10KW_FORWARD_SLOWEST;
+        }
         throttlePosition  = ((position * 100) / range);
+        throttleDirection = 1; // 0 = neutral, 1 = forward, 2 = reverse
       } else {
         // In the Neutral deadzone, we want 2500v, DAC = 2084 (2500.8 mV)
-        ThrottleValueDAC  = THROTTLE_DAC_NEUTRAL;
-        throttleDirection = 0; // 0 = neutral, 1 = forward, 2 = reverse
+        ThrottleValueM10kwDAC = THROTTLE_DAC_M10KW_NEUTRAL;
+        ThrottleValueM5kwDAC  = THROTTLE_DAC_M5KW_NEUTRAL;
+        throttleDirection     = 0; // 0 = neutral, 1 = forward, 2 = reverse
       }
     } else {
       // Port Throttle
       throttleActive = 0; // 0 = port, 1 = remote, 2 = starboard
       if (ThrottlePortValueSmooth <= THROTTLE_PORT_REVERSE_MIN) {
         // We're going in reverse
-        ThrottleValueDAC  = map(ThrottlePortValueSmooth, THROTTLE_PORT_REVERSE_MAX, THROTTLE_PORT_REVERSE_MIN, THROTTLE_DAC_REVERSE_FASTEST, THROTTLE_DAC_REVERSE_SLOWEST);
-        throttleDirection = 2; // 0 = neutral, 1 = forward, 2 = reverse
-        range             = THROTTLE_DAC_REVERSE_SLOWEST - THROTTLE_DAC_REVERSE_FASTEST;
-        position          = ThrottleValueDAC - THROTTLE_DAC_REVERSE_FASTEST;
+        ThrottleValueM10kwDAC = map(ThrottleStbdValueSmooth, THROTTLE_PORT_REVERSE_MAX, THROTTLE_PORT_REVERSE_MIN, THROTTLE_DAC_M10KW_REVERSE_FASTEST, THROTTLE_DAC_M10KW_REVERSE_SLOWEST);
+        ThrottleValueM5kwDAC  = map(ThrottleStbdValueSmooth, THROTTLE_PORT_REVERSE_MAX, THROTTLE_PORT_REVERSE_MIN, THROTTLE_DAC_M5KW_REVERSE_FASTEST,  THROTTLE_DAC_M5KW_REVERSE_SLOWEST);
+        if (motor5kwSelect == 1) {
+          range    = THROTTLE_DAC_M5KW_REVERSE_SLOWEST - THROTTLE_DAC_M5KW_REVERSE_FASTEST;
+          position = ThrottleValueM5kwDAC - THROTTLE_DAC_M5KW_REVERSE_FASTEST;
+        } else {
+          range    = THROTTLE_DAC_M10KW_REVERSE_SLOWEST - THROTTLE_DAC_M10KW_REVERSE_FASTEST;
+          position = ThrottleValueM10kwDAC - THROTTLE_DAC_M10KW_REVERSE_FASTEST;
+        }
         throttlePosition  = 100 - ((position * 100) / range);
+        throttleDirection = 2; // 0 = neutral, 1 = forward, 2 = reverse
       } else if (ThrottlePortValueSmooth >= THROTTLE_PORT_FORWARD_MIN) {
         // We're going forward
-        ThrottleValueDAC  = map(ThrottlePortValueSmooth, THROTTLE_PORT_FORWARD_MIN, THROTTLE_PORT_FORWARD_MAX, THROTTLE_DAC_FORWARD_SLOWEST, THROTTLE_DAC_FORWARD_FASTEST);
-        throttleDirection = 1; // 0 = neutral, 1 = forward, 2 = reverse
-        range             = THROTTLE_DAC_FORWARD_FASTEST - THROTTLE_DAC_FORWARD_SLOWEST;
-        position          = ThrottleValueDAC - THROTTLE_DAC_FORWARD_SLOWEST;
+        ThrottleValueM10kwDAC = map(ThrottlePortValueSmooth, THROTTLE_PORT_FORWARD_MIN, THROTTLE_PORT_FORWARD_MAX, THROTTLE_DAC_M10KW_FORWARD_SLOWEST, THROTTLE_DAC_M10KW_FORWARD_FASTEST);
+        ThrottleValueM5kwDAC  = map(ThrottlePortValueSmooth, THROTTLE_PORT_FORWARD_MIN, THROTTLE_PORT_FORWARD_MAX, THROTTLE_DAC_M5KW_FORWARD_SLOWEST,  THROTTLE_DAC_M5KW_FORWARD_FASTEST);
+        if (motor5kwSelect == 1) {
+          range    = THROTTLE_DAC_M5KW_FORWARD_FASTEST - THROTTLE_DAC_M5KW_FORWARD_SLOWEST;
+          position = ThrottleValueM5kwDAC - THROTTLE_DAC_M5KW_FORWARD_SLOWEST;
+        } else {
+          range    = THROTTLE_DAC_M10KW_FORWARD_FASTEST - THROTTLE_DAC_M10KW_FORWARD_SLOWEST;
+          position = ThrottleValueM10kwDAC - THROTTLE_DAC_M10KW_FORWARD_SLOWEST;
+        }
         throttlePosition  = ((position * 100) / range);
+        throttleDirection = 1; // 0 = neutral, 1 = forward, 2 = reverse
       } else {
-        ThrottleValueDAC  = THROTTLE_DAC_NEUTRAL;
-        throttleDirection = 0; // 0 = neutral, 1 = forward, 2 = reverse
+        ThrottleValueM10kwDAC = THROTTLE_DAC_M10KW_NEUTRAL;
+        ThrottleValueM5kwDAC  = THROTTLE_DAC_M5KW_NEUTRAL;
+        throttleDirection     = 0; // 0 = neutral, 1 = forward, 2 = reverse
       }
     }
 
     // Regen pot is 1:1 to regen DAC, save for "snapping" at the end of the range
-    if (RegenValueSmooth < REGEN_DAC_MINIMUM)
-    {
-      RegenValueDAC = REGEN_DAC_MINIMUM;  // Lower than this and the Kelly Controller thinks there's an open circuit
-    } else if (RegenValueSmooth > REGEN_DAC_MAXIMUM) {
-      RegenValueDAC = REGEN_DAC_MAXIMUM;  // Higher than this and the Kelly Controller thinks there's a short
+    if (motor5kwSelect == 1) {
+      // 5KW Motor
+      if (RegenValueSmooth < REGEN_DAC_M5KW_MINIMUM)
+      {
+        RegenValueM5kwDAC = REGEN_DAC_M5KW_MINIMUM;  // Lower than this and the Kelly Controller thinks there's an open circuit
+      } else if (RegenValueSmooth > REGEN_DAC_M5KW_MAXIMUM) {
+        RegenValueM5kwDAC = REGEN_DAC_M5KW_MAXIMUM;  // Higher than this and the Kelly Controller thinks there's a short
+      } else {
+        RegenValueM5kwDAC = map(RegenValueSmooth, REGEN_POT_MINIMUM, REGEN_POT_MAXIMUM, REGEN_DAC_M5KW_MINIMUM, REGEN_DAC_M5KW_MAXIMUM);
+      }
+      range    = REGEN_DAC_M5KW_MAXIMUM - REGEN_DAC_M5KW_MINIMUM;
+      position = RegenValueM5kwDAC - REGEN_DAC_M5KW_MINIMUM;
     } else {
-      //RegenValueDAC = RegenValueSmooth;
-      RegenValueDAC = map(RegenValueSmooth, REGEN_POT_MINIMUM, REGEN_POT_MAXIMUM, REGEN_DAC_MINIMUM, REGEN_DAC_MAXIMUM);
+      // 10KW Motor
+      if (RegenValueSmooth < REGEN_DAC_M10KW_MINIMUM)
+      {
+        RegenValueM10kwDAC = REGEN_DAC_M5KW_MINIMUM;  // Lower than this and the Kelly Controller thinks there's an open circuit
+      } else if (RegenValueSmooth > REGEN_DAC_M10KW_MAXIMUM) {
+        RegenValueM10kwDAC = REGEN_DAC_M10KW_MAXIMUM;  // Higher than this and the Kelly Controller thinks there's a short
+      } else {
+        RegenValueM5kwDAC = map(RegenValueSmooth, REGEN_POT_MINIMUM, REGEN_POT_MAXIMUM, REGEN_DAC_M10KW_MINIMUM, REGEN_DAC_M10KW_MAXIMUM);
+      }
+      range    = REGEN_DAC_M10KW_MAXIMUM - REGEN_DAC_M10KW_MINIMUM;
+      position = RegenValueM10kwDAC - REGEN_DAC_M10KW_MINIMUM;
     }
-    range         = REGEN_DAC_MAXIMUM - REGEN_DAC_MINIMUM;
-    position      = RegenValueDAC - REGEN_DAC_MINIMUM;
     regenPosition = ((position * 100) / range);
 
-    // Set the Throttle DAC values.
-    dac_data[0] = MCP4725_CMD_WRITEDAC;
-    dac_data[1] = ThrottleValueDAC / 16;
-    dac_data[2] = (ThrottleValueDAC % 16) << 4;
-    HAL_I2C_Master_Transmit(&hi2c_dac, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
+    // TODO: When switching motors, add a ramp to ramp down the old motor and ramp up the new motor
+    // Which motor are we using?
+    if (motor5kwSelect == 1) {
+      // 5kw motor
+      // Set the Throttle DAC values.
+      dac_data[0] = MCP4725_CMD_WRITEDAC;
+      dac_data[1] = ThrottleValueM5kwDAC / 16;
+      dac_data[2] = (ThrottleValueM5kwDAC % 16) << 4;
+      HAL_I2C_Master_Transmit(&hi2c_m5kw, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
+      // Set the 10kw to neutral
+      dac_data[1] = THROTTLE_DAC_M10KW_NEUTRAL / 16;
+      dac_data[2] = (THROTTLE_DAC_M10KW_NEUTRAL % 16) << 4;
+      HAL_I2C_Master_Transmit(&hi2c_m10kw, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
 
-    // Set the Regen DAC values.
-    dac_data[0] = MCP4725_CMD_WRITEDAC;
-    dac_data[1] = RegenValueDAC / 16;
-    dac_data[2] = (RegenValueDAC % 16) << 4;
-    HAL_I2C_Master_Transmit(&hi2c_dac, REGEN_MCP4725_I2CADDR, dac_data, 3, 1000);
+      // Set the Regen DAC values.
+      dac_data[0] = MCP4725_CMD_WRITEDAC;
+      dac_data[1] = RegenValueM5kwDAC / 16;
+      dac_data[2] = (RegenValueM5kwDAC % 16) << 4;
+      HAL_I2C_Master_Transmit(&hi2c_m5kw, REGEN_MCP4725_I2CADDR, dac_data, 3, 1000);
+    } else {
+      // 10kw Motor
+      // Set the Throttle DAC values.
+      dac_data[0] = MCP4725_CMD_WRITEDAC;
+      dac_data[1] = ThrottleValueM10kwDAC / 16;
+      dac_data[2] = (ThrottleValueM10kwDAC % 16) << 4;
+      HAL_I2C_Master_Transmit(&hi2c_m10kw, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
+      // Set the 5kw to neutral
+      dac_data[1] = THROTTLE_DAC_M5KW_NEUTRAL / 16;
+      dac_data[2] = (THROTTLE_DAC_M5KW_NEUTRAL % 16) << 4;
+      HAL_I2C_Master_Transmit(&hi2c_m5kw, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
+
+      // Set the Regen DAC values.
+      dac_data[0] = MCP4725_CMD_WRITEDAC;
+      dac_data[1] = RegenValueM10kwDAC / 16;
+      dac_data[2] = (RegenValueM10kwDAC % 16) << 4;
+      HAL_I2C_Master_Transmit(&hi2c_m10kw, REGEN_MCP4725_I2CADDR, dac_data, 3, 1000);
+    }
 
     // Display data
+    sayThrottleValueDAC = motor5kwSelect == 1 ? ThrottleValueM5kwDAC : ThrottleValueM10kwDAC;
+    sayRegenValueDAC    = motor5kwSelect == 1 ? RegenValueM5kwDAC    : RegenValueM10kwDAC;
     if (lcd1ShowPage == 0) {
       // Page 1 - Switch positions
-      sprintf(Test, "%d - Switches: Main: [%d], E-Stop: [%d], Speed High/Low: [%d/%d], Throttle Stbd/Port: [%d/%d]\n\r", counter, mainSwitchValue, throttleStopSwitchValue, speedHighSwitchValue, speedLowSwitchValue, throttleStbdSelect, throttlePortSelect);
+      sprintf(Test, "%d - Switches: Main: [%d], E-Stop: [%d], Speed High/Low: [%d/%d], Throttle Stbd/Port: [%d/%d], Select 5kw Motor: [%d]\n\r", counter, mainSwitchValue, throttleStopSwitchValue, speedHighSwitchValue, speedLowSwitchValue, throttleStbdSelect, throttlePortSelect, motor5kwSelect);
       HAL_UART_Transmit(&huart2,Test,strlen(Test),1000);  // Sending in normal mode
     } else if (lcd1ShowPage == 1) {
       // Page 2 - Speed 
       if (throttleStopSwitchValue == 1) {
         sprintf(Speed, "%d - Emegergency Stop!\n\r", counter);
       } else if (speedLowSwitchValue) {
-        sprintf(Speed, "%d - Turtle speed.\n\r", counter);
+        sprintf(Speed, "%d - Turtle speed on: [%dkw] Motor.\n\r", counter, motorSelected);
       } else if (speedHighSwitchValue) {
-        sprintf(Speed, "%d - Turbo speed!\n\r", counter);
+        sprintf(Speed, "%d - Turbo speed on: [%dkw] Motor!\n\r", counter, motorSelected);
       } else {
-        sprintf(Speed, "%d - Normal speed\n\r", counter);
+        sprintf(Speed, "%d - Normal speed on: [%dkw] Motor\n\r", counter, motorSelected);
       }
       HAL_UART_Transmit(&huart2,Speed,strlen(Speed),1000);  // Sending in normal mode
     } else if (lcd1ShowPage == 2) {
@@ -468,20 +551,20 @@ int main(void)
         sprintf(Throttle, "%d - Emergency Stop! Speed set to neutral! Raw throttle positions are Starboard/Port: [%d/%d]\n\r", counter, ThrottleStbdValueRaw, ThrottlePortValueRaw);
       } else {
         if (throttlePortSelect) {
-          sprintf(Throttle, "%d - Port (selected) throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottlePortValueRaw, ThrottlePortValueClean, ThrottlePortValueSmooth, ThrottleValueDAC);
+          sprintf(Throttle, "%d - Port (selected) throttle (raw/clean/smooth): [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, ThrottlePortValueRaw, ThrottlePortValueClean, ThrottlePortValueSmooth, sayThrottleValueDAC, motorSelected);
         } else if (throttleStbdSelect) {
-          sprintf(Throttle, "%d - Starboad (selected) throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, ThrottleValueDAC);
+          sprintf(Throttle, "%d - Starboad (selected) throttle (raw/clean/smooth): [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, sayThrottleValueDAC, motorSelected);
         } else {
-          sprintf(Throttle, "%d - Starboard (default) Throttle (raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, ThrottleValueDAC);
+          sprintf(Throttle, "%d - Starboard (default) Throttle (raw/clean/smooth): [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, ThrottleStbdValueRaw, ThrottleStbdValueClean, ThrottleStbdValueSmooth, sayThrottleValueDAC, motorSelected);
         }
       }
       HAL_UART_Transmit(&huart2,Throttle,strlen(Throttle),1000);  // Sending in normal mode
     } else if (lcd1ShowPage == 3) {
       // Page 4 - Regen
       if (throttleStopSwitchValue == 1) {
-        sprintf(Regen, "%d - Emergency Stop! Max regen set! Raw/ADC: [%d/%d/%d], out: [%d].\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth, RegenValueDAC);
+        sprintf(Regen, "%d - Emergency Stop! Max regen set! Raw/ADC: [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth, sayRegenValueDAC, motorSelected);
       } else {
-        sprintf(Regen, "%d - Regen (Raw/clean/smooth): [%d/%d/%d], out: [%d].\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth, RegenValueDAC);
+        sprintf(Regen, "%d - Regen (Raw/clean/smooth): [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, RegenValueRaw, RegenValueClean, RegenValueSmooth, sayRegenValueDAC, motorSelected);
       }
       HAL_UART_Transmit(&huart2,Regen,strlen(Regen),1000);  // Sending in normal mode
     } else if (lcd1ShowPage == 4) {
@@ -498,26 +581,26 @@ int main(void)
           // throttleActive; 0 = port, 1 = remote, 2 = starboard
           if (throttleActive == 0) {
             // Port throttle active
-            sprintf(Percentage, "%d - Forward: [%%%d], Regen: [%d%%] (Port).\n\r", counter, throttlePosition, regenPosition);
+            sprintf(Percentage, "%d - Forward: [%%%d], Regen: [%d%%] (Port Throttle to: [%dkw] motor).\n\r", counter, throttlePosition, regenPosition, motorSelected);
           } else if (throttleActive == 1) {
             // Remote (eventually, Starboard now) throttle active
-            sprintf(Percentage, "%d - Forward: [%d%%], Regen: [%d%%] (Remote).\n\r", counter, throttlePosition, regenPosition);
+            sprintf(Percentage, "%d - Forward: [%d%%], Regen: [%d%%] (Remote Throttle to: [%dkw] motor).\n\r", counter, throttlePosition, regenPosition, motorSelected);
           } else {
             // Starboard throttle active
-            sprintf(Percentage, "%d - Forward: [%d%%], Regen: [%d%%] (Stbd).\n\r", counter, throttlePosition, regenPosition);
+            sprintf(Percentage, "%d - Forward: [%d%%], Regen: [%d%%] (Starboard Throttle to: [%dkw] motor).\n\r", counter, throttlePosition, regenPosition, motorSelected);
           }
         } else {
           // Going in reverse
           // throttleActive; 0 = port, 1 = remote, 2 = starboard
           if (throttleActive == 0) {
             // Port throttle active
-            sprintf(Percentage, "%d - Reverse: [%d%%], Regen: [%d%%] (Port).\n\r", counter, throttlePosition, regenPosition);
+            sprintf(Percentage, "%d - Reverse: [%d%%], Regen: [%d%%] (Port Throttle to: [%dkw] motor).\n\r", counter, throttlePosition, regenPosition, motorSelected);
           } else if (throttleActive == 1) {
             // Remote (eventually, Starboard now) throttle active
-            sprintf(Percentage, "%d - Reverse: [%d%%], Regen: [%d%%] (Remote).\n\r", counter, throttlePosition, regenPosition);
+            sprintf(Percentage, "%d - Reverse: [%d%%], Regen: [%d%%] (Remote Throttle to: [%dkw] motor).\n\r", counter, throttlePosition, regenPosition, motorSelected);
           } else {
             // Starboard throttle active
-            sprintf(Percentage, "%d - Reverse: [%d%%], Regen: [%d%%] (Stbd).\n\r", counter, throttlePosition, regenPosition);
+            sprintf(Percentage, "%d - Reverse: [%d%%], Regen: [%d%%] (Starboard Throttle to: [%dkw] motor).\n\r", counter, throttlePosition, regenPosition, motorSelected);
           }
         }
       }
@@ -713,30 +796,30 @@ static void MX_I2C1_Init(void)
   /* USER CODE BEGIN I2C1_Init 1 */
 
   /* USER CODE END I2C1_Init 1 */
-  hi2c_dac.Instance = I2C1;
-  hi2c_dac.Init.Timing = 0x2010091A;
-  hi2c_dac.Init.OwnAddress1 = 0;
-  hi2c_dac.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  hi2c_dac.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-  hi2c_dac.Init.OwnAddress2 = 0;
-  hi2c_dac.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
-  hi2c_dac.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
-  hi2c_dac.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-  if (HAL_I2C_Init(&hi2c_dac) != HAL_OK)
+  hi2c_m10kw.Instance = I2C1;
+  hi2c_m10kw.Init.Timing = 0x2010091A;
+  hi2c_m10kw.Init.OwnAddress1 = 0;
+  hi2c_m10kw.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c_m10kw.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c_m10kw.Init.OwnAddress2 = 0;
+  hi2c_m10kw.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c_m10kw.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c_m10kw.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c_m10kw) != HAL_OK)
   {
     Error_Handler();
   }
 
   /** Configure Analogue filter
   */
-  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c_dac, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c_m10kw, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
   {
     Error_Handler();
   }
 
   /** Configure Digital filter
   */
-  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c_dac, 0) != HAL_OK)
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c_m10kw, 0) != HAL_OK)
   {
     Error_Handler();
   }
@@ -761,30 +844,30 @@ static void MX_I2C2_Init(void)
   /* USER CODE BEGIN I2C2_Init 1 */
 
   /* USER CODE END I2C2_Init 1 */
-  hi2c_lcd.Instance = I2C2;
-  hi2c_lcd.Init.Timing = 0x2010091A;
-  hi2c_lcd.Init.OwnAddress1 = 0;
-  hi2c_lcd.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  hi2c_lcd.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-  hi2c_lcd.Init.OwnAddress2 = 0;
-  hi2c_lcd.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
-  hi2c_lcd.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
-  hi2c_lcd.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-  if (HAL_I2C_Init(&hi2c_lcd) != HAL_OK)
+  hi2c_m5kw.Instance = I2C2;
+  hi2c_m5kw.Init.Timing = 0x2010091A;
+  hi2c_m5kw.Init.OwnAddress1 = 0;
+  hi2c_m5kw.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c_m5kw.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c_m5kw.Init.OwnAddress2 = 0;
+  hi2c_m5kw.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c_m5kw.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c_m5kw.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c_m5kw) != HAL_OK)
   {
     Error_Handler();
   }
 
   /** Configure Analogue filter
   */
-  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c_lcd, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c_m5kw, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
   {
     Error_Handler();
   }
 
   /** Configure Digital filter
   */
-  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c_lcd, 0) != HAL_OK)
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c_m5kw, 0) != HAL_OK)
   {
     Error_Handler();
   }
@@ -1034,16 +1117,16 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB0 PB12 PB15 PB3
-                           PB4 PB5 PB8 PB9 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_12|GPIO_PIN_15|GPIO_PIN_3
-                          |GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_8|GPIO_PIN_9;
+  /*Configure GPIO pins : PB0 PB4 PB12 PB15 PB3
+                           PB8 PB9 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_4|GPIO_PIN_12|GPIO_PIN_15|GPIO_PIN_3
+                        |GPIO_PIN_8|GPIO_PIN_9;
   GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Enable the LCD1 Prev/Next and throttle select switch pins */
-  GPIO_InitStruct.Pin = LCD1_SELECT_PREV_Pin|LCD1_SELECT_NEXT_Pin
+  GPIO_InitStruct.Pin = LCD1_SELECT_PREV_Pin|LCD1_SELECT_NEXT_Pin|MOTOR_5KW_SELECT_Pin
                         |THROTTLE_PORT_SELECT_Pin|THROTTLE_STBD_SELECT_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;

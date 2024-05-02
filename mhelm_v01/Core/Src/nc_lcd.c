@@ -25,7 +25,7 @@
 #include <string.h>
 
 // External variables
-extern I2C_HandleTypeDef hi2c_lcd;
+extern I2C_HandleTypeDef hi2c_m10kw;
 
 // Local functions
 void nd_lcd_send_packet(unsigned int);
