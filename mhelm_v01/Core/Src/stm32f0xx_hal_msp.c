@@ -199,7 +199,7 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
     PB6     ------> I2C1_SCL
     PB7     ------> I2C1_SDA
     */
-    GPIO_InitStruct.Pin = M10KW_DAC_SCL_Pin|M10KW_DAC_SDA_Pin;
+    GPIO_InitStruct.Pin = I2C_DAC_SCL_Pin|I2C_DAC_SDA_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
@@ -226,7 +226,7 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
     PB10     ------> I2C2_SCL
     PB11     ------> I2C2_SDA
     */
-    GPIO_InitStruct.Pin = M5KW_DAC_SCL_Pin|M5KW_DAC_SDA_Pin;
+    GPIO_InitStruct.Pin = I2C_LCD_SCL_Pin|I2C_LCD_SDA_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
@@ -265,8 +265,8 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* hi2c)
     PB6     ------> I2C1_SCL
     PB7     ------> I2C1_SDA
     */
-    HAL_GPIO_DeInit(M10KW_DAC_SCL_GPIO_Port, M10KW_DAC_SCL_Pin);
-    HAL_GPIO_DeInit(M10KW_DAC_SDA_GPIO_Port, M10KW_DAC_SDA_Pin);
+    HAL_GPIO_DeInit(I2C_DAC_SCL_GPIO_Port, I2C_DAC_SCL_Pin);
+    HAL_GPIO_DeInit(I2C_DAC_SDA_GPIO_Port, I2C_DAC_SDA_Pin);
 
     /* I2C1 interrupt DeInit */
     HAL_NVIC_DisableIRQ(I2C1_IRQn);
@@ -287,7 +287,6 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* hi2c)
     PB11     ------> I2C2_SDA
     */
     HAL_GPIO_DeInit(LCD_SCL_GPIO_Port, LCD_SCL_Pin);
-
     HAL_GPIO_DeInit(LCD_SDA_GPIO_Port, LCD_SDA_Pin);
 
     /* I2C2 interrupt DeInit */

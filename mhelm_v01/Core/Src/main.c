@@ -56,8 +56,8 @@
 ADC_HandleTypeDef hadc;
 DMA_HandleTypeDef hdma_adc;
 
-I2C_HandleTypeDef hi2c_m10kw;  // I2C for the DACs
-I2C_HandleTypeDef hi2c_m5kw;  // I2C for the LCDs
+I2C_HandleTypeDef hi2c_dac;  // I2C for the DACs
+I2C_HandleTypeDef hi2c_lcd;  // I2C for the LCDs
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim3;
@@ -127,6 +127,8 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
+  // TODO: Make a call to write the throttle DAC's EEPROM to their ~2.5v position and the regen DACs to 0.05v
+
   //uint8_t count = 0;
   uint8_t mainSwitchValue         = 0; // This turns the helm displays on (LEDs, etc, does NOT disable throttle controls)
   uint8_t speedHighSwitchValue    = 0; // 0 = Off, 1 = Selected (inverted at GPIO read)
@@ -182,7 +184,7 @@ int main(void)
 
   // LCD1 Page Display
   uint8_t lcd1Pages    = 4; // Max page
-  uint8_t lcd1ShowPage = 4; // Integer changes the data shown on LCD1 (for now, serial)
+  uint8_t lcd1ShowPage = 2; // Integer changes the data shown on LCD1 (for now, serial)
    
   //uint8_t Test[] = "Mermaid's Rest - mhelm v0.1\r\n"; //Data to send
   uint8_t Test[128];
@@ -200,6 +202,8 @@ int main(void)
   // start timers
   HAL_TIM_Base_Start_IT(&htim1);
 
+  // TODO: Add arrays for the DAC value going to the two motor DACs to handle ramping when switching which 
+  //       motor is active
   // Prepopulate the arrays.
   void initializeAverages() {
     // First, Starboard throttle
@@ -231,12 +235,18 @@ int main(void)
   // counter
   uint8_t counter = 0;
 
-  /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   // Ground the red pin, set high the green and blue pins
   HAL_GPIO_WritePin(LCD1_BL_RED_GPIO_Port, LCD1_BL_RED_Pin, 0);
   HAL_GPIO_WritePin(LCD1_BL_GREEN_GPIO_Port, LCD1_BL_GREEN_Pin, 1);
   HAL_GPIO_WritePin(LCD1_BL_BLUE_GPIO_Port, LCD1_BL_BLUE_Pin, 1);
+
+  // Set the address pins for the DACs to '1' giving them all the address 0x63
+  HAL_GPIO_WritePin(M10KW_THROTTLE_DAC_A0_GPIO_Port, M10KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+  HAL_GPIO_WritePin(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+  HAL_GPIO_WritePin(M5KW_THROTTLE_DAC_A0_GPIO_Port, M5KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+  HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+  /* Infinite loop */
   while (1)
   {
     // Read the switch states (1 - X inverts the read value so that '1' is 'On')
@@ -460,7 +470,7 @@ int main(void)
       }
     }
 
-    // Regen pot is 1:1 to regen DAC, save for "snapping" at the end of the range
+    // Regen pot
     if (motor5kwSelect == 1) {
       // 5KW Motor
       if (RegenValueSmooth < REGEN_DAC_M5KW_MINIMUM)
@@ -477,11 +487,11 @@ int main(void)
       // 10KW Motor
       if (RegenValueSmooth < REGEN_DAC_M10KW_MINIMUM)
       {
-        RegenValueM10kwDAC = REGEN_DAC_M5KW_MINIMUM;  // Lower than this and the Kelly Controller thinks there's an open circuit
+        RegenValueM10kwDAC = REGEN_DAC_M10KW_MINIMUM;  // Lower than this and the Kelly Controller thinks there's an open circuit
       } else if (RegenValueSmooth > REGEN_DAC_M10KW_MAXIMUM) {
         RegenValueM10kwDAC = REGEN_DAC_M10KW_MAXIMUM;  // Higher than this and the Kelly Controller thinks there's a short
       } else {
-        RegenValueM5kwDAC = map(RegenValueSmooth, REGEN_POT_MINIMUM, REGEN_POT_MAXIMUM, REGEN_DAC_M10KW_MINIMUM, REGEN_DAC_M10KW_MAXIMUM);
+        RegenValueM10kwDAC = map(RegenValueSmooth, REGEN_POT_MINIMUM, REGEN_POT_MAXIMUM, REGEN_DAC_M10KW_MINIMUM, REGEN_DAC_M10KW_MAXIMUM);
       }
       range    = REGEN_DAC_M10KW_MAXIMUM - REGEN_DAC_M10KW_MINIMUM;
       position = RegenValueM10kwDAC - REGEN_DAC_M10KW_MINIMUM;
@@ -492,38 +502,85 @@ int main(void)
     // Which motor are we using?
     if (motor5kwSelect == 1) {
       // 5kw motor
+      // TODO: Make these function calls
       // Set the Throttle DAC values.
+      HAL_GPIO_WritePin(M5KW_THROTTLE_DAC_A0_GPIO_Port, M5KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+      HAL_Delay(1);
       dac_data[0] = MCP4725_CMD_WRITEDAC;
       dac_data[1] = ThrottleValueM5kwDAC / 16;
       dac_data[2] = (ThrottleValueM5kwDAC % 16) << 4;
-      HAL_I2C_Master_Transmit(&hi2c_m5kw, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
+      HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+      HAL_Delay(1);
+      HAL_GPIO_WritePin(M5KW_THROTTLE_DAC_A0_GPIO_Port, M5KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+
       // Set the 10kw to neutral
+      HAL_GPIO_WritePin(M10KW_THROTTLE_DAC_A0_GPIO_Port, M10KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+      HAL_Delay(1);
       dac_data[1] = THROTTLE_DAC_M10KW_NEUTRAL / 16;
       dac_data[2] = (THROTTLE_DAC_M10KW_NEUTRAL % 16) << 4;
-      HAL_I2C_Master_Transmit(&hi2c_m10kw, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
+      HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+      HAL_Delay(1);
+      HAL_GPIO_WritePin(M10KW_THROTTLE_DAC_A0_GPIO_Port, M10KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
 
-      // Set the Regen DAC values.
+      // Set the 5kw Regen DAC value.
+      HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+      HAL_Delay(1);
       dac_data[0] = MCP4725_CMD_WRITEDAC;
       dac_data[1] = RegenValueM5kwDAC / 16;
       dac_data[2] = (RegenValueM5kwDAC % 16) << 4;
-      HAL_I2C_Master_Transmit(&hi2c_m5kw, REGEN_MCP4725_I2CADDR, dac_data, 3, 1000);
+      HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+      HAL_Delay(1);
+      HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+
+      // Set the 10kw Regen DAC value to low
+      HAL_GPIO_WritePin(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+      HAL_Delay(10);
+      dac_data[0] = MCP4725_CMD_WRITEDAC;
+      dac_data[1] = REGEN_DAC_M10KW_MINIMUM / 16;
+      dac_data[2] = (REGEN_DAC_M10KW_MINIMUM % 16) << 4;
+      HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+      HAL_Delay(10);
+      HAL_GPIO_WritePin(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
     } else {
       // 10kw Motor
       // Set the Throttle DAC values.
+      HAL_GPIO_WritePin(M10KW_THROTTLE_DAC_A0_GPIO_Port, M10KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+      HAL_Delay(1);
       dac_data[0] = MCP4725_CMD_WRITEDAC;
       dac_data[1] = ThrottleValueM10kwDAC / 16;
       dac_data[2] = (ThrottleValueM10kwDAC % 16) << 4;
-      HAL_I2C_Master_Transmit(&hi2c_m10kw, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
+      HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+      HAL_Delay(1);
+      HAL_GPIO_WritePin(M10KW_THROTTLE_DAC_A0_GPIO_Port, M10KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+
       // Set the 5kw to neutral
+      HAL_GPIO_WritePin(M5KW_THROTTLE_DAC_A0_GPIO_Port, M5KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+      HAL_Delay(1);
       dac_data[1] = THROTTLE_DAC_M5KW_NEUTRAL / 16;
       dac_data[2] = (THROTTLE_DAC_M5KW_NEUTRAL % 16) << 4;
-      HAL_I2C_Master_Transmit(&hi2c_m5kw, THROTTLE_MCP4725_I2CADDR, dac_data, 3, 1000);
-
-      // Set the Regen DAC values.
+      HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+      HAL_GPIO_WritePin(M5KW_THROTTLE_DAC_A0_GPIO_Port, M5KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+      HAL_Delay(1);
+      
+      // Set the 10KW Regen DAC values.
+      HAL_GPIO_WritePin(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+      HAL_Delay(10);
       dac_data[0] = MCP4725_CMD_WRITEDAC;
       dac_data[1] = RegenValueM10kwDAC / 16;
       dac_data[2] = (RegenValueM10kwDAC % 16) << 4;
-      HAL_I2C_Master_Transmit(&hi2c_m10kw, REGEN_MCP4725_I2CADDR, dac_data, 3, 1000);
+      HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+      HAL_Delay(10);
+      HAL_GPIO_WritePin(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+      
+      // Set the 5KW Regen DAC to low.
+      HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+      HAL_Delay(10);
+      dac_data[0] = MCP4725_CMD_WRITEDAC;
+      dac_data[1] = REGEN_DAC_M5KW_MINIMUM / 16;
+      dac_data[2] = (REGEN_DAC_M5KW_MINIMUM % 16) << 4;
+      HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+      HAL_Delay(10);
+      HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
     }
 
     // Display data
@@ -796,30 +853,30 @@ static void MX_I2C1_Init(void)
   /* USER CODE BEGIN I2C1_Init 1 */
 
   /* USER CODE END I2C1_Init 1 */
-  hi2c_m10kw.Instance = I2C1;
-  hi2c_m10kw.Init.Timing = 0x2010091A;
-  hi2c_m10kw.Init.OwnAddress1 = 0;
-  hi2c_m10kw.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  hi2c_m10kw.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-  hi2c_m10kw.Init.OwnAddress2 = 0;
-  hi2c_m10kw.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
-  hi2c_m10kw.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
-  hi2c_m10kw.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-  if (HAL_I2C_Init(&hi2c_m10kw) != HAL_OK)
+  hi2c_dac.Instance = I2C1;
+  hi2c_dac.Init.Timing = 0x2010091A;
+  hi2c_dac.Init.OwnAddress1 = 0;
+  hi2c_dac.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c_dac.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c_dac.Init.OwnAddress2 = 0;
+  hi2c_dac.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c_dac.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c_dac.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c_dac) != HAL_OK)
   {
     Error_Handler();
   }
 
   /** Configure Analogue filter
   */
-  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c_m10kw, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c_dac, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
   {
     Error_Handler();
   }
 
   /** Configure Digital filter
   */
-  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c_m10kw, 0) != HAL_OK)
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c_dac, 0) != HAL_OK)
   {
     Error_Handler();
   }
@@ -844,30 +901,30 @@ static void MX_I2C2_Init(void)
   /* USER CODE BEGIN I2C2_Init 1 */
 
   /* USER CODE END I2C2_Init 1 */
-  hi2c_m5kw.Instance = I2C2;
-  hi2c_m5kw.Init.Timing = 0x2010091A;
-  hi2c_m5kw.Init.OwnAddress1 = 0;
-  hi2c_m5kw.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  hi2c_m5kw.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-  hi2c_m5kw.Init.OwnAddress2 = 0;
-  hi2c_m5kw.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
-  hi2c_m5kw.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
-  hi2c_m5kw.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-  if (HAL_I2C_Init(&hi2c_m5kw) != HAL_OK)
+  hi2c_lcd.Instance = I2C2;
+  hi2c_lcd.Init.Timing = 0x2010091A;
+  hi2c_lcd.Init.OwnAddress1 = 0;
+  hi2c_lcd.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c_lcd.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c_lcd.Init.OwnAddress2 = 0;
+  hi2c_lcd.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c_lcd.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c_lcd.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c_lcd) != HAL_OK)
   {
     Error_Handler();
   }
 
   /** Configure Analogue filter
   */
-  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c_m5kw, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c_lcd, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
   {
     Error_Handler();
   }
 
   /** Configure Digital filter
   */
-  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c_m5kw, 0) != HAL_OK)
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c_lcd, 0) != HAL_OK)
   {
     Error_Handler();
   }
@@ -1077,17 +1134,17 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : DEBUG_0_Pin DEBUG_1_Pin */
-  GPIO_InitStruct.Pin = DEBUG_0_Pin|DEBUG_1_Pin;
+  /*Configure GPIO pins : DEBUG_0_Pin DEBUG_1_Pin M10KW_THROTTLE_DAC_A0_Pin M10KW_REGEN_DAC_A0_Pin*/
+  GPIO_InitStruct.Pin = DEBUG_0_Pin|DEBUG_1_Pin|M10KW_THROTTLE_DAC_A0_Pin|M10KW_REGEN_DAC_A0_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PC2 PC3 PC4 PC5
-                           PC9 PC10 PC11 PC12 */
-  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5
-                          |GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_12;
+  /*Configure GPIO pins : PC2 PC3 PC4
+                           PC5 PC9 PC11 */
+  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4
+                          |GPIO_PIN_5|GPIO_PIN_9|GPIO_PIN_11;
   GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
@@ -1117,10 +1174,15 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB0 PB4 PB12 PB15 PB3
-                           PB8 PB9 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_4|GPIO_PIN_12|GPIO_PIN_15|GPIO_PIN_3
-                        |GPIO_PIN_8|GPIO_PIN_9;
+  /*Configure GPIO pins : M5KW_THROTTLE_DAC_A0_Pin M5KW_REGEN_DAC_A0_Pin */
+  GPIO_InitStruct.Pin = M5KW_THROTTLE_DAC_A0_Pin|M5KW_REGEN_DAC_A0_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PB0 PB4 PB12 PB15 PB3*/
+  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_4|GPIO_PIN_12|GPIO_PIN_15|GPIO_PIN_3;;
   GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);

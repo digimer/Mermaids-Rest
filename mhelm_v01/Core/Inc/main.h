@@ -77,34 +77,38 @@ void Error_Handler(void);
 #define REGEN_POT_Pin GPIO_PIN_1
 #define REGEN_POT_GPIO_Port GPIOA
 
-// I2C to 10KW motor Throttle and Regen DACs (and LCD1)
-#define M10KW_DAC_SCL_Pin GPIO_PIN_6
-#define M10KW_DAC_SCL_GPIO_Port GPIOB
-#define M10KW_DAC_SDA_Pin GPIO_PIN_7
-#define M10KW_DAC_SDA_GPIO_Port GPIOB
+// I2C to the LCDs
+#define I2C_LCD_SCL_Pin GPIO_PIN_10
+#define I2C_LCD_SCL_GPIO_Port GPIOB
+#define I2C_LCD_SDA_Pin GPIO_PIN_11
+#define I2C_LCD_SDA_GPIO_Port GPIOB
 
-// I2C to 5KW motor Throttle and Regen DACs
-#define M5KW_DAC_SCL_Pin GPIO_PIN_10
-#define M5KW_DAC_SCL_GPIO_Port GPIOB
-#define M5KW_DAC_SDA_Pin GPIO_PIN_11
-#define M5KW_DAC_SDA_GPIO_Port GPIOB
+// I2C to DACs
+#define I2C_DAC_SCL_Pin GPIO_PIN_6
+#define I2C_DAC_SCL_GPIO_Port GPIOB
+#define I2C_DAC_SDA_Pin GPIO_PIN_7
+#define I2C_DAC_SDA_GPIO_Port GPIOB
+
+// DAC Address Pins
+#define M10KW_THROTTLE_DAC_A0_Pin GPIO_PIN_10
+#define M10KW_THROTTLE_DAC_A0_GPIO_Port GPIOC
+#define M10KW_REGEN_DAC_A0_Pin GPIO_PIN_12
+#define M10KW_REGEN_DAC_A0_GPIO_Port GPIOC
+#define M5KW_THROTTLE_DAC_A0_Pin GPIO_PIN_8
+#define M5KW_THROTTLE_DAC_A0_GPIO_Port GPIOB
+#define M5KW_REGEN_DAC_A0_Pin GPIO_PIN_9
+#define M5KW_REGEN_DAC_A0_GPIO_Port GPIOB
 
 // MCP4725 definitions
-#define THROTTLE_MCP4725_I2CADDR   (0x62) << 1 // Default i2c address
-#define REGEN_MCP4725_I2CADDR      (0x63) << 1 // Default i2c address
-#define LCD1_I2CADDR               (0x50) << 1 // The default I2C address is 80 (50 hex) when counting the R/W bit, and 40 (28 hex) if not.
+#define MCP4725_SET_ADDRESS_62     1
+#define MCP4725_SET_ADDRESS_63     0
+#define MCP4725_COMMON_I2CADDR     (0x62) << 1 // This is set before the main loop by asserting all A0 pins to 1
+#define MCP4725_ACTIVE_I2CADDR     (0x63) << 1 // This is set by asserting 0 to the target DAC's A0 pin prior to write
 #define MCP4725_CMD_WRITEDAC       (0x40) // Writes data to the DAC
 #define MCP4725_CMD_WRITEDACEEPROM (0x60) // Writes data to the DAC and the EEPROM (persisting the assigned value after reset)
 
-// I2C for LCDs 
-//#define LCD_SCL_Pin GPIO_PIN_10
-//#define LCD_SCL_GPIO_Port GPIOB
-//#define LCD_SDA_Pin GPIO_PIN_11
-//#define LCD_SDA_GPIO_Port GPIOB
-#define LCD_SCL_Pin GPIO_PIN_6   // LCD1 is not on the first I2C bus with the 10kw Motor
-#define LCD_SCL_GPIO_Port GPIOB
-#define LCD_SDA_Pin GPIO_PIN_7
-#define LCD_SDA_GPIO_Port GPIOB
+// Newhaven Display (LCD) definitions
+#define LCD1_I2CADDR (0x50) << 1 // The default I2C address is 80 (50 hex) when counting the R/W bit, and 40 (28 hex) if not.
 
 #define USART_TX_Pin GPIO_PIN_2
 #define USART_TX_GPIO_Port GPIOA
