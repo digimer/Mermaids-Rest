@@ -183,8 +183,15 @@ int main(void)
   uint16_t position          = 0; // The position in the range
 
   // LCD1 Page Display
+    /* Pages
+    0. Switch Positions
+    1. Motor speed (Turltle, Normal, or Turbo)
+    2. Throttle Pot and DAC Values - Numeric
+    3. Regen Pot and DAC Values - Numeric
+    4. Throttle and Regen, Percentages
+    */
   uint8_t lcd1Pages    = 4; // Max page
-  uint8_t lcd1ShowPage = 2; // Integer changes the data shown on LCD1 (for now, serial)
+  uint8_t lcd1ShowPage = 3; // Integer changes the data shown on LCD1 (for now, serial)
    
   //uint8_t Test[] = "Mermaid's Rest - mhelm v0.1\r\n"; //Data to send
   uint8_t Test[128];
@@ -246,6 +253,45 @@ int main(void)
   HAL_GPIO_WritePin(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
   HAL_GPIO_WritePin(M5KW_THROTTLE_DAC_A0_GPIO_Port, M5KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
   HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+  
+  // Write to eeprom the safe defaults, so on reboot the throttles default to 2.5v and the regen DACs to 0.
+  // 05v. First, set the 10KW throttle to neutral.
+  HAL_GPIO_WritePin(M10KW_THROTTLE_DAC_A0_GPIO_Port, M10KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+  HAL_Delay(1);
+  dac_data[0] = MCP4725_CMD_WRITEDACEEPROM;
+  dac_data[1] = THROTTLE_DAC_M10KW_NEUTRAL / 16;
+  dac_data[2] = (THROTTLE_DAC_M10KW_NEUTRAL % 16) << 4;
+  HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+  HAL_Delay(1);
+  HAL_GPIO_WritePin(M10KW_THROTTLE_DAC_A0_GPIO_Port, M10KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+
+  // Set the 5kw to neutral
+  HAL_GPIO_WritePin(M5KW_THROTTLE_DAC_A0_GPIO_Port, M5KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+  HAL_Delay(1);
+  dac_data[1] = THROTTLE_DAC_M5KW_NEUTRAL / 16;
+  dac_data[2] = (THROTTLE_DAC_M5KW_NEUTRAL % 16) << 4;
+  HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+  HAL_GPIO_WritePin(M5KW_THROTTLE_DAC_A0_GPIO_Port, M5KW_THROTTLE_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+  HAL_Delay(1);
+      
+  // Set the 10KW Regen DAC values.
+  HAL_GPIO_WritePin(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+  HAL_Delay(10);
+  dac_data[1] = REGEN_DAC_M10KW_MINIMUM / 16;
+  dac_data[2] = (REGEN_DAC_M10KW_MINIMUM % 16) << 4;
+  HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+  HAL_Delay(10);
+  HAL_GPIO_WritePin(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+  
+  // Set the 5KW Regen DAC to low.
+  HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
+  HAL_Delay(10);
+  dac_data[1] = REGEN_DAC_M5KW_MINIMUM / 16;
+  dac_data[2] = (REGEN_DAC_M5KW_MINIMUM % 16) << 4;
+  HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
+  HAL_Delay(10);
+  HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_63);
+
   /* Infinite loop */
   while (1)
   {
@@ -525,7 +571,6 @@ int main(void)
       // Set the 5kw Regen DAC value.
       HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
       HAL_Delay(1);
-      dac_data[0] = MCP4725_CMD_WRITEDAC;
       dac_data[1] = RegenValueM5kwDAC / 16;
       dac_data[2] = (RegenValueM5kwDAC % 16) << 4;
       HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
@@ -565,7 +610,6 @@ int main(void)
       // Set the 10KW Regen DAC values.
       HAL_GPIO_WritePin(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
       HAL_Delay(10);
-      dac_data[0] = MCP4725_CMD_WRITEDAC;
       dac_data[1] = RegenValueM10kwDAC / 16;
       dac_data[2] = (RegenValueM10kwDAC % 16) << 4;
       HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
@@ -575,7 +619,6 @@ int main(void)
       // Set the 5KW Regen DAC to low.
       HAL_GPIO_WritePin(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin, MCP4725_SET_ADDRESS_62);
       HAL_Delay(10);
-      dac_data[0] = MCP4725_CMD_WRITEDAC;
       dac_data[1] = REGEN_DAC_M5KW_MINIMUM / 16;
       dac_data[2] = (REGEN_DAC_M5KW_MINIMUM % 16) << 4;
       HAL_I2C_Master_Transmit(&hi2c_dac, MCP4725_ACTIVE_I2CADDR, dac_data, 3, 1000);
@@ -902,7 +945,7 @@ static void MX_I2C2_Init(void)
 
   /* USER CODE END I2C2_Init 1 */
   hi2c_lcd.Instance = I2C2;
-  hi2c_lcd.Init.Timing = 0x2010091A;
+  hi2c_lcd.Init.Timing = 0x20303EFD;
   hi2c_lcd.Init.OwnAddress1 = 0;
   hi2c_lcd.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c_lcd.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
@@ -1229,6 +1272,43 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 
 /* USER CODE BEGIN 4 */
+	
+/********************************************************************
+ set lcd cursor
+********************************************************************/
+void lcd_cursor(unsigned int x)
+{
+	//tx_packet[0] = 0xFE;
+	//tx_packet[1] = 0x45;
+	//tx_packet[2] = x;
+	//send_packet(3);	
+	//delay_ms(10);
+}
+
+/********************************************************************
+ clear one line of display
+********************************************************************/
+void clear_line(unsigned int x)
+{
+	unsigned int ij;
+	
+	for (ij = 0; ij < x; ij++) {
+		//tx_packet[ij] = 0x20;
+	}
+	//send_packet(x);
+}
+
+/********************************************************************
+ lcd clear
+********************************************************************/
+void lcd_clear(void)
+{
+	//tx_packet[0] = 0xFE;
+	//tx_packet[1] = 0x51;
+	//send_packet(2);
+	//delay_ms(10);
+}
+
 
 /* USER CODE END 4 */
 

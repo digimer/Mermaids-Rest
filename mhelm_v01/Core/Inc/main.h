@@ -168,16 +168,27 @@ void Error_Handler(void);
 // DAC values (common regardless of the throttle in use, but needs to be tested/adjusted per DAC)
 // 10kw motor DACs
 #define THROTTLE_DAC_M10KW_FORWARD_SLOWEST 2130 // Slowest forward, 1965 on this DAC is (2.4?)v
-#define THROTTLE_DAC_M10KW_FORWARD_FASTEST 4090 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
-#define THROTTLE_DAC_M10KW_NEUTRAL         2070 // The value that sets the motor to neutral, 2.5v
+#define THROTTLE_DAC_M10KW_FORWARD_FASTEST 3975 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
+#define THROTTLE_DAC_M10KW_NEUTRAL         2020 // The value that sets the motor to neutral, 2.5v
 #define THROTTLE_DAC_M10KW_REVERSE_SLOWEST 1965 // Slowest reverse, 2130 on this DAC is (2.6?)v
-#define THROTTLE_DAC_M10KW_REVERSE_FASTEST 45   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
+#define THROTTLE_DAC_M10KW_REVERSE_FASTEST 75   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
 // 5kw motor DACs
 #define THROTTLE_DAC_M5KW_FORWARD_SLOWEST 2130 // Slowest forward, 1965 on this DAC is (2.4?)v
-#define THROTTLE_DAC_M5KW_FORWARD_FASTEST 4090 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
-#define THROTTLE_DAC_M5KW_NEUTRAL         2070 // The value that sets the motor to neutral, 2.5v
+#define THROTTLE_DAC_M5KW_FORWARD_FASTEST 3950 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
+#define THROTTLE_DAC_M5KW_NEUTRAL         2010 // The value that sets the motor to neutral, 2.5v
 #define THROTTLE_DAC_M5KW_REVERSE_SLOWEST 1965 // Slowest reverse, 2130 on this DAC is (2.6?)v
-#define THROTTLE_DAC_M5KW_REVERSE_FASTEST 45   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
+#define THROTTLE_DAC_M5KW_REVERSE_FASTEST 75   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
+
+// Regen 
+#define REGEN_DAC_M10KW_MINIMUM 45          // The TPS Dead Low is set to 0.05vDC, 6  5.73 mvDC
+#define REGEN_DAC_M10KW_MAXIMUM 3975        // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
+#define REGEN_DAC_M5KW_MINIMUM  45          // The TPS Dead Low is set to 0.05vDC, 6  5.73 mvDC
+#define REGEN_DAC_M5KW_MAXIMUM  3950        // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
+#define REGEN_AVERAGE_OVER      8           // Average the reading over this many reads. Must be proportional to delayTime - Max 255
+#define REGEN_POT_MINIMUM       0
+#define REGEN_POT_MAXIMUM       4030        // By math, this should be 4095, but is less in practice and needs to be tested per pot
+// Others
+#define MAIN_DELAY_TIME 250             // Time between loops
 
 // Throttle - Starboard
 #define THROTTLE_STBD_AVERAGE_OVER 8        // Average the reading over this many reads. Must be proportional to delayTime - Max 255
@@ -202,17 +213,6 @@ void Error_Handler(void);
 #define NEUTRAL_PORT_MID_POINT     (((THROTTLE_PORT_FORWARD_MIN - THROTTLE_PORT_REVERSE_MIN) / 2) + THROTTLE_PORT_REVERSE_MIN)
 #define REVERSE_PORT_PERCENT_STEPS 100 / REVERSE_PORT_SENSOR_STEPS
 #define FORWARD_PORT_PERCENT_STEPS 100 / FORWARD_PORT_SENSOR_STEPS
-
-// Regen 
-#define REGEN_DAC_M10KW_MINIMUM 45          // The TPS Dead Low is set to 0.05vDC, 6  5.73 mvDC
-#define REGEN_DAC_M10KW_MAXIMUM 4090        // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
-#define REGEN_DAC_M5KW_MINIMUM  45          // The TPS Dead Low is set to 0.05vDC, 6  5.73 mvDC
-#define REGEN_DAC_M5KW_MAXIMUM  4090        // The TPS Dead High is set to 4.95vDC, 4090  4993.4vDC
-#define REGEN_AVERAGE_OVER      8           // Average the reading over this many reads. Must be proportional to delayTime - Max 255
-#define REGEN_POT_MINIMUM       0
-#define REGEN_POT_MAXIMUM       4030        // By math, this should be 4095, but is less in practice and needs to be tested per pot
-// Others
-#define MAIN_DELAY_TIME 250             // Time between loops
 
 /* USER CODE BEGIN Private defines */
 // main timer task
