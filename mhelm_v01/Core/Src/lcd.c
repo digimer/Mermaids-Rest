@@ -1,7 +1,8 @@
+#include <stdio.h>
+#include <string.h>
 
+#include "main.h"
 #include "lcd.h"
-
-#include "stm32f0xx_hal.h"
 
 // This struct contains all the data that is required for the output
 // If something of that is DEBUG only I'd mask it fopr the release version to safe some memory
@@ -170,12 +171,15 @@ void lcdPrint() {
     
     #define MOTOR_SELECTED status.motorSelect?10:5
 
-    static uint32_t counter = 0;
+    static uint16_t counter = 0;
     char buffer[256];
 
     uint16_t throttlePosition;
     uint16_t regenPosition;
 
+    if (status.mainSwitch == 0) {
+        return;
+    }
 // Display data    
     switch(lcd1ShowPage) {
     case 0: 
@@ -275,7 +279,7 @@ void lcdPrint() {
       break;
     }
 
-    HAL_UART_Transmit(&huart2,buffer,strlen(buffer),1000);  // Sending in normal mode
+    HAL_UART_Transmit(&huart2,(uint8_t*)buffer,strlen(buffer),1000);  // Sending in normal mode
     counter++;
 }
 

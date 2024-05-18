@@ -38,20 +38,15 @@
 #define THROTTLE_PORT_POT_Pin GPIO_PIN_3
 #define THROTTLE_PORT_POT_GPIO_Port GPIOC
 
+// Regen pot
+#define REGEN_POT_Pin GPIO_PIN_1
+#define REGEN_POT_GPIO_Port GPIOA
+
 // Throttle Select
 #define THROTTLE_PORT_SELECT_Pin GPIO_PIN_14
 #define THROTTLE_PORT_SELECT_GPIO_Port GPIOB
 #define THROTTLE_STBD_SELECT_Pin GPIO_PIN_13
 #define THROTTLE_STBD_SELECT_GPIO_Port GPIOB
-
-// Used to describe which throttle is active
-typedef enum
-{
-    THROTTLE_PORT = 0,
-    THROTTLE_REMOTE = 1,
-    THROTTLE_STARBOARD = 2,
-    NUM_THROTTLES
-} Throttles_t;
 
 void initThrottle();
 uint16_t handleThrottle(uint8_t stopSwitchEngaged);

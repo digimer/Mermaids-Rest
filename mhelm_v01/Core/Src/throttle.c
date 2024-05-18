@@ -6,6 +6,7 @@
  * calculates a position in per mille.
 */
 
+#include <stdlib.h>
 #include <inttypes.h>
 
 #include "ioctl.h"
@@ -17,8 +18,18 @@ typedef struct {
     uint16_t size;         // Numer of entries in values
     uint16_t oldestIndex;  // Oldest array index, the one to be replaced next
     uint32_t total;        // Sum of all values in the array
-    uint16_t values[0]     // Array with values (will be allocated dynamically)
+    uint16_t values[0];     // Array with values (will be allocated dynamically)
 } Smoothing_t;
+
+
+// Used to describe which throttle is active
+typedef enum
+{
+    THROTTLE_PORT = 0,
+    THROTTLE_REMOTE = 1,
+    THROTTLE_STARBOARD = 2,
+    NUM_THROTTLES
+} Throttles_t;
 
 
 // These will be used for smooting throttle and regen values
@@ -34,10 +45,6 @@ static Throttles_t throttleActive = THROTTLE_STARBOARD; // 0 = port, 1 = remote,
 // index for the active throttle to access the specific data.
 // That allows to use the same code for all throttles without havind to distinguish in the code
 // NOTE: we have to make sure that the enum Throttles_t matches the entries in the array
-
-// Store the mid points as array so that we can access them via "throttleActive"
-// Not clear currently what the value for the remote throttle will be, so I just set per mille values, with 500 being neutral
-static const uint16_t MID_POINTS[NUM_THROTTLES] = {NEUTRAL_PORT_MID_POINT, 500, NEUTRAL_STBD_MID_POINT};
 
 // Forward values for the throttles
 static const uint16_t MIN_POINTS_FORWARD[NUM_THROTTLES] = {THROTTLE_PORT_FORWARD_MIN, 501, THROTTLE_STBD_FORWARD_MIN};
@@ -70,6 +77,8 @@ static Smoothing_t *createSmoothing(uint16_t size, uint16_t initialValue) {
     {
         result->values[i] = initialValue;
     }
+
+    return result;
 }
 
 /**
@@ -118,8 +127,7 @@ uint16_t handleThrottle(uint8_t stopSwitchEngaged)
     // NOTE: Eventually, if neither are selected, "remote control" will be enabled. For now, neither selected defaults to Stbd
     uint8_t throttleStbdSelect = 0; // 0 = Not selected, 1 = selected
     uint8_t throttlePortSelect = 0; // 0 = Not selected, 1 = selected
-    Throttles_t newThrottle = throttleActive;
-    uint16_t RegenValue    = 0;    // raw value,       Disable regen
+    Throttles_t newThrottle = throttleActive;    
     uint16_t throttleValue = 2047;
     uint16_t perMille;
 

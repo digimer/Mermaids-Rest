@@ -13,6 +13,11 @@
   *
   ******************************************************************************
   */
+
+
+#if 0 // Deactivate for now
+
+
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -75,4 +80,4 @@ void nd_lcd_clear_line(unsigned int line) {
 
 }
 
-
+#endif

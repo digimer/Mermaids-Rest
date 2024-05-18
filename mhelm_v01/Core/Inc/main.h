@@ -24,7 +24,13 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
+
 #include "stm32f0xx_hal.h"
+
+#include "lcd.h"
+#include "motor.h"
+#include "i2cHelpers.h"
+#include "throttle.h"
 
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
@@ -68,8 +74,9 @@ void Error_Handler(void);
 #define I2C_DAC_SDA_Pin GPIO_PIN_7
 #define I2C_DAC_SDA_GPIO_Port GPIOB
 
-
-
+// Throttle enable ("oh poo" switch)
+#define THROTTLE_STOP_SW_IN_Pin GPIO_PIN_6
+#define THROTTLE_STOP_SW_IN_GPIO_Port GPIOA
 
 // Newhaven Display (LCD) definitions
 #define LCD1_I2CADDR (0x50) << 1 // The default I2C address is 80 (50 hex) when counting the R/W bit, and 40 (28 hex) if not.

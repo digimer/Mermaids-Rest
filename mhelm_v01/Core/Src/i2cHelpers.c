@@ -16,9 +16,9 @@ void Error_Handler(void);
 #define MCP4725_COMMON_I2CADDR     ((0x62) << 1) // This is set before the main loop by asserting all A0 pins to 1
 #define MCP4725_ACTIVE_I2CADDR     ((0x63) << 1) // This is set by asserting 0 to the target DAC's A0 pin prior to write
 
-
-static I2C_HandleTypeDef hi2c_dac;  // I2C for the DACs
-static I2C_HandleTypeDef hi2c_lcd;  // I2C for the LCDs
+// These will also be used by the IRQ handler
+I2C_HandleTypeDef hi2c_dac;  // I2C for the DACs
+I2C_HandleTypeDef hi2c_lcd;  // I2C for the LCDs
 
 
 /**
@@ -126,7 +126,7 @@ void I2cInit() {
  * This function writes a command to the DAC specified by (port,pin)
  * We expect 3 bytes in pData in the format [COMMAND,PARAM1,PARAM2]
 */
-HAL_StatusTypeDef I2cSendtoDAC(GPIO_TypeDef *port, uint16_t pin, uint8_t *pData, uint32_t timeout) {
+HAL_StatusTypeDef I2cSendtoDAC(const GPIO_TypeDef *port, const uint16_t pin, uint8_t *pData, const uint32_t timeout) {
   HAL_StatusTypeDef result = HAL_OK;
 
   // Set Address of target DAC to 62

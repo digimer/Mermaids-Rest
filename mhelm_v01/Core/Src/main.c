@@ -15,6 +15,10 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
+
+#ifndef __MAIN_H__
+#define __MAIN_H__
+
 /* Includes ------------------------------------------------------------------*/
 #include "ioctl.h"
 #include "main.h"
@@ -22,14 +26,13 @@
 #include "i2cHelpers.h"
 #include "throttle.h"
 #include "motor.h"
+#include "lcd.h"
 
 //#include "nd_lcd.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <inttypes.h>
-#include <stdio.h>
-#include <string.h>
 
 //#include "Wire.h"
 //#include "math.h"
@@ -73,7 +76,6 @@ int map(int, int, int, int, int); // Like arduino's map() function
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
-static void MX_USART2_UART_Init(void);
 static void MX_ADC_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM1_Init(void);
@@ -118,18 +120,10 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   // TODO: Uncomment these out
-  MX_USART2_UART_Init();
   MX_ADC_Init();
   
-
-  // Set the address pins for the DACs to '1' giving them all the address 0x63
-  I2C_DEACTIVATE_DAC(M10KW_THROTTLE_DAC_A0_GPIO_Port, M10KW_THROTTLE_DAC_A0_Pin);
-  I2C_DEACTIVATE_DAC(M10KW_REGEN_DAC_A0_GPIO_Port, M10KW_REGEN_DAC_A0_Pin);
-  I2C_DEACTIVATE_DAC(M5KW_THROTTLE_DAC_A0_GPIO_Port, M5KW_THROTTLE_DAC_A0_Pin);
-  I2C_DEACTIVATE_DAC(M5KW_REGEN_DAC_A0_GPIO_Port, M5KW_REGEN_DAC_A0_Pin);
-  
   // Initialize all I2C stuff
-  initI2C();
+  I2cInit();
   
   //MX_TIM3_Init();
   MX_TIM1_Init();
@@ -141,24 +135,11 @@ int main(void)
   uint8_t mainSwitchValue         = 0; // This turns the helm displays on (LEDs, etc, does NOT disable throttle controls)
   uint8_t speedHighSwitchValue    = 0; // 0 = Off, 1 = Selected (inverted at GPIO read)
   uint8_t speedLowSwitchValue     = 0; // 0 = Off, 1 = Selected (inverted at GPIO read)
-  uint8_t lcd1SelPrevSwitchValue  = 0; // 0 = Off, 1 = Selected (inverted at GPIO read)
-  uint8_t lcd1SelNextSwitchValue  = 0; // 0 = Off, 1 = Selected (inverted at GPIO read)
   uint8_t throttleStopSwitchValue = 0; // 0 = Run, 1 = Stop - This is the E-Stop
   
     
   uint16_t throttlePerMilleValue = 500;
   uint16_t regenPerMilleValue = 500;
-
-  uint16_t sayThrottleValueDAC = 0;                            // Used for displaying the in-use DAC value
-  uint16_t sayRegenValueDAC    = 0;                            // Used for displaying the in-use DAC value
-
-  // Speed percentages.
-  uint16_t throttlePosition  = 0;
-  uint16_t regenPosition     = 0;
-  uint16_t throttleDirection = 0; // 0 = neutral, 1 = forward, 2 = reverse
-  
-  uint16_t range             = 1; // The range being calculated
-  uint16_t position          = 0; // The position in the range
 
  
   /* USER CODE END 2 */
@@ -166,16 +147,6 @@ int main(void)
 
   // start timers
   HAL_TIM_Base_Start_IT(&htim1);
-
-  // The foot switch (Kelly pin 15, 12v) needs to be '1' for the throttle to work.
-  uint8_t FootSwitchValue = 0;
-
-  // The speed switch values (formerly F-N-R). Both off is mid speed (or neutral).
-  uint8_t SpeedHighSwitchValue = 0;
-  uint8_t SpeedLowSwitchValue  = 0;
-
-  // counter
-  uint8_t counter = 0;
 
   /* USER CODE BEGIN WHILE */
   
@@ -194,17 +165,16 @@ int main(void)
   {
     // Read the switch states (1 - X inverts the read value so that '1' is 'On')
     
-    mainSwitchValue         = 1 - HAL_GPIO_ReadPin(MAIN_SW_IN_GPIO_Port, MAIN_SW_IN_Pin);
-      
-    
-     // Read Throttle emergency off
-     throttleStopSwitchValue = 1 - HAL_GPIO_ReadPin(THROTTLE_STOP_SW_IN_GPIO_Port, THROTTLE_STOP_SW_IN_Pin);
+      mainSwitchValue = 1 - HAL_GPIO_ReadPin(MAIN_SW_IN_GPIO_Port, MAIN_SW_IN_Pin);
+
+      // Read Throttle emergency off
+      throttleStopSwitchValue = 1 - HAL_GPIO_ReadPin(THROTTLE_STOP_SW_IN_GPIO_Port, THROTTLE_STOP_SW_IN_Pin);
      
-     // Calculate throttle values
-     throttlePerMilleValue = handleThrottle(throttleStopSwitchValue);
+       // Calculate throttle values
+      throttlePerMilleValue = handleThrottle(throttleStopSwitchValue);
      
-     // Calculate regen values
-     regenPerMilleValue = handleRegen(throttleStopSwitchValue);
+      // Calculate regen values
+      regenPerMilleValue = handleRegen(throttleStopSwitchValue);
 
      if(throttleStopSwitchValue == 1) {
       // Shut everything down! Press the foot switch, change the speed to Low, put the throttle to neutral
@@ -227,9 +197,9 @@ int main(void)
     // Does it make sense to send this even if the foot switch is off?
     handleMotor(throttlePerMilleValue,regenPerMilleValue);
     
+    lcdSetGlobalSwitches(mainSwitchValue, throttleStopSwitchValue, speedHighSwitchValue, speedLowSwitchValue);
     lcdHandlePageButtons();
-     
-    
+    lcdPrint();
     
     HAL_Delay(MAIN_DELAY_TIME);
     /* USER CODE END WHILE */
@@ -740,3 +710,5 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
+#endif /* Include guard */
