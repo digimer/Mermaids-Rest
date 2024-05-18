@@ -4,6 +4,7 @@
 
 #include <inttypes.h>
 
+/// @brief Lebels for the active motor
 typedef enum {
     MOTOR_5KW = 0,
     MOTOR_10KW = 1,
@@ -49,7 +50,23 @@ typedef enum {
 #define M5KW_REGEN_DAC_A0_Pin GPIO_PIN_9
 #define M5KW_REGEN_DAC_A0_GPIO_Port GPIOB
 
+
+/// @brief Initializes the motor.
+/// Sets the EEPROM of the motor DACS to neutlral and
+/// Initializes the DACs to the inactive address
+/// @note Should be called before anything is sent to the DACs.
 void initMotor();
+
+
+/**
+ * 
+ * @brief Send throttle and regen positions to the motor.
+ * This function handles sending throttle and regen values to the motors
+ * It get as input the per mille values for regen and throttle, maps them to the 
+ * dac values for the active motors and sends the data out.
+ * @param throttlePerMille The position of the throttle poti in per mille (500 is neutral)
+ * @param regenPerMille The position of the regen poti in per mille
+*/
 void handleMotor(uint16_t throttlePerMille, uint16_t regenPerMille);
 
 #endif
