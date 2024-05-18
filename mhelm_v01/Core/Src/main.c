@@ -28,7 +28,6 @@
 #include "motor.h"
 #include "throttle.h"
 
-
 // #include "nd_lcd.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -162,8 +161,8 @@ int main(void) {
 
   /* Infinite loop */
   while (1) {
-    // Read the switch states (1 - X inverts the read value so that '1' is 'On')
 
+    // Read the switch states (1 - X inverts the read value so that '1' is 'On')
     mainSwitchValue =
         1 - HAL_GPIO_ReadPin(MAIN_SW_IN_GPIO_Port, MAIN_SW_IN_Pin);
 

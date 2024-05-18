@@ -40,11 +40,12 @@ Smoothing_t *smoothingRegen;
 static Throttles_t throttleActive =
     THROTTLE_STARBOARD; // 0 = port, 1 = remote, 2 = starboard
 
-// Instead of usinf ifs to check which throttle is active,
+// Instead of using ifs to check which throttle is active and use the appropriate defines,
 // we simply use arrays to store the throttle specific values and use an
 // index for the active throttle to access the specific data.
-// That allows to use the same code for all throttles without havind to
-// distinguish in the code NOTE: we have to make sure that the enum Throttles_t
+// That allows to use the same code for all throttles without having to
+// distinguish in the code 
+// NOTE: we have to make sure that the enum Throttles_t
 // matches the entries in the array
 
 // Forward values for the throttles
@@ -68,6 +69,7 @@ static const uint8_t IOCTL_PORTS[NUM_THROTTLES] = {IOCTL_THROTTLE_PORT_POT, 255,
 static Smoothing_t *createSmoothing(uint16_t size, uint16_t initialValue) {
   Smoothing_t *result;
 
+  // Allocate memory for the smoothing data
   result = (Smoothing_t *)malloc(sizeof(Smoothing_t) + size * sizeof(uint16_t));
   if (!result) {
     return NULL;
@@ -86,8 +88,8 @@ static Smoothing_t *createSmoothing(uint16_t size, uint16_t initialValue) {
 }
 
 /**
- * This function uses an array of values to calc a glidig average over all calls
- * to this function handle has to be allocated using thge function
+ * This function uses an array of values to calc a glidig average over all calls to this function.
+ * handle has to be allocated using the function
  * createSmoothing
  */
 static uint16_t smoothValue(Smoothing_t *handle, uint16_t value) {
