@@ -11,6 +11,7 @@
 
 #include "ioctl.h"
 #include "i2cHelpers.h"
+#include "lcd.h"
 #include "throttle.h"
 
 // Used for smoothing values
@@ -130,13 +131,17 @@ uint16_t handleThrottle(uint8_t stopSwitchEngaged)
     Throttles_t newThrottle = throttleActive;    
     uint16_t throttleValue = 2047;
     uint16_t perMille;
+    uint16_t result = 0;
 
     // Emergency Stop logic
-    if (stopSwitchEngaged) {
-    
+    if (stopSwitchEngaged) {        
      // Is smoothing what we want here?
      // It's an emergency, so maybe we should go to neutral right away?
-      return smoothValue(smoothingThrottle,500);
+     result = smoothValue(smoothingThrottle,500); 
+     lcdSetThrottleRaw(0);
+     lcdSetThrottlePerMille(500);
+     lcdSetThrottlePerMilleSmooth(result);     
+      return result;
     }
     
     // This is not really clean
@@ -144,6 +149,9 @@ uint16_t handleThrottle(uint8_t stopSwitchEngaged)
     // Therefore its not good to do the subtraction here, even if it works
     throttleStbdSelect = 1 - HAL_GPIO_ReadPin(THROTTLE_STBD_SELECT_GPIO_Port, THROTTLE_STBD_SELECT_Pin);
     throttlePortSelect = 1 - HAL_GPIO_ReadPin(THROTTLE_PORT_SELECT_GPIO_Port, THROTTLE_PORT_SELECT_Pin);
+
+    // Store them for output.
+    lcdSetThrottleSwitches(throttlePortSelect,throttleStbdSelect);
 
     // Check which Throttle to use
     if ((throttleStbdSelect) || (!throttlePortSelect)) {
@@ -163,7 +171,8 @@ uint16_t handleThrottle(uint8_t stopSwitchEngaged)
     // This requires a special handling for the  remote throttle.
     // That's not yet implemented
     throttleValue = ioctl_get_pot(IOCTL_PORTS[throttleActive]); // get the adc value for the active throttle
-   
+    // And store it for display
+    lcdSetThrottleRaw(throttleValue);
 
     // Check border cases and enforce limits
     if (throttleValue < MAX_POINTS_REVERSE[throttleActive]) {
@@ -173,30 +182,45 @@ uint16_t handleThrottle(uint8_t stopSwitchEngaged)
         // Beyond forward max, so set to forward max
         throttleValue = MAX_POINTS_FORWARD[throttleActive];
     } else if ((throttleValue > MIN_POINTS_REVERSE[throttleActive]) && (throttleValue < MIN_POINTS_FORWARD[throttleActive])) {
-        // Somewhere in the neutral zone, we simply return a (smoothed) 500
-        return smoothValue(smoothingThrottle,500);
+        // Somewhere in the neutral zone, we simply return a (smoothed) 500        
+        result = smoothValue(smoothingThrottle,500);
+        // store it for display
+        lcdSetThrottlePerMille(500); 
+        lcdSetThrottlePerMilleSmooth(result); 
+        return result;
     }
 
     // Now calculate the position in perMille
     perMille = calcPerMille(throttleValue,MAX_POINTS_REVERSE[throttleActive],MAX_POINTS_FORWARD[throttleActive]);
-
-    // And return the smoothed value
-    return smoothValue(smoothingThrottle,perMille);
+    // Store it for display
+    lcdSetThrottlePerMille(perMille); 
+    // Calculate the smoothed value
+    result = smoothValue(smoothingThrottle,perMille);
+    // Store it for display
+    lcdSetThrottlePerMilleSmooth(result); 
+    return result;
     
 }
 
 uint16_t handleRegen(uint8_t stopSwitchEngaged) {
     uint16_t regenValue;
     uint16_t perMille;
+    uint16_t result;
         
     // Emergency Stop logic
     if (stopSwitchEngaged) {    
         // Is smoothing what we want here?
         // It's an emergency, so maybe we should go to maximum right away?
-        return smoothValue(smoothingRegen,1000);
+
+        result = smoothValue(smoothingRegen,1000);
+        lcdSetThrottleRaw(0);
+        lcdSetThrottlePerMille(1000);
+        lcdSetThrottlePerMilleSmooth(result);     
+        return result;
     }
 
     regenValue = ioctl_get_pot(IOCTL_REGEN_POT);         // get the adc value for the regen
+    lcdSetThrottleRaw(regenValue);
 
     // Restrict it to valid values
     if(regenValue < REGEN_POT_MINIMUM) {
@@ -207,7 +231,10 @@ uint16_t handleRegen(uint8_t stopSwitchEngaged) {
 
     // Now calculate the position in per mille
     perMille = calcPerMille(regenValue,REGEN_POT_MINIMUM,REGEN_POT_MAXIMUM);
+    lcdSetThrottlePerMille(perMille);
 
     // And return the smoothed value
-    return smoothValue(smoothingRegen,perMille);    
+    result = smoothValue(smoothingRegen,perMille);    
+    lcdSetThrottlePerMilleSmooth(result);     
+    return result;
 }

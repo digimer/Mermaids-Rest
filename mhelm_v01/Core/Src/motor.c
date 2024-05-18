@@ -3,6 +3,7 @@
 
 #include "i2cHelpers.h"
 #include "motor.h"
+#include "lcd.h"
 
 
 const uint16_t MOTOR_MAX_REVERSE[NUM_MOTORS] = {THROTTLE_DAC_M5KW_REVERSE_FASTEST, THROTTLE_DAC_M10KW_REVERSE_FASTEST};
@@ -76,7 +77,9 @@ void handleMotor(uint16_t throttlePerMille, uint16_t regenPerMille) {
     Motor_t newMotor;
     uint8_t i;
 
-    motorSwitch = HAL_GPIO_ReadPin(MOTOR_5KW_SELECT_GPIO_Port, MOTOR_5KW_SELECT_Pin);
+    motorSwitch = HAL_GPIO_ReadPin(MOTOR_5KW_SELECT_GPIO_Port, MOTOR_5KW_SELECT_Pin); 
+    // Store it for output
+    lcdSetMotorSwitch(motorSwitch);
 
     // Select the motor
     if(motorSwitch == GPIO_PIN_RESET) {
@@ -103,6 +106,9 @@ void handleMotor(uint16_t throttlePerMille, uint16_t regenPerMille) {
     }
     motorRegenValue = MAP_TO_VALUE(regenPerMille,MOTOR_MIN_REGEN[motorActive],MOTOR_MAX_REGEN[motorActive]);
 
+    // Store DAC values for output
+    lcdSetThrottleDac(motorThrottleValue);
+    lcdSetRegenDac(motorRegenValue);
 
     throttle_data[0] = MCP4725_CMD_WRITEDAC;
     regen_data[0] = MCP4725_CMD_WRITEDAC;

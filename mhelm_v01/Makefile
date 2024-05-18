@@ -39,6 +39,7 @@ C_SOURCES =  \
 Core/lcd.c \
 Core/motor.c \
 Core/throttle.c \
+Core/Src/i2cHelpers.c \
 Core/Src/main.c \
 Core/Src/ioctl.c \
 Core/Src/stm32f0xx_it.c \

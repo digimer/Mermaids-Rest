@@ -20,15 +20,15 @@ typedef struct {
     int throttlePortSelect:1;
     int throttleStarboardSelect:1;
 
-    uint16_t throttleValueRaw;
-    uint16_t throttleValueSmooth;
+    uint16_t throttleValueRaw;    
     uint16_t throttleValuePerMille;
+    uint16_t throttleValuePerMilleSmooth;
     uint16_t throttleValueDac;
 
     // Regen
-    uint16_t regenValueRaw;
-    uint16_t regenValueSmooth;
+    uint16_t regenValueRaw;    
     uint16_t regenValuePerMille;
+    uint16_t regenValuePerMilleSmooth;
     uint16_t regenValueDac;
 
 } StatusData_t;
@@ -50,47 +50,51 @@ static StatusData_t status;
   uint8_t lcd1ShowPage = 3; // Integer changes the data shown on LCD1 (for now, serial)
 
 void lcdSetGlobalSwitches(uint8_t main, uint8_t throttleStop, uint8_t speedHigh, uint8_t speedLow) {
-
+    status.mainSwitch = main;
+    status.throttleStopSwitch = throttleStop;
+    status.speedHighSwitch = speedHigh;
+    status.speedLowSwitch = speedLow;
 }
 
 void lcdSetMotorSwitch(uint8_t aSwitch) {
-
+    status.motorSelect = aSwitch;
 }
 
 void lcdSetThrottleSwitches(uint8_t portSwitch, uint8_t stdbSwitch) {
-
+    status.throttlePortSelect = portSwitch;
+    status.throttleStarboardSelect = stdbSwitch;
 }
 
 void lcdSetThrottleRaw(uint16_t value) {
-
+    status.throttleValueRaw = value;
 }
 
-void lcdSetThrottleSmooth(uint16_t value) {
-
+void lcdSetThrottlePerMilleSmooth(uint16_t value) {
+    status.throttleValuePerMilleSmooth = value;
 }
 
 void lcdSetThrottlePerMille(uint16_t value) {
-
+    status.throttleValuePerMille = value;
 }
 
 void lcdSetThrottleDac(uint16_t value) {
-
+    status.throttleValueDac = value;
 }
 
 void lcdSetRegenRaw(uint16_t value) {
-
+    status.regenValueRaw = value;
 }
 
-void lcdSetRegenSmooth(uint16_t value) {
-
+void lcdSetRegenPerMilleSmooth(uint16_t value) {
+    status.regenValuePerMilleSmooth = value;
 }
 
 void lcdSetRegenPerMille(uint16_t value) {
-
+    status.regenValuePerMille = value;
 }
 
 void lcdSetRegenDac(uint16_t value) {
-
+    status.regenValueDac = value;
 }
 
 
@@ -209,14 +213,14 @@ void lcdPrint() {
         sprintf(buffer, "%d - Emergency Stop! Speed set to neutral! Raw throttle position on selected throttle: [%d]\n\r", counter, status.throttleValueRaw);
       } else {
         if (status.throttlePortSelect) {
-          sprintf(buffer, "%d - Port (selected) throttle (raw/smooth): [%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
-                          status.throttleValueRaw, status.throttleValueSmooth, status.throttleValueDac, MOTOR_SELECTED);
+          sprintf(buffer, "%d - Port (selected) throttle (raw/per mille/smooth): [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
+                          status.throttleValueRaw, status.throttleValuePerMille,status.throttleValuePerMilleSmooth, status.throttleValueDac, MOTOR_SELECTED);
         } else if (status.throttleStarboardSelect) {
-          sprintf(buffer, "%d - Starboad (selected) throttle (raw/smooth): [%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
-                          status.throttleValueRaw, status.throttleValueSmooth, status.throttleValueDac, MOTOR_SELECTED);
+          sprintf(buffer, "%d - Starboad (selected) throttle (raw/per mille/smooth): [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
+                          status.throttleValueRaw, status.throttleValuePerMille,status.throttleValuePerMilleSmooth, status.throttleValueDac, MOTOR_SELECTED);
         } else {
-          sprintf(buffer, "%d - Starboard (default) Throttle (raw/smooth): [%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
-                           status.throttleValueRaw, status.throttleValueSmooth, status.throttleValueDac, MOTOR_SELECTED);
+          sprintf(buffer, "%d - Starboard (default) Throttle (raw/per mille/smooth): [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
+                           status.throttleValueRaw, status.throttleValuePerMille,status.throttleValuePerMilleSmooth, status.throttleValueDac, MOTOR_SELECTED);
         }
       }
       break;
@@ -224,11 +228,11 @@ void lcdPrint() {
     case 3:
       // Page 4 - Regen
       if (status.throttleStopSwitch == 1) {
-        sprintf(buffer, "%d - Emergency Stop! Max regen set! Raw/Smooth: [%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
-                         status.regenValueRaw, status.regenValueSmooth, status.regenValueDac, MOTOR_SELECTED);
+        sprintf(buffer, "%d - Emergency Stop! Max regen set! Raw/per mille/Smooth: [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
+                         status.regenValueRaw, status.regenValuePerMille, status.regenValuePerMilleSmooth, status.regenValueDac, MOTOR_SELECTED);
       } else {
-        sprintf(buffer, "%d - Regen (Raw/smooth): [%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
-                         status.regenValueRaw, status.regenValueSmooth, status.regenValueDac, MOTOR_SELECTED);
+        sprintf(buffer, "%d - Regen (Raw/smooth): [%d/%d/%d], out: [%d] to: [%dkw] motor.\n\r", counter, 
+                         status.regenValueRaw, status.regenValuePerMille, status.regenValuePerMilleSmooth, status.regenValueDac, MOTOR_SELECTED);
       }
       break;
 

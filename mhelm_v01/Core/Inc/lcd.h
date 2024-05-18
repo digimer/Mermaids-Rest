@@ -21,14 +21,14 @@ void lcdSetMotorSwitch(uint8_t aSwitch);
 
 void lcdSetThrottleSwitches(uint8_t portSwitch, uint8_t stdbSwitch);
 void lcdSetThrottleRaw(uint16_t value);
-void lcdSetThrottleSmooth(uint16_t value);
 void lcdSetThrottlePerMille(uint16_t value);
+void lcdSetThrottlePerMilleSmooth(uint16_t value);
 void lcdSetThrottleDac(uint16_t value);
 
 
 void lcdSetRegenRaw(uint16_t value);
-void lcdSetRegenSmooth(uint16_t value);
 void lcdSetRegenPerMille(uint16_t value);
+void lcdSetRegenPerMilleSmooth(uint16_t value);
 void lcdSetRegenDac(uint16_t value);
 
 void lcdInit();
