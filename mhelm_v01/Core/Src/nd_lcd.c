@@ -149,6 +149,7 @@ void nd_lcd_clear_line(unsigned int line) {}
 
 void printString(uint8_t lcd, const char *line1, const char *line2) {
   uint16_t LCD_I2CADDR;
+  // TODO: Make this an array so that we can use 'LCD_I2CADDR   = lcdAddress[lcd]'
   if (lcd == 0) {
     LCD_I2CADDR = LCD0_I2CADDR;
   } else if (lcd == 1) {

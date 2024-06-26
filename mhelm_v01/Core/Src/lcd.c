@@ -170,8 +170,8 @@ void lcdPrint() {
 
   static uint8_t counter = 0;
   char buffer[256];
-  char lcd1_line1[16];
-  char lcd1_line2[16];
+  char lcd1_line1[20];
+  char lcd1_line2[20];
 
   uint16_t throttlePosition;
   uint16_t regenPosition;
