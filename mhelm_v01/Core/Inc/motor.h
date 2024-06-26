@@ -33,7 +33,7 @@ typedef enum {
 #define THROTTLE_DAC_M10KW_REVERSE_FASTEST 75   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC
 // 5kw motor DACs
 #define THROTTLE_DAC_M5KW_FORWARD_SLOWEST 2130 // Slowest forward, 1965 on this DAC is (2.4?)v
-#define THROTTLE_DAC_M5KW_FORWARD_FASTEST 3950 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
+#define THROTTLE_DAC_M5KW_FORWARD_FASTEST 3900 // Fastest forward, TPS Dead Low is set to 0.05vDC, 6 on this DAC is 5.73mvDC
 #define THROTTLE_DAC_M5KW_NEUTRAL         2010 // The value that sets the motor to neutral, 2.5v
 #define THROTTLE_DAC_M5KW_REVERSE_SLOWEST 1965 // Slowest reverse, 2130 on this DAC is (2.6?)v
 #define THROTTLE_DAC_M5KW_REVERSE_FASTEST 75   // Fastest reverse, TPS Dead High is set to 4.95vDC, 4090 on this DAC is 4993.4mvDC

@@ -19,6 +19,7 @@
 // Used for smoothing values
 typedef struct {
   uint16_t size;        // Numer of entries in values
+  uint16_t currentIndex; // The index to store the next value;
   uint16_t oldestIndex; // Oldest array index, the one to be replaced next
   uint32_t total;       // Sum of all values in the array
   uint16_t values[0];   // Array with values (will be allocated dynamically)
@@ -26,8 +27,8 @@ typedef struct {
 
 // Used to describe which throttle is active
 typedef enum {
-  THROTTLE_PORT = 0,
-  THROTTLE_REMOTE = 1,
+  THROTTLE_PORT      = 0,
+  THROTTLE_REMOTE    = 1,
   THROTTLE_STARBOARD = 2,
   NUM_THROTTLES
 } Throttles_t;
@@ -37,8 +38,7 @@ Smoothing_t *smoothingThrottle;
 Smoothing_t *smoothingRegen;
 
 // This tells us which throttle is currently active
-static Throttles_t throttleActive =
-    THROTTLE_STARBOARD; // 0 = port, 1 = remote, 2 = starboard
+static Throttles_t throttleActive = THROTTLE_STARBOARD; // 0 = port, 1 = remote, 2 = starboard
 
 // Instead of using ifs to check which throttle is active and use the appropriate defines,
 // we simply use arrays to store the throttle specific values and use an
@@ -49,20 +49,15 @@ static Throttles_t throttleActive =
 // matches the entries in the array
 
 // Forward values for the throttles
-static const uint16_t MIN_POINTS_FORWARD[NUM_THROTTLES] = {
-    THROTTLE_PORT_FORWARD_MIN, 501, THROTTLE_STBD_FORWARD_MIN};
-static const uint16_t MAX_POINTS_FORWARD[NUM_THROTTLES] = {
-    THROTTLE_PORT_FORWARD_MAX, 1000, THROTTLE_STBD_FORWARD_MAX};
+static const uint16_t MIN_POINTS_FORWARD[NUM_THROTTLES] = { THROTTLE_PORT_FORWARD_MIN, 501, THROTTLE_STBD_FORWARD_MIN };
+static const uint16_t MAX_POINTS_FORWARD[NUM_THROTTLES] = { THROTTLE_PORT_FORWARD_MAX, 1000, THROTTLE_STBD_FORWARD_MAX };
 
 // NAd reverse values
-static const uint16_t MIN_POINTS_REVERSE[NUM_THROTTLES] = {
-    THROTTLE_PORT_REVERSE_MIN, 0, THROTTLE_STBD_REVERSE_MIN};
-static const uint16_t MAX_POINTS_REVERSE[NUM_THROTTLES] = {
-    THROTTLE_PORT_REVERSE_MAX, 499, THROTTLE_STBD_REVERSE_MAX};
+static const uint16_t MIN_POINTS_REVERSE[NUM_THROTTLES] = { THROTTLE_PORT_REVERSE_MIN, 0, THROTTLE_STBD_REVERSE_MIN };
+static const uint16_t MAX_POINTS_REVERSE[NUM_THROTTLES] = { THROTTLE_PORT_REVERSE_MAX, 499, THROTTLE_STBD_REVERSE_MAX };
 
 // The ports for the throttles
-static const uint8_t IOCTL_PORTS[NUM_THROTTLES] = {IOCTL_THROTTLE_PORT_POT, 255,
-                                                   IOCTL_THROTTLE_STBD_POT};
+static const uint8_t IOCTL_PORTS[NUM_THROTTLES] = {IOCTL_THROTTLE_PORT_POT, 255, IOCTL_THROTTLE_STBD_POT};
 
 // Allocate memory for a new smoothing struct and initializes it.
 // Might return NULL if memory allocation failed
@@ -75,9 +70,9 @@ static Smoothing_t *createSmoothing(uint16_t size, uint16_t initialValue) {
     return NULL;
   }
 
-  result->size = size;
-  result->oldestIndex = 0;
-  result->total = size * initialValue;
+  result->size         = size;
+  result->oldestIndex  = 0;
+  result->total        = size * initialValue;
 
   // Initialize values
   for (uint16_t i = 0; i < size; ++i) {
@@ -96,10 +91,10 @@ static uint16_t smoothValue(Smoothing_t *handle, uint16_t value) {
 
   // We know the current sum of all values.
   // Therefore, the new sum is the current sum minus oldest value plus new value
-  handle->total = handle->total - handle->values[handle->oldestIndex] + value;
-  handle->oldestIndex =
-      (handle->oldestIndex + 1) % handle->size; // Modulo handles turnaround
-
+  handle->total                       = handle->total + value - handle->values[handle->oldestIndex];
+  handle->values[handle->oldestIndex] = value;
+  handle->oldestIndex                 = (handle->oldestIndex + 1) % handle->size; // Modulo handles turnaround
+  
   // TODO: Make sure this is rounded properly
   return handle->total / handle->size;
 }
@@ -113,7 +108,7 @@ void initThrottle() {
   // We will not smooth the raw values but the resulting per-mille values
   // That removes the necessity to handle different mid points
   smoothingThrottle = createSmoothing(THROTTLE_AVERAGE_OVER, 500);
-  smoothingRegen = createSmoothing(THROTTLE_AVERAGE_OVER, 0);
+  smoothingRegen    = createSmoothing(THROTTLE_AVERAGE_OVER, 0);
 }
 
 // that's a simpler version of the map() function that basically only imlements
@@ -132,10 +127,10 @@ uint16_t handleThrottle(uint8_t stopSwitchEngaged) {
   // enabled. For now, neither selected defaults to Stbd
   uint8_t throttleStbdSelect = 0; // 0 = Not selected, 1 = selected
   uint8_t throttlePortSelect = 0; // 0 = Not selected, 1 = selected
-  Throttles_t newThrottle = throttleActive;
-  uint16_t throttleValue = 2047;
+  Throttles_t newThrottle    = throttleActive;
+  uint16_t throttleValue     = 2047;
   uint16_t perMille;
-  uint16_t result = 0;
+  uint16_t result            = 0;
 
   // Emergency Stop logic
   if (stopSwitchEngaged) {
@@ -151,10 +146,8 @@ uint16_t handleThrottle(uint8_t stopSwitchEngaged) {
   // This is not really clean
   // HAL_GPIO_ReadPin returns a GPIO_PIN_STATE, not an int (at least formally)
   // Therefore its not good to do the subtraction here, even if it works
-  throttleStbdSelect = 1 - HAL_GPIO_ReadPin(THROTTLE_STBD_SELECT_GPIO_Port,
-                                            THROTTLE_STBD_SELECT_Pin);
-  throttlePortSelect = 1 - HAL_GPIO_ReadPin(THROTTLE_PORT_SELECT_GPIO_Port,
-                                            THROTTLE_PORT_SELECT_Pin);
+  throttleStbdSelect = 1 - HAL_GPIO_ReadPin(THROTTLE_STBD_SELECT_GPIO_Port, THROTTLE_STBD_SELECT_Pin);
+  throttlePortSelect = 1 - HAL_GPIO_ReadPin(THROTTLE_PORT_SELECT_GPIO_Port, THROTTLE_PORT_SELECT_Pin);
 
   // Store them for output.
   lcdSetThrottleSwitches(throttlePortSelect, throttleStbdSelect);
@@ -176,10 +169,8 @@ uint16_t handleThrottle(uint8_t stopSwitchEngaged) {
 
   // This requires a special handling for the  remote throttle.
   // That's not yet implemented
-  throttleValue = ioctl_get_pot(
-      IOCTL_PORTS[throttleActive]); // get the adc value for the active throttle
-  // And store it for display
-  lcdSetThrottleRaw(throttleValue);
+  throttleValue = ioctl_get_pot(IOCTL_PORTS[throttleActive]); // get the adc value for the active throttle
+  
 
   // Check border cases and enforce limits
   if (throttleValue < MAX_POINTS_REVERSE[throttleActive]) {
@@ -198,9 +189,11 @@ uint16_t handleThrottle(uint8_t stopSwitchEngaged) {
     return result;
   }
 
+  // And store it for display
+  lcdSetThrottleRaw(throttleValue);
+
   // Now calculate the position in perMille
-  perMille = calcPerMille(throttleValue, MAX_POINTS_REVERSE[throttleActive],
-                          MAX_POINTS_FORWARD[throttleActive]);
+  perMille = calcPerMille(throttleValue, MAX_POINTS_REVERSE[throttleActive], MAX_POINTS_FORWARD[throttleActive]);
   // Store it for display
   lcdSetThrottlePerMille(perMille);
   // Calculate the smoothed value
@@ -227,9 +220,8 @@ uint16_t handleRegen(uint8_t stopSwitchEngaged) {
     return result;
   }
 
-  regenValue =
-      ioctl_get_pot(IOCTL_REGEN_POT); // get the adc value for the regen
-  lcdSetThrottleRaw(regenValue);
+  regenValue = ioctl_get_pot(IOCTL_REGEN_POT); // get the adc value for the regen 
+  lcdSetRegenRaw(regenValue);
 
   // Restrict it to valid values
   if (regenValue < REGEN_POT_MINIMUM) {
@@ -240,10 +232,10 @@ uint16_t handleRegen(uint8_t stopSwitchEngaged) {
 
   // Now calculate the position in per mille
   perMille = calcPerMille(regenValue, REGEN_POT_MINIMUM, REGEN_POT_MAXIMUM);
-  lcdSetThrottlePerMille(perMille);
+  lcdSetRegenPerMille(perMille);
 
   // And return the smoothed value
   result = smoothValue(smoothingRegen, perMille);
-  lcdSetThrottlePerMilleSmooth(result);
+  lcdSetRegenPerMilleSmooth(result);
   return result;
 }

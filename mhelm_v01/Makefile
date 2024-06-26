@@ -36,14 +36,15 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
-Core/lcd.c \
-Core/motor.c \
-Core/throttle.c \
 Core/Src/i2cHelpers.c \
-Core/Src/main.c \
 Core/Src/ioctl.c \
+Core/Src/lcd.c \
+Core/Src/main.c \
+Core/Src/motor.c \
+Core/Src/nd_lcd.c \
 Core/Src/stm32f0xx_it.c \
 Core/Src/stm32f0xx_hal_msp.c \
+Core/Src/throttle.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c \

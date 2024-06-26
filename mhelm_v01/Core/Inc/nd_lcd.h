@@ -50,32 +50,12 @@
   each item is displayed for 2 seconds and loops continuously.
 */
 
-char const text6[] = {"_Digital Mermaid_"};
-char const text7[] = {"-] mhelm v0.1. [-"};
-//char const text6[] = {"NewHaven Display"};
-//char const text7[] = {"Serial LCD Demo."};
-
-/* DEFINE VARIABLES */
-/*
-unsigned int tick_100m;     // 100 millisecond counter
-unsigned int tick_1s;     // 1 second counter
-unsigned int tick_wait10;   // 10 millisecond delay counter
-unsigned int tick_wait100;    // 100 millisecond delay counter
-unsigned int temp;
-unsigned int tx_packet[20];   // transmit data packet
-unsigned int com_mode;
-unsigned int i, j;
-unsigned int loop_hi, loop_lo;
-unsigned int adc_result;
-unsigned int contrast;
-unsigned int contrast_save;
-unsigned int bright;
-unsigned int bright_save;
-*/
+#include <stdint.h>
 
 /* prototype functions */
 void nd_lcd_init(void);
 void nd_lcd_set_cursor(unsigned int mode);
 void nd_lcd_clear_screen(void);
 void nd_lcd_clear_line(unsigned int line);
-
+void nd_lcd_set_cursor_position(uint8_t pos);
+void printString(uint8_t lcd, const char *line1, const char *line2);

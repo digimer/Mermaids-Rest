@@ -18,6 +18,7 @@
 #include "main.h"
 #include "ioctl.h"
 #include "config.h"
+#include "nd_lcd.h"
 
 extern ADC_HandleTypeDef hadc;
 
