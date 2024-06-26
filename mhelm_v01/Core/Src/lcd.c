@@ -41,6 +41,9 @@ uint16_t ioctl_get_pot(uint8_t chan);
 static UART_HandleTypeDef huart2;
 static StatusData_t status;
 
+// This returns a percentage representing where the first value is between the second and third values.
+int throttlePercent(int, int, int);
+
 // LCD1 Page Display
 /* Pages
 0. Switch Positions
@@ -250,8 +253,14 @@ void lcdPrint() {
 
   case 4:
     // Page 4 - Throttle and Regen Percentage
-    throttlePosition = status.throttleValuePerMille / 10;
-    regenPosition = status.regenValuePerMille / 10;
+    if (status.throttleValuePerMille > 500) {
+      // In forward, fairly simple to convert to percent
+      throttlePosition = throttlePercent(status.throttleValuePerMilleSmooth, 562, 1000);
+    } else if (status.throttleValuePerMille < 500) {
+      // In reverse, a bit more complicated as the value has to be inverted.
+      throttlePosition = throttlePercent(status.throttleValuePerMilleSmooth, 450, 0);
+    }
+    regenPosition = status.regenValuePerMilleSmooth / 10;
     if (status.throttleStopSwitch == 1) {
       sprintf(buffer, "%d - Emergency Stop! Throttle in Neutral, Regen Max!.\n\r", counter);
       sprintf(lcd1_line1, "Thr: E-Stop!");
@@ -261,7 +270,7 @@ void lcdPrint() {
       if (status.throttleValuePerMille == 500) {
         // In neutral
         sprintf(buffer, "%d - Throttle in Neutral, Regen: [%d%%].\n\r", counter, status.regenValuePerMille / 10);
-        sprintf(lcd1_line1, "Thr: Neutral");
+        sprintf(lcd1_line1, "Thr: Stop");
         sprintf(lcd1_line2, "Rgn: %d%%", status.regenValuePerMille / 10);
       } else if (status.throttleValuePerMille > 500) {
         // Going forward
@@ -331,4 +340,32 @@ void lcdPrint() {
   HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), 1000); // Sending in normal mode
   printString(0, lcd1_line1, lcd1_line2);
   counter++;
+}
+
+/** @brief Takes a value and returns its percentage place between two other values.
+ * This take a value, and two ranges; fromLow, fromHigh and toLow, toHigh. The values relative position 
+ * between the 'from' values is used to find the corresponding relative function in the 'to' range. The 
+ * returned percentage can be inverted by swapping the 'fromLow' and 'fromHigh' values.
+ * @param value: The value being converted to a percentage
+ * @param fromLow: This is the lowest integer that 'value' could be.
+ * @param fromHigh: The highest integer that 'value' could be.
+ * @retval int
+*/
+int throttlePercent(int value, int fromLow, int fromHigh) {
+    int toLow  = 0;
+    int toHigh = 100;
+
+    // Calculate the percentage of 'value' within the original range
+    int percentage = ((value - fromLow) * 100) / (fromHigh - fromLow);
+ 
+    // Map the percentage to the new range
+    int result = toLow + (percentage * (toHigh - toLow) / 100);
+
+    if (result < 0) {
+      result = 0;
+    } else if (result > 100) {
+      result = 100;
+    }
+ 
+    return result;
 }
