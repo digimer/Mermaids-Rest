@@ -36,10 +36,17 @@ void panel_init(void) {
 // run the panel timer task
 void panel_timer_task(void) {
     static int count = 0;
-
-    panstate.spi_tx_buf[0] = count >> 6;
-    panstate.spi_tx_buf[1] = count >> 6;
+    
+    panstate.spi_tx_buf[1] = count >> 8;
+    //panstate.spi_tx_buf[0] = count >> 6;
+    //panstate.spi_tx_buf[1] = count >> 6;
     //  tx_buf[1] = 0x44;
+/*
+    int i;
+    for(i = 0; i < PANEL_SPI_BUFLEN; i ++) {
+        panstate.spi_tx_buf[i] = 0x02;
+        panstate.spi_rx_buf[i] = 0x00;
+    }*/
     count ++;
 
     // XXX debug
@@ -49,7 +56,7 @@ void panel_timer_task(void) {
     if(HAL_SPI_GetState(&hspi1) != HAL_SPI_STATE_READY) {
         return;
     }
-    HAL_GPIO_WritePin(PANEL_CS_GPIO_Port, PANEL_CS_Pin, 1);
+    HAL_GPIO_WritePin(PANEL_CS_GPIO_Port, PANEL_CS_Pin, 0);
     HAL_SPI_TransmitReceive_DMA(&hspi1, (uint8_t *)panstate.spi_tx_buf,
         (uint8_t *)panstate.spi_rx_buf, PANEL_SPI_BUFLEN);
 }
@@ -60,6 +67,6 @@ void panel_timer_task(void) {
 // handle TX/RX transfer complete
 void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi) {
     if(hspi == &hspi1) {
-        HAL_GPIO_WritePin(PANEL_CS_GPIO_Port, PANEL_CS_Pin, 0);
+        HAL_GPIO_WritePin(PANEL_CS_GPIO_Port, PANEL_CS_Pin, 1);
     }
 }
