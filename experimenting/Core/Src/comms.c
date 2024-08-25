@@ -19,6 +19,7 @@
 #include <string.h>
 
 #include "comms.h"
+#include "panel.h"
 #include "main.h"
 
 // This struct contains all the data that is required for the output
@@ -51,6 +52,9 @@ typedef struct {
 
 } StatusData_t;
 
+// panel state
+struct panel_state panstate;
+
 static UART_HandleTypeDef huart2;
 static StatusData_t status;
 
@@ -78,9 +82,29 @@ void commsPrint() {
   static uint8_t counter = 0;
   char buffer[256];
   
-  // Test output
-  sprintf(buffer, "%d - This is serial\n\r", counter);
+  uint8_t switchA = panstate.spi_rx_buf[0];
+  uint8_t switchB = panstate.spi_rx_buf[1];
 
+  // Test output
+  //sprintf(buffer, "%d - Foo\n\r", counter);
+//  sprintf(buffer, "%d - switches A/B: [%d]/[%d], \n\r", counter, switchA, switchB);
+  sprintf(buffer, "%d - switches A/B: [%02x]/[%02x], \n\r", counter, switchA, switchB);
+//  HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), 1000); // Sending in normal mode
+
+  if(switchA & 0x01) {
+    strcat(buffer, " - page up");
+  }
+  else if(switchA & 0x02) {
+    strcat(buffer, " - page down");
+  }
+
+  if(switchA & 0x04) {
+
+  }
+  else if(switchA & 0x08) {
+
+  }
+  
   HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), 1000); // Sending in normal mode
   counter++;
 }

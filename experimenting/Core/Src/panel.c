@@ -11,18 +11,9 @@
 #include "stm32f0xx_hal.h"
 #include <inttypes.h>
 
-// settings
-#define PANEL_SPI_BUFLEN 2
-
-// panel state
-struct panel_state {
-    uint8_t spi_tx_buf[PANEL_SPI_BUFLEN];
-    uint8_t spi_rx_buf[PANEL_SPI_BUFLEN];
-};
-struct panel_state panstate;
-
 // hardware handles
 extern SPI_HandleTypeDef hspi1;
+uint8_t panel_rx_buf[2];
 
 // init the panel
 void panel_init(void) {
@@ -56,9 +47,11 @@ void panel_timer_task(void) {
     if(HAL_SPI_GetState(&hspi1) != HAL_SPI_STATE_READY) {
         return;
     }
-    HAL_GPIO_WritePin(PANEL_CS_GPIO_Port, PANEL_CS_Pin, 0);
+    HAL_GPIO_WritePin(PANEL_CS_GPIO_Port, PANEL_CS_Pin, 1);
     HAL_SPI_TransmitReceive_DMA(&hspi1, (uint8_t *)panstate.spi_tx_buf,
         (uint8_t *)panstate.spi_rx_buf, PANEL_SPI_BUFLEN);
+//    HAL_SPI_TransmitReceive_DMA(&hspi1, (uint8_t *)panstate.spi_tx_buf,
+//        (uint8_t *)panel_rx_buf, PANEL_SPI_BUFLEN);
 }
 
 //
@@ -67,6 +60,6 @@ void panel_timer_task(void) {
 // handle TX/RX transfer complete
 void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi) {
     if(hspi == &hspi1) {
-        HAL_GPIO_WritePin(PANEL_CS_GPIO_Port, PANEL_CS_Pin, 1);
+        HAL_GPIO_WritePin(PANEL_CS_GPIO_Port, PANEL_CS_Pin, 0);
     }
 }
