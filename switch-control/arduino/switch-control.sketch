@@ -1,10 +1,17 @@
 /*
-  Web Server for Digital Switching
+Mermaid's Rest - Web-based digital switching
+- Provide mechanical switch override to control lights via relays. When neither
+  the on or off switch is set for a given light, remote control is enabled and
+  the light/relay can be controlled from a web browser.
 
- Madison Kelly (digimer)
- digital.mermaid@gmail.com
+ - Digimer (Madison Kelly) - digital.mermaid@gmail.com
+ - https://www.youtube.com/@TheDigitalMermaid
+ 
+Version: 1.0.0
+ - Release: Aug. 03, 2025
 
- 2025-08-03
+License:
+ - The GNU GPL v2.0
  */
 
 #include <SPI.h>
@@ -101,10 +108,10 @@ void loop() {
   int tricolourOnValue     = digitalRead(tricolourOn)  ? 0 : 1;
   int tricolourOffValue    = digitalRead(tricolourOff) ? 0 : 1;
   int tricolourRemoteValue = (!tricolourOnValue && !tricolourOffValue) ? 1 : 0;
-  int tricolourOutputValue = digitalRead(tricolourOutput);
-  int anchorOutputValue    = digitalRead(anchorOutput);
-  int steamingOutputValue  = digitalRead(steamingOutput);
-  int deckOutputValue      = digitalRead(deckOutput);
+  int tricolourOutputValue = digitalRead(tricolourOutput) ? 0 : 1;
+  int anchorOutputValue    = digitalRead(anchorOutput)    ? 0 : 1;
+  int steamingOutputValue  = digitalRead(steamingOutput)  ? 0 : 1;
+  int deckOutputValue      = digitalRead(deckOutput)      ? 0 : 1;
   Serial.print("Switches; Tricolour Light: [");
   Serial.print(tricolourOutputValue);
   Serial.print("], Anchor Light: [");
@@ -117,7 +124,7 @@ void loop() {
   if (tricolourOnValue)
   {
     // Is the switch on? If not, turn it on.
-    if (tricolourOutputValue == lightOff)
+    if (!tricolourOutputValue)
     {
       // Turn on the relay
       Serial.print("Manual control; Turning on tricolour switch: [");
@@ -129,7 +136,7 @@ void loop() {
   else if (tricolourOffValue)
   {
     // Is the switch off? If not, turn it off.
-    if (tricolourOutputValue == lightOn)
+    if (tricolourOutputValue)
     {
       // Turn on the relay
       Serial.print("Manual control; Turning off tricolour switch: [");
@@ -141,7 +148,7 @@ void loop() {
   else
   {
     // Read from the web UI
-    if ((tricolourWebValue) && (tricolourOutputValue == lightOff))
+    if ((tricolourWebValue) && (!tricolourOutputValue))
     {
       // Turn on the relay
       Serial.print("Remote control; Turning on tricolour switch: [");
@@ -149,7 +156,7 @@ void loop() {
       Serial.println("]");
       digitalWrite(tricolourOutput, lightOn);
     }
-    else if ((!tricolourWebValue) && (tricolourOutputValue == lightOn))
+    else if ((!tricolourWebValue) && (tricolourOutputValue))
     {
       // Turn off the relay
       Serial.print("Remote control; Turning off tricolour switch: [");
@@ -236,4 +243,3 @@ void loop() {
   }
   delay(1000);
 }
-
