@@ -1,0 +1,239 @@
+/*
+  Web Server for Digital Switching
+
+ Madison Kelly (digimer)
+ digital.mermaid@gmail.com
+
+ 2025-08-03
+ */
+
+#include <SPI.h>
+#include <Ethernet.h>
+
+// Enter a MAC address and IP address for your controller below.
+// The IP address will be dependent on your local network:
+byte mac[] = {
+  0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED
+};
+IPAddress ip(10, 255, 6, 2);
+IPAddress netmask(255, 255, 0, 0);
+IPAddress dns(8, 8, 8, 8);
+IPAddress gateway(10, 255, 255, 254);
+
+// Initialize the Ethernet server library
+// with the IP address and port you want to use
+// (port 80 is default for HTTP):
+EthernetServer server(80);
+
+#define tricolourOn     A0
+#define tricolourOff    A1
+#define tricolourOutput 2
+#define anchorOutput    3
+#define steamingOutput  4
+#define deckOutput      5
+#define lightOn         LOW
+#define lightOff        HIGH
+
+// These will be set from the web client.
+int tricolourWebValue = 0;
+int anchorWebValue    = 0;
+int steamingWebValue  = 0;
+int deckWebValue      = 0;
+
+void setup() {
+  // You can use Ethernet.init(pin) to configure the CS pin
+  //Ethernet.init(10);  // Most Arduino shields
+  //Ethernet.init(5);   // MKR ETH shield
+  //Ethernet.init(0);   // Teensy 2.0
+  //Ethernet.init(20);  // Teensy++ 2.0
+  //Ethernet.init(15);  // ESP8266 with Adafruit Featherwing Ethernet
+  //Ethernet.init(33);  // ESP32 with Adafruit Featherwing Ethernet
+
+  // Open serial communications and wait for port to open:
+  Serial.begin(9600);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+  Serial.println("Mermaid's Rest - Digital Switch Controller");
+
+  // start the Ethernet connection and the server:
+  Ethernet.begin(mac, ip, dns, gateway, netmask);
+
+  // Check for Ethernet hardware present
+  if (Ethernet.hardwareStatus() == EthernetNoHardware) {
+    Serial.println("Ethernet shield was not found.");
+    while (true) {
+      delay(1); // do nothing, no point running without Ethernet hardware
+    }
+  }
+
+  // start the server
+  server.begin();
+  Serial.print("server is at: [");
+  Serial.print(Ethernet.localIP());
+  Serial.print("/");
+  Serial.print(Ethernet.subnetMask());
+  Serial.print("], Gateway: [");
+  Serial.print(Ethernet.gatewayIP());
+  Serial.print("], using DNS: [");
+  Serial.print(Ethernet.dnsServerIP());
+  Serial.println("]");
+
+  // Set analog pins to digital mode using the internal pull-up resistors
+  pinMode(tricolourOn, INPUT);
+  pinMode(tricolourOn, INPUT_PULLUP);
+  pinMode(tricolourOff, INPUT);
+  pinMode(tricolourOff, INPUT_PULLUP);
+
+  // Turn off the digital output pin
+  pinMode(tricolourOutput, OUTPUT);
+  pinMode(anchorOutput, OUTPUT);
+  pinMode(steamingOutput, OUTPUT);
+  pinMode(deckOutput, OUTPUT);
+  digitalWrite(tricolourOutput, lightOff);
+  digitalWrite(anchorOutput, lightOff);
+  digitalWrite(steamingOutput, lightOff);
+  digitalWrite(deckOutput, lightOff);
+}
+
+void loop() {
+  // Handle switches
+  int tricolourOnValue     = digitalRead(tricolourOn)  ? 0 : 1;
+  int tricolourOffValue    = digitalRead(tricolourOff) ? 0 : 1;
+  int tricolourRemoteValue = (!tricolourOnValue && !tricolourOffValue) ? 1 : 0;
+  int tricolourOutputValue = digitalRead(tricolourOutput);
+  int anchorOutputValue    = digitalRead(anchorOutput);
+  int steamingOutputValue  = digitalRead(steamingOutput);
+  int deckOutputValue      = digitalRead(deckOutput);
+  Serial.print("Switches; Tricolour Light: [");
+  Serial.print(tricolourOutputValue);
+  Serial.print("], Anchor Light: [");
+  Serial.print(anchorOutputValue);
+  Serial.print("], Steaming Light: [");
+  Serial.print(steamingOutputValue);
+  Serial.print("], Deck Light: [");
+  Serial.print(deckOutputValue);
+  Serial.println("]");
+  if (tricolourOnValue)
+  {
+    // Is the switch on? If not, turn it on.
+    if (tricolourOutputValue == lightOff)
+    {
+      // Turn on the relay
+      Serial.print("Manual control; Turning on tricolour switch: [");
+      Serial.print(tricolourOutput);
+      Serial.println("]");
+      digitalWrite(tricolourOutput, lightOn);
+    }
+  }
+  else if (tricolourOffValue)
+  {
+    // Is the switch off? If not, turn it off.
+    if (tricolourOutputValue == lightOn)
+    {
+      // Turn on the relay
+      Serial.print("Manual control; Turning off tricolour switch: [");
+      Serial.print(tricolourOutput);
+      Serial.println("]");
+      digitalWrite(tricolourOutput, lightOff);
+    }
+  }
+  else
+  {
+    // Read from the web UI
+    if ((tricolourWebValue) && (tricolourOutputValue == lightOff))
+    {
+      // Turn on the relay
+      Serial.print("Remote control; Turning on tricolour switch: [");
+      Serial.print(tricolourOutput);
+      Serial.println("]");
+      digitalWrite(tricolourOutput, lightOn);
+    }
+    else if ((!tricolourWebValue) && (tricolourOutputValue == lightOn))
+    {
+      // Turn off the relay
+      Serial.print("Remote control; Turning off tricolour switch: [");
+      Serial.print(tricolourOutput);
+      Serial.println("]");
+      digitalWrite(tricolourOutput, lightOff);
+    }
+  }
+  // listen for incoming clients
+  EthernetClient client = server.available();
+  if (client) {
+    Serial.println("new client");
+    // an http request ends with a blank line
+    boolean currentLineIsBlank = true;
+    while (client.connected()) {
+      if (client.available()) {
+        char c = client.read();
+        Serial.write(c);
+        // if you've gotten to the end of the line (received a newline
+        // character) and the line is blank, the http request has ended,
+        // so you can send a reply
+        if (c == '\n' && currentLineIsBlank) {
+          // send a standard http response header
+
+          client.println("HTTP/1.1 200 OK");
+          client.println("Content-Type: text/html");
+          client.println("Connection: close");  // the connection will be closed after completion of the response
+          client.println("Refresh: 5");  // refresh the page automatically every 5 sec
+          client.println();
+          client.println("<!DOCTYPE HTML>");
+          client.println("<html>");
+          client.println("<table>");
+          client.println("  <tr>");
+          client.println("    <td colspan=\"4\">Mermaid's Rest - Switch Controller</td>");
+          client.println("  </tr>");
+          client.println("  <tr>");
+          client.println("    <td>Tricolour On:</td>");
+          client.println("    <td>");
+          client.print(tricolourOnValue);
+          client.println("    </td>");
+          client.println("    <td>Off:</td>");
+          client.println("    <td>");
+          client.print(tricolourOffValue);
+          client.println("    </td>");
+          client.println("    <td>Remote:</td>");
+          client.println("    <td>");
+          client.print(tricolourRemoteValue);
+          client.println("    </td>");
+          client.println("    <td>Output:</td>");
+          client.println("    <td>");
+          client.print(tricolourOutputValue);
+          client.println("    </td>");
+          client.println("  <tr>");
+          client.println("</table>");
+          
+          /*
+          // output the value of each analog input pin
+          for (int analogChannel = 0; analogChannel < 6; analogChannel++) {
+            int sensorReading = analogRead(analogChannel);
+            client.print("analog input ");
+            client.print(analogChannel);
+            client.print(" is ");
+            client.print(sensorReading);
+            client.println("<br />");
+          }
+          */
+          client.println("</html>");
+          break;
+        }
+        if (c == '\n') {
+          // you're starting a new line
+          currentLineIsBlank = true;
+        } else if (c != '\r') {
+          // you've gotten a character on the current line
+          currentLineIsBlank = false;
+        }
+      }
+    }
+    // give the web browser time to receive the data
+    delay(1);
+    // close the connection:
+    client.stop();
+    Serial.println("client disconnected");
+  }
+  delay(1000);
+}
+
