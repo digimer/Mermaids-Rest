@@ -923,6 +923,168 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -7718,159 +7880,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mr-parts:WE-RCIT"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Value" "WE-RCIT"
-				(at -3.81 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "mr-stuff:WE-RCIT_7847111100"
-				(at 0.254 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.we-online.com/components/products/datasheet/7847111100.pdf"
-				(at 0 -8.382 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "10uH, 3A, rod-core inductor"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "WE-RCIT_0_0"
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -5.08 0)
-					(mid -3.81 1.2645)
-					(end -2.54 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.54 0)
-					(mid -1.27 1.2645)
-					(end 0 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 1.27 1.2645)
-					(end 2.54 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.54 0)
-					(mid 3.81 1.2645)
-					(end 5.08 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -14536,16 +14545,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 74.93) (xy 118.11 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89aea046-1923-41cb-8b8d-f1e58335bc46")
-	)
-	(wire
-		(pts
 			(xy 198.12 224.79) (xy 198.12 227.33)
 		)
 		(stroke
@@ -15086,7 +15085,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 64.77) (xy 91.44 88.9)
+			(xy 91.44 67.31) (xy 91.44 88.9)
 		)
 		(stroke
 			(width 0)
@@ -15376,7 +15375,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 74.93) (xy 102.87 74.93)
+			(xy 95.25 74.93) (xy 106.68 74.93)
 		)
 		(stroke
 			(width 0)
@@ -15486,7 +15485,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 76.2) (xy 124.46 64.77)
+			(xy 124.46 76.2) (xy 124.46 67.31)
 		)
 		(stroke
 			(width 0)
@@ -16416,7 +16415,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 64.77) (xy 91.44 64.77)
+			(xy 124.46 67.31) (xy 91.44 67.31)
 		)
 		(stroke
 			(width 0)
@@ -17233,6 +17232,16 @@
 			(type default)
 		)
 		(uuid "d6aee4f7-04bd-4a72-8baf-526ffb3eaeae")
+	)
+	(wire
+		(pts
+			(xy 114.3 74.93) (xy 121.92 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6d7c0b6-363b-4ded-ab49-08f261a3220a")
 	)
 	(wire
 		(pts
@@ -21116,6 +21125,74 @@
 			(project "Relay Unit"
 				(path "/cdf85de7-e063-4a45-8f3b-41b7e4c09bb1"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 110.49 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1075dc0e-5bd2-4fcc-8fa6-724006623f77")
+		(property "Reference" "L1"
+			(at 110.49 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PA4340.103NLT"
+			(at 110.49 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Pulse PA4340.103NLT"
+			(at 110.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 110.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a3581d50-4e03-4208-a94b-5f5d263446c4")
+		)
+		(pin "1"
+			(uuid "e6a90b41-6753-4ddf-96c1-4aad383fd092")
+		)
+		(instances
+			(project "Relay Unit"
+				(path "/cdf85de7-e063-4a45-8f3b-41b7e4c09bb1"
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -30604,7 +30681,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SLD15-018"
+		(property "Value" "SLD22-018"
 			(at 38.354 34.798 90)
 			(effects
 				(font
@@ -33130,7 +33207,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ba1869e9-9788-4386-948c-3f59a1913e26")
 		(property "Reference" "#PWR075"
 			(at 95.25 77.47 0)
@@ -33142,7 +33218,7 @@
 			)
 		)
 		(property "Value" "V_RAW"
-			(at 95.25 68.58 0)
+			(at 95.25 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36480,75 +36556,6 @@
 			(project "Relay Unit"
 				(path "/cdf85de7-e063-4a45-8f3b-41b7e4c09bb1"
 					(reference "D13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mr-parts:WE-RCIT")
-		(at 110.49 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "edfba7fe-faef-42c6-a93f-ccc5c340235b")
-		(property "Reference" "L1"
-			(at 110.49 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "7847111100"
-			(at 110.49 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "mr-stuff:WE-RCIT_7847111100"
-			(at 110.744 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/7847111100.pdf"
-			(at 110.49 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uH, 3A, rod-core inductor"
-			(at 110.49 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "96705f6d-21a4-4d73-b1ea-45fbf8f119ee")
-		)
-		(pin "1"
-			(uuid "4a7ddc9d-8756-47fa-a152-c2a2536db598")
-		)
-		(instances
-			(project "Relay Unit"
-				(path "/cdf85de7-e063-4a45-8f3b-41b7e4c09bb1"
-					(reference "L1")
 					(unit 1)
 				)
 			)
