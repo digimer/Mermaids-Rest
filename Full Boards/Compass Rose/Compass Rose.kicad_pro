@@ -58,7 +58,36 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_over_copper|172400000|54718863|8f38a542-b64a-479d-9315-53e6a189e79a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|174954884|54794778|77bad81c-b3fc-4c17-82ab-2d5bcd4ede5b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|176350000|53000000|6c5b6397-a2dc-491b-8715-e4100c9029b4|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|177300000|48394557|e5ead5d8-a1cc-4810-ae22-250aecc5036b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|179930852|48983399|3f80ef39-de75-4317-bc8f-bde6ff94f443|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|221475000|48900000|d5a8a1ae-f899-49b0-b07e-6d781febfdf9|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|230100000|50650000|7865ca5e-39d7-4599-8322-30fa4dfbcfba|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -106,9 +135,9 @@
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
+        "text_height": "ignore",
         "text_on_edge_cuts": "error",
-        "text_thickness": "warning",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
@@ -515,7 +544,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Gerber/",
+      "plot": "PDFs/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
