@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -58,48 +60,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "silk_overlap|131340001|94785000|641a5968-7c0b-4dc6-9032-1b981758abf5|e2dd8867-d937-4f8f-96e7-3033ceed75d7",
-          ""
-        ],
-        [
-          "silk_overlap|131420001|94785000|4ff073ff-1ba3-4ba3-a94f-36cc68554659|641a5968-7c0b-4dc6-9032-1b981758abf5",
-          ""
-        ],
-        [
-          "silk_overlap|141860001|94785000|8078d6c9-d84d-4400-86e5-24449f462609|bdb3301b-ed7d-4e37-bc7f-4f5715ec2bb2",
-          ""
-        ],
-        [
-          "silk_overlap|141920001|94785000|2e8cf775-2db5-4e7e-bb11-a5f51bf7a54c|8078d6c9-d84d-4400-86e5-24449f462609",
-          ""
-        ],
-        [
-          "silk_overlap|152360001|94785000|80e8ebef-bb55-40e3-8798-42ccee3aa29d|9e776369-5dae-4f44-8642-157b2750cb82",
-          ""
-        ],
-        [
-          "silk_overlap|152360001|95625000|80e8ebef-bb55-40e3-8798-42ccee3aa29d|88d47534-65af-40b1-8c60-53858ffc1502",
-          ""
-        ],
-        [
-          "silk_overlap|162860001|94785000|a103073f-f570-4b22-af4d-0b33d5f37dab|b8862b2a-fd99-4dc7-9161-1acc2bd5e41c",
-          ""
-        ],
-        [
-          "silk_overlap|162860001|95625000|b8862b2a-fd99-4dc7-9161-1acc2bd5e41c|d0019d18-975f-4736-874f-77dd16d3c0a0",
-          ""
-        ],
-        [
-          "silk_overlap|173360001|94785000|305f09de-a636-4199-8973-bae8d1fcdd84|50347852-e076-424c-b87c-14c8d436f49a",
-          ""
-        ],
-        [
-          "silk_overlap|173440001|94785000|30a9fc4f-28c5-4eda-b3d6-97e3d9588314|50347852-e076-424c-b87c-14c8d436f49a",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -118,6 +79,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -135,6 +97,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -154,9 +117,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -164,7 +130,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -282,17 +248,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": "1.6.3"
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -482,11 +459,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -509,6 +489,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -541,17 +522,1037 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
+        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "line_style": 0,
+        "name": "LOGIC_DOMAIN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "line_style": 0,
+        "name": "M10KW_CAN_DOMAIN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.25,
+        "line_style": 0,
+        "name": "M10KW_KELLY_DOMAIN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "line_style": 0,
+        "name": "M5KW_CAN_DOMAIN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.25,
+        "line_style": 0,
+        "name": "M5KW_KELLY_DOMAIN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "clearance": 0.25,
+        "name": "SHIELD_DOMAIN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.25,
+        "line_style": 0,
+        "name": "SHIP_DOMAIN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "+3.3V_A"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "+5V_SHIP"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/ALARM_SILENCE_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/ALARM_SILENCE_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/BLOWER_OFF_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/BLOWER_OFF_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/BLOWER_ON_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/BLOWER_ON_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/BLOWER_OUT"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/BOARD_I2C_SCL"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/BOARD_I2C_SDA"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/BOOT0"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CA1"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CA2"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CA3"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CA4"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CA5"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CA6"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CA7"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CA8"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CA9"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CB1"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CB2"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CB3"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CB4"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CB5"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CB6"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CB7"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CB8"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/CB9"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/ESTOP_TRIP_OUT"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "GND_SHIP"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/IS31_INTB_OUT"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/KEY_SWITCH_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/KEY_SWITCH_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/LCD_BL_BLUE_OUT"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/LCD_BL_GREEN_OUT"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/LCD_BL_RED_OUT"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/LCD_DISPLAY_ON_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/LCD_DISPLAY_ON_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/LCD_PAGEDOWN_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/LCD_PAGEDOWN_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/LCD_PAGEUP_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/LCD_PAGEUP_IN_PLUG"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "M10KW_12V"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "M10KW_5V"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "/M10KW_ALARM_ISOLATED"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_ALARM_MCU"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "/M10KW_CANBUS_HIGH"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "/M10KW_CANBUS_LOW"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "M10KW_CAN_5V"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "M10KW_CAN_GND"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "/M10KW_CAN_PG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_ENABLE_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_ENABLE_IN_PLUG"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "/M10KW_ESTOP_SW_IN_PLUG"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "/M10KW_ESTOP_SW_OUT"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "/M10KW_ESTOP_SW_OUT_PLUG"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "/M10KW_ESTOP_TRIP"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_FDCAN_RX"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_FDCAN_TX"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "/M10KW_FOOT_SW_CTRL"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "M10KW_GND"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "/M10KW_HIGH_SW_CTRL"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "/M10KW_I2C_SCL_CTRL"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "/M10KW_I2C_SDA_CTRL"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "/M10KW_LOW_SW_CTRL"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_MOTOR_SELECT_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_MOTOR_SELECT_IN_PLUG"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "/M10KW_REGEN_DAC"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "/M10KW_REGEN_DAC_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_REGEN_POT_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_REGEN_POT_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_SPEED_HIGH_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_SPEED_HIGH_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_SPEED_LOW_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M10KW_SPEED_LOW_IN_PLUG"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "/M10KW_THROTTLE_DAC"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "/M10KW_THROTTLE_DAC_PLUG"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "/M10KW_VREF"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "M5KW_12V"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "M5KW_5V"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "/M5KW_ALARM_ISOLATED"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_ALARM_MCU"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "/M5KW_CANBUS_HIGH"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "/M5KW_CANBUS_LOW"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "M5KW_CAN_5V"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "M5KW_CAN_GND"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "/M5KW_CAN_PG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_ENABLE_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_ENABLE_IN_PLUG"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "/M5KW_ESTOP_SW_IN_PLUG"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "/M5KW_ESTOP_SW_OUT"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "/M5KW_ESTOP_SW_OUT_PLUG"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "/M5KW_ESTOP_TRIP"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_FDCAN_RX"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_FDCAN_TX"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "/M5KW_FOOT_SW_CTRL"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "M5KW_GND"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "/M5KW_HIGH_SW_CTRL"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "/M5KW_I2C_SCL_CTRL"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "/M5KW_I2C_SDA_CTRL"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "/M5KW_LOW_SW_CTRL"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_MOTOR_SELECT_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_MOTOR_SELECT_IN_PLUG"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "/M5KW_REGEN_DAC"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "/M5KW_REGEN_DAC_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_REGEN_POT_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_REGEN_POT_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_SPEED_HIGH_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_SPEED_HIGH_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_SPEED_LOW_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/M5KW_SPEED_LOW_IN_PLUG"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "/M5KW_THROTTLE_DAC"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "/M5KW_THROTTLE_DAC_PLUG"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "/M5KW_VREF"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/MOTOR_I2C_SCL"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/MOTOR_I2C_SDA"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "/N2K_CAN_H"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "/N2K_CAN_L"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/N2K_FDCAN_RX"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/N2K_FDCAN_TX"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/NRST"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(CMC1-I1)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(CMC1-I2)"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "Net-(CMC2-I1)"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "Net-(CMC2-I2)"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "Net-(CMC3-I1)"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "Net-(CMC3-I2)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(CPD1-C_FILT)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(CPD1-R_EXT)"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "Net-(D1-K)"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "Net-(D2-K)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(IDCB1-+VIN)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(IOX1-P0)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(IOX1-P1)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(IOX1-P2)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(IOX1-P3)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(IOX1-P4)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(IOX1-P5)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(IOX1-P6)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(IOX1-P7)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(IOX1-~{INT})"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(J1-Pin_1)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(J3-Pin_2)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(LCD1-A-BLUE)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(LCD1-A-GREEN)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(LCD1-A-RED)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(LCD1-SCL)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(LCD1-SDA)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(LS1-EN)"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "Net-(LVR3-EN)"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "Net-(LVR4-EN)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(OI1-A)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(OI2-A)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(OI3-A)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(OI4-A)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(OI5-A)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(OI6-A)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(OI7-A)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(OI7-E)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(OI8-A)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(OI8-E)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(PTC1-Pad2)"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "Net-(Q1-D)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q10-D)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q10-G)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q11-D)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q11-G)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q12-G)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q13-D)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q13-G)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q14-G)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q15-D)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q15-G)"
+      },
+      {
+        "netclass": "M5KW_KELLY_DOMAIN",
+        "pattern": "Net-(Q2-S)"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "Net-(Q4-G)"
+      },
+      {
+        "netclass": "M10KW_KELLY_DOMAIN",
+        "pattern": "Net-(Q4-S)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(Q7-D)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(Q7-G)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(Q8-D)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(Q8-G)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(Q9-D)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(RL1-IN)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(RL1-OUT_NO)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(RL2-IN)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(RL2-OUT_NO)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(RST1-C1+)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(RST1-C1-)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(RST1-C2+)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(RST1-C2-)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(RST1-VS+)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(RST1-VS-)"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "Net-(SBD1-Pad1)"
+      },
+      {
+        "netclass": "M5KW_CAN_DOMAIN",
+        "pattern": "Net-(SBD1-Pad2)"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "Net-(SBD2-Pad1)"
+      },
+      {
+        "netclass": "M10KW_CAN_DOMAIN",
+        "pattern": "Net-(SBD2-Pad2)"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "Net-(SD1-A)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(SWD1-Pin_2)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(SWD1-Pin_4)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(SWD1-Pin_6)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(TD1-D1)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(TD1-D2)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(TD2-D1)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "Net-(TD2-D2)"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/OSC_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/OSC_OUT"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/PUMP_OFF_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/PUMP_OFF_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/PUMP_ON_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/PUMP_ON_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/PUMP_OUT"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/RS232_RX"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/RS232_TX"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/SPEAKER_OUT"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/SYS_JTCK-SWCLK"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/SYS_JTDO-SWO"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/SYS_JTMS-SWDIO"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/THROTTLE_PORT_POT_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/THROTTLE_PORT_POT_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/THROTTLE_SELECT_PORT_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/THROTTLE_SELECT_PORT_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/THROTTLE_SELECT_STBD_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/THROTTLE_SELECT_STBD_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/THROTTLE_STBD_POT_IN"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/THROTTLE_STBD_POT_IN_PLUG"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/USART1_RX"
+      },
+      {
+        "netclass": "LOGIC_DOMAIN",
+        "pattern": "/USART1_TX"
+      },
+      {
+        "netclass": "SHIP_DOMAIN",
+        "pattern": "V_RAW"
+      },
+      {
+        "netclass": "SHIELD_DOMAIN",
+        "pattern": "GND_SH15F"
+      },
+      {
+        "netclass": "SHIELD_DOMAIN",
+        "pattern": "GND_SH15M"
+      },
+      {
+        "netclass": "SHIELD_DOMAIN",
+        "pattern": "GND_SH25F"
+      },
+      {
+        "netclass": "SHIELD_DOMAIN",
+        "pattern": "GND_SH9M"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -569,7 +1570,11 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "./Main Control Unit.csv",
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
+    "bom_export_filename": "v1.6/Main Control Unit v1.6.1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -630,7 +1635,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -721,6 +1726,24 @@
           "label": "MANUFACTURER",
           "name": "MANUFACTURER",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part",
+          "name": "Part",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Note",
+          "name": "Note",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field5",
+          "name": "Field5",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -730,6 +1753,7 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -737,6 +1761,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -758,8 +1783,17 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "PDFs/",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -768,13 +1802,28 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "Main Control Unit.kicad_sch",
+        "name": "Main Control Unit",
+        "uuid": "66b9b57f-ad5a-4774-9c04-72011a45113c"
+      }
+    ],
+    "used_designators": "",
+    "variants": []
   },
   "sheets": [
     [
       "66b9b57f-ad5a-4774-9c04-72011a45113c",
-      "Root"
+      "Main Control Unit"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }
