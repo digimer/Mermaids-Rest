@@ -1,8 +1,5 @@
 (version 1)
 
-# Main Control Unit - functional isolation design rules
-# Generated against netlist v1.6.2 (236 nets, 7 net classes).
-#
 # RULE ORDER: KiCad applies the LAST matching rule - confirmed from a Clearance
 # Report showing 'Rule applied; overrides previous constraints'. The narrow pad
 # exemptions therefore come AFTER the wide barrier rules, at the end of the
@@ -74,6 +71,14 @@
 # rule enforces copper standoff from it automatically.
 (rule "Copper to board edge and cutouts"
   (constraint edge_clearance (min 0.5mm)))
+
+(rule "E-stop loop M5 - consequence rule, not a domain barrier"
+  (constraint clearance (min 2.5mm))
+  (condition "(A.NetName == '/M5KW_ESTOP_SW_IN_PLUG' && B.NetName == '/M5KW_ESTOP_SW_OUT_PLUG') || (A.NetName == '/M5KW_ESTOP_SW_OUT_PLUG' && B.NetName == '/M5KW_ESTOP_SW_IN_PLUG')"))
+
+(rule "E-stop loop M10 - consequence rule, not a domain barrier"
+  (constraint clearance (min 2.5mm))
+  (condition "(A.NetName == '/M10KW_ESTOP_SW_IN_PLUG' && B.NetName == '/M10KW_ESTOP_SW_OUT_PLUG') || (A.NetName == '/M10KW_ESTOP_SW_OUT_PLUG' && B.NetName == '/M10KW_ESTOP_SW_IN_PLUG')"))
 
 # ===== SECTION 5: pad exemptions - MUST STAY LAST =====
 # These parts EXIST to straddle a barrier; internal pad pitch is fixed by the
