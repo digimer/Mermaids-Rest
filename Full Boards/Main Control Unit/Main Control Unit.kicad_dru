@@ -47,15 +47,20 @@
   (constraint clearance (min 2.5mm))
   (condition "((A.NetClass == 'SHIELD_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN' || B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_KELLY_DOMAIN' || A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'SHIELD_DOMAIN'))"))
 
-# ===== SECTION 2: intra-motor seam - 1.0mm =====
+# ===== SECTION 2: intra-motor seam - 0.75mm =====
 # Kelly and its own CAN island are bonded at NT1/NT2, so this is routing
-# separation, not a galvanic barrier.
+# separation, not a galvanic barrier - a bridge does nothing the nettie does
+# not already do. 0.75mm is set by feasibility, not by a derived requirement:
+# the tightest seam-straddling package is BII1/BII2 at 1.27mm pitch, allowing
+# 0.8636mm for a 0.254mm track. The previous 1.0mm was undocumented and
+# infeasible there by 9um. Contrast Section 1, which IS derived (salt-film
+# tracking margin) and is waived rather than reduced when geometry falls short.
 (rule "Seam M5KW Kelly to own CAN"
-  (constraint clearance (min 1.0mm))
+  (constraint clearance (min 0.75mm))
   (condition "((A.NetClass == 'M5KW_KELLY_DOMAIN') && (B.NetClass == 'M5KW_CAN_DOMAIN')) || ((A.NetClass == 'M5KW_CAN_DOMAIN') && (B.NetClass == 'M5KW_KELLY_DOMAIN'))"))
 
 (rule "Seam M10KW Kelly to own CAN"
-  (constraint clearance (min 1.0mm))
+  (constraint clearance (min 0.75mm))
   (condition "((A.NetClass == 'M10KW_KELLY_DOMAIN') && (B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN'))"))
 
 # ===== SECTION 3: SHIELD to SHIP - deliberately NOT a barrier =====
@@ -72,6 +77,8 @@
 (rule "Copper to board edge and cutouts"
   (constraint edge_clearance (min 0.5mm)))
 
+# ===== SECTION 5: E-Stop rules =====
+
 (rule "E-stop loop M5 - consequence rule, not a domain barrier"
   (constraint clearance (min 2.5mm))
   (condition "(A.NetName == '/M5KW_ESTOP_SW_IN_PLUG' && B.NetName == '/M5KW_ESTOP_SW_OUT_PLUG') || (A.NetName == '/M5KW_ESTOP_SW_OUT_PLUG' && B.NetName == '/M5KW_ESTOP_SW_IN_PLUG')"))
@@ -80,10 +87,17 @@
   (constraint clearance (min 2.5mm))
   (condition "(A.NetName == '/M10KW_ESTOP_SW_IN_PLUG' && B.NetName == '/M10KW_ESTOP_SW_OUT_PLUG') || (A.NetName == '/M10KW_ESTOP_SW_OUT_PLUG' && B.NetName == '/M10KW_ESTOP_SW_IN_PLUG')"))
 
-# ===== SECTION 5: pad exemptions - MUST STAY LAST =====
+# ===== SECTION 6: pad exemptions - MUST STAY LAST =====
 # These parts EXIST to straddle a barrier; internal pad pitch is fixed by the
 # package. Scoped to each part's own pads, so their pads against any foreign
 # net still get the full barrier clearance from Section 1.
+# NOTE: memberOfFootprint matches PADS ONLY, never tracks. A track escaping one
+# of these pads is not a footprint member, so it gets the full Section 1
+# clearance against the part's other pads. Harmless on ICT1-3, OI1-8 and T1/T2
+# because their two domains sit on opposite sides of the package, so escapes
+# head away from foreign pads - but that is package luck, not design. If a
+# future part interleaves domains along one pin row, this exemption will not
+# cover its routing.
 (rule "Barrier component internal pads"
   (constraint clearance (min 0.25mm))
   (condition "(A.memberOfFootprint('ICT1') && B.memberOfFootprint('ICT1')) || (A.memberOfFootprint('ICT2') && B.memberOfFootprint('ICT2')) || (A.memberOfFootprint('ICT3') && B.memberOfFootprint('ICT3')) || (A.memberOfFootprint('BII1') && B.memberOfFootprint('BII1')) || (A.memberOfFootprint('BII2') && B.memberOfFootprint('BII2')) || (A.memberOfFootprint('IDCB1') && B.memberOfFootprint('IDCB1')) || (A.memberOfFootprint('T1') && B.memberOfFootprint('T1')) || (A.memberOfFootprint('T2') && B.memberOfFootprint('T2')) || (A.memberOfFootprint('OI1') && B.memberOfFootprint('OI1')) || (A.memberOfFootprint('OI2') && B.memberOfFootprint('OI2')) || (A.memberOfFootprint('OI3') && B.memberOfFootprint('OI3')) || (A.memberOfFootprint('OI4') && B.memberOfFootprint('OI4')) || (A.memberOfFootprint('OI5') && B.memberOfFootprint('OI5')) || (A.memberOfFootprint('OI6') && B.memberOfFootprint('OI6')) || (A.memberOfFootprint('OI7') && B.memberOfFootprint('OI7')) || (A.memberOfFootprint('OI8') && B.memberOfFootprint('OI8')) || (A.memberOfFootprint('C4') && B.memberOfFootprint('C4'))"))
