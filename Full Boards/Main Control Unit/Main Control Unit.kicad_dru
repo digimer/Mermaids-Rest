@@ -48,20 +48,13 @@
   (condition "((A.NetClass == 'SHIELD_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN' || B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_KELLY_DOMAIN' || A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'SHIELD_DOMAIN'))"))
 
 # ===== SECTION 2: intra-motor seam - 0.75mm =====
-# Kelly and its own CAN island are bonded at NT1/NT2, so this is routing
-# separation, not a galvanic barrier - a bridge does nothing the nettie does
-# not already do. 0.75mm is set by feasibility, not by a derived requirement:
-# the tightest seam-straddling package is BII1/BII2 at 1.27mm pitch, allowing
-# 0.8636mm for a 0.254mm track. The previous 1.0mm was undocumented and
-# infeasible there by 9um. Contrast Section 1, which IS derived (salt-film
-# tracking margin) and is waived rather than reduced when geometry falls short.
-(rule "Seam M5KW Kelly to own CAN"
+(rule "Seam M5KW pour separation - single-point bond at NT1"
   (constraint clearance (min 0.75mm))
-  (condition "((A.NetClass == 'M5KW_KELLY_DOMAIN') && (B.NetClass == 'M5KW_CAN_DOMAIN')) || ((A.NetClass == 'M5KW_CAN_DOMAIN') && (B.NetClass == 'M5KW_KELLY_DOMAIN'))"))
+  (condition "A.Type == 'Zone' && B.Type == 'Zone' && (((A.NetClass == 'M5KW_KELLY_DOMAIN') && (B.NetClass == 'M5KW_CAN_DOMAIN')) || ((A.NetClass == 'M5KW_CAN_DOMAIN') && (B.NetClass == 'M5KW_KELLY_DOMAIN')))"))
 
-(rule "Seam M10KW Kelly to own CAN"
+(rule "Seam M10KW pour separation - single-point bond at NT2"
   (constraint clearance (min 0.75mm))
-  (condition "((A.NetClass == 'M10KW_KELLY_DOMAIN') && (B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN'))"))
+  (condition "A.Type == 'Zone' && B.Type == 'Zone' && (((A.NetClass == 'M10KW_KELLY_DOMAIN') && (B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN')))"))
 
 # ===== SECTION 3: SHIELD to SHIP - deliberately NOT a barrier =====
 # Each shell is DC-floating, referenced to GND_SHIP only through its 1nF
