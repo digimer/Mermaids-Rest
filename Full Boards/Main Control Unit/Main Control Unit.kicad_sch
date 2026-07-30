@@ -7,7 +7,7 @@
 	(title_block
 		(title "Main Control Unit")
 		(date "2026-07-29")
-		(rev "1.6.6")
+		(rev "1.6.7")
 		(company "The Digital Mermaid")
 	)
 	(lib_symbols
@@ -30296,9 +30296,9 @@
 		)
 		(uuid "298506b5-3fb3-46ec-8b0f-5c1639d7ee21")
 	)
-	(text "Pour ground plane for GND_SH25F"
+	(text "D-Sub shells are DC-floating and AC-referenced to ship ground through C83-C86"
 		(exclude_from_sim no)
-		(at 32.258 523.748 0)
+		(at 56.134 526.796 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -30562,16 +30562,6 @@
 			)
 		)
 		(uuid "585f27eb-c7c3-4484-9b75-45d5fc068be1")
-	)
-	(text "Pour ground plane for GND_SH15F"
-		(exclude_from_sim no)
-		(at 243.332 523.748 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "58986e57-05fe-42aa-8ae8-42b1475b379e")
 	)
 	(text "Keep M10KW_ALARM_ISOLATED's \nDMN6075S close to nettie."
 		(exclude_from_sim no)
@@ -31292,16 +31282,6 @@
 		)
 		(uuid "d704f1f5-de66-4340-9cb6-209fb9d945eb")
 	)
-	(text "Pour ground plane for GND_SH9M"
-		(exclude_from_sim no)
-		(at 328.168 523.494 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d9234f99-06bd-4bb8-af66-865a2d588e25")
-	)
 	(text "E-Stop Terminal Blocks"
 		(exclude_from_sim no)
 		(at 310.642 420.37 0)
@@ -31461,16 +31441,6 @@
 			)
 		)
 		(uuid "f1d56c34-345c-4c2a-b2aa-ac15bfba8b8f")
-	)
-	(text "Pour ground plane for GND_SH15M"
-		(exclude_from_sim no)
-		(at 140.208 523.494 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f424a096-ddb4-400d-bf26-c08c8c138441")
 	)
 	(text "SWD Header"
 		(exclude_from_sim no)
@@ -97308,7 +97278,7 @@
 				)
 			)
 		)
-		(property "Value" "Throttle Pots"
+		(property "Value" "Throttle Pot"
 			(at 370.84 492.506 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -126268,7 +126238,7 @@
 				)
 			)
 		)
-		(property "Value" "Regen Pots"
+		(property "Value" "Regen Pot"
 			(at 387.35 492.506 90)
 			(show_name no)
 			(do_not_autoplace no)
