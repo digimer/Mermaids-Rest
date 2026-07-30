@@ -3189,7 +3189,7 @@
 		(uuid "09090420-01ed-4f06-a48b-36575fb5b1fd")
 		(at 201.3 117.8 90)
 		(property "Reference" "PTC1"
-			(at 0 -2.9 90)
+			(at -5.9 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "8b2d52fa-1f69-4f92-9b57-a9178afe149c")
@@ -36949,7 +36949,7 @@
 		(descr "ACT1210")
 		(tags "Filter")
 		(property "Reference" "CMC1"
-			(at 0 -3 270)
+			(at 0.1 2.1 90)
 			(layer "F.SilkS")
 			(uuid "645b93b8-d7c9-4f63-b3c7-373d289bb4e9")
 			(effects
@@ -41733,7 +41733,7 @@
 		(at 187 104.2 180)
 		(tags "1862440 ")
 		(property "Reference" "TB1"
-			(at -21.4 -9.057 180)
+			(at -24.3 2.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "36d87446-7c33-4dd0-8258-77f3bc2536e2")
@@ -153257,6 +153257,30 @@
 			(justify left)
 		)
 	)
+	(gr_text "TB1 Pinout\n1: Shield\n2: +12V\n3: Ground\n4: N2K High\n5: N2K Low"
+		(at 248.2 123.2 0)
+		(layer "F.SilkS")
+		(uuid "f6d2865b-e8bc-4b54-9992-cf774de5213d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "↑"
+		(at 206.44 114.01 0)
+		(layer "F.SilkS")
+		(uuid "a56ee977-c3e9-45b3-b738-83613248c855")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "SCL"
 		(at 373.2 238.5 0)
 		(layer "F.SilkS")
@@ -153384,6 +153408,42 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
+		)
+	)
+	(gr_text "↑"
+		(at 188.25 114.14 15)
+		(layer "F.SilkS")
+		(uuid "32cc3f5a-9166-45b1-bd08-5530fb03cd0e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "↑"
+		(at 196.82 114.17 15)
+		(layer "F.SilkS")
+		(uuid "c999e441-1848-47bb-bbd9-f8fbee749be9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "↑"
+		(at 203.35 114.15 15)
+		(layer "F.SilkS")
+		(uuid "72873f1b-f8ef-458d-9ab3-732c698e168e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "CAN 5V"
@@ -153672,6 +153732,78 @@
 				(thickness 0.15)
 			)
 			(justify top)
+		)
+	)
+	(gr_text "N2K Low"
+		(at 189.6 114 270)
+		(layer "F.SilkS")
+		(uuid "cc310a4b-6e5d-4a9a-ace6-e7054f5a0c30")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "N2K High"
+		(at 191.8 114 270)
+		(layer "F.SilkS")
+		(uuid "febc8841-9475-4fc2-a1ce-a1c353ffb000")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "Ground"
+		(at 198.2 114 270)
+		(layer "F.SilkS")
+		(uuid "00e4cb9f-12c9-40b2-aaf6-d7eac04bbd04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "+12V"
+		(at 204.9 114 270)
+		(layer "F.SilkS")
+		(uuid "9844d4df-8278-4493-bd7c-aebc354e7ef2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "Shield"
+		(at 207.6 114 270)
+		(layer "F.SilkS")
+		(uuid "70fa54c6-3172-42cf-9921-68424c7c7e6f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "↑"
+		(at 190.62 113.81 345)
+		(layer "F.SilkS")
+		(uuid "9a8acee8-9bc5-42bb-87f5-77039a610fad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "Muirgen - Main Control Unit\nv1.6.7 - Prototype - 01\n© The Digital Mermaid - 2026"
