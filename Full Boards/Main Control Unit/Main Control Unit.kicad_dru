@@ -47,14 +47,26 @@
   (constraint clearance (min 2.5mm))
   (condition "((A.NetClass == 'SHIELD_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN' || B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_KELLY_DOMAIN' || A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'SHIELD_DOMAIN'))"))
 
-# ===== SECTION 2: intra-motor seam - 0.75mm =====
-(rule "Seam M5KW pour separation - single-point bond at NT1"
-  (constraint clearance (min 0.75mm))
-  (condition "A.Type == 'Zone' && B.Type == 'Zone' && (((A.NetClass == 'M5KW_KELLY_DOMAIN') && (B.NetClass == 'M5KW_CAN_DOMAIN')) || ((A.NetClass == 'M5KW_CAN_DOMAIN') && (B.NetClass == 'M5KW_KELLY_DOMAIN')))"))
-
-(rule "Seam M10KW pour separation - single-point bond at NT2"
-  (constraint clearance (min 0.75mm))
-  (condition "A.Type == 'Zone' && B.Type == 'Zone' && (((A.NetClass == 'M10KW_KELLY_DOMAIN') && (B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN')))"))
+# ===== SECTION 2: intra-motor seam - NO RULE, deliberately =====
+# M5KW_GND/M5KW_CAN_GND and M10KW_GND/M10KW_CAN_GND are bonded at NT1/NT2
+# respectively, single-point, so the SN6501 transformer return has a defined
+# path. That property is enforced by NET TOPOLOGY, not by clearance: they are
+# different nets, so the nettie is the only connection the netlist permits.
+# A clearance rule adds nothing.
+#
+# History - three attempts, all wrong:
+#   1.0mm  unrestricted: infeasible at BII1/BII2 by 9um (1.27mm pitch, pin 13
+#          Kelly between pins 12/14 CAN). A zero-width track could not comply.
+#   0.75mm unrestricted: infeasible at DA1. CAN pads 2, 3, 25, 26 sit in
+#          interior rows and must thread between Kelly pads 1.045mm apart.
+#   0.75mm zone-only: feasible, but with nothing harmful left to catch. The
+#          only case it could flag is two bonded pours running close together,
+#          worth a few pF against a deliberate short.
+#
+# The separate netclasses (M5KW_KELLY_DOMAIN vs M5KW_CAN_DOMAIN, 0.25/0.20mm)
+# already document that these are distinct domains. That is the right level of
+# statement. Contrast Section 1, which IS derived (salt-film tracking margin)
+# and has a real consequence.
 
 # ===== SECTION 3: SHIELD to SHIP - deliberately NOT a barrier =====
 # Each shell is DC-floating, referenced to GND_SHIP only through its 1nF

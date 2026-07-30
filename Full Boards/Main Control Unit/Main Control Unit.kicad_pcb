@@ -69,7 +69,7 @@
 				(type "prepreg")
 				(color "FR4 natural")
 				(thickness 0.2104)
-				(material "Nan Ya Plastics NP-155F 7628")
+				(material "S1000H TG155F")
 				(epsilon_r 4.4)
 				(loss_tangent 0.02)
 			)
@@ -81,7 +81,7 @@
 				(type "core")
 				(color "FR4 natural")
 				(thickness 1.065)
-				(material "Nan Ya Plastics NP-155F Core")
+				(material "S1000H TG155F")
 				(epsilon_r 4.43)
 				(loss_tangent 0.02)
 			)
@@ -93,7 +93,7 @@
 				(type "prepreg")
 				(color "FR4 natural")
 				(thickness 0.2104)
-				(material "Nan Ya Plastics NP-155F 7628")
+				(material "S1000H TG155F")
 				(epsilon_r 4.4)
 				(loss_tangent 0.02)
 			)
@@ -114,7 +114,7 @@
 			(layer "B.SilkS"
 				(type "Bottom Silk Screen")
 			)
-			(copper_finish "None")
+			(copper_finish "ENIG")
 			(dielectric_constraints yes)
 		)
 		(pad_to_mask_clearance 0)
@@ -133,6 +133,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -21807,7 +21808,7 @@
 		(at 211.52415 124.535 180)
 		(tags "ISO1044BDR ")
 		(property "Reference" "ICT1"
-			(at 2.62415 3.5 0)
+			(at 2.32415 3.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "8c6aa327-fe85-48a4-8678-12ce0b71d2da")
@@ -29993,7 +29994,7 @@
 		(descr "25.2V Clamp 23.8A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
 		(tags "TVS Diode (Bi-directional)")
 		(property "Reference" "TVS5"
-			(at -5.4 0 0)
+			(at -4.3 0 90)
 			(layer "F.SilkS")
 			(uuid "958a57e3-8efe-4ed9-8d8e-63415d658ffd")
 			(effects
@@ -36948,13 +36949,13 @@
 		(descr "ACT1210")
 		(tags "Filter")
 		(property "Reference" "CMC1"
-			(at -3.6 0 180)
+			(at 0 -3 270)
 			(layer "F.SilkS")
 			(uuid "645b93b8-d7c9-4f63-b3c7-373d289bb4e9")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -42176,7 +42177,7 @@
 		(at 433.8 141.7 -90)
 		(tags "TPSMC27CA ")
 		(property "Reference" "TVS9"
-			(at 0.1 4.3 90)
+			(at 0 -4.1 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b7c3845c-a144-4ea9-a8b3-353114786c07")
@@ -61569,7 +61570,7 @@
 		(uuid "78c59a78-dadf-4e79-a791-1d792adc65c5")
 		(at 431.2 131.8)
 		(property "Reference" "TB3"
-			(at -3.56 -6.87 0)
+			(at 7.6 -0.1 90)
 			(layer "F.SilkS")
 			(uuid "02733945-20cf-4587-a51c-9fedb2fa5312")
 			(effects
@@ -71670,7 +71671,7 @@
 		(descr "25.2V Clamp 23.8A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
 		(tags "TVS Diode (Bi-directional)")
 		(property "Reference" "TVS7"
-			(at -5.4 0 0)
+			(at -4.3 0 90)
 			(layer "F.SilkS")
 			(uuid "eb1940d0-ddd3-4771-a344-74cafe5d4629")
 			(effects
@@ -76786,7 +76787,7 @@
 		(uuid "98e3e882-acd9-4dc5-a5f9-31f2a3c0ef6e")
 		(at 431.2 151.5)
 		(property "Reference" "TB2"
-			(at -3.56 -6.87 0)
+			(at 7.6 0 90)
 			(layer "F.SilkS")
 			(uuid "91e41538-78b6-445e-a7f5-c5a869bdd6cc")
 			(effects
@@ -79299,7 +79300,7 @@
 		(at 206.5 178.5 180)
 		(tags "ISO1044BDR ")
 		(property "Reference" "ICT3"
-			(at 2.2 3.4 0)
+			(at 2.4 3.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "4a7f9353-9fe5-4c26-9182-498fca5e8354")
@@ -88132,7 +88133,7 @@
 		(descr "25.2V Clamp 23.8A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
 		(tags "TVS Diode (Bi-directional)")
 		(property "Reference" "TVS4"
-			(at 5.4 -0.1 0)
+			(at 4.3 0 90)
 			(layer "F.SilkS")
 			(uuid "a104af2f-fd74-4d85-9457-659fd289046a")
 			(effects
@@ -90241,7 +90242,7 @@
 		(at 206.5 143 180)
 		(tags "ISO1044BDR ")
 		(property "Reference" "ICT2"
-			(at 2.1 3.4 0)
+			(at 2.3 3.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "9ee1d27d-4270-46b0-b80c-1cc2ca4e459d")
@@ -102095,7 +102096,7 @@
 		(uuid "be04c374-abf5-4176-8e88-cc13bbfc8270")
 		(at 431.2 181.8)
 		(property "Reference" "TB5"
-			(at -3.56 -6.87 0)
+			(at 7.6 0.1 90)
 			(layer "F.SilkS")
 			(uuid "1a61aa93-90c9-4fea-838a-f37ae79285c8")
 			(effects
@@ -121426,7 +121427,7 @@
 		(uuid "e66030ee-e2fc-4289-b864-9a5afe878efb")
 		(at 431.2 201.5)
 		(property "Reference" "TB4"
-			(at -3.56 -6.87 0)
+			(at 7.7 0 90)
 			(layer "F.SilkS")
 			(uuid "5d3440bc-4f50-496a-9615-b645055b56a5")
 			(effects
@@ -126792,7 +126793,7 @@
 		(descr "2 Position Wire to Board Terminal Block 45° (135°) Angle with Board 0.197\" (5.00mm) Through Hole")
 		(tags "1862411 ")
 		(property "Reference" "TB7"
-			(at -1.5 -6.498201 90)
+			(at -6.1 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "ef37209d-0a0b-43c3-ab07-9d7fc03da207")
@@ -128385,7 +128386,7 @@
 		(descr "25.2V Clamp 23.8A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
 		(tags "TVS Diode (Bi-directional)")
 		(property "Reference" "TVS8"
-			(at -5.4 -0.1 0)
+			(at -4.3 0 90)
 			(layer "F.SilkS")
 			(uuid "bd0cdac9-a3ac-4b6f-8e5a-64b52e7e5410")
 			(effects
@@ -152599,7 +152600,7 @@
 	)
 	(gr_line
 		(start 163.6 233.3)
-		(end 175.7 233.3)
+		(end 174.1 233.3)
 		(stroke
 			(width 0.125)
 			(type default)
@@ -152859,7 +152860,7 @@
 	)
 	(gr_line
 		(start 231.5 233.3)
-		(end 219.4 233.3)
+		(end 220.8 233.3)
 		(stroke
 			(width 0.125)
 			(type default)
@@ -152909,9 +152910,9 @@
 		(uuid "e7017f21-da4c-40eb-a1cc-2b6d46a247b8")
 	)
 	(gr_rect
-		(start 206 138.75)
-		(end 207 147.25)
-		(radius 0.5)
+		(start 205.9 138.75)
+		(end 207.1 147.25)
+		(radius 0.6)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -152921,9 +152922,9 @@
 		(uuid "ee8497f3-4e22-466e-bc47-d995c1c360ea")
 	)
 	(gr_rect
-		(start 206 174.25)
-		(end 207 182.75)
-		(radius 0.5)
+		(start 205.9 174.25)
+		(end 207.1 182.75)
+		(radius 0.6)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -152933,9 +152934,9 @@
 		(uuid "b2159a50-79bc-4ea1-a609-3d89f9fdb619")
 	)
 	(gr_rect
-		(start 211.02415 120.285)
-		(end 212.02415 128.785)
-		(radius 0.5)
+		(start 210.92415 120.285)
+		(end 212.12415 128.785)
+		(radius 0.6)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -153244,6 +153245,18 @@
 			(justify left top)
 		)
 	)
+	(gr_text "Input: 10~16 VDC\nTyp.: 0.25A @ 12A\nPeak: 0.55A @ 10V"
+		(at 189.6 127.8 0)
+		(layer "F.SilkS")
+		(uuid "692f2631-90c5-4f1b-b90e-f90f58eb3b01")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
 	(gr_text "SCL"
 		(at 373.2 238.5 0)
 		(layer "F.SilkS")
@@ -153316,10 +153329,56 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "In    Out"
+		(at 169.2 227.2 0)
+		(layer "F.SilkS")
+		(uuid "b4e03429-d884-4ac7-a5cb-e4ca1c65b189")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "In    Out"
+		(at 226.5 227.2 0)
+		(layer "F.SilkS")
+		(uuid "352dc01b-41ae-4b14-8cbc-67bee7923acb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "E-Stop 5KW"
+		(at 168.7 229.7 0)
+		(layer "F.SilkS")
+		(uuid "27a7a68d-83ce-4acc-b1c8-c76351703040")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "Shield to\nShip Ground\nbond jumper"
 		(at 178.1 108.3 0)
 		(layer "F.SilkS")
 		(uuid "31c0bd2c-9f34-4d89-ba01-be37db967082")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "E-Stop 10KW"
+		(at 226.1 229.7 0)
+		(layer "F.SilkS")
+		(uuid "5aefa32e-4b65-46d3-9005-ce8ca41a0a90")
 		(effects
 			(font
 				(size 1 1)
@@ -153555,6 +153614,18 @@
 			(justify left top)
 		)
 	)
+	(gr_text "E-Stop LED"
+		(at 264.6 150.8 90)
+		(layer "F.SilkS")
+		(uuid "df450027-256a-4215-a388-41c999768ef2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
 	(gr_text "Board I^{2}C"
 		(at 368.6 252.1 90)
 		(layer "F.SilkS")
@@ -153591,6 +153662,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Gnd   5V"
+		(at 262.1 146.6 90)
+		(layer "F.SilkS")
+		(uuid "a0831408-bd8c-401c-8560-016249f5a52a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify top)
+		)
+	)
 	(gr_text "Muirgen - Main Control Unit\nv1.6.5 - Prototype - 01\n© The Digital Mermaid - 2026"
 		(at 397.5 102.5 0)
 		(layer "F.SilkS")
@@ -153600,6 +153683,83 @@
 				(size 1.27 1.27)
 			)
 			(justify left top)
+		)
+	)
+	(gr_text "From Power"
+		(at 431 176.1 0)
+		(layer "F.SilkS")
+		(uuid "921d7661-d26c-4543-b31d-03e262535d2c")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "From Power"
+		(at 431.2 126.2 0)
+		(layer "F.SilkS")
+		(uuid "c7d434ce-ecc8-4af1-bfb2-34cd60c65be1")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "To Load"
+		(at 433.3 209.3 0)
+		(layer "F.SilkS")
+		(uuid "a5e64494-bd4d-4c53-9fe8-165cc51b17e0")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "To Load"
+		(at 433.5 159.4 0)
+		(layer "F.SilkS")
+		(uuid "efc05db7-8458-45f0-b212-08dde43d73d9")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "Pump\n16A"
+		(at 425.8 191.5 90)
+		(layer "F.SilkS")
+		(uuid "730f4cc0-a6fb-4b16-841f-002c06b890b0")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "Blower\n16A"
+		(at 428 141.6 90)
+		(layer "F.SilkS")
+		(uuid "9ee4c233-c8ce-43fe-af18-533d0f90a58d")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
 		)
 	)
 	(segment
