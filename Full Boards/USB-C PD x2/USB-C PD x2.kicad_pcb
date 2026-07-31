@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "USB-C PD 2x 100W")
-		(date "2026-07-09")
-		(rev "v1.3")
+		(date "2026-07-31")
+		(rev "v1.3.1")
 		(company "The Digital Mermaid")
 	)
 	(layers
@@ -12173,6 +12173,311 @@
 			)
 		)
 	)
+	(footprint "mr-stuff:Keystone 7799"
+		(layer "F.Cu")
+		(uuid "357e2c0c-e2d0-4ed4-9a40-56db08f72138")
+		(at 69 168 90)
+		(property "Reference" "TB1"
+			(at -3.56 -6.87 90)
+			(layer "F.SilkS")
+			(uuid "e5158cc7-181b-4243-ab12-fa0c1b7a0e8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "7799"
+			(at 1.52 6.87 90)
+			(layer "F.Fab")
+			(uuid "1c06f065-9c02-4b41-80d7-0bfbf2103e61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p76.pdf"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5f7b4e1-7117-4d15-9a66-421b3884f513")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "6 Pin Screw Terminal, Power Tap M4 Through Hole"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07b69765-4a84-48a8-8fe6-342e4a5a0c5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PARTREV" "C"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a71d826-b16e-49bd-8d14-8cda0115f0e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6333688e-3f13-4831-9c72-9a66800f6c85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "6.35 mm"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e13532bd-aef6-43bb-86b7-9eeea385ff98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Keystone Electronics"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abff4f40-05c1-479c-82d3-6b070ac45c1c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "Keystone 7799"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20dcd23f-91db-4a45-b852-61934f891920")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/4284aef1-5949-43ed-abad-e180df6bc381")
+		(sheetname "/")
+		(sheetfile "USB-C PD x2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 6.44 -1.695)
+			(end 6.44 1.695)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8257d276-e2c1-4bf2-89c4-863f9c854b94")
+		)
+		(fp_line
+			(start -6.44 -1.695)
+			(end -6.44 1.695)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fb282ddc-3ccb-48fc-8ed6-2b3cfeb78ab1")
+		)
+		(fp_line
+			(start 6.735 -5.235)
+			(end -6.735 -5.235)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "09c87b63-5744-4041-ab8e-a673fe76537c")
+		)
+		(fp_line
+			(start -6.735 -5.235)
+			(end -6.735 5.235)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "992fda54-a8bc-484c-ba00-127ddf5a306b")
+		)
+		(fp_line
+			(start 6.735 5.235)
+			(end 6.735 -5.235)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8c836d6f-9bdf-4848-9254-86ccf8a7878d")
+		)
+		(fp_line
+			(start -6.735 5.235)
+			(end 6.735 5.235)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a0c270cc-1cc0-4205-833d-6f0c6618a574")
+		)
+		(fp_line
+			(start 6.44 -3.95)
+			(end -6.44 -3.95)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "41233a64-b9d3-41e1-8194-34cc3352f551")
+		)
+		(fp_line
+			(start -6.44 -3.95)
+			(end -6.44 3.95)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6a6a2ff7-c6fa-47cf-8a8b-63267c1b503f")
+		)
+		(fp_line
+			(start 6.44 3.95)
+			(end 6.44 -3.95)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "34f507f0-db46-48b9-ae81-fb4ceaf56f14")
+		)
+		(fp_line
+			(start -6.44 3.95)
+			(end 6.44 3.95)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3fac86e9-45fe-4c8d-87c1-63e25ee48367")
+		)
+		(pad "1" thru_hole circle
+			(at -5 -3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "f801d2a0-4b8a-46e2-ad1a-c2d536ddc7f6")
+		)
+		(pad "1" thru_hole circle
+			(at -5 3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "0c74607a-7a37-489c-8153-294c0005c392")
+		)
+		(pad "1" thru_hole circle
+			(at 0 -3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "ecb27004-3ee2-4e98-aff5-2257490176c4")
+		)
+		(pad "1" thru_hole circle
+			(at 0 3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "7211b85c-037b-437c-8878-508ed888f9fa")
+		)
+		(pad "1" thru_hole circle
+			(at 5 -3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "f2433dfa-c063-4e1d-962f-1ea1ac13cd76")
+		)
+		(pad "1" thru_hole circle
+			(at 5 3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "1d1615a2-00c0-4eab-b514-3b131cf12b31")
+		)
+		(embedded_fonts no)
+		(model "${MY_3DMODELS}/Keystone Electronics 7799/7799.step"
+			(offset
+				(xyz 0.2 -3 1.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -90)
+			)
+		)
+	)
 	(footprint "mr-stuff:Stackpole RMCA0805"
 		(layer "F.Cu")
 		(uuid "3734a720-7206-48b4-9040-ce8180e667da")
@@ -12491,298 +12796,6 @@
 			)
 			(rotate
 				(xyz -90 -0 -0)
-			)
-		)
-	)
-	(footprint "mr-stuff:Keystone 7799"
-		(layer "F.Cu")
-		(uuid "379b403e-ad31-4d68-ad99-583f4574df4e")
-		(at 69 168 90)
-		(property "Reference" "TB1"
-			(at 7.65 0 180)
-			(layer "F.SilkS")
-			(uuid "7080f325-1479-4477-b100-d8ae6b0e187a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "Keystone Electronics 7799"
-			(at 1.52 6.87 90)
-			(layer "F.Fab")
-			(uuid "a80179e0-0bca-4ebc-9f11-2ca7f93264ed")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cb27e889-ae1a-4a42-8a39-457c693ca659")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f72d87d5-a840-4c5c-bd44-c581e4bb92bd")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "PARTREV" "C"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c1ff9f5c-08ef-4fea-97ab-e38a78a55e3d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dbca87d8-7e18-4b9b-aae1-9133cf6db182")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "6.35 mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b5d834a1-9fba-4a92-ba0d-e99b50aee25b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MANUFACTURER" "Keystone Electronics"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9e56daa4-30c1-4586-b290-0d8d8b0e5cad")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/4284aef1-5949-43ed-abad-e180df6bc381")
-		(sheetname "/")
-		(sheetfile "USB-C PD x2.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "6")
-			)
-		)
-		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start 6.44 -1.695)
-			(end 6.44 1.695)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "2bfa360b-9d60-4017-85d1-5286b8fa2477")
-		)
-		(fp_line
-			(start -6.44 -1.695)
-			(end -6.44 1.695)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "93dd57a1-51fb-4769-9524-f79898a0edbb")
-		)
-		(fp_line
-			(start 6.735 -5.235)
-			(end -6.735 -5.235)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a99709fe-d19a-4577-bd44-bc1d30557582")
-		)
-		(fp_line
-			(start -6.735 -5.235)
-			(end -6.735 5.235)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "70737aa0-0a0f-40d8-aae6-b8edb3daf037")
-		)
-		(fp_line
-			(start 6.735 5.235)
-			(end 6.735 -5.235)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e4aa00cc-3f4f-44b1-ae33-a1903158d454")
-		)
-		(fp_line
-			(start -6.735 5.235)
-			(end 6.735 5.235)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8ea331fd-16a8-4682-a2e8-60c238a23b37")
-		)
-		(fp_line
-			(start 6.44 -3.95)
-			(end -6.44 -3.95)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "ce2e71f4-51a5-478a-a5a8-cfecbab2f1b2")
-		)
-		(fp_line
-			(start -6.44 -3.95)
-			(end -6.44 3.95)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "c384f551-5213-4286-92ff-c8834882f0d0")
-		)
-		(fp_line
-			(start 6.44 3.95)
-			(end 6.44 -3.95)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "c2cc2488-2174-4a51-a02c-0b612476d092")
-		)
-		(fp_line
-			(start -6.44 3.95)
-			(end 6.44 3.95)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "16d22272-75cc-4099-9985-8513c1fb2a6b")
-		)
-		(pad "1" thru_hole circle
-			(at -5 3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "+BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "a244ba93-17d5-4bae-bb76-66492dfeaabb")
-		)
-		(pad "2" thru_hole circle
-			(at 0 3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "+BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "78859b6d-71ea-4865-9980-c34d8982dd15")
-		)
-		(pad "3" thru_hole circle
-			(at 5 3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "+BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "ef3dca99-8f2a-4555-8cb7-4217902521a8")
-		)
-		(pad "4" thru_hole circle
-			(at 5 -3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "+BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "a021f392-4d0c-43b3-9836-76848695c294")
-		)
-		(pad "5" thru_hole circle
-			(at 0 -3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "+BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "43054a07-cadb-4321-89ae-1db1411631d8")
-		)
-		(pad "6" thru_hole circle
-			(at -5 -3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "+BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "a5498f75-0ae5-4785-ad93-d24e4f6524f3")
-		)
-		(embedded_fonts no)
-		(model "${MY_3DMODELS}/Keystone Electronics 7799/7799.step"
-			(offset
-				(xyz 0.2 -3 1.5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 -0 -90)
 			)
 		)
 	)
@@ -15249,21 +15262,20 @@
 			)
 		)
 	)
-	(footprint "mr-stuff:DIOAD4425W136L885D885"
+	(footprint "mr-stuff:Littelfuse SDL"
 		(layer "F.Cu")
 		(uuid "44f56b67-c3a1-4e28-ae9e-f79bcee57629")
 		(at 100 166)
 		(descr "P600")
 		(tags "TVS Diode (Bi-directional)")
 		(property "Reference" "TVS1"
-			(at -22.175 -11.7 0)
+			(at 0 -5.9 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "1e1973f0-c083-4ea5-9816-076eb0749d95")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -15308,7 +15320,20 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1c62c0c5-0be9-4731-a52a-6b8a56e371ae")
+			(uuid "39326a47-9f04-43aa-a7ae-529df8e80583")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "Littelfuse SLD18-018"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "478b2231-a027-4277-82d4-0d89c9aab342")
 			(effects
 				(font
 					(size 1 1)
@@ -15378,6 +15403,17 @@
 			(fill no)
 			(layer "F.SilkS")
 			(uuid "967b83af-7b3a-450c-abbb-7e7547c0ae93")
+		)
+		(fp_rect
+			(start -23.7 -4.9)
+			(end 23.7 4.9)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "9cb0568a-62c8-4f48-89f5-ccf0155ea0d4")
 		)
 		(pad "1" thru_hole circle
 			(at -22.175 0)
@@ -23134,7 +23170,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7KR"
+		(property "Value" "2.2KR"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(uuid "34f7520c-8720-4d74-baee-6f7495e13874")
@@ -24982,7 +25018,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7KR"
+		(property "Value" "2.2KR"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(uuid "00991f43-5651-4fa4-b841-def54a3d79e4")
@@ -25254,298 +25290,6 @@
 			)
 			(rotate
 				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "mr-stuff:Keystone 7799"
-		(layer "F.Cu")
-		(uuid "7499cffc-252f-4068-89bb-2598c5edb8fe")
-		(at 131 168 90)
-		(property "Reference" "TB2"
-			(at 7.7 0 180)
-			(layer "F.SilkS")
-			(uuid "aa0ce053-f785-4fe8-a2a3-ac2d25c864ce")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "Keystone Electronics 7799"
-			(at 1.52 6.87 90)
-			(layer "F.Fab")
-			(uuid "fab5d323-f237-4278-93b3-f913b5322e80")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "886ed42d-8f69-463e-91a7-28db43f9c1b4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8ebc8abe-39ca-4162-9eda-86a086cad0ad")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "PARTREV" "C"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a0736930-8a52-4a03-a800-ac07484de5be")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "022bcb6d-3f14-41b9-8dd1-59247727f0b7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "6.35 mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8d1b9830-08b6-4a49-98a5-1468b75e8640")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MANUFACTURER" "Keystone Electronics"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4b8e3609-0d2b-4281-ac5a-5e0792e65ea5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/b9ffd79a-02c0-4bda-9ceb-c9d9bf57a88c")
-		(sheetname "/")
-		(sheetfile "USB-C PD x2.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "6")
-			)
-		)
-		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start 6.44 -1.695)
-			(end 6.44 1.695)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "721e34ae-a95b-495c-9745-d492983fad51")
-		)
-		(fp_line
-			(start -6.44 -1.695)
-			(end -6.44 1.695)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "84446048-865e-434e-a5f8-8e7b8012beb6")
-		)
-		(fp_line
-			(start 6.735 -5.235)
-			(end -6.735 -5.235)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "3b556169-b5cf-42bf-b95d-8d9096447afe")
-		)
-		(fp_line
-			(start -6.735 -5.235)
-			(end -6.735 5.235)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "afd483eb-a774-4924-808a-198a89417079")
-		)
-		(fp_line
-			(start 6.735 5.235)
-			(end 6.735 -5.235)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a021fd2b-17b3-4eab-a33c-f746c4cbe5b7")
-		)
-		(fp_line
-			(start -6.735 5.235)
-			(end 6.735 5.235)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "07e11ce2-cd30-4380-b20c-1f3d0fba6854")
-		)
-		(fp_line
-			(start 6.44 -3.95)
-			(end -6.44 -3.95)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "47135d3b-14c4-4a48-91e0-04e84f858ab8")
-		)
-		(fp_line
-			(start -6.44 -3.95)
-			(end -6.44 3.95)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "c62841c3-aff6-42e1-80fb-0e7e5f8289f8")
-		)
-		(fp_line
-			(start 6.44 3.95)
-			(end 6.44 -3.95)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "43d5cb18-dfd2-4f7f-a836-628f069467c8")
-		)
-		(fp_line
-			(start -6.44 3.95)
-			(end 6.44 3.95)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "b0e0a51f-fb0c-4cff-85b1-d9b697e1c8b1")
-		)
-		(pad "1" thru_hole circle
-			(at -5 3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "-BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "bb62fb3a-cae1-48fd-a6ca-0cc667e7c017")
-		)
-		(pad "2" thru_hole circle
-			(at 0 3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "-BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "01625c5e-979c-4bf5-a8e2-0cb502573b40")
-		)
-		(pad "3" thru_hole circle
-			(at 5 3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "-BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "90640228-8649-4fea-9eeb-c41f82070360")
-		)
-		(pad "4" thru_hole circle
-			(at 5 -3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "-BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "09158505-3106-444f-84ab-c094c3690909")
-		)
-		(pad "5" thru_hole circle
-			(at 0 -3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "-BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "4e6874d2-b947-44d9-a288-b6b90ac983c3")
-		)
-		(pad "6" thru_hole circle
-			(at -5 -3.5 90)
-			(size 2.97 2.97)
-			(drill 1.98)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "-BATT")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "c47ff6e1-d795-42dd-a142-bf97582f8466")
-		)
-		(embedded_fonts no)
-		(model "${MY_3DMODELS}/Keystone Electronics 7799/7799.step"
-			(offset
-				(xyz 0.2 -3 1.5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 -0 -90)
 			)
 		)
 	)
@@ -50053,6 +49797,311 @@
 			)
 			(rotate
 				(xyz -90 -0 -0)
+			)
+		)
+	)
+	(footprint "mr-stuff:Keystone 7799"
+		(layer "F.Cu")
+		(uuid "f3ab25fe-9f73-4668-9cfb-8460bbe2db30")
+		(at 131 168 90)
+		(property "Reference" "TB2"
+			(at -3.56 -6.87 90)
+			(layer "F.SilkS")
+			(uuid "dc658487-66e2-43a4-875d-e1aae9983af4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "7799"
+			(at 1.52 6.87 90)
+			(layer "F.Fab")
+			(uuid "5f989eb2-923b-4356-a5c3-cf7f5c517b21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p76.pdf"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2c3fc5b-2253-496d-97d9-a8ecfe757ec3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "6 Pin Screw Terminal, Power Tap M4 Through Hole"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d22d6653-efe5-4d71-8a74-30544f1dc364")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PARTREV" "C"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "202822c9-567e-447a-be66-f4c6f696826f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37502604-4999-44a7-9598-59cdeb95f8b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "6.35 mm"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f27315c-62a4-46e3-8293-4d94f31c5740")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Keystone Electronics"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3405827d-88f0-4671-a0bc-3b33e244033c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "Keystone 7799"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7974a7da-6edf-4e33-a825-8bae8f916575")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/b9ffd79a-02c0-4bda-9ceb-c9d9bf57a88c")
+		(sheetname "/")
+		(sheetfile "USB-C PD x2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 6.44 -1.695)
+			(end 6.44 1.695)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f5f23a87-defb-455b-a1c9-a885b2540bda")
+		)
+		(fp_line
+			(start -6.44 -1.695)
+			(end -6.44 1.695)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "62d3f3c8-ba0c-4515-9e8e-795e26c768d3")
+		)
+		(fp_line
+			(start 6.735 -5.235)
+			(end -6.735 -5.235)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d5b3ef69-3f4f-4fbb-ab91-d6c2d446378a")
+		)
+		(fp_line
+			(start -6.735 -5.235)
+			(end -6.735 5.235)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "31303bc2-8c57-40b2-923f-759419c486e7")
+		)
+		(fp_line
+			(start 6.735 5.235)
+			(end 6.735 -5.235)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "325db8a7-2a82-4dec-8f7d-7c30705cae84")
+		)
+		(fp_line
+			(start -6.735 5.235)
+			(end 6.735 5.235)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "80a175f5-6e05-4c0d-b3a4-614223066b2c")
+		)
+		(fp_line
+			(start 6.44 -3.95)
+			(end -6.44 -3.95)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3c5ff010-019a-455d-bd59-d0de89f1905e")
+		)
+		(fp_line
+			(start -6.44 -3.95)
+			(end -6.44 3.95)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d02191ce-6ba2-4b42-a72b-83049abd1654")
+		)
+		(fp_line
+			(start 6.44 3.95)
+			(end 6.44 -3.95)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f12b7601-3da4-4ba9-a9ca-2ac3bf9f268d")
+		)
+		(fp_line
+			(start -6.44 3.95)
+			(end 6.44 3.95)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9ffaaafb-4e23-4ce6-ad3d-fbd746fbc337")
+		)
+		(pad "1" thru_hole circle
+			(at -5 -3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "-BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "2905c74c-51f1-4ad5-a2fe-30d3039d5593")
+		)
+		(pad "1" thru_hole circle
+			(at -5 3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "-BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "12794992-bddf-47c2-9330-f535b6cf552e")
+		)
+		(pad "1" thru_hole circle
+			(at 0 -3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "-BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "e5e5b619-c5e8-4c5f-9e88-fc50f3b6ba71")
+		)
+		(pad "1" thru_hole circle
+			(at 0 3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "-BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "41717b8a-10b7-45af-b9f4-c414d34afe0f")
+		)
+		(pad "1" thru_hole circle
+			(at 5 -3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "-BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "e272a152-455c-4902-bf12-6d05903a199d")
+		)
+		(pad "1" thru_hole circle
+			(at 5 3.5 90)
+			(size 2.97 2.97)
+			(drill 1.98)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "-BATT")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "9291ee7c-9d37-4dff-a28c-6b818239e3b3")
+		)
+		(embedded_fonts no)
+		(model "${MY_3DMODELS}/Keystone Electronics 7799/7799.step"
+			(offset
+				(xyz 0.2 -3 1.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -90)
 			)
 		)
 	)
