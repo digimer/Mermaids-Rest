@@ -1,0 +1,114 @@
+(version 1)
+
+# RULE ORDER: KiCad applies the LAST matching rule - confirmed from a Clearance
+# Report showing 'Rule applied; overrides previous constraints'. The narrow pad
+# exemptions therefore come AFTER the wide barrier rules, at the end of the
+# file. Do not move them to the top; they would be overridden.
+#
+# Basis: FUNCTIONAL isolation, not mains safety. Working voltage <= ~15V
+# (house bank 14.6V), clamped transients <= ~30V. Electrical creepage need is
+# under 0.5mm; 2.5mm is margin against salt-film surface tracking under
+# conformal coating. The isolators do the safety work.
+
+# ===== SECTION 1: island barriers - 2.5mm =====
+(rule "Barrier LOGIC to SHIP"
+  (constraint clearance (min 2.5mm))
+  (condition "((A.NetClass == 'LOGIC_DOMAIN') && (B.NetClass == 'SHIP_DOMAIN')) || ((A.NetClass == 'SHIP_DOMAIN') && (B.NetClass == 'LOGIC_DOMAIN'))"))
+
+(rule "Barrier LOGIC to M5"
+  (constraint clearance (min 2.5mm))
+  (condition "((A.NetClass == 'LOGIC_DOMAIN') && (B.NetClass == 'M5KW_KELLY_DOMAIN' || B.NetClass == 'M5KW_CAN_DOMAIN')) || ((A.NetClass == 'M5KW_KELLY_DOMAIN' || A.NetClass == 'M5KW_CAN_DOMAIN') && (B.NetClass == 'LOGIC_DOMAIN'))"))
+
+(rule "Barrier LOGIC to M10"
+  (constraint clearance (min 2.5mm))
+  (condition "((A.NetClass == 'LOGIC_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN' || B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_KELLY_DOMAIN' || A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'LOGIC_DOMAIN'))"))
+
+(rule "Barrier LOGIC to SHIELD"
+  (constraint clearance (min 2.5mm))
+  (condition "((A.NetClass == 'LOGIC_DOMAIN') && (B.NetClass == 'SHIELD_DOMAIN')) || ((A.NetClass == 'SHIELD_DOMAIN') && (B.NetClass == 'LOGIC_DOMAIN'))"))
+
+(rule "Barrier SHIP to M5"
+  (constraint clearance (min 2.5mm))
+  (condition "((A.NetClass == 'SHIP_DOMAIN') && (B.NetClass == 'M5KW_KELLY_DOMAIN' || B.NetClass == 'M5KW_CAN_DOMAIN')) || ((A.NetClass == 'M5KW_KELLY_DOMAIN' || A.NetClass == 'M5KW_CAN_DOMAIN') && (B.NetClass == 'SHIP_DOMAIN'))"))
+
+(rule "Barrier SHIP to M10"
+  (constraint clearance (min 2.5mm))
+  (condition "((A.NetClass == 'SHIP_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN' || B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_KELLY_DOMAIN' || A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'SHIP_DOMAIN'))"))
+
+(rule "Barrier M5 to M10"
+  (constraint clearance (min 2.5mm))
+  (condition "((A.NetClass == 'M5KW_KELLY_DOMAIN' || A.NetClass == 'M5KW_CAN_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN' || B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_KELLY_DOMAIN' || A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'M5KW_KELLY_DOMAIN' || B.NetClass == 'M5KW_CAN_DOMAIN'))"))
+
+(rule "Barrier SHIELD to M5"
+  (constraint clearance (min 2.5mm))
+  (condition "((A.NetClass == 'SHIELD_DOMAIN') && (B.NetClass == 'M5KW_KELLY_DOMAIN' || B.NetClass == 'M5KW_CAN_DOMAIN')) || ((A.NetClass == 'M5KW_KELLY_DOMAIN' || A.NetClass == 'M5KW_CAN_DOMAIN') && (B.NetClass == 'SHIELD_DOMAIN'))"))
+
+(rule "Barrier SHIELD to M10"
+  (constraint clearance (min 2.5mm))
+  (condition "((A.NetClass == 'SHIELD_DOMAIN') && (B.NetClass == 'M10KW_KELLY_DOMAIN' || B.NetClass == 'M10KW_CAN_DOMAIN')) || ((A.NetClass == 'M10KW_KELLY_DOMAIN' || A.NetClass == 'M10KW_CAN_DOMAIN') && (B.NetClass == 'SHIELD_DOMAIN'))"))
+
+# ===== SECTION 2: intra-motor seam - NO RULE, deliberately =====
+# M5KW_GND/M5KW_CAN_GND and M10KW_GND/M10KW_CAN_GND are bonded at NT1/NT2
+# respectively, single-point, so the SN6501 transformer return has a defined
+# path. That property is enforced by NET TOPOLOGY, not by clearance: they are
+# different nets, so the nettie is the only connection the netlist permits.
+# A clearance rule adds nothing.
+#
+# History - three attempts, all wrong:
+#   1.0mm  unrestricted: infeasible at BII1/BII2 by 9um (1.27mm pitch, pin 13
+#          Kelly between pins 12/14 CAN). A zero-width track could not comply.
+#   0.75mm unrestricted: infeasible at DA1. CAN pads 2, 3, 25, 26 sit in
+#          interior rows and must thread between Kelly pads 1.045mm apart.
+#   0.75mm zone-only: feasible, but with nothing harmful left to catch. The
+#          only case it could flag is two bonded pours running close together,
+#          worth a few pF against a deliberate short.
+#
+# The separate netclasses (M5KW_KELLY_DOMAIN vs M5KW_CAN_DOMAIN, 0.25/0.20mm)
+# already document that these are distinct domains. That is the right level of
+# statement. Contrast Section 1, which IS derived (salt-film tracking margin)
+# and has a real consequence.
+
+# ===== SECTION 3: SHIELD to SHIP - deliberately NOT a barrier =====
+# Each shell is DC-floating, referenced to GND_SHIP only through its 1nF
+# (C83-C86). All mounting holes H1-H9 are GND_SHIP, so the drain path runs to
+# the board edge. A shield-to-chassis tracking fault is a benign end state.
+(rule "Shield to ship ground - intentional reference"
+  (constraint clearance (min 0.25mm))
+  (condition "((A.NetClass == 'SHIELD_DOMAIN') && (B.NetClass == 'SHIP_DOMAIN')) || ((A.NetClass == 'SHIP_DOMAIN') && (B.NetClass == 'SHIELD_DOMAIN'))"))
+
+# ===== SECTION 4: board edge and milled isolation slot =====
+# Draw the 1.0-1.5mm isolation slot under ICT1 and IDCB1 on Edge.Cuts and this
+# rule enforces copper standoff from it automatically.
+(rule "Copper to board edge and cutouts"
+  (constraint edge_clearance (min 0.5mm)))
+
+# ===== SECTION 5: E-Stop rules =====
+
+(rule "E-stop loop M5 - consequence rule, not a domain barrier"
+  (constraint clearance (min 2.5mm))
+  (condition "(A.NetName == '/M5KW_ESTOP_SW_IN_PLUG' && B.NetName == '/M5KW_ESTOP_SW_OUT_PLUG') || (A.NetName == '/M5KW_ESTOP_SW_OUT_PLUG' && B.NetName == '/M5KW_ESTOP_SW_IN_PLUG')"))
+
+(rule "E-stop loop M10 - consequence rule, not a domain barrier"
+  (constraint clearance (min 2.5mm))
+  (condition "(A.NetName == '/M10KW_ESTOP_SW_IN_PLUG' && B.NetName == '/M10KW_ESTOP_SW_OUT_PLUG') || (A.NetName == '/M10KW_ESTOP_SW_OUT_PLUG' && B.NetName == '/M10KW_ESTOP_SW_IN_PLUG')"))
+
+# ===== SECTION 6: pad exemptions - MUST STAY LAST =====
+# These parts EXIST to straddle a barrier; internal pad pitch is fixed by the
+# package. Scoped to each part's own pads, so their pads against any foreign
+# net still get the full barrier clearance from Section 1.
+# NOTE: memberOfFootprint matches PADS ONLY, never tracks. A track escaping one
+# of these pads is not a footprint member, so it gets the full Section 1
+# clearance against the part's other pads. Harmless on ICT1-3, OI1-8 and T1/T2
+# because their two domains sit on opposite sides of the package, so escapes
+# head away from foreign pads - but that is package luck, not design. If a
+# future part interleaves domains along one pin row, this exemption will not
+# cover its routing.
+(rule "Barrier component internal pads"
+  (constraint clearance (min 0.25mm))
+  (condition "(A.memberOfFootprint('ICT1') && B.memberOfFootprint('ICT1')) || (A.memberOfFootprint('ICT2') && B.memberOfFootprint('ICT2')) || (A.memberOfFootprint('ICT3') && B.memberOfFootprint('ICT3')) || (A.memberOfFootprint('BII1') && B.memberOfFootprint('BII1')) || (A.memberOfFootprint('BII2') && B.memberOfFootprint('BII2')) || (A.memberOfFootprint('IDCB1') && B.memberOfFootprint('IDCB1')) || (A.memberOfFootprint('T1') && B.memberOfFootprint('T1')) || (A.memberOfFootprint('T2') && B.memberOfFootprint('T2')) || (A.memberOfFootprint('OI1') && B.memberOfFootprint('OI1')) || (A.memberOfFootprint('OI2') && B.memberOfFootprint('OI2')) || (A.memberOfFootprint('OI3') && B.memberOfFootprint('OI3')) || (A.memberOfFootprint('OI4') && B.memberOfFootprint('OI4')) || (A.memberOfFootprint('OI5') && B.memberOfFootprint('OI5')) || (A.memberOfFootprint('OI6') && B.memberOfFootprint('OI6')) || (A.memberOfFootprint('OI7') && B.memberOfFootprint('OI7')) || (A.memberOfFootprint('OI8') && B.memberOfFootprint('OI8')) || (A.memberOfFootprint('C4') && B.memberOfFootprint('C4'))"))
+
+# Q3/Q6 are the alarm level-shift FETs the schematic says to keep near the
+# netties; R104-R107 their series resistors; R110/R111 the DAC VREF feeds.
+(rule "Intra-motor seam component internal pads"
+  (constraint clearance (min 0.25mm))
+  (condition "(A.memberOfFootprint('NT1') && B.memberOfFootprint('NT1')) || (A.memberOfFootprint('NT2') && B.memberOfFootprint('NT2')) || (A.memberOfFootprint('Q3') && B.memberOfFootprint('Q3')) || (A.memberOfFootprint('Q6') && B.memberOfFootprint('Q6')) || (A.memberOfFootprint('R104') && B.memberOfFootprint('R104')) || (A.memberOfFootprint('R105') && B.memberOfFootprint('R105')) || (A.memberOfFootprint('R106') && B.memberOfFootprint('R106')) || (A.memberOfFootprint('R107') && B.memberOfFootprint('R107')) || (A.memberOfFootprint('R110') && B.memberOfFootprint('R110')) || (A.memberOfFootprint('R111') && B.memberOfFootprint('R111'))"))
