@@ -6,8 +6,8 @@
 	(paper "User" 560 540)
 	(title_block
 		(title "Main Control Unit")
-		(date "2026-07-30")
-		(rev "1.6.8")
+		(date "2026-07-31")
+		(rev "1.6.9")
 		(company "The Digital Mermaid")
 	)
 	(lib_symbols
@@ -1127,392 +1127,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector:Conn_01x07_Pin"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x07_Pin"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x07, script generated"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x07_Pin_1_1"
-				(rectangle
-					(start 0.8636 7.747)
-					(end 0 7.493)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 7.62) (xy 0.8636 7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy 0.8636 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -7.62) (xy 0.8636 -7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 7.62 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 5.08 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 180)
-					(length 3.81)
-					(name "Pin_7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -29748,7 +29362,7 @@
 	)
 	(rectangle
 		(start 249.555 79.375)
-		(end 269.875 176.53)
+		(end 266.065 176.53)
 		(stroke
 			(width 0)
 			(type default)
@@ -33785,7 +33399,7 @@
 		(uuid "fff23e99-7f51-49ab-8f8f-e9f2fc93484c")
 	)
 	(no_connect
-		(at 260.35 118.11)
+		(at 257.81 118.11)
 		(uuid "011f7c9a-e879-4e02-9c35-64dd3d407e56")
 	)
 	(no_connect
@@ -33813,16 +33427,12 @@
 		(uuid "36c5e8b7-69fc-4898-b247-c6b20e196d75")
 	)
 	(no_connect
-		(at 260.35 151.13)
+		(at 257.81 151.13)
 		(uuid "419b4ed6-e564-408f-b31e-b60bff492381")
 	)
 	(no_connect
 		(at 31.75 25.4)
 		(uuid "4f8705c4-57a5-4cc0-89bd-0b4188ac41ca")
-	)
-	(no_connect
-		(at 265.43 118.11)
-		(uuid "583e019a-b223-4555-826b-7737e643aaa5")
 	)
 	(no_connect
 		(at 26.67 25.4)
@@ -33841,10 +33451,6 @@
 		(uuid "6b284353-2c19-405b-83f9-014c66a0f3fd")
 	)
 	(no_connect
-		(at 255.27 151.13)
-		(uuid "6bffecd4-759c-4552-af3a-7e7a408c90e0")
-	)
-	(no_connect
 		(at 259.08 344.17)
 		(uuid "707ad680-2c84-4894-adc7-0bc0994d96e9")
 	)
@@ -33857,16 +33463,8 @@
 		(uuid "8a976c33-fd63-4ba5-96f6-942b82326627")
 	)
 	(no_connect
-		(at 265.43 151.13)
-		(uuid "921fff62-8f00-4b26-8f5f-0214ed47a5bb")
-	)
-	(no_connect
 		(at 336.55 243.84)
 		(uuid "a2691dc8-2b40-47f8-a8b7-b038d70be34f")
-	)
-	(no_connect
-		(at 265.43 90.17)
-		(uuid "b6525ceb-20ad-4e7d-92cb-dfe0e5b7b414")
 	)
 	(no_connect
 		(at 165.1 52.07)
@@ -33909,12 +33507,8 @@
 		(uuid "ead9fa88-40c7-4df4-969b-8ef91e5ce473")
 	)
 	(no_connect
-		(at 260.35 90.17)
+		(at 257.81 90.17)
 		(uuid "efec8ddd-f4c6-4a9d-a69e-72d729c12c5f")
-	)
-	(no_connect
-		(at 255.27 90.17)
-		(uuid "f199af23-3617-45d9-b9e9-daef2dac2acc")
 	)
 	(no_connect
 		(at 358.14 66.04)
@@ -33927,10 +33521,6 @@
 	(no_connect
 		(at 259.08 382.27)
 		(uuid "f9c32e10-f289-481d-b54b-ca6e3ab623ca")
-	)
-	(no_connect
-		(at 255.27 118.11)
-		(uuid "faf05b81-dc93-428e-8e45-9d010a996f4d")
 	)
 	(wire
 		(pts
@@ -36044,7 +35634,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 118.11) (xy 257.81 120.65)
+			(xy 255.27 118.11) (xy 255.27 120.65)
 		)
 		(stroke
 			(width 0)
@@ -37664,7 +37254,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 118.11) (xy 262.89 120.65)
+			(xy 260.35 118.11) (xy 260.35 120.65)
 		)
 		(stroke
 			(width 0)
@@ -38164,7 +37754,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 151.13) (xy 257.81 153.67)
+			(xy 255.27 151.13) (xy 255.27 153.67)
 		)
 		(stroke
 			(width 0)
@@ -42044,7 +41634,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 151.13) (xy 267.97 153.67)
+			(xy 262.89 151.13) (xy 262.89 153.67)
 		)
 		(stroke
 			(width 0)
@@ -45934,7 +45524,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 90.17) (xy 267.97 92.71)
+			(xy 262.89 90.17) (xy 262.89 92.71)
 		)
 		(stroke
 			(width 0)
@@ -48904,7 +48494,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 151.13) (xy 262.89 153.67)
+			(xy 260.35 151.13) (xy 260.35 153.67)
 		)
 		(stroke
 			(width 0)
@@ -49274,7 +48864,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 90.17) (xy 257.81 92.71)
+			(xy 255.27 90.17) (xy 255.27 92.71)
 		)
 		(stroke
 			(width 0)
@@ -50354,7 +49944,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 118.11) (xy 267.97 120.65)
+			(xy 262.89 118.11) (xy 262.89 120.65)
 		)
 		(stroke
 			(width 0)
@@ -51554,7 +51144,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 90.17) (xy 262.89 92.71)
+			(xy 260.35 90.17) (xy 260.35 92.71)
 		)
 		(stroke
 			(width 0)
@@ -52083,7 +51673,7 @@
 		(uuid "0432323a-f70e-4717-8c48-1e3e76a7cbc2")
 	)
 	(label "M5KW_CANBUS_HIGH"
-		(at 262.89 120.65 270)
+		(at 260.35 120.65 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53053,7 +52643,7 @@
 		(uuid "3b838af9-719d-44b1-8a1d-0dbef9b3dd9b")
 	)
 	(label "M10KW_CANBUS_HIGH"
-		(at 262.89 153.67 270)
+		(at 260.35 153.67 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53703,7 +53293,7 @@
 		(uuid "601d4dd6-b23b-414f-9c0c-f366f60e2f9a")
 	)
 	(label "M10KW_FDCAN_TX"
-		(at 257.81 153.67 270)
+		(at 255.27 153.67 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53923,7 +53513,7 @@
 		(uuid "69340e40-7827-4014-824c-440554c266c0")
 	)
 	(label "M5KW_FDCAN_TX"
-		(at 257.81 120.65 270)
+		(at 255.27 120.65 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -54363,7 +53953,7 @@
 		(uuid "7fa2ba67-a8dc-40ef-bfa8-174f02f209d2")
 	)
 	(label "N2K_CAN_L"
-		(at 267.97 92.71 270)
+		(at 262.89 92.71 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55273,7 +54863,7 @@
 		(uuid "ab13c8d4-56da-49e2-a081-11d2e1d17583")
 	)
 	(label "N2K_FDCAN_TX"
-		(at 257.81 92.71 270)
+		(at 255.27 92.71 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55893,7 +55483,7 @@
 		(uuid "d3b8f3d3-7d55-4ae3-b5af-f290177a6bc2")
 	)
 	(label "M5KW_CANBUS_LOW"
-		(at 267.97 120.65 270)
+		(at 262.89 120.65 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56163,7 +55753,7 @@
 		(uuid "e7712806-d3fb-45ba-89b7-fd43b15d66d0")
 	)
 	(label "N2K_CAN_H"
-		(at 262.89 92.71 270)
+		(at 260.35 92.71 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56253,7 +55843,7 @@
 		(uuid "ef3810c0-4f49-4209-814b-56cb69adb05f")
 	)
 	(label "M10KW_CANBUS_LOW"
-		(at 267.97 153.67 270)
+		(at 262.89 153.67 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -89231,8 +88821,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x07_Pin")
-		(at 260.35 85.09 270)
+		(lib_id "Connector:Conn_01x05_Pin")
+		(at 257.81 85.09 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -89242,7 +88832,7 @@
 		(dnp no)
 		(uuid "5ebe7734-b77a-4e5b-9a3b-b35a3a8ec765")
 		(property "Reference" "TP8"
-			(at 260.35 81.788 90)
+			(at 257.81 81.788 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -89252,7 +88842,7 @@
 			)
 		)
 		(property "Value" "N2K CAN"
-			(at 260.35 83.82 90)
+			(at 257.81 83.566 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -89261,8 +88851,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
-			(at 260.35 85.09 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 257.81 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89273,7 +88863,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 85.09 0)
+			(at 257.81 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89283,8 +88873,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x07, script generated"
-			(at 260.35 85.09 0)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 257.81 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89295,7 +88885,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 260.35 85.09 90)
+			(at 257.81 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89306,7 +88896,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 260.35 85.09 90)
+			(at 257.81 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89317,7 +88907,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 260.35 85.09 90)
+			(at 257.81 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89328,7 +88918,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 260.35 85.09 90)
+			(at 257.81 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89339,7 +88929,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 260.35 85.09 90)
+			(at 257.81 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89350,7 +88940,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 260.35 85.09 90)
+			(at 257.81 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89361,7 +88951,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 260.35 85.09 90)
+			(at 257.81 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89385,12 +88975,6 @@
 		)
 		(pin "5"
 			(uuid "09d87d6e-22af-45f5-852f-3fbf89cd3d5d")
-		)
-		(pin "6"
-			(uuid "49b55efd-70d0-4faf-8743-37b4963aa0f3")
-		)
-		(pin "7"
-			(uuid "0a20c8c1-7c6f-48ce-921c-35d3d973b88e")
 		)
 		(instances
 			(project "Main Control Unit"
@@ -113425,8 +113009,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x07_Pin")
-		(at 260.35 146.05 270)
+		(lib_id "Connector:Conn_01x05_Pin")
+		(at 257.81 146.05 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -113436,7 +113020,7 @@
 		(dnp no)
 		(uuid "9f9767da-53d5-4b78-9b21-721c8678e8e3")
 		(property "Reference" "TP10"
-			(at 260.35 142.748 90)
+			(at 257.81 142.748 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -113446,7 +113030,7 @@
 			)
 		)
 		(property "Value" "M10KW CAN"
-			(at 260.35 144.78 90)
+			(at 257.81 144.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -113455,8 +113039,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
-			(at 260.35 146.05 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 257.81 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113467,7 +113051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 146.05 0)
+			(at 257.81 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113477,8 +113061,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x07, script generated"
-			(at 260.35 146.05 0)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 257.81 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113489,7 +113073,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 260.35 146.05 90)
+			(at 257.81 146.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113500,7 +113084,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 260.35 146.05 90)
+			(at 257.81 146.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113511,7 +113095,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 260.35 146.05 90)
+			(at 257.81 146.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113522,7 +113106,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 260.35 146.05 90)
+			(at 257.81 146.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113533,7 +113117,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 260.35 146.05 90)
+			(at 257.81 146.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113544,7 +113128,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 260.35 146.05 90)
+			(at 257.81 146.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113555,7 +113139,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 260.35 146.05 90)
+			(at 257.81 146.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113579,12 +113163,6 @@
 		)
 		(pin "5"
 			(uuid "21f72ade-5f10-42e8-ba85-e3c579cccd5e")
-		)
-		(pin "6"
-			(uuid "c1e87b6d-8e70-4e7e-83ef-9287b0e66912")
-		)
-		(pin "7"
-			(uuid "94fcda50-ad10-4baa-8abc-2e0b5f192504")
 		)
 		(instances
 			(project "Main Control Unit"
@@ -124339,8 +123917,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x07_Pin")
-		(at 260.35 113.03 270)
+		(lib_id "Connector:Conn_01x05_Pin")
+		(at 257.81 113.03 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -124350,7 +123928,7 @@
 		(dnp no)
 		(uuid "bff40f89-a61f-43fb-be2a-22a645e028b1")
 		(property "Reference" "TP9"
-			(at 260.35 109.728 90)
+			(at 258.064 109.728 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -124360,7 +123938,7 @@
 			)
 		)
 		(property "Value" "M5KW CAN"
-			(at 260.35 111.76 90)
+			(at 257.81 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -124369,8 +123947,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
-			(at 260.35 113.03 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 257.81 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124381,7 +123959,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 113.03 0)
+			(at 257.81 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124391,8 +123969,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x07, script generated"
-			(at 260.35 113.03 0)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 257.81 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124403,7 +123981,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 260.35 113.03 90)
+			(at 257.81 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124414,7 +123992,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 260.35 113.03 90)
+			(at 257.81 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124425,7 +124003,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 260.35 113.03 90)
+			(at 257.81 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124436,7 +124014,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 260.35 113.03 90)
+			(at 257.81 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124447,7 +124025,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 260.35 113.03 90)
+			(at 257.81 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124458,7 +124036,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 260.35 113.03 90)
+			(at 257.81 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124469,7 +124047,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 260.35 113.03 90)
+			(at 257.81 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124493,12 +124071,6 @@
 		)
 		(pin "5"
 			(uuid "22003e99-0c3c-4024-be4d-be380db8e544")
-		)
-		(pin "6"
-			(uuid "15064f4d-67e7-438d-83b3-98b47325e984")
-		)
-		(pin "7"
-			(uuid "6f5857ae-9d41-4c35-b3e0-5b67cec6d06f")
 		)
 		(instances
 			(project "Main Control Unit"
