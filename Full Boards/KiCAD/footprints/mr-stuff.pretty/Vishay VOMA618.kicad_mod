@@ -1,0 +1,218 @@
+(footprint "Vishay VOMA618"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -3.6 0)
+		(layer "F.SilkS")
+		(uuid "02d85c45-15f3-4be9-8502-23d0b65b299b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Vishay VOMA618"
+		(at 0 3.7 0)
+		(layer "F.Fab")
+		(uuid "dbc446d5-b221-4dfe-a90f-9af30cf7fc77")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e062e379-e76b-46d1-bbe1-1cf8a89e4e1f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "140f4d8f-7963-4a40-85f5-5101022b0258")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.41 -2.46)
+		(end 2.41 -2.46)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0fb851ea-7013-4223-a193-3592c8f4a1c7")
+	)
+	(fp_line
+		(start -2.41 2.46)
+		(end 2.41 2.46)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a6889754-0b1a-4f75-932e-40efcdae1aee")
+	)
+	(fp_circle
+		(center -4.705 -1.87)
+		(end -4.605 -1.87)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b1bb636c-ad8c-4ad0-95fb-2352a8a0a0d7")
+	)
+	(fp_line
+		(start -4.205 -2.71)
+		(end -4.205 2.71)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "355b826d-e67e-419b-974d-b4580a1ada7c")
+	)
+	(fp_line
+		(start -4.205 -2.71)
+		(end 4.205 -2.71)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7cf09906-8df6-4c25-82cb-6574ce7ebde5")
+	)
+	(fp_line
+		(start -4.205 2.71)
+		(end 4.205 2.71)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a4302db7-c6fe-4530-9b37-f686633dcb04")
+	)
+	(fp_line
+		(start 4.205 -2.71)
+		(end 4.205 2.71)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8c7460eb-7694-4765-a2ce-a44a1467b033")
+	)
+	(fp_line
+		(start -2.41 -2.46)
+		(end -2.41 2.46)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d979b4ee-405c-4021-b56f-6f4f04330b3b")
+	)
+	(fp_line
+		(start -2.41 -2.46)
+		(end 2.41 -2.46)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "573a7901-c282-451c-aa35-1869a38c5184")
+	)
+	(fp_line
+		(start -2.41 2.46)
+		(end 2.41 2.46)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b8ee8a87-fab8-4781-a57a-954f8add0790")
+	)
+	(fp_line
+		(start 2.41 -2.46)
+		(end 2.41 2.46)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8b36ced5-c6cb-442b-a95e-deea4776ec52")
+	)
+	(fp_circle
+		(center -4.705 -1.87)
+		(end -4.605 -1.87)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "70768737-50f1-4db2-b1be-d1165ebde86d")
+	)
+	(pad "1" smd roundrect
+		(at -3.205 -1.27)
+		(size 1.5 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "04b9a9f2-d9a5-4243-9b9a-cf35c3b94608")
+	)
+	(pad "2" smd roundrect
+		(at -3.205 1.27)
+		(size 1.5 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "7736ecce-fa2f-4b60-8c3c-ee1a5033b89c")
+	)
+	(pad "3" smd roundrect
+		(at 3.205 1.27)
+		(size 1.5 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "73fa7803-a20b-4a71-9791-a0450e643672")
+	)
+	(pad "4" smd roundrect
+		(at 3.205 -1.27)
+		(size 1.5 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "2eb4c960-dc78-4337-80f6-0112eea4aa6e")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Vishay VOMA618/VOMA618A.STEP"
+		(offset
+			(xyz 0 0 1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
+)

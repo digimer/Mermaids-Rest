@@ -1,0 +1,207 @@
+(footprint "Onsemi 2N3904TFR"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -3.644682 0)
+		(layer "F.SilkS")
+		(uuid "a7550798-c17f-49cf-a351-d2a0ced4599a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" " 2N3904TFR"
+		(at 0 3.863717 0)
+		(layer "F.Fab")
+		(uuid "ee06c57b-1df5-4797-bdee-ee68d5714c76")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3904-D.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe8d93fe-d38e-4c8c-b48a-0945dafacd86")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Bipolar (BJT) Transistor NPN 40 V 200 mA 300MHz 625 mW Through Hole TO-92-3"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "002068a5-7e51-4832-865f-69482f0f676a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.661 2.623)
+		(end 1.661 2.623)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "00ba5b66-30fe-44fa-9ab6-dd4277a2090a")
+	)
+	(fp_arc
+		(start -2.503001 -0.139)
+		(mid -0.024214 -2.007132)
+		(end 2.471 -0.161)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "598fd3ce-8d76-42f5-a5ec-6b2ac6dfcf80")
+	)
+	(fp_arc
+		(start -1.661 2.623)
+		(mid -2.04385 2.253545)
+		(end -2.322 1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c590494f-f797-4f02-a330-4773860949d5")
+	)
+	(fp_arc
+		(start 2.312 1.801)
+		(mid 2.033849 2.254545)
+		(end 1.651 2.624)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "81f65409-1585-40d4-8948-0f2aba006a04")
+	)
+	(fp_circle
+		(center -4.3 1)
+		(end -4.158581 1)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e72aecda-e138-42b7-a498-c175db989bb1")
+	)
+	(fp_line
+		(start -3.5 0.8575)
+		(end -3.5 2.873)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0534b0e2-f8e3-4f9a-90ad-80795e8cf9bf")
+	)
+	(fp_line
+		(start -3.5 2.873)
+		(end 3.5 2.873)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3ff7d72a-f5e1-4298-b3c2-d13386a457cb")
+	)
+	(fp_line
+		(start 3.5 2.873)
+		(end 3.5 0.8575)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c17bf4c3-ce67-40a3-9d49-b3a4850ce117")
+	)
+	(fp_arc
+		(start -3.5 0.8575)
+		(mid 0 -2.6425)
+		(end 3.5 0.8575)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4c6bfb1c-eb79-4783-96b2-9e2a8af7e2a4")
+	)
+	(fp_line
+		(start -1.661 2.623)
+		(end 1.661 2.623)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1312aec6-b07a-40d4-b234-429c55e5c03d")
+	)
+	(fp_arc
+		(start -1.661 2.623)
+		(mid 0 -2.003268)
+		(end 1.661 2.623)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "da5e3df3-ab46-4d13-b140-fd2fb936bf6a")
+	)
+	(pad "1" thru_hole rect
+		(at -2.54 0.8525)
+		(size 1.41 1.41)
+		(drill 0.94)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "870e57ae-99e0-4eef-9f8d-7f12fbd08059")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0.8525)
+		(size 1.41 1.41)
+		(drill 0.94)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "52ed5f2d-9c4f-40fa-9f09-a6933b1e88d6")
+	)
+	(pad "3" thru_hole circle
+		(at 2.54 0.8525)
+		(size 1.41 1.41)
+		(drill 0.94)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "b3534ed8-7247-4809-b9f6-b817dae1fa2e")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Onsemi 2N3904/2N3904TFR.step"
+		(offset
+			(xyz 0 -0.85 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

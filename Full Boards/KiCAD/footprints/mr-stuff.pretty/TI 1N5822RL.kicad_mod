@@ -1,0 +1,200 @@
+(footprint "TI 1N5822RL"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Diode, DO-201AD series, Axial, Horizontal, pin pitch=15.24mm, length*diameter=9.5*5.2mm^2, http://www.diodes.com/_files/packages/DO-201AD.pdf")
+	(tags "Diode DO-201AD series Axial Horizontal pin pitch 15.24mm  length 9.5mm diameter 5.2mm")
+	(property "Reference" "REF**"
+		(at 0 -3.72 0)
+		(layer "F.SilkS")
+		(uuid "b73bae03-7c2b-4cc1-a9c6-e6af7139c459")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TI 1N5822RL"
+		(at 0 3.85 0)
+		(layer "F.Fab")
+		(uuid "afc68019-37b5-4a5b-a4a9-a07c6590a320")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ebed7281-3920-4040-b972-5c6b53b079f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Diode 40 V 3A Through Hole DO-201AD"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c7811c1-7fc0-45f7-aceb-220d45be85ae")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -6.25 0)
+		(end -4.87 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8f12a7d9-7302-4eed-b623-c76a086e7736")
+	)
+	(fp_line
+		(start 6.25 0)
+		(end 4.87 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ea97dcdd-6502-475c-9bd3-79c246740060")
+	)
+	(fp_rect
+		(start -4.87 -2.72)
+		(end 4.87 2.72)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "350fae8f-91ff-4076-8d3b-44ed103ef34e")
+	)
+	(fp_rect
+		(start -3.75 -2.65)
+		(end -2.8 2.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "932d3888-8a7a-49e8-a3e3-1eb1b33a991e")
+	)
+	(fp_rect
+		(start -9.75 -2.85)
+		(end 9.75 2.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "254af96d-7d12-4b5e-9cbb-b8c04fc3318b")
+	)
+	(fp_line
+		(start -7.62 0)
+		(end -4.75 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "66a16e1a-23c3-4415-8061-8cf05b80b0a9")
+	)
+	(fp_line
+		(start 7.62 0)
+		(end 4.75 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "61e534ef-6edb-4813-809c-dd6876659722")
+	)
+	(fp_rect
+		(start -4.75 -2.6)
+		(end 4.75 2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0d969476-7758-4625-a002-bb77525ca94b")
+	)
+	(fp_text user "K"
+		(at -7.62 -2.6 0)
+		(layer "F.SilkS")
+		(uuid "b2cebf07-ecdb-4344-9abf-2d8d6c91bccb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "K"
+		(at -7.62 -2.6 0)
+		(layer "F.Fab")
+		(uuid "b31ad88b-a117-4d8f-ab5a-946a83c26480")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 5.45 0)
+		(layer "F.Fab")
+		(uuid "706ef0f1-423d-4842-be48-b02b31f73ef5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at -7.9 0)
+		(size 3.2 3.2)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.078125)
+		(uuid "a655e2af-bc0d-474e-9f84-7c70df4b5140")
+	)
+	(pad "2" thru_hole circle
+		(at 7.9 0)
+		(size 3.2 3.2)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "133f0cfa-f049-43f4-9bfa-8170a8645eb0")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/TI 1N5822RL/1N5822RL.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

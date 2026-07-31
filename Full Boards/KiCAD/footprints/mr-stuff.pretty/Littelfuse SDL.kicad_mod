@@ -1,0 +1,148 @@
+(footprint "Littelfuse SDL"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "P600")
+	(tags "TVS Diode (Bi-directional)")
+	(property "Reference" "REF**"
+		(at 0 -5.9 0)
+		(layer "F.SilkS")
+		(uuid "f5668e54-5611-41d0-8662-89b95cfd977e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Littelfuse SDL"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b58b8ea4-2529-48a3-9a5b-fe7b2a0d737f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse_tvs_diode_sld_datasheet.pdf?assetguid=fce36256-f340-4c99-9aec-ae774cb2d1d8"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c2db162b-48ef-4fbe-a091-3d2a617acd63")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a5ef48b2-ea11-4ef9-90dc-7bcf34c240c8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole exclude_from_pos_files)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -4.5 -0.1)
+		(end -20.8 -0.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3e2892e5-87ea-4307-ac56-91278caf90f1")
+	)
+	(fp_line
+		(start -4.5 -0.1)
+		(end 0 -4.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9e6efa19-ce12-4554-89d7-8f0799470d58")
+	)
+	(fp_line
+		(start 20.8 0)
+		(end 4.5 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e624d83e-8ae3-4031-b090-c34b29164ab6")
+	)
+	(fp_rect
+		(start -23.5 -4.75)
+		(end 23.5 4.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "66cc7159-3643-430d-aa11-1de59129b832")
+	)
+	(fp_rect
+		(start -4.5 -4.5)
+		(end 4.5 4.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "44fce06b-eb3a-4e82-b7dd-1b67b508c2fa")
+	)
+	(fp_rect
+		(start -23.7 -4.9)
+		(end 23.7 4.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "427ea317-26dd-4266-a436-188ca72f20ec")
+	)
+	(pad "1" thru_hole circle
+		(at -22.175 0)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c85e5241-9bc4-4637-821c-b897fab0f3a7")
+	)
+	(pad "2" thru_hole circle
+		(at 22.125 0)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e79517f4-8635-41d3-a91d-8f8d172142a7")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/LittelFuse SLD15-018/SLD15-018.stp"
+		(offset
+			(xyz -22.25 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

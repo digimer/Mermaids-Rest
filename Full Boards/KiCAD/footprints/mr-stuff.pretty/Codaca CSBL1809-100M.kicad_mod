@@ -1,0 +1,107 @@
+(footprint "Codaca CSBL1809-100M"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -11 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d9238bb4-a000-4bbc-a12d-ec14d7d272a0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Codaca CSBL1809-100M"
+		(at 0 11.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "48834c70-8adf-431c-986e-71525c513d5b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2795a8ec-7dcd-4935-b58a-684c0a6a1814")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d28cdb3-14b1-4843-9d63-14a8f3bdddfd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -9.1 -9.1)
+		(end 9.1 9.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "be7c6e12-1182-4f23-b228-a539e0c165d5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 13.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "14a46c8c-7086-43de-97ba-2ed07a7a9450")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 -6.65)
+		(size 6 6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.03333333333)
+		(uuid "33b07062-d13e-41e8-8bac-e4470a3c7802")
+	)
+	(pad "2" smd roundrect
+		(at 0 6.65)
+		(size 6 6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.03333333333)
+		(uuid "7f474cb5-2137-4b72-a3d4-5b30deb4957a")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Codaca CSBL1809-100M/CSBL1809-100M.stp"
+		(offset
+			(xyz -233 274 207)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 90)
+		)
+	)
+)

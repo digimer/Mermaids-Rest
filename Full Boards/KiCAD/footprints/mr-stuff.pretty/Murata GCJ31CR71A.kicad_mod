@@ -1,0 +1,178 @@
+(footprint "Murata GCJ31CR71A"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(uuid "4809192e-de0e-48c3-9a96-68c108a06db2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "GCJ31CR71A"
+		(at 0 2.1 0)
+		(layer "F.Fab")
+		(uuid "a6b76fc7-e8ee-4db6-86fd-130f435a0072")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fc8f7d9-32a6-49a0-91de-b18e36af7e4b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7cf51718-4c9a-4d69-9e01-4ef712d1d6c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.34 -0.95)
+		(end 0.34 -0.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b1fed73e-2e8f-4f85-8019-44fdd10b80cc")
+	)
+	(fp_line
+		(start -0.34 0.95)
+		(end 0.34 0.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eae6ef02-619a-486c-a102-b03d2de4bdf0")
+	)
+	(fp_line
+		(start -2.355 -1.205)
+		(end 2.355 -1.205)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a01e6bd9-ead8-4f73-90f5-f8d6e2d08385")
+	)
+	(fp_line
+		(start -2.355 1.205)
+		(end -2.355 -1.205)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b50d77a8-79a9-4b12-a85c-a08597c9b880")
+	)
+	(fp_line
+		(start -2.355 1.205)
+		(end 2.355 1.205)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "75125e6f-7819-4ac6-b841-b5988a652f7f")
+	)
+	(fp_line
+		(start 2.355 1.205)
+		(end 2.355 -1.205)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "26c6b9c4-0358-4bcd-98ca-1b87f141adba")
+	)
+	(fp_line
+		(start -1.75 0.95)
+		(end -1.75 -0.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "70669a5f-cb31-4808-accc-ca88bd072cad")
+	)
+	(fp_line
+		(start 1.75 -0.95)
+		(end -1.75 -0.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6cf2fdb4-9fe5-47ff-a739-715eae61e094")
+	)
+	(fp_line
+		(start 1.75 0.95)
+		(end -1.75 0.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3199deef-c8cc-4216-9075-97e189a9443f")
+	)
+	(fp_line
+		(start 1.75 0.95)
+		(end 1.75 -0.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "043f7fdb-ad0f-4bb7-bf25-2e956479fccc")
+	)
+	(pad "1" smd rect
+		(at -1.382 0)
+		(size 1.45 1.91)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "31f527c5-5e3d-4c77-a5b9-c7867f711baa")
+	)
+	(pad "2" smd rect
+		(at 1.382 0)
+		(size 1.45 1.91)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "1290ef12-c608-4d6a-a743-b0b3554cdd64")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Murata GCJ31CR71A/GCJ31CR71A226KE01L.step"
+		(offset
+			(xyz 0 -0.95 0.78)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
