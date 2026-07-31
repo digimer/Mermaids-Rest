@@ -1,0 +1,178 @@
+(footprint "KOA SR73"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Value" "SR73"
+		(at 0 2 0)
+		(layer "F.Fab")
+		(uuid "10a7e05c-8c74-40ea-9e6d-355fc87ec2dd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "741a45b3-10b1-4448-a8de-04c95307b637")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "59dced5f-b2d6-4e76-8b8e-f9aa6d661649")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Reference" "REF**"
+		(at 0 -1.9 0)
+		(layer "F.SilkS")
+		(uuid "603400f4-4f15-46a7-bdf9-1e85b2f25f1b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.68 -0.9)
+		(end 0.68 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4bbfc80b-88a5-43ce-8801-6c4b0a3e7829")
+	)
+	(fp_line
+		(start -0.68 0.9)
+		(end 0.68 0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "634be6dd-ee42-4cf8-aca2-06e984879803")
+	)
+	(fp_line
+		(start -2.308 -1.158)
+		(end 2.308 -1.158)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6b02e9ff-4931-4248-8078-5c88f7aa6b14")
+	)
+	(fp_line
+		(start -2.308 1.158)
+		(end -2.308 -1.158)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b8f19b8d-943f-43ad-aba9-3c73fb50fcf1")
+	)
+	(fp_line
+		(start -2.308 1.158)
+		(end 2.308 1.158)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d91f7c67-57e3-49a8-8cef-89a63cb7765c")
+	)
+	(fp_line
+		(start 2.308 1.158)
+		(end 2.308 -1.158)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "73612483-ac5b-4098-b91a-69b9fccf1f59")
+	)
+	(fp_line
+		(start -1.7 0.9)
+		(end -1.7 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4dd6f0b0-d302-4c11-871d-dcff81b546f3")
+	)
+	(fp_line
+		(start 1.7 -0.9)
+		(end -1.7 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "04eee4c5-ed40-43f4-80ed-6b7311f0d0d9")
+	)
+	(fp_line
+		(start 1.7 0.9)
+		(end -1.7 0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "602f5a39-7be6-4ec6-8329-6aa177644389")
+	)
+	(fp_line
+		(start 1.7 0.9)
+		(end 1.7 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "86970d21-e6ea-414e-af1b-b9ef866e8a5a")
+	)
+	(pad "1" smd rect
+		(at -1.528 0)
+		(size 1.06 1.82)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "99db4aed-5d3b-41be-a930-7e4f48033949")
+	)
+	(pad "2" smd rect
+		(at 1.528 0)
+		(size 1.06 1.82)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "3936457a-fab4-48c9-92e0-7c0c6be962fc")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/KOA SR732BTTDR143F/SR732BTTDR143F.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

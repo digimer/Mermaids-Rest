@@ -1,0 +1,153 @@
+(footprint "TDK FA 2.5mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.335 0)
+		(layer "F.SilkS")
+		(uuid "e5698af8-140f-4cc4-841c-5911e45c77b2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "FA18X7R1H104KNU06"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(uuid "0d7f377a-9b78-45a8-a87a-40d5cf29cdf2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da7b946f-0bbc-41e7-9687-c8fc50be4b33")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R Radial"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3cddf05-9522-4ffb-bf78-5ede35c6e23a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2 -1.3)
+		(end 2 1.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "bf9fa6c7-6afa-425a-a385-0f8e94e839a8")
+	)
+	(fp_line
+		(start -2.25 -1.5)
+		(end -2.25 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fbfa818e-9e0c-4763-a151-7b39c656ad39")
+	)
+	(fp_line
+		(start -2.25 -1.5)
+		(end 2.25 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e7f30699-0f3a-4aba-b09c-0d9de1d23e8c")
+	)
+	(fp_line
+		(start 2.25 -1.5)
+		(end 2.25 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bbb61110-d08c-4a8c-a229-bddc6d3b9c9f")
+	)
+	(fp_line
+		(start 2.25 1.5)
+		(end -2.25 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "74822f16-6274-419b-9c18-85617588dbfa")
+	)
+	(fp_line
+		(start -2 -1.25)
+		(end -2 1.25)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0c3b1077-0716-47b4-a99f-b96cacc3cf65")
+	)
+	(fp_line
+		(start 2 -1.25)
+		(end 2 1.25)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bc9edf1d-e54e-4b81-b746-498670cc6ff2")
+	)
+	(pad "1" thru_hole circle
+		(at -1.25 0)
+		(size 1.15 1.15)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "a53b9dcc-1c04-4bde-be54-506b805ba2a5")
+	)
+	(pad "2" thru_hole circle
+		(at 1.25 0)
+		(size 1.15 1.15)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "c91c6b11-bba2-4c16-883c-e9625233af92")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/TDK FA 2.5mm/FA18X7R1H104KNU06.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

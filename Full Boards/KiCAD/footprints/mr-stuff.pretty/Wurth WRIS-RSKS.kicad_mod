@@ -1,0 +1,149 @@
+(footprint "Wurth WRIS-RSKS"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.135 0)
+		(layer "F.SilkS")
+		(uuid "f1a2c152-e62c-4b5b-b2bb-0ec3181c6ad7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Wurth WRIS-RSKS"
+		(at 0 2.365 0)
+		(layer "F.Fab")
+		(uuid "fe359f42-5cc4-4f01-9230-571ed68c368e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/560112132040.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "963eb454-8a3a-403f-9d2f-f537f4268836")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "1.5 MOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thick Film"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "14007a45-a804-4fa7-ba1b-23feb21e23ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.6 -0.9)
+		(end 0.6 -0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d9066af1-0970-4f13-8b4e-6020dad9bdaa")
+	)
+	(fp_line
+		(start 0.6 0.9)
+		(end -0.6 0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c7b43308-3257-49cb-8dad-02487aab4c73")
+	)
+	(fp_rect
+		(start -2.1 -1.1)
+		(end 2.1 1.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cd25e73f-2eaa-4855-8b13-9f16d7608787")
+	)
+	(fp_line
+		(start -1.55 -0.8)
+		(end 1.55 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e2b34a54-6f1d-4681-a633-960860b53b80")
+	)
+	(fp_line
+		(start -1.55 0.8)
+		(end -1.55 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "feea7c7f-f2ba-4d80-ac40-96914c6adee4")
+	)
+	(fp_line
+		(start 1.55 -0.8)
+		(end 1.55 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2c8c6b03-920d-4f73-a163-13a902e614f4")
+	)
+	(fp_line
+		(start 1.55 0.8)
+		(end -1.55 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "edee6e5a-bcc6-443d-b5e9-22c73ac56c5c")
+	)
+	(pad "1" smd rect
+		(at -1.45 0)
+		(size 0.9 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "4d419a4d-e1e4-4333-b3af-52ca4d235197")
+	)
+	(pad "2" smd rect
+		(at 1.45 0)
+		(size 0.9 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "ef5dee5c-5668-45b9-8dc8-454d28e46c91")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Wurth WRIS-RSKS/STP_WRIS-RSKS_1206+(rev1).stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

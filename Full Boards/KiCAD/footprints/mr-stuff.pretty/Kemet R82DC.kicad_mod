@@ -1,0 +1,140 @@
+(footprint "Kemet R82DC"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(tags "R82DC4100DQ60J ")
+	(property "Reference" "REF**"
+		(at 0.0035 -3.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6896fc77-6ce8-4b30-bbcc-a5b7dc59deda")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Kemet R82DC"
+		(at 0.0035 5.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "721536b3-7c7d-4b27-8e7a-4a52654922c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_F3101_R82"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0999c1b5-ee86-4928-82cc-9ef648358fa1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Film Capacitor Polyester, Polyethylene Terephthalate (PET), Metallized - Stacked Radial, THT, 5.0mm Leads"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2e57d2e3-3ac7-4652-92b0-d441eaea1670")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.85 -2.65)
+		(end 3.85 2.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "73d215b7-1684-4687-a1c1-61652873d449")
+	)
+	(fp_rect
+		(start -4 -2.8)
+		(end 4 2.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d4637cbc-9182-48be-a20c-ae4a8d025e5d")
+	)
+	(fp_line
+		(start -5.267 0)
+		(end -3.997 0)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9b47e080-f35e-4064-85a1-8acb26f87455")
+	)
+	(fp_text user "*"
+		(at -4.4 0.3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a0ff9759-a199-44dc-b19c-dca37aeb75ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.0035 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "28ca7e7a-b5da-4f0b-a6cb-560436cd3f48")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -2.5 0)
+		(size 1.3208 1.3208)
+		(drill 0.8128)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7a552fa5-7118-43b3-a23d-f11077f211b1")
+	)
+	(pad "2" thru_hole circle
+		(at 2.5 0)
+		(size 1.3208 1.3208)
+		(drill 0.8128)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1ad1d3f7-ea80-4294-9096-7f80404a1536")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Kemet R82DC/CFR_RB3_7.2X10X5_L7.5H10.1T5.1S5H019F0.55.step"
+		(offset
+			(xyz -3.75 2.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

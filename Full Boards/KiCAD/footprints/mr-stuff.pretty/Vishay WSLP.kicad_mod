@@ -1,0 +1,221 @@
+(footprint "Vishay WSLP"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(tags "WSLP25125L000FEA ")
+	(property "Reference" "REF**"
+		(at 0 -3.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ea0adc0f-8835-4f6f-bbf0-57c46740fdce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Vishay WSLP"
+		(at 0 3.45 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "32f6c0df-c010-4dd9-ac0a-6b7dad6815dc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "22c509f2-4685-4afa-a1e8-a2bb97e1ad6c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "208c19c8-f323-48b0-9251-5bac761e4697")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.25476 1.8415)
+		(end 1.25476 1.8415)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0c761d87-076c-42b4-9118-3c4a82cce787")
+	)
+	(fp_line
+		(start 1.25476 -1.8415)
+		(end -1.25476 -1.8415)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "112f9f71-905e-461a-bde9-039551d3f482")
+	)
+	(fp_line
+		(start -3.95 -2.0955)
+		(end 3.95 -2.0955)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cfe39ba5-d556-4776-9cc1-70f10e7fa5cf")
+	)
+	(fp_line
+		(start -3.9497 2.0955)
+		(end -3.9497 -2.0955)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "df74a691-6144-42ba-b3e4-d908f31923e8")
+	)
+	(fp_line
+		(start 3.9497 -2.0955)
+		(end 3.9497 2.0955)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8d9f3da7-e6c0-473f-bf30-425cd4d61d6c")
+	)
+	(fp_line
+		(start 3.95 2.0955)
+		(end -3.95 2.0955)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ed076d40-50f9-49e0-8223-b06d57fa17fc")
+	)
+	(fp_line
+		(start -3.302 -1.7145)
+		(end -3.302 1.7145)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "65c98e12-04ba-4068-a4b5-847f0d07c30c")
+	)
+	(fp_line
+		(start -3.302 1.7145)
+		(end 3.302 1.7145)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1aa85454-24eb-4ef3-a545-a335de2d5215")
+	)
+	(fp_line
+		(start 3.302 -1.7145)
+		(end -3.302 -1.7145)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7584231f-dcce-4de7-9a94-e2634334e2c5")
+	)
+	(fp_line
+		(start 3.302 1.7145)
+		(end 3.302 -1.7145)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dab8d881-dd73-4de5-9541-8f060ed155d7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 5.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "51c9c8d3-d7de-4252-8058-2a6a79cc26ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.6416 0)
+		(size 2.1082 3.683)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "69b25d93-752d-4400-b4ac-cd1cb74d0d79")
+	)
+	(pad "2" smd rect
+		(at 2.6416 0)
+		(size 2.1082 3.683)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e2a7497c-fdae-41e9-9d96-df1681486437")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "6416a1e9-f954-45da-8632-2d09f4738772")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -1.5367 -1.7907) (xy 1.5367 -1.7907) (xy 1.5367 1.7907) (xy -1.5367 1.7907)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Vishay WSLP/RES_VISHAY_WSLP2512_B_VIS.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

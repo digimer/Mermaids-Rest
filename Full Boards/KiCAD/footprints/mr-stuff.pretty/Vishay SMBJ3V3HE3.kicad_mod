@@ -1,0 +1,346 @@
+(footprint "Vishay SMBJ3V3HE3"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Tvs Diode Surface Mount DO-214AA (SMB)")
+	(tags "SMBJ3V3HE3")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b8414235-4368-4ca0-b60f-57840d369f3a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Vishay SMBJ3V3HE3"
+		(at 0 3.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6e8c36db-a763-4c6c-aaf7-8914ea7b3f03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/88392/smbj.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "51020bfb-198f-431b-be8f-1cf55e930c0f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Tvs Diode Surface Mount DO-214AA (SMB)"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3108167a-33ef-4a15-99d5-d523648a96bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.413 -2.0955)
+		(end -2.413 -1.43764)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "46814e11-58c8-4c3b-bf35-0e47505fd8e0")
+	)
+	(fp_line
+		(start -2.413 1.43764)
+		(end -2.413 2.0955)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6b809fb6-8559-45f0-9d22-a13c445a6d88")
+	)
+	(fp_line
+		(start -2.413 2.0955)
+		(end 2.413 2.0955)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ead65dbc-19f5-4f9d-a903-8cb42739faf4")
+	)
+	(fp_line
+		(start 2.413 -2.0955)
+		(end -2.413 -2.0955)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6c98ff16-1999-4044-86d7-8facc349fdda")
+	)
+	(fp_line
+		(start 2.413 -1.43764)
+		(end 2.413 -2.0955)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "89bb6b00-3d47-42c6-be16-f7f23ea149df")
+	)
+	(fp_line
+		(start 2.413 2.0955)
+		(end 2.413 1.43764)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fd8a2297-07cf-4587-a559-f62b3eeee264")
+	)
+	(fp_rect
+		(start -1.2 -2.0955)
+		(end -0.9 2.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "f1c35f2d-dd0a-431c-9085-5ae0910a4db3")
+	)
+	(fp_line
+		(start -3.048 -1.3589)
+		(end -2.54 -1.3589)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ea5df7d1-2579-448a-938f-3bd24800440c")
+	)
+	(fp_line
+		(start -3.048 1.3589)
+		(end -3.048 -1.3589)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e8c2ed88-2d31-40b7-93eb-ecf86c60d05b")
+	)
+	(fp_line
+		(start -3.048 1.3589)
+		(end -2.54 1.3589)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "278a6a0d-2e7b-41f6-ad18-36c066ec3a8f")
+	)
+	(fp_line
+		(start -2.54 -2.2225)
+		(end 2.54 -2.2225)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bf13edcd-fd75-4ad7-bc50-3a9519b7c0c2")
+	)
+	(fp_line
+		(start -2.54 -1.3589)
+		(end -2.54 -2.2225)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0738f5f7-cc50-4f36-9f00-3dc2a67da56a")
+	)
+	(fp_line
+		(start -2.54 2.2225)
+		(end -2.54 1.3589)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fea45c06-f0e2-459a-ad84-b48ad7c216ea")
+	)
+	(fp_line
+		(start 2.54 -2.2225)
+		(end 2.54 -1.3589)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "99359658-f11c-47b6-806d-004a1efedbc3")
+	)
+	(fp_line
+		(start 2.54 1.3589)
+		(end 2.54 2.2225)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "36155f58-3c11-4b70-8bb7-69a6e1e240be")
+	)
+	(fp_line
+		(start 2.54 2.2225)
+		(end -2.54 2.2225)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cef53455-043b-4fbd-ba53-ea691beed7e7")
+	)
+	(fp_line
+		(start 3.048 -1.3589)
+		(end 2.54 -1.3589)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5f729bc3-2dab-4b75-93f3-546b50093578")
+	)
+	(fp_line
+		(start 3.048 -1.3589)
+		(end 3.048 1.3589)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "db5fedca-35b6-4f83-88c4-961aca3b137e")
+	)
+	(fp_line
+		(start 3.048 1.3589)
+		(end 2.54 1.3589)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "54a7ac8b-4119-4612-9fbd-b37aa66e8c95")
+	)
+	(fp_line
+		(start -2.286 -1.9685)
+		(end -2.286 1.9685)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e679b177-4488-46a6-8316-c7f56651e2ed")
+	)
+	(fp_line
+		(start -2.286 1.9685)
+		(end 2.286 1.9685)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e35b6063-c6c4-4f81-bd02-a5763d6ac502")
+	)
+	(fp_line
+		(start 2.286 -1.9685)
+		(end -2.286 -1.9685)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4410a96f-3a54-41e8-9438-0b441d9e50ce")
+	)
+	(fp_line
+		(start 2.286 1.9685)
+		(end 2.286 -1.9685)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f6eb1ddb-5b25-4b69-bdc1-ec127bea2a84")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.0762 0)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d67b403a-1cec-4c65-884a-d6da2292aade")
+	)
+	(fp_text user "*"
+		(at -3 -1.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a898b841-db91-461b-a529-60116ad60e09")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4505765e-adbe-42da-8ac7-f32da664436b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.032 0)
+		(size 1.524 2.2098)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6d26cbd1-d3e9-460d-913d-8464831c8f8c")
+	)
+	(pad "2" smd rect
+		(at 2.032 0)
+		(size 1.524 2.2098)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "210ac19d-379f-4679-acb8-9556ee6275a5")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Vishay SMBJ3V3HE3/SMBJ3V3HE3_A_I.stp"
+		(offset
+			(xyz 13.1 0 -4.8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

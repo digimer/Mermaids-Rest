@@ -1,0 +1,179 @@
+(footprint "M12B-05PMMR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "NMEA2000**"
+		(at 0 -5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "16e26552-75b3-46a1-b325-cc895bd62da8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "M12B-05PMMR"
+		(at 0.08 7.85 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a5612975-3341-42bf-a102-f23c1ad8f412")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a7736b92-e05f-4313-9ee6-95aff35e103d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d0f25410-c9eb-464b-8729-e231a784bdfd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -10 -4)
+		(end 10 7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "8cf8b43d-ff3b-4a5f-b109-afcad6a9d34a")
+	)
+	(fp_circle
+		(center -7.5 0)
+		(end -6.475 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "28bbd0db-a067-4d8c-b007-61b12256a588")
+	)
+	(fp_circle
+		(center -7.5 4)
+		(end -6.1 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "d14b7774-c59c-4f98-a6da-791d2984f636")
+	)
+	(fp_circle
+		(center 7.5 0)
+		(end 8.525 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "9afbde0f-7809-4995-af38-7147c12b405a")
+	)
+	(fp_circle
+		(center 7.5 4)
+		(end 8.9 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "055f59fc-0fb1-4aa2-9ab2-256b197e12ed")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.08 9.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "37e736be-2923-4356-bf24-55697c936477")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at -1.768 -1.768 180)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.3)
+		(chamfer top_left)
+		(uuid "e3146528-b97c-45c5-8b49-9cd3acc4f49f")
+	)
+	(pad "2" thru_hole circle
+		(at 1.768 -1.768)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e9dd296a-7546-4210-bce2-d2dcc4a5b780")
+	)
+	(pad "3" thru_hole circle
+		(at 1.768 1.768)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8c86bdbb-f214-4e28-ad48-ca6eed207afc")
+	)
+	(pad "4" thru_hole circle
+		(at -1.768 1.768)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7e53dc1e-86b2-416c-8877-6b5a6c31bdf2")
+	)
+	(pad "5" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0df03006-343a-4501-804d-fb4d94547048")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Amphenol LTW  M12B-05PMMR/M12B-05PMMR-EE0001-STP.stp"
+		(offset
+			(xyz 0 -22.5 8.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
+)

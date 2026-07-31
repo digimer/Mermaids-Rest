@@ -1,0 +1,218 @@
+(footprint "Osram LJ CRBP.01"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "LJ CRBP.01-JZLX-27-3A4A-1")
+	(tags "LED")
+	(property "Reference" "LED**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "cadc0dc5-7aef-4d1c-a3c2-b621e956623f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "Osram LJ CRBP.01"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5aee9f68-04ed-43a3-8ddf-b90b9305da77")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "15f1f637-1131-4b16-84ad-6e7120570ca1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8e7f9616-366d-4dad-8a92-c9c5822081c5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 0 -2.1)
+		(end 0 -2.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6277895a-d661-4c81-9876-810fa75fdd75")
+	)
+	(fp_line
+		(start 0 -2)
+		(end 0 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f7c0a812-73b7-4d9b-b397-1f10366732f6")
+	)
+	(fp_arc
+		(start 0 -2.1)
+		(mid 0.05 -2.05)
+		(end 0 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "82a6d480-6b62-409e-9a6b-bd7f3b68f787")
+	)
+	(fp_arc
+		(start 0 -2)
+		(mid -0.05 -2.05)
+		(end 0 -2.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "90202f66-4acb-4b3f-9cc2-5a7b6a174749")
+	)
+	(fp_line
+		(start -2.5 -2.5)
+		(end 2.5 -2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cdbc21bf-5208-4197-992b-67b80327df57")
+	)
+	(fp_line
+		(start -2.5 2.5)
+		(end -2.5 -2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "08fcc46a-d694-4ed2-8780-c811064db83a")
+	)
+	(fp_line
+		(start 2.5 -2.5)
+		(end 2.5 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "65d4739f-d333-4310-87b6-d19d0cda675b")
+	)
+	(fp_line
+		(start 2.5 2.5)
+		(end -2.5 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "13cd36bf-b0cc-41b0-9d4a-f754288d3b93")
+	)
+	(fp_line
+		(start -1.5 -1.5)
+		(end -1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3ca7934e-b5ea-44d2-b06f-968111cb8669")
+	)
+	(fp_line
+		(start -1.5 1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "76314b08-1d2e-47fb-8b7e-16d5cf2dcca6")
+	)
+	(fp_line
+		(start 1.5 -1.5)
+		(end -1.5 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "84149590-73a4-4fea-8183-cf52454d592c")
+	)
+	(fp_line
+		(start 1.5 1.5)
+		(end 1.5 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4cc2d8cd-d9a8-47a1-ae81-ed5dc0e80549")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "1d851f33-2ef7-4205-a6ec-73a54a3996b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -1.125 90)
+		(size 0.55 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2751e5c8-4168-461c-ba77-264d68aa709f")
+	)
+	(pad "2" smd rect
+		(at 0 1.125 90)
+		(size 0.55 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fd836854-87a1-401c-b266-8bf9c79a03ec")
+	)
+	(pad "3" smd rect
+		(at 0 0 90)
+		(size 1 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d22966fd-5bae-4835-858f-0c97b8dbda18")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Osram LJ CRBP.01/LJ_CRBP.01-JZLX-27-3A4A.stp"
+		(offset
+			(xyz 0 0 0.7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+)

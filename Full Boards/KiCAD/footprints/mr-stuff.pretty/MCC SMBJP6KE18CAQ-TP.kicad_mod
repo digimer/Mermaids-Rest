@@ -1,0 +1,190 @@
+(footprint "MCC SMBJP6KE18CAQ-TP"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "25.2V Clamp 23.8A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
+	(tags "TVS Diode (Bi-directional)")
+	(property "Reference" "REF**"
+		(at 0 -2.8 0)
+		(layer "F.SilkS")
+		(uuid "921b6071-ed1d-4363-b0ae-147b937ad6c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MCC SMBJP6KE18CAQ-TP"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8c82b565-828a-4f34-85a6-6c8bc96cbdc5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a68bd79-b960-4c46-b593-aa94b6e6c8ed")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "25.2V Clamp 23.8A Ipp Tvs Diode Surface Mount DO-214AA (SMB)"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "49dad07d-7c11-44c9-b04c-b4407689e3a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.668 1.81)
+		(end 2.668 1.81)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1e5de9b6-1f03-49e5-8a82-dfd84e823ce4")
+	)
+	(fp_line
+		(start 2.668 -1.81)
+		(end -2.668 -1.81)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3f98029e-98e3-4763-a451-b13f3acdc948")
+	)
+	(fp_line
+		(start -3.575 -2.22)
+		(end 3.575 -2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "277fefdb-8daf-4921-832a-aee084d5f9a3")
+	)
+	(fp_line
+		(start -3.575 2.22)
+		(end -3.575 -2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "85c85fd7-5904-408c-b79d-efe5728aee49")
+	)
+	(fp_line
+		(start 3.575 -2.22)
+		(end 3.575 2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "32e1533b-60fe-4841-b134-6e40570b7ce0")
+	)
+	(fp_line
+		(start 3.575 2.22)
+		(end -3.575 2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "261666ba-a197-440e-971e-f973a8b1f1bd")
+	)
+	(fp_line
+		(start -2.668 -1.81)
+		(end 2.668 -1.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1ea9546-51b3-4979-97f0-37b9ce70a600")
+	)
+	(fp_line
+		(start -2.668 1.81)
+		(end -2.668 -1.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "35083782-dacb-4982-9df0-821a90eaf10d")
+	)
+	(fp_line
+		(start 2.668 -1.81)
+		(end 2.668 1.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "37dde551-d96e-48e2-8159-912aa31f34d2")
+	)
+	(fp_line
+		(start 2.668 1.81)
+		(end -2.668 1.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8dbd23b2-075b-4a60-aa84-3fe56e9bc6da")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.05 0)
+		(layer "F.Fab")
+		(uuid "3c68130a-3efd-4911-a5ec-fe28def6c40e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.2 0 90)
+		(size 2.15 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9ecad30d-73ca-40bb-a97f-f76008e4cd3f")
+	)
+	(pad "2" smd rect
+		(at 2.2 0 90)
+		(size 2.15 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ee35cf47-0245-47cb-8985-13a34eeea5b0")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/MCC SMBJP6KE18CAQ-TP/SMBJP6KE18CAQ-TP.stp"
+		(offset
+			(xyz 6.74 -4.58 1.32)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 -0 -0)
+		)
+	)
+)

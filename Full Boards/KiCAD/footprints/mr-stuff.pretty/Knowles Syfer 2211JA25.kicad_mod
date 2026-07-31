@@ -1,0 +1,127 @@
+(footprint "Knowles Syfer 2211JA25"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9864452d-d84c-4895-8bb0-0ba95aab298e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Knowles Syfer 2211JA25"
+		(at 0 2.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "89f9080d-0e53-4dc2-a67e-561518e66c3f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3001/2211JA250102JKTSYX.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c176c065-7bd5-41b3-9d0f-3a6e02a52e0f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "1000 pF ±5% 250VAC Ceramic Capacitor C0G, NP0 (1B) 2211 (5728 Metric)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b11f3925-82c6-4cd9-9525-f0837353a96e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.431496 -1.5)
+		(end 1.4 -1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "38c0e8af-317a-452d-9838-10934c49dbf8")
+	)
+	(fp_line
+		(start -1.431496 1.5)
+		(end 1.4 1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "afce2220-c6c6-4ec6-bce6-b3029253b981")
+	)
+	(fp_rect
+		(start -3.25 -1.75)
+		(end 3.25 1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "47bb91bf-778c-4e48-91b2-f8ac77169b76")
+	)
+	(fp_rect
+		(start -2.5 -1.5)
+		(end 2.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7fcebae7-9f74-4882-9c3b-193237844907")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1e69d8ef-4997-4372-b696-31ef58dbb171")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.5 0)
+		(size 1.5 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "39223de7-7c41-46a9-bd3e-4de4951ad303")
+	)
+	(pad "2" smd roundrect
+		(at 2.5 0)
+		(size 1.5 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "b9582da8-cb9b-4d82-bcec-cd23abf8727d")
+	)
+	(embedded_fonts no)
+)

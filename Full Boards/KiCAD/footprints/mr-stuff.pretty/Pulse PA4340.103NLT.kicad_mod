@@ -1,0 +1,140 @@
+(footprint "Pulse PA4340.103NLT"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b3c43884-45d4-4c1a-a33c-c6b727242dbd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Pulse PA4340.103NLT"
+		(at 0 4.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "57569450-b83e-4c47-8d40-d6d1ed3decfe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/PA4340.103NLT"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bdd43b66-57a8-48db-b393-d66c1d4ea289")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "10 µH Shielded Molded Inductor 2.75 A 128mOhm Max Nonstandard"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9ec78ee-4636-428b-9dce-ee97d5af1607")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.25 -0.9)
+		(end -1.25 0.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b49465e8-683a-452d-ad24-8a337464dae2")
+	)
+	(fp_rect
+		(start -2.7 -3)
+		(end 2.7 3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "56d4064e-7f6f-4dc7-a8f6-407d5ab85534")
+	)
+	(fp_rect
+		(start 1.25 -0.9)
+		(end 3.25 0.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "cbf63d24-86fb-47bd-ac99-63fa96797f6c")
+	)
+	(fp_rect
+		(start -3.4 -3.2)
+		(end 3.4 3.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "fd5a5030-68d6-46b4-813c-abd476d562f5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 5.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5b10142b-05ca-49ab-856b-e3033c7b7621")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.25 0 90)
+		(size 1.8 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.05)
+		(uuid "2ab686c4-be21-4fe1-ac3c-c0f085fe6bc8")
+	)
+	(pad "2" smd roundrect
+		(at 2.25 0 90)
+		(size 1.8 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.05)
+		(uuid "c4ebc6c0-1ba7-44b4-89d0-c7a08a604825")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Pulse PA4340.103NLT/PA4340.103NLT.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

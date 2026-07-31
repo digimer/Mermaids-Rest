@@ -1,0 +1,143 @@
+(footprint "RCE5C1H104J2A2H03B"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "C**"
+		(at 0 -2.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "47696a68-2869-43e4-bdc5-16b751b0b3eb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "RCE5C1H104J2A2H03B"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "fddcc9d5-0db9-4a37-9b2c-f1cfbaece2fe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1a26fffd-8b83-42b9-ac69-75194b5d1a81")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fbd0e5be-8836-4e7e-9637-83fab50ecce8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2.75 -1.575)
+		(end 2.75 1.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "c1153001-593b-4a36-bbfa-d2042baf2575")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0d60ea0e-2dc7-4fa7-9dd0-9b0700ce7c7f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at -1.27 0)
+		(size 1.8 1.8)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.2)
+		(chamfer top_left)
+		(uuid "2bd4eaff-9e68-4b4d-b494-3626a0a43078")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0)
+		(size 1.8 1.8)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "467416b6-d8d4-4690-8c50-148f40dcdd3e")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.SilkS")
+		(uuid "edacaad3-f076-48cf-a5c6-166675f42f95")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads not_allowed)
+			(copperpour allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -2.75 -1.575) (xy 2.75 -1.575) (xy 2.75 1.625) (xy -2.75 1.625)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Murata RCE5C1H104J2A2H03B/RCE5C1H104J2A2H03B.step"
+		(offset
+			(xyz 0 0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

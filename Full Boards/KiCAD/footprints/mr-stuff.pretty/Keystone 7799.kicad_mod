@@ -1,0 +1,220 @@
+(footprint "Keystone 7799"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -3.56 -6.87 0)
+		(layer "F.SilkS")
+		(uuid "f2ea545e-9d8a-45e8-bcd4-63aedb30a1d5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Keystone 7799"
+		(at 1.52 6.87 0)
+		(layer "F.Fab")
+		(uuid "604def96-48c7-4b9c-8766-4d741b1b9c1b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b06a3f74-0f44-4020-bd2b-e9ed17b45e23")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c9d24b34-a853-41e4-a4dc-807b4494e66b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -6.44 -1.695)
+		(end -6.44 1.695)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "158fc079-d58c-4028-be7a-4dfcf6faf0d2")
+	)
+	(fp_line
+		(start 6.44 -1.695)
+		(end 6.44 1.695)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0438d6e8-c52f-4ed4-be2b-c68424617a08")
+	)
+	(fp_line
+		(start -6.735 -5.235)
+		(end -6.735 5.235)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8ed5e92c-387d-435a-9e2a-91b2724123be")
+	)
+	(fp_line
+		(start -6.735 5.235)
+		(end 6.735 5.235)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e01cf110-4799-4cea-83c2-02c93f9df7e4")
+	)
+	(fp_line
+		(start 6.735 -5.235)
+		(end -6.735 -5.235)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e3527dbd-76da-4d19-b895-3008e61240cd")
+	)
+	(fp_line
+		(start 6.735 5.235)
+		(end 6.735 -5.235)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "df749faf-e113-46c4-94cf-81c29f73c73b")
+	)
+	(fp_line
+		(start -6.44 -3.95)
+		(end -6.44 3.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c30ef62e-69bf-44b2-b877-383afd75b5cf")
+	)
+	(fp_line
+		(start -6.44 3.95)
+		(end 6.44 3.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a22a65ff-1631-4c14-bdc6-14a6bafafc33")
+	)
+	(fp_line
+		(start 6.44 -3.95)
+		(end -6.44 -3.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fb4c72de-6bbd-4be3-ad66-37ec373bf06b")
+	)
+	(fp_line
+		(start 6.44 3.95)
+		(end 6.44 -3.95)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f8426b47-5252-47cb-93c2-0b116fe30f53")
+	)
+	(pad "1" thru_hole circle
+		(at -5 -3.5)
+		(size 2.97 2.97)
+		(drill 1.98)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "11f6aff5-78b2-4d1a-a579-6377713fc0c7")
+	)
+	(pad "1" thru_hole circle
+		(at -5 3.5)
+		(size 2.97 2.97)
+		(drill 1.98)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "945d0b04-06b9-4c3e-b3ae-645cca394219")
+	)
+	(pad "1" thru_hole circle
+		(at 0 -3.5)
+		(size 2.97 2.97)
+		(drill 1.98)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "146843c0-3646-45ce-96a1-9e952578b12e")
+	)
+	(pad "1" thru_hole circle
+		(at 0 3.5)
+		(size 2.97 2.97)
+		(drill 1.98)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "b14bd9bd-8dca-49cb-bbef-9f59ac8b1cea")
+	)
+	(pad "1" thru_hole circle
+		(at 5 -3.5)
+		(size 2.97 2.97)
+		(drill 1.98)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "ccffc2c1-8cf1-4d29-9763-4173082a3f33")
+	)
+	(pad "1" thru_hole circle
+		(at 5 3.5)
+		(size 2.97 2.97)
+		(drill 1.98)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "f0cdd06d-c34a-4b8e-8e65-70bd9d7b1742")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Keystone Electronics 7799/7799.step"
+		(offset
+			(xyz 0.2 -3 1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -90)
+		)
+	)
+)
