@@ -11380,6 +11380,259 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:Conn_01x05_Pin_No_Pin_3"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05_Pin_No_Pin_3"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated"
+				(at -0.254 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x05_Pin_No_Pin_3_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:DA15_Pins_Stacked"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -33399,10 +33652,6 @@
 		(uuid "fff23e99-7f51-49ab-8f8f-e9f2fc93484c")
 	)
 	(no_connect
-		(at 257.81 118.11)
-		(uuid "011f7c9a-e879-4e02-9c35-64dd3d407e56")
-	)
-	(no_connect
 		(at 160.02 52.07)
 		(uuid "07b8123b-2ad1-47b8-a989-eec49d327fb2")
 	)
@@ -33425,10 +33674,6 @@
 	(no_connect
 		(at 317.5 274.32)
 		(uuid "36c5e8b7-69fc-4898-b247-c6b20e196d75")
-	)
-	(no_connect
-		(at 257.81 151.13)
-		(uuid "419b4ed6-e564-408f-b31e-b60bff492381")
 	)
 	(no_connect
 		(at 31.75 25.4)
@@ -33505,10 +33750,6 @@
 	(no_connect
 		(at 347.98 66.04)
 		(uuid "ead9fa88-40c7-4df4-969b-8ef91e5ce473")
-	)
-	(no_connect
-		(at 257.81 90.17)
-		(uuid "efec8ddd-f4c6-4a9d-a69e-72d729c12c5f")
 	)
 	(no_connect
 		(at 358.14 66.04)
@@ -88821,7 +89062,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Pin")
+		(lib_id "mr-parts:Conn_01x05_Pin_No_Pin_3")
 		(at 257.81 85.09 270)
 		(unit 1)
 		(body_style 1)
@@ -88832,7 +89073,7 @@
 		(dnp no)
 		(uuid "5ebe7734-b77a-4e5b-9a3b-b35a3a8ec765")
 		(property "Reference" "TP8"
-			(at 257.81 81.788 90)
+			(at 257.81 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -88842,7 +89083,7 @@
 			)
 		)
 		(property "Value" "N2K CAN"
-			(at 257.81 83.566 90)
+			(at 257.556 83.312 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -88851,7 +89092,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "mr-stuff:PinHeader_1x05_P2.54mm_Vertical_No_Pin_3"
 			(at 257.81 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -88874,7 +89115,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 257.81 85.09 0)
+			(at 247.65 84.836 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -88963,9 +89204,6 @@
 		)
 		(pin "1"
 			(uuid "a28d5e7b-a5ca-4337-98e4-3a1acb502bd5")
-		)
-		(pin "3"
-			(uuid "9c71eca4-8230-494d-a9e4-b3121505a084")
 		)
 		(pin "2"
 			(uuid "ba1fc1f3-2838-4f4a-b9e0-08f7e12e1970")
@@ -113009,7 +113247,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Pin")
+		(lib_id "mr-parts:Conn_01x05_Pin_No_Pin_3")
 		(at 257.81 146.05 270)
 		(unit 1)
 		(body_style 1)
@@ -113039,7 +113277,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "mr-stuff:PinHeader_1x05_P2.54mm_Vertical_No_Pin_3"
 			(at 257.81 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -113062,7 +113300,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 257.81 146.05 0)
+			(at 247.65 145.796 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -113151,9 +113389,6 @@
 		)
 		(pin "1"
 			(uuid "2fa89a34-53af-4c0a-a736-8f6754c1bb90")
-		)
-		(pin "3"
-			(uuid "a86e935c-faf0-42d3-9e7b-cbfca77d81ae")
 		)
 		(pin "2"
 			(uuid "cdad9ac7-337b-4902-94e5-09e1ab6f9bf7")
@@ -123917,7 +124152,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Pin")
+		(lib_id "mr-parts:Conn_01x05_Pin_No_Pin_3")
 		(at 257.81 113.03 270)
 		(unit 1)
 		(body_style 1)
@@ -123928,7 +124163,7 @@
 		(dnp no)
 		(uuid "bff40f89-a61f-43fb-be2a-22a645e028b1")
 		(property "Reference" "TP9"
-			(at 258.064 109.728 90)
+			(at 257.81 109.474 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -123938,7 +124173,7 @@
 			)
 		)
 		(property "Value" "M5KW CAN"
-			(at 257.81 111.76 90)
+			(at 257.81 111.506 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -123947,7 +124182,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "mr-stuff:PinHeader_1x05_P2.54mm_Vertical_No_Pin_3"
 			(at 257.81 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -123970,7 +124205,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 257.81 113.03 0)
+			(at 247.65 112.776 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124059,9 +124294,6 @@
 		)
 		(pin "1"
 			(uuid "9b7db075-4202-4df2-b215-e871bf0d9790")
-		)
-		(pin "3"
-			(uuid "c5d57194-313d-4561-a2f9-6ac115e24bb0")
 		)
 		(pin "2"
 			(uuid "a1bd3a4c-00e9-4956-b298-5877876a41db")
