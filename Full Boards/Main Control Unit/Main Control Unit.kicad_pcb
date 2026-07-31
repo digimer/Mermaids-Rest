@@ -5450,7 +5450,7 @@
 		(at 433.8 191.7 -90)
 		(tags "TPSMC27CA ")
 		(property "Reference" "TVS10"
-			(at 0 -4.2 270)
+			(at 0 -4.2 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "d39c8014-5da4-4582-aa71-c9df4a193ac8")
@@ -11114,7 +11114,7 @@
 		(uuid "15b7e004-099f-4d27-83fe-655c715348a2")
 		(at 390.3 292.8 -90)
 		(property "Reference" "C86"
-			(at 0 -2.6 270)
+			(at 0 -2.6 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "9f78997a-1d1e-4c4e-b324-5057fcb02d14")
@@ -35820,7 +35820,7 @@
 		(at 228.490001 275.809999 -90)
 		(tags "TPD2E2U06QDBZRQ1 ")
 		(property "Reference" "TVS33"
-			(at 2.650001 0 0)
+			(at 2.690001 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "820b7646-2aeb-4100-acca-f57374b39939")
@@ -57686,29 +57686,10 @@
 				)
 			)
 		)
-		(property "Part" "STM 1N5822RL"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "48f68d41-4fe6-4040-ac73-42fae8156990")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/735da24e-663a-401b-8880-fc62d3a1ff1b")
 		(sheetname "/")
 		(sheetfile "Main Control Unit.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -57904,8 +57885,8 @@
 		)
 		(pad "1" thru_hole rect
 			(at -7.9 0 270)
-			(size 2.25 2.25)
-			(drill 1.5)
+			(size 2.35 2.25)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+5V")
@@ -57916,8 +57897,8 @@
 		)
 		(pad "2" thru_hole circle
 			(at 7.9 0 270)
-			(size 2.25 2.25)
-			(drill 1.5)
+			(size 2.35 2.35)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J3-Pin_2)")
@@ -80966,29 +80947,10 @@
 				)
 			)
 		)
-		(property "Part" "STM 1N5822RL"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2f2e639c-3120-42b4-bb49-325ca0aab940")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/c0de7852-afa6-453a-885f-f66601b610ba")
 		(sheetname "/")
 		(sheetfile "Main Control Unit.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -81184,8 +81146,8 @@
 		)
 		(pad "1" thru_hole rect
 			(at -7.9 0 270)
-			(size 2.25 2.25)
-			(drill 1.5)
+			(size 2.35 2.25)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "V_RAW")
@@ -81196,8 +81158,8 @@
 		)
 		(pad "2" thru_hole circle
 			(at 7.9 0 270)
-			(size 2.25 2.25)
-			(drill 1.5)
+			(size 2.35 2.35)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q8-D)")
@@ -81228,7 +81190,7 @@
 			(at -5.800001 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "f8dc66e5-abe4-4211-9d67-7518f834e460")
+			(uuid "62f99deb-1416-4671-9630-b1d3fd91657b")
 			(effects
 				(font
 					(size 1 1)
@@ -81240,7 +81202,7 @@
 			(at 0 10.95 270)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "a8ac4e88-5922-4e77-80f1-036feea15cbc")
+			(uuid "fc3252f3-d70a-4628-b2cf-941f7bacf286")
 			(effects
 				(font
 					(size 1 1)
@@ -81252,7 +81214,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d6b440d4-e02f-4ea1-9bd8-e968b6b9de52")
+			(uuid "84393279-4fb3-4a07-b765-7f5fb0a10e75")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -81263,7 +81225,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8add3984-fbc0-437d-a080-ae63e17e075d")
+			(uuid "2016f40f-44ae-450d-a548-0f38585a0ebf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -82918,7 +82880,7 @@
 		(uuid "a6beb07b-ff2c-448a-bb46-337129562ef7")
 		(at 350.5 286.4 -90)
 		(property "Reference" "C85"
-			(at 0 -2.6 270)
+			(at 0 -2.6 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "be83bc7c-fee2-4ad5-a495-a869e155bb44")
@@ -94150,29 +94112,10 @@
 				)
 			)
 		)
-		(property "Part" "STM 1N5822RL"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "14a2f3ac-fe37-4f05-aeb1-952ba51da86d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/baf97379-bd0f-40d7-a298-356367124583")
 		(sheetname "/")
 		(sheetfile "Main Control Unit.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -94368,8 +94311,8 @@
 		)
 		(pad "1" thru_hole rect
 			(at -7.9 0 270)
-			(size 2.25 2.25)
-			(drill 1.5)
+			(size 2.35 2.25)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "V_RAW")
@@ -94380,8 +94323,8 @@
 		)
 		(pad "2" thru_hole circle
 			(at 7.9 0 270)
-			(size 2.25 2.25)
-			(drill 1.5)
+			(size 2.35 2.35)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q7-D)")
@@ -120013,7 +119956,7 @@
 		(uuid "e30b1266-3f95-42eb-a24b-0658d77cbdeb")
 		(at 221.3 115.6 180)
 		(property "Reference" "SD1"
-			(at -0.1 -3.6 180)
+			(at 0 -3.6 180)
 			(layer "F.SilkS")
 			(uuid "d6b4e8bc-45a6-4563-aac5-26603a850769")
 			(effects
@@ -120056,29 +119999,10 @@
 				)
 			)
 		)
-		(property "Part" "STM 1N5822RL"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "489f0c18-42c7-4611-91ab-301eb1ca0dd9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/bd70ed42-fa03-4ce6-9683-377a07d33e55")
 		(sheetname "/")
 		(sheetfile "Main Control Unit.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -120274,8 +120198,8 @@
 		)
 		(pad "1" thru_hole rect
 			(at -7.9 0 180)
-			(size 2.25 2.25)
-			(drill 1.5)
+			(size 2.35 2.25)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "V_RAW")
@@ -120286,8 +120210,8 @@
 		)
 		(pad "2" thru_hole circle
 			(at 7.9 0 180)
-			(size 2.25 2.25)
-			(drill 1.5)
+			(size 2.35 2.35)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(SD1-A)")
@@ -153429,6 +153353,66 @@
 			(justify left top)
 		)
 	)
+	(gr_text "N2K Low"
+		(at 186.5 119.5 90)
+		(layer "F.SilkS")
+		(uuid "cc310a4b-6e5d-4a9a-ace6-e7054f5a0c30")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "N2K High"
+		(at 191.5 119.9 90)
+		(layer "F.SilkS")
+		(uuid "febc8841-9475-4fc2-a1ce-a1c353ffb000")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "Ground"
+		(at 196.5 118.1 90)
+		(layer "F.SilkS")
+		(uuid "00e4cb9f-12c9-40b2-aaf6-d7eac04bbd04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "+12V"
+		(at 201.5 117 90)
+		(layer "F.SilkS")
+		(uuid "9844d4df-8278-4493-bd7c-aebc354e7ef2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "Shield"
+		(at 206.4 117.4 90)
+		(layer "F.SilkS")
+		(uuid "70fa54c6-3172-42cf-9921-68424c7c7e6f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
 	(gr_text "Multiplex"
 		(at 223.7 247.5 90)
 		(layer "F.SilkS")
@@ -153499,66 +153483,6 @@
 				(thickness 0.15)
 			)
 			(justify top)
-		)
-	)
-	(gr_text "N2K Low"
-		(at 187.5 112.5 270)
-		(layer "F.SilkS")
-		(uuid "cc310a4b-6e5d-4a9a-ace6-e7054f5a0c30")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left top)
-		)
-	)
-	(gr_text "N2K High"
-		(at 192.5 112.7 270)
-		(layer "F.SilkS")
-		(uuid "febc8841-9475-4fc2-a1ce-a1c353ffb000")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left top)
-		)
-	)
-	(gr_text "Ground"
-		(at 197.6 112.6 270)
-		(layer "F.SilkS")
-		(uuid "00e4cb9f-12c9-40b2-aaf6-d7eac04bbd04")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left top)
-		)
-	)
-	(gr_text "+12V"
-		(at 202.6 112.7 270)
-		(layer "F.SilkS")
-		(uuid "9844d4df-8278-4493-bd7c-aebc354e7ef2")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left top)
-		)
-	)
-	(gr_text "Shield"
-		(at 207.5 112.7 270)
-		(layer "F.SilkS")
-		(uuid "70fa54c6-3172-42cf-9921-68424c7c7e6f")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left top)
 		)
 	)
 	(gr_text "Muirgen - Main Control Unit\nv1.6.7 - Prototype - 01\n© The Digital Mermaid - 2026"
