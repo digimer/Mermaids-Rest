@@ -6,7 +6,7 @@
 	(paper "User" 560 540)
 	(title_block
 		(title "Main Control Unit")
-		(date "2026-07-29")
+		(date "2026-07-30")
 		(rev "1.6.8")
 		(company "The Digital Mermaid")
 	)
@@ -30265,6 +30265,16 @@
 		)
 		(uuid "25b898c8-b0be-4fa0-aa72-f4e716709908")
 	)
+	(text "Alarm LED A"
+		(exclude_from_sim no)
+		(at 284.48 468.122 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "262cdec5-aab7-4d69-a11d-a8dae3e5317a")
+	)
 	(text "A0: 0x60"
 		(exclude_from_sim no)
 		(at 57.404 264.414 0)
@@ -30626,17 +30636,6 @@
 		)
 		(uuid "5bc9e96b-4bf5-449f-912f-63d0ebe1aa2f")
 	)
-	(text "-=] DA2 - Bottom\n16. \n17. \n18. \n19. \n20. \n21. \n22. \n23. \n24. \n25. \n26. \n27. \n28. \n29. \n30. "
-		(exclude_from_sim no)
-		(at 231.902 569.468 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "5be11d89-0935-4d03-87ac-51881050cce5")
-	)
 	(text "5KW Speed High LED C"
 		(exclude_from_sim no)
 		(at 94.9007 412.0267 0)
@@ -30929,16 +30928,15 @@
 		)
 		(uuid "a6f4b228-4e85-4f49-b94a-fbfb182b5040")
 	)
-	(text "-=] DA2 - Top\n 1. 5KW Low Switch Out\n 2. 5KW Canbus Low\n 3. 5KW Canbus High\n 4. 5KW \n 5. \n 6. \n 7. \n 8. \n 9. \n10. \n11. \n12. \n13. \n14. \n15. "
+	(text "Alarm LED C"
 		(exclude_from_sim no)
-		(at 231.902 534.67 0)
+		(at 284.734 465.582 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left top)
 		)
-		(uuid "a741da94-0f67-4c55-a644-64e6fa567aa9")
+		(uuid "a77f0d28-c22d-4a63-9514-86ef0e36f7e4")
 	)
 	(text "LCD Display"
 		(exclude_from_sim no)
@@ -30949,17 +30947,6 @@
 			)
 		)
 		(uuid "a9fd3bc3-1ba7-4eb3-a398-df2d15e65a06")
-	)
-	(text "-=] DE3\n1. Pump On In\n2. Pump Off In\n3. LED A - Pump On\n4. LED A - Pump Auto\n5. LED A - Pump Off\n6. Ground\n7. LED K - Pump On\n8. LED K - Pump Auto\n9. LED K - Pump Off\n"
-		(exclude_from_sim no)
-		(at 314.706 534.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "abd3c929-c635-400e-85be-bfec1ca484fc")
 	)
 	(text "10KW Speed Low LED C"
 		(exclude_from_sim no)
@@ -31167,6 +31154,16 @@
 		)
 		(uuid "c6ed0a88-15cd-4d98-9c85-c380bcbd3372")
 	)
+	(text "Motor Comms Lost LED A"
+		(exclude_from_sim no)
+		(at 291.338 508.508 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c7167822-bf43-4615-bc8b-9cfa7673e928")
+	)
 	(text "MCU"
 		(exclude_from_sim no)
 		(at 16.256 78.232 0)
@@ -31218,17 +31215,6 @@
 			(justify left top)
 		)
 		(uuid "c8f8b50c-8041-40d3-92da-8c3036b156f4")
-	)
-	(text "-=] DE1\n1. nc\n2. RS-232 Rx\n3. RS-232 Tx\n4. nc\n5. Ground\n6. nc\n7. nc\n8. nc\n9. nc\n"
-		(exclude_from_sim no)
-		(at 345.694 534.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "ca3abfa2-1b5b-45f9-9a8c-89c780b30efe")
 	)
 	(text "To BII1, Pin 12"
 		(exclude_from_sim no)
@@ -31466,6 +31452,16 @@
 		)
 		(uuid "ed656ff6-9560-414f-9baf-b7451cddfdaa")
 	)
+	(text "Motor Comms Lost LED C"
+		(exclude_from_sim no)
+		(at 291.338 505.968 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "efc0e68f-12fb-4fbd-affc-9f657a8cb19c")
+	)
 	(text "Pos."
 		(exclude_from_sim no)
 		(at 368.3 180.594 0)
@@ -31475,17 +31471,6 @@
 			)
 		)
 		(uuid "f0dc750e-eebd-4ec9-bb99-a65134e209f0")
-	)
-	(text "-=] DA1 - Top\n 1. 5KW Low Switch Out\n 2. 5KW Canbus Low\n 3. 5KW Canbus High\n 4. 5KW \n 5. \n 6. \n 7. \n 8. \n 9. \n10. \n11. \n12. \n13. \n14. \n15. "
-		(exclude_from_sim no)
-		(at 127.508 534.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "f1415d7f-977a-457b-af19-c72a4c10a1ed")
 	)
 	(text "5KW Speed Mid LED A"
 		(exclude_from_sim no)
@@ -31570,17 +31555,6 @@
 			)
 		)
 		(uuid "fe0028c7-3e5f-4bd9-bf21-c4e6f5889634")
-	)
-	(text "-=] DA1 - Bottom\n16. \n17. \n18. \n19. \n20. \n21. \n22. \n23. \n24. \n25. \n26. \n27. \n28. \n29. \n30. "
-		(exclude_from_sim no)
-		(at 127.508 569.468 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "fef5b960-6f9a-44bb-8e96-60070c970388")
 	)
 	(text "Alarm Silence LED C"
 		(exclude_from_sim no)
@@ -33853,10 +33827,6 @@
 		(uuid "011f7c9a-e879-4e02-9c35-64dd3d407e56")
 	)
 	(no_connect
-		(at 270.51 466.09)
-		(uuid "07582402-4328-4d0c-b826-8bf8953ea8ff")
-	)
-	(no_connect
 		(at 160.02 52.07)
 		(uuid "07b8123b-2ad1-47b8-a989-eec49d327fb2")
 	)
@@ -33897,10 +33867,6 @@
 		(uuid "5abf5cf3-a2d7-4a69-92ee-3b5f820fa0e6")
 	)
 	(no_connect
-		(at 270.51 509.27)
-		(uuid "5adb7484-3105-4d64-8390-06911187f21f")
-	)
-	(no_connect
 		(at 317.5 256.54)
 		(uuid "6866b3f7-5df7-4c73-9c3d-9e09761266d3")
 	)
@@ -33917,16 +33883,8 @@
 		(uuid "6bffecd4-759c-4552-af3a-7e7a408c90e0")
 	)
 	(no_connect
-		(at 368.3 499.11)
-		(uuid "6cb700bf-37ab-4da0-9848-6d842172b93c")
-	)
-	(no_connect
 		(at 259.08 344.17)
 		(uuid "707ad680-2c84-4894-adc7-0bc0994d96e9")
-	)
-	(no_connect
-		(at 389.89 499.11)
-		(uuid "7c6f1d79-57ed-46c1-996c-ada2533d20c0")
 	)
 	(no_connect
 		(at 317.5 259.08)
@@ -33937,20 +33895,12 @@
 		(uuid "8a976c33-fd63-4ba5-96f6-942b82326627")
 	)
 	(no_connect
-		(at 270.51 468.63)
-		(uuid "8c5071ef-a1cb-4da2-8935-6fef3503b622")
-	)
-	(no_connect
 		(at 265.43 151.13)
 		(uuid "921fff62-8f00-4b26-8f5f-0214ed47a5bb")
 	)
 	(no_connect
 		(at 336.55 243.84)
 		(uuid "a2691dc8-2b40-47f8-a8b7-b038d70be34f")
-	)
-	(no_connect
-		(at 373.38 499.11)
-		(uuid "ab8a63d7-4f50-43ec-9560-2f81631be6a9")
 	)
 	(no_connect
 		(at 265.43 90.17)
@@ -33961,20 +33911,12 @@
 		(uuid "bb59d19d-cff9-4c67-882b-6bdd9889d66a")
 	)
 	(no_connect
-		(at 270.51 506.73)
-		(uuid "bf9506fc-f9d5-4d97-a844-5325b1a310a0")
-	)
-	(no_connect
 		(at 166.37 486.41)
 		(uuid "c3fe6119-60ed-4e83-ba22-17b45fff7445")
 	)
 	(no_connect
 		(at 163.83 29.21)
 		(uuid "c6693359-5d71-4f88-8fb6-adf7d87a8f73")
-	)
-	(no_connect
-		(at 384.81 499.11)
-		(uuid "ccfd6438-eca4-4e63-8626-081bc8cb7fdd")
 	)
 	(no_connect
 		(at 317.5 271.78)
@@ -34257,6 +34199,16 @@
 			(type default)
 		)
 		(uuid "02b9bc30-7487-4692-8b58-23470d9a99c2")
+	)
+	(wire
+		(pts
+			(xy 365.76 499.11) (xy 368.3 499.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02cc2add-aee7-49fc-98da-77c25b6fe06e")
 	)
 	(wire
 		(pts
@@ -35050,7 +35002,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 471.17) (xy 270.51 471.17)
+			(xy 299.72 471.17) (xy 270.51 471.17)
 		)
 		(stroke
 			(width 0)
@@ -35167,6 +35119,16 @@
 			(type default)
 		)
 		(uuid "11c72051-4d2b-4323-bddf-24a48a2f89b6")
+	)
+	(wire
+		(pts
+			(xy 382.27 499.11) (xy 384.81 499.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11ccbb20-4b96-447e-83a6-5bca96674c19")
 	)
 	(wire
 		(pts
@@ -35820,6 +35782,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 509.27) (xy 273.05 509.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a4c2c01-5bba-4a42-b9cc-489ae9f726fc")
+	)
+	(wire
+		(pts
 			(xy 88.9 26.67) (xy 88.9 25.4)
 		)
 		(stroke
@@ -36140,7 +36112,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 468.63) (xy 300.99 468.63)
+			(xy 299.72 468.63) (xy 302.26 468.63)
 		)
 		(stroke
 			(width 0)
@@ -38050,6 +38022,16 @@
 	)
 	(wire
 		(pts
+			(xy 373.38 499.11) (xy 375.92 499.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3825c14b-2bbe-495e-a941-3f6a700c1afb")
+	)
+	(wire
+		(pts
 			(xy 176.53 256.54) (xy 176.53 259.08)
 		)
 		(stroke
@@ -38267,6 +38249,16 @@
 			(type default)
 		)
 		(uuid "3c24a2cb-20f7-4e61-83f3-08d3d4597f2b")
+	)
+	(wire
+		(pts
+			(xy 270.51 468.63) (xy 273.05 468.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c956fbd-b1dc-4a95-be25-421d82a3678c")
 	)
 	(wire
 		(pts
@@ -40037,6 +40029,16 @@
 			(type default)
 		)
 		(uuid "548ccc79-2bd2-4740-a5c8-329b9814b91d")
+	)
+	(wire
+		(pts
+			(xy 270.51 466.09) (xy 273.05 466.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54cee668-caa2-47a5-87e9-017bb4ede6b9")
 	)
 	(wire
 		(pts
@@ -42600,7 +42602,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 463.55) (xy 292.1 463.55)
+			(xy 270.51 463.55) (xy 302.26 463.55)
 		)
 		(stroke
 			(width 0)
@@ -45340,7 +45342,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 468.63) (xy 273.05 471.17)
+			(xy 299.72 468.63) (xy 299.72 471.17)
 		)
 		(stroke
 			(width 0)
@@ -46757,6 +46759,16 @@
 			(type default)
 		)
 		(uuid "b3f0a014-7dbb-48ad-8c96-e335d61fbd01")
+	)
+	(wire
+		(pts
+			(xy 389.89 499.11) (xy 392.43 499.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3f935e4-7fb1-4bdd-9991-7f383731ae4f")
 	)
 	(wire
 		(pts
@@ -48267,6 +48279,16 @@
 			(type default)
 		)
 		(uuid "c7e1e527-7388-4a0d-aa8c-63f5e35dfb50")
+	)
+	(wire
+		(pts
+			(xy 270.51 506.73) (xy 273.05 506.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7f2d26f-7082-4b30-a978-e7b2c875ab23")
 	)
 	(wire
 		(pts
@@ -52088,6 +52110,16 @@
 		)
 		(uuid "03fbbd1d-645c-4736-b1d0-965bae09d6b3")
 	)
+	(label "CA9"
+		(at 273.05 468.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0432323a-f70e-4717-8c48-1e3e76a7cbc2")
+	)
 	(label "M5KW_CANBUS_HIGH"
 		(at 262.89 120.65 270)
 		(effects
@@ -53668,6 +53700,16 @@
 		)
 		(uuid "5a4b3f42-bb10-4129-972a-3487cf25f72f")
 	)
+	(label "CA8"
+		(at 273.05 509.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d059799-2779-4d58-9986-5e788258e3df")
+	)
 	(label "CA9"
 		(at 455.93 168.91 0)
 		(effects
@@ -55068,6 +55110,16 @@
 		)
 		(uuid "a0b2aa5e-e319-4c03-b32d-8d58d4b70b8a")
 	)
+	(label "CA8"
+		(at 273.05 466.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a22f773e-c40d-443a-9a8c-2fce72605dc1")
+	)
 	(label "CB5"
 		(at 491.49 88.9 0)
 		(effects
@@ -55647,6 +55699,16 @@
 			(justify right bottom)
 		)
 		(uuid "c33fe5ff-5912-422c-968b-7512d2c9c69d")
+	)
+	(label "CA9"
+		(at 273.05 506.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4f2798c-1127-401d-af18-1811593de8f8")
 	)
 	(label "KEY_SWITCH_IN_PLUG"
 		(at 480.06 269.24 180)
@@ -94639,7 +94701,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6c2d849a-26fe-49b2-a0b8-2fd5780d0913")
-		(property "Reference" "DE3"
+		(property "Reference" "DE2"
 			(at 321.31 484.632 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -94739,7 +94801,7 @@
 		(instances
 			(project "Main Control Unit"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "DE3")
+					(reference "DE2")
 					(unit 1)
 				)
 			)
@@ -97324,7 +97386,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Pin")
+		(lib_id "Connector:Conn_01x03_Pin")
 		(at 370.84 494.03 270)
 		(unit 1)
 		(body_style 1)
@@ -97345,7 +97407,7 @@
 			)
 		)
 		(property "Value" "Throttle Pot"
-			(at 370.84 492.506 90)
+			(at 370.586 492.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -97354,7 +97416,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 370.84 494.03 0)
 			(hide yes)
 			(show_name no)
@@ -97376,7 +97438,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x05, script generated"
+		(property "Description" "Generic connector, single row, 01x03, script generated"
 			(at 370.84 494.03 0)
 			(hide yes)
 			(show_name no)
@@ -97472,12 +97534,6 @@
 		)
 		(pin "2"
 			(uuid "70a69ca3-5f60-41f1-a4e9-fc1f5514def6")
-		)
-		(pin "4"
-			(uuid "7cc57aa4-86fc-41fa-b995-4d5a4c175555")
-		)
-		(pin "5"
-			(uuid "c407b68e-6281-434a-975f-1668e41a97d4")
 		)
 		(instances
 			(project "Main Control Unit"
@@ -100068,7 +100124,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 292.1 463.55 0)
+		(at 302.26 463.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -100078,7 +100134,7 @@
 		(dnp no)
 		(uuid "77a360e0-79f9-4eec-9dd0-3e823b17012c")
 		(property "Reference" "#PWR0206"
-			(at 292.1 469.9 0)
+			(at 302.26 469.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -100089,7 +100145,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 295.148 463.804 0)
+			(at 302.26 467.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -100099,7 +100155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 292.1 463.55 0)
+			(at 302.26 463.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -100110,7 +100166,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 292.1 463.55 0)
+			(at 302.26 463.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -100121,7 +100177,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 292.1 463.55 0)
+			(at 302.26 463.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -126284,7 +126340,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Pin")
+		(lib_id "Connector:Conn_01x03_Pin")
 		(at 387.35 494.03 270)
 		(unit 1)
 		(body_style 1)
@@ -126314,7 +126370,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 387.35 494.03 0)
 			(hide yes)
 			(show_name no)
@@ -126336,7 +126392,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x05, script generated"
+		(property "Description" "Generic connector, single row, 01x03, script generated"
 			(at 387.35 494.03 0)
 			(hide yes)
 			(show_name no)
@@ -126432,12 +126488,6 @@
 		)
 		(pin "2"
 			(uuid "2f7d3b94-19e5-4750-8037-80e997daeca5")
-		)
-		(pin "4"
-			(uuid "74215040-c080-4388-a3d1-35bc264e7bb7")
-		)
-		(pin "5"
-			(uuid "fd777d23-eb1b-4cd1-8015-5e04dac3e17d")
 		)
 		(instances
 			(project "Main Control Unit"
@@ -133124,7 +133174,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 300.99 468.63 0)
+		(at 302.26 468.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -133134,7 +133184,7 @@
 		(dnp no)
 		(uuid "d8d5aa5d-c646-4b5b-9e26-f44c7aa5697a")
 		(property "Reference" "#PWR0208"
-			(at 300.99 474.98 0)
+			(at 302.26 474.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -133145,7 +133195,7 @@
 			)
 		)
 		(property "Value" "GND_SH15F"
-			(at 300.99 472.44 0)
+			(at 301.244 472.694 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -133155,7 +133205,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 300.99 468.63 0)
+			(at 302.26 468.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -133166,7 +133216,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 300.99 468.63 0)
+			(at 302.26 468.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -133177,7 +133227,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 300.99 468.63 0)
+			(at 302.26 468.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
