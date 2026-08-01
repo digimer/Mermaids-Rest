@@ -8086,7 +8086,7 @@
 		)
 		(uuid "8d278324-6fa4-4e95-b1cf-4a97817ec883")
 	)
-	(text "Configs:\nch0: A, ch1: A - R20 = 0R\nch0: A, ch1: B - R20 = 4.7KR\nch0: B, ch1: A - R20 = 10KR\nch0: B, ch1: B - R20 = DNP\n\nA: 5V, 5A rapid response, buck only (Raspberry Pi)\nB: Slower response, full range (General Purpose)\n\nSee compensation network notes"
+	(text "Configs:\nch0: A, ch1: A - R25 = 0R\nch0: A, ch1: B - R25 = 4.7KR\nch0: B, ch1: A - R25 = 10KR\nch0: B, ch1: B - R25 = DNP\n\nA: 5V, 5A rapid response, buck only (Raspberry Pi)\nB: Slower response, full range (General Purpose)\n\nSee compensation network notes"
 		(exclude_from_sim no)
 		(at 291.846 200.914 0)
 		(effects
@@ -8756,12 +8756,6 @@
 		(uuid "8561b789-dc8f-482e-8765-f8f19b2e05cd")
 	)
 	(junction
-		(at 276.86 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "878d65a0-eeeb-40cf-8d53-2dad5137c403")
-	)
-	(junction
 		(at 60.96 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8832,6 +8826,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "91aa36ac-8a77-400f-ba68-6dc0cd359bb0")
+	)
+	(junction
+		(at 283.21 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91e98bd3-b1d4-4953-bfa7-064b161b2f4a")
 	)
 	(junction
 		(at 298.45 87.63)
@@ -8994,12 +8994,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2ab5a87-50d9-4a2c-8381-018fbedfa9ce")
-	)
-	(junction
-		(at 284.48 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b473ac79-6eeb-4a34-b52d-cd5a8ab6beef")
 	)
 	(junction
 		(at 25.4 171.45)
@@ -9234,12 +9228,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dbc2f144-a2e1-4384-933d-380da5199d53")
-	)
-	(junction
-		(at 276.86 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc4252d5-2146-4805-b26e-a21024045624")
 	)
 	(junction
 		(at 314.96 60.96)
@@ -10861,6 +10849,16 @@
 	)
 	(wire
 		(pts
+			(xy 283.21 82.55) (xy 298.45 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35eb1b6c-ad39-4b29-ba90-51600df8f8b1")
+	)
+	(wire
+		(pts
 			(xy 227.33 17.78) (xy 223.52 17.78)
 		)
 		(stroke
@@ -12041,7 +12039,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 82.55) (xy 284.48 82.55)
+			(xy 275.59 82.55) (xy 283.21 82.55)
 		)
 		(stroke
 			(width 0)
@@ -12981,7 +12979,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 82.55) (xy 260.35 81.28)
+			(xy 275.59 90.17) (xy 275.59 82.55)
 		)
 		(stroke
 			(width 0)
@@ -13011,7 +13009,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 90.17) (xy 270.51 90.17)
+			(xy 283.21 91.44) (xy 283.21 90.17)
 		)
 		(stroke
 			(width 0)
@@ -13558,16 +13556,6 @@
 			(type default)
 		)
 		(uuid "912d9891-79ff-4c6a-8f29-a870f46cf6ef")
-	)
-	(wire
-		(pts
-			(xy 260.35 82.55) (xy 276.86 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "914a2984-52bd-4784-b7d7-be668fe1d445")
 	)
 	(wire
 		(pts
@@ -14701,16 +14689,6 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 82.55) (xy 298.45 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1d0e208-f347-469f-b9d7-289b4fde0fbf")
-	)
-	(wire
-		(pts
 			(xy 295.91 100.33) (xy 298.45 100.33)
 		)
 		(stroke
@@ -15068,6 +15046,16 @@
 			(type default)
 		)
 		(uuid "d1f440d9-5fcf-4d96-8825-20b2cf887780")
+	)
+	(wire
+		(pts
+			(xy 275.59 90.17) (xy 271.78 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d347ae98-7809-41c6-b3c8-88aa6ba1294f")
 	)
 	(wire
 		(pts
@@ -15528,16 +15516,6 @@
 			(type default)
 		)
 		(uuid "e7234ae4-3013-490c-96e3-c648a37954cc")
-	)
-	(wire
-		(pts
-			(xy 284.48 90.17) (xy 276.86 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e75b2fa4-defe-45be-9af5-473139cedef2")
 	)
 	(wire
 		(pts
@@ -20075,87 +20053,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 276.86 86.36 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "29a15867-24b4-4260-a060-8cd9d563422f")
-		(property "Reference" "C34"
-			(at 275.844 84.074 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1μF"
-			(at 275.59 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Kyocera AVX 08051A0R8CAT2A"
-			(at 275.8948 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf"
-			(at 276.86 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 276.86 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "dbd45a72-4703-4f50-b86c-4f131d34c265")
-		)
-		(pin "1"
-			(uuid "01035252-c48d-4bea-8d85-d7a461b0380e")
-		)
-		(instances
-			(project "USB-C PD x2"
-				(path "/5152699f-c39d-4ac5-8e07-bebed783643b"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 157.48 171.45 90)
 		(unit 1)
@@ -22987,7 +22884,7 @@
 				)
 			)
 		)
-		(property "Value" "Infineon IAUC120N04S6L008ATMA1"
+		(property "Value" "IAUC120N04S6L008ATMA1"
 			(at 109.474 24.384 0)
 			(hide yes)
 			(show_name no)
@@ -22999,7 +22896,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "mr-stuff:Infineon IAUC120N06S5N017ATMA1"
+		(property "Footprint" "mr-stuff:Infineon IAUC120N04S6L008ATMA1"
 			(at 76.2 -58.09 0)
 			(hide yes)
 			(show_name no)
@@ -23158,7 +23055,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 260.35 81.28 0)
+		(at 271.78 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23168,7 +23065,7 @@
 		(dnp no)
 		(uuid "50b3fea9-cc5e-460d-843f-a54c2bd03b1b")
 		(property "Reference" "TP11"
-			(at 258.826 76.2 0)
+			(at 269.748 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23179,7 +23076,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 262.89 79.2479 0)
+			(at 274.32 88.1379 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23191,7 +23088,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
-			(at 265.43 81.28 0)
+			(at 276.86 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23202,7 +23099,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 265.43 81.28 0)
+			(at 276.86 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23213,7 +23110,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 260.35 81.28 0)
+			(at 271.78 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26374,7 +26271,7 @@
 	)
 	(symbol
 		(lib_id "power:-BATT")
-		(at 270.51 90.17 180)
+		(at 283.21 91.44 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26384,7 +26281,7 @@
 		(dnp no)
 		(uuid "79208776-190c-42ec-a4e7-29405a018842")
 		(property "Reference" "#PWR062"
-			(at 270.51 86.36 0)
+			(at 283.21 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26395,7 +26292,7 @@
 			)
 		)
 		(property "Value" "-BATT"
-			(at 270.51 93.98 0)
+			(at 283.21 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26405,7 +26302,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 270.51 90.17 0)
+			(at 283.21 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26416,7 +26313,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 270.51 90.17 0)
+			(at 283.21 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26427,7 +26324,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 270.51 90.17 0)
+			(at 283.21 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28227,7 +28124,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-68-1EP_8x8mm_P0.4mm_EP5.2x5.2mm_ThermalVias"
+		(property "Footprint" "mr-stuff:Infineon CYPD727x"
 			(at 339.344 156.718 0)
 			(hide yes)
 			(show_name no)
@@ -28685,8 +28582,19 @@
 				)
 			)
 		)
-		(property "Description" "560112132040 1% 0.25W"
+		(property "Description" "1.5 MOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thick Film"
 			(at 27.94 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Wurth 560112132040"
+			(at 27.94 44.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32614,7 +32522,7 @@
 				)
 			)
 		)
-		(property "Value" "2mR"
+		(property "Value" "1.5mR"
 			(at 88.646 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32624,7 +32532,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Vishay WSLP"
+		(property "Footprint" "mr-stuff:Vishay WSLF2512"
 			(at 84.582 68.58 90)
 			(hide yes)
 			(show_name no)
@@ -32635,7 +32543,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-PK_51_ROHS_L"
+		(property "Datasheet" "https://www.vishay.com/docs/30193/wslf.pdf"
 			(at 86.36 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -32646,7 +32554,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 0.002 OHM 1% 5W 2512"
+		(property "Description" "RES 0.0015 OHM 1% 6W 2512"
 			(at 86.36 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -32657,7 +32565,7 @@
 				)
 			)
 		)
-		(property "Part" "Yageo PK2512FKF570R002L"
+		(property "Part" "Vishay WSLF25121L500FEA"
 			(at 86.36 68.58 90)
 			(hide yes)
 			(show_name no)
@@ -33297,7 +33205,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 284.48 86.36 0)
+		(at 283.21 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33307,7 +33215,7 @@
 		(dnp no)
 		(uuid "cc2a43bb-eac7-4bea-ad3e-ed5d613d12b2")
 		(property "Reference" "C35"
-			(at 280.162 84.074 0)
+			(at 278.892 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33318,7 +33226,7 @@
 			)
 		)
 		(property "Value" "0.1μF"
-			(at 278.384 88.9 0)
+			(at 277.114 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33329,7 +33237,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Kyocera AVX 08051A0R8CAT2A"
-			(at 285.4452 90.17 0)
+			(at 284.1752 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33340,7 +33248,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf"
-			(at 284.48 86.36 0)
+			(at 283.21 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33351,7 +33259,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 284.48 86.36 0)
+			(at 283.21 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
