@@ -8086,7 +8086,7 @@
 		)
 		(uuid "8d278324-6fa4-4e95-b1cf-4a97817ec883")
 	)
-	(text "Configs:\nch0: A, ch1: A - R20 = 0R\nch0: A, ch1: B - R20 = 4.7KR\nch0: B, ch1: A - R20 = 10KR\nch0: B, ch1: B - R20 = DNP\n\nA: 5V, 5A rapid response, buck only (Raspberry Pi)\nB: Slower response, full range (General Purpose)\n\nSee compensation network notes"
+	(text "Configs:\nch0: A, ch1: A - R25 = 0R\nch0: A, ch1: B - R25 = 4.7KR\nch0: B, ch1: A - R25 = 10KR\nch0: B, ch1: B - R25 = DNP\n\nA: 5V, 5A rapid response, buck only (Raspberry Pi)\nB: Slower response, full range (General Purpose)\n\nSee compensation network notes"
 		(exclude_from_sim no)
 		(at 291.846 200.914 0)
 		(effects
@@ -32625,7 +32625,7 @@
 				)
 			)
 		)
-		(property "Value" "2mR"
+		(property "Value" "1.5mR"
 			(at 88.646 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32635,7 +32635,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Vishay WSLP"
+		(property "Footprint" "mr-stuff:Vishay WSLF2512"
 			(at 84.582 68.58 90)
 			(hide yes)
 			(show_name no)
@@ -32646,7 +32646,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-PK_51_ROHS_L"
+		(property "Datasheet" "https://www.vishay.com/docs/30193/wslf.pdf"
 			(at 86.36 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -32657,7 +32657,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 0.002 OHM 1% 5W 2512"
+		(property "Description" "RES 0.0015 OHM 1% 6W 2512"
 			(at 86.36 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -32668,7 +32668,7 @@
 				)
 			)
 		)
-		(property "Part" "Yageo PK2512FKF570R002L"
+		(property "Part" "Vishay WSLF25121L500FEA"
 			(at 86.36 68.58 90)
 			(hide yes)
 			(show_name no)

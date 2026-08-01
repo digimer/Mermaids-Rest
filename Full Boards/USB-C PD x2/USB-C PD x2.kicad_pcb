@@ -3219,6 +3219,284 @@
 			)
 		)
 	)
+	(footprint "mr-stuff:Vishay WSLF2512"
+		(layer "F.Cu")
+		(uuid "0c751f27-9e21-4da3-a454-4bd52573d04f")
+		(at 95.05 149.55)
+		(tags "Resistor")
+		(property "Reference" "R4"
+			(at 0 -2.45 0)
+			(layer "F.SilkS")
+			(uuid "ada98cce-8c29-4689-80c2-ef2a5974f628")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "1.5mR"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3c29d4fd-77c3-4bde-a8e6-a6e0bc35bef5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/30193/wslf.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df0f75fa-b4e2-4bbc-b44a-7da94c660ed0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 0.0015 OHM 1% 6W 2512"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19c6a34e-3827-4ba3-87cc-de040cd435c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay WSLF25121L500FEA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "047e0a6e-a088-4cb3-93a9-b45fdb77e39a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/c4f45329-ff38-4856-9ce8-9eb257834f97")
+		(sheetname "/")
+		(sheetfile "USB-C PD x2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -4.1 0)
+			(end -4.1 0)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "67937342-ad03-4a41-8a68-452711d0e6ae")
+		)
+		(fp_line
+			(start -4.1 0)
+			(end -4.1 0)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7ece6e22-e078-4361-b31d-31c21661d3cd")
+		)
+		(fp_line
+			(start -4 0)
+			(end -4 0)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "31f01f03-5136-4334-bb7b-586d8c9f4f58")
+		)
+		(fp_line
+			(start -1.4 -1.51)
+			(end 1.4 -1.51)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a8719e93-2694-4446-ba98-068242244430")
+		)
+		(fp_line
+			(start -1.4 1.51)
+			(end 1.4 1.51)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "41b399b6-d7c9-43b5-a8f6-a45c66a672e5")
+		)
+		(fp_arc
+			(start -4.1 0)
+			(mid -4.05 -0.05)
+			(end -4 0)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "05f3dcad-6b07-4638-8fad-32706bc86dfc")
+		)
+		(fp_arc
+			(start -4 0)
+			(mid -4.05 0.05)
+			(end -4.1 0)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "13a4b05e-34bf-4cef-b187-964427784ed6")
+		)
+		(fp_arc
+			(start -4 0)
+			(mid -4.05 0.05)
+			(end -4.1 0)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3d64c0d8-62e2-4e46-aeb5-fe94c1705b46")
+		)
+		(fp_line
+			(start -4.5 -2.7)
+			(end 4.5 -2.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3a0c8f9b-45c2-4d82-be6a-a10cf9bbe493")
+		)
+		(fp_line
+			(start -4.5 2.7)
+			(end -4.5 -2.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8f4d62a5-7159-4d4a-b649-3cce2cd6c38b")
+		)
+		(fp_line
+			(start 4.5 -2.7)
+			(end 4.5 2.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "86dd23bd-0af0-4527-8159-70022fc19104")
+		)
+		(fp_line
+			(start 4.5 2.7)
+			(end -4.5 2.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "12be2eed-d075-4ff8-9339-6edfedc73b21")
+		)
+		(fp_line
+			(start -3.175 -1.51)
+			(end -3.175 1.51)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "209db582-6555-4dab-999d-d8a0713ece88")
+		)
+		(fp_line
+			(start -3.175 1.51)
+			(end 3.175 1.51)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7e8ac233-e155-4705-a8ff-28db9d8247f1")
+		)
+		(fp_line
+			(start 3.175 -1.51)
+			(end -3.175 -1.51)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "05ff5eb9-5c83-4770-ab1f-c4cec0ba6869")
+		)
+		(fp_line
+			(start 3.175 1.51)
+			(end 3.175 -1.51)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8434097a-cc0c-484b-9a4b-0692d41d70db")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 3 0)
+			(layer "F.Fab")
+			(uuid "65218661-f1c5-43ba-90c7-ad8d4ed2821f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -2.6 0)
+			(size 1.8 3.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "+12V")
+			(pintype "passive")
+			(uuid "77c325cf-d894-4414-b547-3cf87ebe2c30")
+		)
+		(pad "2" smd rect
+			(at 2.6 0)
+			(size 1.8 3.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "Net-(ID1-D-Pad5)")
+			(pintype "passive")
+			(uuid "9722dec2-93cc-4751-aa66-594ac9d3a10b")
+		)
+		(embedded_fonts no)
+		(model "${MY_3DMODELS}/Vishay WSLF2512/WSLF25121L500FEA.stp"
+			(offset
+				(xyz 0 -1.590000009 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "mr-stuff:Nexperia PESD24"
 		(layer "F.Cu")
 		(uuid "0d9ef2ea-2a98-4391-a62a-b3430959a434")
@@ -7733,253 +8011,6 @@
 		)
 		(embedded_fonts no)
 		(model "${MY_3DMODELS}/Nexperia PESD24/SOT23_TO-236AB_NEX.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "mr-stuff:Vishay WSLP"
-		(layer "F.Cu")
-		(uuid "22868300-2579-41b3-b4f6-19f42f3a1d44")
-		(at 95.1 149.6)
-		(tags "WSLP25125L000FEA ")
-		(property "Reference" "R4"
-			(at 0 -2.8 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "ee1841a9-b509-438a-ba8c-cddcff6dd9d7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "2mR"
-			(at 0 3.45 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "3b54fd63-1c60-4c0c-b6e2-abd5fb80d607")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-PK_51_ROHS_L"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3ad9770c-5a1a-4db2-9373-aa6b24730583")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 0.002 OHM 1% 5W 2512"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3360d1a7-eeba-4112-81e9-4292aae70c58")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Yageo PK2512FKF570R002L"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ac1586e3-1da6-44e2-b657-ae993eda8b9d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "R_*")
-		(path "/c4f45329-ff38-4856-9ce8-9eb257834f97")
-		(sheetname "/")
-		(sheetfile "USB-C PD x2.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
-		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1.25476 1.8415)
-			(end 1.25476 1.8415)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f30a20c9-8a85-430c-9f66-10d8db5e42c2")
-		)
-		(fp_line
-			(start 1.25476 -1.8415)
-			(end -1.25476 -1.8415)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "1448d218-878b-44fc-91a4-b363b68439f5")
-		)
-		(fp_line
-			(start -3.95 -2.0955)
-			(end 3.95 -2.0955)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "7258abb8-dd92-4ed7-a3e5-092b03a0d130")
-		)
-		(fp_line
-			(start -3.9497 2.0955)
-			(end -3.9497 -2.0955)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "b91450ed-05a2-4581-9c0c-6abaa01a7baa")
-		)
-		(fp_line
-			(start 3.9497 -2.0955)
-			(end 3.9497 2.0955)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9df89a60-771d-40d4-8929-7372b3a3dc07")
-		)
-		(fp_line
-			(start 3.95 2.0955)
-			(end -3.95 2.0955)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "86d1a7e0-1913-445b-9f5a-b75cc1f26286")
-		)
-		(fp_line
-			(start -3.302 -1.7145)
-			(end -3.302 1.7145)
-			(stroke
-				(width 0.0254)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "f0a8d18f-1a1c-4013-9a35-9f0a292ed504")
-		)
-		(fp_line
-			(start -3.302 1.7145)
-			(end 3.302 1.7145)
-			(stroke
-				(width 0.0254)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "d72de8d5-b5a3-4a46-b609-7f905db02a7a")
-		)
-		(fp_line
-			(start 3.302 -1.7145)
-			(end -3.302 -1.7145)
-			(stroke
-				(width 0.0254)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "7720ceda-f36e-48e4-9514-6f72d75cdaa3")
-		)
-		(fp_line
-			(start 3.302 1.7145)
-			(end 3.302 -1.7145)
-			(stroke
-				(width 0.0254)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "d6915080-34ec-4349-91d7-d92c798b4c4e")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 5.5 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "d51df048-e256-46c7-a0ab-85b8f0480b80")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd rect
-			(at -2.6416 0)
-			(size 2.1082 3.683)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "+12V")
-			(pintype "passive")
-			(uuid "f6904d91-3f9d-473c-a837-ab7a61bbf461")
-		)
-		(pad "2" smd rect
-			(at 2.6416 0)
-			(size 2.1082 3.683)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(ID1-D-Pad5)")
-			(pintype "passive")
-			(uuid "45dab290-18e5-492d-9c21-9f70314163a8")
-		)
-		(zone
-			(layer "F.Cu")
-			(uuid "5423397d-f5fd-4ca4-a702-b9d3ed3a4a6f")
-			(hatch full 0.508)
-			(connect_pads
-				(clearance 0)
-			)
-			(min_thickness 0.254)
-			(keepout
-				(tracks not_allowed)
-				(vias not_allowed)
-				(pads allowed)
-				(copperpour not_allowed)
-				(footprints allowed)
-			)
-			(placement
-				(enabled no)
-				(sheetname "")
-			)
-			(fill
-				(thermal_gap 0.508)
-				(thermal_bridge_width 0.508)
-				(island_removal_mode 0)
-			)
-			(polygon
-				(pts
-					(xy 93.5633 147.8093) (xy 96.6367 147.8093) (xy 96.6367 151.3907) (xy 93.5633 151.3907)
-				)
-			)
-		)
-		(embedded_fonts no)
-		(model "${MY_3DMODELS}/Vishay WSLP/RES_VISHAY_WSLP2512_B_VIS.step"
 			(offset
 				(xyz 0 0 0)
 			)
