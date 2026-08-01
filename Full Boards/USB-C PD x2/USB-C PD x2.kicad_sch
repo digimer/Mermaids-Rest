@@ -7966,7 +7966,7 @@
 		)
 		(uuid "19453a14-4256-47a0-adc8-78ad01f115f4")
 	)
-	(text "1. Optimize for 5V, 5A (Raspberry Pi)\n- Populate C_OUT_2, not C_OUT_1 or C_COUT_3\n - Co (Can) - 330 uF; Panasonic EEH-ZU1V331V\n - Rc (1206) - 20 KR; Stackpole RNCP1206FTD20K0\n - Cc (1206) - 10 nF; Kemet C1206C103J3RACAUTO\n - Cp (0805) - 220 pF; Kemet C0805C221J5GACAUTO\n2. General Purpose\n- Populate all three C_OUT_1/2/3\n - Co (Can) - 330 uF; Panasonic EEH-ZU1V331V\n - Rc (1206) - 2.2 KR; Stackpole RNCP1206FTD2K21\n - Cc (1206) - 470 nF; Kemet C1206C474J3RACAUTO\n - Cp (0805) - 1.5 nF; Kemet C0805C152J5GACAUTO\n"
+	(text "1. Optimize for 5V, 5A (Raspberry Pi)\n- Populate C_OUT_2, not C_OUT_1 or C_COUT_3\n - Co (Can) - 330 uF; Panasonic EEH-ZU1V331V\n - Rc (1206) - 20 kR; Stackpole RNCP1206FTD20K0\n - Cc (1206) - 10 nF; Kemet C1206C103J3RACAUTO\n - Cp (0805) - 220 pF; Kemet C0805C221J5GACAUTO\n2. General Purpose\n- Populate all three C_OUT_1/2/3\n - Co (Can) - 330 uF; Panasonic EEH-ZU1V331V\n - Rc (1206) - 2.2 kR; Stackpole RNCP1206FTD2K21\n - Cc (1206) - 470 nF; Kemet C1206C474J3RACAUTO\n - Cp (0805) - 1.5 nF; Kemet C0805C152J5GACAUTO\n"
 		(exclude_from_sim no)
 		(at 114.808 18.288 0)
 		(effects
@@ -8086,7 +8086,7 @@
 		)
 		(uuid "8d278324-6fa4-4e95-b1cf-4a97817ec883")
 	)
-	(text "Configs:\nch0: A, ch1: A - R25 = 0R\nch0: A, ch1: B - R25 = 4.7KR\nch0: B, ch1: A - R25 = 10KR\nch0: B, ch1: B - R25 = DNP\n\nA: 5V, 5A rapid response, buck only (Raspberry Pi)\nB: Slower response, full range (General Purpose)\n\nSee compensation network notes"
+	(text "Configs:\nch0: A, ch1: A - R25 = 0R\nch0: A, ch1: B - R25 = 4.7kR\nch0: B, ch1: A - R25 = 10kR\nch0: B, ch1: B - R25 = DNP\n\nA: 5V, 5A rapid response, buck only (Raspberry Pi)\nB: Slower response, full range (General Purpose)\n\nSee compensation network notes"
 		(exclude_from_sim no)
 		(at 291.846 200.914 0)
 		(effects
@@ -17583,7 +17583,7 @@
 				)
 			)
 		)
-		(property "Value" "22.1KR"
+		(property "Value" "22.1kR"
 			(at 57.404 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17604,7 +17604,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 59.69 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -17615,8 +17615,19 @@
 				)
 			)
 		)
-		(property "Description" "RNCP1206FTD100K 100KR 0.5W"
+		(property "Description" "22.1 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 59.69 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD22K1"
+			(at 59.69 69.85 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19883,7 +19894,7 @@
 				)
 			)
 		)
-		(property "Value" "10KR"
+		(property "Value" "10kR"
 			(at 250.444 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20682,7 +20693,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2KR"
+		(property "Value" "2.2kR"
 			(at 168.91 52.324 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23209,7 +23220,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2KR"
+		(property "Value" "2.2kR"
 			(at 229.87 27.686 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24254,7 +24265,7 @@
 				)
 			)
 		)
-		(property "Value" "10KR"
+		(property "Value" "10kR"
 			(at 275.336 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24333,7 +24344,7 @@
 				)
 			)
 		)
-		(property "Value" "xKR"
+		(property "Value" "xkR"
 			(at 337.82 204.724 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25865,7 +25876,7 @@
 				)
 			)
 		)
-		(property "Value" "20KR"
+		(property "Value" "20kR"
 			(at 125.73 52.324 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27325,7 +27336,7 @@
 				)
 			)
 		)
-		(property "Value" "10KR"
+		(property "Value" "10kR"
 			(at 337.82 199.644 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27999,7 +28010,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2KR"
+		(property "Value" "2.2kR"
 			(at 229.87 39.116 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32832,7 +32843,7 @@
 				)
 			)
 		)
-		(property "Value" "51.1KR"
+		(property "Value" "51.1kR"
 			(at 26.416 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33862,7 +33873,7 @@
 				)
 			)
 		)
-		(property "Value" "10KR"
+		(property "Value" "10kR"
 			(at 279.4 144.526 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34394,7 +34405,7 @@
 				)
 			)
 		)
-		(property "Value" "47KR"
+		(property "Value" "47kR"
 			(at 26.416 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
