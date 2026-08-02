@@ -9351,7 +9351,7 @@
 		)
 		(uuid "4890c4ec-65aa-431a-ba2b-09001d5dc3c7")
 	)
-	(text "24 VDC\nTemp range -40 ~ +80 C\nCase: ASA, solid-infil, epoxy coated for waterproofing.\nMolecular Sieve (Type 4A) desiccant required\nGore-Tex screw-in vent valve required\nIP67 clamping grommets for 14 AWG wire feeds"
+	(text "26 VDC (25+VDC min after voltage drop)\nTemp range -40 ~ +80 C\nCase: ASA, solid-infil, epoxy coated for waterproofing.\nMolecular Sieve (Type 4A) desiccant required\nGore-Tex screw-in vent valve required\nIP67 clamping grommets for 14 AWG wire feeds"
 		(exclude_from_sim no)
 		(at 11.938 3.048 0)
 		(effects
@@ -10002,12 +10002,6 @@
 		(uuid "3750f6cd-55c9-4039-ab2c-5d1db3c73808")
 	)
 	(junction
-		(at 33.02 214.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37f1ab91-51dc-4a99-8da9-5f156a1228fd")
-	)
-	(junction
 		(at 391.16 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10266,12 +10260,6 @@
 		(uuid "64fc3523-5361-4da7-abb7-daaf06f24584")
 	)
 	(junction
-		(at 33.02 212.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "67521f8c-74fa-404c-81d9-cd03ba60362e")
-	)
-	(junction
 		(at 298.45 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10444,6 +10432,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d3a7f23-7256-4dd3-8f08-8c8ad9d20a93")
+	)
+	(junction
+		(at 33.02 212.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e390f14-ec85-49c2-84e6-9db395202ec6")
 	)
 	(junction
 		(at 298.45 119.38)
@@ -11008,6 +11002,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd7d087f-4e06-4205-a660-37fbcb4ff661")
+	)
+	(junction
+		(at 33.02 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd917a2d-8781-4a46-b931-f452c2c9e74d")
 	)
 	(junction
 		(at 486.41 22.86)
@@ -16287,7 +16287,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 212.09) (xy 33.02 212.09)
+			(xy 25.4 212.09) (xy 33.02 212.09)
 		)
 		(stroke
 			(width 0)
@@ -17457,7 +17457,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 214.63) (xy 33.02 214.63)
+			(xy 25.4 214.63) (xy 33.02 214.63)
 		)
 		(stroke
 			(width 0)
@@ -20436,7 +20436,7 @@
 		(uuid "4cc531dd-9d0b-4e34-acfb-b1519391ca00")
 	)
 	(label "DAC_SCL"
-		(at 26.67 212.09 180)
+		(at 25.4 212.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20636,7 +20636,7 @@
 		(uuid "863cac4b-2da2-40f1-9ae8-ca46bee14c70")
 	)
 	(label "DAC_SDA"
-		(at 26.67 214.63 180)
+		(at 25.4 214.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -23253,7 +23253,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 106.68 0)
+		(at 133.35 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23261,9 +23261,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "1c36bf32-219f-4ace-b843-be12a98dc9db")
-		(property "Reference" "R32"
-			(at 139.7 108.712 90)
+		(uuid "1c2c5083-b920-4b78-bd5f-7fabf8b01ce7")
+		(property "Reference" "R23"
+			(at 133.35 37.338 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23274,7 +23274,7 @@
 			)
 		)
 		(property "Value" "100kR"
-			(at 137.414 109.474 90)
+			(at 131.064 38.354 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23285,7 +23285,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 137.922 106.68 90)
+			(at 131.572 35.56 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23296,7 +23296,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 106.68 0)
+			(at 133.35 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23307,7 +23307,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 139.7 106.68 0)
+			(at 133.35 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23318,15 +23318,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "8ba802bf-f6f1-4670-816e-a3c38645785e")
+			(uuid "b35721b2-51aa-4359-9b99-099eddf34b61")
 		)
 		(pin "1"
-			(uuid "4b55d88a-5c10-49b0-be17-397ddd04164e")
+			(uuid "d6622534-89a2-495d-b927-0a5d4efc72f7")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R32")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -25409,6 +25409,87 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3a684804-8fb2-495e-88db-6d53b894339d")
+		(property "Reference" "R30"
+			(at 139.7 108.458 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300kR"
+			(at 137.414 109.474 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 137.922 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 139.7 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9479ef59-3d83-42a8-acae-0706d38b4796")
+		)
+		(pin "1"
+			(uuid "abdcd568-0f37-4617-94e0-b48795b40d9f")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -29266,87 +29347,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0141")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 140.97 35.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "667e3d24-253d-4be8-9df2-5043137d3b8e")
-		(property "Reference" "R23"
-			(at 140.97 37.338 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100kR"
-			(at 138.684 38.354 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 139.192 35.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 140.97 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1934e7e5-cd31-4573-9d5c-56ff07ecc0e8")
-		)
-		(pin "1"
-			(uuid "c0cd7d4b-911e-4f30-9e0e-27dabcc33816")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -34064,6 +34064,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 140.97 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a22b6365-f9e9-4188-bee1-6d114510f661")
+		(property "Reference" "R21"
+			(at 140.97 37.338 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300kR"
+			(at 138.684 38.354 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 139.192 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 140.97 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5655b3b5-68fb-4dc5-af46-47243e8470b1")
+		)
+		(pin "1"
+			(uuid "baeec8f1-01f0-45b4-b596-2f730f72f9d7")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 22.86 58.42 0)
 		(unit 1)
@@ -34326,6 +34407,87 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#FLG0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 132.08 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a45000de-ff67-48ba-92e6-daad5a86e8fb")
+		(property "Reference" "R32"
+			(at 132.08 108.712 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kR"
+			(at 129.794 109.474 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 130.302 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 132.08 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b6b21d70-672f-4ae8-a75f-2460776bc089")
+		)
+		(pin "1"
+			(uuid "370c6215-584c-48e8-b69c-ef63f18b81ce")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -40046,87 +40208,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 133.35 35.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d62fda2c-c23a-41d1-a446-c2600174520e")
-		(property "Reference" "R21"
-			(at 133.35 37.338 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "300kR"
-			(at 131.064 38.354 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 131.572 35.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 133.35 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ae725cfe-5241-4a01-8582-2e016d2d4f7f")
-		)
-		(pin "1"
-			(uuid "e8451778-4e0d-41fe-92b1-8745632f5f0b")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 254 35.56 0)
 		(unit 1)
@@ -43270,87 +43351,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "LD2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 132.08 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f4685dab-4e9f-4303-8542-a8451ea50cb8")
-		(property "Reference" "R30"
-			(at 132.08 108.458 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "300kR"
-			(at 129.794 109.474 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 130.302 106.68 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 132.08 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8966eb98-d1c5-4760-a75b-175fe75c5268")
-		)
-		(pin "1"
-			(uuid "482ecc9f-ed12-4b61-a8c4-8dd55ffbb4fc")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R30")
 					(unit 1)
 				)
 			)
