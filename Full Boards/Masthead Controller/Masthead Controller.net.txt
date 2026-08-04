@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-08-03T02:14:36")
+		(date "2026-08-04T14:29:08")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -150,22 +150,28 @@
 		)
 		(comp
 			(ref "C1")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-			(description "Unpolarized capacitor")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
 					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -204,22 +210,28 @@
 		)
 		(comp
 			(ref "C2")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -258,22 +270,28 @@
 		)
 		(comp
 			(ref "C3")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -295,7 +313,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "f8e014fb-52ba-4c42-b7fe-f6cf0c823841")
+			(tstamps "c7ca6ef1-d478-4afb-864c-c45bbe966f47")
 			(units
 				(unit
 					(name "A")
@@ -312,22 +330,28 @@
 		)
 		(comp
 			(ref "C4")
-			(value "1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+			(value "1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C105K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
 					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C105K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -349,7 +373,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "d1ceadca-92eb-4b3f-af04-24db5556da92")
+			(tstamps "14682a47-892f-4fea-bc6e-d74107164fd4")
 			(units
 				(unit
 					(name "A")
@@ -366,22 +390,28 @@
 		)
 		(comp
 			(ref "C5")
-			(value "22μF")
+			(value "22uF")
 			(footprint "mr-stuff:Murata GCJ31CR71A")
 			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ31CR71A226KE01%23")
-			(description "Unpolarized capacitor")
+			(description "22 µF ±10% 10V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "Murata GCJ31CR71A226KE01L")
 				(field
 					(name "Footprint") "mr-stuff:Murata GCJ31CR71A")
 				(field
 					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ31CR71A226KE01%23")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "22 µF ±10% 10V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Murata GCJ31CR71A226KE01L")
 			)
 			(property
 				(name "Sheetname")
@@ -420,22 +450,28 @@
 		)
 		(comp
 			(ref "C6")
-			(value "1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+			(value "1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C105K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
 					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C105K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -457,7 +493,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "53b6e120-eb60-40f1-aa42-cc3b260e52da")
+			(tstamps "d8b755be-6447-43d7-a667-084b7ca6b882")
 			(units
 				(unit
 					(name "A")
@@ -474,22 +510,28 @@
 		)
 		(comp
 			(ref "C7")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -511,7 +553,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "fc0f8d80-4c4e-4440-be53-57e5b93e2cfc")
+			(tstamps "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
 			(units
 				(unit
 					(name "A")
@@ -528,22 +570,28 @@
 		)
 		(comp
 			(ref "C8")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -565,7 +613,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c5d2d5c3-2b67-4cf4-bc4e-44b8f07eb847")
+			(tstamps "05c8062f-cdaf-48f2-be5c-62554c462a42")
 			(units
 				(unit
 					(name "A")
@@ -582,22 +630,28 @@
 		)
 		(comp
 			(ref "C9")
-			(value "1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+			(value "1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C105K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
 					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C105K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -619,7 +673,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3e0f655e-766d-4c9b-b9a0-d95fb10301d2")
+			(tstamps "8e8860b3-35a9-4af2-acb4-6919bd86c522")
 			(units
 				(unit
 					(name "A")
@@ -636,22 +690,28 @@
 		)
 		(comp
 			(ref "C10")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -673,7 +733,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "1dc251de-9076-4a08-a654-e6179199d23a")
+			(tstamps "e6f9e035-598b-4867-b058-ba21ba59b0bc")
 			(units
 				(unit
 					(name "A")
@@ -690,22 +750,28 @@
 		)
 		(comp
 			(ref "C11")
-			(value "0.01μF")
-			(footprint "mr-stuff:Kemet CAPC340180_88N_KEM")
-			(description "Unpolarized capacitor")
+			(value "0.01uF")
+			(footprint "mr-stuff:Kyocera AVX 1206")
+			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1023_X7R_AUTO_SMD")
+			(description "10000 pF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kemet CAPC340180_88N_KEM")
+					(name "Part") "Kyocera C1206C103K1RACAUTO")
 				(field
-					(name "Datasheet")
-				)
+					(name "Footprint") "mr-stuff:Kyocera AVX 1206")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/KEM_C1023_X7R_AUTO_SMD")
+				(field
+					(name "Description") "10000 pF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera C1206C103K1RACAUTO")
 			)
 			(property
 				(name "Sheetname")
@@ -744,22 +810,28 @@
 		)
 		(comp
 			(ref "C12")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -781,7 +853,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "f0b72c2d-4101-45b2-87bf-bbd41ec26131")
+			(tstamps "e66de239-8654-45f7-9bd1-901678bfd025")
 			(units
 				(unit
 					(name "A")
@@ -798,22 +870,28 @@
 		)
 		(comp
 			(ref "C13")
-			(value "0.01μF")
-			(footprint "mr-stuff:Kemet CAPC340180_88N_KEM")
-			(description "Unpolarized capacitor")
+			(value "0.01uF")
+			(footprint "mr-stuff:Kyocera AVX 1206")
+			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1023_X7R_AUTO_SMD")
+			(description "10000 pF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kemet CAPC340180_88N_KEM")
+					(name "Part") "Kyocera C1206C103K1RACAUTO")
 				(field
-					(name "Datasheet")
-				)
+					(name "Footprint") "mr-stuff:Kyocera AVX 1206")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/KEM_C1023_X7R_AUTO_SMD")
+				(field
+					(name "Description") "10000 pF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera C1206C103K1RACAUTO")
 			)
 			(property
 				(name "Sheetname")
@@ -835,7 +913,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "b2b94c68-c5dc-4325-ae61-8939b142db55")
+			(tstamps "3c338c19-9bbc-40e6-a02b-46588323b7a5")
 			(units
 				(unit
 					(name "A")
@@ -852,22 +930,28 @@
 		)
 		(comp
 			(ref "C14")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+			(value "1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C105K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
 					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C105K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -889,7 +973,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c83d528a-8740-4e31-9904-49ddabce1db7")
+			(tstamps "8c26870f-cda4-42e5-88d0-68568bca8796")
 			(units
 				(unit
 					(name "A")
@@ -906,22 +990,28 @@
 		)
 		(comp
 			(ref "C15")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -943,7 +1033,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e1a48fe3-37c0-4cf9-aee9-15665233864c")
+			(tstamps "1c698ab4-8e87-4cf6-a539-25993c969f58")
 			(units
 				(unit
 					(name "A")
@@ -960,22 +1050,28 @@
 		)
 		(comp
 			(ref "C16")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -997,7 +1093,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "2779e2c2-d204-4bd2-9259-6b473341e4b6")
+			(tstamps "bd056854-46bc-42a2-973a-7146297857ec")
 			(units
 				(unit
 					(name "A")
@@ -1014,22 +1110,28 @@
 		)
 		(comp
 			(ref "C17")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -1051,7 +1153,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "d35d1e2a-4dcf-4a4f-9aad-e96fadbb41d4")
+			(tstamps "821a615b-11c5-496c-b08d-b28727f13421")
 			(units
 				(unit
 					(name "A")
@@ -1068,22 +1170,28 @@
 		)
 		(comp
 			(ref "C18")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1105,7 +1213,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0d8cccfd-ec85-4344-aa56-e008740a37c4")
+			(tstamps "82b1ff85-adfc-451a-bfbb-9d5fdefb0ccc")
 			(units
 				(unit
 					(name "A")
@@ -1122,22 +1230,28 @@
 		)
 		(comp
 			(ref "C19")
-			(value "1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+			(value "1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C105K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
 					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C105K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -1176,22 +1290,28 @@
 		)
 		(comp
 			(ref "C20")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1213,7 +1333,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "b47cb1cf-6761-409c-8336-01cc4818c677")
+			(tstamps "204f9f3d-bb50-4c57-a0dc-b22d2e857471")
 			(units
 				(unit
 					(name "A")
@@ -1230,22 +1350,28 @@
 		)
 		(comp
 			(ref "C21")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -1267,7 +1393,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "1da6316e-9e66-4768-9704-3ae7634d7af5")
+			(tstamps "06781352-de02-4242-9429-c821b6756653")
 			(units
 				(unit
 					(name "A")
@@ -1284,22 +1410,28 @@
 		)
 		(comp
 			(ref "C22")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1321,7 +1453,67 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "465ca5ab-5e84-425f-b9eb-cdf80b4744a8")
+			(tstamps "5e7a5033-2eb8-48ae-8738-7933e819a0ea")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C23")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "232d5646-575d-45a0-adea-867e4fdcc833")
 			(units
 				(unit
 					(name "A")
@@ -1338,22 +1530,28 @@
 		)
 		(comp
 			(ref "C24")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1375,7 +1573,67 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "fc3bbadb-4a1a-4510-9422-0caec92d769f")
+			(tstamps "02ed5b42-e5f1-406c-a929-ec33c4081fd4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C25")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b1c4cd8b-bffe-4e53-956a-177266103f66")
 			(units
 				(unit
 					(name "A")
@@ -1392,22 +1650,28 @@
 		)
 		(comp
 			(ref "C26")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1429,7 +1693,67 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e7b8fdeb-71bf-4dd2-a82b-47e92552bb4a")
+			(tstamps "c548e50d-9376-47ed-8d76-3f7d807cfce2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C27")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "eeef700e-631f-443d-8be2-402e27aee38e")
 			(units
 				(unit
 					(name "A")
@@ -1446,22 +1770,28 @@
 		)
 		(comp
 			(ref "C28")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1483,7 +1813,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "f6fb306d-83a4-4e8d-914c-17f2a28cc809")
+			(tstamps "df3acf56-07b3-4baa-8f6b-fac2d10764a1")
 			(units
 				(unit
 					(name "A")
@@ -1500,22 +1830,28 @@
 		)
 		(comp
 			(ref "C30")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1537,7 +1873,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "cc0ae0a8-6966-4c9a-88f2-ed2b125942a2")
+			(tstamps "feb8643a-71c8-4b4a-92e7-43a401e239a7")
 			(units
 				(unit
 					(name "A")
@@ -1554,22 +1890,28 @@
 		)
 		(comp
 			(ref "C32")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1591,7 +1933,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "edd71427-14ce-4839-ad4d-a9b92c9d8b24")
+			(tstamps "29b87786-89d8-4e0f-a767-d8b8d1cb7787")
 			(units
 				(unit
 					(name "A")
@@ -1608,22 +1950,28 @@
 		)
 		(comp
 			(ref "C34")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1645,7 +1993,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "4b7eb339-b6ff-4a6f-8ab8-3c58152a8681")
+			(tstamps "0ffda1fa-1f2f-4422-9b7f-19fb41c4557d")
 			(units
 				(unit
 					(name "A")
@@ -1662,22 +2010,28 @@
 		)
 		(comp
 			(ref "C36")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1699,7 +2053,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "4ca78b23-199a-459d-81db-92e2661d69aa")
+			(tstamps "b97f94d1-1b1c-48aa-b6b3-c4ad6f66a3a4")
 			(units
 				(unit
 					(name "A")
@@ -1716,22 +2070,28 @@
 		)
 		(comp
 			(ref "C38")
-			(value "10μF")
+			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "Unpolarized capacitor")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
 					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
 					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -1753,7 +2113,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3916dfa7-6ddd-415b-a2d9-e7ab9522b4a1")
+			(tstamps "ff8fec05-804e-4bd7-a1de-c96d18b01bfb")
 			(units
 				(unit
 					(name "A")
@@ -1770,22 +2130,28 @@
 		)
 		(comp
 			(ref "C40")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -1807,7 +2173,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "81a43e48-91f8-4b4e-981a-244f3648448b")
+			(tstamps "16b0f911-1ebc-480a-925b-6609c180eca0")
 			(units
 				(unit
 					(name "A")
@@ -1824,22 +2190,28 @@
 		)
 		(comp
 			(ref "C41")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -1861,7 +2233,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "acbaf8c6-e78b-44a0-82ac-4f2c70dff424")
+			(tstamps "96e2765f-6ea2-4943-940c-5361dd49dac7")
 			(units
 				(unit
 					(name "A")
@@ -1878,22 +2250,28 @@
 		)
 		(comp
 			(ref "C42")
-			(value "0.1μF")
-			(footprint "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "Unpolarized capacitor")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 08051A0R8CAT2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -1915,7 +2293,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "36424cc8-beeb-4a97-b7c2-831f05ab7c09")
+			(tstamps "01cc5afb-a3c6-4507-9ecb-753231ab7064")
 			(units
 				(unit
 					(name "A")
@@ -1997,108 +2375,6 @@
 						)
 						(pin
 							(num "5")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "CH1")
-			(value "~")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x01, script generated")
-			(fields
-				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x01, script generated")
-			)
-			(libsource
-				(lib "Connector")
-				(part "Conn_01x01_Pin")
-				(description "Generic connector, single row, 01x01, script generated")
-			)
-			(property
-				(name "Sheetname")
-				(value "Root")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Masthead Controller.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "connector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Connector*:*_1x??_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "c7ac20f4-b367-4f50-bbec-6a625920c308")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "CL1")
-			(value "~")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x01, script generated")
-			(fields
-				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x01, script generated")
-			)
-			(libsource
-				(lib "Connector")
-				(part "Conn_01x01_Pin")
-				(description "Generic connector, single row, 01x01, script generated")
-			)
-			(property
-				(name "Sheetname")
-				(value "Root")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Masthead Controller.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "connector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Connector*:*_1x??_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "cfd96927-404e-421e-a30c-7cf9ee3a2654")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
 						)
 					)
 				)
@@ -3862,26 +4138,28 @@
 		)
 		(comp
 			(ref "L1")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "100 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-101M")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-101M")
+				(description "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -3890,6 +4168,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-101M")
 			)
 			(property
 				(name "Sheetname")
@@ -3920,26 +4202,28 @@
 		)
 		(comp
 			(ref "L2")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "100 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-101M")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-101M")
+				(description "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -3948,6 +4232,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-101M")
 			)
 			(property
 				(name "Sheetname")
@@ -3978,26 +4266,28 @@
 		)
 		(comp
 			(ref "L3")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "220 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-221M")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-221M")
+				(description "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4006,6 +4296,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-221M")
 			)
 			(property
 				(name "Sheetname")
@@ -4036,26 +4330,28 @@
 		)
 		(comp
 			(ref "L4")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "220 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-221M")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-221M")
+				(description "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4064,6 +4360,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-221M")
 			)
 			(property
 				(name "Sheetname")
@@ -4094,26 +4394,28 @@
 		)
 		(comp
 			(ref "L5")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "330 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-331K")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-331K")
+				(description "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4122,6 +4424,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-331K")
 			)
 			(property
 				(name "Sheetname")
@@ -4152,26 +4458,28 @@
 		)
 		(comp
 			(ref "L6")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "330 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-331K")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-331K")
+				(description "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4180,6 +4488,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-331K")
 			)
 			(property
 				(name "Sheetname")
@@ -4210,26 +4522,28 @@
 		)
 		(comp
 			(ref "L7")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "470 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-471K")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-471K")
+				(description "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4238,6 +4552,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-471K")
 			)
 			(property
 				(name "Sheetname")
@@ -4268,26 +4586,28 @@
 		)
 		(comp
 			(ref "L8")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "470 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-471K")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-471K")
+				(description "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4296,6 +4616,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-471K")
 			)
 			(property
 				(name "Sheetname")
@@ -4326,26 +4650,28 @@
 		)
 		(comp
 			(ref "L9")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "220 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-221M")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-221M")
+				(description "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4354,6 +4680,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-221M")
 			)
 			(property
 				(name "Sheetname")
@@ -4384,26 +4714,28 @@
 		)
 		(comp
 			(ref "L10")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "220 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-221M")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(part "Bourns SRN6045TA-221M")
+				(description "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4412,6 +4744,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-221M")
 			)
 			(property
 				(name "Sheetname")
@@ -4442,26 +4778,28 @@
 		)
 		(comp
 			(ref "L11")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "68 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-680M")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
 				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(description "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4470,6 +4808,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-680M")
 			)
 			(property
 				(name "Sheetname")
@@ -4500,26 +4842,28 @@
 		)
 		(comp
 			(ref "L12")
-			(value "SRN6045TA-680M")
-			(footprint "mr-stuff:Bourns SRN6045TA-680M")
+			(value "68 uH")
+			(footprint "mr-stuff:Bourns SRN6045TA")
 			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(description "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard")
 			(fields
 				(field
 					(name "MANUFACTURER") "BOURNS")
 				(field
 					(name "STANDARD") "Manufacturer Recommendations")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Part") "Bourns SRN6045TA-680M")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard")
 			)
 			(libsource
 				(lib "mr-parts")
 				(part "Bourns SRN6045TA-680M")
-				(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+				(description "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard")
 			)
 			(property
 				(name "MANUFACTURER")
@@ -4528,6 +4872,10 @@
 			(property
 				(name "STANDARD")
 				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "Part")
+				(value "Bourns SRN6045TA-680M")
 			)
 			(property
 				(name "Sheetname")
@@ -5459,12 +5807,12 @@
 		(comp
 			(ref "MCU1")
 			(value "ESP32-S3-WROOM-1-N16R2")
-			(footprint "RF_Module:ESP32-S3-WROOM-1")
+			(footprint "mr-stuff:ESP32-S3-WROOM-1")
 			(datasheet "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf")
 			(description "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD")
 			(fields
 				(field
-					(name "Footprint") "RF_Module:ESP32-S3-WROOM-1")
+					(name "Footprint") "mr-stuff:ESP32-S3-WROOM-1")
 				(field
 					(name "Datasheet") "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf")
 				(field
@@ -7284,6 +7632,66 @@
 			)
 		)
 		(comp
+			(ref "R25")
+			(value "300kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(datasheet "https://yageogroup.com/content/datasheet/asset/file/PYU-AE_51_ROHS_L")
+			(description "300 kOhms ±0.1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Yageo AE1206BR-07300KL")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/PYU-AE_51_ROHS_L")
+				(field
+					(name "Description") "300 kOhms ±0.1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Yageo AE1206BR-07300KL")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2be62cd6-5721-4f1e-9e16-9f88b8f9997c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "R26")
 			(value "10kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
@@ -7734,6 +8142,66 @@
 			)
 		)
 		(comp
+			(ref "R34")
+			(value "22.1kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "22.1 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP1206FTD22K1")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "22.1 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP1206FTD22K1")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9bfde6b1-fcd0-4323-bce1-608fc83de477")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "R35")
 			(value "10kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
@@ -7789,22 +8257,28 @@
 		)
 		(comp
 			(ref "R36")
-			(value "90.9kR")
+			(value "28kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "Resistor")
+			(description "28 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
 			(fields
+				(field
+					(name "Part") "Stackpole RNCP1206FTD28K0")
 				(field
 					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "Resistor")
+					(name "Description") "28 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
 				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP1206FTD28K0")
 			)
 			(property
 				(name "Sheetname")
@@ -9064,23 +9538,23 @@
 			)
 		)
 		(comp
-			(ref "Rx1")
-			(value "~")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x01, script generated")
+			(ref "R59")
+			(value "10kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x01, script generated")
+					(name "Description") "Resistor")
 			)
 			(libsource
-				(lib "Connector")
-				(part "Conn_01x01_Pin")
-				(description "Generic connector, single row, 01x01, script generated")
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
 			)
 			(property
 				(name "Sheetname")
@@ -9092,23 +9566,308 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "connector")
+				(value "R res resistor")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "Connector*:*_1x??_*")
+				(value "R_*")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "d62fc7d6-4008-48c1-87fc-50b91cbd475b")
+			(tstamps "3f762f48-83f4-4de6-a77a-8685ff533ba4")
 			(units
 				(unit
 					(name "A")
 					(pins
 						(pin
 							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R60")
+			(value "10kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6c1b8732-1c3d-452f-a62d-a86856e92400")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R61")
+			(value "300kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(datasheet "https://yageogroup.com/content/datasheet/asset/file/PYU-AE_51_ROHS_L")
+			(description "300 kOhms ±0.1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Yageo AE1206BR-07300KL")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/PYU-AE_51_ROHS_L")
+				(field
+					(name "Description") "300 kOhms ±0.1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Yageo AE1206BR-07300KL")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f9686ed3-fc5e-4474-80a9-95308be6c47a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R62")
+			(value "22.1kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "22.1 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP1206FTD22K1")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "22.1 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP1206FTD22K1")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "86544175-70d0-43d4-aacc-49ff3041cba7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R63")
+			(value "100kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "16d5c9d7-472b-4627-8c07-bac28c2c5993")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R64")
+			(value "10kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "47108bde-60ea-4c64-993a-6bd1a55b7845")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
 						)
 					)
 				)
@@ -9883,6 +10642,180 @@
 			)
 		)
 		(comp
+			(ref "TP1")
+			(value "N2K Comms")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "17a61d3b-f428-4eba-bc9d-2c30c8936b83")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "Tx/Rx")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x04, script generated")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x04, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x04_Pin")
+				(description "Generic connector, single row, 01x04, script generated")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e9aab0d7-9322-4656-b04e-9faff114094d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "JTAG")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x04, script generated")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x04, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x04_Pin")
+				(description "Generic connector, single row, 01x04, script generated")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6b426469-5773-4407-8af7-a203b8fdbcd2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "TVS1")
 			(value "SMCJ33A")
 			(footprint "mr-stuff:Littelfuse SMCJ")
@@ -9923,57 +10856,6 @@
 						)
 						(pin
 							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "Tx1")
-			(value "~")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x01, script generated")
-			(fields
-				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x01, script generated")
-			)
-			(libsource
-				(lib "Connector")
-				(part "Conn_01x01_Pin")
-				(description "Generic connector, single row, 01x01, script generated")
-			)
-			(property
-				(name "Sheetname")
-				(value "Root")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Masthead Controller.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "connector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Connector*:*_1x??_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "7e113cc7-451f-46fe-bfb2-2bdcd5e8e5b4")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
 						)
 					)
 				)
@@ -10232,35 +11114,6 @@
 		)
 		(libpart
 			(lib "Connector")
-			(part "Conn_01x01_Pin")
-			(description "Generic connector, single row, 01x01, script generated")
-			(footprints
-				(fp "Connector*:*_1x??_*")
-			)
-			(fields
-				(field
-					(name "Reference") "J")
-				(field
-					(name "Value") "Conn_01x01_Pin")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x01, script generated")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "Pin_1")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Connector")
 			(part "Conn_01x02_Pin")
 			(description "Generic connector, single row, 01x02, script generated")
 			(footprints
@@ -10289,6 +11142,50 @@
 				(pin
 					(num "2")
 					(name "Pin_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector")
+			(part "Conn_01x04_Pin")
+			(description "Generic connector, single row, 01x04, script generated")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x04_Pin")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x04, script generated")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
 					(type "passive")
 				)
 			)
@@ -10927,24 +11824,150 @@
 		)
 		(libpart
 			(lib "mr-parts")
-			(part "Bourns SRN6045TA-680M")
-			(description "FIXED IND 68UH 1.1A 305 MOHM SMD")
+			(part "Bourns SRN6045TA-101M")
+			(description "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard")
 			(docs "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 			(fields
 				(field
 					(name "Reference") "L")
 				(field
-					(name "Value") "SRN6045TA-680M")
+					(name "Value") "100 uH")
 				(field
-					(name "Footprint") "mr-stuff:Bourns SRN6045TA-680M")
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
 				(field
 					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
 				(field
-					(name "Description") "FIXED IND 68UH 1.1A 305 MOHM SMD")
+					(name "Description") "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard")
 				(field
-					(name "MANUFACTURER") "BOURNS")
+					(name "Part") "Bourns SRN6045TA-101M")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Bourns SRN6045TA-221M")
+			(description "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
+			(docs "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
+			(fields
 				(field
-					(name "STANDARD") "Manufacturer Recommendations")
+					(name "Reference") "L")
+				(field
+					(name "Value") "220 uH")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
+				(field
+					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
+				(field
+					(name "Description") "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard")
+				(field
+					(name "Part") "Bourns SRN6045TA-221M")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Bourns SRN6045TA-331K")
+			(description "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard")
+			(docs "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
+			(fields
+				(field
+					(name "Reference") "L")
+				(field
+					(name "Value") "330 uH")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
+				(field
+					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
+				(field
+					(name "Description") "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard")
+				(field
+					(name "Part") "Bourns SRN6045TA-331K")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Bourns SRN6045TA-471K")
+			(description "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard")
+			(docs "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
+			(fields
+				(field
+					(name "Reference") "L")
+				(field
+					(name "Value") "470 uH")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
+				(field
+					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
+				(field
+					(name "Description") "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard")
+				(field
+					(name "Part") "Bourns SRN6045TA-471K")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Bourns SRN6045TA-680M")
+			(description "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard")
+			(docs "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
+			(fields
+				(field
+					(name "Reference") "L")
+				(field
+					(name "Value") "68 uH")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SRN6045TA")
+				(field
+					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf")
+				(field
+					(name "Description") "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard")
+				(field
+					(name "Part") "Bourns SRN6045TA-680M")
 			)
 			(pins
 				(pin
@@ -11914,22 +12937,22 @@
 			)
 			(node
 				(ref "C15")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C40")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C41")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C42")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -12029,6 +13052,22 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R59")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R60")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP2")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
 				(ref "VR1")
 				(pin "4")
 				(pinfunction "VOUT_4")
@@ -12047,7 +13086,7 @@
 			(class "Default")
 			(node
 				(ref "C17")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -12057,7 +13096,7 @@
 			)
 			(node
 				(ref "C21")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -12122,6 +13161,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R63")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "TB2")
 				(pin "1")
 				(pintype "passive")
@@ -12138,62 +13182,67 @@
 			(class "Default")
 			(node
 				(ref "C16")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C18")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C20")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C22")
-				(pin "2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C24")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C26")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C28")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C30")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C32")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C34")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C36")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C38")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -12359,6 +13408,11 @@
 				(pintype "power_in")
 			)
 			(node
+				(ref "R25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "R45")
 				(pin "1")
 				(pintype "passive")
@@ -12424,6 +13478,11 @@
 			(name "+24V_N2K")
 			(class "Default")
 			(node
+				(ref "C25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "EF2")
 				(pin "18")
 				(pinfunction "OUT_18")
@@ -12439,6 +13498,11 @@
 				(ref "EF2")
 				(pin "20")
 				(pinfunction "OUT_20")
+				(pintype "passive")
+			)
+			(node
+				(ref "R61")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -12534,6 +13598,12 @@
 				(pinfunction "IO48_25")
 				(pintype "bidirectional")
 			)
+			(node
+				(ref "TP1")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "10")
@@ -12550,6 +13620,12 @@
 				(pin "24")
 				(pinfunction "IO47_24")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -12764,8 +13840,8 @@
 			)
 			(node
 				(ref "MCU1")
-				(pin "32")
-				(pinfunction "IO39_32")
+				(pin "23")
+				(pinfunction "IO21_23")
 				(pintype "bidirectional")
 			)
 			(node
@@ -12802,8 +13878,8 @@
 			(class "Default")
 			(node
 				(ref "MCU1")
-				(pin "33")
-				(pinfunction "IO40_33")
+				(pin "22")
+				(pinfunction "IO14_22")
 				(pintype "bidirectional")
 			)
 			(node
@@ -12927,6 +14003,50 @@
 		)
 		(net
 			(code "28")
+			(name "/PGOOD_LED")
+			(class "Default")
+			(node
+				(ref "EF1")
+				(pin "17")
+				(pinfunction "PGOOD_17")
+				(pintype "open_collector")
+			)
+			(node
+				(ref "MCU1")
+				(pin "9")
+				(pinfunction "IO16_9")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R59")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "29")
+			(name "/PGOOD_N2K")
+			(class "Default")
+			(node
+				(ref "EF2")
+				(pin "17")
+				(pinfunction "PGOOD_17")
+				(pintype "open_collector")
+			)
+			(node
+				(ref "MCU1")
+				(pin "8")
+				(pinfunction "IO15_8")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R60")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "30")
 			(name "/STEAMING_PRI_JPR")
 			(class "Default")
 			(node
@@ -12942,7 +14062,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "31")
 			(name "/STEAMING_PRI_VSET")
 			(class "Default")
 			(node
@@ -12959,7 +14079,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "32")
 			(name "/STEAMING_SEC_JPR")
 			(class "Default")
 			(node
@@ -12975,7 +14095,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "33")
 			(name "/STEAMING_SEC_VSET")
 			(class "Default")
 			(node
@@ -12992,7 +14112,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "34")
 			(name "/TC_PORT_PRI_JPR")
 			(class "Default")
 			(node
@@ -13008,7 +14128,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "35")
 			(name "/TC_PORT_PRI_VSET")
 			(class "Default")
 			(node
@@ -13025,7 +14145,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "36")
 			(name "/TC_PORT_SEC_JPR")
 			(class "Default")
 			(node
@@ -13041,7 +14161,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "37")
 			(name "/TC_PORT_SEC_VSET")
 			(class "Default")
 			(node
@@ -13058,7 +14178,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "38")
 			(name "/TC_STBD_PRI_JPR")
 			(class "Default")
 			(node
@@ -13074,7 +14194,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "39")
 			(name "/TC_STBD_PRI_VSET")
 			(class "Default")
 			(node
@@ -13091,7 +14211,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "40")
 			(name "/TC_STBD_SEC_JPR")
 			(class "Default")
 			(node
@@ -13107,7 +14227,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "41")
 			(name "/TC_STBD_SEC_VSET")
 			(class "Default")
 			(node
@@ -13124,7 +14244,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "42")
 			(name "/TC_STERN_PRI_JPR")
 			(class "Default")
 			(node
@@ -13140,7 +14260,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "43")
 			(name "/TC_STERN_PRI_VSET")
 			(class "Default")
 			(node
@@ -13157,7 +14277,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "44")
 			(name "/TC_STERN_SEC_JPR")
 			(class "Default")
 			(node
@@ -13173,7 +14293,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "45")
 			(name "/TC_STERN_SEC_VSET")
 			(class "Default")
 			(node
@@ -13190,7 +14310,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "46")
 			(name "GND")
 			(class "Default")
 			(node
@@ -13207,12 +14327,6 @@
 			)
 			(node
 				(ref "ADC1")
-				(pin "6")
-				(pinfunction "AIN2_6")
-				(pintype "input")
-			)
-			(node
-				(ref "ADC1")
 				(pin "7")
 				(pinfunction "AIN3_7")
 				(pintype "input")
@@ -13224,7 +14338,7 @@
 			)
 			(node
 				(ref "C10")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -13234,7 +14348,7 @@
 			)
 			(node
 				(ref "C12")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -13249,22 +14363,22 @@
 			)
 			(node
 				(ref "C15")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C16")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C17")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C18")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -13279,62 +14393,77 @@
 			)
 			(node
 				(ref "C20")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C21")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C22")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C24")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C26")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C28")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C3")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C30")
+				(ref "C21")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
 				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C30")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C32")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C34")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C36")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C38")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -13344,17 +14473,17 @@
 			)
 			(node
 				(ref "C40")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C41")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C42")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -13369,17 +14498,17 @@
 			)
 			(node
 				(ref "C7")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C8")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C9")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -13754,6 +14883,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R34")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "R36")
 				(pin "1")
 				(pintype "passive")
@@ -13780,6 +14914,16 @@
 			)
 			(node
 				(ref "R6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R62")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R64")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -13840,6 +14984,12 @@
 			(node
 				(ref "TB3")
 				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
 				(pintype "passive")
 			)
 			(node
@@ -13909,7 +15059,33 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "47")
+			(name "Net-(ADC1-AIN2)")
+			(class "Default")
+			(node
+				(ref "ADC1")
+				(pin "6")
+				(pinfunction "AIN2_6")
+				(pintype "input")
+			)
+			(node
+				(ref "C27")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R63")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R64")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "48")
 			(name "Net-(ADC1-ALERT{slash}RDY)")
 			(class "Default")
 			(node
@@ -13925,7 +15101,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "49")
 			(name "Net-(CAN1-CANH)")
 			(class "Default")
 			(node
@@ -13942,7 +15118,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "50")
 			(name "Net-(CAN1-CANL)")
 			(class "Default")
 			(node
@@ -13959,15 +15135,9 @@
 			)
 		)
 		(net
-			(code "48")
-			(name "Net-(CH1-Pin_1)")
+			(code "51")
+			(name "Net-(CMC1-O1)")
 			(class "Default")
-			(node
-				(ref "CH1")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
 			(node
 				(ref "CMC1")
 				(pin "4")
@@ -13991,15 +15161,9 @@
 			)
 		)
 		(net
-			(code "49")
-			(name "Net-(CL1-Pin_1)")
+			(code "52")
+			(name "Net-(CMC1-O2)")
 			(class "Default")
-			(node
-				(ref "CL1")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
 			(node
 				(ref "CMC1")
 				(pin "3")
@@ -14023,7 +15187,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "53")
 			(name "Net-(D1-Pad2)")
 			(class "Default")
 			(node
@@ -14038,7 +15202,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "54")
 			(name "Net-(D4-A)")
 			(class "Default")
 			(node
@@ -14066,7 +15230,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "55")
 			(name "Net-(D5-A)")
 			(class "Default")
 			(node
@@ -14094,7 +15258,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "56")
 			(name "Net-(D6-A)")
 			(class "Default")
 			(node
@@ -14122,7 +15286,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "57")
 			(name "Net-(D7-A)")
 			(class "Default")
 			(node
@@ -14150,7 +15314,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "58")
 			(name "Net-(D8-A)")
 			(class "Default")
 			(node
@@ -14178,7 +15342,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "59")
 			(name "Net-(D9-A)")
 			(class "Default")
 			(node
@@ -14206,7 +15370,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "60")
 			(name "Net-(D10-A)")
 			(class "Default")
 			(node
@@ -14234,7 +15398,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "61")
 			(name "Net-(D11-A)")
 			(class "Default")
 			(node
@@ -14262,7 +15426,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "62")
 			(name "Net-(D12-A)")
 			(class "Default")
 			(node
@@ -14290,7 +15454,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "63")
 			(name "Net-(D13-A)")
 			(class "Default")
 			(node
@@ -14318,7 +15482,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "64")
 			(name "Net-(D14-A)")
 			(class "Default")
 			(node
@@ -14346,7 +15510,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "65")
 			(name "Net-(D15-A)")
 			(class "Default")
 			(node
@@ -14374,7 +15538,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "66")
 			(name "Net-(DAC1-RDY{slash}*BSY)")
 			(class "Default")
 			(node
@@ -14390,7 +15554,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "67")
 			(name "Net-(DAC2-RDY{slash}*BSY)")
 			(class "Default")
 			(node
@@ -14406,7 +15570,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "68")
 			(name "Net-(DAC3-RDY{slash}*BSY)")
 			(class "Default")
 			(node
@@ -14422,7 +15586,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "69")
 			(name "Net-(EF1-!SHDN)")
 			(class "Default")
 			(node
@@ -14439,7 +15603,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "70")
 			(name "Net-(EF1-B_GATE)")
 			(class "Default")
 			(node
@@ -14462,7 +15626,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "71")
 			(name "Net-(EF1-DRV)")
 			(class "Default")
 			(node
@@ -14479,7 +15643,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "72")
 			(name "Net-(EF1-ILIM)")
 			(class "Default")
 			(node
@@ -14495,7 +15659,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "73")
 			(name "Net-(EF1-OVP)")
 			(class "Default")
 			(node
@@ -14516,7 +15680,28 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "74")
+			(name "Net-(EF1-PGTH)")
+			(class "Default")
+			(node
+				(ref "EF1")
+				(pin "16")
+				(pinfunction "PGTH_16")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R34")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "75")
 			(name "Net-(EF1-UVLO)")
 			(class "Default")
 			(node
@@ -14537,7 +15722,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "76")
 			(name "Net-(EF1-dVdT)")
 			(class "Default")
 			(node
@@ -14553,7 +15738,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "77")
 			(name "Net-(EF2-!SHDN)")
 			(class "Default")
 			(node
@@ -14570,7 +15755,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "78")
 			(name "Net-(EF2-B_GATE)")
 			(class "Default")
 			(node
@@ -14593,7 +15778,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "79")
 			(name "Net-(EF2-DRV)")
 			(class "Default")
 			(node
@@ -14610,7 +15795,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "80")
 			(name "Net-(EF2-ILIM)")
 			(class "Default")
 			(node
@@ -14626,7 +15811,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "81")
 			(name "Net-(EF2-OVP)")
 			(class "Default")
 			(node
@@ -14647,7 +15832,28 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "82")
+			(name "Net-(EF2-PGTH)")
+			(class "Default")
+			(node
+				(ref "EF2")
+				(pin "16")
+				(pinfunction "PGTH_16")
+				(pintype "passive")
+			)
+			(node
+				(ref "R61")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R62")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "83")
 			(name "Net-(EF2-UVLO)")
 			(class "Default")
 			(node
@@ -14668,7 +15874,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "84")
 			(name "Net-(EF2-dVdT)")
 			(class "Default")
 			(node
@@ -14684,7 +15890,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "85")
 			(name "Net-(FST1-Pin_1)")
 			(class "Default")
 			(node
@@ -14700,7 +15906,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "86")
 			(name "Net-(FST1-Pin_3)")
 			(class "Default")
 			(node
@@ -14716,7 +15922,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "87")
 			(name "Net-(FST1-Pin_5)")
 			(class "Default")
 			(node
@@ -14732,7 +15938,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "88")
 			(name "Net-(FST1-Pin_7)")
 			(class "Default")
 			(node
@@ -14748,7 +15954,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "89")
 			(name "Net-(FST1-Pin_9)")
 			(class "Default")
 			(node
@@ -14764,7 +15970,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "90")
 			(name "Net-(FST1-Pin_11)")
 			(class "Default")
 			(node
@@ -14780,7 +15986,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "91")
 			(name "Net-(FST2-Pin_2)")
 			(class "Default")
 			(node
@@ -14796,7 +16002,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "92")
 			(name "Net-(FST2-Pin_4)")
 			(class "Default")
 			(node
@@ -14812,7 +16018,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "93")
 			(name "Net-(FST2-Pin_6)")
 			(class "Default")
 			(node
@@ -14828,7 +16034,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "94")
 			(name "Net-(FST2-Pin_8)")
 			(class "Default")
 			(node
@@ -14844,7 +16050,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "95")
 			(name "Net-(FST2-Pin_10)")
 			(class "Default")
 			(node
@@ -14860,7 +16066,7 @@
 			)
 		)
 		(net
-			(code "91")
+			(code "96")
 			(name "Net-(FST2-Pin_12)")
 			(class "Default")
 			(node
@@ -14876,17 +16082,17 @@
 			)
 		)
 		(net
-			(code "92")
+			(code "97")
 			(name "Net-(FST3-Pin_2)")
 			(class "Default")
 			(node
 				(ref "C7")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C8")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -14908,7 +16114,7 @@
 			)
 		)
 		(net
-			(code "93")
+			(code "98")
 			(name "Net-(L1-Pad2)")
 			(class "Default")
 			(node
@@ -14928,7 +16134,7 @@
 			)
 		)
 		(net
-			(code "94")
+			(code "99")
 			(name "Net-(L2-Pad2)")
 			(class "Default")
 			(node
@@ -14948,7 +16154,7 @@
 			)
 		)
 		(net
-			(code "95")
+			(code "100")
 			(name "Net-(L3-Pad2)")
 			(class "Default")
 			(node
@@ -14968,7 +16174,7 @@
 			)
 		)
 		(net
-			(code "96")
+			(code "101")
 			(name "Net-(L4-Pad2)")
 			(class "Default")
 			(node
@@ -14988,7 +16194,7 @@
 			)
 		)
 		(net
-			(code "97")
+			(code "102")
 			(name "Net-(L5-Pad2)")
 			(class "Default")
 			(node
@@ -15008,7 +16214,7 @@
 			)
 		)
 		(net
-			(code "98")
+			(code "103")
 			(name "Net-(L6-Pad2)")
 			(class "Default")
 			(node
@@ -15028,7 +16234,7 @@
 			)
 		)
 		(net
-			(code "99")
+			(code "104")
 			(name "Net-(L7-Pad2)")
 			(class "Default")
 			(node
@@ -15048,7 +16254,7 @@
 			)
 		)
 		(net
-			(code "100")
+			(code "105")
 			(name "Net-(L8-Pad2)")
 			(class "Default")
 			(node
@@ -15068,7 +16274,7 @@
 			)
 		)
 		(net
-			(code "101")
+			(code "106")
 			(name "Net-(L9-Pad2)")
 			(class "Default")
 			(node
@@ -15088,7 +16294,7 @@
 			)
 		)
 		(net
-			(code "102")
+			(code "107")
 			(name "Net-(L10-Pad2)")
 			(class "Default")
 			(node
@@ -15108,7 +16314,7 @@
 			)
 		)
 		(net
-			(code "103")
+			(code "108")
 			(name "Net-(L11-Pad2)")
 			(class "Default")
 			(node
@@ -15128,7 +16334,7 @@
 			)
 		)
 		(net
-			(code "104")
+			(code "109")
 			(name "Net-(L12-Pad2)")
 			(class "Default")
 			(node
@@ -15148,7 +16354,7 @@
 			)
 		)
 		(net
-			(code "105")
+			(code "110")
 			(name "Net-(LD1-ISENSE)")
 			(class "Default")
 			(node
@@ -15174,7 +16380,7 @@
 			)
 		)
 		(net
-			(code "106")
+			(code "111")
 			(name "Net-(LD2-ISENSE)")
 			(class "Default")
 			(node
@@ -15200,7 +16406,7 @@
 			)
 		)
 		(net
-			(code "107")
+			(code "112")
 			(name "Net-(LD3-ISENSE)")
 			(class "Default")
 			(node
@@ -15226,7 +16432,7 @@
 			)
 		)
 		(net
-			(code "108")
+			(code "113")
 			(name "Net-(LD4-ISENSE)")
 			(class "Default")
 			(node
@@ -15252,7 +16458,7 @@
 			)
 		)
 		(net
-			(code "109")
+			(code "114")
 			(name "Net-(LD5-ISENSE)")
 			(class "Default")
 			(node
@@ -15278,7 +16484,7 @@
 			)
 		)
 		(net
-			(code "110")
+			(code "115")
 			(name "Net-(LD6-ISENSE)")
 			(class "Default")
 			(node
@@ -15304,7 +16510,7 @@
 			)
 		)
 		(net
-			(code "111")
+			(code "116")
 			(name "Net-(LD7-ISENSE)")
 			(class "Default")
 			(node
@@ -15330,7 +16536,7 @@
 			)
 		)
 		(net
-			(code "112")
+			(code "117")
 			(name "Net-(LD8-ISENSE)")
 			(class "Default")
 			(node
@@ -15356,7 +16562,7 @@
 			)
 		)
 		(net
-			(code "113")
+			(code "118")
 			(name "Net-(LD9-ISENSE)")
 			(class "Default")
 			(node
@@ -15382,7 +16588,7 @@
 			)
 		)
 		(net
-			(code "114")
+			(code "119")
 			(name "Net-(LD10-ISENSE)")
 			(class "Default")
 			(node
@@ -15408,7 +16614,7 @@
 			)
 		)
 		(net
-			(code "115")
+			(code "120")
 			(name "Net-(LD11-ISENSE)")
 			(class "Default")
 			(node
@@ -15434,7 +16640,7 @@
 			)
 		)
 		(net
-			(code "116")
+			(code "121")
 			(name "Net-(LD12-ISENSE)")
 			(class "Default")
 			(node
@@ -15460,7 +16666,7 @@
 			)
 		)
 		(net
-			(code "117")
+			(code "122")
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
@@ -15493,12 +16699,12 @@
 			)
 		)
 		(net
-			(code "118")
+			(code "123")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
 				(ref "C9")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -15526,7 +16732,7 @@
 			)
 		)
 		(net
-			(code "119")
+			(code "124")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -15542,7 +16748,7 @@
 			)
 		)
 		(net
-			(code "120")
+			(code "125")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -15558,7 +16764,7 @@
 			)
 		)
 		(net
-			(code "121")
+			(code "126")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -15574,7 +16780,75 @@
 			)
 		)
 		(net
-			(code "122")
+			(code "127")
+			(name "Net-(MCU1-IO39)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "32")
+				(pinfunction "IO39_32")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "TP3")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "128")
+			(name "Net-(MCU1-IO40)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "33")
+				(pinfunction "IO40_33")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "TP3")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "129")
+			(name "Net-(MCU1-IO41)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "34")
+				(pinfunction "IO41_34")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "TP3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "130")
+			(name "Net-(MCU1-IO42)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "35")
+				(pinfunction "IO42_35")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "131")
 			(name "Net-(MCU1-RXD0)")
 			(class "Default")
 			(node
@@ -15584,14 +16858,14 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "Rx1")
-				(pin "1")
-				(pinfunction "Pin_1_1")
+				(ref "TP2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "123")
+			(code "132")
 			(name "Net-(MCU1-TXD0)")
 			(class "Default")
 			(node
@@ -15601,14 +16875,14 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "Tx1")
-				(pin "1")
-				(pinfunction "Pin_1_1")
+				(ref "TP2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "124")
+			(code "133")
 			(name "Net-(MCU1-USB_D+)")
 			(class "Default")
 			(node
@@ -15631,7 +16905,7 @@
 			)
 		)
 		(net
-			(code "125")
+			(code "134")
 			(name "Net-(MCU1-USB_D-)")
 			(class "Default")
 			(node
@@ -15654,12 +16928,12 @@
 			)
 		)
 		(net
-			(code "126")
+			(code "135")
 			(name "Net-(NFET1-D)")
 			(class "Default")
 			(node
 				(ref "C10")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -15688,12 +16962,12 @@
 			)
 		)
 		(net
-			(code "127")
+			(code "136")
 			(name "Net-(NFET2-D)")
 			(class "Default")
 			(node
 				(ref "C12")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -15722,7 +16996,7 @@
 			)
 		)
 		(net
-			(code "128")
+			(code "137")
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
@@ -15738,7 +17012,7 @@
 			)
 		)
 		(net
-			(code "129")
+			(code "138")
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
@@ -15754,7 +17028,7 @@
 			)
 		)
 		(net
-			(code "130")
+			(code "139")
 			(name "Net-(VR1-EN)")
 			(class "Default")
 			(node
@@ -15764,7 +17038,7 @@
 			)
 			(node
 				(ref "C3")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -15786,7 +17060,7 @@
 			)
 		)
 		(net
-			(code "131")
+			(code "140")
 			(name "Net-(VR1-VCC)")
 			(class "Default")
 			(node
@@ -15802,7 +17076,7 @@
 			)
 		)
 		(net
-			(code "132")
+			(code "141")
 			(name "unconnected-(EF1-MODE-Pad12)")
 			(class "Default")
 			(node
@@ -15813,29 +17087,7 @@
 			)
 		)
 		(net
-			(code "133")
-			(name "unconnected-(EF1-PGOOD-Pad17)")
-			(class "Default")
-			(node
-				(ref "EF1")
-				(pin "17")
-				(pinfunction "PGOOD_17")
-				(pintype "open_collector+no_connect")
-			)
-		)
-		(net
-			(code "134")
-			(name "unconnected-(EF1-PGTH-Pad16)")
-			(class "Default")
-			(node
-				(ref "EF1")
-				(pin "16")
-				(pinfunction "PGTH_16")
-				(pintype "passive+no_connect")
-			)
-		)
-		(net
-			(code "135")
+			(code "142")
 			(name "unconnected-(EF2-MODE-Pad12)")
 			(class "Default")
 			(node
@@ -15846,29 +17098,7 @@
 			)
 		)
 		(net
-			(code "136")
-			(name "unconnected-(EF2-PGOOD-Pad17)")
-			(class "Default")
-			(node
-				(ref "EF2")
-				(pin "17")
-				(pinfunction "PGOOD_17")
-				(pintype "open_collector+no_connect")
-			)
-		)
-		(net
-			(code "137")
-			(name "unconnected-(EF2-PGTH-Pad16)")
-			(class "Default")
-			(node
-				(ref "EF2")
-				(pin "16")
-				(pinfunction "PGTH_16")
-				(pintype "passive+no_connect")
-			)
-		)
-		(net
-			(code "138")
+			(code "143")
 			(name "unconnected-(LD1-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15879,7 +17109,7 @@
 			)
 		)
 		(net
-			(code "139")
+			(code "144")
 			(name "unconnected-(LD2-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15890,7 +17120,7 @@
 			)
 		)
 		(net
-			(code "140")
+			(code "145")
 			(name "unconnected-(LD3-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15901,7 +17131,7 @@
 			)
 		)
 		(net
-			(code "141")
+			(code "146")
 			(name "unconnected-(LD4-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15912,7 +17142,7 @@
 			)
 		)
 		(net
-			(code "142")
+			(code "147")
 			(name "unconnected-(LD5-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15923,7 +17153,7 @@
 			)
 		)
 		(net
-			(code "143")
+			(code "148")
 			(name "unconnected-(LD6-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15934,7 +17164,7 @@
 			)
 		)
 		(net
-			(code "144")
+			(code "149")
 			(name "unconnected-(LD7-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15945,7 +17175,7 @@
 			)
 		)
 		(net
-			(code "145")
+			(code "150")
 			(name "unconnected-(LD8-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15956,7 +17186,7 @@
 			)
 		)
 		(net
-			(code "146")
+			(code "151")
 			(name "unconnected-(LD9-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15967,7 +17197,7 @@
 			)
 		)
 		(net
-			(code "147")
+			(code "152")
 			(name "unconnected-(LD10-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15978,7 +17208,7 @@
 			)
 		)
 		(net
-			(code "148")
+			(code "153")
 			(name "unconnected-(LD11-NC-Pad7)")
 			(class "Default")
 			(node
@@ -15989,7 +17219,7 @@
 			)
 		)
 		(net
-			(code "149")
+			(code "154")
 			(name "unconnected-(LD12-NC-Pad7)")
 			(class "Default")
 			(node
@@ -16000,7 +17230,7 @@
 			)
 		)
 		(net
-			(code "150")
+			(code "155")
 			(name "unconnected-(MCU1-IO7-Pad7)")
 			(class "Default")
 			(node
@@ -16011,40 +17241,7 @@
 			)
 		)
 		(net
-			(code "151")
-			(name "unconnected-(MCU1-IO14-Pad22)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "22")
-				(pinfunction "IO14_22")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "152")
-			(name "unconnected-(MCU1-IO15-Pad8)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "8")
-				(pinfunction "IO15_8")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "153")
-			(name "unconnected-(MCU1-IO16-Pad9)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "9")
-				(pinfunction "IO16_9")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "154")
+			(code "156")
 			(name "unconnected-(MCU1-IO17-Pad10)")
 			(class "Default")
 			(node
@@ -16055,7 +17252,7 @@
 			)
 		)
 		(net
-			(code "155")
+			(code "157")
 			(name "unconnected-(MCU1-IO18-Pad11)")
 			(class "Default")
 			(node
@@ -16066,18 +17263,7 @@
 			)
 		)
 		(net
-			(code "156")
-			(name "unconnected-(MCU1-IO21-Pad23)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "23")
-				(pinfunction "IO21_23")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "157")
+			(code "158")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -16088,7 +17274,7 @@
 			)
 		)
 		(net
-			(code "158")
+			(code "159")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -16099,7 +17285,7 @@
 			)
 		)
 		(net
-			(code "159")
+			(code "160")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -16110,7 +17296,7 @@
 			)
 		)
 		(net
-			(code "160")
+			(code "161")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -16121,29 +17307,7 @@
 			)
 		)
 		(net
-			(code "161")
-			(name "unconnected-(MCU1-IO41-Pad34)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "34")
-				(pinfunction "IO41_34")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
 			(code "162")
-			(name "unconnected-(MCU1-IO42-Pad35)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "35")
-				(pinfunction "IO42_35")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "163")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -16154,7 +17318,7 @@
 			)
 		)
 		(net
-			(code "164")
+			(code "163")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -16165,7 +17329,7 @@
 			)
 		)
 		(net
-			(code "165")
+			(code "164")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -16176,7 +17340,7 @@
 			)
 		)
 		(net
-			(code "166")
+			(code "165")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -16187,7 +17351,7 @@
 			)
 		)
 		(net
-			(code "167")
+			(code "166")
 			(name "unconnected-(USBRV1-VBUS_A-PadA4)")
 			(class "Default")
 			(node
@@ -16198,7 +17362,7 @@
 			)
 		)
 		(net
-			(code "168")
+			(code "167")
 			(name "unconnected-(USBRV1-VBUS_A_1-PadA9)")
 			(class "Default")
 			(node
@@ -16209,7 +17373,7 @@
 			)
 		)
 		(net
-			(code "169")
+			(code "168")
 			(name "unconnected-(USBRV1-VBUS_B-PadB4)")
 			(class "Default")
 			(node
@@ -16220,7 +17384,7 @@
 			)
 		)
 		(net
-			(code "170")
+			(code "169")
 			(name "unconnected-(USBRV1-VBUS_B_1-PadB9)")
 			(class "Default")
 			(node
@@ -16231,7 +17395,7 @@
 			)
 		)
 		(net
-			(code "171")
+			(code "170")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -16242,7 +17406,7 @@
 			)
 		)
 		(net
-			(code "172")
+			(code "171")
 			(name "unconnected-(VR1-PGOOD-Pad1)")
 			(class "Default")
 			(node
@@ -16253,7 +17417,7 @@
 			)
 		)
 		(net
-			(code "173")
+			(code "172")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -16264,7 +17428,7 @@
 			)
 		)
 		(net
-			(code "174")
+			(code "173")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
