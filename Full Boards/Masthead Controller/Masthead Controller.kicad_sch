@@ -11339,10 +11339,6 @@
 		(uuid "ffd05ffe-9711-4de9-93d8-516174d71804")
 	)
 	(no_connect
-		(at 78.74 204.47)
-		(uuid "02496686-5153-42eb-a992-1451b783a839")
-	)
-	(no_connect
 		(at 132.08 215.9)
 		(uuid "0f6b0d38-fda6-467e-a42e-f8e8ed5ac150")
 	)
@@ -11359,20 +11355,12 @@
 		(uuid "362d610f-1618-426c-89f4-aeb5d040cbe2")
 	)
 	(no_connect
-		(at 78.74 212.09)
-		(uuid "459a825f-93df-43fd-a35a-b1e799252c82")
-	)
-	(no_connect
 		(at 78.74 217.17)
 		(uuid "4cafa6c4-9a45-4862-b596-15655fa4d876")
 	)
 	(no_connect
 		(at 78.74 181.61)
 		(uuid "63c9d720-c06a-4fb4-ae66-0e72f2b1c926")
-	)
-	(no_connect
-		(at 78.74 207.01)
-		(uuid "65054527-e6e5-4a2a-9e71-92ce1ee4b039")
 	)
 	(no_connect
 		(at 191.77 57.15)
@@ -11405,10 +11393,6 @@
 	(no_connect
 		(at 134.62 215.9)
 		(uuid "b4321d71-a439-40d4-907b-3d6b8765a7ef")
-	)
-	(no_connect
-		(at 78.74 209.55)
-		(uuid "dd077236-84ce-4227-a89c-dfedae0bc01f")
 	)
 	(no_connect
 		(at 68.58 113.03)
@@ -12690,6 +12674,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 204.47) (xy 82.55 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e80a01c-1ae7-482f-a5cb-6f4dbd6a2f3f")
+	)
+	(wire
+		(pts
 			(xy 96.52 162.56) (xy 96.52 165.1)
 		)
 		(stroke
@@ -12767,6 +12761,16 @@
 			(type default)
 		)
 		(uuid "214a4e6e-9344-45f1-8952-c606327c9d37")
+	)
+	(wire
+		(pts
+			(xy 90.17 203.2) (xy 90.17 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2162dbbe-d045-4eae-8c66-1a48cecfa69b")
 	)
 	(wire
 		(pts
@@ -14460,6 +14464,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 212.09) (xy 78.74 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "501f0b8b-6868-4557-b695-65b3275bb684")
+	)
+	(wire
+		(pts
 			(xy 326.39 119.38) (xy 327.66 119.38)
 		)
 		(stroke
@@ -15430,6 +15444,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 207.01) (xy 78.74 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "677100b6-8230-4ef2-8ba8-86c3d72ca86b")
+	)
+	(wire
+		(pts
 			(xy 210.82 222.25) (xy 212.09 222.25)
 		)
 		(stroke
@@ -15447,6 +15471,16 @@
 			(type default)
 		)
 		(uuid "6833c7c0-6aa6-4f83-a797-432dc29cc4f6")
+	)
+	(wire
+		(pts
+			(xy 87.63 209.55) (xy 87.63 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68499a2e-eda6-41af-aaa6-c860ab80dd9c")
 	)
 	(wire
 		(pts
@@ -16767,6 +16801,16 @@
 			(type default)
 		)
 		(uuid "8a7467c6-6664-4c0b-a1d2-8dcfced5777b")
+	)
+	(wire
+		(pts
+			(xy 82.55 204.47) (xy 82.55 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a97621e-73aa-4326-a192-d88eeecc53c2")
 	)
 	(wire
 		(pts
@@ -18120,6 +18164,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 209.55) (xy 87.63 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af2ade7e-8537-40c8-9716-d454c3663a3a")
+	)
+	(wire
+		(pts
 			(xy 180.34 135.89) (xy 180.34 137.16)
 		)
 		(stroke
@@ -19357,6 +19411,16 @@
 			(type default)
 		)
 		(uuid "d04e4775-372f-4d65-8fd3-dc78773a1247")
+	)
+	(wire
+		(pts
+			(xy 85.09 203.2) (xy 85.09 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d11db13c-529f-4ee6-87cc-f8bfc135a5e6")
 	)
 	(wire
 		(pts
@@ -32131,6 +32195,91 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 87.63 198.12 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b426469-5773-4407-8af7-a203b8fdbcd2")
+		(property "Reference" "TP3"
+			(at 86.36 194.818 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JTAG"
+			(at 86.36 196.85 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 87.63 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 87.63 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9676f230-32b6-4f35-a771-77ba9780f50f")
+		)
+		(pin "2"
+			(uuid "20a87fb3-099a-4697-945c-80a26827467b")
+		)
+		(pin "4"
+			(uuid "3c0e6dc6-684e-4e3e-9f67-b7a5dd6aa51e")
+		)
+		(pin "3"
+			(uuid "d8526cd8-5166-4bd5-aa47-c8203b4f4b56")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
