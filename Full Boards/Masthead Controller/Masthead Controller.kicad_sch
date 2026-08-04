@@ -3604,7 +3604,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mr-parts:Bourns SRN6045TA-680M"
+		(symbol "mr-parts:Bourns SRN6045TA-101M"
 			(pin_names
 				(offset 1.016)
 			)
@@ -3614,28 +3614,26 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "L"
-				(at -5.08 5.08 0)
+				(at 0 4.318 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "SRN6045TA-680M"
-				(at -8.89 -2.794 0)
+			(property "Value" "100 uH"
+				(at 0 -1.778 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+			(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 				(at 0 -7.366 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3658,7 +3656,7 @@
 					)
 				)
 			)
-			(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+			(property "Description" "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard"
 				(at 0 -4.318 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3669,7 +3667,7 @@
 					)
 				)
 			)
-			(property "MANUFACTURER" "BOURNS"
+			(property "Part" "Bourns SRN6045TA-101M"
 				(at 0 -11.938 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3681,8 +3679,1512 @@
 					(justify bottom)
 				)
 			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 -9.398 0)
+			(symbol "Bourns SRN6045TA-101M_0_0"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 2.794) (xy -4.064 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 2.286) (xy -4.064 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 0)
+					(mid -3.81 1.2645)
+					(end -2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.794) (xy -2.794 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.286) (xy -2.794 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.794) (xy -1.524 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.286) (xy -1.524 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 0)
+					(mid -1.27 1.2645)
+					(end 0 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.794) (xy -0.254 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.286) (xy -0.254 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.794) (xy 1.016 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.286) (xy 1.016 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 1.27 1.2645)
+					(end 2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.794) (xy 2.286 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.286) (xy 2.286 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 2.794) (xy 3.556 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 2.286) (xy 3.556 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 0)
+					(mid 3.81 1.2645)
+					(end 5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 2.794) (xy 4.826 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 2.286) (xy 4.826 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:Bourns SRN6045TA-221M"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0 4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "220 uH"
+				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Bourns SRN6045TA"
+				(at 0 -7.366 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf"
+				(at 0 -13.208 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard"
+				(at 0 -4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Bourns SRN6045TA-221M"
+				(at 0 -11.938 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "Bourns SRN6045TA-221M_0_0"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 2.794) (xy -4.064 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 2.286) (xy -4.064 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 0)
+					(mid -3.81 1.2645)
+					(end -2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.794) (xy -2.794 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.286) (xy -2.794 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.794) (xy -1.524 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.286) (xy -1.524 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 0)
+					(mid -1.27 1.2645)
+					(end 0 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.794) (xy -0.254 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.286) (xy -0.254 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.794) (xy 1.016 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.286) (xy 1.016 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 1.27 1.2645)
+					(end 2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.794) (xy 2.286 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.286) (xy 2.286 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 2.794) (xy 3.556 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 2.286) (xy 3.556 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 0)
+					(mid 3.81 1.2645)
+					(end 5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 2.794) (xy 4.826 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 2.286) (xy 4.826 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:Bourns SRN6045TA-331K"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0 4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "330 uH"
+				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Bourns SRN6045TA"
+				(at 0 -7.366 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf"
+				(at 0 -13.208 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard"
+				(at 0 -4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Bourns SRN6045TA-331K"
+				(at 0 -11.938 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "Bourns SRN6045TA-331K_0_0"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 2.794) (xy -4.064 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 2.286) (xy -4.064 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 0)
+					(mid -3.81 1.2645)
+					(end -2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.794) (xy -2.794 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.286) (xy -2.794 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.794) (xy -1.524 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.286) (xy -1.524 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 0)
+					(mid -1.27 1.2645)
+					(end 0 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.794) (xy -0.254 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.286) (xy -0.254 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.794) (xy 1.016 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.286) (xy 1.016 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 1.27 1.2645)
+					(end 2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.794) (xy 2.286 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.286) (xy 2.286 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 2.794) (xy 3.556 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 2.286) (xy 3.556 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 0)
+					(mid 3.81 1.2645)
+					(end 5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 2.794) (xy 4.826 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 2.286) (xy 4.826 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:Bourns SRN6045TA-471K"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0 4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "470 uH"
+				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Bourns SRN6045TA"
+				(at 0 -7.366 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf"
+				(at 0 -13.208 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard"
+				(at 0 -4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Bourns SRN6045TA-471K"
+				(at 0 -11.938 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "Bourns SRN6045TA-471K_0_0"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 2.794) (xy -4.064 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 2.286) (xy -4.064 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 0)
+					(mid -3.81 1.2645)
+					(end -2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.794) (xy -2.794 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.286) (xy -2.794 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.794) (xy -1.524 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.286) (xy -1.524 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 0)
+					(mid -1.27 1.2645)
+					(end 0 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.794) (xy -0.254 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.286) (xy -0.254 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.794) (xy 1.016 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.286) (xy 1.016 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 1.27 1.2645)
+					(end 2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.794) (xy 2.286 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.286) (xy 2.286 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 2.794) (xy 3.556 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 2.286) (xy 3.556 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 0)
+					(mid 3.81 1.2645)
+					(end 5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 2.794) (xy 4.826 2.794)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 2.286) (xy 4.826 2.286)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:Bourns SRN6045TA-680M"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0 4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "68 uH"
+				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Bourns SRN6045TA"
+				(at 0 -7.366 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf"
+				(at 0 -13.208 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard"
+				(at 0 -4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Bourns SRN6045TA-680M"
+				(at 0 -11.938 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9983,12 +11485,6 @@
 		(uuid "01aa306f-b366-456d-b266-5a416b29d4be")
 	)
 	(junction
-		(at 542.29 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "01b12b1f-2575-47c9-83e1-60e31812a6d6")
-	)
-	(junction
 		(at 97.79 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10017,6 +11513,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a023452-2e43-488f-aa2f-63290e264e0e")
+	)
+	(junction
+		(at 326.39 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ad3a81b-c940-4e6a-ba03-a295bcaeee90")
 	)
 	(junction
 		(at 486.41 58.42)
@@ -10113,6 +11615,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e00ba5d-1561-4812-a96c-52488fcd0fa2")
+	)
+	(junction
+		(at 326.39 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ef638cc-4c69-4624-b62e-02d6204ac083")
 	)
 	(junction
 		(at 153.67 217.17)
@@ -10259,6 +11767,12 @@
 		(uuid "3750f6cd-55c9-4039-ab2c-5d1db3c73808")
 	)
 	(junction
+		(at 542.29 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38bef615-1e4b-455e-a56e-1b6ac1b59688")
+	)
+	(junction
 		(at 391.16 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10391,12 +11905,6 @@
 		(uuid "572f51f3-bc51-463d-9e61-b07092592291")
 	)
 	(junction
-		(at 542.29 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5a1dd284-785d-433c-aac9-3c05731f329b")
-	)
-	(junction
 		(at 261.62 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10449,12 +11957,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60f08f4f-5529-43dd-a0fb-a6b187a4a1ae")
-	)
-	(junction
-		(at 434.34 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "617153cf-5ff4-4289-bc3b-5bc838dee3ea")
 	)
 	(junction
 		(at 17.78 173.99)
@@ -10527,6 +12029,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "722558e7-719c-4143-b0ea-edd624ef8c46")
+	)
+	(junction
+		(at 434.34 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "748e041e-136f-40c9-afe8-9214bee3079b")
 	)
 	(junction
 		(at 147.32 49.53)
@@ -10659,12 +12167,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "891afc88-52b5-482e-baec-46f9ff96165d")
-	)
-	(junction
-		(at 326.39 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "891d324a-e506-431c-89bc-2119e9738b1c")
 	)
 	(junction
 		(at 213.36 99.06)
@@ -10889,12 +12391,6 @@
 		(uuid "b235836d-e0b2-46bb-9201-e1fbd89340d9")
 	)
 	(junction
-		(at 326.39 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b47bb7ee-c0ac-44ee-bc97-1eacc51200b2")
-	)
-	(junction
 		(at 200.66 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10995,6 +12491,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c3301e18-efa3-434b-9b2a-580e33d445d9")
+	)
+	(junction
+		(at 434.34 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4547982-9513-4cb6-9fe8-5867c38a80bc")
 	)
 	(junction
 		(at 369.57 35.56)
@@ -11109,6 +12611,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5d42e68-9eb3-45ca-8ee0-9d2b4c9fd1e9")
+	)
+	(junction
+		(at 542.29 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d61c7c9c-17c4-4f66-b25c-1c9cdeccbf86")
 	)
 	(junction
 		(at 100.33 104.14)
@@ -11247,12 +12755,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed42cafa-6d3c-49b1-bb2a-a00506882e07")
-	)
-	(junction
-		(at 434.34 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed89d55e-fcaf-42d6-81e7-ae10d00bb47f")
 	)
 	(junction
 		(at 367.03 69.85)
@@ -11764,7 +13266,7 @@
 	)
 	(wire
 		(pts
-			(xy 514.35 114.3) (xy 542.29 114.3)
+			(xy 514.35 111.76) (xy 542.29 111.76)
 		)
 		(stroke
 			(width 0)
@@ -12054,7 +13556,7 @@
 	)
 	(wire
 		(pts
-			(xy 516.89 35.56) (xy 542.29 35.56)
+			(xy 516.89 33.02) (xy 542.29 33.02)
 		)
 		(stroke
 			(width 0)
@@ -12374,7 +13876,7 @@
 	)
 	(wire
 		(pts
-			(xy 516.89 26.67) (xy 516.89 35.56)
+			(xy 516.89 26.67) (xy 516.89 33.02)
 		)
 		(stroke
 			(width 0)
@@ -13224,7 +14726,7 @@
 	)
 	(wire
 		(pts
-			(xy 408.94 35.56) (xy 434.34 35.56)
+			(xy 408.94 33.02) (xy 434.34 33.02)
 		)
 		(stroke
 			(width 0)
@@ -14524,16 +16026,6 @@
 	)
 	(wire
 		(pts
-			(xy 542.29 33.02) (xy 542.29 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51276e01-0716-46d7-9056-2f06b28ab29e")
-	)
-	(wire
-		(pts
 			(xy 181.61 309.88) (xy 184.15 309.88)
 		)
 		(stroke
@@ -14604,7 +16096,7 @@
 	)
 	(wire
 		(pts
-			(xy 514.35 105.41) (xy 514.35 114.3)
+			(xy 514.35 105.41) (xy 514.35 111.76)
 		)
 		(stroke
 			(width 0)
@@ -14834,6 +16326,16 @@
 	)
 	(wire
 		(pts
+			(xy 542.29 33.02) (xy 542.29 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "586b3881-3ec0-4eda-bcd6-d0fabc614158")
+	)
+	(wire
+		(pts
 			(xy 212.09 67.31) (xy 214.63 67.31)
 		)
 		(stroke
@@ -14994,7 +16496,7 @@
 	)
 	(wire
 		(pts
-			(xy 408.94 26.67) (xy 408.94 35.56)
+			(xy 408.94 26.67) (xy 408.94 33.02)
 		)
 		(stroke
 			(width 0)
@@ -15744,7 +17246,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 35.56) (xy 303.53 35.56)
+			(xy 326.39 33.02) (xy 303.53 33.02)
 		)
 		(stroke
 			(width 0)
@@ -16944,6 +18446,16 @@
 	)
 	(wire
 		(pts
+			(xy 434.34 111.76) (xy 434.34 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "902a694e-d621-4368-a766-05a01c456cf6")
+	)
+	(wire
+		(pts
 			(xy 45.72 201.93) (xy 48.26 201.93)
 		)
 		(stroke
@@ -17394,7 +18906,7 @@
 	)
 	(wire
 		(pts
-			(xy 300.99 114.3) (xy 326.39 114.3)
+			(xy 300.99 111.76) (xy 326.39 111.76)
 		)
 		(stroke
 			(width 0)
@@ -17441,16 +18953,6 @@
 			(type default)
 		)
 		(uuid "9d1237a9-0339-4afe-b1bb-5929989175fc")
-	)
-	(wire
-		(pts
-			(xy 434.34 111.76) (xy 434.34 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d3e44dc-db3e-436f-9eb0-cfc98197e125")
 	)
 	(wire
 		(pts
@@ -17884,16 +19386,6 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 33.02) (xy 326.39 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6dd7494-ada7-494d-88b5-88244ae886e9")
-	)
-	(wire
-		(pts
 			(xy 227.33 29.21) (xy 222.25 29.21)
 		)
 		(stroke
@@ -18254,6 +19746,16 @@
 	)
 	(wire
 		(pts
+			(xy 326.39 33.02) (xy 326.39 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b20219e9-00bf-4648-8517-d04fdf09d27f")
+	)
+	(wire
+		(pts
 			(xy 180.34 222.25) (xy 185.42 222.25)
 		)
 		(stroke
@@ -18341,6 +19843,16 @@
 			(type default)
 		)
 		(uuid "b4be2d92-8f07-42c4-823b-39e2c9176547")
+	)
+	(wire
+		(pts
+			(xy 326.39 111.76) (xy 326.39 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b50abf32-3659-4f3b-8fea-a21930f4b43a")
 	)
 	(wire
 		(pts
@@ -19214,7 +20726,7 @@
 	)
 	(wire
 		(pts
-			(xy 300.99 105.41) (xy 300.99 114.3)
+			(xy 300.99 105.41) (xy 300.99 111.76)
 		)
 		(stroke
 			(width 0)
@@ -19844,7 +21356,7 @@
 	)
 	(wire
 		(pts
-			(xy 408.94 114.3) (xy 434.34 114.3)
+			(xy 408.94 111.76) (xy 434.34 111.76)
 		)
 		(stroke
 			(width 0)
@@ -19884,7 +21396,7 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 26.67) (xy 303.53 35.56)
+			(xy 303.53 26.67) (xy 303.53 33.02)
 		)
 		(stroke
 			(width 0)
@@ -20161,16 +21673,6 @@
 			(type default)
 		)
 		(uuid "e440a9bf-98ae-4c97-bd99-c840ef8bb021")
-	)
-	(wire
-		(pts
-			(xy 326.39 111.76) (xy 326.39 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e449d17e-c3ca-42f8-96fb-94e2d1b6a079")
 	)
 	(wire
 		(pts
@@ -21034,7 +22536,7 @@
 	)
 	(wire
 		(pts
-			(xy 408.94 105.41) (xy 408.94 114.3)
+			(xy 408.94 105.41) (xy 408.94 111.76)
 		)
 		(stroke
 			(width 0)
@@ -22043,7 +23545,7 @@
 		(uuid "fef1a114-a637-48e6-9fc4-767fbdaa217f")
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-471K")
 		(at 419.1 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -22054,7 +23556,7 @@
 		(dnp no)
 		(uuid "00976076-6dbb-441e-a449-e434564a27fe")
 		(property "Reference" "L7"
-			(at 412.496 117.094 0)
+			(at 419.1 115.062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22063,7 +23565,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "470 uH"
 			(at 419.1 121.158 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22073,7 +23575,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 419.1 126.746 0)
 			(hide yes)
 			(show_name no)
@@ -22096,7 +23598,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard"
 			(at 419.1 123.698 0)
 			(hide yes)
 			(show_name no)
@@ -22121,6 +23623,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 419.1 128.778 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-471K"
+			(at 419.1 131.318 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23081,7 +24595,7 @@
 		(dnp no)
 		(uuid "0c644727-9814-40ea-9028-37f23c3e84ef")
 		(property "Reference" "L11"
-			(at 517.398 117.602 0)
+			(at 524.51 115.062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23090,7 +24604,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "68 uH"
 			(at 524.51 121.158 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23100,7 +24614,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 524.51 126.746 0)
 			(hide yes)
 			(show_name no)
@@ -23123,7 +24637,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard"
 			(at 524.51 123.698 0)
 			(hide yes)
 			(show_name no)
@@ -23148,6 +24662,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 524.51 128.778 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-680M"
+			(at 524.51 131.318 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23756,7 +25282,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-221M")
 		(at 527.05 40.64 0)
 		(unit 1)
 		(body_style 1)
@@ -23767,7 +25293,7 @@
 		(dnp no)
 		(uuid "10a57f1d-6b44-4f02-9cb3-19fb46c04c61")
 		(property "Reference" "L9"
-			(at 520.446 38.608 0)
+			(at 527.05 36.322 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23776,7 +25302,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "220 uH"
 			(at 527.05 42.418 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23786,7 +25312,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 527.05 48.006 0)
 			(hide yes)
 			(show_name no)
@@ -23809,7 +25335,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard"
 			(at 527.05 44.958 0)
 			(hide yes)
 			(show_name no)
@@ -23834,6 +25360,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 527.05 50.038 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-221M"
+			(at 527.05 52.578 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24015,7 +25553,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-331K")
 		(at 419.1 40.64 0)
 		(unit 1)
 		(body_style 1)
@@ -24026,7 +25564,7 @@
 		(dnp no)
 		(uuid "11c74efe-3e06-498f-9938-cc8ef289c0af")
 		(property "Reference" "L5"
-			(at 412.496 38.608 0)
+			(at 419.1 36.322 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24035,7 +25573,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "330 uH"
 			(at 419.1 42.418 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24045,7 +25583,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 419.1 48.006 0)
 			(hide yes)
 			(show_name no)
@@ -24068,7 +25606,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard"
 			(at 419.1 44.958 0)
 			(hide yes)
 			(show_name no)
@@ -24093,6 +25631,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 419.1 50.038 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-331K"
+			(at 419.1 52.578 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26144,7 +27694,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-221M")
 		(at 311.15 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -26155,7 +27705,7 @@
 		(dnp no)
 		(uuid "25d92de6-0b33-4a35-9732-0371aff2ea8f")
 		(property "Reference" "L3"
-			(at 304.546 117.094 0)
+			(at 311.15 115.062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26164,7 +27714,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "220 uH"
 			(at 311.15 121.158 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26174,7 +27724,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 311.15 126.746 0)
 			(hide yes)
 			(show_name no)
@@ -26197,7 +27747,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard"
 			(at 311.15 123.698 0)
 			(hide yes)
 			(show_name no)
@@ -26222,6 +27772,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 311.15 128.778 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-221M"
+			(at 311.15 131.318 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37291,7 +38853,7 @@
 		(dnp no)
 		(uuid "9f92db59-b59f-46ec-b440-37ca24f26654")
 		(property "Reference" "L12"
-			(at 517.398 154.178 0)
+			(at 524.51 151.892 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37300,7 +38862,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "68 uH"
 			(at 524.51 157.988 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37310,7 +38872,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 524.51 163.576 0)
 			(hide yes)
 			(show_name no)
@@ -37333,7 +38895,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "68 µH Shielded Drum Core, Wirewound Inductor 1.1 A 305mOhm Nonstandard"
 			(at 524.51 160.528 0)
 			(hide yes)
 			(show_name no)
@@ -37358,6 +38920,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 524.51 165.608 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-680M"
+			(at 524.51 168.148 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38332,7 +39906,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-221M")
 		(at 527.05 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -38343,7 +39917,7 @@
 		(dnp no)
 		(uuid "a56e9ce6-60ae-4dad-842d-6f3d5913d430")
 		(property "Reference" "L10"
-			(at 526.796 71.628 0)
+			(at 527.05 71.882 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38352,7 +39926,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "220 uH"
 			(at 527.05 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38362,7 +39936,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 527.05 83.566 0)
 			(hide yes)
 			(show_name no)
@@ -38385,7 +39959,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard"
 			(at 527.05 80.518 0)
 			(hide yes)
 			(show_name no)
@@ -38410,6 +39984,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 527.05 85.598 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-221M"
+			(at 527.05 88.138 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39226,7 +40812,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-101M")
 		(at 311.15 77.47 0)
 		(unit 1)
 		(body_style 1)
@@ -39237,7 +40823,7 @@
 		(dnp no)
 		(uuid "af23eee5-5fc1-4e15-be93-96c8ab817506")
 		(property "Reference" "L2"
-			(at 304.546 75.438 0)
+			(at 311.15 73.152 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39246,7 +40832,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "100 uH"
 			(at 311.15 79.248 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39256,7 +40842,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 311.15 84.836 0)
 			(hide yes)
 			(show_name no)
@@ -39279,7 +40865,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard"
 			(at 311.15 81.788 0)
 			(hide yes)
 			(show_name no)
@@ -39304,6 +40890,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 311.15 86.868 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-101M"
+			(at 311.15 89.408 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39738,7 +41336,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-331K")
 		(at 419.1 77.47 0)
 		(unit 1)
 		(body_style 1)
@@ -39749,7 +41347,7 @@
 		(dnp no)
 		(uuid "b7b208e9-1bd1-40c9-904e-7cbcfe625780")
 		(property "Reference" "L6"
-			(at 412.496 75.184 0)
+			(at 419.1 73.152 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39758,7 +41356,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "330 uH"
 			(at 419.1 79.248 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39768,7 +41366,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 419.1 84.836 0)
 			(hide yes)
 			(show_name no)
@@ -39791,7 +41389,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "330 µH Shielded Drum Core, Wirewound Inductor 550 mA 1.68Ohm Max Nonstandard"
 			(at 419.1 81.788 0)
 			(hide yes)
 			(show_name no)
@@ -39816,6 +41414,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 419.1 86.868 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-331K"
+			(at 419.1 89.408 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40994,7 +42604,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-221M")
 		(at 311.15 156.21 0)
 		(unit 1)
 		(body_style 1)
@@ -41005,7 +42615,7 @@
 		(dnp no)
 		(uuid "c17d9329-eb3a-45fc-97e1-fa76cbbda24c")
 		(property "Reference" "L4"
-			(at 304.546 153.924 0)
+			(at 311.15 151.892 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41014,7 +42624,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "220 uH"
 			(at 311.15 157.988 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41024,7 +42634,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 311.15 163.576 0)
 			(hide yes)
 			(show_name no)
@@ -41047,7 +42657,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "220 µH Shielded Drum Core, Wirewound Inductor 600 mA 900mOhm Nonstandard"
 			(at 311.15 160.528 0)
 			(hide yes)
 			(show_name no)
@@ -41072,6 +42682,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 311.15 165.608 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-221M"
+			(at 311.15 168.148 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42887,7 +44509,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-471K")
 		(at 419.1 154.94 0)
 		(unit 1)
 		(body_style 1)
@@ -42898,7 +44520,7 @@
 		(dnp no)
 		(uuid "cfc106d9-53b4-4aac-bcba-35c94342bb71")
 		(property "Reference" "L8"
-			(at 412.496 152.654 0)
+			(at 419.1 150.622 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42907,7 +44529,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "470 uH"
 			(at 419.1 156.718 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42917,7 +44539,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 419.1 162.306 0)
 			(hide yes)
 			(show_name no)
@@ -42940,7 +44562,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "470 µH Shielded Drum Core, Wirewound Inductor 400 mA 2.46Ohm Max Nonstandard"
 			(at 419.1 159.258 0)
 			(hide yes)
 			(show_name no)
@@ -42965,6 +44587,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 419.1 164.338 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-471K"
+			(at 419.1 166.878 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46062,7 +47696,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Bourns SRN6045TA-680M")
+		(lib_id "mr-parts:Bourns SRN6045TA-101M")
 		(at 312.42 40.64 0)
 		(unit 1)
 		(body_style 1)
@@ -46073,7 +47707,7 @@
 		(dnp no)
 		(uuid "ed9bcb7f-eba0-45dc-bb0f-36054c71e2ec")
 		(property "Reference" "L1"
-			(at 305.816 38.862 0)
+			(at 312.42 36.322 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46082,7 +47716,7 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-680M"
+		(property "Value" "100 uH"
 			(at 312.42 42.418 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46092,7 +47726,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Bourns SRN6045TA-680M"
+		(property "Footprint" "mr-stuff:Bourns SRN6045TA"
 			(at 312.42 48.006 0)
 			(hide yes)
 			(show_name no)
@@ -46115,7 +47749,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 68UH 1.1A 305 MOHM SMD"
+		(property "Description" "100 µH Shielded Drum Core, Wirewound Inductor 920 mA 456mOhm Nonstandard"
 			(at 312.42 44.958 0)
 			(hide yes)
 			(show_name no)
@@ -46140,6 +47774,18 @@
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 312.42 50.038 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Part" "Bourns SRN6045TA-101M"
+			(at 312.42 52.578 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
