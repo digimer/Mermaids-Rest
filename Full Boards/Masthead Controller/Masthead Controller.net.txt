@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-08-04T14:29:08")
+		(date "2026-08-05T00:49:41")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -391,18 +391,18 @@
 		(comp
 			(ref "C5")
 			(value "22uF")
-			(footprint "mr-stuff:Murata GCJ31CR71A")
-			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ31CR71A226KE01%23")
-			(description "22 µF ±10% 10V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(footprint "mr-stuff:Murata GCJ32ER71C")
+			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			(fields
 				(field
-					(name "Part") "Murata GCJ31CR71A226KE01L")
+					(name "Part") "Murata GCJ32ER71C226KE01L")
 				(field
-					(name "Footprint") "mr-stuff:Murata GCJ31CR71A")
+					(name "Footprint") "mr-stuff:Murata GCJ32ER71C")
 				(field
-					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ31CR71A226KE01%23")
+					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
 				(field
-					(name "Description") "22 µF ±10% 10V Ceramic Capacitor X7R 1206 (3216 Metric)")
+					(name "Description") "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -411,7 +411,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Murata GCJ31CR71A226KE01L")
+				(value "Murata GCJ32ER71C226KE01L")
 			)
 			(property
 				(name "Sheetname")
@@ -1829,6 +1829,66 @@
 			)
 		)
 		(comp
+			(ref "C29")
+			(value "1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C105K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+				(field
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C105K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3fe23d0e-f4e2-4e5d-a8ce-4a867f9345b9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "C30")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
@@ -1874,6 +1934,66 @@
 				(tstamps "/")
 			)
 			(tstamps "feb8643a-71c8-4b4a-92e7-43a401e239a7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C31")
+			(value "22uF")
+			(footprint "mr-stuff:Murata GCJ32ER71C")
+			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
+			(fields
+				(field
+					(name "Part") "Murata GCJ32ER71C226KE01L")
+				(field
+					(name "Footprint") "mr-stuff:Murata GCJ32ER71C")
+				(field
+					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+				(field
+					(name "Description") "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Murata GCJ32ER71C226KE01L")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "129ed26b-400c-4f77-83fe-d4d271de5f09")
 			(units
 				(unit
 					(name "A")
@@ -12941,6 +13061,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C31")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "C40")
 				(pin "2")
 				(pintype "passive")
@@ -13069,6 +13194,12 @@
 			)
 			(node
 				(ref "VR1")
+				(pin "11")
+				(pinfunction "MODE/SYNC_11")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "VR1")
 				(pin "4")
 				(pinfunction "VOUT_4")
 				(pintype "power_out")
@@ -13097,6 +13228,11 @@
 			(node
 				(ref "C21")
 				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C29")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -14437,12 +14573,22 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C29")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "C3")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C30")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C31")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -15050,12 +15196,6 @@
 				(pin "10")
 				(pinfunction "GND_10")
 				(pintype "power_in")
-			)
-			(node
-				(ref "VR1")
-				(pin "11")
-				(pinfunction "MODE/SYNC_11")
-				(pintype "unspecified")
 			)
 		)
 		(net

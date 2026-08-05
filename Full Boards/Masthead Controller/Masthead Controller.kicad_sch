@@ -11635,6 +11635,12 @@
 		(uuid "202b9a8b-0ecd-4080-80cd-edd1ab907656")
 	)
 	(junction
+		(at 36.83 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20f1f4e5-11e4-4e77-87c5-e148440099fb")
+	)
+	(junction
 		(at 53.34 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11773,12 +11779,6 @@
 		(uuid "3750f6cd-55c9-4039-ab2c-5d1db3c73808")
 	)
 	(junction
-		(at 44.45 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38b3b200-4a5f-4a8b-93f5-a9405f20e76c")
-	)
-	(junction
 		(at 548.64 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11813,6 +11813,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3db5740c-0f6a-4efb-8fba-522135327772")
+	)
+	(junction
+		(at 40.64 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3dd951b9-a4f3-4993-92d0-a73d76a843ee")
 	)
 	(junction
 		(at 156.21 116.84)
@@ -12401,6 +12407,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7af5a77-e8dc-40c4-b2a8-a87dd9771837")
+	)
+	(junction
+		(at 44.45 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b991daf1-06e1-4c06-a5b6-e70d65777322")
 	)
 	(junction
 		(at 440.69 45.72)
@@ -13860,7 +13872,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 113.03) (xy 39.37 119.38)
+			(xy 33.02 113.03) (xy 33.02 123.19)
 		)
 		(stroke
 			(width 0)
@@ -14247,6 +14259,16 @@
 			(type default)
 		)
 		(uuid "207851de-41f6-4ec0-acf3-86724465bc48")
+	)
+	(wire
+		(pts
+			(xy 36.83 123.19) (xy 40.64 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2090ace5-c101-4a01-9618-704d89ee2a12")
 	)
 	(wire
 		(pts
@@ -15220,7 +15242,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 113.03) (xy 44.45 113.03)
+			(xy 33.02 113.03) (xy 36.83 113.03)
 		)
 		(stroke
 			(width 0)
@@ -15437,6 +15459,16 @@
 			(type default)
 		)
 		(uuid "40bcf6bf-08d4-4290-8e51-dbd600f49984")
+	)
+	(wire
+		(pts
+			(xy 36.83 113.03) (xy 44.45 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40c73987-027a-4a7e-83b0-f6035f69505f")
 	)
 	(wire
 		(pts
@@ -15830,7 +15862,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 119.38) (xy 35.56 119.38)
+			(xy 33.02 123.19) (xy 27.94 123.19)
 		)
 		(stroke
 			(width 0)
@@ -20280,6 +20312,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 113.03) (xy 36.83 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc22979f-41cc-474c-aeb8-ccb8c762ca47")
+	)
+	(wire
+		(pts
 			(xy 219.71 119.38) (xy 224.79 119.38)
 		)
 		(stroke
@@ -20597,6 +20639,16 @@
 			(type default)
 		)
 		(uuid "c32a7863-f039-40f9-a06e-3562bc9cd289")
+	)
+	(wire
+		(pts
+			(xy 36.83 121.92) (xy 36.83 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3354194-ac6b-4dd0-b338-5d2a515ad5eb")
 	)
 	(wire
 		(pts
@@ -21327,6 +21379,16 @@
 			(type default)
 		)
 		(uuid "d528ab3d-cc57-484e-8cc5-0a686e138fde")
+	)
+	(wire
+		(pts
+			(xy 40.64 123.19) (xy 44.45 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d53769a7-917f-4186-98fe-f3794a1798b7")
 	)
 	(wire
 		(pts
@@ -22447,6 +22509,16 @@
 			(type default)
 		)
 		(uuid "f69407b3-b17d-40f7-9ac4-52f74ced2106")
+	)
+	(wire
+		(pts
+			(xy 27.94 123.19) (xy 27.94 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f74e0bb7-5a3a-4409-bf3d-2216ee1b75dd")
 	)
 	(wire
 		(pts
@@ -25833,6 +25905,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 36.83 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "129ed26b-400c-4f77-83fe-d4d271de5f09")
+		(property "Reference" "C31"
+			(at 37.338 115.824 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 37.338 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Murata GCJ32ER71C"
+			(at 37.7952 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23"
+			(at 36.83 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)"
+			(at 36.83 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Murata GCJ32ER71C226KE01L"
+			(at 36.83 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f20a951a-04a2-460c-8b5d-588ca4f9b5aa")
+		)
+		(pin "1"
+			(uuid "6b46f4a1-088c-4664-b021-a75516ea584e")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:AL8861MP-13")
 		(at 384.81 36.83 0)
 		(unit 1)
@@ -27044,7 +27208,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mr-stuff:Murata GCJ31CR71A"
+		(property "Footprint" "mr-stuff:Murata GCJ32ER71C"
 			(at 45.4152 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -27055,7 +27219,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ31CR71A226KE01%23"
+		(property "Datasheet" "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23"
 			(at 44.45 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -27066,7 +27230,7 @@
 				)
 			)
 		)
-		(property "Description" "22 µF ±10% 10V Ceramic Capacitor X7R 1206 (3216 Metric)"
+		(property "Description" "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)"
 			(at 44.45 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -27077,7 +27241,7 @@
 				)
 			)
 		)
-		(property "Part" "Murata GCJ31CR71A226KE01L"
+		(property "Part" "Murata GCJ32ER71C226KE01L"
 			(at 44.45 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -33761,7 +33925,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 35.56 119.38 0)
+		(at 27.94 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33771,7 +33935,7 @@
 		(dnp no)
 		(uuid "600daf60-c8d5-4dac-aad5-37d6c56a5a23")
 		(property "Reference" "#PWR060"
-			(at 35.56 123.19 0)
+			(at 27.94 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33782,7 +33946,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 35.56 115.316 0)
+			(at 27.94 117.856 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33792,7 +33956,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 119.38 0)
+			(at 27.94 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33803,7 +33967,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 119.38 0)
+			(at 27.94 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33814,7 +33978,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 35.56 119.38 0)
+			(at 27.94 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43162,7 +43326,7 @@
 			)
 		)
 		(property "Value" "TPSM33610S3QRDNRQ1"
-			(at 64.262 116.078 0)
+			(at 62.23 115.824 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46415,7 +46579,7 @@
 			)
 		)
 		(property "Value" "SS36HE3_B/I"
-			(at 24.13 113.792 0)
+			(at 24.13 113.284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49539,7 +49703,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 123.19 0)
+		(at 40.64 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -49549,7 +49713,7 @@
 		(dnp no)
 		(uuid "fa3a2932-5132-4bca-a74d-f61fc309b88f")
 		(property "Reference" "#PWR0117"
-			(at 44.45 129.54 0)
+			(at 40.64 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49560,7 +49724,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 127.254 0)
+			(at 40.64 127.254 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49570,7 +49734,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 123.19 0)
+			(at 40.64 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49581,7 +49745,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 123.19 0)
+			(at 40.64 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49592,7 +49756,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 123.19 0)
+			(at 40.64 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
