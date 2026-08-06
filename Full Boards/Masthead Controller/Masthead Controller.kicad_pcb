@@ -35225,7 +35225,7 @@
 	(footprint "mr-stuff:Stackpole_RNCP1206"
 		(layer "F.Cu")
 		(uuid "8d8d60fb-bd9f-407c-9761-081a42e72320")
-		(at 135.9 76 -90)
+		(at 136 76 -90)
 		(tags "RNCP1206FTD3K01 ")
 		(property "Reference" "R61"
 			(at -0.0046 -1.8 90)
@@ -35532,7 +35532,7 @@
 			)
 			(polygon
 				(pts
-					(xy 136.7001 75.3142) (xy 136.7001 76.6858) (xy 135.0999 76.6858) (xy 135.0999 75.3142)
+					(xy 136.8001 75.3142) (xy 136.8001 76.6858) (xy 135.1999 76.6858) (xy 135.1999 75.3142)
 				)
 			)
 		)
@@ -82931,6 +82931,14 @@
 		(uuid "05f8d1df-7b38-42f2-938b-c82eb1f6543e")
 	)
 	(segment
+		(start 134.4046 74.7046)
+		(end 134.4 74.7)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "+24V_N2K")
+		(uuid "10875b05-2ec3-42df-9d8c-3c429266c334")
+	)
+	(segment
 		(start 132.350001 69.100001)
 		(end 131.75 68.5)
 		(width 0.4)
@@ -82961,6 +82969,14 @@
 		(layer "F.Cu")
 		(net "+24V_N2K")
 		(uuid "4ca0a761-98ee-48f5-90d7-146308d60a88")
+	)
+	(segment
+		(start 136 74.7046)
+		(end 134.4046 74.7046)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "+24V_N2K")
+		(uuid "4d48583d-95e6-4a89-b90d-3fb40edb3544")
 	)
 	(segment
 		(start 131.75 68.5)
@@ -82995,14 +83011,6 @@
 		(uuid "72eb1ba2-ce58-4eb2-a9b4-797fc9070cf6")
 	)
 	(segment
-		(start 135.9 74.7046)
-		(end 134.4046 74.7046)
-		(width 0.254)
-		(layer "F.Cu")
-		(net "+24V_N2K")
-		(uuid "73462626-bab1-442d-9d40-59a6a4811cd7")
-	)
-	(segment
 		(start 131.75 69.25)
 		(end 131.75 70)
 		(width 0.4)
@@ -83025,14 +83033,6 @@
 		(layer "F.Cu")
 		(net "+24V_N2K")
 		(uuid "d6effd00-c1dd-4bd6-b220-43f08d727744")
-	)
-	(segment
-		(start 134.4046 74.7046)
-		(end 134.4 74.7)
-		(width 0.254)
-		(layer "F.Cu")
-		(net "+24V_N2K")
-		(uuid "d87ac203-3db6-4272-a95c-4058047ff1a9")
 	)
 	(segment
 		(start 131.75 70)
@@ -83139,12 +83139,20 @@
 		(uuid "da96c8bb-ef21-445d-b610-2daa3e5488ab")
 	)
 	(segment
-		(start 135.9 77.2954)
+		(start 136 77.2954)
+		(end 135.9 77.3954)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "Net-(EF2-PGTH)")
+		(uuid "e43680ac-da7c-4ebc-a20c-c60fb87b50e9")
+	)
+	(segment
+		(start 135.9 77.3954)
 		(end 135.9 78.3)
 		(width 0.254)
 		(layer "F.Cu")
 		(net "Net-(EF2-PGTH)")
-		(uuid "f08c48d2-3a3c-4a29-b06f-f46da0fa94d3")
+		(uuid "e8a096d9-35b2-407d-9d0f-3c5cd2e0ed96")
 	)
 	(via
 		(at 135.9 78.3)
