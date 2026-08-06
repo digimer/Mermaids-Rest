@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-08-05T20:59:59")
+		(date "2026-08-05T21:08:23")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -2670,22 +2670,28 @@
 		)
 		(comp
 			(ref "D2")
-			(value "~")
+			(value "SS36HE3_B/I")
 			(footprint "mr-stuff:Vishay SS36HE3_BI")
 			(datasheet "https://www.vishay.com/docs/88751/ss32.pdf")
-			(description "Schottky Barrier Rectifier, 3.0A, 60V")
+			(description "Diode 60 V 3A Surface Mount DO-214AB (SMC)")
 			(fields
+				(field
+					(name "Part") "Vishay SS36HE3_B/I")
 				(field
 					(name "Footprint") "mr-stuff:Vishay SS36HE3_BI")
 				(field
 					(name "Datasheet") "https://www.vishay.com/docs/88751/ss32.pdf")
 				(field
-					(name "Description") "Schottky Barrier Rectifier, 3.0A, 60V")
+					(name "Description") "Diode 60 V 3A Surface Mount DO-214AB (SMC)")
 			)
 			(libsource
 				(lib "mr-parts")
 				(part "Vishay_SS36HE3_B/I")
 				(description "Schottky Barrier Rectifier, 3.0A, 60V")
+			)
+			(property
+				(name "Part")
+				(value "Vishay SS36HE3_B/I")
 			)
 			(property
 				(name "Sheetname")
@@ -10155,19 +10161,19 @@
 		)
 		(comp
 			(ref "R66")
-			(value "47.5kR")
+			(value "15kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "47.5 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "15 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD47K5")
+					(name "Part") "Stackpole RNCP1206FTD15K0")
 				(field
 					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "47.5 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "15 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
 				(lib "Device")
@@ -10176,7 +10182,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD47K5")
+				(value "Stackpole RNCP1206FTD15K0")
 			)
 			(property
 				(name "Sheetname")
@@ -14711,6 +14717,27 @@
 		)
 		(net
 			(code "47")
+			(name "/VBUS_MCU")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "7")
+				(pinfunction "IO7_7")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R65")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R66")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "48")
 			(name "GND")
 			(class "Default")
 			(node
@@ -15473,7 +15500,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "49")
 			(name "Net-(ADC1-AIN2)")
 			(class "Default")
 			(node
@@ -15499,7 +15526,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "50")
 			(name "Net-(ADC1-ALERT{slash}RDY)")
 			(class "Default")
 			(node
@@ -15515,7 +15542,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "51")
 			(name "Net-(CAN1-CANH)")
 			(class "Default")
 			(node
@@ -15532,7 +15559,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "52")
 			(name "Net-(CAN1-CANL)")
 			(class "Default")
 			(node
@@ -15549,7 +15576,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "53")
 			(name "Net-(CMC1-O1)")
 			(class "Default")
 			(node
@@ -15575,7 +15602,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "54")
 			(name "Net-(CMC1-O2)")
 			(class "Default")
 			(node
@@ -15601,7 +15628,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "55")
 			(name "Net-(D1-Pad2)")
 			(class "Default")
 			(node
@@ -15616,7 +15643,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "56")
 			(name "Net-(D4-A)")
 			(class "Default")
 			(node
@@ -15644,7 +15671,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "57")
 			(name "Net-(D5-A)")
 			(class "Default")
 			(node
@@ -15672,7 +15699,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "58")
 			(name "Net-(D6-A)")
 			(class "Default")
 			(node
@@ -15700,7 +15727,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "59")
 			(name "Net-(D7-A)")
 			(class "Default")
 			(node
@@ -15728,7 +15755,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "60")
 			(name "Net-(D8-A)")
 			(class "Default")
 			(node
@@ -15756,7 +15783,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "61")
 			(name "Net-(D9-A)")
 			(class "Default")
 			(node
@@ -15784,7 +15811,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "62")
 			(name "Net-(D10-A)")
 			(class "Default")
 			(node
@@ -15812,7 +15839,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "63")
 			(name "Net-(D11-A)")
 			(class "Default")
 			(node
@@ -15840,7 +15867,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "64")
 			(name "Net-(D12-A)")
 			(class "Default")
 			(node
@@ -15868,7 +15895,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "65")
 			(name "Net-(D13-A)")
 			(class "Default")
 			(node
@@ -15896,7 +15923,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "66")
 			(name "Net-(D14-A)")
 			(class "Default")
 			(node
@@ -15924,7 +15951,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "67")
 			(name "Net-(D15-A)")
 			(class "Default")
 			(node
@@ -15952,7 +15979,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "68")
 			(name "Net-(DAC1-RDY{slash}*BSY)")
 			(class "Default")
 			(node
@@ -15968,7 +15995,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "69")
 			(name "Net-(DAC2-RDY{slash}*BSY)")
 			(class "Default")
 			(node
@@ -15984,7 +16011,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "70")
 			(name "Net-(DAC3-RDY{slash}*BSY)")
 			(class "Default")
 			(node
@@ -16000,7 +16027,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "71")
 			(name "Net-(EF1-!SHDN)")
 			(class "Default")
 			(node
@@ -16017,7 +16044,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "72")
 			(name "Net-(EF1-B_GATE)")
 			(class "Default")
 			(node
@@ -16040,7 +16067,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "73")
 			(name "Net-(EF1-DRV)")
 			(class "Default")
 			(node
@@ -16057,7 +16084,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "74")
 			(name "Net-(EF1-ILIM)")
 			(class "Default")
 			(node
@@ -16073,7 +16100,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "75")
 			(name "Net-(EF1-OVP)")
 			(class "Default")
 			(node
@@ -16094,7 +16121,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "76")
 			(name "Net-(EF1-PGTH)")
 			(class "Default")
 			(node
@@ -16115,7 +16142,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "77")
 			(name "Net-(EF1-UVLO)")
 			(class "Default")
 			(node
@@ -16136,7 +16163,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "78")
 			(name "Net-(EF1-dVdT)")
 			(class "Default")
 			(node
@@ -16152,7 +16179,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "79")
 			(name "Net-(EF2-!SHDN)")
 			(class "Default")
 			(node
@@ -16169,7 +16196,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "80")
 			(name "Net-(EF2-B_GATE)")
 			(class "Default")
 			(node
@@ -16192,7 +16219,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "81")
 			(name "Net-(EF2-DRV)")
 			(class "Default")
 			(node
@@ -16209,7 +16236,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "82")
 			(name "Net-(EF2-ILIM)")
 			(class "Default")
 			(node
@@ -16225,7 +16252,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "83")
 			(name "Net-(EF2-OVP)")
 			(class "Default")
 			(node
@@ -16246,7 +16273,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "84")
 			(name "Net-(EF2-PGTH)")
 			(class "Default")
 			(node
@@ -16267,7 +16294,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "85")
 			(name "Net-(EF2-UVLO)")
 			(class "Default")
 			(node
@@ -16288,7 +16315,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "86")
 			(name "Net-(EF2-dVdT)")
 			(class "Default")
 			(node
@@ -16304,7 +16331,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "87")
 			(name "Net-(FST1-Pin_1)")
 			(class "Default")
 			(node
@@ -16320,7 +16347,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "88")
 			(name "Net-(FST1-Pin_3)")
 			(class "Default")
 			(node
@@ -16336,7 +16363,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "89")
 			(name "Net-(FST1-Pin_5)")
 			(class "Default")
 			(node
@@ -16352,7 +16379,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "90")
 			(name "Net-(FST1-Pin_7)")
 			(class "Default")
 			(node
@@ -16368,7 +16395,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "91")
 			(name "Net-(FST1-Pin_9)")
 			(class "Default")
 			(node
@@ -16384,7 +16411,7 @@
 			)
 		)
 		(net
-			(code "91")
+			(code "92")
 			(name "Net-(FST1-Pin_11)")
 			(class "Default")
 			(node
@@ -16400,7 +16427,7 @@
 			)
 		)
 		(net
-			(code "92")
+			(code "93")
 			(name "Net-(FST2-Pin_2)")
 			(class "Default")
 			(node
@@ -16416,7 +16443,7 @@
 			)
 		)
 		(net
-			(code "93")
+			(code "94")
 			(name "Net-(FST2-Pin_4)")
 			(class "Default")
 			(node
@@ -16432,7 +16459,7 @@
 			)
 		)
 		(net
-			(code "94")
+			(code "95")
 			(name "Net-(FST2-Pin_6)")
 			(class "Default")
 			(node
@@ -16448,7 +16475,7 @@
 			)
 		)
 		(net
-			(code "95")
+			(code "96")
 			(name "Net-(FST2-Pin_8)")
 			(class "Default")
 			(node
@@ -16464,7 +16491,7 @@
 			)
 		)
 		(net
-			(code "96")
+			(code "97")
 			(name "Net-(FST2-Pin_10)")
 			(class "Default")
 			(node
@@ -16480,7 +16507,7 @@
 			)
 		)
 		(net
-			(code "97")
+			(code "98")
 			(name "Net-(FST2-Pin_12)")
 			(class "Default")
 			(node
@@ -16496,7 +16523,7 @@
 			)
 		)
 		(net
-			(code "98")
+			(code "99")
 			(name "Net-(FST3-Pin_2)")
 			(class "Default")
 			(node
@@ -16528,7 +16555,7 @@
 			)
 		)
 		(net
-			(code "99")
+			(code "100")
 			(name "Net-(L1-Pad2)")
 			(class "Default")
 			(node
@@ -16548,7 +16575,7 @@
 			)
 		)
 		(net
-			(code "100")
+			(code "101")
 			(name "Net-(L2-Pad2)")
 			(class "Default")
 			(node
@@ -16568,7 +16595,7 @@
 			)
 		)
 		(net
-			(code "101")
+			(code "102")
 			(name "Net-(L3-Pad2)")
 			(class "Default")
 			(node
@@ -16588,7 +16615,7 @@
 			)
 		)
 		(net
-			(code "102")
+			(code "103")
 			(name "Net-(L4-Pad2)")
 			(class "Default")
 			(node
@@ -16608,7 +16635,7 @@
 			)
 		)
 		(net
-			(code "103")
+			(code "104")
 			(name "Net-(L5-Pad2)")
 			(class "Default")
 			(node
@@ -16628,7 +16655,7 @@
 			)
 		)
 		(net
-			(code "104")
+			(code "105")
 			(name "Net-(L6-Pad2)")
 			(class "Default")
 			(node
@@ -16648,7 +16675,7 @@
 			)
 		)
 		(net
-			(code "105")
+			(code "106")
 			(name "Net-(L7-Pad2)")
 			(class "Default")
 			(node
@@ -16668,7 +16695,7 @@
 			)
 		)
 		(net
-			(code "106")
+			(code "107")
 			(name "Net-(L8-Pad2)")
 			(class "Default")
 			(node
@@ -16688,7 +16715,7 @@
 			)
 		)
 		(net
-			(code "107")
+			(code "108")
 			(name "Net-(L9-Pad2)")
 			(class "Default")
 			(node
@@ -16708,7 +16735,7 @@
 			)
 		)
 		(net
-			(code "108")
+			(code "109")
 			(name "Net-(L10-Pad2)")
 			(class "Default")
 			(node
@@ -16728,7 +16755,7 @@
 			)
 		)
 		(net
-			(code "109")
+			(code "110")
 			(name "Net-(L11-Pad2)")
 			(class "Default")
 			(node
@@ -16748,7 +16775,7 @@
 			)
 		)
 		(net
-			(code "110")
+			(code "111")
 			(name "Net-(L12-Pad2)")
 			(class "Default")
 			(node
@@ -16768,7 +16795,7 @@
 			)
 		)
 		(net
-			(code "111")
+			(code "112")
 			(name "Net-(LD1-ISENSE)")
 			(class "Default")
 			(node
@@ -16794,7 +16821,7 @@
 			)
 		)
 		(net
-			(code "112")
+			(code "113")
 			(name "Net-(LD2-ISENSE)")
 			(class "Default")
 			(node
@@ -16820,7 +16847,7 @@
 			)
 		)
 		(net
-			(code "113")
+			(code "114")
 			(name "Net-(LD3-ISENSE)")
 			(class "Default")
 			(node
@@ -16846,7 +16873,7 @@
 			)
 		)
 		(net
-			(code "114")
+			(code "115")
 			(name "Net-(LD4-ISENSE)")
 			(class "Default")
 			(node
@@ -16872,7 +16899,7 @@
 			)
 		)
 		(net
-			(code "115")
+			(code "116")
 			(name "Net-(LD5-ISENSE)")
 			(class "Default")
 			(node
@@ -16898,7 +16925,7 @@
 			)
 		)
 		(net
-			(code "116")
+			(code "117")
 			(name "Net-(LD6-ISENSE)")
 			(class "Default")
 			(node
@@ -16924,7 +16951,7 @@
 			)
 		)
 		(net
-			(code "117")
+			(code "118")
 			(name "Net-(LD7-ISENSE)")
 			(class "Default")
 			(node
@@ -16950,7 +16977,7 @@
 			)
 		)
 		(net
-			(code "118")
+			(code "119")
 			(name "Net-(LD8-ISENSE)")
 			(class "Default")
 			(node
@@ -16976,7 +17003,7 @@
 			)
 		)
 		(net
-			(code "119")
+			(code "120")
 			(name "Net-(LD9-ISENSE)")
 			(class "Default")
 			(node
@@ -17002,7 +17029,7 @@
 			)
 		)
 		(net
-			(code "120")
+			(code "121")
 			(name "Net-(LD10-ISENSE)")
 			(class "Default")
 			(node
@@ -17028,7 +17055,7 @@
 			)
 		)
 		(net
-			(code "121")
+			(code "122")
 			(name "Net-(LD11-ISENSE)")
 			(class "Default")
 			(node
@@ -17054,7 +17081,7 @@
 			)
 		)
 		(net
-			(code "122")
+			(code "123")
 			(name "Net-(LD12-ISENSE)")
 			(class "Default")
 			(node
@@ -17080,7 +17107,7 @@
 			)
 		)
 		(net
-			(code "123")
+			(code "124")
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
@@ -17113,7 +17140,7 @@
 			)
 		)
 		(net
-			(code "124")
+			(code "125")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
@@ -17146,7 +17173,7 @@
 			)
 		)
 		(net
-			(code "125")
+			(code "126")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -17162,7 +17189,7 @@
 			)
 		)
 		(net
-			(code "126")
+			(code "127")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -17178,7 +17205,7 @@
 			)
 		)
 		(net
-			(code "127")
+			(code "128")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -17194,7 +17221,7 @@
 			)
 		)
 		(net
-			(code "128")
+			(code "129")
 			(name "Net-(MCU1-IO39)")
 			(class "Default")
 			(node
@@ -17211,7 +17238,7 @@
 			)
 		)
 		(net
-			(code "129")
+			(code "130")
 			(name "Net-(MCU1-IO40)")
 			(class "Default")
 			(node
@@ -17228,7 +17255,7 @@
 			)
 		)
 		(net
-			(code "130")
+			(code "131")
 			(name "Net-(MCU1-IO41)")
 			(class "Default")
 			(node
@@ -17245,7 +17272,7 @@
 			)
 		)
 		(net
-			(code "131")
+			(code "132")
 			(name "Net-(MCU1-IO42)")
 			(class "Default")
 			(node
@@ -17258,27 +17285,6 @@
 				(ref "TP3")
 				(pin "1")
 				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "132")
-			(name "Net-(MCU1-IO45)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "26")
-				(pinfunction "IO45_26")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "R65")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R66")
-				(pin "2")
 				(pintype "passive")
 			)
 		)
@@ -17671,17 +17677,6 @@
 		)
 		(net
 			(code "157")
-			(name "unconnected-(MCU1-IO7-Pad7)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "7")
-				(pinfunction "IO7_7")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "158")
 			(name "unconnected-(MCU1-IO17-Pad10)")
 			(class "Default")
 			(node
@@ -17692,7 +17687,7 @@
 			)
 		)
 		(net
-			(code "159")
+			(code "158")
 			(name "unconnected-(MCU1-IO18-Pad11)")
 			(class "Default")
 			(node
@@ -17703,7 +17698,7 @@
 			)
 		)
 		(net
-			(code "160")
+			(code "159")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -17714,7 +17709,7 @@
 			)
 		)
 		(net
-			(code "161")
+			(code "160")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -17725,7 +17720,7 @@
 			)
 		)
 		(net
-			(code "162")
+			(code "161")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -17736,13 +17731,24 @@
 			)
 		)
 		(net
-			(code "163")
+			(code "162")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
 				(ref "MCU1")
 				(pin "31")
 				(pinfunction "IO38_31")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "163")
+			(name "unconnected-(MCU1-IO45-Pad26)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "26")
+				(pinfunction "IO45_26")
 				(pintype "bidirectional+no_connect")
 			)
 		)
