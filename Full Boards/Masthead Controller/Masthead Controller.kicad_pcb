@@ -57472,10 +57472,10 @@
 		(at 91.1576 60 -90)
 		(tags "MCP4728T-E/UN ")
 		(property "Reference" "DAC1"
-			(at 3.7 -0.0424 0)
+			(at 3.7 0.0576 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "2e21952e-b165-4912-bb80-247673024648")
+			(uuid "a2ba49ce-1b8d-4044-b134-93221fbb1105")
 			(effects
 				(font
 					(size 1 1)
@@ -57487,7 +57487,7 @@
 			(at 0 4.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "a20bc820-ec3d-47be-b232-d060e25ed720")
+			(uuid "dbe77b83-b3bb-4922-ac38-6a0a81c8bd5e")
 			(effects
 				(font
 					(size 1 1)
@@ -57499,7 +57499,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e9cfa044-c762-40c0-b69e-e7792778e75b")
+			(uuid "c02e3320-8f17-405a-aa5a-ec6143b33810")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57510,7 +57510,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "56641033-a87f-4173-855a-696b4555105a")
+			(uuid "f8ce489b-385b-48b4-befc-272803f37878")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -79474,22 +79474,6 @@
 		(uuid "da5b0001-7771-4fb1-a120-4799cb2fd327")
 	)
 	(segment
-		(start 86.6 62.2)
-		(end 87.3 62.9)
-		(width 0.254)
-		(layer "F.Cu")
-		(net "/VBUS")
-		(uuid "03d8ed7e-c620-4e0c-817a-68e0a9e07f52")
-	)
-	(segment
-		(start 87.3 63.2)
-		(end 88.25 64.15)
-		(width 0.254)
-		(layer "F.Cu")
-		(net "/VBUS")
-		(uuid "14c405a6-44a2-42bb-a441-fd311cdbbff2")
-	)
-	(segment
 		(start 64.2954 63.6)
 		(end 66.6 61.2954)
 		(width 0.254)
@@ -79506,6 +79490,22 @@
 		(uuid "24f4fa47-5f62-49b0-b564-3c014e58a6cc")
 	)
 	(segment
+		(start 87.6 63.5)
+		(end 88.25 64.15)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "/VBUS")
+		(uuid "259b0d13-b3af-4d5f-85b8-ce91ae5c4fe7")
+	)
+	(segment
+		(start 87.6 63.1)
+		(end 87.6 63.5)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "/VBUS")
+		(uuid "2ff9733b-9fbb-476f-9902-5a79d96b0220")
+	)
+	(segment
 		(start 63.057948 54.25)
 		(end 64.061948 55.254)
 		(width 0.254)
@@ -79514,20 +79514,20 @@
 		(uuid "47fae3d2-3d91-4aa7-a097-950bc5fdc2e4")
 	)
 	(segment
-		(start 88.25 64.15)
-		(end 88.4375 64.15)
-		(width 0.254)
-		(layer "F.Cu")
-		(net "/VBUS")
-		(uuid "5a89e4e6-d79d-44fe-be2b-03462cee6cb6")
-	)
-	(segment
 		(start 64.985 51.75)
 		(end 65.95 51.75)
 		(width 0.254)
 		(layer "F.Cu")
 		(net "/VBUS")
 		(uuid "74ecf646-e308-4631-b14e-d65d9aa03bdd")
+	)
+	(segment
+		(start 85.8 62.2)
+		(end 86.7 62.2)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "/VBUS")
+		(uuid "789a3ce4-4bd4-4081-8b6e-2528eea11ae7")
 	)
 	(segment
 		(start 63.057948 54.25)
@@ -79562,14 +79562,6 @@
 		(uuid "8e862e40-631f-4e36-af6a-9b303de3c376")
 	)
 	(segment
-		(start 87.3 62.9)
-		(end 87.3 63.2)
-		(width 0.254)
-		(layer "F.Cu")
-		(net "/VBUS")
-		(uuid "8eb3db57-ef44-4e60-82a6-c02e26f44b57")
-	)
-	(segment
 		(start 65.95 51.75)
 		(end 66.1 51.6)
 		(width 0.254)
@@ -79584,6 +79576,14 @@
 		(layer "F.Cu")
 		(net "/VBUS")
 		(uuid "b7910508-babe-4d8f-9723-3f780e3f03c9")
+	)
+	(segment
+		(start 86.7 62.2)
+		(end 87.6 63.1)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "/VBUS")
+		(uuid "bbcbdcb5-0eec-4b7c-a728-616b37fdb1f6")
 	)
 	(segment
 		(start 67.25 54.25)
@@ -79618,14 +79618,6 @@
 		(uuid "cf402352-7990-4973-834a-a672472d3b21")
 	)
 	(segment
-		(start 85.8 62.2)
-		(end 86.6 62.2)
-		(width 0.254)
-		(layer "F.Cu")
-		(net "/VBUS")
-		(uuid "d4f29857-7178-4200-92ae-e773bcde539e")
-	)
-	(segment
 		(start 66.6 61.2954)
 		(end 66.6 56.8)
 		(width 0.254)
@@ -79648,6 +79640,14 @@
 		(layer "F.Cu")
 		(net "/VBUS")
 		(uuid "f0be8703-42d7-429c-8956-7d7ce8c18873")
+	)
+	(segment
+		(start 88.25 64.15)
+		(end 88.4375 64.15)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "/VBUS")
+		(uuid "f19fe581-9d39-4823-bd84-e47f953d8e6e")
 	)
 	(segment
 		(start 67.6 56.093356)
@@ -86082,6 +86082,22 @@
 		(uuid "4859cd09-04fb-4d41-a26a-0587a077f132")
 	)
 	(segment
+		(start 86.43125 63.2)
+		(end 86.1625 63.2)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "Net-(D2-C)")
+		(uuid "497eb67a-9f34-425d-9d40-3553d8856ff8")
+	)
+	(segment
+		(start 89.530599 67.4)
+		(end 87 64.869401)
+		(width 0.254)
+		(layer "F.Cu")
+		(net "Net-(D2-C)")
+		(uuid "541879ba-13a0-4575-9b90-6c475a8f548a")
+	)
+	(segment
 		(start 97.85 70.95)
 		(end 97.575 70.675)
 		(width 0.4)
@@ -86098,22 +86114,6 @@
 		(uuid "7b605a1b-f37b-4742-8afa-3d39af7869e5")
 	)
 	(segment
-		(start 87.2 65.069401)
-		(end 89.530599 67.4)
-		(width 0.254)
-		(layer "F.Cu")
-		(net "Net-(D2-C)")
-		(uuid "9c4cf2f7-a75c-4aca-94a6-5de0d7caca3e")
-	)
-	(segment
-		(start 86.4 63.2)
-		(end 87.2 64)
-		(width 0.254)
-		(layer "F.Cu")
-		(net "Net-(D2-C)")
-		(uuid "a4cbb225-4092-482f-8677-029c51de2585")
-	)
-	(segment
 		(start 96.15 70.45)
 		(end 94.743001 71.856999)
 		(width 0.4)
@@ -86122,12 +86122,12 @@
 		(uuid "a5281cda-fa34-4c78-9178-60bfd42905d5")
 	)
 	(segment
-		(start 86.1625 63.2)
-		(end 86.4 63.2)
+		(start 87 63.76875)
+		(end 86.43125 63.2)
 		(width 0.254)
 		(layer "F.Cu")
 		(net "Net-(D2-C)")
-		(uuid "b170d5bc-282d-421e-9155-55adce216bc3")
+		(uuid "b13a8f66-2ed0-4aef-9959-071718b78f25")
 	)
 	(segment
 		(start 93.864712 68.378)
@@ -86138,12 +86138,12 @@
 		(uuid "b58033fb-297a-4650-ab0e-f9460bba81ca")
 	)
 	(segment
-		(start 87.2 64)
-		(end 87.2 65.069401)
+		(start 87 64.869401)
+		(end 87 63.76875)
 		(width 0.254)
 		(layer "F.Cu")
 		(net "Net-(D2-C)")
-		(uuid "b7f02866-fb1c-4fda-9249-29c28d708b9e")
+		(uuid "b8cd5657-321c-4dff-a132-3edabea17ada")
 	)
 	(segment
 		(start 98.599114 70.95)
