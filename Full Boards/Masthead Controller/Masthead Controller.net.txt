@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-08-06T14:19:26")
+		(date "2026-08-06T14:27:56")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -3829,22 +3829,28 @@
 		)
 		(comp
 			(ref "F1")
-			(value "1A FB")
+			(value "0440001.WRA")
 			(footprint "mr-stuff:Littelfuse 440001")
-			(description "Fuse")
+			(datasheet "https://www.littelfuse.com/assetdocs/littelfuse_fuse_440a_datasheet.pdf?assetguid=6d192b67-f97d-4680-8f7f-25afc4412752")
+			(description "1 A 63 V 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 1206 (3216 Metric)")
 			(fields
+				(field
+					(name "Part") "Littelfuse 0440001.WRA")
 				(field
 					(name "Footprint") "mr-stuff:Littelfuse 440001")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.littelfuse.com/assetdocs/littelfuse_fuse_440a_datasheet.pdf?assetguid=6d192b67-f97d-4680-8f7f-25afc4412752")
 				(field
-					(name "Description") "Fuse")
+					(name "Description") "1 A 63 V 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
 				(part "Fuse")
 				(description "Fuse")
+			)
+			(property
+				(name "Part")
+				(value "Littelfuse 0440001.WRA")
 			)
 			(property
 				(name "Sheetname")
@@ -6332,20 +6338,26 @@
 			(ref "Q1")
 			(value "2N7002")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
-			(datasheet "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF")
-			(description "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23")
+			(datasheet "https://www.diodes.com/assets/Datasheets/2N7002.pdf")
+			(description "N-Channel 60 V 170mA (Ta) 370mW (Ta) Surface Mount SOT-23-3")
 			(fields
+				(field
+					(name "Part") "Diodes Inc 2N7002Q-7-F")
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
 				(field
-					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF")
+					(name "Datasheet") "https://www.diodes.com/assets/Datasheets/2N7002.pdf")
 				(field
-					(name "Description") "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23")
+					(name "Description") "N-Channel 60 V 170mA (Ta) 370mW (Ta) Surface Mount SOT-23-3")
 			)
 			(libsource
 				(lib "Transistor_FET")
 				(part "2N7002")
 				(description "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23")
+			)
+			(property
+				(name "Part")
+				(value "Diodes Inc 2N7002Q-7-F")
 			)
 			(property
 				(name "Sheetname")
@@ -6389,20 +6401,26 @@
 			(ref "Q2")
 			(value "2N7002")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
-			(datasheet "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF")
-			(description "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23")
+			(datasheet "https://www.diodes.com/assets/Datasheets/2N7002.pdf")
+			(description "N-Channel 60 V 170mA (Ta) 370mW (Ta) Surface Mount SOT-23-3")
 			(fields
+				(field
+					(name "Part") "Diodes Inc 2N7002Q-7-F")
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
 				(field
-					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF")
+					(name "Datasheet") "https://www.diodes.com/assets/Datasheets/2N7002.pdf")
 				(field
-					(name "Description") "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23")
+					(name "Description") "N-Channel 60 V 170mA (Ta) 370mW (Ta) Surface Mount SOT-23-3")
 			)
 			(libsource
 				(lib "Transistor_FET")
 				(part "2N7002")
 				(description "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23")
+			)
+			(property
+				(name "Part")
+				(value "Diodes Inc 2N7002Q-7-F")
 			)
 			(property
 				(name "Sheetname")
@@ -6424,7 +6442,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "722234cf-b276-41cb-9ba0-8dc2cc42add6")
+			(tstamps "b0df9af6-8303-4b36-930f-4deecd52aaf1")
 			(units
 				(unit
 					(name "A")
