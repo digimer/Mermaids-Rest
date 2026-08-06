@@ -12472,12 +12472,6 @@
 		(uuid "987ed8ae-1c9b-4877-babd-f8bace9cbc88")
 	)
 	(junction
-		(at 219.71 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "996e5a27-afb0-4f1b-8f68-41b07ad915b0")
-	)
-	(junction
 		(at 332.74 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12584,6 +12578,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b235836d-e0b2-46bb-9201-e1fbd89340d9")
+	)
+	(junction
+		(at 219.71 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3f02183-1b84-4e73-8950-3266bb7657d0")
 	)
 	(junction
 		(at 209.55 24.13)
@@ -12790,12 +12790,6 @@
 		(uuid "d0e43b1a-133e-4df5-86c8-e965c7f43b37")
 	)
 	(junction
-		(at 219.71 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d134872a-d908-4389-97d5-b26e64ceb782")
-	)
-	(junction
 		(at 226.06 232.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12884,6 +12878,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "daf334f4-f7b8-4457-90fc-9de571fe8a14")
+	)
+	(junction
+		(at 219.71 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc4a6baf-f220-4b2b-9ebf-d6fed64c2118")
 	)
 	(junction
 		(at 179.07 276.86)
@@ -13204,6 +13204,16 @@
 			(type default)
 		)
 		(uuid "0269d571-a789-4777-84b2-b169017784ca")
+	)
+	(wire
+		(pts
+			(xy 222.25 222.25) (xy 222.25 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0290949b-3dce-48d4-b78f-5c663ce6fff3")
 	)
 	(wire
 		(pts
@@ -13564,16 +13574,6 @@
 			(type default)
 		)
 		(uuid "0cb6a754-ce1e-49fd-9e8d-27158d24315a")
-	)
-	(wire
-		(pts
-			(xy 200.66 52.07) (xy 219.71 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cbe74dd-ca1e-4083-a984-518a14aa2748")
 	)
 	(wire
 		(pts
@@ -15057,16 +15057,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 59.69) (xy 219.71 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ee78726-c1f7-41d4-afde-2b0d16f10692")
-	)
-	(wire
-		(pts
 			(xy 135.89 121.92) (xy 177.8 121.92)
 		)
 		(stroke
@@ -15604,6 +15594,16 @@
 			(type default)
 		)
 		(uuid "3df3e557-6dbc-4664-ba30-680bb98beb32")
+	)
+	(wire
+		(pts
+			(xy 219.71 52.07) (xy 224.79 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e13e07e-77df-4665-8559-312340416fc1")
 	)
 	(wire
 		(pts
@@ -18917,16 +18917,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 234.95) (xy 222.25 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "921a7252-8773-4669-8f75-ba9d75cfcafc")
-	)
-	(wire
-		(pts
 			(xy 543.56 156.21) (xy 543.56 129.54)
 		)
 		(stroke
@@ -19114,6 +19104,16 @@
 			(type default)
 		)
 		(uuid "975d8303-19d8-424c-97a3-baf0137ab651")
+	)
+	(wire
+		(pts
+			(xy 219.71 59.69) (xy 223.52 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97a59411-c27f-4445-ac9f-48df84462c4c")
 	)
 	(wire
 		(pts
@@ -23167,7 +23167,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 52.07) (xy 224.79 52.07)
+			(xy 200.66 52.07) (xy 219.71 52.07)
 		)
 		(stroke
 			(width 0)
@@ -24246,6 +24246,98 @@
 		(uuid "fef1a114-a637-48e6-9fc4-767fbdaa217f")
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 55.88 281.94 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0078a1ff-cc24-445c-b64d-5d10dc73187a")
+		(property "Reference" "R24"
+			(at 53.848 281.94 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475R"
+			(at 58.928 283.464 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 55.88 280.162 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 55.88 281.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 55.88 281.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 55.88 281.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b8a997d9-f387-4378-91ff-036aead8ec01")
+		)
+		(pin "1"
+			(uuid "64124ec3-eaa1-43d3-8cf5-f21762f38b83")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Bourns SRN6045TA-471K")
 		(at 425.45 119.38 0)
 		(unit 1)
@@ -24372,7 +24464,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "01cc5afb-a3c6-4507-9ecb-753231ab7064")
-		(property "Reference" "C42"
+		(property "Reference" "C27"
 			(at 179.324 294.894 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24447,88 +24539,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 177.8 261.62 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "01e45a4b-6ee9-4e3e-9abe-fced19cb680a")
-		(property "Reference" "R42"
-			(at 176.022 261.62 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 175.514 263.906 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 177.8 259.842 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 261.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 177.8 261.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1e8d8183-422c-462e-887c-75925bf1ada5")
-		)
-		(pin "1"
-			(uuid "12f61ab5-2e27-4cf4-81c0-5828dda2527c")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R42")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -24545,7 +24556,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "02ed5b42-e5f1-406c-a929-ec33c4081fd4")
-		(property "Reference" "C24"
+		(property "Reference" "C32"
 			(at 412.75 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24620,88 +24631,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 203.2 63.5 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "03ce8116-38ad-49a7-aca9-311998c75783")
-		(property "Reference" "R27"
-			(at 203.2 61.722 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.02kR"
-			(at 200.914 60.198 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 204.978 63.5 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 203.2 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 203.2 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "be5c346f-c2f0-4db2-9b8b-22cfbf1ad61e")
-		)
-		(pin "1"
-			(uuid "e6e0dd86-3035-4ef1-b330-7558f5c6ed44")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R27")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -24718,8 +24648,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "05c8062f-cdaf-48f2-be5c-62554c462a42")
-		(property "Reference" "C8"
-			(at 53.594 156.464 0)
+		(property "Reference" "C12"
+			(at 53.848 156.464 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24793,7 +24723,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C8")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -24810,7 +24740,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "06781352-de02-4242-9429-c821b6756653")
-		(property "Reference" "C21"
+		(property "Reference" "C20"
 			(at 150.114 103.124 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24885,7 +24815,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C21")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -25047,87 +24977,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 55.88 276.86 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "09ed0ea3-a37d-4bc0-a63d-f8b8fa2215b7")
-		(property "Reference" "R18"
-			(at 53.848 276.86 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475R"
-			(at 58.928 278.384 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 55.88 275.082 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 55.88 276.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 276.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ca0c8133-67a8-447f-aa6f-23ef2d54120f")
-		)
-		(pin "1"
-			(uuid "39328a78-d365-40a6-a4e9-9731dba8df90")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 261.62 27.94 0)
 		(unit 1)
 		(body_style 1)
@@ -25137,7 +24986,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0aa7b6ea-a161-4793-aa30-b3cdd1d68ec4")
-		(property "Reference" "R45"
+		(property "Reference" "R55"
 			(at 261.62 29.718 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25181,8 +25030,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
 			(at 261.62 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 261.62 27.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25201,7 +25061,99 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R45")
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 36.83 173.99 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0b14d34c-e801-4623-8922-5fff75d410bc")
+		(property "Reference" "R3"
+			(at 38.1 173.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 39.37 171.958 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 36.83 175.768 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 36.83 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 36.83 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 36.83 173.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5ca61a4d-05a7-428b-957e-251461f439ab")
+		)
+		(pin "1"
+			(uuid "34bd7412-188d-4cce-a93e-d695774a9c63")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -25824,7 +25776,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ffda1fa-1f2f-4422-9b7f-19fb41c4557d")
-		(property "Reference" "C34"
+		(property "Reference" "C37"
 			(at 520.7 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25899,7 +25851,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C34")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -26380,7 +26332,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "129ed26b-400c-4f77-83fe-d4d271de5f09")
-		(property "Reference" "C31"
+		(property "Reference" "C6"
 			(at 57.658 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26455,7 +26407,99 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C31")
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 170.18 213.36 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1303dad2-1022-46aa-972e-6820a4959249")
+		(property "Reference" "R49"
+			(at 170.18 211.582 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 167.894 211.074 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 171.958 213.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 170.18 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 170.18 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 170.18 213.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4e2c42b0-bf89-4308-a6c7-944a37eda068")
+		)
+		(pin "1"
+			(uuid "f074fb45-631b-40be-9543-24474cc469a1")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -26746,7 +26790,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "156894e6-e600-410b-8e22-5ea120f7071b")
-		(property "Reference" "C33"
+		(property "Reference" "C5"
 			(at 51.308 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26821,7 +26865,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C33")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -26976,7 +27020,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "16b0f911-1ebc-480a-925b-6609c180eca0")
-		(property "Reference" "C40"
+		(property "Reference" "C25"
 			(at 179.324 244.094 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27051,88 +27095,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 226.06 217.17 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "16d5c9d7-472b-4627-8c07-bac28c2c5993")
-		(property "Reference" "R63"
-			(at 226.06 218.948 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100kR"
-			(at 223.774 219.964 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 224.282 217.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 226.06 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8a85450e-3359-40bc-840c-83f7abcefa7b")
-		)
-		(pin "1"
-			(uuid "46d3e4bf-2d5e-43b4-8c41-a140dd158cd6")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R63")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -27295,6 +27258,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 473.71 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "17d8eb8c-49d5-4c6a-a69b-3628d2e596ec")
+		(property "Reference" "R65"
+			(at 473.71 109.728 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.200R"
+			(at 471.424 111.252 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 471.932 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 473.71 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 473.71 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 473.71 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "eb6d608c-6f6a-4f32-a076-a012918e136f")
+		)
+		(pin "1"
+			(uuid "b729f3f9-f32e-4ad5-80db-f4551ae0f8f2")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 173.99 63.5 0)
 		(unit 1)
@@ -27305,7 +27360,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "199c2ecc-dfe0-45e9-9bd8-e09eca494a54")
-		(property "Reference" "C11"
+		(property "Reference" "C17"
 			(at 169.672 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27380,180 +27435,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 369.57 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "19fc2339-c984-49bf-85b2-a4bb2dfe9c90")
-		(property "Reference" "R51"
-			(at 369.57 109.728 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1.2R"
-			(at 367.284 110.49 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 367.792 107.95 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 369.57 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 369.57 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" ""
-			(at 369.57 107.95 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d729d7a4-4c05-422a-9117-27717f545ce4")
-		)
-		(pin "1"
-			(uuid "96ac3425-8b2a-41b8-b1ef-1efcad4e0a4d")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 261.62 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1a3b7e51-ef99-4e8a-8b47-0d79c0161948")
-		(property "Reference" "R46"
-			(at 261.62 67.818 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.200R"
-			(at 259.334 69.342 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 259.842 66.04 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 261.62 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 261.62 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "573cea72-cb71-4331-9c8b-af6f46496c9b")
-		)
-		(pin "1"
-			(uuid "d6f112d6-5ceb-4dec-a306-cd6e2485e839")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R46")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -27570,7 +27452,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c2c5083-b920-4b78-bd5f-7fabf8b01ce7")
-		(property "Reference" "R23"
+		(property "Reference" "R25"
 			(at 133.35 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27603,7 +27485,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 133.35 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -27614,8 +27496,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 133.35 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD100K"
+			(at 133.35 36.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27634,7 +27527,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R23")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -27651,7 +27544,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c698ab4-8e87-4cf6-a539-25993c969f58")
-		(property "Reference" "C15"
+		(property "Reference" "C23"
 			(at 216.154 221.234 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27726,7 +27619,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C15")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -27743,7 +27636,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1cbae758-58d1-4617-b438-2b47f26427eb")
-		(property "Reference" "C5"
+		(property "Reference" "C7"
 			(at 64.008 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27818,7 +27711,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C5")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -28157,87 +28050,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 55.88 269.24 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1f910249-ef8a-4cc9-9f53-cdec6020b088")
-		(property "Reference" "R15"
-			(at 53.848 269.24 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475R"
-			(at 58.928 270.764 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 55.88 267.462 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 55.88 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a99cb23b-7504-4735-a1fa-4840fe955836")
-		)
-		(pin "1"
-			(uuid "49c5827b-cb90-45a5-b8bd-795b2f0b0608")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 146.05 27.94 0)
 		(unit 1)
@@ -28325,7 +28137,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "204f9f3d-bb50-4c57-a0dc-b22d2e857471")
-		(property "Reference" "C20"
+		(property "Reference" "C30"
 			(at 304.8 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28400,7 +28212,99 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C20")
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 473.71 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "209c8a8c-1eb8-4532-bde0-f775d30c04a2")
+		(property "Reference" "R66"
+			(at 473.71 146.558 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.200R"
+			(at 471.424 148.082 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 471.932 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 473.71 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 473.71 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 473.71 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bab25173-cc81-46d8-b789-7e11f1456c9e")
+		)
+		(pin "1"
+			(uuid "d00bc7a4-6733-4a1a-b438-c2449053d037")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R66")
 					(unit 1)
 				)
 			)
@@ -28487,87 +28391,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 40.64 257.81 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2253b3c0-ad2b-42ce-a2ff-218229d32198")
-		(property "Reference" "R13"
-			(at 38.608 257.81 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475R"
-			(at 43.688 259.334 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 40.64 256.032 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 40.64 257.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 40.64 257.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f20a056f-61ca-4ed3-ae2f-c0954131d526")
-		)
-		(pin "1"
-			(uuid "07dfd78c-d194-476f-8734-dcab08e02126")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 217.17 24.13 90)
 		(unit 1)
@@ -28578,7 +28401,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "232d5646-575d-45a0-adea-867e4fdcc833")
-		(property "Reference" "C23"
+		(property "Reference" "C15"
 			(at 215.646 22.86 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28653,7 +28476,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C23")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -28849,6 +28672,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 22.86 220.98 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "26560d94-e771-4c62-9981-5920743e19ca")
+		(property "Reference" "R8"
+			(at 22.86 219.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7kR"
+			(at 25.146 218.44 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 24.638 220.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 22.86 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.75 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 22.86 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD4K75"
+			(at 22.86 220.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "706a2563-c6cf-47b5-800e-55396515ee95")
+		)
+		(pin "1"
+			(uuid "e988aa12-3588-4449-9d28-849f92d7b92d")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -29189,7 +29104,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "29b87786-89d8-4e0f-a767-d8b8d1cb7787")
-		(property "Reference" "C32"
+		(property "Reference" "C36"
 			(at 520.7 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29264,7 +29179,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C32")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -29358,7 +29273,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2be62cd6-5721-4f1e-9e16-9f88b8f9997c")
-		(property "Reference" "R25"
+		(property "Reference" "R29"
 			(at 225.552 29.21 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29433,7 +29348,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R25")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -29441,7 +29356,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 473.71 144.78 0)
+		(at 369.57 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29449,9 +29364,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2bfc6e41-7145-4a9f-b5d6-2463ceee3825")
-		(property "Reference" "R56"
-			(at 473.71 146.558 90)
+		(uuid "2e2560b4-3d63-45dc-bd25-78ecaf6ebed9")
+		(property "Reference" "R61"
+			(at 369.57 109.728 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29461,8 +29376,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.143R"
-			(at 471.424 148.082 90)
+		(property "Value" "0.200R"
+			(at 367.284 111.252 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29473,7 +29388,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 471.932 144.78 90)
+			(at 367.792 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29484,7 +29399,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 473.71 144.78 0)
+			(at 369.57 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29494,8 +29409,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 473.71 144.78 0)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 369.57 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 369.57 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29506,15 +29432,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "9f764d44-4cc7-4284-a4c1-00927b67be5a")
+			(uuid "f7f8fb37-2cae-4079-97cf-04878c6a4976")
 		)
 		(pin "1"
-			(uuid "033f01ec-8a56-4e51-82d8-4c63769ad6c0")
+			(uuid "a7ce7107-f86d-47ad-b2af-8be4abf3c4cc")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R56")
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -29660,7 +29586,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 55.88 274.32 270)
+		(at 133.35 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29668,9 +29594,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2f30cb64-bf4d-4bfc-8342-8009f08e4dc5")
-		(property "Reference" "R17"
-			(at 53.848 274.32 90)
+		(uuid "2f0c8184-e504-4f15-bfa1-a96be556dfe2")
+		(property "Reference" "R36"
+			(at 133.35 105.918 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29680,8 +29606,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "475R"
-			(at 58.928 275.844 90)
+		(property "Value" "100kR"
+			(at 131.064 106.934 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29692,7 +29618,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 55.88 272.542 90)
+			(at 131.572 104.14 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29703,7 +29629,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 55.88 274.32 0)
+			(at 133.35 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29713,8 +29639,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 55.88 274.32 0)
+		(property "Description" "100 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 133.35 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD100K"
+			(at 133.35 104.14 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29725,15 +29662,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "1c950a2b-a4b1-4a20-80c7-db3955b35127")
+			(uuid "b091d821-3a39-4647-b233-71b0e7767ddd")
 		)
 		(pin "1"
-			(uuid "389bbc1a-0eb1-4566-805c-51668218fa03")
+			(uuid "de640207-a2f3-424a-b27c-b170cb1daee6")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R17")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -29817,6 +29754,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 99.06 157.48 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33480553-3144-429e-9c8d-b6305007baee")
+		(property "Reference" "TP2"
+			(at 100.33 154.178 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Tx/Rx"
+			(at 100.33 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 99.06 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 99.06 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc4f153a-55b0-4a15-98e2-e5daddea1c48")
+		)
+		(pin "2"
+			(uuid "e0e16a7e-fe9b-487e-9464-cbfc7922b928")
+		)
+		(pin "4"
+			(uuid "17901bdc-56cd-4c60-9c66-8a31c4f395a7")
+		)
+		(pin "3"
+			(uuid "bd099fbb-fef4-4f73-bf93-91fa665a12a1")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 309.88 101.6 0)
 		(unit 1)
@@ -29888,6 +29911,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 369.57 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "361e3d93-9622-49f4-b9a1-607a19430afd")
+		(property "Reference" "R60"
+			(at 369.57 67.818 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.200R"
+			(at 367.284 69.342 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 367.792 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 369.57 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 369.57 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 369.57 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5c975c73-b133-4747-8c91-29ee8ed1a80c")
+		)
+		(pin "1"
+			(uuid "800a48ff-b893-4b28-b06f-ecc6d524aa87")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -29981,7 +30096,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37c2477c-56d4-44ca-a056-e1ba689ed08a")
-		(property "Reference" "R36"
+		(property "Reference" "R45"
 			(at 203.2 129.032 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30056,7 +30171,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R36")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -30073,7 +30188,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a684804-8fb2-495e-88db-6d53b894339d")
-		(property "Reference" "R30"
+		(property "Reference" "R38"
 			(at 140.97 105.918 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30148,7 +30263,191 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R30")
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 24.13 193.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3aa3c123-9471-4820-801b-c6cb82f156e8")
+		(property "Reference" "R6"
+			(at 25.4 193.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 26.67 191.008 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 24.13 194.818 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 24.13 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 24.13 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 24.13 193.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f632aaaf-96d0-401a-8a39-d899cc9800ef")
+		)
+		(pin "1"
+			(uuid "2791fb13-44b4-4af4-ab67-f42c77800034")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 210.82 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3ab184e1-0cca-41b2-89c6-ab1316de09a6")
+		(property "Reference" "R9"
+			(at 105.41 209.55 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 107.696 208.28 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 107.188 210.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 105.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 105.41 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 105.41 210.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "63d473ad-955a-4b73-aedc-d9d6abbe1d08")
+		)
+		(pin "1"
+			(uuid "01ab9032-a80e-47ad-be25-419234a009c8")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -30166,7 +30465,7 @@
 		(dnp no)
 		(uuid "3b930fb1-466b-4584-8c05-46e5b6d5b7a7")
 		(property "Reference" "R1"
-			(at 105.664 40.64 90)
+			(at 105.41 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30177,7 +30476,7 @@
 			)
 		)
 		(property "Value" "60R"
-			(at 106.426 38.608 90)
+			(at 105.918 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30198,7 +30497,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28766/mbxsma.pdf"
 			(at 104.14 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -30209,8 +30508,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "60 Ohms ±1% 0.25W, 1/4W Through Hole Resistor Axial Automotive AEC-Q200 Metal Film"
 			(at 104.14 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay MBA02040C6009FC100"
+			(at 104.14 40.64 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30323,7 +30633,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c338c19-9bbc-40e6-a02b-46588323b7a5")
-		(property "Reference" "C13"
+		(property "Reference" "C21"
 			(at 169.672 128.524 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30398,7 +30708,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C13")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -30594,8 +30904,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
-		(property "Reference" "C7"
-			(at 50.038 156.464 0)
+		(property "Reference" "C11"
+			(at 51.308 156.464 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30669,7 +30979,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C7")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -30907,87 +31217,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 209.55 40.64 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3f762f48-83f4-4de6-a77a-8685ff533ba4")
-		(property "Reference" "R59"
-			(at 207.772 40.64 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 207.01 38.1 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 209.55 38.862 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 209.55 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6ddfef81-27cf-46dc-86b0-e9065b00e548")
-		)
-		(pin "1"
-			(uuid "53612128-bf8d-40b0-92ed-365d6c0a9b2a")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R59")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 116.84 96.52 180)
 		(unit 1)
@@ -30998,8 +31227,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3fe23d0e-f4e2-4e5d-a8ce-4a867f9345b9")
-		(property "Reference" "C29"
-			(at 121.158 94.234 0)
+		(property "Reference" "C9"
+			(at 119.888 94.234 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31073,7 +31302,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C29")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -31151,87 +31380,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 177.8 287.02 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "42202a14-1c21-4589-9376-15a0a8585c3f")
-		(property "Reference" "R43"
-			(at 176.022 287.02 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 175.514 289.306 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 177.8 285.242 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 287.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 177.8 287.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "bed96f46-1fac-41a1-b525-0e03e62c82d2")
-		)
-		(pin "1"
-			(uuid "66b6fa06-ee4e-4fcf-9be7-d19356424587")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -31495,7 +31643,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 226.06 227.33 180)
+		(at 217.17 134.62 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -31503,9 +31651,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "47108bde-60ea-4c64-993a-6bd1a55b7845")
-		(property "Reference" "R64"
-			(at 226.06 225.298 90)
+		(uuid "4665aee5-17f4-44a8-b545-468f146f4972")
+		(property "Reference" "R46"
+			(at 215.392 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31516,7 +31664,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 223.774 225.044 90)
+			(at 214.63 132.334 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31527,7 +31675,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 227.838 227.33 90)
+			(at 217.17 132.842 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31537,8 +31685,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 226.06 227.33 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 217.17 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31548,8 +31696,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 226.06 227.33 0)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 217.17 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 217.17 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31560,15 +31719,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "3d725d74-2fd9-4510-9303-ec7c415324b5")
+			(uuid "c4ed3aed-78d5-4fb8-ba03-8fea0c6ae205")
 		)
 		(pin "1"
-			(uuid "725b5102-de9c-4292-a551-2eb9a2e41430")
+			(uuid "bb186891-17f9-4115-b380-81e3ef03dc12")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R64")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -31729,6 +31888,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 209.55 107.95 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "49163e3a-92e9-4f50-bd7f-427f3f801528")
+		(property "Reference" "R42"
+			(at 207.772 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 207.01 105.664 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 209.55 106.172 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 209.55 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 209.55 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 209.55 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3775b2cb-e8ca-4c57-8f27-eddc2f8a1d17")
+		)
+		(pin "1"
+			(uuid "d9d24ace-822a-4e5b-b0b5-7f1e5e214269")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 276.86 137.16 0)
 		(unit 1)
@@ -31806,6 +32057,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 55.88 276.86 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "49e67dea-f0e5-4cb8-ab61-a6a19eedc986")
+		(property "Reference" "R22"
+			(at 53.848 276.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475R"
+			(at 58.928 278.384 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 55.88 275.082 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 55.88 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 55.88 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 55.88 276.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "aeaaa10e-8da3-46be-bf76-f9681a7e927c")
+		)
+		(pin "1"
+			(uuid "0d5f6962-e8d1-445d-b97a-5ff5db143ba4")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 384.81 162.56 0)
 		(unit 1)
@@ -31877,6 +32220,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0142")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 55.88 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4a3a16cc-2714-42df-b7f4-e2bf658b8964")
+		(property "Reference" "R19"
+			(at 53.848 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475R"
+			(at 58.928 270.764 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 55.88 267.462 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 55.88 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 55.88 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 55.88 269.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0bc9d6d5-d9cc-4935-acad-864db8d28372")
+		)
+		(pin "1"
+			(uuid "bec603b0-7f40-44cd-8039-ca57e07b92de")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -32031,6 +32466,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0146")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 189.23 185.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4b9db74d-7e7d-4ae3-9216-2c5c9d7f9845")
+		(property "Reference" "R48"
+			(at 191.008 185.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7kR"
+			(at 191.77 187.96 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 189.23 187.198 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 189.23 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.75 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 189.23 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD4K75"
+			(at 189.23 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "849be8ef-00c5-4378-a563-458151cd5a07")
+		)
+		(pin "1"
+			(uuid "557524b4-6f1a-4f4c-92de-22f212d62fda")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -32313,6 +32840,98 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 177.8 261.62 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4fb05bba-69d9-4480-85bc-19caf9180f4d")
+		(property "Reference" "R52"
+			(at 176.022 261.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 175.26 263.906 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 177.8 259.842 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 177.8 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 177.8 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 177.8 261.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "09b94824-f2a4-46f3-afbf-19be8375383b")
+		)
+		(pin "1"
+			(uuid "4170e92e-148e-463c-a29e-abdbeeba1c63")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 140.97 46.99 0)
 		(unit 1)
 		(body_style 1)
@@ -32322,7 +32941,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4fc43259-4536-48ae-9d16-748eec039496")
-		(property "Reference" "R22"
+		(property "Reference" "R28"
 			(at 140.97 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32334,7 +32953,7 @@
 			)
 		)
 		(property "Value" "22.1kR"
-			(at 138.684 49.276 90)
+			(at 138.684 50.292 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32397,7 +33016,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R22")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -32405,7 +33024,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 477.52 29.21 0)
+		(at 40.64 250.19 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -32413,9 +33032,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "504a7bc1-7021-46e9-aa29-9ad7c23b9cb1")
-		(property "Reference" "R53"
-			(at 477.52 30.988 90)
+		(uuid "5021224c-70a9-4475-b021-2f94ad2fc4d2")
+		(property "Reference" "R14"
+			(at 38.608 250.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32425,8 +33044,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.200R"
-			(at 475.234 32.512 90)
+		(property "Value" "475R"
+			(at 43.688 251.714 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32436,8 +33055,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 475.742 29.21 90)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 40.64 248.412 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32447,8 +33066,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 477.52 29.21 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 40.64 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32458,8 +33077,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 477.52 29.21 0)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 40.64 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 40.64 250.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32470,15 +33100,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "e82560fe-86e9-4c53-9bca-8f75f3e60b6a")
+			(uuid "2d6f05af-347e-42bb-b58c-f8e62bba02d2")
 		)
 		(pin "1"
-			(uuid "a70fd93c-7c46-47eb-aa4b-1928a012d8ba")
+			(uuid "421e0f92-1361-453e-a207-e61b8e1f3b71")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R53")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -32742,6 +33372,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "DAC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 369.57 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5291fac6-0032-4725-a075-16d7d2fa8a61")
+		(property "Reference" "R59"
+			(at 369.57 30.988 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.200R"
+			(at 367.284 32.512 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 367.792 29.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 369.57 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 369.57 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 369.57 29.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2c0ec49c-ad25-44f4-83e0-91f8376c5123")
+		)
+		(pin "1"
+			(uuid "9de093d3-f86d-4abc-b4ac-3d65dac291dc")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -33326,7 +34048,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5783a4b4-7dad-4ac1-b0c4-6f601d243aa6")
-		(property "Reference" "R9"
+		(property "Reference" "R13"
 			(at 38.608 247.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33370,8 +34092,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 40.64 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 40.64 247.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33390,7 +34123,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R9")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -33492,87 +34225,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "TB5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 40.64 250.19 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "57ceb0f1-3ba9-4c74-b401-bf01836da7b0")
-		(property "Reference" "R10"
-			(at 38.608 250.19 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475R"
-			(at 43.688 251.714 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 40.64 248.412 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 40.64 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 40.64 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "86e6cad5-8d4e-4bcc-9da9-9f659b079f8e")
-		)
-		(pin "1"
-			(uuid "c8c90846-1dec-4654-9fb2-aef85282557a")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -33828,8 +34480,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59e60c9a-ecf7-48ff-ab48-8f83a3eec2f7")
-		(property "Reference" "C19"
-			(at 114.808 94.234 0)
+		(property "Reference" "C8"
+			(at 113.538 94.234 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33903,7 +34555,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C19")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -34323,7 +34975,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5e7a5033-2eb8-48ae-8738-7933e819a0ea")
-		(property "Reference" "C22"
+		(property "Reference" "C31"
 			(at 304.8 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34398,7 +35050,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C22")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -34492,7 +35144,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ed5fdf4-2fd3-4a43-9733-0298ba99fde4")
-		(property "Reference" "R33"
+		(property "Reference" "R37"
 			(at 133.35 112.522 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34567,7 +35219,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R33")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -34652,6 +35304,190 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 55.88 271.78 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "62295734-bc86-49e9-8c65-74fdb66e7e92")
+		(property "Reference" "R20"
+			(at 53.848 271.78 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475R"
+			(at 58.928 273.304 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 55.88 270.002 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 55.88 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 55.88 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 55.88 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "200a8e21-c081-4193-8666-519d462f4570")
+		)
+		(pin "1"
+			(uuid "07e619cc-9217-4aaf-b19c-a7b814b23cfe")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 261.62 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "63f79026-af7f-4013-893c-c1adfda3ba8e")
+		(property "Reference" "R58"
+			(at 261.62 146.558 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.200R"
+			(at 259.334 148.082 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 259.842 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 261.62 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 261.62 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 261.62 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3b9a8cd9-e69e-4e2e-b089-dc0bf400d404")
+		)
+		(pin "1"
+			(uuid "1e383070-c0bd-4e9b-9021-5dd30801ef4d")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 22.86 207.01 90)
 		(unit 1)
 		(body_style 1)
@@ -34661,8 +35497,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "646de626-e025-41a2-81e7-7b2ba3b56571")
-		(property "Reference" "R57"
-			(at 24.892 207.01 90)
+		(property "Reference" "R7"
+			(at 24.13 207.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34694,7 +35530,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 22.86 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -34705,8 +35541,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "4.75 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 22.86 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD4K75"
+			(at 22.86 207.01 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34725,7 +35572,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R57")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -34880,6 +35727,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 261.62 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "66ed26bf-50bb-41c0-b972-4686bec40e2b")
+		(property "Reference" "R57"
+			(at 261.62 109.728 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.200R"
+			(at 259.334 111.252 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 259.842 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 261.62 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 261.62 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 261.62 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "000111bf-ff9e-4b37-b3e7-5c047dbbfd54")
+		)
+		(pin "1"
+			(uuid "0ec991b8-2271-4946-bbdd-dd948aebe1b1")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -35179,6 +36118,98 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 369.57 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "69eced3e-bf0c-4b4f-9feb-71fa5bd9ec40")
+		(property "Reference" "R62"
+			(at 369.57 146.558 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.200R"
+			(at 367.284 148.082 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 367.792 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 369.57 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 369.57 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 369.57 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d55c29e9-be64-4439-931b-20444c4ee03f")
+		)
+		(pin "1"
+			(uuid "07e8442b-7fcd-401d-8ac1-6183c86dea45")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 219.71 123.19 0)
 		(unit 1)
 		(body_style 1)
@@ -35188,7 +36219,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a89a50a-f660-405b-b5ee-99897e6682e5")
-		(property "Reference" "R37"
+		(property "Reference" "R44"
 			(at 219.71 124.968 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35263,169 +36294,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 189.23 180.34 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6aee3415-0603-4df7-8990-ea0095e926f4")
-		(property "Reference" "R39"
-			(at 191.008 180.34 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7kR"
-			(at 191.77 182.626 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 189.23 182.118 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 189.23 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0a3508f7-4e24-4d40-8dae-ea2bdd58f64e")
-		)
-		(pin "1"
-			(uuid "6e35d21e-1cdd-46b0-8479-99d56d087fc7")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 40.64 260.35 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6aef7c2f-15cb-4908-b898-7767c3acd6fe")
-		(property "Reference" "R14"
-			(at 38.608 260.35 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475R"
-			(at 43.688 261.874 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 40.64 258.572 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 40.64 260.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 40.64 260.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ebc69a81-e0ba-41ff-aef2-71fed51da40d")
-		)
-		(pin "1"
-			(uuid "51fcaedc-0028-43d5-9af3-96f2555dddcd")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R14")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -35588,87 +36457,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 209.55 107.95 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6c1b8732-1c3d-452f-a62d-a86856e92400")
-		(property "Reference" "R60"
-			(at 207.772 107.95 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 207.264 105.664 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 209.55 106.172 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 209.55 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "95db54ac-6f94-4a73-b153-4b3b3257c836")
-		)
-		(pin "1"
-			(uuid "d0a58f77-ff8b-4ddd-8b3e-0bcad419e8b2")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -35983,6 +36771,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 146.05 227.33 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6f7ea1ad-c0ab-4116-b30b-ac372621228f")
+		(property "Reference" "R12"
+			(at 148.082 227.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.11kR"
+			(at 149.352 229.616 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 146.05 229.108 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 146.05 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "5.11 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 146.05 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD5K11"
+			(at 146.05 227.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a9970c49-506c-4cd8-b89c-c19252009a4d")
+		)
+		(pin "1"
+			(uuid "3cd58bc1-69e8-4ed3-98ab-42ed38949016")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 93.98 269.24 0)
 		(unit 1)
@@ -36246,7 +37126,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "70903829-7e7f-4802-8627-186d61399014")
-		(property "Reference" "R31"
+		(property "Reference" "R39"
 			(at 140.97 116.078 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36321,88 +37201,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 227.33 113.03 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "71982ceb-10c4-460a-b8eb-ec151c51701e")
-		(property "Reference" "R35"
-			(at 225.552 113.03 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 225.298 110.744 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 227.33 111.252 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 227.33 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2832ca72-9deb-4aed-a70f-50d7d2b33ab9")
-		)
-		(pin "1"
-			(uuid "d875e218-eb84-4de2-8eb1-8ac13c734207")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R35")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -36728,6 +37527,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 55.88 274.32 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "73589493-4e4c-4885-afca-7e1cd6017bbb")
+		(property "Reference" "R21"
+			(at 53.848 274.32 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475R"
+			(at 58.928 275.844 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 55.88 272.542 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 55.88 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 55.88 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 55.88 274.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a9cd86e6-5e77-47e2-ab5b-9924628e9a62")
+		)
+		(pin "1"
+			(uuid "7a412660-09d6-4e11-87e6-23c50f2035ed")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 19.05 63.5 0)
 		(unit 1)
@@ -37037,6 +37928,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 227.33 45.72 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7be9aabb-c8ff-49bc-860f-32670a7fcf3a")
+		(property "Reference" "R32"
+			(at 225.552 45.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 224.79 43.434 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 227.33 43.942 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 227.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 227.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 227.33 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "026f00b0-68a6-456d-ae10-e81fc772f077")
+		)
+		(pin "1"
+			(uuid "255b37b8-bc97-4f34-a7c6-85b4543d0e74")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 104.14 165.1 0)
 		(unit 1)
@@ -37108,168 +38091,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR078")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 271.78 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7dc30fcd-da36-4351-bd3a-7c9ebcd4d475")
-		(property "Reference" "R16"
-			(at 53.848 271.78 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475R"
-			(at 58.928 273.304 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 55.88 270.002 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 55.88 271.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 271.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9fbbc849-5381-46a1-8948-cd6b5fd97f11")
-		)
-		(pin "1"
-			(uuid "e1b323c1-7af8-4c48-b60e-5338b5ff5426")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 38.1 181.61 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7f673a9f-c466-4471-8d38-8bc2d06d703e")
-		(property "Reference" "R4"
-			(at 39.37 181.61 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 40.894 179.578 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 38.1 183.388 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 38.1 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "eabf5a60-6c26-45c8-b155-cb03e23b4f04")
-		)
-		(pin "1"
-			(uuid "c3716f53-bd59-4f9d-b10e-2065ddfadda0")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -37430,87 +38251,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 219.71 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8193219c-d73b-48d3-97fa-bb1892d49dfe")
-		(property "Reference" "R28"
-			(at 219.71 57.658 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22.1kR"
-			(at 221.996 59.436 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 217.932 55.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 219.71 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1f8a68ec-1d8c-425e-90eb-5f6afa0c9ece")
-		)
-		(pin "1"
-			(uuid "34afb4fc-aca9-4dea-b0ce-b70fa806d337")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 149.86 38.1 0)
 		(unit 1)
@@ -37521,7 +38261,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "821a615b-11c5-496c-b08d-b28727f13421")
-		(property "Reference" "C17"
+		(property "Reference" "C16"
 			(at 150.114 35.814 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37596,7 +38336,99 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C17")
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 477.52 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8281e5d6-258c-44c5-b000-b8ef87980afb")
+		(property "Reference" "R64"
+			(at 477.52 66.548 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.200R"
+			(at 475.234 68.072 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 475.742 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 477.52 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 477.52 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 477.52 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a2fe9dc0-73d8-4ee3-9438-8dc8bcd8ddc6")
+		)
+		(pin "1"
+			(uuid "25eee37e-00dd-4bf1-b80f-1df86c563cb0")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R64")
 					(unit 1)
 				)
 			)
@@ -37613,7 +38445,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82b1ff85-adfc-451a-bfbb-9d5fdefb0ccc")
-		(property "Reference" "C18"
+		(property "Reference" "C29"
 			(at 304.8 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37688,7 +38520,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C18")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -37766,98 +38598,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 369.57 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "831cd08e-5e35-4fb8-893f-321e5a446478")
-		(property "Reference" "R49"
-			(at 369.57 30.988 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.680R"
-			(at 367.284 32.512 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 367.792 29.21 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 369.57 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 369.57 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" ""
-			(at 369.57 29.21 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0e30850d-a9e9-43ac-b6ef-a3e6c6ba08d1")
-		)
-		(pin "1"
-			(uuid "cc6c5f19-6aa9-4c67-a1c2-d6e07a797156")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -37954,7 +38694,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "86544175-70d0-43d4-aacc-49ff3041cba7")
-		(property "Reference" "R62"
+		(property "Reference" "R41"
 			(at 229.108 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38029,7 +38769,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R62")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -38110,87 +38850,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 40.64 252.73 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "874f0712-4c97-4ee8-8483-7c9877f7e470")
-		(property "Reference" "R11"
-			(at 38.608 252.73 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475R"
-			(at 43.688 254.254 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 40.64 250.952 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 40.64 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 40.64 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "dc34d604-3454-4349-8dad-a169efa81dd1")
-		)
-		(pin "1"
-			(uuid "96c99711-eb38-452b-8d73-740486890c66")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -38540,7 +39199,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c26870f-cda4-42e5-88d0-68568bca8796")
-		(property "Reference" "C14"
+		(property "Reference" "C22"
 			(at 218.948 188.214 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38615,7 +39274,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C14")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -38863,7 +39522,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e8860b3-35a9-4af2-acb4-6919bd86c522")
-		(property "Reference" "C9"
+		(property "Reference" "C13"
 			(at 24.13 172.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38938,7 +39597,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C9")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -39023,7 +39682,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 105.41 210.82 180)
+		(at 189.23 180.34 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39031,9 +39690,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8f2bc109-777b-4aab-a9b7-3bd7372c8ade")
-		(property "Reference" "R65"
-			(at 105.41 208.788 90)
+		(uuid "8f83247c-3b64-4d2e-89d6-0235c8be575a")
+		(property "Reference" "R47"
+			(at 191.008 180.34 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39043,8 +39702,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kR"
-			(at 107.696 208.534 90)
+		(property "Value" "4.7kR"
+			(at 192.024 182.626 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39055,7 +39714,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 107.188 210.82 90)
+			(at 189.23 182.118 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39065,8 +39724,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 105.41 210.82 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 189.23 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39076,8 +39735,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 105.41 210.82 0)
+		(property "Description" "4.75 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 189.23 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD4K75"
+			(at 189.23 180.34 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39088,15 +39758,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "0a3eec1b-af41-40b5-a08e-3ef0b4287cfb")
+			(uuid "62635dba-2465-4068-80ef-228d4aae2009")
 		)
 		(pin "1"
-			(uuid "915b4bfb-aa29-4508-a61d-bd3ca796ac92")
+			(uuid "350dfd9d-4ebb-473d-af92-c89ce406f065")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R65")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -39550,87 +40220,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 217.17 134.62 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "94cb9501-bf8b-4315-9b6b-87a824486e47")
-		(property "Reference" "R38"
-			(at 215.392 134.62 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 214.884 136.906 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 217.17 132.842 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 217.17 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c437b561-1f6a-472f-b324-1fc1726a663a")
-		)
-		(pin "1"
-			(uuid "2ad05af4-6919-4d45-b627-112dc07ff39d")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 69.85 162.56 0)
 		(unit 1)
@@ -39718,7 +40307,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96e2765f-6ea2-4943-940c-5361dd49dac7")
-		(property "Reference" "C41"
+		(property "Reference" "C26"
 			(at 179.324 269.494 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39793,7 +40382,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C41")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -39810,8 +40399,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9901f622-423d-4c52-b6de-bebce3c2f1a5")
-		(property "Reference" "R66"
-			(at 105.41 219.202 90)
+		(property "Reference" "R10"
+			(at 105.41 218.948 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39885,7 +40474,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R66")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -39994,6 +40583,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 217.17 67.31 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9a2ffdcb-8cf7-4bb5-9d77-988cbd3f2f2a")
+		(property "Reference" "R35"
+			(at 215.392 67.31 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 214.63 65.024 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 217.17 65.532 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 217.17 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 217.17 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 217.17 67.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c2a8b03e-f68e-482b-a6b3-4fea69d6e6f2")
+		)
+		(pin "1"
+			(uuid "e7cac15e-5faf-454b-976b-e28de6576930")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 276.86 58.42 0)
 		(unit 1)
@@ -40065,6 +40746,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 477.52 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9aa1a0e8-cc48-4233-b43a-5ff69fcbabc4")
+		(property "Reference" "R63"
+			(at 477.52 30.988 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.200R"
+			(at 475.234 32.512 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 475.742 29.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 477.52 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 477.52 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 477.52 29.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "471ebc4e-0617-485c-9ca1-16fdb2ea2b0c")
+		)
+		(pin "1"
+			(uuid "b6f1901e-15a2-4239-ace2-fb354cc68b71")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R63")
 					(unit 1)
 				)
 			)
@@ -40158,7 +40931,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9bfde6b1-fcd0-4323-bce1-608fc83de477")
-		(property "Reference" "R34"
+		(property "Reference" "R30"
 			(at 229.108 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40233,88 +41006,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 279.4 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9c659c73-0548-4308-9771-833bcc2736a0")
-		(property "Reference" "R19"
-			(at 53.848 279.4 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475R"
-			(at 58.928 280.924 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 55.88 277.622 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 55.88 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "329418b4-c43b-4c0e-867a-1db78de52aa4")
-		)
-		(pin "1"
-			(uuid "01efc899-a0ae-4db7-815f-d43101dfc3eb")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R19")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -40595,7 +41287,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 261.62 144.78 0)
+		(at 38.1 181.61 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -40603,9 +41295,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a0301816-6b22-4858-a4c8-2125e34aef7f")
-		(property "Reference" "R48"
-			(at 261.62 146.558 90)
+		(uuid "9f98dcb4-e28e-4aea-ab53-154d0e6da407")
+		(property "Reference" "R4"
+			(at 39.37 181.61 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40615,8 +41307,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.200R"
-			(at 259.334 148.082 90)
+		(property "Value" "10kR"
+			(at 40.64 179.324 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40626,8 +41318,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 259.842 144.78 90)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 38.1 183.388 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40637,8 +41329,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 261.62 144.78 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 38.1 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40648,8 +41340,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 261.62 144.78 0)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 38.1 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 38.1 181.61 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40660,15 +41363,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "3edd1645-df5b-477d-8a99-6b18e8039d78")
+			(uuid "5d60bd8b-3410-485e-b79c-8e7de04eedc3")
 		)
 		(pin "1"
-			(uuid "a9fa3b72-dbd2-4d75-9b64-27e0778812cc")
+			(uuid "84148cca-1674-4a52-9033-6b59502e729a")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R48")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -40864,7 +41567,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a22b6365-f9e9-4188-bee1-6d114510f661")
-		(property "Reference" "R21"
+		(property "Reference" "R27"
 			(at 140.97 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40939,7 +41642,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R21")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -41226,7 +41929,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 133.35 104.14 0)
+		(at 261.62 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -41234,9 +41937,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a45000de-ff67-48ba-92e6-daad5a86e8fb")
-		(property "Reference" "R32"
-			(at 133.35 106.172 90)
+		(uuid "a40d55ad-1a95-478c-913a-95c6e1d556fb")
+		(property "Reference" "R56"
+			(at 261.62 67.818 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41246,8 +41949,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100kR"
-			(at 131.064 106.934 90)
+		(property "Value" "0.200R"
+			(at 259.334 69.342 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41257,8 +41960,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 131.572 104.14 90)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 259.842 66.04 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41268,8 +41971,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 133.35 104.14 0)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
+			(at 261.62 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41279,8 +41982,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 133.35 104.14 0)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 261.62 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 261.62 66.04 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41291,15 +42005,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "b6b21d70-672f-4ae8-a75f-2460776bc089")
+			(uuid "5dc8df4c-2ad6-497a-a94c-0fec30186488")
 		)
 		(pin "1"
-			(uuid "370c6215-584c-48e8-b69c-ef63f18b81ce")
+			(uuid "e1f53897-3f05-484e-a295-d144621be383")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R32")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -41735,6 +42449,190 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 209.55 40.64 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a6e62fac-032f-4799-83df-de308f6cb3e6")
+		(property "Reference" "R31"
+			(at 207.772 40.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 207.01 38.354 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 209.55 38.862 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 209.55 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 209.55 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 209.55 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9b4c245d-840c-4558-b97b-57f471334a2f")
+		)
+		(pin "1"
+			(uuid "c96ab914-0e13-4bd9-895c-c4ecf26f53f6")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.8 312.42 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a81ae462-2bc3-4c21-aa11-ce0914215f79")
+		(property "Reference" "R54"
+			(at 176.022 312.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 175.26 314.706 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 177.8 310.642 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 177.8 312.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 177.8 312.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 177.8 312.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "01ce915c-5613-4012-b5b7-6d63f071b90e")
+		)
+		(pin "1"
+			(uuid "1cc6e8e5-b039-4c32-b3b0-25c8ef8be442")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 223.52 134.62 0)
 		(unit 1)
@@ -41813,7 +42711,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 22.86 220.98 180)
+		(at 226.06 217.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -41821,9 +42719,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a8561c46-4f1a-4dad-9ef8-8498ef653848")
-		(property "Reference" "R58"
-			(at 22.86 219.202 90)
+		(uuid "a8ffdab1-db90-4f32-9582-50ad5c4c7e84")
+		(property "Reference" "R50"
+			(at 226.06 218.948 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41833,8 +42731,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7kR"
-			(at 25.146 218.44 90)
+		(property "Value" "100kR"
+			(at 223.774 219.964 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41845,7 +42743,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 24.638 220.98 90)
+			(at 224.282 217.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41855,8 +42753,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 22.86 220.98 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 226.06 217.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41866,8 +42764,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 22.86 220.98 0)
+		(property "Description" "100 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 226.06 217.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41877,78 +42775,8 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "cc3c32f7-b568-4705-93ec-a9b40868dcc8")
-		)
-		(pin "1"
-			(uuid "1469f9dd-0377-48c9-9016-33001a658af7")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 38.1 186.69 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a9335057-c292-460f-86c2-d669c01bb725")
-		(property "Reference" "R5"
-			(at 39.37 186.69 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 40.894 184.658 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 38.1 188.468 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 38.1 186.69 0)
+		(property "Part" "Stackpole RNCP1206FTD100K"
+			(at 226.06 217.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41959,15 +42787,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "65cf1169-4215-4bbf-b7bd-3953ecfe245c")
+			(uuid "d17ed568-50ce-4033-9783-911c3c1df49d")
 		)
 		(pin "1"
-			(uuid "20b7c175-5068-4796-be9d-18957a1eee92")
+			(uuid "6050f0e0-c980-4a9c-9945-c357d54c5613")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R5")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -42209,87 +43037,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 189.23 185.42 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ac335cd1-bb46-43f8-9ad2-f7fe37c9dc80")
-		(property "Reference" "R40"
-			(at 191.008 185.42 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7kR"
-			(at 191.77 187.706 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 189.23 187.198 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 189.23 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f39d6e7f-d6c2-4a62-8910-06c30924a297")
-		)
-		(pin "1"
-			(uuid "4c3d2de9-478f-4032-b3fe-82eb32d27f89")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 105.41 227.33 0)
 		(unit 1)
@@ -42445,7 +43192,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 261.62 107.95 0)
+		(at 226.06 227.33 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -42453,9 +43200,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ae66b43c-e721-4372-98bc-e76a18d3b654")
-		(property "Reference" "R47"
-			(at 261.62 109.728 90)
+		(uuid "aedb76f6-4895-4ccd-b6c4-9751eb4d9ef8")
+		(property "Reference" "R51"
+			(at 226.06 225.552 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42465,8 +43212,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.200R"
-			(at 259.334 111.252 90)
+		(property "Value" "10kR"
+			(at 224.028 225.044 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42476,8 +43223,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 259.842 107.95 90)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 227.838 227.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42487,8 +43234,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 261.62 107.95 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 226.06 227.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42498,8 +43245,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 261.62 107.95 0)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 226.06 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 226.06 227.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42510,15 +43268,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "9cecea87-c09a-4063-9d7f-2c215b20f150")
+			(uuid "3f41c85e-f6e0-4fb3-af31-379dee9f0151")
 		)
 		(pin "1"
-			(uuid "1f07cc8c-edcf-40e5-b383-546d14bd1b9c")
+			(uuid "7f1f6725-ae83-409d-ac7e-ae208c6c0f3e")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R47")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -42719,7 +43477,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 177.8 312.42 270)
+		(at 227.33 113.03 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -42727,9 +43485,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "afda1916-a9d3-4b56-847f-478b5024e1dd")
-		(property "Reference" "R44"
-			(at 176.022 312.42 90)
+		(uuid "afbe5b34-9aa4-43ce-8c5a-460ad61e9007")
+		(property "Reference" "R43"
+			(at 225.552 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42740,7 +43498,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 175.514 314.706 90)
+			(at 224.79 110.744 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42751,7 +43509,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 177.8 310.642 90)
+			(at 227.33 111.252 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42761,8 +43519,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 177.8 312.42 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 227.33 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42772,8 +43530,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 177.8 312.42 0)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 227.33 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 227.33 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42784,15 +43553,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "0a5a2752-5897-46b1-b9b0-26a186618e31")
+			(uuid "3361233f-6c90-49e8-8f69-1f40d841eef1")
 		)
 		(pin "1"
-			(uuid "64cbfa1d-a0f1-45cc-9cb8-66946a6e9d2b")
+			(uuid "611b7984-21c3-41de-a5a2-e2521bc68b95")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R44")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -42886,7 +43655,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b1c4cd8b-bffe-4e53-956a-177266103f66")
-		(property "Reference" "C25"
+		(property "Reference" "C19"
 			(at 215.9 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42961,88 +43730,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 477.52 64.77 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b20430fe-4a2c-4bdf-b550-c9f9d6436bfd")
-		(property "Reference" "R54"
-			(at 477.52 66.548 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.200R"
-			(at 475.234 68.072 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 475.742 64.77 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 477.52 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 477.52 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "14104452-1429-42d7-ba84-f529ce27a82a")
-		)
-		(pin "1"
-			(uuid "a727ca46-fff2-4743-b01f-a5bb9807721a")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R54")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -43329,7 +44017,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b97f94d1-1b1c-48aa-b6b3-c4ad6f66a3a4")
-		(property "Reference" "C36"
+		(property "Reference" "C38"
 			(at 518.16 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43404,7 +44092,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C36")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -43412,7 +44100,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 40.64 255.27 270)
+		(at 38.1 186.69 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -43420,9 +44108,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b98e9e3f-dea0-41d9-bb42-0e3bc915c678")
-		(property "Reference" "R12"
-			(at 38.608 255.27 90)
+		(uuid "ba5685f5-58bf-44a3-9742-fe78a03e7fe2")
+		(property "Reference" "R5"
+			(at 39.37 186.69 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43432,8 +44120,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "475R"
-			(at 43.688 256.794 90)
+		(property "Value" "10kR"
+			(at 40.386 184.658 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43444,7 +44132,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 40.64 253.492 90)
+			(at 38.1 188.468 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43455,7 +44143,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 40.64 255.27 0)
+			(at 38.1 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43465,8 +44153,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 40.64 255.27 0)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 38.1 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 38.1 186.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43477,15 +44176,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "179961c7-0ec6-4b25-93ad-91d1aea51a79")
+			(uuid "a592732c-9b4e-431f-9e28-8f64d349b515")
 		)
 		(pin "1"
-			(uuid "48302879-5373-47be-884d-9b0a59a769d9")
+			(uuid "b072858c-a5d1-4ef0-ac9f-284b5ade0caa")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R12")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -43858,6 +44557,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 40.64 260.35 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bc3d6dec-b150-4aa1-8a7a-fe1ea5c41bf6")
+		(property "Reference" "R18"
+			(at 38.608 260.35 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475R"
+			(at 43.688 261.874 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 40.64 258.572 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 40.64 260.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 40.64 260.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 40.64 260.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d1710a3e-fce5-4950-940c-dc6c713e340c")
+		)
+		(pin "1"
+			(uuid "edb5bb73-0b83-4587-b532-b9dbaa9d52d0")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Nexperia BSS138P,215")
 		(at 162.56 38.1 180)
 		(unit 1)
@@ -43966,7 +44757,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bd056854-46bc-42a2-973a-7146297857ec")
-		(property "Reference" "C16"
+		(property "Reference" "C28"
 			(at 304.8 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44041,7 +44832,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C16")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -44314,7 +45105,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 227.33 45.72 270)
+		(at 55.88 279.4 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -44322,9 +45113,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "bf92314b-a765-4201-ae22-7fff0b0e23f4")
-		(property "Reference" "R26"
-			(at 225.552 45.72 90)
+		(uuid "bf529cf2-ca4d-4740-ad72-546d10e8c7c0")
+		(property "Reference" "R23"
+			(at 53.848 279.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44334,8 +45125,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kR"
-			(at 224.79 43.18 90)
+		(property "Value" "475R"
+			(at 58.928 280.924 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44346,7 +45137,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 227.33 43.942 90)
+			(at 55.88 277.622 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44356,8 +45147,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 227.33 45.72 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 55.88 279.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44367,8 +45158,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 227.33 45.72 0)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 55.88 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 55.88 279.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44379,15 +45181,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "7c50ee07-70a2-4b3b-ba6f-3c30639ca459")
+			(uuid "4298f002-35f6-4331-b11e-86b02af0793a")
 		)
 		(pin "1"
-			(uuid "c3b4524a-0e64-4810-9ed8-5b67d0f87dce")
+			(uuid "55e36970-9b2b-4433-baf7-f08e045122b2")
 		)
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R26")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -44520,8 +45322,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1f162fd-b36b-4c56-8848-9732e0c35d2d")
-		(property "Reference" "R7"
-			(at 129.286 172.72 90)
+		(property "Reference" "R11"
+			(at 128.778 172.72 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44553,7 +45355,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 130.81 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -44564,8 +45366,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "5.11 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 130.81 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD5K11"
+			(at 130.81 172.72 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44584,99 +45397,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 369.57 144.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c25c94e2-595e-4a13-b135-c0fce7424875")
-		(property "Reference" "R52"
-			(at 369.57 146.558 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1.2R"
-			(at 367.284 147.32 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 367.792 144.78 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 369.57 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 369.57 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" ""
-			(at 369.57 144.78 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "007243de-7c81-4685-aa5d-6b2587b97eb9")
-		)
-		(pin "1"
-			(uuid "1c582f82-0dfe-4432-905b-c109a7ea4e10")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R52")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -44754,6 +45475,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 40.64 252.73 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c2c2922b-e9cd-4c28-b2c6-55fe2bc62383")
+		(property "Reference" "R15"
+			(at 38.608 252.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475R"
+			(at 43.688 254.254 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 40.64 250.952 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 40.64 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 40.64 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 40.64 252.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2ad3a955-220f-4c18-a72a-ecd85b0ad9ec")
+		)
+		(pin "1"
+			(uuid "37655235-c079-4868-8c4f-d06940dd902c")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -45027,7 +45840,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c548e50d-9376-47ed-8d76-3f7d807cfce2")
-		(property "Reference" "C26"
+		(property "Reference" "C33"
 			(at 412.75 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45102,7 +45915,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C26")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -45298,87 +46111,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 24.13 193.04 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c89f485d-e9b6-4a60-a039-e8a0f945a190")
-		(property "Reference" "R6"
-			(at 25.4 193.04 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 26.924 191.008 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 24.13 194.818 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 24.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6e70e3e8-0fec-4c98-81a3-935b62f5896f")
-		)
-		(pin "1"
-			(uuid "a2440872-fa77-415b-af61-ba192d7a6264")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -46001,7 +46733,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 31.75 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -46012,8 +46744,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 31.75 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 31.75 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46218,87 +46961,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 217.17 67.31 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ce1bd9da-6db8-41d6-a22e-ccf4fa7fe2cb")
-		(property "Reference" "R29"
-			(at 215.392 67.31 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 214.884 69.596 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 217.17 65.532 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 217.17 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "37272dd7-c66a-4afc-ab50-995205cbda6e")
-		)
-		(pin "1"
-			(uuid "471fedd0-a3dc-451f-846a-0e71bd57ffb6")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "mr-parts:Bourns SRN6045TA-471K")
 		(at 425.45 154.94 0)
 		(unit 1)
@@ -46409,6 +47071,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "L8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 40.64 255.27 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d0c46bd2-10ba-4cd9-8793-bb20af82845d")
+		(property "Reference" "R16"
+			(at 38.608 255.27 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475R"
+			(at 43.688 256.794 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 40.64 253.492 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 40.64 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 40.64 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 40.64 255.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "96d3773b-199c-4d6c-abd7-ab2130b00c94")
+		)
+		(pin "1"
+			(uuid "1f492e17-e5ae-4b39-a50c-40fb403400b5")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -46825,6 +47579,190 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 219.71 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d8866a16-f914-43ca-9910-866368f1a553")
+		(property "Reference" "R33"
+			(at 219.71 57.658 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22.1kR"
+			(at 221.996 59.182 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 217.932 55.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 219.71 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22.1 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 219.71 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD22K1"
+			(at 219.71 55.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5a78c768-3083-4909-9498-9e2de74ee480")
+		)
+		(pin "1"
+			(uuid "d6cf5fcc-d5ff-478c-abac-bf1d4bd8a6f7")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.8 287.02 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d8b3897b-b45b-4ddb-bac6-cfe696b93f20")
+		(property "Reference" "R53"
+			(at 176.022 287.02 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 175.514 289.306 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 177.8 285.242 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 177.8 287.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 177.8 287.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 177.8 287.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "beaa30dc-1750-40f8-9083-d545957eb3f4")
+		)
+		(pin "1"
+			(uuid "b1d04123-3687-4786-abd4-9a24077f1da7")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 36.83 161.29 180)
 		(unit 1)
@@ -46835,8 +47773,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8b755be-6447-43d7-a667-084b7ca6b882")
-		(property "Reference" "C6"
-			(at 39.878 159.004 0)
+		(property "Reference" "C10"
+			(at 41.148 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46910,7 +47848,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C6")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -47778,7 +48716,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "df3acf56-07b3-4baa-8f6b-fac2d10764a1")
-		(property "Reference" "C28"
+		(property "Reference" "C34"
 			(at 408.94 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47853,7 +48791,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C28")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -48033,98 +48971,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 369.57 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e15ac0b4-6054-45fd-920e-583856c17e82")
-		(property "Reference" "R50"
-			(at 369.57 67.818 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.680R"
-			(at 367.284 69.342 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 367.792 66.04 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 369.57 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 369.57 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" ""
-			(at 369.57 66.04 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f76500d7-e77e-4c8d-9f57-3019f70133ad")
-		)
-		(pin "1"
-			(uuid "9b55a6f6-7267-4189-bde1-5bd79715fb62")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -48496,7 +49342,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e66de239-8654-45f7-9bd1-901678bfd025")
-		(property "Reference" "C12"
+		(property "Reference" "C18"
 			(at 189.484 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48571,7 +49417,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C12")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -48588,7 +49434,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6f9e035-598b-4867-b058-ba21ba59b0bc")
-		(property "Reference" "C10"
+		(property "Reference" "C14"
 			(at 189.23 20.32 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48663,7 +49509,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C10")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -48979,172 +49825,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 101.6 157.48 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e9aab0d7-9322-4656-b04e-9faff114094d")
-		(property "Reference" "TP2"
-			(at 100.33 154.178 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Tx/Rx"
-			(at 100.33 156.21 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 101.6 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 101.6 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b05e8797-8c24-4e5d-8f7a-8f5d87d0ae6a")
-		)
-		(pin "2"
-			(uuid "8dbddc5a-2e26-4b52-8036-2f0a15c44287")
-		)
-		(pin "4"
-			(uuid "9a98ea0f-a35f-44c6-b6dc-c8844031c40a")
-		)
-		(pin "3"
-			(uuid "446d8fa0-ec39-4cd2-93d6-06f89dee8c34")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 146.05 227.33 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ea45713b-5302-4e76-8f00-2518d0123aea")
-		(property "Reference" "R8"
-			(at 147.574 227.33 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.11kR"
-			(at 149.352 229.616 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 146.05 229.108 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 146.05 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "65f6a244-ac3a-4123-8ee1-8fdccdd67145")
-		)
-		(pin "1"
-			(uuid "ca147f54-f0d3-4273-af71-d8f993140859")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 226.06 233.68 0)
 		(unit 1)
@@ -49294,87 +49974,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0120")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 473.71 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ecd6f70a-6b7d-4af0-a058-f601f3f1013e")
-		(property "Reference" "R55"
-			(at 473.71 109.728 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.143R"
-			(at 471.424 111.252 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 471.932 107.95 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SR73.pdf"
-			(at 473.71 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 473.71 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4da18472-03b9-48d8-b989-8567eb13ab59")
-		)
-		(pin "1"
-			(uuid "a11f7b27-51fe-4b7f-8d3f-5effc1e60b19")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -49690,7 +50289,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eeef700e-631f-443d-8be2-402e27aee38e")
-		(property "Reference" "C27"
+		(property "Reference" "C24"
 			(at 231.394 225.044 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49765,7 +50364,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C27")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -49872,87 +50471,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "DAC2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 281.94 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f0e4bc27-a12a-4998-82fb-ce6434228196")
-		(property "Reference" "R20"
-			(at 53.848 281.94 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475R"
-			(at 58.928 283.464 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 55.88 280.162 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 55.88 281.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 281.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "dd8a7008-94b9-4091-83af-b7f9eaf8142c")
-		)
-		(pin "1"
-			(uuid "21413a6d-ce11-40fc-8e8e-a11a8cab8cf1")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -50226,7 +50744,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f6ba7964-ceed-4d9b-a699-1b762af14099")
-		(property "Reference" "R24"
+		(property "Reference" "R26"
 			(at 133.35 45.212 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50301,88 +50819,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 36.83 173.99 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f7fa65db-87a5-4cf2-ba67-4f170721f042")
-		(property "Reference" "R3"
-			(at 38.1 173.99 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 39.116 171.45 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 36.83 175.768 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 36.83 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 36.83 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "528e95a9-6b5f-4a9e-ac9d-530536fef9c2")
-		)
-		(pin "1"
-			(uuid "e016014e-a766-4d61-bd48-c95bc6b35934")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R3")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -50597,7 +51034,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9686ed3-fc5e-4474-80a9-95308be6c47a")
-		(property "Reference" "R61"
+		(property "Reference" "R40"
 			(at 225.552 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50672,7 +51109,99 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R61")
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 63.5 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa25edde-d224-4d1c-b5df-026e7b8e3771")
+		(property "Reference" "R34"
+			(at 203.2 61.722 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.92kR"
+			(at 200.914 60.452 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
+			(at 204.978 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 203.2 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3.92 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
+			(at 203.2 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP0805FTD3K92"
+			(at 203.2 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2b46700a-b262-4173-84d3-b24384c07407")
+		)
+		(pin "1"
+			(uuid "84b7f32c-9f7f-444d-87f7-a11157bf1e1b")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -50833,87 +51362,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 170.18 213.36 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fd1bff56-d15c-48d6-b4f6-648265c123ee")
-		(property "Reference" "R41"
-			(at 170.18 211.328 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kR"
-			(at 167.894 211.074 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 171.958 213.36 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 170.18 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "019c1a73-dcbf-46b2-b92a-0c4ccd8c8067")
-		)
-		(pin "1"
-			(uuid "4180dc8e-1b4b-4668-8844-35c34612ae0c")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 403.86 138.43 90)
 		(unit 1)
@@ -50924,7 +51372,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "feb8643a-71c8-4b4a-92e7-43a401e239a7")
-		(property "Reference" "C30"
+		(property "Reference" "C35"
 			(at 408.94 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50999,7 +51447,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C30")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -51016,7 +51464,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ff8fec05-804e-4bd7-a1de-c96d18b01bfb")
-		(property "Reference" "C38"
+		(property "Reference" "C39"
 			(at 518.16 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51091,7 +51539,99 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C38")
+					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 40.64 257.81 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fffa1fe3-83de-4037-9212-beb9c91f725c")
+		(property "Reference" "R17"
+			(at 38.608 257.81 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475R"
+			(at 43.688 259.334 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 40.64 256.032 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 40.64 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 40.64 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD475R"
+			(at 40.64 257.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bfee5d92-1933-4b0f-924b-b7fbc1bb7121")
+		)
+		(pin "1"
+			(uuid "5ab213ce-3084-41c9-821d-faa8560a3f3e")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R17")
 					(unit 1)
 				)
 			)
