@@ -11971,6 +11971,12 @@
 		(uuid "5e51f0c4-e7b0-4eb2-9176-eb0cc9a584ea")
 	)
 	(junction
+		(at 105.41 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ee2fee0-e128-49d7-8fd4-a305ec652d36")
+	)
+	(junction
 		(at 501.65 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -18308,6 +18314,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 205.74) (xy 105.41 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866b2138-1dd2-4b0a-a91d-0d874d8e57ce")
+	)
+	(wire
+		(pts
 			(xy 168.91 114.3) (xy 177.8 114.3)
 		)
 		(stroke
@@ -18685,6 +18701,16 @@
 			(type default)
 		)
 		(uuid "902a694e-d621-4368-a766-05a01c456cf6")
+	)
+	(wire
+		(pts
+			(xy 100.33 205.74) (xy 105.41 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908a3945-c1a0-4493-ace2-a678ea63e898")
 	)
 	(wire
 		(pts
@@ -19095,6 +19121,16 @@
 			(type default)
 		)
 		(uuid "9a51162f-c76f-4425-8602-81e6237866b4")
+	)
+	(wire
+		(pts
+			(xy 100.33 200.66) (xy 100.33 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a6d6215-a767-4809-a020-61c94ad92d38")
 	)
 	(wire
 		(pts
@@ -21938,7 +21974,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 204.47) (xy 105.41 207.01)
+			(xy 105.41 204.47) (xy 105.41 205.74)
 		)
 		(stroke
 			(width 0)
@@ -28666,7 +28702,7 @@
 				)
 			)
 		)
-		(property "Value" "SS36HE3_B/I"
+		(property "Value" "ZLLS500QTA"
 			(at 29.21 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28676,7 +28712,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Vishay SS36HE3_BI"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 29.21 104.394 0)
 			(hide yes)
 			(show_name no)
@@ -28687,7 +28723,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ZLLS500QTA.pdf"
 			(at 29.21 102.362 0)
 			(hide yes)
 			(show_name no)
@@ -28698,7 +28734,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode 60 V 3A Surface Mount DO-214AB (SMC)"
+		(property "Description" "Diode 40 V 700mA Surface Mount SOT-23-3"
 			(at 29.21 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -28709,7 +28745,7 @@
 				)
 			)
 		)
-		(property "Part" "Vishay SS36HE3_B/I"
+		(property "Part" "Diodes Inc ZLLS500QTA"
 			(at 29.21 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -36747,6 +36783,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 100.33 200.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78ba2027-8dfd-4dca-82b0-ea8087905e73")
+		(property "Reference" "#FLG0110"
+			(at 100.33 198.755 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 100.33 196.596 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 100.33 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4539a26-4d7f-429a-bd14-12e921848f8e")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#FLG0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 90.17 276.86 0)
 		(unit 1)
@@ -38832,7 +38945,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 103.124 208.534 90)
+			(at 107.696 208.534 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
