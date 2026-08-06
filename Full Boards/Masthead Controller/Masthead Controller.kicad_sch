@@ -5499,6 +5499,195 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:Diodes Inc ZLLS500QTA"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ZLLS500QTA"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Diodes Inc ZLLS500"
+				(at 0 -11.684 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ZLLS500QTA.pdf"
+				(at 0 -13.716 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Diode 40 V 700mA Surface Mount SOT-23-3"
+				(at 0 -9.398 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Diodes Inc ZLLS500QTA"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Diodes Inc ZLLS500QTA_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Diodes Inc ZLLS500QTA_1_1"
+				(rectangle
+					(start -3.81 2.54)
+					(end 3.81 -3.81)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy -3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 6.35 -2.54 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:GCT USB4145-03-0170-C"
 			(pin_names
 				(offset 1.016)
@@ -10134,7 +10323,7 @@
 				)
 			)
 			(property "Footprint" "mr-stuff:Vishay SS36HE3_BI"
-				(at 0 -11.176 0)
+				(at -0.254 -8.382 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -10145,7 +10334,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
-				(at 0 -13.208 0)
+				(at -0.254 -10.414 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -10156,7 +10345,7 @@
 				)
 			)
 			(property "Description" "Schottky Barrier Rectifier, 3.0A, 60V"
-				(at 0 -8.89 0)
+				(at -0.254 -6.096 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11737,12 +11926,6 @@
 		(uuid "31e90331-e9db-455e-b235-12aa2c5f10a8")
 	)
 	(junction
-		(at 44.45 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32d861d6-333e-4898-8f63-9874c1a26a9d")
-	)
-	(junction
 		(at 168.91 251.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12151,6 +12334,12 @@
 		(uuid "84fdce4e-3641-40f8-b197-7c019f07e55d")
 	)
 	(junction
+		(at 63.5 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8525d74e-1a4f-47cc-a808-beb056285e5b")
+	)
+	(junction
 		(at 185.42 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12265,7 +12454,7 @@
 		(uuid "94ef314a-b4ac-4993-8b6e-9f19bad64419")
 	)
 	(junction
-		(at 38.1 120.65)
+		(at 57.15 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95e41ba4-be6a-409e-a036-ef2c1c1fdefb")
@@ -12311,12 +12500,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ce10e64-9047-4635-b2b1-9e07575b2184")
-	)
-	(junction
-		(at 36.83 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e46ceb6-509e-44bd-9a9f-ddf0ccc15173")
 	)
 	(junction
 		(at 90.17 256.54)
@@ -12463,7 +12646,7 @@
 		(uuid "bf8e7abc-9f63-4b6f-92dd-46989a6adfb1")
 	)
 	(junction
-		(at 38.1 130.81)
+		(at 57.15 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0237073-50b8-4664-a45c-a84047ffaa78")
@@ -12721,6 +12904,12 @@
 		(uuid "e52b06e9-8e81-461f-9542-6c04f888d9da")
 	)
 	(junction
+		(at 50.8 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5e0d327-bd4a-47e5-ac28-11e6d946a1c8")
+	)
+	(junction
 		(at 87.63 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12749,12 +12938,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec0d7c1f-d9d5-44c6-9388-028092407642")
-	)
-	(junction
-		(at 31.75 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ec34f025-56ef-4ba9-ae4f-e113482c7882")
 	)
 	(junction
 		(at 176.53 39.37)
@@ -13104,7 +13287,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 113.03) (xy 48.26 113.03)
+			(xy 46.99 113.03) (xy 48.26 113.03)
 		)
 		(stroke
 			(width 0)
@@ -13491,6 +13674,16 @@
 			(type default)
 		)
 		(uuid "0e003571-68c4-4e7c-b540-576d5e0363c9")
+	)
+	(wire
+		(pts
+			(xy 21.59 118.11) (xy 24.13 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e010580-5048-4be7-aab8-a1c18558fb3c")
 	)
 	(wire
 		(pts
@@ -13884,16 +14077,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 120.65) (xy 27.94 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1537edec-50f3-4357-9fe3-9684111b7d09")
-	)
-	(wire
-		(pts
 			(xy 438.15 119.38) (xy 440.69 119.38)
 		)
 		(stroke
@@ -14144,6 +14327,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 118.11) (xy 40.64 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bd87572-b6d9-42d0-bb5a-459a841349fb")
+	)
+	(wire
+		(pts
 			(xy 373.38 69.85) (xy 375.92 69.85)
 		)
 		(stroke
@@ -14254,7 +14447,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 120.65) (xy 31.75 121.92)
+			(xy 50.8 120.65) (xy 50.8 121.92)
 		)
 		(stroke
 			(width 0)
@@ -14744,16 +14937,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 115.57) (xy 36.83 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c1717bd-d73c-4f3a-9b18-8b627a8bac90")
-	)
-	(wire
-		(pts
 			(xy 231.14 222.25) (xy 226.06 222.25)
 		)
 		(stroke
@@ -14894,6 +15077,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 118.11) (xy 40.64 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f8deb29-9696-472e-a3be-8ed37dfe3d3f")
+	)
+	(wire
+		(pts
 			(xy 332.74 38.1) (xy 334.01 38.1)
 		)
 		(stroke
@@ -15004,7 +15197,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 110.49) (xy 40.64 110.49)
+			(xy 33.02 110.49) (xy 40.64 110.49)
 		)
 		(stroke
 			(width 0)
@@ -15284,7 +15477,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 130.81) (xy 44.45 130.81)
+			(xy 57.15 130.81) (xy 63.5 130.81)
 		)
 		(stroke
 			(width 0)
@@ -15311,16 +15504,6 @@
 			(type default)
 		)
 		(uuid "3c4a49c9-da64-42af-a885-31366dcaf7eb")
-	)
-	(wire
-		(pts
-			(xy 27.94 120.65) (xy 31.75 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c559e6b-6646-463d-bb9b-3559acd257b1")
 	)
 	(wire
 		(pts
@@ -15814,7 +15997,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 120.65) (xy 38.1 120.65)
+			(xy 50.8 120.65) (xy 57.15 120.65)
 		)
 		(stroke
 			(width 0)
@@ -15941,16 +16124,6 @@
 			(type default)
 		)
 		(uuid "4ad254f7-6cbe-46c1-b339-fad1f2c439bd")
-	)
-	(wire
-		(pts
-			(xy 27.94 130.81) (xy 24.13 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ae00d24-cd2a-45bc-a16f-652c2603e368")
 	)
 	(wire
 		(pts
@@ -17254,7 +17427,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 120.65) (xy 44.45 120.65)
+			(xy 57.15 120.65) (xy 63.5 120.65)
 		)
 		(stroke
 			(width 0)
@@ -17281,16 +17454,6 @@
 			(type default)
 		)
 		(uuid "6b7689e4-b4cc-439c-a329-459d46f56a9f")
-	)
-	(wire
-		(pts
-			(xy 33.02 110.49) (xy 36.83 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bded5d7-820b-43d0-bc16-36385dae3a74")
 	)
 	(wire
 		(pts
@@ -18894,16 +19057,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 115.57) (xy 36.83 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94e6afb6-cb17-47b5-a983-09d22b4af01d")
-	)
-	(wire
-		(pts
 			(xy 176.53 39.37) (xy 176.53 41.91)
 		)
 		(stroke
@@ -19144,6 +19297,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 124.46) (xy 69.85 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b226d59-f09a-459b-b58d-69072da972f2")
+	)
+	(wire
+		(pts
 			(xy 44.45 255.27) (xy 50.8 255.27)
 		)
 		(stroke
@@ -19261,6 +19424,16 @@
 			(type default)
 		)
 		(uuid "9e0e9b53-0afd-465d-867e-9d1780611984")
+	)
+	(wire
+		(pts
+			(xy 69.85 120.65) (xy 63.5 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e1b1f78-1430-49bb-8446-9a6eaa44a56b")
 	)
 	(wire
 		(pts
@@ -19874,16 +20047,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 120.65) (xy 44.45 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa824dde-a477-4619-bfd7-a875043f6236")
-	)
-	(wire
-		(pts
 			(xy 45.72 194.31) (xy 48.26 194.31)
 		)
 		(stroke
@@ -19951,6 +20114,16 @@
 			(type default)
 		)
 		(uuid "acb396ff-fd88-4a80-91bc-4e2bd85c2fa8")
+	)
+	(wire
+		(pts
+			(xy 73.66 124.46) (xy 69.85 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "accb0954-10f0-42d0-a6cf-67baced93b33")
 	)
 	(wire
 		(pts
@@ -20474,7 +20647,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 120.65) (xy 38.1 121.92)
+			(xy 57.15 120.65) (xy 57.15 121.92)
 		)
 		(stroke
 			(width 0)
@@ -20534,7 +20707,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 129.54) (xy 44.45 130.81)
+			(xy 63.5 129.54) (xy 63.5 130.81)
 		)
 		(stroke
 			(width 0)
@@ -20804,7 +20977,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 129.54) (xy 38.1 130.81)
+			(xy 57.15 129.54) (xy 57.15 130.81)
 		)
 		(stroke
 			(width 0)
@@ -20954,7 +21127,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 120.65) (xy 44.45 121.92)
+			(xy 63.5 120.65) (xy 63.5 121.92)
 		)
 		(stroke
 			(width 0)
@@ -21754,6 +21927,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 120.65) (xy 50.8 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da51ddfb-9c9f-4918-bf9e-436e8d9281e0")
+	)
+	(wire
+		(pts
 			(xy 189.23 132.08) (xy 189.23 135.89)
 		)
 		(stroke
@@ -22364,16 +22547,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 115.57) (xy 25.4 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec253b7f-9e5e-422f-beb2-b11acf22c173")
-	)
-	(wire
-		(pts
 			(xy 334.01 127) (xy 332.74 127)
 		)
 		(stroke
@@ -22414,7 +22587,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 129.54) (xy 31.75 130.81)
+			(xy 50.8 129.54) (xy 50.8 130.81)
 		)
 		(stroke
 			(width 0)
@@ -22504,7 +22677,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 130.81) (xy 38.1 130.81)
+			(xy 50.8 130.81) (xy 57.15 130.81)
 		)
 		(stroke
 			(width 0)
@@ -22711,16 +22884,6 @@
 			(type default)
 		)
 		(uuid "f69407b3-b17d-40f7-9ac4-52f74ced2106")
-	)
-	(wire
-		(pts
-			(xy 24.13 130.81) (xy 24.13 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f74e0bb7-5a3a-4409-bf3d-2216ee1b75dd")
 	)
 	(wire
 		(pts
@@ -23081,6 +23244,16 @@
 			(type default)
 		)
 		(uuid "ff941a20-f295-48fd-8df0-72d8392dc32e")
+	)
+	(wire
+		(pts
+			(xy 46.99 113.03) (xy 46.99 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff9c9a6e-5bf2-45de-8307-349205c79f82")
 	)
 	(wire
 		(pts
@@ -23622,6 +23795,16 @@
 		)
 		(uuid "81600917-c408-4e3a-b2eb-9d3c864a9d8e")
 	)
+	(label "VBUS"
+		(at 21.59 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "824cd08c-3eb5-4622-a48d-738dcd5ae70e")
+	)
 	(label "TC_STBD_SEC_JPR"
 		(at 34.29 255.27 180)
 		(effects
@@ -23841,16 +24024,6 @@
 			(justify right bottom)
 		)
 		(uuid "c810f066-1a7d-4844-af9b-11bba15ec11c")
-	)
-	(label "VBUS"
-		(at 22.86 115.57 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c829d167-7afb-473f-bf0e-ebb9dd7aebdd")
 	)
 	(label "EFUSE_N2K_SHUTDOWN"
 		(at 45.72 217.17 180)
@@ -26198,7 +26371,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 38.1 125.73 0)
+		(at 57.15 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26208,7 +26381,7 @@
 		(dnp no)
 		(uuid "129ed26b-400c-4f77-83fe-d4d271de5f09")
 		(property "Reference" "C31"
-			(at 38.608 123.444 0)
+			(at 57.658 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26219,7 +26392,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 38.608 128.27 0)
+			(at 57.658 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26230,7 +26403,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Murata GCJ32ER71C"
-			(at 39.0652 129.54 0)
+			(at 58.1152 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26241,7 +26414,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23"
-			(at 38.1 125.73 0)
+			(at 57.15 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26252,7 +26425,7 @@
 			)
 		)
 		(property "Description" "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)"
-			(at 38.1 125.73 0)
+			(at 57.15 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26263,7 +26436,7 @@
 			)
 		)
 		(property "Part" "Murata GCJ32ER71C226KE01L"
-			(at 38.1 125.73 0)
+			(at 57.15 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26564,7 +26737,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 31.75 125.73 0)
+		(at 50.8 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26574,7 +26747,7 @@
 		(dnp no)
 		(uuid "156894e6-e600-410b-8e22-5ea120f7071b")
 		(property "Reference" "C33"
-			(at 32.258 123.444 0)
+			(at 51.308 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26585,7 +26758,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 32.258 128.27 0)
+			(at 51.308 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26596,7 +26769,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Murata GCJ32ER71C"
-			(at 32.7152 129.54 0)
+			(at 51.7652 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26607,7 +26780,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23"
-			(at 31.75 125.73 0)
+			(at 50.8 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26618,7 +26791,7 @@
 			)
 		)
 		(property "Description" "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)"
-			(at 31.75 125.73 0)
+			(at 50.8 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26629,7 +26802,7 @@
 			)
 		)
 		(property "Part" "Murata GCJ32ER71C226KE01L"
-			(at 31.75 125.73 0)
+			(at 50.8 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27561,7 +27734,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 44.45 125.73 0)
+		(at 63.5 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27571,7 +27744,7 @@
 		(dnp no)
 		(uuid "1cbae758-58d1-4617-b438-2b47f26427eb")
 		(property "Reference" "C5"
-			(at 44.958 123.444 0)
+			(at 64.008 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27582,7 +27755,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 44.958 128.27 0)
+			(at 64.008 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27593,7 +27766,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Murata GCJ32ER71C"
-			(at 45.4152 129.54 0)
+			(at 64.4652 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27604,7 +27777,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23"
-			(at 44.45 125.73 0)
+			(at 63.5 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27615,7 +27788,7 @@
 			)
 		)
 		(property "Description" "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)"
-			(at 44.45 125.73 0)
+			(at 63.5 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27626,7 +27799,7 @@
 			)
 		)
 		(property "Part" "Murata GCJ32ER71C226KE01L"
-			(at 44.45 125.73 0)
+			(at 63.5 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28682,8 +28855,8 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Vishay_SS36HE3_B/I")
-		(at 29.21 115.57 180)
+		(lib_id "mr-parts:Diodes Inc ZLLS500QTA")
+		(at 30.48 118.11 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28693,7 +28866,7 @@
 		(dnp no)
 		(uuid "26696639-c9b2-4f15-9cf0-cbbfd687a770")
 		(property "Reference" "D2"
-			(at 29.21 113.03 0)
+			(at 30.48 113.284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28703,7 +28876,7 @@
 			)
 		)
 		(property "Value" "ZLLS500QTA"
-			(at 29.21 118.11 0)
+			(at 30.48 122.174 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28712,8 +28885,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 29.21 104.394 0)
+		(property "Footprint" "mr-stuff:Diodes Inc ZLLS500"
+			(at 30.48 106.426 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28724,7 +28897,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ZLLS500QTA.pdf"
-			(at 29.21 102.362 0)
+			(at 30.48 104.394 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28735,7 +28908,7 @@
 			)
 		)
 		(property "Description" "Diode 40 V 700mA Surface Mount SOT-23-3"
-			(at 29.21 106.68 0)
+			(at 30.48 108.712 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28746,7 +28919,7 @@
 			)
 		)
 		(property "Part" "Diodes Inc ZLLS500QTA"
-			(at 29.21 115.57 0)
+			(at 30.48 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28761,6 +28934,9 @@
 		)
 		(pin "1"
 			(uuid "46bf3f96-fab3-41c8-9d64-6692acf51fa3")
+		)
+		(pin "3"
+			(uuid "26506e1b-8044-4f92-87ad-f1747fb3a26f")
 		)
 		(instances
 			(project "Masthead Controller"
@@ -34392,83 +34568,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "R33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 24.13 129.54 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "600daf60-c8d5-4dac-aad5-37d6c56a5a23")
-		(property "Reference" "#PWR060"
-			(at 24.13 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 24.13 125.476 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 24.13 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "70853f28-cd7d-4faa-9f33-fb5a64598403")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -47194,6 +47293,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 73.66 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "db0d5dde-877f-4310-a1a1-b5f21170cc5b")
+		(property "Reference" "#PWR060"
+			(at 73.66 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 73.66 120.904 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 73.66 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4300af7e-c161-4302-add6-f3a42e208c57")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 93.98 254 0)
 		(unit 1)
@@ -47390,7 +47566,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Vishay SS36HE3_BI"
-			(at 24.13 95.504 0)
+			(at 24.384 98.298 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47401,7 +47577,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
-			(at 24.13 93.472 0)
+			(at 24.384 96.266 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47412,7 +47588,7 @@
 			)
 		)
 		(property "Description" "Schottky Barrier Rectifier, 3.0A, 60V"
-			(at 24.13 97.79 0)
+			(at 24.384 100.584 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50504,7 +50680,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.1 130.81 0)
+		(at 57.15 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -50514,7 +50690,7 @@
 		(dnp no)
 		(uuid "fa3a2932-5132-4bca-a74d-f61fc309b88f")
 		(property "Reference" "#PWR0117"
-			(at 38.1 137.16 0)
+			(at 57.15 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50525,7 +50701,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 134.874 0)
+			(at 57.15 134.874 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -50535,7 +50711,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 130.81 0)
+			(at 57.15 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50546,7 +50722,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 130.81 0)
+			(at 57.15 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50557,7 +50733,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 130.81 0)
+			(at 57.15 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
