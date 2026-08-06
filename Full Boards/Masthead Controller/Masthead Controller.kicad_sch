@@ -12520,12 +12520,6 @@
 		(uuid "a4823bee-4d1e-4408-9d94-124db2b214ee")
 	)
 	(junction
-		(at 212.09 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a4c4eefa-3a9c-4315-a10c-3b2dbca857f5")
-	)
-	(junction
 		(at 440.69 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12596,6 +12590,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4c244a0-b869-47af-998e-a33574ecea75")
+	)
+	(junction
+		(at 212.09 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4fd5799-5374-4d1c-8dd4-39057dac2a3f")
 	)
 	(junction
 		(at 210.82 194.31)
@@ -34090,7 +34090,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/2N7002.pdf"
 			(at 215.9 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -34102,8 +34102,19 @@
 				(justify left)
 			)
 		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+		(property "Description" "N-Channel 60 V 170mA (Ta) 370mW (Ta) Surface Mount SOT-23-3"
 			(at 212.09 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc 2N7002Q-7-F"
+			(at 212.09 62.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37175,91 +37186,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0112")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 212.09 129.54 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "722234cf-b276-41cb-9ba0-8dc2cc42add6")
-		(property "Reference" "Q2"
-			(at 207.772 129.032 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 212.344 123.698 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 213.995 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 215.9 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 212.09 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "d84b3c13-9d46-4f05-a67d-642f349d16e0")
-		)
-		(pin "1"
-			(uuid "1e938859-d575-47a2-969e-8848d726e2d9")
-		)
-		(pin "2"
-			(uuid "9990aa9d-c479-4b0d-ab05-346e46cb2e6d")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -43455,6 +43381,102 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#FLG0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 212.09 129.54 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0df9af6-8303-4b36-930f-4deecd52aaf1")
+		(property "Reference" "Q2"
+			(at 207.772 129.032 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 212.344 123.698 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 213.995 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/2N7002.pdf"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "N-Channel 60 V 170mA (Ta) 370mW (Ta) Surface Mount SOT-23-3"
+			(at 212.09 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc 2N7002Q-7-F"
+			(at 212.09 129.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "268cad2e-8a97-4476-bca8-1254a8de6dc3")
+		)
+		(pin "1"
+			(uuid "b82f2ab3-c414-42e8-a0f7-9805c21f66c5")
+		)
+		(pin "2"
+			(uuid "22a2f827-f8db-4e30-837f-8c632d2ded5d")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
