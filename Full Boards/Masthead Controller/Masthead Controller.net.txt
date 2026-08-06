@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-08-06T14:27:56")
+		(date "2026-08-06T14:33:58")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -2630,6 +2630,8 @@
 			(description "Schottky Barrier Rectifier, 3.0A, 60V")
 			(fields
 				(field
+					(name "Part") "Vishay SS36HE3_B/I")
+				(field
 					(name "Footprint") "mr-stuff:Vishay SS36HE3_BI")
 				(field
 					(name "Datasheet") "https://www.vishay.com/docs/88751/ss32.pdf")
@@ -2640,6 +2642,10 @@
 				(lib "mr-parts")
 				(part "Vishay_SS36HE3_B/I")
 				(description "Schottky Barrier Rectifier, 3.0A, 60V")
+			)
+			(property
+				(name "Part")
+				(value "Vishay SS36HE3_B/I")
 			)
 			(property
 				(name "Sheetname")
@@ -10534,20 +10540,26 @@
 			(ref "SW1")
 			(value "SW_MEC_5G")
 			(footprint "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
-			(datasheet "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf")
-			(description "MEC 5G single pole normally-open tactile switch")
+			(datasheet "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
+			(description "Tactile Switch SPST-NO Top Actuated Through Hole")
 			(fields
+				(field
+					(name "Part") "Same Sky TS03-66-50-BK-160-LCR-D-67")
 				(field
 					(name "Footprint") "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
 				(field
-					(name "Datasheet") "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf")
+					(name "Datasheet") "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
 				(field
-					(name "Description") "MEC 5G single pole normally-open tactile switch")
+					(name "Description") "Tactile Switch SPST-NO Top Actuated Through Hole")
 			)
 			(libsource
 				(lib "Switch")
 				(part "SW_MEC_5G")
 				(description "MEC 5G single pole normally-open tactile switch")
+			)
+			(property
+				(name "Part")
+				(value "Same Sky TS03-66-50-BK-160-LCR-D-67")
 			)
 			(property
 				(name "Sheetname")
@@ -10594,20 +10606,26 @@
 			(ref "SW2")
 			(value "SW_MEC_5G")
 			(footprint "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
-			(datasheet "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf")
-			(description "MEC 5G single pole normally-open tactile switch")
+			(datasheet "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
+			(description "Tactile Switch SPST-NO Top Actuated Through Hole")
 			(fields
+				(field
+					(name "Part") "Same Sky TS03-66-50-BK-160-LCR-D-67")
 				(field
 					(name "Footprint") "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
 				(field
-					(name "Datasheet") "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf")
+					(name "Datasheet") "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
 				(field
-					(name "Description") "MEC 5G single pole normally-open tactile switch")
+					(name "Description") "Tactile Switch SPST-NO Top Actuated Through Hole")
 			)
 			(libsource
 				(lib "Switch")
 				(part "SW_MEC_5G")
 				(description "MEC 5G single pole normally-open tactile switch")
+			)
+			(property
+				(name "Part")
+				(value "Same Sky TS03-66-50-BK-160-LCR-D-67")
 			)
 			(property
 				(name "Sheetname")
@@ -10629,7 +10647,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0cc45896-c873-4ed4-b768-66a2e1cb5c67")
+			(tstamps "9d8b872f-3ff8-4edd-9a0f-ba5dbabaa177")
 			(units
 				(unit
 					(name "A")
