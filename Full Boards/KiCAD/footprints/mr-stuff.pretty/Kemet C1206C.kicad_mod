@@ -1,0 +1,178 @@
+(footprint "Kemet C1206C"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.7 0)
+		(layer "F.SilkS")
+		(uuid "20167489-1510-4306-a4cf-fcce69a773db")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "C1206C"
+		(at 0 1.8 0)
+		(layer "F.Fab")
+		(uuid "d86ba30b-2f2f-4144-a3a8-99baf2d1285f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1023_X7R_AUTO_SMD"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4e15f133-d846-4d5a-9e32-f95956cd8441")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Kemet 1206"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4523365-f56e-4885-ba1e-45bd170b9c24")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.57 -0.9)
+		(end 0.57 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bc7001a6-49aa-41b7-bbf9-af85fa6cc229")
+	)
+	(fp_line
+		(start -0.57 0.9)
+		(end 0.57 0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "34d3bd7d-ee97-4bcb-a1d3-103980005ebe")
+	)
+	(fp_line
+		(start -2.308 -1.15)
+		(end 2.308 -1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0bdf62e0-2940-4af4-b8c8-d64d395aca81")
+	)
+	(fp_line
+		(start -2.308 1.15)
+		(end -2.308 -1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e92a3ff9-e4b8-4ed5-8bd3-6bb8158bc5c6")
+	)
+	(fp_line
+		(start -2.308 1.15)
+		(end 2.308 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fc1d3271-4e17-4e53-94a4-fe2bc7c6238c")
+	)
+	(fp_line
+		(start 2.308 1.15)
+		(end 2.308 -1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9edd2086-c15b-44de-867c-86c808c8bab2")
+	)
+	(fp_line
+		(start -1.7 0.9)
+		(end -1.7 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9ad59d15-f202-40f6-ab17-ff0974391c3f")
+	)
+	(fp_line
+		(start 1.7 -0.9)
+		(end -1.7 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "62933740-4a25-4366-8dbd-9af8347d2a36")
+	)
+	(fp_line
+		(start 1.7 0.9)
+		(end -1.7 0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "991212f7-c112-4dc0-a167-168e55a4b365")
+	)
+	(fp_line
+		(start 1.7 0.9)
+		(end 1.7 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "08433c3d-c24f-4ea0-aba3-8824bf9b5a2d")
+	)
+	(pad "1" smd rect
+		(at -1.475 0)
+		(size 1.16 1.82)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "8f5b41ab-2ba7-4c75-ac03-2dfc49593ba6")
+	)
+	(pad "2" smd rect
+		(at 1.475 0)
+		(size 1.16 1.82)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "25689414-a1ba-4f4f-ba91-a1581432ca00")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Kemet C1206C/C1206C103K1RACAUTO.step"
+		(offset
+			(xyz 0 -0.69 0.8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
