@@ -25353,92 +25353,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_MEC_5G")
-		(at 24.13 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0cc45896-c873-4ed4-b768-66a2e1cb5c67")
-		(property "Reference" "SW2"
-			(at 24.13 180.848 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_MEC_5G"
-			(at 24.13 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67"
-			(at 24.13 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf"
-			(at 24.13 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "MEC 5G single pole normally-open tactile switch"
-			(at 24.13 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "286fa567-c658-40da-a3f1-79216fc1484c")
-		)
-		(pin "4"
-			(uuid "aca93bfe-705d-4b8c-8f7e-9114fdeb469a")
-		)
-		(pin "1"
-			(uuid "c6204c67-50c5-4360-be34-c96dae2791bc")
-		)
-		(pin "2"
-			(uuid "9612e93f-8d44-4223-b881-cb32a616436a")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "mr-parts:TI ADS1115BQDGSRQ1")
 		(at 194.31 219.71 0)
 		(unit 1)
@@ -40835,6 +40749,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_MEC_5G")
+		(at 24.13 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9d8b872f-3ff8-4edd-9a0f-ba5dbabaa177")
+		(property "Reference" "SW2"
+			(at 24.13 181.102 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MEC_5G"
+			(at 24.13 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67"
+			(at 24.13 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf"
+			(at 24.13 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Tactile Switch SPST-NO Top Actuated Through Hole"
+			(at 24.13 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Same Sky TS03-66-50-BK-160-LCR-D-67"
+			(at 24.13 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "5293d2b1-a2d9-46fb-83af-66d73af39736")
+		)
+		(pin "4"
+			(uuid "88112fb5-ccae-4c7a-9a2d-b9d49802e200")
+		)
+		(pin "1"
+			(uuid "85bd6db5-d781-45e5-8c77-02fa0e9c5d9b")
+		)
+		(pin "2"
+			(uuid "31f529a5-2ff6-4c22-82a2-0e21fb5b878c")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 26.67 63.5 180)
 		(unit 1)
@@ -46008,7 +46019,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf"
+		(property "Datasheet" "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf"
 			(at 25.4 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -46019,7 +46030,18 @@
 				)
 			)
 		)
-		(property "Description" "MEC 5G single pole normally-open tactile switch"
+		(property "Description" "Tactile Switch SPST-NO Top Actuated Through Hole"
+			(at 25.4 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Same Sky TS03-66-50-BK-160-LCR-D-67"
 			(at 25.4 166.37 0)
 			(hide yes)
 			(show_name no)
