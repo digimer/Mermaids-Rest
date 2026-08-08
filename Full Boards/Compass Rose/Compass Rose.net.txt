@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Compass Rose/Compass Rose.kicad_sch")
-		(date "2026-08-08T00:36:25")
+		(date "2026-08-08T12:24:05")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -10959,6 +10959,156 @@
 			)
 		)
 		(comp
+			(ref "MCU1")
+			(value "STM32C092KCT6")
+			(footprint "mr-stuff:STM STM32C0 LQFP-32")
+			(datasheet "https://www.st.com/resource/en/datasheet/stm32c091cb.pdf")
+			(description "ARM® Cortex®-M0+ STM32C0 Microcontroller IC 32-Bit 48MHz 256KB (256K x 8) FLASH 32-LQFP (7x7)")
+			(fields
+				(field
+					(name "Part") "STM STM32C092KCT6")
+				(field
+					(name "Footprint") "mr-stuff:STM STM32C0 LQFP-32")
+				(field
+					(name "Datasheet") "https://www.st.com/resource/en/datasheet/stm32c091cb.pdf")
+				(field
+					(name "Description") "ARM® Cortex®-M0+ STM32C0 Microcontroller IC 32-Bit 48MHz 256KB (256K x 8) FLASH 32-LQFP (7x7)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "STM STM32C092KCT6")
+				(description "ARM® Cortex®-M0+ STM32C0 Microcontroller IC 32-Bit 48MHz 256KB (256K x 8) FLASH 32-LQFP (7x7)")
+			)
+			(property
+				(name "Part")
+				(value "STM STM32C092KCT6")
+			)
+			(property
+				(name "Sheetname")
+				(value "Compass Rose")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Compass Rose.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Arm Cortex-M0+ STM32C0 STM32C0x1")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "QFN*1EP*5x5mm*P0.5mm*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4a0828e3-82b3-4ed8-a15e-8cddee008765")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "27")
+						)
+						(pin
+							(num "28")
+						)
+						(pin
+							(num "29")
+						)
+						(pin
+							(num "30")
+						)
+						(pin
+							(num "31")
+						)
+						(pin
+							(num "32")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "25")
+						)
+						(pin
+							(num "26")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "PTC1")
 			(value "AHEF100")
 			(footprint "mr-stuff:Littelfuse AHEF100")
@@ -13949,153 +14099,6 @@
 						)
 						(pin
 							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "U4")
-			(value "STM32C092KCT6")
-			(footprint "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm")
-			(datasheet "https://www.st.com/resource/en/datasheet/stm32c071kb.pdf")
-			(description "STMicroelectronics Arm Cortex-M0+ MCU, 128KB flash, 24KB RAM, 30 GPIO, UFQFPN32_GP")
-			(fields
-				(field
-					(name "Footprint") "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm")
-				(field
-					(name "Datasheet") "https://www.st.com/resource/en/datasheet/stm32c071kb.pdf")
-				(field
-					(name "Description") "STMicroelectronics Arm Cortex-M0+ MCU, 128KB flash, 24KB RAM, 30 GPIO, UFQFPN32_GP")
-			)
-			(libsource
-				(lib "MCU_ST_STM32C0")
-				(part "STM32C071KBUx")
-				(description "STMicroelectronics Arm Cortex-M0+ MCU, 128KB flash, 24KB RAM, 30 GPIO, UFQFPN32_GP")
-			)
-			(property
-				(name "Sheetname")
-				(value "Compass Rose")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Compass Rose.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "Arm Cortex-M0+ STM32C0 STM32C0x1")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "QFN*1EP*5x5mm*P0.5mm*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "4a0828e3-82b3-4ed8-a15e-8cddee008765")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "6")
-						)
-						(pin
-							(num "20")
-						)
-						(pin
-							(num "2")
-						)
-						(pin
-							(num "3")
-						)
-						(pin
-							(num "15")
-						)
-						(pin
-							(num "16")
-						)
-						(pin
-							(num "17")
-						)
-						(pin
-							(num "27")
-						)
-						(pin
-							(num "28")
-						)
-						(pin
-							(num "29")
-						)
-						(pin
-							(num "30")
-						)
-						(pin
-							(num "31")
-						)
-						(pin
-							(num "32")
-						)
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "4")
-						)
-						(pin
-							(num "5")
-						)
-						(pin
-							(num "33")
-						)
-						(pin
-							(num "7")
-						)
-						(pin
-							(num "8")
-						)
-						(pin
-							(num "9")
-						)
-						(pin
-							(num "10")
-						)
-						(pin
-							(num "11")
-						)
-						(pin
-							(num "12")
-						)
-						(pin
-							(num "13")
-						)
-						(pin
-							(num "14")
-						)
-						(pin
-							(num "18")
-						)
-						(pin
-							(num "19")
-						)
-						(pin
-							(num "21")
-						)
-						(pin
-							(num "22")
-						)
-						(pin
-							(num "23")
-						)
-						(pin
-							(num "24")
-						)
-						(pin
-							(num "25")
-						)
-						(pin
-							(num "26")
 						)
 					)
 				)
@@ -19480,194 +19483,6 @@
 			)
 		)
 		(libpart
-			(lib "MCU_ST_STM32C0")
-			(part "STM32C071KBUx")
-			(description "STMicroelectronics Arm Cortex-M0+ MCU, 128KB flash, 24KB RAM, 30 GPIO, UFQFPN32_GP")
-			(docs "https://www.st.com/resource/en/datasheet/stm32c071kb.pdf")
-			(footprints
-				(fp "QFN*1EP*5x5mm*P0.5mm*")
-			)
-			(fields
-				(field
-					(name "Reference") "U")
-				(field
-					(name "Value") "STM32C071KBUx")
-				(field
-					(name "Footprint") "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm")
-				(field
-					(name "Datasheet") "https://www.st.com/resource/en/datasheet/stm32c071kb.pdf")
-				(field
-					(name "Description") "STMicroelectronics Arm Cortex-M0+ MCU, 128KB flash, 24KB RAM, 30 GPIO, UFQFPN32_GP")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "PB9")
-					(type "bidirectional")
-				)
-				(pin
-					(num "2")
-					(name "PC14")
-					(type "bidirectional")
-				)
-				(pin
-					(num "3")
-					(name "PC15")
-					(type "bidirectional")
-				)
-				(pin
-					(num "4")
-					(name "VDD")
-					(type "power_in")
-				)
-				(pin
-					(num "5")
-					(name "VSS")
-					(type "power_in")
-				)
-				(pin
-					(num "6")
-					(name "PF2")
-					(type "bidirectional")
-				)
-				(pin
-					(num "7")
-					(name "PA0")
-					(type "bidirectional")
-				)
-				(pin
-					(num "8")
-					(name "PA1")
-					(type "bidirectional")
-				)
-				(pin
-					(num "9")
-					(name "PA2")
-					(type "bidirectional")
-				)
-				(pin
-					(num "10")
-					(name "PA3")
-					(type "bidirectional")
-				)
-				(pin
-					(num "11")
-					(name "PA4")
-					(type "bidirectional")
-				)
-				(pin
-					(num "12")
-					(name "PA5")
-					(type "bidirectional")
-				)
-				(pin
-					(num "13")
-					(name "PA6")
-					(type "bidirectional")
-				)
-				(pin
-					(num "14")
-					(name "PA7")
-					(type "bidirectional")
-				)
-				(pin
-					(num "15")
-					(name "PB0")
-					(type "bidirectional")
-				)
-				(pin
-					(num "16")
-					(name "PB1")
-					(type "bidirectional")
-				)
-				(pin
-					(num "17")
-					(name "PB2")
-					(type "bidirectional")
-				)
-				(pin
-					(num "18")
-					(name "PA8")
-					(type "bidirectional")
-				)
-				(pin
-					(num "19")
-					(name "PA9")
-					(type "bidirectional")
-				)
-				(pin
-					(num "20")
-					(name "PC6")
-					(type "bidirectional")
-				)
-				(pin
-					(num "21")
-					(name "PA10")
-					(type "bidirectional")
-				)
-				(pin
-					(num "22")
-					(name "PA11")
-					(type "bidirectional")
-				)
-				(pin
-					(num "23")
-					(name "PA12")
-					(type "bidirectional")
-				)
-				(pin
-					(num "24")
-					(name "PA13")
-					(type "bidirectional")
-				)
-				(pin
-					(num "25")
-					(name "PA14")
-					(type "bidirectional")
-				)
-				(pin
-					(num "26")
-					(name "PA15")
-					(type "bidirectional")
-				)
-				(pin
-					(num "27")
-					(name "PB3")
-					(type "bidirectional")
-				)
-				(pin
-					(num "28")
-					(name "PB4")
-					(type "bidirectional")
-				)
-				(pin
-					(num "29")
-					(name "PB5")
-					(type "bidirectional")
-				)
-				(pin
-					(num "30")
-					(name "PB6")
-					(type "bidirectional")
-				)
-				(pin
-					(num "31")
-					(name "PB7")
-					(type "bidirectional")
-				)
-				(pin
-					(num "32")
-					(name "PB8")
-					(type "bidirectional")
-				)
-				(pin
-					(num "33")
-					(name "VSS")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
 			(lib "Mechanical")
 			(part "Fiducial")
 			(description "Fiducial Marker")
@@ -20438,6 +20253,191 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "STM STM32C092KCT6")
+			(description "ARM® Cortex®-M0+ STM32C0 Microcontroller IC 32-Bit 48MHz 256KB (256K x 8) FLASH 32-LQFP (7x7)")
+			(docs "https://www.st.com/resource/en/datasheet/stm32c091cb.pdf")
+			(footprints
+				(fp "QFN*1EP*5x5mm*P0.5mm*")
+			)
+			(fields
+				(field
+					(name "Reference") "MCU")
+				(field
+					(name "Value") "STM32C092KCT6")
+				(field
+					(name "Footprint") "mr-stuff:STM STM32C0 LQFP-32")
+				(field
+					(name "Datasheet") "https://www.st.com/resource/en/datasheet/stm32c091cb.pdf")
+				(field
+					(name "Description") "ARM® Cortex®-M0+ STM32C0 Microcontroller IC 32-Bit 48MHz 256KB (256K x 8) FLASH 32-LQFP (7x7)")
+				(field
+					(name "Part") "STM STM32C092KCT6")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "PB9")
+					(type "bidirectional")
+				)
+				(pin
+					(num "2")
+					(name "PC14")
+					(type "bidirectional")
+				)
+				(pin
+					(num "3")
+					(name "PC15")
+					(type "bidirectional")
+				)
+				(pin
+					(num "4")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "VSS")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "PF2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "PA0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "8")
+					(name "PA1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "9")
+					(name "PA2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "10")
+					(name "PA3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "11")
+					(name "PA4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "12")
+					(name "PA5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "13")
+					(name "PA6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "14")
+					(name "PA7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "15")
+					(name "PB0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "16")
+					(name "PB1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "17")
+					(name "PB2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "18")
+					(name "PA8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "19")
+					(name "PA9")
+					(type "bidirectional")
+				)
+				(pin
+					(num "20")
+					(name "PC6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "21")
+					(name "PA10")
+					(type "bidirectional")
+				)
+				(pin
+					(num "22")
+					(name "PA11")
+					(type "bidirectional")
+				)
+				(pin
+					(num "23")
+					(name "PA12")
+					(type "bidirectional")
+				)
+				(pin
+					(num "24")
+					(name "PA13")
+					(type "bidirectional")
+				)
+				(pin
+					(num "25")
+					(name "PA14")
+					(type "bidirectional")
+				)
+				(pin
+					(num "26")
+					(name "PA15")
+					(type "bidirectional")
+				)
+				(pin
+					(num "27")
+					(name "PB3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "28")
+					(name "PB4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "29")
+					(name "PB5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "30")
+					(name "PB6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "31")
+					(name "PB7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "32")
+					(name "PB8")
+					(type "bidirectional")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Same Sky TS03-66-50-BK-160-LCR-D-67")
 			(description "Tactile Switch SPST-NO Top Actuated Through Hole")
 			(docs "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
@@ -20595,10 +20595,6 @@
 			(uri "${KICAD9_SYMBOL_DIR}/Driver_LED.kicad_sym")
 		)
 		(library
-			(logical "MCU_ST_STM32C0")
-			(uri "${KICAD9_SYMBOL_DIR}/MCU_ST_STM32C0.kicad_sym")
-		)
-		(library
 			(logical "Mechanical")
 			(uri "${KICAD9_SYMBOL_DIR}/Mechanical.kicad_sym")
 		)
@@ -20675,6 +20671,12 @@
 				(pin "2")
 				(pinfunction "Pin_2_2")
 				(pintype "passive")
+			)
+			(node
+				(ref "MCU1")
+				(pin "4")
+				(pinfunction "VDD_4")
+				(pintype "power_in")
 			)
 			(node
 				(ref "R16")
@@ -20761,12 +20763,6 @@
 				(pin "2")
 				(pinfunction "VO_2")
 				(pintype "power_out")
-			)
-			(node
-				(ref "U4")
-				(pin "4")
-				(pinfunction "VDD_4")
-				(pintype "power_in")
 			)
 			(node
 				(ref "U6")
@@ -20969,6 +20965,12 @@
 				(pintype "input")
 			)
 			(node
+				(ref "MCU1")
+				(pin "14")
+				(pinfunction "PA7_14")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "R25")
 				(pin "2")
 				(pintype "passive")
@@ -20978,12 +20980,6 @@
 				(pin "1")
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "14")
-				(pinfunction "PA7_14")
-				(pintype "bidirectional")
 			)
 			(node
 				(ref "U6")
@@ -21009,6 +21005,12 @@
 				(pintype "bidirectional")
 			)
 			(node
+				(ref "MCU1")
+				(pin "13")
+				(pinfunction "PA6_13")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "R26")
 				(pin "2")
 				(pintype "passive")
@@ -21018,12 +21020,6 @@
 				(pin "1")
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "13")
-				(pinfunction "PA6_13")
-				(pintype "bidirectional")
 			)
 			(node
 				(ref "U6")
@@ -22975,6 +22971,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "MCU1")
+				(pin "25")
+				(pinfunction "PA14_25")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "R17")
 				(pin "1")
 				(pintype "passive")
@@ -22991,12 +22993,6 @@
 				(pinfunction "B_4")
 				(pintype "passive")
 			)
-			(node
-				(ref "U4")
-				(pin "25")
-				(pinfunction "PA14_25")
-				(pintype "bidirectional")
-			)
 		)
 		(net
 			(code "25")
@@ -23009,7 +23005,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "U4")
+				(ref "MCU1")
 				(pin "24")
 				(pinfunction "PA13_24")
 				(pintype "bidirectional")
@@ -23025,6 +23021,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "MCU1")
+				(pin "26")
+				(pinfunction "PA15_26")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "R20")
 				(pin "1")
 				(pintype "passive")
@@ -23033,12 +23035,6 @@
 				(ref "R22")
 				(pin "2")
 				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "26")
-				(pinfunction "PA15_26")
-				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -23066,6 +23062,12 @@
 			(name "/IS31_I2C_SCL")
 			(class "Default")
 			(node
+				(ref "MCU1")
+				(pin "19")
+				(pinfunction "PA9_19")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "R2")
 				(pin "2")
 				(pintype "passive")
@@ -23082,12 +23084,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "U4")
-				(pin "19")
-				(pinfunction "PA9_19")
-				(pintype "bidirectional")
-			)
-			(node
 				(ref "U5")
 				(pin "20")
 				(pinfunction "SCL_20")
@@ -23098,6 +23094,12 @@
 			(code "29")
 			(name "/IS31_I2C_SDA")
 			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "1")
+				(pinfunction "PB9_1")
+				(pintype "bidirectional")
+			)
 			(node
 				(ref "R24")
 				(pin "2")
@@ -23115,12 +23117,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "U4")
-				(pin "1")
-				(pinfunction "PB9_1")
-				(pintype "bidirectional")
-			)
-			(node
 				(ref "U5")
 				(pin "19")
 				(pinfunction "SDA_19")
@@ -23132,15 +23128,15 @@
 			(name "/IS31_INTB_OUT")
 			(class "Default")
 			(node
-				(ref "R1")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U4")
+				(ref "MCU1")
 				(pin "15")
 				(pinfunction "PB0_15")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
 			)
 			(node
 				(ref "U5")
@@ -23154,15 +23150,15 @@
 			(name "/IS31_SHUTDOWN_OUT")
 			(class "Default")
 			(node
-				(ref "R4")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U4")
+				(ref "MCU1")
 				(pin "17")
 				(pinfunction "PB2_17")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pintype "passive")
 			)
 			(node
 				(ref "U5")
@@ -23176,15 +23172,15 @@
 			(name "/LCD_BL_BLUE_OUT")
 			(class "Default")
 			(node
-				(ref "R15")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U4")
+				(ref "MCU1")
 				(pin "30")
 				(pinfunction "PB6_30")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "R15")
+				(pin "2")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -23192,15 +23188,15 @@
 			(name "/LCD_BL_GREEN_OUT")
 			(class "Default")
 			(node
-				(ref "R12")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U4")
+				(ref "MCU1")
 				(pin "31")
 				(pinfunction "PB7_31")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "R12")
+				(pin "2")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -23208,15 +23204,15 @@
 			(name "/LCD_BL_RED_OUT")
 			(class "Default")
 			(node
-				(ref "R9")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U4")
+				(ref "MCU1")
 				(pin "32")
 				(pinfunction "PB8_32")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -23229,6 +23225,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "MCU1")
+				(pin "27")
+				(pinfunction "PB3_27")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "R19")
 				(pin "1")
 				(pintype "passive")
@@ -23237,12 +23239,6 @@
 				(ref "R21")
 				(pin "2")
 				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "27")
-				(pinfunction "PB3_27")
-				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -23275,6 +23271,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "MCU1")
+				(pin "28")
+				(pinfunction "PB4_28")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "R18")
 				(pin "1")
 				(pintype "passive")
@@ -23283,12 +23285,6 @@
 				(ref "R68")
 				(pin "2")
 				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "28")
-				(pinfunction "PB4_28")
-				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -23322,16 +23318,16 @@
 				(pintype "output")
 			)
 			(node
+				(ref "MCU1")
+				(pin "22")
+				(pinfunction "PA11_22")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "TP3")
 				(pin "1")
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "22")
-				(pinfunction "PA11_22")
-				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -23345,16 +23341,16 @@
 				(pintype "input")
 			)
 			(node
+				(ref "MCU1")
+				(pin "16")
+				(pinfunction "PB1_16")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "TP4")
 				(pin "1")
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "16")
-				(pinfunction "PB1_16")
-				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -23373,6 +23369,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "MCU1")
+				(pin "6")
+				(pinfunction "PF2_6")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "R16")
 				(pin "2")
 				(pintype "passive")
@@ -23388,12 +23390,6 @@
 				(pin "2")
 				(pinfunction "A_2")
 				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "6")
-				(pinfunction "PF2_6")
-				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -23433,16 +23429,16 @@
 			(name "/USART1_RX")
 			(class "Default")
 			(node
+				(ref "MCU1")
+				(pin "21")
+				(pinfunction "PA10_21")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "RST1")
 				(pin "12")
 				(pinfunction "R1OUT_12")
 				(pintype "output")
-			)
-			(node
-				(ref "U4")
-				(pin "21")
-				(pinfunction "PA10_21")
-				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -23450,16 +23446,16 @@
 			(name "/USART1_TX")
 			(class "Default")
 			(node
+				(ref "MCU1")
+				(pin "2")
+				(pinfunction "PC14_2")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "RST1")
 				(pin "11")
 				(pinfunction "T1IN_11")
 				(pintype "input")
-			)
-			(node
-				(ref "U4")
-				(pin "2")
-				(pinfunction "PC14_2")
-				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -23633,6 +23629,12 @@
 				(pintype "power_in")
 			)
 			(node
+				(ref "MCU1")
+				(pin "5")
+				(pinfunction "VSS_5")
+				(pintype "power_in")
+			)
+			(node
 				(ref "Q10")
 				(pin "1")
 				(pintype "passive")
@@ -23710,18 +23712,6 @@
 				(ref "U2")
 				(pin "1")
 				(pinfunction "GND_1")
-				(pintype "power_in")
-			)
-			(node
-				(ref "U4")
-				(pin "33")
-				(pinfunction "VSS_33")
-				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "5")
-				(pinfunction "VSS_5")
 				(pintype "power_in")
 			)
 			(node
@@ -24542,6 +24532,127 @@
 		)
 		(net
 			(code "92")
+			(name "unconnected-(MCU1-PA0-Pad7)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "7")
+				(pinfunction "PA0_7")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "93")
+			(name "unconnected-(MCU1-PA1-Pad8)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "8")
+				(pinfunction "PA1_8")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "94")
+			(name "unconnected-(MCU1-PA2-Pad9)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "9")
+				(pinfunction "PA2_9")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "95")
+			(name "unconnected-(MCU1-PA3-Pad10)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "10")
+				(pinfunction "PA3_10")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "96")
+			(name "unconnected-(MCU1-PA4-Pad11)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "11")
+				(pinfunction "PA4_11")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "97")
+			(name "unconnected-(MCU1-PA5-Pad12)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "12")
+				(pinfunction "PA5_12")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "98")
+			(name "unconnected-(MCU1-PA8-Pad18)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "18")
+				(pinfunction "PA8_18")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "99")
+			(name "unconnected-(MCU1-PA12-Pad23)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "23")
+				(pinfunction "PA12_23")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "100")
+			(name "unconnected-(MCU1-PB5-Pad29)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "29")
+				(pinfunction "PB5_29")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "101")
+			(name "unconnected-(MCU1-PC6-Pad20)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "20")
+				(pinfunction "PC6_20")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "102")
+			(name "unconnected-(MCU1-PC15-Pad3)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "3")
+				(pinfunction "PC15_3")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "103")
 			(name "unconnected-(RST1-R2IN-Pad8)")
 			(class "Default")
 			(node
@@ -24552,7 +24663,7 @@
 			)
 		)
 		(net
-			(code "93")
+			(code "104")
 			(name "unconnected-(RST1-R2OUT-Pad9)")
 			(class "Default")
 			(node
@@ -24563,7 +24674,7 @@
 			)
 		)
 		(net
-			(code "94")
+			(code "105")
 			(name "unconnected-(RST1-T2OUT-Pad7)")
 			(class "Default")
 			(node
@@ -24571,127 +24682,6 @@
 				(pin "7")
 				(pinfunction "T2OUT_7")
 				(pintype "output+no_connect")
-			)
-		)
-		(net
-			(code "95")
-			(name "unconnected-(U4-PA0-Pad7)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "7")
-				(pinfunction "PA0_7")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "96")
-			(name "unconnected-(U4-PA1-Pad8)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "8")
-				(pinfunction "PA1_8")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "97")
-			(name "unconnected-(U4-PA2-Pad9)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "9")
-				(pinfunction "PA2_9")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "98")
-			(name "unconnected-(U4-PA3-Pad10)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "10")
-				(pinfunction "PA3_10")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "99")
-			(name "unconnected-(U4-PA4-Pad11)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "11")
-				(pinfunction "PA4_11")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "100")
-			(name "unconnected-(U4-PA5-Pad12)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "12")
-				(pinfunction "PA5_12")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "101")
-			(name "unconnected-(U4-PA8-Pad18)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "18")
-				(pinfunction "PA8_18")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "102")
-			(name "unconnected-(U4-PA12-Pad23)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "23")
-				(pinfunction "PA12_23")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "103")
-			(name "unconnected-(U4-PB5-Pad29)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "29")
-				(pinfunction "PB5_29")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "104")
-			(name "unconnected-(U4-PC6-Pad20)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "20")
-				(pinfunction "PC6_20")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "105")
-			(name "unconnected-(U4-PC15-Pad3)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "3")
-				(pinfunction "PC15_3")
-				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
