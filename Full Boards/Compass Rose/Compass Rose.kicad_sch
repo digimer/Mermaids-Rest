@@ -32087,7 +32087,7 @@
 				)
 			)
 			(property "Value" "NCV8730ASN500T1G"
-				(at 0.254 -6.858 0)
+				(at 0 -6.858 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -32176,7 +32176,7 @@
 						(type background)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at -7.62 2.54 0)
 					(length 2.54)
 					(name "IN"
@@ -32230,7 +32230,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "NC"
@@ -35242,6 +35242,17 @@
 		)
 		(uuid "1d83d900-93bf-4100-b8cc-d6333b9874af")
 	)
+	(text "Pin 4 tied to GND for thermal dissipation"
+		(exclude_from_sim no)
+		(at 101.854 51.562 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f5d0945-61cc-40bc-9d97-587109eed34d")
+	)
 	(text "12v to 5v - Isolated"
 		(exclude_from_sim no)
 		(at 259.588 255.27 0)
@@ -36031,6 +36042,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a410ec9-faeb-4729-bc89-95d597255da9")
+	)
+	(junction
+		(at 139.7 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a73d499-5886-4355-9547-0b1e986c053d")
 	)
 	(junction
 		(at 217.17 290.83)
@@ -38176,6 +38193,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 38.1) (xy 135.89 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aa67506-7507-4fb5-9f11-2a7118705079")
+	)
+	(wire
+		(pts
 			(xy 227.33 64.77) (xy 227.33 69.85)
 		)
 		(stroke
@@ -38623,6 +38650,16 @@
 			(type default)
 		)
 		(uuid "35e3dfe7-ad5f-49d4-b0a1-3c41ca0ebc3a")
+	)
+	(wire
+		(pts
+			(xy 135.89 40.64) (xy 139.7 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36763fc1-d95a-4b3e-8fed-251ed4d148be")
 	)
 	(wire
 		(pts
@@ -44856,6 +44893,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 38.1) (xy 135.89 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6fcea5c-c684-4b07-bb0b-08d439949eb6")
+	)
+	(wire
+		(pts
 			(xy 39.37 294.64) (xy 39.37 297.18)
 		)
 		(stroke
@@ -49001,10 +49048,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "03fc4379-0807-438a-9563-ee0fc7fdfac3")
 		(property "Reference" "RST1"
-			(at 55.88 88.9 0)
+			(at 55.88 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49014,7 +49060,7 @@
 			)
 		)
 		(property "Value" "MAX3232"
-			(at 55.88 91.44 0)
+			(at 55.88 118.872 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -69218,7 +69264,7 @@
 		(dnp no)
 		(uuid "ab15c86a-394c-4124-8071-822c1e9aafb7")
 		(property "Reference" "LVR1"
-			(at 125.73 29.21 0)
+			(at 125.73 28.956 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -69228,7 +69274,7 @@
 			)
 		)
 		(property "Value" "NCV8730ASN500T1G"
-			(at 125.73 42.164 0)
+			(at 125.73 42.418 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
