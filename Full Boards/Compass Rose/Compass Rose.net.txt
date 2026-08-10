@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Compass Rose/Compass Rose.kicad_sch")
-		(date "2026-08-10T01:17:36")
+		(date "2026-08-10T01:36:28")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -15835,11 +15835,11 @@
 		(comp
 			(ref "TP2")
 			(value "Iso Power")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
 			(description "Generic connector, single row, 01x02, script generated")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
@@ -16001,16 +16001,16 @@
 		(comp
 			(ref "TP10")
 			(value "IS31 I2C")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x01, script generated")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x02, script generated")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x01, script generated")
+					(name "Description") "Generic connector, single row, 01x02, script generated")
 			)
 			(libsource
 				(lib "")
@@ -16055,16 +16055,16 @@
 		(comp
 			(ref "TP11")
 			(value "Board I2C")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x01, script generated")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x02, script generated")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x01, script generated")
+					(name "Description") "Generic connector, single row, 01x02, script generated")
 			)
 			(libsource
 				(lib "")
@@ -22428,7 +22428,7 @@
 				(pin
 					(num "4")
 					(name "GND")
-					(type "power_out")
+					(type "power_in")
 				)
 			)
 		)
@@ -23288,12 +23288,6 @@
 			(name "/BOARD_I2C_SCL")
 			(class "Default")
 			(node
-				(ref "CPD1")
-				(pin "20")
-				(pinfunction "SCL_20")
-				(pintype "input")
-			)
-			(node
 				(ref "LS1")
 				(pin "3")
 				(pinfunction "SCL1_3")
@@ -23333,12 +23327,6 @@
 			(code "5")
 			(name "/BOARD_I2C_SDA")
 			(class "Default")
-			(node
-				(ref "CPD1")
-				(pin "19")
-				(pinfunction "SDA_19")
-				(pintype "bidirectional")
-			)
 			(node
 				(ref "LS1")
 				(pin "4")
@@ -25404,6 +25392,12 @@
 			(name "/IS31_I2C_SCL")
 			(class "Default")
 			(node
+				(ref "CPD1")
+				(pin "20")
+				(pinfunction "SCL_20")
+				(pintype "input")
+			)
+			(node
 				(ref "MCU1")
 				(pin "19")
 				(pinfunction "PA9_19")
@@ -25425,6 +25419,12 @@
 			(code "29")
 			(name "/IS31_I2C_SDA")
 			(class "Default")
+			(node
+				(ref "CPD1")
+				(pin "19")
+				(pinfunction "SDA_19")
+				(pintype "bidirectional")
+			)
 			(node
 				(ref "MCU1")
 				(pin "1")
@@ -25780,7 +25780,7 @@
 			(class "Default")
 			(node
 				(ref "DE1")
-				(pin "2")
+				(pin "3")
 				(pintype "passive")
 			)
 			(node
@@ -25796,7 +25796,7 @@
 			(class "Default")
 			(node
 				(ref "DE1")
-				(pin "3")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -26256,7 +26256,7 @@
 				(ref "LVR1")
 				(pin "4")
 				(pinfunction "GND_4")
-				(pintype "power_out")
+				(pintype "power_in")
 			)
 			(node
 				(ref "TB1")
