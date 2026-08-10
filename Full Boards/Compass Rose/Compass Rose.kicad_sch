@@ -52489,7 +52489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 185.928 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -55170,7 +55170,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 196.85 92.202 90)
 			(hide yes)
 			(show_name no)
@@ -55224,6 +55224,98 @@
 			(project "Compass Rose"
 				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 173.99 276.86 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "18cb2b59-3d87-44dd-82c0-a72ecfeb135b")
+		(property "Reference" "R27"
+			(at 176.022 276.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475"
+			(at 176.022 274.828 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
+			(at 173.99 278.638 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 173.99 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
+			(at 173.99 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP0805FTD475R"
+			(at 173.99 276.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7000e68c-fbe8-4863-aa47-0405f7832665")
+		)
+		(pin "2"
+			(uuid "04541dbc-4ee0-4e33-8c0e-548c00403a72")
+		)
+		(instances
+			(project "Compass Rose"
+				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -56972,7 +57064,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 214.63 263.652 90)
 			(hide yes)
 			(show_name no)
@@ -62015,7 +62107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
 			(at 173.99 253.238 90)
 			(hide yes)
 			(show_name no)
@@ -62026,7 +62118,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 173.99 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -62037,8 +62129,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
 			(at 173.99 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP0805FTD475R"
+			(at 173.99 251.46 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64044,7 +64147,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "51126839-2a80-44f5-a47e-90124093198c")
-		(property "Reference" "TP11"
+		(property "Reference" "TP4"
 			(at 100.076 224.028 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64108,7 +64211,7 @@
 		(instances
 			(project "Compass Rose"
 				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
-					(reference "TP11")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -64528,6 +64631,98 @@
 			(project "Compass Rose"
 				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
 					(reference "TVS2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 173.99 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "52b0b9f7-0024-44df-bdaf-c8b5941a44f5")
+		(property "Reference" "R25"
+			(at 171.958 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "475"
+			(at 171.958 271.272 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
+			(at 173.99 267.462 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 173.99 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
+			(at 173.99 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP0805FTD475R"
+			(at 173.99 269.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "871dac43-ddf6-4d5d-ad16-c920f0431d86")
+		)
+		(pin "2"
+			(uuid "613fe4ea-9a2d-4bf1-84ab-ba8cba237d2e")
+		)
+		(instances
+			(project "Compass Rose"
+				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -65358,7 +65553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 214.63 255.778 90)
 			(hide yes)
 			(show_name no)
@@ -71158,7 +71353,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8debf64c-a110-4e49-9221-ab52da8de079")
-		(property "Reference" "TP10"
+		(property "Reference" "TP5"
 			(at 249.936 210.058 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71222,7 +71417,7 @@
 		(instances
 			(project "Compass Rose"
 				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
-					(reference "TP10")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -72346,87 +72541,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 173.99 269.24 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "974f16fc-0cf8-49ca-ba5c-7c8b6b5cb038")
-		(property "Reference" "R25"
-			(at 176.022 269.24 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475"
-			(at 176.022 271.526 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 173.99 271.018 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 173.99 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "129c83c8-9e49-4759-9d63-a862707c5908")
-		)
-		(pin "2"
-			(uuid "2788f375-b797-4e96-a275-3da79390f244")
-		)
-		(instances
-			(project "Compass Rose"
-				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 214.63 279.4 90)
 		(unit 1)
 		(body_style 1)
@@ -72458,7 +72572,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 214.63 281.178 90)
 			(hide yes)
 			(show_name no)
@@ -73533,7 +73647,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 130.048 281.94 90)
 			(hide yes)
 			(show_name no)
@@ -73900,87 +74014,6 @@
 			(project "Compass Rose"
 				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
 					(reference "LED25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 173.99 276.86 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a6608dd6-64ca-4c18-85e0-24badb1fc1c2")
-		(property "Reference" "R27"
-			(at 176.022 276.86 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "475"
-			(at 176.022 274.828 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 173.99 278.638 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 276.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 173.99 276.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "31258fcc-bd9b-48cc-8da1-8fcd6ed041d2")
-		)
-		(pin "2"
-			(uuid "b51ce0bc-49fe-4b3e-a134-75c433c60096")
-		)
-		(instances
-			(project "Compass Rose"
-				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
-					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -76518,7 +76551,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 147.828 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -76610,7 +76643,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 196.85 87.122 90)
 			(hide yes)
 			(show_name no)
@@ -79089,7 +79122,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Yageo AE0805"
 			(at 199.898 167.64 90)
 			(hide yes)
 			(show_name no)
@@ -79100,7 +79133,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/MF-MFS-RK.pdf"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-AE_51_ROHS_L"
 			(at 198.12 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -79111,7 +79144,7 @@
 				)
 			)
 		)
-		(property "Description" "200 kOhms ±1% 0.25W, 1/4W Through Hole Resistor Axial Automotive AEC-Q200 Metal Film"
+		(property "Description" "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
 			(at 198.12 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -79122,84 +79155,7 @@
 				)
 			)
 		)
-		(property "Part" "KOA Speer MF1/4CCT52R2003F"
-			(at 198.12 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 198.12 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 198.12 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" ""
-			(at 198.12 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 198.12 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 198.12 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 198.12 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
+		(property "Part" "Yageo RNCP0805FTD475R"
 			(at 198.12 167.64 90)
 			(hide yes)
 			(show_name no)
@@ -83767,7 +83723,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 119.888 264.16 90)
 			(hide yes)
 			(show_name no)
@@ -84208,7 +84164,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
 			(at 166.878 182.88 90)
 			(hide yes)
 			(show_name no)
