@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Compass Rose/Compass Rose.kicad_sch")
-		(date "2026-08-10T12:34:32")
+		(date "2026-08-10T13:33:40")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -12,7 +12,7 @@
 				(title "2-Ring Compass Rose")
 				(company "The Digital Mermaid")
 				(rev "v4.1")
-				(date "2026-08-07")
+				(date "2026-08-10")
 				(source "Compass Rose.kicad_sch")
 				(comment
 					(number "1")
@@ -1565,18 +1565,18 @@
 		(comp
 			(ref "C22")
 			(value "1uF")
-			(footprint "mr-stuff:Kemet R82DC")
-			(datasheet "https://content.kemet.com/datasheets/KEM_F3101_R82.pdf")
-			(description "1 µF Film Capacitor 40V 63V Polyester, Polyethylene Terephthalate (PET), Metallized - Stacked Radial")
+			(footprint "mr-stuff:Kemet C1206C")
+			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1078_X7R_FT-CAP_AUTO_SMD")
+			(description "1 µF ±5% 100V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
 				(field
-					(name "Part") "Kemet R82DC4100DQ60J")
+					(name "Part") "Kemet C1206X105J1RACAUTO")
 				(field
-					(name "Footprint") "mr-stuff:Kemet R82DC")
+					(name "Footprint") "mr-stuff:Kemet C1206C")
 				(field
-					(name "Datasheet") "https://content.kemet.com/datasheets/KEM_F3101_R82.pdf")
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/KEM_C1078_X7R_FT-CAP_AUTO_SMD")
 				(field
-					(name "Description") "1 µF Film Capacitor 40V 63V Polyester, Polyethylene Terephthalate (PET), Metallized - Stacked Radial")
+					(name "Description") "1 µF ±5% 100V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -1585,7 +1585,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Kemet R82DC4100DQ60J")
+				(value "Kemet C1206X105J1RACAUTO")
 			)
 			(property
 				(name "Sheetname")
@@ -1865,18 +1865,18 @@
 		(comp
 			(ref "C27")
 			(value "0.01uF")
-			(footprint "mr-stuff:TDK FA 2.5mm")
-			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf")
-			(description "±5% 50V Ceramic Capacitor C0G, NP0 Radial")
+			(footprint "mr-stuff:Kemet C0805X")
+			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1091_C0G_ESD")
+			(description "0.01 uF ±5% 100V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "TDK FA18NP01H103JNU06")
+					(name "Part") "Kemet FA18NP01H103JNU06")
 				(field
-					(name "Footprint") "mr-stuff:TDK FA 2.5mm")
+					(name "Footprint") "mr-stuff:Kemet C0805X")
 				(field
-					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf")
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/KEM_C1091_C0G_ESD")
 				(field
-					(name "Description") "±5% 50V Ceramic Capacitor C0G, NP0 Radial")
+					(name "Description") "0.01 uF ±5% 100V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -1885,7 +1885,7 @@
 			)
 			(property
 				(name "Part")
-				(value "TDK FA18NP01H103JNU06")
+				(value "Kemet FA18NP01H103JNU06")
 			)
 			(property
 				(name "Sheetname")
