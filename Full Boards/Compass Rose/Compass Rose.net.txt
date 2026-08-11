@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Compass Rose/Compass Rose.kicad_sch")
-		(date "2026-08-11T00:24:09")
+		(date "2026-08-11T00:33:20")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -297,18 +297,18 @@
 		(comp
 			(ref "C5")
 			(value "10uF")
-			(footprint "mr-stuff:Nichicon UBT")
-			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-ubt.pdf")
-			(description "10 µF 50 V Aluminum Electrolytic Capacitors Radial, Can 2000 Hrs @ 125°C")
+			(footprint "mr-stuff:Kyocera AVX 1206")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			(fields
 				(field
-					(name "Part") "Nichicon UBT1H100MPD8")
+					(name "Part") "Kyocera 12105C106K4Z2A")
 				(field
-					(name "Footprint") "mr-stuff:Nichicon UBT")
+					(name "Footprint") "mr-stuff:Kyocera AVX 1206")
 				(field
-					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-ubt.pdf")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
 				(field
-					(name "Description") "10 µF 50 V Aluminum Electrolytic Capacitors Radial, Can 2000 Hrs @ 125°C")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -317,7 +317,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Nichicon UBT1H100MPD8")
+				(value "Kyocera 12105C106K4Z2A")
 			)
 			(property
 				(name "Sheetname")
