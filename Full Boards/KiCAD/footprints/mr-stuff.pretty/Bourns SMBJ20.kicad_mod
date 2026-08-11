@@ -1,0 +1,200 @@
+(footprint "Bourns SMBJ20"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "smb DO-214AA")
+	(tags "TVS Diode (Uni-directional)")
+	(property "Reference" "REF**"
+		(at 0 -2.75 0)
+		(layer "F.SilkS")
+		(uuid "4d531996-33f2-4c9e-8e32-0dddf65afe38")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SMBJ20"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "05a3a0b6-1ac1-47dd-a6f2-6d1e0795280c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fea0232-c1f3-4024-b167-ecf42a130ff8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "274acae9-c2a9-48cf-9779-ab71391198a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.7 1.81)
+		(end 2.7 1.81)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "47442511-ce0b-47ee-8811-0d8bb39e6e49")
+	)
+	(fp_line
+		(start 2.7 -1.81)
+		(end -3.275 -1.81)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dbe0a93b-435e-4b9c-a400-e9e2e0f5d80c")
+	)
+	(fp_line
+		(start -3.55 -2.22)
+		(end 3.55 -2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "67c2cbd4-4be6-41fe-b6ef-03364b30b25c")
+	)
+	(fp_line
+		(start -3.55 2.22)
+		(end -3.55 -2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f32e5f1b-b948-4985-b06f-1b2516e93bad")
+	)
+	(fp_line
+		(start 3.55 -2.22)
+		(end 3.55 2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "eaddc9f0-f808-483a-8191-8ce47f8800c7")
+	)
+	(fp_line
+		(start 3.55 2.22)
+		(end -3.55 2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ef61e5f2-0f8e-451e-89cb-444c1caee800")
+	)
+	(fp_line
+		(start -2.7 -1.81)
+		(end 2.7 -1.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "61ac383b-d584-4f44-85fd-8cb98c14c1ba")
+	)
+	(fp_line
+		(start -2.7 -0.735)
+		(end -1.625 -1.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d2f15d23-2092-4ea2-9298-2428bce19d70")
+	)
+	(fp_line
+		(start -2.7 1.81)
+		(end -2.7 -1.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "027d08b9-6d9a-4462-9f39-d62a3a339875")
+	)
+	(fp_line
+		(start 2.7 -1.81)
+		(end 2.7 1.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "65452f7e-7ced-4ca9-83c3-262103d5fd33")
+	)
+	(fp_line
+		(start 2.7 1.81)
+		(end -2.7 1.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a057d1f5-0ebd-4cc1-b094-e287463deae0")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.05 0)
+		(layer "F.Fab")
+		(uuid "730aae82-9ca6-4d82-85bc-5ad8da744d17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.2 0 90)
+		(size 2.15 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "17af452d-21b4-4154-9fbe-1d3ca080f911")
+	)
+	(pad "2" smd rect
+		(at 2.2 0 90)
+		(size 2.15 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5f1472ee-7af6-4c55-9c60-8892c684553f")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Bourns SMBJ20/SMBJ20A-Q.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

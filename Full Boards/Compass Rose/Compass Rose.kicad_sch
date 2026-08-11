@@ -29656,128 +29656,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mr-parts:AHEF100"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "PTC"
-				(at -1.778 2.286 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ptc-radial-leaded-ahef-datasheet?assetguid=ea99bce9-2903-4b4b-b42b-a33ce894366b"
-				(at 0.254 -6.096 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "PTC Resettable Fuse, 1A, 32V"
-				(at 0 -4.064 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AHEF100_1_1"
-				(rectangle
-					(start -3.81 1.27)
-					(end 3.81 -1.27)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -2.54) (xy 2.54 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_out line
-					(at -6.35 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 6.35 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "mr-parts:Amphenol L77SDE09SA4CH4F"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -30451,6 +30329,560 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:Bel Fuse 0ZCG0110CF2B"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "PTC"
+				(at -1.778 2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "0ZCG0110CF2B"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Bel Fuse 0ZCG"
+				(at 0 -13.462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf"
+				(at 0 -8.636 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Bel Fuse 0ZCG0110CF2B"
+				(at 0 -11.176 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Bel Fuse 0ZCG0110CF2B_1_1"
+				(rectangle
+					(start -3.81 1.27)
+					(end 3.81 -1.27)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_out line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 6.35 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:Bouns SMBJ20A-Q"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TVS"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMBJ20A-Q"
+				(at 0.508 -2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Bourns SMBJ20"
+				(at 0 -11.684 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SMBJ-Q.pdf"
+				(at 0 -7.366 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "32.4V Clamp 18.6A Ipp Tvs Diode Surface Mount DO-214AA (SMB)"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Bourns SMBJ20A-Q"
+				(at 0 -9.652 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Bouns SMBJ20A-Q_0_1"
+				(polyline
+					(pts
+						(xy -1.2711 0.842) (xy -1.6958 1.1937)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0.8422) (xy -1.2721 -0.8357)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.8435 -1.1979) (xy -1.2682 -0.8462)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Bouns SMBJ20A-Q_1_1"
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:CTS_219-2MSTR"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CTS_219-2MSTR"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:CTS 219-2MSTR"
+				(at 0 -14.224 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ctscorp.com/Files/DataSheets/Switches/DIP-Switches/CTS-Switches-DIP-219-Series-Datasheet.pdf"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Dip Switch SPST 2 Position Surface Mount Slide (Standard) Actuator 100mA 20VDC"
+				(at -0.254 -9.906 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "CTS 219-2MSTR"
+				(at 0 -12.192 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dip switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SW?DIP?x2*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CTS_219-2MSTR_0_0"
+				(circle
+					(center -2.032 1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 -1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 1.397) (xy 2.3622 2.4384)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -1.143) (xy 2.3622 -0.1016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CTS_219-2MSTR_0_1"
+				(rectangle
+					(start -3.81 3.81)
+					(end 3.81 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "CTS_219-2MSTR_1_1"
+				(pin passive line
+					(at -7.62 1.27 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -1.27 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -1.27 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 1.27 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -31960,174 +32392,6 @@
 					(at 2.54 -2.54 180)
 					(length 0)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "mr-parts:Littelfuse SLD22-018"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TVS"
-				(at 0 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Value" "SLD22-018"
-				(at 0 -3.302 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Footprint" "mr-stuff:Littelfuse SDL"
-				(at 12.7 -93.65 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=fce36256-f340-4c99-9aec-ae774cb2d1d8&filename=littelfuse_tvs_diode_sld_datasheet.pdf"
-				(at 12.7 -193.65 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Description" "35.5V Clamp 143.7A Ipp Tvs Diode Through Hole P600"
-				(at 0.254 -4.826 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Littelfuse SLD22-018_0_1"
-				(polyline
-					(pts
-						(xy -0.0011 0.842) (xy -0.4258 1.1937)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.8422) (xy -0.0021 -0.8357)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.4265 -1.1979) (xy 0.0018 -0.8462)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Littelfuse SLD22-018_1_1"
-				(polyline
-					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -37462,7 +37726,7 @@
 	)
 	(rectangle
 		(start 130.81 67.945)
-		(end 206.375 141.605)
+		(end 194.31 136.525)
 		(stroke
 			(width 0)
 			(type default)
@@ -37485,8 +37749,8 @@
 		(uuid "e53e91f8-5d70-438c-8ba7-49b315555370")
 	)
 	(rectangle
-		(start 209.55 67.945)
-		(end 258.445 93.345)
+		(start 198.12 67.945)
+		(end 247.015 93.345)
 		(stroke
 			(width 0)
 			(type default)
@@ -37509,6 +37773,18 @@
 		(uuid "f6c31a76-cdac-442a-8ed8-1ea3fce6a1a5")
 	)
 	(rectangle
+		(start 198.12 97.79)
+		(end 241.3 133.35)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "fc07af64-963c-4f99-ad02-8beac151b37b")
+	)
+	(rectangle
 		(start 130.81 15.875)
 		(end 189.865 47.625)
 		(stroke
@@ -37519,6 +37795,17 @@
 			(type none)
 		)
 		(uuid "ffbc91af-e7c5-4f04-be1a-346739713c20")
+	)
+	(text "Config"
+		(exclude_from_sim no)
+		(at 198.374 95.758 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "06c2d1b8-01f4-4e12-8b33-92863258616d")
 	)
 	(text "I2C Addr: 0x28"
 		(exclude_from_sim no)
@@ -37542,7 +37829,7 @@
 	)
 	(text "High-Speed External Crystal"
 		(exclude_from_sim no)
-		(at 209.804 66.04 0)
+		(at 198.374 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37658,7 +37945,7 @@
 	)
 	(text "-=] Config\nPA2 | PA3 | Task\n---+---+----------\n  0  |  0  | Undefined\n  0  |  1  | Heading Mode\n  1  |  0  | Wind Instrument\n  1  |  1  | Future Use\n---+---+----------\n"
 		(exclude_from_sim no)
-		(at 175.768 124.714 0)
+		(at 199.644 116.332 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37753,7 +38040,7 @@
 	)
 	(text "Place as close to MCU pins as possible.\nAdd ground ring with vias as Faraday cage."
 		(exclude_from_sim no)
-		(at 210.058 89.154 0)
+		(at 198.628 89.154 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38217,6 +38504,12 @@
 		(uuid "41db02b4-8e92-4a03-adf0-13e6f21b8b2c")
 	)
 	(junction
+		(at 237.49 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "425ddce8-57d6-41c1-88b4-c3df7624e466")
+	)
+	(junction
 		(at 551.18 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -38475,7 +38768,7 @@
 		(uuid "7b395ce1-2862-448b-b12a-c7fa14d4c136")
 	)
 	(junction
-		(at 247.65 81.28)
+		(at 236.22 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c17a5bb-278e-437a-b65c-606502064d2d")
@@ -38511,7 +38804,7 @@
 		(uuid "7f2abb98-984a-4c3b-b76c-cc712fd119b8")
 	)
 	(junction
-		(at 223.52 73.66)
+		(at 212.09 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f967412-9aec-47bf-8d01-5647c9db9c28")
@@ -38569,12 +38862,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c8acce4-e0ca-4592-8cad-47bb54e9fd9c")
-	)
-	(junction
-		(at 201.93 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8db90429-52af-4c2b-bf9b-b6ed64ee98cf")
 	)
 	(junction
 		(at 504.19 52.07)
@@ -38913,7 +39200,7 @@
 		(uuid "d5d0af3d-0be8-4a09-baba-aa5ff8b0f40a")
 	)
 	(junction
-		(at 247.65 73.66)
+		(at 236.22 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5f06bd9-b5f5-4a43-a711-d3b89212af4d")
@@ -39165,7 +39452,7 @@
 		(uuid "fe7137eb-12ad-4fa0-87e1-044d3d5bbc30")
 	)
 	(junction
-		(at 223.52 81.28)
+		(at 212.09 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ffe5bfcc-41dc-4f72-bf75-6c0abbd638dc")
@@ -39294,7 +39581,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 81.28) (xy 226.06 81.28)
+			(xy 212.09 81.28) (xy 214.63 81.28)
 		)
 		(stroke
 			(width 0)
@@ -39664,6 +39951,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 110.49) (xy 210.82 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "097f7950-d89a-4b5c-b9ed-a4c6377d939d")
+	)
+	(wire
+		(pts
 			(xy 177.8 276.86) (xy 191.77 276.86)
 		)
 		(stroke
@@ -39701,6 +39998,16 @@
 			(type default)
 		)
 		(uuid "0a5136fb-6fb4-405a-91dd-3302d2027be3")
+	)
+	(wire
+		(pts
+			(xy 175.26 91.44) (xy 177.8 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a7423f7-fe4a-4a42-9d11-c8c3ae67714a")
 	)
 	(wire
 		(pts
@@ -40354,16 +40661,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 85.09) (xy 201.93 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fa67fd2-5f4a-46e1-a3f6-97a170b555c0")
-	)
-	(wire
-		(pts
 			(xy 135.89 29.21) (xy 135.89 27.94)
 		)
 		(stroke
@@ -40414,23 +40711,13 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 73.66) (xy 223.52 73.66)
+			(xy 203.2 73.66) (xy 212.09 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "20ee861e-5835-4650-b534-66ba0e0e81d4")
-	)
-	(wire
-		(pts
-			(xy 189.23 93.98) (xy 189.23 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2192f06d-eb4f-4266-9324-4ac86db19f55")
 	)
 	(wire
 		(pts
@@ -40474,7 +40761,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 81.28) (xy 223.52 81.28)
+			(xy 205.74 81.28) (xy 212.09 81.28)
 		)
 		(stroke
 			(width 0)
@@ -41124,6 +41411,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 106.68) (xy 237.49 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34ec9570-03b9-40f4-9879-40abc60f8611")
+	)
+	(wire
+		(pts
 			(xy 386.08 83.82) (xy 381 83.82)
 		)
 		(stroke
@@ -41254,6 +41551,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 107.95) (xy 227.33 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "398f5734-9caa-4c29-9d78-3c0706769934")
+	)
+	(wire
+		(pts
 			(xy 360.68 152.4) (xy 361.95 152.4)
 		)
 		(stroke
@@ -41271,6 +41578,16 @@
 			(type default)
 		)
 		(uuid "3a1990c6-9a37-4170-b5a3-d358cb0c5816")
+	)
+	(wire
+		(pts
+			(xy 237.49 106.68) (xy 237.49 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a53294f-ae39-463b-a549-909afdd68deb")
 	)
 	(wire
 		(pts
@@ -41411,6 +41728,26 @@
 			(type default)
 		)
 		(uuid "3e237ee9-6d3b-4cdb-b3f5-b0f1b911cc75")
+	)
+	(wire
+		(pts
+			(xy 227.33 106.68) (xy 228.6 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e369adf-717e-4e3e-b800-1d355903d0dc")
+	)
+	(wire
+		(pts
+			(xy 208.28 107.95) (xy 210.82 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e4cb30a-456c-4b47-8f45-f38ac47305d3")
 	)
 	(wire
 		(pts
@@ -41634,7 +41971,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 81.28) (xy 226.06 78.74)
+			(xy 214.63 81.28) (xy 214.63 78.74)
 		)
 		(stroke
 			(width 0)
@@ -41921,6 +42258,16 @@
 			(type default)
 		)
 		(uuid "486e11f0-3c71-4af7-a9eb-a20d9b862de8")
+	)
+	(wire
+		(pts
+			(xy 226.06 110.49) (xy 227.33 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48735a9d-e71f-49f7-91df-807b0744e9c9")
 	)
 	(wire
 		(pts
@@ -42351,6 +42698,16 @@
 			(type default)
 		)
 		(uuid "54d6135f-7bec-4ea0-84c6-e166af401b97")
+	)
+	(wire
+		(pts
+			(xy 227.33 110.49) (xy 227.33 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "553b4d55-8945-4986-aa5d-ec8e8d44f6a3")
 	)
 	(wire
 		(pts
@@ -43134,6 +43491,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 88.9) (xy 177.8 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "679e5856-bad3-4c8c-82ce-6b65e4e5bb56")
+	)
+	(wire
+		(pts
 			(xy 214.63 53.34) (xy 214.63 54.61)
 		)
 		(stroke
@@ -43654,7 +44021,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 73.66) (xy 247.65 73.66)
+			(xy 229.87 73.66) (xy 236.22 73.66)
 		)
 		(stroke
 			(width 0)
@@ -43861,16 +44228,6 @@
 			(type default)
 		)
 		(uuid "78440e2d-c6f5-4c9b-be1c-f18de86d1a1a")
-	)
-	(wire
-		(pts
-			(xy 200.66 93.98) (xy 201.93 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78759200-9509-4035-a5a3-380d58468d3c")
 	)
 	(wire
 		(pts
@@ -44264,16 +44621,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 88.9) (xy 201.93 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81c0b798-246b-4a92-b958-8a63483be6ca")
-	)
-	(wire
-		(pts
 			(xy 212.09 35.56) (xy 226.06 35.56)
 		)
 		(stroke
@@ -44401,6 +44748,16 @@
 			(type default)
 		)
 		(uuid "86c82103-9f38-49ec-888a-ae6195915835")
+	)
+	(wire
+		(pts
+			(xy 226.06 107.95) (xy 227.33 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86d8a509-51b6-4847-8955-20020fbb4165")
 	)
 	(wire
 		(pts
@@ -44724,7 +45081,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 73.66) (xy 226.06 73.66)
+			(xy 212.09 73.66) (xy 214.63 73.66)
 		)
 		(stroke
 			(width 0)
@@ -44904,16 +45261,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 26.67) (xy 71.12 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9367d301-2b22-4e4d-a649-fccfb23cba2c")
-	)
-	(wire
-		(pts
 			(xy 71.12 173.99) (xy 73.66 173.99)
 		)
 		(stroke
@@ -45054,6 +45401,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 106.68) (xy 237.49 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "966c6225-810a-4ff8-b45b-d826dc49c6ef")
+	)
+	(wire
+		(pts
 			(xy 551.18 127) (xy 551.18 119.38)
 		)
 		(stroke
@@ -45111,16 +45468,6 @@
 			(type default)
 		)
 		(uuid "97959038-4a2a-4cd4-8ef0-60fe0f647efd")
-	)
-	(wire
-		(pts
-			(xy 175.26 88.9) (xy 193.04 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97af9797-2986-4a1c-b4f9-6ba03bb0749e")
 	)
 	(wire
 		(pts
@@ -45784,7 +46131,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 81.28) (xy 247.65 81.28)
+			(xy 238.76 81.28) (xy 236.22 81.28)
 		)
 		(stroke
 			(width 0)
@@ -46074,7 +46421,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 81.28) (xy 241.3 78.74)
+			(xy 229.87 81.28) (xy 229.87 78.74)
 		)
 		(stroke
 			(width 0)
@@ -46534,16 +46881,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 91.44) (xy 175.26 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb79b20d-1954-4f81-8e8c-131a5cd0e846")
-	)
-	(wire
-		(pts
 			(xy 123.19 269.24) (xy 123.19 273.05)
 		)
 		(stroke
@@ -46751,6 +47088,16 @@
 			(type default)
 		)
 		(uuid "c088592b-96d0-4f07-ba18-d168ef82d432")
+	)
+	(wire
+		(pts
+			(xy 227.33 111.76) (xy 228.6 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0e36b1c-29d2-49dc-8367-fbe83d98a17c")
 	)
 	(wire
 		(pts
@@ -47514,7 +47861,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 38.1) (xy 71.12 39.37)
+			(xy 71.12 36.83) (xy 71.12 39.37)
 		)
 		(stroke
 			(width 0)
@@ -47564,6 +47911,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 111.76) (xy 237.49 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d280efeb-3ee7-416c-afcb-664e4ad92a9f")
+	)
+	(wire
+		(pts
 			(xy 149.86 87.63) (xy 149.86 86.36)
 		)
 		(stroke
@@ -47601,16 +47958,6 @@
 			(type default)
 		)
 		(uuid "d3607b58-ab7a-492c-b940-93fb0cf27625")
-	)
-	(wire
-		(pts
-			(xy 193.04 93.98) (xy 189.23 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d394ea4f-4f1b-4a5c-aac4-ef16ddb5d637")
 	)
 	(wire
 		(pts
@@ -47774,7 +48121,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 81.28) (xy 241.3 81.28)
+			(xy 236.22 81.28) (xy 229.87 81.28)
 		)
 		(stroke
 			(width 0)
@@ -47841,6 +48188,16 @@
 			(type default)
 		)
 		(uuid "da7bdbae-bce4-4cee-ad09-d4aafad48bc3")
+	)
+	(wire
+		(pts
+			(xy 71.12 26.67) (xy 71.12 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da7d8b3a-6e60-4728-a469-69787a32b0e2")
 	)
 	(wire
 		(pts
@@ -48161,16 +48518,6 @@
 			(type default)
 		)
 		(uuid "e424c683-193d-4426-b5fc-1a3355a4827b")
-	)
-	(wire
-		(pts
-			(xy 201.93 88.9) (xy 201.93 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4bdef13-3c6a-433f-92cc-1fe9c1770b32")
 	)
 	(wire
 		(pts
@@ -48924,7 +49271,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 73.66) (xy 248.92 73.66)
+			(xy 236.22 73.66) (xy 237.49 73.66)
 		)
 		(stroke
 			(width 0)
@@ -49203,7 +49550,7 @@
 		(uuid "0d59c31a-6637-4d5d-982c-0231a75e1f1b")
 	)
 	(label "OSC_IN"
-		(at 217.17 81.28 180)
+		(at 205.74 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -49491,6 +49838,16 @@
 			(justify right bottom)
 		)
 		(uuid "1f56e8d4-e994-458b-8363-93e2ac55d3f8")
+	)
+	(label "CONFIG_2"
+		(at 208.28 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "217e0324-399d-41e8-ad5d-c671b4a77afc")
 	)
 	(label "CB1"
 		(at 462.28 57.15 0)
@@ -50292,16 +50649,6 @@
 		)
 		(uuid "7c7de76d-f761-4c05-bc70-93e89a9065b9")
 	)
-	(label "IS31_INTB_OUT"
-		(at 152.4 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7c9e7688-5911-4562-aac9-26b590f40ceb")
-	)
 	(label "CA6"
 		(at 73.66 146.05 0)
 		(effects
@@ -50413,7 +50760,7 @@
 		(uuid "8280bcb4-7655-4f5a-9bbc-eee637055056")
 	)
 	(label "OSC_OUT"
-		(at 248.92 73.66 0)
+		(at 237.49 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -50562,6 +50909,16 @@
 		)
 		(uuid "91a02002-d0d0-44eb-b251-0abd8b6308bf")
 	)
+	(label "CONFIG_2"
+		(at 177.8 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "933d961f-3b4e-4dd2-91e5-ee2329abac7f")
+	)
 	(label "CA2"
 		(at 365.76 180.34 0)
 		(effects
@@ -50642,15 +50999,15 @@
 		)
 		(uuid "9c53336a-7a3e-4933-8f47-ca316d7fc1c0")
 	)
-	(label "N2K_FDCAN_RX"
-		(at 177.8 111.76 0)
+	(label "CONFIG_1"
+		(at 208.28 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "9d48d821-0329-4116-ac3e-ecea39322e09")
+		(uuid "9d912591-30f1-4157-9baf-45a56f31a669")
 	)
 	(label "CB2"
 		(at 560.07 194.31 0)
@@ -50661,6 +51018,16 @@
 			(justify left bottom)
 		)
 		(uuid "9e488cc4-719c-4262-8e15-79e3d5f7f675")
+	)
+	(label "CONFIG_1"
+		(at 177.8 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f2facf3-2f19-4803-a103-7000346c870d")
 	)
 	(label "CA6"
 		(at 558.8 152.4 0)
@@ -50901,6 +51268,16 @@
 			(justify left bottom)
 		)
 		(uuid "b7b362a2-88d9-4422-a9e5-5d7c97277c49")
+	)
+	(label "IS31_INTB_OUT"
+		(at 177.8 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b843f9f8-2f54-4167-a263-2349b8d4a114")
 	)
 	(label "CB6"
 		(at 73.66 171.45 0)
@@ -51381,6 +51758,16 @@
 			(justify left bottom)
 		)
 		(uuid "ee1782ed-ba45-4c9b-a556-f3ae837d4d92")
+	)
+	(label "N2K_FDCAN_RX"
+		(at 152.4 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f1396ec4-5fb1-4c32-8bd8-846b3f4f44fb")
 	)
 	(label "LCD_PGDOWN_IN_PLUG"
 		(at 166.37 269.24 180)
@@ -54195,6 +54582,96 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:Bouns SMBJ20A-Q")
+		(at 71.12 33.02 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1231569a-f2e6-4a77-9e11-8a568957509e")
+		(property "Reference" "TVS1"
+			(at 68.834 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMBJ20A-Q"
+			(at 73.406 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Bourns SMBJ20"
+			(at 59.436 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SMBJ-Q.pdf"
+			(at 63.754 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "32.4V Clamp 18.6A Ipp Tvs Diode Surface Mount DO-214AA (SMB)"
+			(at 66.04 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Bourns SMBJ20A-Q"
+			(at 61.468 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9452d59-e8bb-4dd4-a6de-497ab8380dfe")
+		)
+		(pin "2"
+			(uuid "87e7dbd7-aa54-41cc-925d-7c5b4cc9d662")
+		)
+		(instances
+			(project "Compass Rose"
+				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
+					(reference "TVS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 205.74 39.37 90)
 		(unit 1)
@@ -55132,98 +55609,6 @@
 			(project "Compass Rose"
 				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
 					(reference "ROM1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 196.85 93.98 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "17b9f4a5-81da-47dc-a459-3958eb8de40b")
-		(property "Reference" "R2"
-			(at 195.58 93.98 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 195.072 91.694 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 196.85 92.202 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCA.pdf"
-			(at 196.85 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film"
-			(at 196.85 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Stackpole RMCA0805FT10K0-HP"
-			(at 196.85 93.98 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "60e65443-c6bd-46da-b15a-795bda6ab94e")
-		)
-		(pin "2"
-			(uuid "7abacb7d-f82e-4f75-8816-5644ad8f5e80")
-		)
-		(instances
-			(project "Compass Rose"
-				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -57124,177 +57509,6 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Littelfuse SLD22-018")
-		(at 71.12 33.02 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2b6e98f4-cf13-411f-8222-1be8040a1560")
-		(property "Reference" "TVS1"
-			(at 68.58 30.734 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SLD22-018"
-			(at 73.66 27.432 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Littelfuse SDL"
-			(at -22.53 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=fce36256-f340-4c99-9aec-ae774cb2d1d8&filename=littelfuse_tvs_diode_sld_datasheet.pdf"
-			(at -122.53 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Description" "35.5V Clamp 143.7A Ipp Tvs Diode Through Hole P600"
-			(at 66.294 33.274 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "LittelFuse SLD22-018"
-			(at 71.12 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 71.12 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 71.12 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" ""
-			(at 71.12 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 71.12 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 71.12 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 71.12 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 71.12 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "62235355-6bba-4c7d-af32-763c78976946")
-		)
-		(pin "1"
-			(uuid "5cf34445-f397-4d45-9a2c-78bff81ae2a4")
-		)
-		(instances
-			(project "Compass Rose"
-				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
-					(reference "TVS1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 223.52 254 0)
 		(unit 1)
@@ -58202,7 +58416,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:AHEF100")
+		(lib_id "mr-parts:Bel Fuse 0ZCG0110CF2B")
 		(at 80.01 26.67 0)
 		(unit 1)
 		(body_style 1)
@@ -58213,7 +58427,7 @@
 		(dnp no)
 		(uuid "31bb85e1-51e7-4917-a1c9-8556fd96a686")
 		(property "Reference" "PTC1"
-			(at 78.994 24.13 0)
+			(at 78.232 24.384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -58222,8 +58436,8 @@
 				)
 			)
 		)
-		(property "Value" "AHEF100"
-			(at 82.804 29.21 0)
+		(property "Value" "0ZCG0110CF2B"
+			(at 82.55 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -58232,8 +58446,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Littelfuse AHEF100"
-			(at 80.01 26.67 0)
+		(property "Footprint" "mr-stuff:Bel Fuse 0ZCG"
+			(at 80.01 40.132 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58243,8 +58457,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ptc-radial-leaded-ahef-datasheet?assetguid=ea99bce9-2903-4b4b-b42b-a33ce894366b"
-			(at 80.264 32.766 0)
+		(property "Datasheet" "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf"
+			(at 80.01 35.306 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58254,8 +58468,8 @@
 				)
 			)
 		)
-		(property "Description" "PTC Resettable Fuse, 1A, 32V"
-			(at 80.01 30.734 0)
+		(property "Description" "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave"
+			(at 80.01 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58265,8 +58479,8 @@
 				)
 			)
 		)
-		(property "Part" "LittelFuse AHEF100"
-			(at 80.01 26.67 0)
+		(property "Part" "Bel Fuse 0ZCG0110CF2B"
+			(at 80.01 37.846 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61698,7 +61912,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 250.19 81.28 0)
+		(at 238.76 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -61708,7 +61922,7 @@
 		(dnp no)
 		(uuid "450e05f9-a472-4395-a3d6-a1b587eba424")
 		(property "Reference" "#PWR0269"
-			(at 250.19 87.63 0)
+			(at 238.76 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61719,7 +61933,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 250.19 85.09 0)
+			(at 238.76 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -61729,7 +61943,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 81.28 0)
+			(at 238.76 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61740,7 +61954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 81.28 0)
+			(at 238.76 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61751,7 +61965,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 250.19 81.28 0)
+			(at 238.76 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64989,6 +65203,102 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:CTS_219-2MSTR")
+		(at 218.44 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "55a4d26a-7efb-4441-ac07-b81bfccd0980")
+		(property "Reference" "SW3"
+			(at 218.44 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "219-2MSTR"
+			(at 218.44 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(at 218.44 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "CTS 219-2MSTR"
+			(at 218.44 121.412 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e573e656-0ded-4010-8936-ac825921a6f5")
+		)
+		(pin "3"
+			(uuid "29f18ad1-4af9-4533-9529-b351c0545581")
+		)
+		(pin "4"
+			(uuid "a9a239f8-4fca-4dfa-af63-22fe79583204")
+		)
+		(pin "1"
+			(uuid "00526d0c-5368-43be-802d-27ad711ede8a")
+		)
+		(instances
+			(project "Compass Rose"
+				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 149.86 82.55 180)
 		(unit 1)
@@ -67668,8 +67978,8 @@
 				)
 			)
 		)
-		(property "Value" "1N5822RL"
-			(at 63.754 29.21 0)
+		(property "Value" "VS-30MQ040HM3/5AT"
+			(at 59.69 29.464 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -67678,7 +67988,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:STM 1N5822RL"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 63.5 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -67689,7 +67999,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/d8/3f/72/85/bc/90/4e/f7/CD00001626.pdf/files/CD00001626.pdf/jcr:content/translations/en.CD00001626.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/94841/vs-30mq040hm3.pdf"
 			(at 63.5 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -67700,7 +68010,7 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode 40 V 3A Through Hole DO-201AD"
+		(property "Description" "Diode 40 V 3A Surface Mount DO-214AC (SMA)"
 			(at 63.5 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -67711,7 +68021,7 @@
 				)
 			)
 		)
-		(property "Part" "STM 1N5822RL"
+		(property "Part" "Vishay VS-30MQ040HM3/5AT"
 			(at 63.5 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -69779,6 +70089,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 232.41 106.68 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c59a7f6-81d3-47c0-a275-c0240ed8883d")
+		(property "Reference" "R1"
+			(at 231.14 106.68 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 231.14 104.394 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
+			(at 232.41 104.902 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 232.41 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
+			(at 232.41 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP0805FTD1K00"
+			(at 232.41 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "32d52d72-7ab6-4c3b-acd2-c3d3bf344437")
+		)
+		(pin "1"
+			(uuid "9daef5e2-7802-46a0-8b99-e3f6ab27c879")
+		)
+		(instances
+			(project "Compass Rose"
+				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 205.74 185.42 0)
 		(unit 1)
@@ -70030,6 +70432,83 @@
 			(project "Compass Rose"
 				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
 					(reference "LED108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 237.49 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e81b1e6-e3e5-4d89-b987-552330bc1066")
+		(property "Reference" "#PWR026"
+			(at 237.49 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 237.49 100.584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 237.49 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6eed70d0-aaae-4d44-8949-0938f4ccf82a")
+		)
+		(instances
+			(project "Compass Rose"
+				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -75785,83 +76264,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 201.93 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b26494e9-b3d6-4728-993a-b8caac0a1696")
-		(property "Reference" "#PWR025"
-			(at 201.93 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 201.93 81.534 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 201.93 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e3d80ef1-3287-435b-8d91-07fd734c90f2")
-		)
-		(instances
-			(project "Compass Rose"
-				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "Kingbright WP383SURDTK_24")
 		(lib_id "mr-parts:Kingbright WP383SURDTK")
 		(at 565.15 134.62 0)
@@ -75967,7 +76369,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 247.65 77.47 180)
+		(at 236.22 77.47 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -75977,7 +76379,7 @@
 		(dnp no)
 		(uuid "b3379f30-1d38-41d6-9bbc-f466d1b314f9")
 		(property "Reference" "C18"
-			(at 247.396 75.184 0)
+			(at 235.966 75.184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -75988,7 +76390,7 @@
 			)
 		)
 		(property "Value" "16pF"
-			(at 247.396 80.01 0)
+			(at 235.966 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -75999,7 +76401,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Kemet C0603X"
-			(at 246.6848 73.66 0)
+			(at 235.2548 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76010,7 +76412,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD"
-			(at 247.65 77.47 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76021,7 +76423,7 @@
 			)
 		)
 		(property "Description" "16 pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
-			(at 247.65 77.47 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76032,7 +76434,7 @@
 			)
 		)
 		(property "Part" "Kemet C0603X160J5GACAUTO"
-			(at 247.65 77.47 90)
+			(at 236.22 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76043,7 +76445,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 247.65 77.47 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76054,7 +76456,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 247.65 77.47 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76065,7 +76467,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 247.65 77.47 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76076,7 +76478,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 247.65 77.47 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76087,7 +76489,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 247.65 77.47 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76098,7 +76500,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 247.65 77.47 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76109,7 +76511,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 247.65 77.47 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76605,98 +77007,6 @@
 			(project "Compass Rose"
 				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
 					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 196.85 88.9 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b634f71b-7e2b-4335-be4b-7182d572d0cb")
-		(property "Reference" "R1"
-			(at 195.58 88.9 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 195.072 86.614 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 196.85 87.122 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCA.pdf"
-			(at 196.85 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film"
-			(at 196.85 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Stackpole RMCA0805FT10K0-HP"
-			(at 196.85 88.9 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5ecf9196-89ba-4ce8-9a22-f0bcfb7b7d45")
-		)
-		(pin "2"
-			(uuid "fc8df5bd-f9d1-42ec-b84c-1b11f75a8190")
-		)
-		(instances
-			(project "Compass Rose"
-				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -78014,7 +78324,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:Geyer 12.60378")
-		(at 233.68 76.2 0)
+		(at 222.25 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -78024,7 +78334,7 @@
 		(dnp no)
 		(uuid "c797fd66-8637-45aa-bedb-87ec729ce96e")
 		(property "Reference" "OX1"
-			(at 233.68 69.85 0)
+			(at 222.25 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -78034,7 +78344,7 @@
 			)
 		)
 		(property "Value" "12.60378"
-			(at 233.68 82.55 0)
+			(at 222.25 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -78044,7 +78354,7 @@
 			)
 		)
 		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
-			(at 233.68 87.63 0)
+			(at 222.25 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -78055,7 +78365,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6209/12.60378.pdf"
-			(at 233.68 90.17 0)
+			(at 222.25 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -78066,7 +78376,7 @@
 			)
 		)
 		(property "Description" "24 MHz ±30ppm Crystal 12pF 50 Ohms 4-SMD, No Lead"
-			(at 233.426 85.09 0)
+			(at 221.996 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -78077,7 +78387,7 @@
 			)
 		)
 		(property "Part" "Geyer 12.60378"
-			(at 233.68 92.456 0)
+			(at 222.25 92.456 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -79379,7 +79689,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 214.63 73.66 0)
+		(at 203.2 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -79389,7 +79699,7 @@
 		(dnp no)
 		(uuid "d0d21ef9-a0e4-47e1-85c4-a9805961d552")
 		(property "Reference" "#PWR0252"
-			(at 214.63 80.01 0)
+			(at 203.2 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -79400,7 +79710,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 214.63 77.47 0)
+			(at 203.2 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -79410,7 +79720,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 73.66 0)
+			(at 203.2 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -79421,7 +79731,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 73.66 0)
+			(at 203.2 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -79432,7 +79742,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 73.66 0)
+			(at 203.2 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -83304,6 +83614,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 232.41 111.76 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eb7a2a34-3bdb-494c-b9a0-94ddd8a4bc44")
+		(property "Reference" "R2"
+			(at 231.14 111.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 231.14 109.474 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
+			(at 232.41 109.982 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 232.41 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
+			(at 232.41 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP0805FTD1K00"
+			(at 232.41 111.76 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "54cc2ca2-a897-4829-b07c-39ed685b7266")
+		)
+		(pin "1"
+			(uuid "4c4bebfb-7369-4187-9055-121668c9d115")
+		)
+		(instances
+			(project "Compass Rose"
+				(path "/e4671408-3e04-42c4-aa2c-7576ad4f645e"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "Kingbright WP383SURDTK_11")
 		(lib_id "mr-parts:Kingbright WP383SURDTK")
 		(at 471.17 50.8 270)
@@ -84302,7 +84704,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 223.52 77.47 180)
+		(at 212.09 77.47 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -84312,7 +84714,7 @@
 		(dnp no)
 		(uuid "f1a636e8-024a-4eed-95f9-6aee4e6d2fc1")
 		(property "Reference" "C17"
-			(at 223.266 75.184 0)
+			(at 211.836 75.184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -84323,7 +84725,7 @@
 			)
 		)
 		(property "Value" "16pF"
-			(at 223.266 80.01 0)
+			(at 211.836 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -84334,7 +84736,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Kemet C0603X"
-			(at 222.5548 73.66 0)
+			(at 211.1248 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84345,7 +84747,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD"
-			(at 223.52 77.47 0)
+			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84356,7 +84758,7 @@
 			)
 		)
 		(property "Description" "16 pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
-			(at 223.52 77.47 0)
+			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84367,7 +84769,7 @@
 			)
 		)
 		(property "Part" "Kemet C0603X160J5GACAUTO"
-			(at 223.52 77.47 90)
+			(at 212.09 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84378,7 +84780,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 223.52 77.47 0)
+			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84389,7 +84791,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 223.52 77.47 0)
+			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84400,7 +84802,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 223.52 77.47 0)
+			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84411,7 +84813,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 223.52 77.47 0)
+			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84422,7 +84824,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 223.52 77.47 0)
+			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84433,7 +84835,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 223.52 77.47 0)
+			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -84444,7 +84846,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 223.52 77.47 0)
+			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

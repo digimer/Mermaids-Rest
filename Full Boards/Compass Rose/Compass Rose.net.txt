@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Compass Rose/Compass Rose.kicad_sch")
-		(date "2026-08-10T13:33:40")
+		(date "2026-08-10T22:31:46")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -12553,13 +12553,13 @@
 		)
 		(comp
 			(ref "PTC1")
-			(value "AHEF100")
-			(footprint "mr-stuff:Littelfuse AHEF100")
-			(datasheet "https://www.littelfuse.com/assetdocs/littelfuse-ptc-radial-leaded-ahef-datasheet?assetguid=ea99bce9-2903-4b4b-b42b-a33ce894366b")
-			(description "PTC Resettable Fuse, 1A, 32V")
+			(value "0ZCG0110CF2B")
+			(footprint "mr-stuff:Bel Fuse 0ZCG")
+			(datasheet "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf")
+			(description "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
 			(fields
 				(field
-					(name "Part") "LittelFuse AHEF100")
+					(name "Part") "Bel Fuse 0ZCG0110CF2B")
 				(field
 					(name "Arrow Part Number")
 				)
@@ -12582,20 +12582,20 @@
 					(name "Mouser Price/Stock")
 				)
 				(field
-					(name "Footprint") "mr-stuff:Littelfuse AHEF100")
+					(name "Footprint") "mr-stuff:Bel Fuse 0ZCG")
 				(field
-					(name "Datasheet") "https://www.littelfuse.com/assetdocs/littelfuse-ptc-radial-leaded-ahef-datasheet?assetguid=ea99bce9-2903-4b4b-b42b-a33ce894366b")
+					(name "Datasheet") "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf")
 				(field
-					(name "Description") "PTC Resettable Fuse, 1A, 32V")
+					(name "Description") "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "AHEF100")
-				(description "PTC Resettable Fuse, 1A, 32V")
+				(part "Bel Fuse 0ZCG0110CF2B")
+				(description "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
 			)
 			(property
 				(name "Part")
-				(value "LittelFuse AHEF100")
+				(value "Bel Fuse 0ZCG0110CF2B")
 			)
 			(property
 				(name "Arrow Part Number")
@@ -13302,19 +13302,19 @@
 		)
 		(comp
 			(ref "R1")
-			(value "10k")
-			(footprint "mr-stuff:Stackpole RMCA0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
-			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(value "1k")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RMCA0805FT10K0-HP")
+					(name "Part") "Stackpole RNCP0805FTD1K00")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
 				(lib "Device")
@@ -13323,7 +13323,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RMCA0805FT10K0-HP")
+				(value "Stackpole RNCP0805FTD1K00")
 			)
 			(property
 				(name "Sheetname")
@@ -13345,7 +13345,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "b634f71b-7e2b-4335-be4b-7182d572d0cb")
+			(tstamps "7c59a7f6-81d3-47c0-a275-c0240ed8883d")
 			(units
 				(unit
 					(name "A")
@@ -13362,19 +13362,19 @@
 		)
 		(comp
 			(ref "R2")
-			(value "10k")
-			(footprint "mr-stuff:Stackpole RMCA0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
-			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(value "1k")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RMCA0805FT10K0-HP")
+					(name "Part") "Stackpole RNCP0805FTD1K00")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
 				(lib "Device")
@@ -13383,7 +13383,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RMCA0805FT10K0-HP")
+				(value "Stackpole RNCP0805FTD1K00")
 			)
 			(property
 				(name "Sheetname")
@@ -13392,9 +13392,6 @@
 			(property
 				(name "Sheetfile")
 				(value "Compass Rose.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -13408,7 +13405,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "17b9f4a5-81da-47dc-a459-3958eb8de40b")
+			(tstamps "eb7a2a34-3bdb-494c-b9a0-94ddd8a4bc44")
 			(units
 				(unit
 					(name "A")
@@ -15325,19 +15322,19 @@
 		)
 		(comp
 			(ref "SD1")
-			(value "1N5822RL")
-			(footprint "mr-stuff:STM 1N5822RL")
-			(datasheet "https://www.st.com/content/ccc/resource/technical/document/datasheet/d8/3f/72/85/bc/90/4e/f7/CD00001626.pdf/files/CD00001626.pdf/jcr:content/translations/en.CD00001626.pdf")
-			(description "Schottky diode 40 V 3A Through Hole DO-201AD")
+			(value "VS-30MQ040HM3/5AT")
+			(footprint "Diode_SMD:D_SMA")
+			(datasheet "https://www.vishay.com/docs/94841/vs-30mq040hm3.pdf")
+			(description "Diode 40 V 3A Surface Mount DO-214AC (SMA)")
 			(fields
 				(field
-					(name "Part") "STM 1N5822RL")
+					(name "Part") "Vishay VS-30MQ040HM3/5AT")
 				(field
-					(name "Footprint") "mr-stuff:STM 1N5822RL")
+					(name "Footprint") "Diode_SMD:D_SMA")
 				(field
-					(name "Datasheet") "https://www.st.com/content/ccc/resource/technical/document/datasheet/d8/3f/72/85/bc/90/4e/f7/CD00001626.pdf/files/CD00001626.pdf/jcr:content/translations/en.CD00001626.pdf")
+					(name "Datasheet") "https://www.vishay.com/docs/94841/vs-30mq040hm3.pdf")
 				(field
-					(name "Description") "Schottky diode 40 V 3A Through Hole DO-201AD")
+					(name "Description") "Diode 40 V 3A Surface Mount DO-214AC (SMA)")
 			)
 			(libsource
 				(lib "Device")
@@ -15346,7 +15343,7 @@
 			)
 			(property
 				(name "Part")
-				(value "STM 1N5822RL")
+				(value "Vishay VS-30MQ040HM3/5AT")
 			)
 			(property
 				(name "Sheetname")
@@ -15559,6 +15556,72 @@
 						)
 						(pin
 							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW3")
+			(value "219-2MSTR")
+			(description "2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+			(fields
+				(field
+					(name "Part") "CTS 219-2MSTR")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "CTS_219-2MSTR")
+				(description "Dip Switch SPST 2 Position Surface Mount Slide (Standard) Actuator 100mA 20VDC")
+			)
+			(property
+				(name "Part")
+				(value "CTS 219-2MSTR")
+			)
+			(property
+				(name "Sheetname")
+				(value "Compass Rose")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Compass Rose.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "dip switch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SW?DIP?x2*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "55a4d26a-7efb-4441-ac07-b81bfccd0980")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
 						)
 					)
 				)
@@ -16077,77 +16140,28 @@
 		)
 		(comp
 			(ref "TVS1")
-			(value "SLD22-018")
-			(footprint "mr-stuff:Littelfuse SDL")
-			(datasheet "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=fce36256-f340-4c99-9aec-ae774cb2d1d8&filename=littelfuse_tvs_diode_sld_datasheet.pdf")
-			(description "35.5V Clamp 143.7A Ipp Tvs Diode Through Hole P600")
+			(value "SMBJ20A-Q")
+			(footprint "mr-stuff:Bourns SMBJ20")
+			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SMBJ-Q.pdf")
+			(description "32.4V Clamp 18.6A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
 			(fields
 				(field
-					(name "Part") "LittelFuse SLD22-018")
+					(name "Part") "Bourns SMBJ20A-Q")
 				(field
-					(name "Arrow Part Number")
-				)
+					(name "Footprint") "mr-stuff:Bourns SMBJ20")
 				(field
-					(name "Arrow Price/Stock")
-				)
+					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SMBJ-Q.pdf")
 				(field
-					(name "Height")
-				)
-				(field
-					(name "Manufacturer_Name")
-				)
-				(field
-					(name "Manufacturer_Part_Number")
-				)
-				(field
-					(name "Mouser Part Number")
-				)
-				(field
-					(name "Mouser Price/Stock")
-				)
-				(field
-					(name "Footprint") "mr-stuff:Littelfuse SDL")
-				(field
-					(name "Datasheet") "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=fce36256-f340-4c99-9aec-ae774cb2d1d8&filename=littelfuse_tvs_diode_sld_datasheet.pdf")
-				(field
-					(name "Description") "35.5V Clamp 143.7A Ipp Tvs Diode Through Hole P600")
+					(name "Description") "32.4V Clamp 18.6A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Littelfuse SLD22-018")
-				(description "35.5V Clamp 143.7A Ipp Tvs Diode Through Hole P600")
+				(part "Bouns SMBJ20A-Q")
+				(description "32.4V Clamp 18.6A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
 			)
 			(property
 				(name "Part")
-				(value "LittelFuse SLD22-018")
-			)
-			(property
-				(name "Arrow Part Number")
-				(value "")
-			)
-			(property
-				(name "Arrow Price/Stock")
-				(value "")
-			)
-			(property
-				(name "Height")
-				(value "")
-			)
-			(property
-				(name "Manufacturer_Name")
-				(value "")
-			)
-			(property
-				(name "Manufacturer_Part_Number")
-				(value "")
-			)
-			(property
-				(name "Mouser Part Number")
-				(value "")
-			)
-			(property
-				(name "Mouser Price/Stock")
-				(value "")
+				(value "Bourns SMBJ20A-Q")
 			)
 			(property
 				(name "Sheetname")
@@ -16161,7 +16175,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "2b6e98f4-cf13-411f-8222-1be8040a1560")
+			(tstamps "1231569a-f2e6-4a77-9e11-8a568957509e")
 			(units
 				(unit
 					(name "A")
@@ -21545,38 +21559,6 @@
 		)
 		(libpart
 			(lib "mr-parts")
-			(part "AHEF100")
-			(description "PTC Resettable Fuse, 1A, 32V")
-			(docs "https://www.littelfuse.com/assetdocs/littelfuse-ptc-radial-leaded-ahef-datasheet?assetguid=ea99bce9-2903-4b4b-b42b-a33ce894366b")
-			(fields
-				(field
-					(name "Reference") "PTC")
-				(field
-					(name "Value")
-				)
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet") "https://www.littelfuse.com/assetdocs/littelfuse-ptc-radial-leaded-ahef-datasheet?assetguid=ea99bce9-2903-4b4b-b42b-a33ce894366b")
-				(field
-					(name "Description") "PTC Resettable Fuse, 1A, 32V")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "power_out")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "power_in")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
 			(part "Amphenol L77SDE09SA4CH4F")
 			(description "DE9 Female, right angle")
 			(docs "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_d_sub_sd_stamped_formed_right_angle_board.pdf")
@@ -21691,6 +21673,115 @@
 					(num "3")
 					(name "Vout")
 					(type "power_out")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Bel Fuse 0ZCG0110CF2B")
+			(description "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
+			(docs "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf")
+			(fields
+				(field
+					(name "Reference") "PTC")
+				(field
+					(name "Value") "0ZCG0110CF2B")
+				(field
+					(name "Footprint") "mr-stuff:Bel Fuse 0ZCG")
+				(field
+					(name "Datasheet") "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf")
+				(field
+					(name "Description") "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
+				(field
+					(name "Part") "Bel Fuse 0ZCG0110CF2B")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "power_out")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Bouns SMBJ20A-Q")
+			(description "32.4V Clamp 18.6A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
+			(docs "https://www.bourns.com/docs/Product-Datasheets/SMBJ-Q.pdf")
+			(fields
+				(field
+					(name "Reference") "TVS")
+				(field
+					(name "Value") "SMBJ20A-Q")
+				(field
+					(name "Footprint") "mr-stuff:Bourns SMBJ20")
+				(field
+					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SMBJ-Q.pdf")
+				(field
+					(name "Description") "32.4V Clamp 18.6A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
+				(field
+					(name "Part") "Bourns SMBJ20A-Q")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "CTS_219-2MSTR")
+			(description "Dip Switch SPST 2 Position Surface Mount Slide (Standard) Actuator 100mA 20VDC")
+			(docs "https://www.ctscorp.com/Files/DataSheets/Switches/DIP-Switches/CTS-Switches-DIP-219-Series-Datasheet.pdf")
+			(footprints
+				(fp "SW?DIP?x2*")
+			)
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "CTS_219-2MSTR")
+				(field
+					(name "Footprint") "mr-stuff:CTS 219-2MSTR")
+				(field
+					(name "Datasheet") "https://www.ctscorp.com/Files/DataSheets/Switches/DIP-Switches/CTS-Switches-DIP-219-Series-Datasheet.pdf")
+				(field
+					(name "Description") "Dip Switch SPST 2 Position Surface Mount Slide (Standard) Actuator 100mA 20VDC")
+				(field
+					(name "Part") "CTS 219-2MSTR")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "")
+					(type "passive")
 				)
 			)
 		)
@@ -21910,36 +22001,6 @@
 				(pin
 					(num "2")
 					(name "A")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
-			(part "Littelfuse SLD22-018")
-			(description "35.5V Clamp 143.7A Ipp Tvs Diode Through Hole P600")
-			(docs "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=fce36256-f340-4c99-9aec-ae774cb2d1d8&filename=littelfuse_tvs_diode_sld_datasheet.pdf")
-			(fields
-				(field
-					(name "Reference") "TVS")
-				(field
-					(name "Value") "SLD22-018")
-				(field
-					(name "Footprint") "mr-stuff:Littelfuse SDL")
-				(field
-					(name "Datasheet") "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=fce36256-f340-4c99-9aec-ae774cb2d1d8&filename=littelfuse_tvs_diode_sld_datasheet.pdf")
-				(field
-					(name "Description") "35.5V Clamp 143.7A Ipp Tvs Diode Through Hole P600")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
 					(type "passive")
 				)
 			)
@@ -25260,6 +25321,38 @@
 		)
 		(net
 			(code "24")
+			(name "/CONFIG_1")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "9")
+				(pinfunction "PA2_9")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "SW3")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "25")
+			(name "/CONFIG_2")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "10")
+				(pinfunction "PA3_10")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "SW3")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "26")
 			(name "/DEBUG_SWCLK")
 			(class "Default")
 			(node
@@ -25293,7 +25386,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "27")
 			(name "/DEBUG_SWDIO")
 			(class "Default")
 			(node
@@ -25310,7 +25403,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "28")
 			(name "/DISPLAY_ON_IN")
 			(class "Default")
 			(node
@@ -25336,7 +25429,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "29")
 			(name "/DISPLAY_ON_IN_PLUG")
 			(class "Default")
 			(node
@@ -25357,7 +25450,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "30")
 			(name "/IS31_I2C_SCL")
 			(class "Default")
 			(node
@@ -25385,7 +25478,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "31")
 			(name "/IS31_I2C_SDA")
 			(class "Default")
 			(node
@@ -25413,7 +25506,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "32")
 			(name "/IS31_INTB_OUT")
 			(class "Default")
 			(node
@@ -25424,8 +25517,8 @@
 			)
 			(node
 				(ref "MCU1")
-				(pin "15")
-				(pinfunction "PB0_15")
+				(pin "22")
+				(pinfunction "PA11_22")
 				(pintype "bidirectional")
 			)
 			(node
@@ -25435,7 +25528,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "33")
 			(name "/LCD_BL_BLUE_OUT")
 			(class "Default")
 			(node
@@ -25451,7 +25544,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "34")
 			(name "/LCD_BL_GREEN_OUT")
 			(class "Default")
 			(node
@@ -25467,7 +25560,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "35")
 			(name "/LCD_BL_RED_OUT")
 			(class "Default")
 			(node
@@ -25483,7 +25576,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "36")
 			(name "/LCD_PGDOWN_IN")
 			(class "Default")
 			(node
@@ -25509,7 +25602,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "37")
 			(name "/LCD_PGDOWN_IN_PLUG")
 			(class "Default")
 			(node
@@ -25530,7 +25623,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "38")
 			(name "/LCD_PGUP_IN")
 			(class "Default")
 			(node
@@ -25556,7 +25649,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "39")
 			(name "/LCD_PGUP_IN_PLUG")
 			(class "Default")
 			(node
@@ -25577,7 +25670,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "40")
 			(name "/N2K_CAN_H")
 			(class "Default")
 			(node
@@ -25603,7 +25696,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "41")
 			(name "/N2K_CAN_L")
 			(class "Default")
 			(node
@@ -25629,7 +25722,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "42")
 			(name "/N2K_FDCAN_RX")
 			(class "Default")
 			(node
@@ -25640,13 +25733,13 @@
 			)
 			(node
 				(ref "MCU1")
-				(pin "22")
-				(pinfunction "PA11_22")
+				(pin "15")
+				(pinfunction "PB0_15")
 				(pintype "bidirectional")
 			)
 		)
 		(net
-			(code "41")
+			(code "43")
 			(name "/N2K_FDCAN_TX")
 			(class "Default")
 			(node
@@ -25663,7 +25756,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "44")
 			(name "/NRST")
 			(class "Default")
 			(node
@@ -25702,7 +25795,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "45")
 			(name "/OSC_IN")
 			(class "Default")
 			(node
@@ -25723,7 +25816,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "46")
 			(name "/OSC_OUT")
 			(class "Default")
 			(node
@@ -25744,7 +25837,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "47")
 			(name "/RS232_RX")
 			(class "Default")
 			(node
@@ -25760,7 +25853,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "48")
 			(name "/RS232_TX")
 			(class "Default")
 			(node
@@ -25776,7 +25869,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "49")
 			(name "/USART1_RX")
 			(class "Default")
 			(node
@@ -25793,7 +25886,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "50")
 			(name "/USART1_TX")
 			(class "Default")
 			(node
@@ -25810,7 +25903,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "51")
 			(name "GND")
 			(class "Default")
 			(node
@@ -26151,7 +26244,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "52")
 			(name "GND_SHIP")
 			(class "Default")
 			(node
@@ -26252,6 +26345,7 @@
 			(node
 				(ref "TVS1")
 				(pin "2")
+				(pinfunction "A_2")
 				(pintype "passive")
 			)
 			(node
@@ -26261,7 +26355,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "53")
 			(name "Net-(CMC1-I1)")
 			(class "Default")
 			(node
@@ -26278,7 +26372,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "54")
 			(name "Net-(CMC1-I2)")
 			(class "Default")
 			(node
@@ -26295,7 +26389,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "55")
 			(name "Net-(CPD1-C_FILT)")
 			(class "Default")
 			(node
@@ -26311,7 +26405,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "56")
 			(name "Net-(CPD1-R_EXT)")
 			(class "Default")
 			(node
@@ -26327,7 +26421,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "57")
 			(name "Net-(IDCB1-+VIN)")
 			(class "Default")
 			(node
@@ -26344,7 +26438,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "58")
 			(name "Net-(J3-Pin_1)")
 			(class "Default")
 			(node
@@ -26365,7 +26459,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "59")
 			(name "Net-(LCD2-A-BLUE)")
 			(class "Default")
 			(node
@@ -26381,7 +26475,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "60")
 			(name "Net-(LCD2-A-GREEN)")
 			(class "Default")
 			(node
@@ -26397,7 +26491,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "61")
 			(name "Net-(LCD2-A-RED)")
 			(class "Default")
 			(node
@@ -26413,7 +26507,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "62")
 			(name "Net-(LCD2-SCL)")
 			(class "Default")
 			(node
@@ -26435,7 +26529,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "63")
 			(name "Net-(LCD2-SDA)")
 			(class "Default")
 			(node
@@ -26457,7 +26551,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "64")
 			(name "Net-(LS1-EN)")
 			(class "Default")
 			(node
@@ -26485,38 +26579,6 @@
 			(node
 				(ref "R16")
 				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "63")
-			(name "Net-(MCU1-PA2)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "9")
-				(pinfunction "PA2_9")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "R1")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "64")
-			(name "Net-(MCU1-PA3)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "10")
-				(pinfunction "PA3_10")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "R2")
-				(pin "2")
 				(pintype "passive")
 			)
 		)
@@ -26704,6 +26766,36 @@
 		)
 		(net
 			(code "75")
+			(name "Net-(R1-Pad2)")
+			(class "Default")
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "76")
+			(name "Net-(R2-Pad2)")
+			(class "Default")
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "77")
 			(name "Net-(RST1-C1+)")
 			(class "Default")
 			(node
@@ -26719,7 +26811,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "78")
 			(name "Net-(RST1-C1-)")
 			(class "Default")
 			(node
@@ -26735,7 +26827,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "79")
 			(name "Net-(RST1-C2+)")
 			(class "Default")
 			(node
@@ -26751,7 +26843,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "80")
 			(name "Net-(RST1-C2-)")
 			(class "Default")
 			(node
@@ -26767,7 +26859,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "81")
 			(name "Net-(RST1-VS+)")
 			(class "Default")
 			(node
@@ -26783,7 +26875,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "82")
 			(name "Net-(RST1-VS-)")
 			(class "Default")
 			(node
@@ -26799,7 +26891,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "83")
 			(name "Net-(SD1-A)")
 			(class "Default")
 			(node
@@ -26816,11 +26908,12 @@
 			(node
 				(ref "TVS1")
 				(pin "1")
+				(pinfunction "K_1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "82")
+			(code "84")
 			(name "V_RAW")
 			(class "Default")
 			(node
@@ -26859,7 +26952,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "85")
 			(name "unconnected-(DE1-Pad1)")
 			(class "Default")
 			(node
@@ -26869,7 +26962,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "86")
 			(name "unconnected-(DE1-Pad4)")
 			(class "Default")
 			(node
@@ -26879,7 +26972,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "87")
 			(name "unconnected-(DE1-Pad6)")
 			(class "Default")
 			(node
@@ -26889,7 +26982,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "88")
 			(name "unconnected-(DE1-Pad7)")
 			(class "Default")
 			(node
@@ -26899,7 +26992,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "89")
 			(name "unconnected-(DE1-Pad8)")
 			(class "Default")
 			(node
@@ -26909,7 +27002,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "90")
 			(name "unconnected-(DE1-Pad9)")
 			(class "Default")
 			(node
@@ -26919,7 +27012,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "91")
 			(name "unconnected-(DE2-Pad1)")
 			(class "Default")
 			(node
@@ -26929,7 +27022,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "92")
 			(name "unconnected-(DE2-Pad2)")
 			(class "Default")
 			(node
@@ -26939,7 +27032,7 @@
 			)
 		)
 		(net
-			(code "91")
+			(code "93")
 			(name "unconnected-(DE2-Pad6)")
 			(class "Default")
 			(node
@@ -26949,7 +27042,7 @@
 			)
 		)
 		(net
-			(code "92")
+			(code "94")
 			(name "unconnected-(IDCB1-N.C._1-Pad5)")
 			(class "Default")
 			(node
@@ -26960,7 +27053,7 @@
 			)
 		)
 		(net
-			(code "93")
+			(code "95")
 			(name "unconnected-(IDCB1-N.C._2-Pad8)")
 			(class "Default")
 			(node
@@ -26971,7 +27064,7 @@
 			)
 		)
 		(net
-			(code "94")
+			(code "96")
 			(name "unconnected-(IDCB1-R.C.-Pad3)")
 			(class "Default")
 			(node
@@ -26982,7 +27075,7 @@
 			)
 		)
 		(net
-			(code "95")
+			(code "97")
 			(name "unconnected-(LCD2-NC-Pad5)")
 			(class "Default")
 			(node
@@ -26993,7 +27086,7 @@
 			)
 		)
 		(net
-			(code "96")
+			(code "98")
 			(name "unconnected-(LCD2-RX-Pad1)")
 			(class "Default")
 			(node
@@ -27004,7 +27097,7 @@
 			)
 		)
 		(net
-			(code "97")
+			(code "99")
 			(name "unconnected-(LCD2-SPISS-Pad4)")
 			(class "Default")
 			(node
@@ -27015,7 +27108,7 @@
 			)
 		)
 		(net
-			(code "98")
+			(code "100")
 			(name "unconnected-(MCU1-PA4-Pad11)")
 			(class "Default")
 			(node
@@ -27026,7 +27119,7 @@
 			)
 		)
 		(net
-			(code "99")
+			(code "101")
 			(name "unconnected-(MCU1-PA5-Pad12)")
 			(class "Default")
 			(node
@@ -27037,7 +27130,7 @@
 			)
 		)
 		(net
-			(code "100")
+			(code "102")
 			(name "unconnected-(MCU1-PA8-Pad18)")
 			(class "Default")
 			(node
@@ -27048,7 +27141,7 @@
 			)
 		)
 		(net
-			(code "101")
+			(code "103")
 			(name "unconnected-(MCU1-PA10-Pad21)")
 			(class "Default")
 			(node
@@ -27059,7 +27152,7 @@
 			)
 		)
 		(net
-			(code "102")
+			(code "104")
 			(name "unconnected-(MCU1-PA12-Pad23)")
 			(class "Default")
 			(node
@@ -27070,7 +27163,7 @@
 			)
 		)
 		(net
-			(code "103")
+			(code "105")
 			(name "unconnected-(MCU1-PB2-Pad17)")
 			(class "Default")
 			(node
@@ -27081,7 +27174,7 @@
 			)
 		)
 		(net
-			(code "104")
+			(code "106")
 			(name "unconnected-(MCU1-PB5-Pad29)")
 			(class "Default")
 			(node
@@ -27092,7 +27185,7 @@
 			)
 		)
 		(net
-			(code "105")
+			(code "107")
 			(name "unconnected-(MCU1-PC6-Pad20)")
 			(class "Default")
 			(node
@@ -27103,7 +27196,7 @@
 			)
 		)
 		(net
-			(code "106")
+			(code "108")
 			(name "unconnected-(RST1-R2IN-Pad8)")
 			(class "Default")
 			(node
@@ -27114,7 +27207,7 @@
 			)
 		)
 		(net
-			(code "107")
+			(code "109")
 			(name "unconnected-(RST1-R2OUT-Pad9)")
 			(class "Default")
 			(node
@@ -27125,7 +27218,7 @@
 			)
 		)
 		(net
-			(code "108")
+			(code "110")
 			(name "unconnected-(RST1-T2OUT-Pad7)")
 			(class "Default")
 			(node
@@ -27136,7 +27229,7 @@
 			)
 		)
 		(net
-			(code "109")
+			(code "111")
 			(name "unconnected-(TP1-Pin_2-Pad2)")
 			(class "Default")
 			(node
@@ -27147,7 +27240,7 @@
 			)
 		)
 		(net
-			(code "110")
+			(code "112")
 			(name "unconnected-(TP1-Pin_4-Pad4)")
 			(class "Default")
 			(node
@@ -27158,7 +27251,7 @@
 			)
 		)
 		(net
-			(code "111")
+			(code "113")
 			(name "unconnected-(TP3-Pin_2-Pad2)")
 			(class "Default")
 			(node
@@ -27169,7 +27262,7 @@
 			)
 		)
 		(net
-			(code "112")
+			(code "114")
 			(name "unconnected-(TP3-Pin_4-Pad4)")
 			(class "Default")
 			(node
@@ -27180,7 +27273,7 @@
 			)
 		)
 		(net
-			(code "113")
+			(code "115")
 			(name "unconnected-(TVS4-IO2-Pad2)")
 			(class "Default")
 			(node
