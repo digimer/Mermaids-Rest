@@ -1,4 +1,4 @@
 (version 1)
 (rule "isolation barrier"
   (constraint clearance (min 2.5mm))
-  (condition "A.NetClass == 'Isolated' && B.NetClass == 'Chassis'"))
+  (condition "A.NetClass == 'Chassis' && B.NetClass == 'Default'"))
