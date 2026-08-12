@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Compass Rose/Compass Rose.kicad_sch")
-		(date "2026-08-12T14:21:54")
+		(date "2026-08-12T14:54:40")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -19278,7 +19278,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "d0e74c04-4639-410e-b4d8-8ecc2e7c2ad9")
+			(tstamps "4b11b30b-2bfa-4073-bd9d-a66316c1ca3c")
 			(units
 				(unit
 					(name "A")
@@ -19366,7 +19366,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "78569589-929d-4c86-a634-1b876bb77c49")
+			(tstamps "f20686fc-0b19-49a6-a446-d60a53723232")
 			(units
 				(unit
 					(name "A")
@@ -19383,6 +19383,182 @@
 		)
 		(comp
 			(ref "R7")
+			(value "3.3k")
+			(footprint "mr-stuff:Stackpole RNCF0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCF.pdf")
+			(description "3.3 kOhms ±0.5% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCF0805DTE3K30")
+				(field
+					(name "MANUFACTURER")
+				)
+				(field
+					(name "MAXIMUM_PACKAGE_HEIGHT")
+				)
+				(field
+					(name "PARTREV")
+				)
+				(field
+					(name "STANDARD")
+				)
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCF0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCF.pdf")
+				(field
+					(name "Description") "3.3 kOhms ±0.5% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCF0805DTE3K30")
+			)
+			(property
+				(name "MANUFACTURER")
+				(value "")
+			)
+			(property
+				(name "MAXIMUM_PACKAGE_HEIGHT")
+				(value "")
+			)
+			(property
+				(name "PARTREV")
+				(value "")
+			)
+			(property
+				(name "STANDARD")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Compass Rose")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Compass Rose.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d0e74c04-4639-410e-b4d8-8ecc2e7c2ad9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R8")
+			(value "3.3k")
+			(footprint "mr-stuff:Stackpole RNCF0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCF.pdf")
+			(description "3.3 kOhms ±0.5% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCF0805DTE3K30")
+				(field
+					(name "MANUFACTURER")
+				)
+				(field
+					(name "MAXIMUM_PACKAGE_HEIGHT")
+				)
+				(field
+					(name "PARTREV")
+				)
+				(field
+					(name "STANDARD")
+				)
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCF0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCF.pdf")
+				(field
+					(name "Description") "3.3 kOhms ±0.5% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCF0805DTE3K30")
+			)
+			(property
+				(name "MANUFACTURER")
+				(value "")
+			)
+			(property
+				(name "MAXIMUM_PACKAGE_HEIGHT")
+				(value "")
+			)
+			(property
+				(name "PARTREV")
+				(value "")
+			)
+			(property
+				(name "STANDARD")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Compass Rose")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Compass Rose.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "78569589-929d-4c86-a634-1b876bb77c49")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
 			(value "10k")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -19470,7 +19646,7 @@
 			)
 		)
 		(comp
-			(ref "R8")
+			(ref "R10")
 			(value "147")
 			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -19558,7 +19734,7 @@
 			)
 		)
 		(comp
-			(ref "R9")
+			(ref "R11")
 			(value "1k")
 			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -19646,206 +19822,18 @@
 			)
 		)
 		(comp
-			(ref "R10")
-			(value "10k")
+			(ref "R12")
+			(value "100k")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
-			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RMCA0805FT10K0-HP")
-				(field
-					(name "MANUFACTURER")
-				)
-				(field
-					(name "MAXIMUM_PACKAGE_HEIGHT")
-				)
-				(field
-					(name "PARTREV")
-				)
-				(field
-					(name "STANDARD")
-				)
+					(name "Part") "Stackpole RMCA0805FT100K-HP")
 				(field
 					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
-				(field
-					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RMCA0805FT10K0-HP")
-			)
-			(property
-				(name "MANUFACTURER")
-				(value "")
-			)
-			(property
-				(name "MAXIMUM_PACKAGE_HEIGHT")
-				(value "")
-			)
-			(property
-				(name "PARTREV")
-				(value "")
-			)
-			(property
-				(name "STANDARD")
-				(value "")
-			)
-			(property
-				(name "Sheetname")
-				(value "Compass Rose")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Compass Rose.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "ef6f19e4-53f7-475d-92e1-03d3d6f850ee")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R11")
-			(value "68.1")
-			(footprint "mr-stuff:Stackpole RNCP0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "68.1 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RNCP0805FTD68R1")
-				(field
-					(name "MANUFACTURER")
-				)
-				(field
-					(name "MAXIMUM_PACKAGE_HEIGHT")
-				)
-				(field
-					(name "PARTREV")
-				)
-				(field
-					(name "STANDARD")
-				)
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-				(field
-					(name "Description") "68.1 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RNCP0805FTD68R1")
-			)
-			(property
-				(name "MANUFACTURER")
-				(value "")
-			)
-			(property
-				(name "MAXIMUM_PACKAGE_HEIGHT")
-				(value "")
-			)
-			(property
-				(name "PARTREV")
-				(value "")
-			)
-			(property
-				(name "STANDARD")
-				(value "")
-			)
-			(property
-				(name "Sheetname")
-				(value "Compass Rose")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Compass Rose.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "bc619a28-caa8-4f15-a196-fb80a54e527c")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R12")
-			(value "1k")
-			(footprint "mr-stuff:Stackpole RNCP0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RNCP0805FTD1K00")
-				(field
-					(name "MANUFACTURER")
-				)
-				(field
-					(name "MAXIMUM_PACKAGE_HEIGHT")
-				)
-				(field
-					(name "PARTREV")
-				)
-				(field
-					(name "STANDARD")
-				)
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
 					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
@@ -19856,23 +19844,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP0805FTD1K00")
-			)
-			(property
-				(name "MANUFACTURER")
-				(value "")
-			)
-			(property
-				(name "MAXIMUM_PACKAGE_HEIGHT")
-				(value "")
-			)
-			(property
-				(name "PARTREV")
-				(value "")
-			)
-			(property
-				(name "STANDARD")
-				(value "")
+				(value "Stackpole RMCA0805FT100K-HP")
 			)
 			(property
 				(name "Sheetname")
@@ -19894,7 +19866,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "74fb23f1-fc86-4148-89a2-6beac3a35c86")
+			(tstamps "10d9d599-5d85-4d81-b56d-230d9d0ba341")
 			(units
 				(unit
 					(name "A")
@@ -19982,7 +19954,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0549e4ce-c4bf-4083-9e7c-0c490539d50b")
+			(tstamps "ef6f19e4-53f7-475d-92e1-03d3d6f850ee")
 			(units
 				(unit
 					(name "A")
@@ -20070,7 +20042,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e37e0bec-27dd-43db-9e9d-d1cddf4f4bb4")
+			(tstamps "bc619a28-caa8-4f15-a196-fb80a54e527c")
 			(units
 				(unit
 					(name "A")
@@ -20158,7 +20130,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "5049af48-cdaa-4328-956c-d367ceee6882")
+			(tstamps "74fb23f1-fc86-4148-89a2-6beac3a35c86")
 			(units
 				(unit
 					(name "A")
@@ -20175,6 +20147,390 @@
 		)
 		(comp
 			(ref "R16")
+			(value "100k")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT100K-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT100K-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "Compass Rose")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Compass Rose.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "54c949ab-eeab-4534-9aee-0b0f36641971")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R17")
+			(value "10k")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT10K0-HP")
+				(field
+					(name "MANUFACTURER")
+				)
+				(field
+					(name "MAXIMUM_PACKAGE_HEIGHT")
+				)
+				(field
+					(name "PARTREV")
+				)
+				(field
+					(name "STANDARD")
+				)
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT10K0-HP")
+			)
+			(property
+				(name "MANUFACTURER")
+				(value "")
+			)
+			(property
+				(name "MAXIMUM_PACKAGE_HEIGHT")
+				(value "")
+			)
+			(property
+				(name "PARTREV")
+				(value "")
+			)
+			(property
+				(name "STANDARD")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Compass Rose")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Compass Rose.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0549e4ce-c4bf-4083-9e7c-0c490539d50b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R18")
+			(value "68.1")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "68.1 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD68R1")
+				(field
+					(name "MANUFACTURER")
+				)
+				(field
+					(name "MAXIMUM_PACKAGE_HEIGHT")
+				)
+				(field
+					(name "PARTREV")
+				)
+				(field
+					(name "STANDARD")
+				)
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "68.1 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD68R1")
+			)
+			(property
+				(name "MANUFACTURER")
+				(value "")
+			)
+			(property
+				(name "MAXIMUM_PACKAGE_HEIGHT")
+				(value "")
+			)
+			(property
+				(name "PARTREV")
+				(value "")
+			)
+			(property
+				(name "STANDARD")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Compass Rose")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Compass Rose.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e37e0bec-27dd-43db-9e9d-d1cddf4f4bb4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R19")
+			(value "1k")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD1K00")
+				(field
+					(name "MANUFACTURER")
+				)
+				(field
+					(name "MAXIMUM_PACKAGE_HEIGHT")
+				)
+				(field
+					(name "PARTREV")
+				)
+				(field
+					(name "STANDARD")
+				)
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD1K00")
+			)
+			(property
+				(name "MANUFACTURER")
+				(value "")
+			)
+			(property
+				(name "MAXIMUM_PACKAGE_HEIGHT")
+				(value "")
+			)
+			(property
+				(name "PARTREV")
+				(value "")
+			)
+			(property
+				(name "STANDARD")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Compass Rose")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Compass Rose.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5049af48-cdaa-4328-956c-d367ceee6882")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R20")
+			(value "100k")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT100K-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT100K-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "Compass Rose")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Compass Rose.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9f9ea4b2-4613-4f6d-84c1-a85b231d7268")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R21")
 			(value "200K")
 			(footprint "mr-stuff:Yageo AE0805")
 			(datasheet "https://yageogroup.com/content/datasheet/asset/file/PYU-AE_51_ROHS_L")
@@ -20262,7 +20618,7 @@
 			)
 		)
 		(comp
-			(ref "R17")
+			(ref "R22")
 			(value "4.7k")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -20350,7 +20706,7 @@
 			)
 		)
 		(comp
-			(ref "R18")
+			(ref "R23")
 			(value "4.7k")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -20438,183 +20794,7 @@
 			)
 		)
 		(comp
-			(ref "R19")
-			(value "3.3k")
-			(footprint "mr-stuff:Stackpole RNCF0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCF.pdf")
-			(description "3.3 kOhms ±0.5% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thin Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RNCF0805DTE3K30")
-				(field
-					(name "MANUFACTURER")
-				)
-				(field
-					(name "MAXIMUM_PACKAGE_HEIGHT")
-				)
-				(field
-					(name "PARTREV")
-				)
-				(field
-					(name "STANDARD")
-				)
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RNCF0805")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCF.pdf")
-				(field
-					(name "Description") "3.3 kOhms ±0.5% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thin Film")
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RNCF0805DTE3K30")
-			)
-			(property
-				(name "MANUFACTURER")
-				(value "")
-			)
-			(property
-				(name "MAXIMUM_PACKAGE_HEIGHT")
-				(value "")
-			)
-			(property
-				(name "PARTREV")
-				(value "")
-			)
-			(property
-				(name "STANDARD")
-				(value "")
-			)
-			(property
-				(name "Sheetname")
-				(value "Compass Rose")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Compass Rose.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "4b11b30b-2bfa-4073-bd9d-a66316c1ca3c")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R20")
-			(value "3.3k")
-			(footprint "mr-stuff:Stackpole RNCF0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCF.pdf")
-			(description "3.3 kOhms ±0.5% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thin Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RNCF0805DTE3K30")
-				(field
-					(name "MANUFACTURER")
-				)
-				(field
-					(name "MAXIMUM_PACKAGE_HEIGHT")
-				)
-				(field
-					(name "PARTREV")
-				)
-				(field
-					(name "STANDARD")
-				)
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RNCF0805")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCF.pdf")
-				(field
-					(name "Description") "3.3 kOhms ±0.5% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thin Film")
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RNCF0805DTE3K30")
-			)
-			(property
-				(name "MANUFACTURER")
-				(value "")
-			)
-			(property
-				(name "MAXIMUM_PACKAGE_HEIGHT")
-				(value "")
-			)
-			(property
-				(name "PARTREV")
-				(value "")
-			)
-			(property
-				(name "STANDARD")
-				(value "")
-			)
-			(property
-				(name "Sheetname")
-				(value "Compass Rose")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Compass Rose.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "f20686fc-0b19-49a6-a446-d60a53723232")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R21")
+			(ref "R24")
 			(value "10k")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -20702,7 +20882,7 @@
 			)
 		)
 		(comp
-			(ref "R22")
+			(ref "R25")
 			(value "10k")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -20790,7 +20970,7 @@
 			)
 		)
 		(comp
-			(ref "R23")
+			(ref "R26")
 			(value "475")
 			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -20878,7 +21058,7 @@
 			)
 		)
 		(comp
-			(ref "R24")
+			(ref "R27")
 			(value "10k")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -20966,7 +21146,7 @@
 			)
 		)
 		(comp
-			(ref "R25")
+			(ref "R28")
 			(value "475")
 			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -21054,7 +21234,7 @@
 			)
 		)
 		(comp
-			(ref "R26")
+			(ref "R29")
 			(value "10k")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -21142,7 +21322,7 @@
 			)
 		)
 		(comp
-			(ref "R27")
+			(ref "R30")
 			(value "475")
 			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -21230,7 +21410,7 @@
 			)
 		)
 		(comp
-			(ref "R28")
+			(ref "R31")
 			(value "10k")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -29736,37 +29916,22 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R19")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "R2")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R20")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R21")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "R24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R26")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R28")
+				(ref "R29")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -29776,12 +29941,27 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R31")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "R5")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "R6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -29947,17 +30127,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R10")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "R13")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R16")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -29967,12 +30137,22 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R18")
+				(ref "R21")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R7")
+				(ref "R22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -30033,7 +30213,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R6")
+				(ref "R8")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -30073,7 +30253,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R5")
+				(ref "R7")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32071,7 +32251,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R22")
+				(ref "R25")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32121,12 +32301,12 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R27")
+				(ref "R30")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R28")
+				(ref "R31")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -32141,7 +32321,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R27")
+				(ref "R30")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32169,7 +32349,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R20")
+				(ref "R6")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32197,7 +32377,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R19")
+				(ref "R5")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32241,7 +32421,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R15")
+				(ref "R19")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32257,7 +32437,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R12")
+				(ref "R15")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32273,7 +32453,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R9")
+				(ref "R11")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32294,12 +32474,12 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R25")
+				(ref "R28")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R26")
+				(ref "R29")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -32314,7 +32494,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R25")
+				(ref "R28")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32341,12 +32521,12 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R23")
+				(ref "R26")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R24")
+				(ref "R27")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -32361,7 +32541,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R23")
+				(ref "R26")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32480,7 +32660,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R21")
+				(ref "R24")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -32870,7 +33050,22 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R22")
+				(ref "R12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -33166,7 +33361,7 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R14")
+				(ref "R18")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -33182,7 +33377,7 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R11")
+				(ref "R14")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -33198,7 +33393,7 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R8")
+				(ref "R10")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -33220,7 +33415,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R17")
+				(ref "R22")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -33242,7 +33437,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R18")
+				(ref "R23")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -33274,7 +33469,7 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R16")
+				(ref "R21")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -33310,7 +33505,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R8")
+				(ref "R10")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -33332,7 +33527,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R7")
+				(ref "R9")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -33348,7 +33543,12 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R9")
+				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -33364,7 +33564,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R11")
+				(ref "R14")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -33386,7 +33586,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R10")
+				(ref "R13")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -33402,7 +33602,12 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R12")
+				(ref "R15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -33418,7 +33623,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R14")
+				(ref "R18")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -33440,7 +33645,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R13")
+				(ref "R17")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -33456,7 +33661,12 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R15")
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
 				(pin "2")
 				(pintype "passive")
 			)
