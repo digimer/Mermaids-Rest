@@ -7,7 +7,7 @@
 		(at 0 -11 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "d9238bb4-a000-4bbc-a12d-ec14d7d272a0")
+		(uuid "809f4343-f346-4b61-a4f0-1e8c9136f0a5")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 11.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "48834c70-8adf-431c-986e-71525c513d5b")
+		(uuid "111f79fe-a1d9-4cdb-bf5a-a83fb0e1237c")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2795a8ec-7dcd-4935-b58a-684c0a6a1814")
+		(uuid "44aea684-569a-4720-8f6f-05e2b02442c9")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2d28cdb3-14b1-4843-9d63-14a8f3bdddfd")
+		(uuid "7cd5ab82-a23f-45fe-991f-a7a2bab476dc")
 		(effects
 			(font
 				(size 1 1)
@@ -53,24 +53,24 @@
 			)
 		)
 	)
-	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(attr smd board_only exclude_from_pos_files exclude_from_bom)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
-		(start -9.1 -9.1)
-		(end 9.1 9.1)
+		(start -9.1 -9.75)
+		(end 9.1 9.8)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "be7c6e12-1182-4f23-b228-a539e0c165d5")
+		(uuid "b5650d33-dc65-4f1a-a127-d9b1a71db7b9")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 13.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "14a46c8c-7086-43de-97ba-2ed07a7a9450")
+		(uuid "2bc65456-a393-4be8-bb55-413ea75fa0f4")
 		(effects
 			(font
 				(size 1 1)
@@ -83,14 +83,14 @@
 		(size 6 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.03333333333)
-		(uuid "33b07062-d13e-41e8-8bac-e4470a3c7802")
+		(uuid "d44e7c9b-82d6-4f1b-ad74-e66766904585")
 	)
 	(pad "2" smd roundrect
 		(at 0 6.65)
 		(size 6 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.03333333333)
-		(uuid "7f474cb5-2137-4b72-a3d4-5b30deb4957a")
+		(uuid "cf9719d6-4840-49b9-b256-c7575bc0f241")
 	)
 	(embedded_fonts no)
 	(model "${MY_3DMODELS}/Codaca CSBL1809-100M/CSBL1809-100M.stp"
