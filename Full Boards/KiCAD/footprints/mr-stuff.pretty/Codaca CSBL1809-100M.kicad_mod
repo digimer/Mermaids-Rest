@@ -7,7 +7,7 @@
 		(at 0 -11 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "809f4343-f346-4b61-a4f0-1e8c9136f0a5")
+		(uuid "87e5f53d-73e2-42ca-af14-e0e7d9bea49f")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 11.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "111f79fe-a1d9-4cdb-bf5a-a83fb0e1237c")
+		(uuid "6624fb51-4426-4ead-96e6-41f97e23e63e")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "44aea684-569a-4720-8f6f-05e2b02442c9")
+		(uuid "b4a47ba7-cdb4-47b4-b8ca-b206e15e470f")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7cd5ab82-a23f-45fe-991f-a7a2bab476dc")
+		(uuid "127eba00-1173-4f37-9692-f8fe974d02c2")
 		(effects
 			(font
 				(size 1 1)
@@ -53,7 +53,7 @@
 			)
 		)
 	)
-	(attr smd board_only exclude_from_pos_files exclude_from_bom)
+	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
 		(start -9.1 -9.75)
@@ -64,13 +64,24 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "b5650d33-dc65-4f1a-a127-d9b1a71db7b9")
+		(uuid "cc264d1b-48ef-44b9-8e1c-b27983a8c9ab")
+	)
+	(fp_rect
+		(start -9.1 -9.75)
+		(end 9.1 9.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "97a0d859-5b84-425d-b9dc-916ecde0d753")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 13.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "2bc65456-a393-4be8-bb55-413ea75fa0f4")
+		(uuid "db6dc84d-7630-4666-9969-2dd62a65caa0")
 		(effects
 			(font
 				(size 1 1)
@@ -83,14 +94,14 @@
 		(size 6 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.03333333333)
-		(uuid "d44e7c9b-82d6-4f1b-ad74-e66766904585")
+		(uuid "b12701fe-d1a3-4311-9633-7ae7a30a02e6")
 	)
 	(pad "2" smd roundrect
 		(at 0 6.65)
 		(size 6 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.03333333333)
-		(uuid "cf9719d6-4840-49b9-b256-c7575bc0f241")
+		(uuid "f8231d58-2e77-4ad8-b8b2-5d5219e24f36")
 	)
 	(embedded_fonts no)
 	(model "${MY_3DMODELS}/Codaca CSBL1809-100M/CSBL1809-100M.stp"
