@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Compass Rose/Compass Rose.kicad_sch")
-		(date "2026-08-11T22:51:44")
+		(date "2026-08-12T13:59:58")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -12,7 +12,7 @@
 				(title "2-Ring Compass Rose")
 				(company "The Digital Mermaid")
 				(rev "v4.1")
-				(date "2026-08-10")
+				(date "2026-08-12")
 				(source "Compass Rose.kicad_sch")
 				(comment
 					(number "1")
@@ -362,8 +362,6 @@
 			(description "1000 pF ±5% 250VAC Ceramic Capacitor C0G, NP0 (1B) 2211 (5728 Metric)")
 			(fields
 				(field
-					(name "Part") "Knowles Syfer 2211JA250102JKTSYX")
-				(field
 					(name "Footprint") "mr-stuff:Knowles Syfer 2211JA25")
 				(field
 					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3001/2211JA250102JKTSYX.pdf")
@@ -374,10 +372,6 @@
 				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Part")
-				(value "Knowles Syfer 2211JA250102JKTSYX")
 			)
 			(property
 				(name "Sheetname")
@@ -2474,11 +2468,11 @@
 		(comp
 			(ref "FID1")
 			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_0.5mm_Mask1.5mm")
 			(description "Fiducial Marker")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Fiducial:Fiducial_0.5mm_Mask1.5mm")
 				(field
 					(name "Datasheet")
 				)
@@ -2524,11 +2518,11 @@
 		(comp
 			(ref "FID2")
 			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_0.5mm_Mask1.5mm")
 			(description "Fiducial Marker")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Fiducial:Fiducial_0.5mm_Mask1.5mm")
 				(field
 					(name "Datasheet")
 				)
@@ -2574,11 +2568,11 @@
 		(comp
 			(ref "FID3")
 			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_0.5mm_Mask1.5mm")
 			(description "Fiducial Marker")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Fiducial:Fiducial_0.5mm_Mask1.5mm")
 				(field
 					(name "Datasheet")
 				)
@@ -7561,8 +7555,6 @@
 			(description "Red 630nm LED Indication - Discrete 1.95V Radial 2.5 x 5mm rectangular")
 			(fields
 				(field
-					(name "Sim.Pins") "1=K 2=A")
-				(field
 					(name "Part") "Kingbright WP383SURDTK")
 				(field
 					(name "Footprint") "mr-stuff:Kingbright WP383SURDTK")
@@ -7575,10 +7567,6 @@
 				(lib "")
 				(part "Kingbright WP383SURDTK_70")
 				(description "Red 630nm LED Indication - Discrete 1.95V Radial 2.5 x 5mm rectangular")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "1=K 2=A")
 			)
 			(property
 				(name "Part")
@@ -11975,9 +11963,9 @@
 		(comp
 			(ref "LVR1")
 			(value "BD450S5FP-CE2")
-			(footprint "mr-stuff:Rohm BD4xxS5-C")
+			(footprint "mr-stuff:Rohm BD4xxS5 TO252-3")
 			(datasheet "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bd4xxs5efj-e.pdf")
-			(description "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-5")
+			(description "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
 			(fields
 				(field
 					(name "Part") "Rohm BD450S5FP-CE2")
@@ -12003,16 +11991,16 @@
 					(name "Mouser Price/Stock")
 				)
 				(field
-					(name "Footprint") "mr-stuff:Rohm BD4xxS5-C")
+					(name "Footprint") "mr-stuff:Rohm BD4xxS5 TO252-3")
 				(field
 					(name "Datasheet") "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bd4xxs5efj-e.pdf")
 				(field
-					(name "Description") "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-5")
+					(name "Description") "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
 			)
 			(libsource
 				(lib "mr-parts")
 				(part "Rohm BD450S5FP-CE2")
-				(description "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-5")
+				(description "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
 			)
 			(property
 				(name "Part")
@@ -22200,7 +22188,7 @@
 		(libpart
 			(lib "mr-parts")
 			(part "Rohm BD450S5FP-CE2")
-			(description "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-5")
+			(description "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
 			(docs "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bd4xxs5efj-e.pdf")
 			(footprints
 				(fp "TO252-3_ROM")
@@ -22213,11 +22201,11 @@
 				(field
 					(name "Value") "BD450S5FP-CE2")
 				(field
-					(name "Footprint") "mr-stuff:Rohm BD4xxS5-C")
+					(name "Footprint") "mr-stuff:Rohm BD4xxS5 TO252-3")
 				(field
 					(name "Datasheet") "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bd4xxs5efj-e.pdf")
 				(field
-					(name "Description") "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-5")
+					(name "Description") "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
 				(field
 					(name "Part") "Rohm BD450S5FP-CE2")
 			)
@@ -22727,7 +22715,7 @@
 		(net
 			(code "1")
 			(name "+3.3V")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C1")
 				(pin "2")
@@ -22929,7 +22917,7 @@
 		(net
 			(code "2")
 			(name "+5V")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C19")
 				(pin "1")
@@ -23054,7 +23042,7 @@
 		(net
 			(code "3")
 			(name "+5V_SHIP")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "C2")
 				(pin "2")
@@ -23087,7 +23075,7 @@
 		(net
 			(code "4")
 			(name "/BOARD_I2C_SCL")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "LS1")
 				(pin "3")
@@ -23127,7 +23115,7 @@
 		(net
 			(code "5")
 			(name "/BOARD_I2C_SDA")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "LS1")
 				(pin "4")
@@ -23167,7 +23155,7 @@
 		(net
 			(code "6")
 			(name "/CA1")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "21")
@@ -23274,7 +23262,7 @@
 		(net
 			(code "7")
 			(name "/CA2")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "22")
@@ -23381,7 +23369,7 @@
 		(net
 			(code "8")
 			(name "/CA3")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "23")
@@ -23488,7 +23476,7 @@
 		(net
 			(code "9")
 			(name "/CA4")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "24")
@@ -23595,7 +23583,7 @@
 		(net
 			(code "10")
 			(name "/CA5")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "25")
@@ -23702,7 +23690,7 @@
 		(net
 			(code "11")
 			(name "/CA6")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "26")
@@ -23809,7 +23797,7 @@
 		(net
 			(code "12")
 			(name "/CA7")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "27")
@@ -23916,7 +23904,7 @@
 		(net
 			(code "13")
 			(name "/CA8")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "28")
@@ -24023,7 +24011,7 @@
 		(net
 			(code "14")
 			(name "/CA9")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "1")
@@ -24130,7 +24118,7 @@
 		(net
 			(code "15")
 			(name "/CB1")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "7")
@@ -24237,7 +24225,7 @@
 		(net
 			(code "16")
 			(name "/CB2")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "8")
@@ -24344,7 +24332,7 @@
 		(net
 			(code "17")
 			(name "/CB3")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "9")
@@ -24451,7 +24439,7 @@
 		(net
 			(code "18")
 			(name "/CB4")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "10")
@@ -24558,7 +24546,7 @@
 		(net
 			(code "19")
 			(name "/CB5")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "11")
@@ -24665,7 +24653,7 @@
 		(net
 			(code "20")
 			(name "/CB6")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "12")
@@ -24772,7 +24760,7 @@
 		(net
 			(code "21")
 			(name "/CB7")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "13")
@@ -24879,7 +24867,7 @@
 		(net
 			(code "22")
 			(name "/CB8")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "14")
@@ -24986,7 +24974,7 @@
 		(net
 			(code "23")
 			(name "/CB9")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "15")
@@ -25093,7 +25081,7 @@
 		(net
 			(code "24")
 			(name "/CONFIG1_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "9")
@@ -25109,7 +25097,7 @@
 		(net
 			(code "25")
 			(name "/CONFIG2_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "10")
@@ -25125,7 +25113,7 @@
 		(net
 			(code "26")
 			(name "/DEBUG_SWCLK")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "J1")
 				(pin "4")
@@ -25159,7 +25147,7 @@
 		(net
 			(code "27")
 			(name "/DEBUG_SWDIO")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "J1")
 				(pin "3")
@@ -25176,7 +25164,7 @@
 		(net
 			(code "28")
 			(name "/DISPLAY_ON_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C31")
 				(pin "2")
@@ -25202,7 +25190,7 @@
 		(net
 			(code "29")
 			(name "/DISPLAY_ON_IN_PLUG")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE2")
 				(pin "3")
@@ -25223,7 +25211,7 @@
 		(net
 			(code "30")
 			(name "/IS31_I2C_SCL")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "20")
@@ -25251,7 +25239,7 @@
 		(net
 			(code "31")
 			(name "/IS31_I2C_SDA")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "19")
@@ -25279,7 +25267,7 @@
 		(net
 			(code "32")
 			(name "/IS31_INTB_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "4")
@@ -25301,7 +25289,7 @@
 		(net
 			(code "33")
 			(name "/LCD_BL_BLUE_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "30")
@@ -25317,7 +25305,7 @@
 		(net
 			(code "34")
 			(name "/LCD_BL_GREEN_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "31")
@@ -25333,7 +25321,7 @@
 		(net
 			(code "35")
 			(name "/LCD_BL_RED_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "32")
@@ -25349,7 +25337,7 @@
 		(net
 			(code "36")
 			(name "/LCD_PGDOWN_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C30")
 				(pin "2")
@@ -25375,7 +25363,7 @@
 		(net
 			(code "37")
 			(name "/LCD_PGDOWN_IN_PLUG")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE2")
 				(pin "4")
@@ -25396,7 +25384,7 @@
 		(net
 			(code "38")
 			(name "/LCD_PGUP_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C29")
 				(pin "2")
@@ -25422,7 +25410,7 @@
 		(net
 			(code "39")
 			(name "/LCD_PGUP_IN_PLUG")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE2")
 				(pin "5")
@@ -25443,7 +25431,7 @@
 		(net
 			(code "40")
 			(name "/N2K_CAN_H")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "CMC1")
 				(pin "4")
@@ -25469,7 +25457,7 @@
 		(net
 			(code "41")
 			(name "/N2K_CAN_L")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "CMC1")
 				(pin "3")
@@ -25495,7 +25483,7 @@
 		(net
 			(code "42")
 			(name "/N2K_FDCAN_RX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "ICT1")
 				(pin "3")
@@ -25512,7 +25500,7 @@
 		(net
 			(code "43")
 			(name "/N2K_FDCAN_TX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "ICT1")
 				(pin "2")
@@ -25529,7 +25517,7 @@
 		(net
 			(code "44")
 			(name "/NRST")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C16")
 				(pin "2")
@@ -25568,7 +25556,7 @@
 		(net
 			(code "45")
 			(name "/OSC_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C17")
 				(pin "1")
@@ -25589,7 +25577,7 @@
 		(net
 			(code "46")
 			(name "/OSC_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C18")
 				(pin "2")
@@ -25610,7 +25598,7 @@
 		(net
 			(code "47")
 			(name "/RS232_RX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE1")
 				(pin "3")
@@ -25626,7 +25614,7 @@
 		(net
 			(code "48")
 			(name "/RS232_TX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE1")
 				(pin "2")
@@ -25642,7 +25630,7 @@
 		(net
 			(code "49")
 			(name "/USART1_RX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "8")
@@ -25659,7 +25647,7 @@
 		(net
 			(code "50")
 			(name "/USART1_TX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "7")
@@ -25676,7 +25664,7 @@
 		(net
 			(code "51")
 			(name "GND")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C1")
 				(pin "1")
@@ -26017,7 +26005,7 @@
 		(net
 			(code "52")
 			(name "GND_SHIP")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "C2")
 				(pin "1")
@@ -26122,7 +26110,7 @@
 		(net
 			(code "53")
 			(name "Net-(CMC1-I1)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "CMC1")
 				(pin "1")
@@ -26139,7 +26127,7 @@
 		(net
 			(code "54")
 			(name "Net-(CMC1-I2)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "CMC1")
 				(pin "2")
@@ -26156,7 +26144,7 @@
 		(net
 			(code "55")
 			(name "Net-(CPD1-C_FILT)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C24")
 				(pin "2")
@@ -26172,7 +26160,7 @@
 		(net
 			(code "56")
 			(name "Net-(CPD1-R_EXT)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "6")
@@ -26188,7 +26176,7 @@
 		(net
 			(code "57")
 			(name "Net-(IDCB1-+VIN)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "IDCB1")
 				(pin "2")
@@ -26205,7 +26193,7 @@
 		(net
 			(code "58")
 			(name "Net-(J3-Pin_1)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "J3")
 				(pin "1")
@@ -26226,7 +26214,7 @@
 		(net
 			(code "59")
 			(name "Net-(LCD1-A-BLUE)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "LCD1")
 				(pin "13")
@@ -26242,7 +26230,7 @@
 		(net
 			(code "60")
 			(name "Net-(LCD1-A-GREEN)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "LCD1")
 				(pin "12")
@@ -26258,7 +26246,7 @@
 		(net
 			(code "61")
 			(name "Net-(LCD1-A-RED)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "LCD1")
 				(pin "11")
@@ -26274,7 +26262,7 @@
 		(net
 			(code "62")
 			(name "Net-(LCD1-SCL)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "LCD1")
 				(pin "6")
@@ -26296,7 +26284,7 @@
 		(net
 			(code "63")
 			(name "Net-(LCD1-SDA)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "LCD1")
 				(pin "7")
@@ -26318,7 +26306,7 @@
 		(net
 			(code "64")
 			(name "Net-(LS1-EN)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C27")
 				(pin "2")
@@ -26350,7 +26338,7 @@
 		(net
 			(code "65")
 			(name "Net-(PTC1-Pad2)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "PTC1")
 				(pin "2")
@@ -26370,7 +26358,7 @@
 		(net
 			(code "66")
 			(name "Net-(Q1-D)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "Q1")
 				(pin "3")
@@ -26386,7 +26374,7 @@
 		(net
 			(code "67")
 			(name "Net-(Q1-G)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "Q1")
 				(pin "1")
@@ -26408,7 +26396,7 @@
 		(net
 			(code "68")
 			(name "Net-(Q2-G)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "Q2")
 				(pin "1")
@@ -26424,7 +26412,7 @@
 		(net
 			(code "69")
 			(name "Net-(Q3-D)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "Q3")
 				(pin "3")
@@ -26440,7 +26428,7 @@
 		(net
 			(code "70")
 			(name "Net-(Q3-G)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "Q3")
 				(pin "1")
@@ -26462,7 +26450,7 @@
 		(net
 			(code "71")
 			(name "Net-(Q4-G)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "Q4")
 				(pin "1")
@@ -26478,7 +26466,7 @@
 		(net
 			(code "72")
 			(name "Net-(Q5-D)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "Q5")
 				(pin "3")
@@ -26494,7 +26482,7 @@
 		(net
 			(code "73")
 			(name "Net-(Q5-G)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "Q5")
 				(pin "1")
@@ -26516,7 +26504,7 @@
 		(net
 			(code "74")
 			(name "Net-(Q6-G)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "Q6")
 				(pin "1")
@@ -26532,7 +26520,7 @@
 		(net
 			(code "75")
 			(name "Net-(R1-Pad2)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "R1")
 				(pin "2")
@@ -26547,7 +26535,7 @@
 		(net
 			(code "76")
 			(name "Net-(R2-Pad2)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "R2")
 				(pin "2")
@@ -26562,7 +26550,7 @@
 		(net
 			(code "77")
 			(name "Net-(RST1-C1+)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C9")
 				(pin "2")
@@ -26578,7 +26566,7 @@
 		(net
 			(code "78")
 			(name "Net-(RST1-C1-)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C9")
 				(pin "1")
@@ -26594,7 +26582,7 @@
 		(net
 			(code "79")
 			(name "Net-(RST1-C2+)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C11")
 				(pin "2")
@@ -26610,7 +26598,7 @@
 		(net
 			(code "80")
 			(name "Net-(RST1-C2-)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C11")
 				(pin "1")
@@ -26626,7 +26614,7 @@
 		(net
 			(code "81")
 			(name "Net-(RST1-VS+)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C10")
 				(pin "1")
@@ -26642,7 +26630,7 @@
 		(net
 			(code "82")
 			(name "Net-(RST1-VS-)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C12")
 				(pin "2")
@@ -26658,7 +26646,7 @@
 		(net
 			(code "83")
 			(name "Net-(SD1-A)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "PTC1")
 				(pin "1")
@@ -26680,7 +26668,7 @@
 		(net
 			(code "84")
 			(name "V_RAW")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "C3")
 				(pin "2")
@@ -26831,7 +26819,7 @@
 		(net
 			(code "96")
 			(name "unconnected-(IDCB1-R.C.-Pad3)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "IDCB1")
 				(pin "3")
