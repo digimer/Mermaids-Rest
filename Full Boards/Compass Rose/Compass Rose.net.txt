@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Compass Rose/Compass Rose.kicad_sch")
-		(date "2026-08-11T00:33:20")
+		(date "2026-08-11T22:51:44")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -3356,7 +3356,7 @@
 			)
 		)
 		(comp
-			(ref "LCD2")
+			(ref "LCD1")
 			(value "NHD-0216K3Z-NS(RGB)-FBW-V3")
 			(footprint "mr-stuff:Newhaven Display NHD-0216K3Z-NS(RGB)-FBW-V3")
 			(datasheet "https://newhavendisplay.com/content/specs/NHD-0216K3Z-NSRGB-FBW-V3.pdf")
@@ -15416,19 +15416,19 @@
 		)
 		(comp
 			(ref "SW3")
-			(value "219-2MSTR")
-			(description "2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+			(value "CTS_219-2MSTR")
+			(footprint "mr-stuff:CTS 219-2MSTR")
+			(datasheet "https://www.ctscorp.com/Files/DataSheets/Switches/DIP-Switches/CTS-Switches-DIP-219-Series-Datasheet.pdf")
+			(description "Dip Switch SPST 2 Position Surface Mount Slide (Standard) Actuator 100mA 20VDC")
 			(fields
 				(field
 					(name "Part") "CTS 219-2MSTR")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "mr-stuff:CTS 219-2MSTR")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://www.ctscorp.com/Files/DataSheets/Switches/DIP-Switches/CTS-Switches-DIP-219-Series-Datasheet.pdf")
 				(field
-					(name "Description") "2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+					(name "Description") "Dip Switch SPST 2 Position Surface Mount Slide (Standard) Actuator 100mA 20VDC")
 			)
 			(libsource
 				(lib "mr-parts")
@@ -15465,16 +15465,16 @@
 					(name "A")
 					(pins
 						(pin
-							(num "1")
+							(num "1A")
 						)
 						(pin
-							(num "2")
+							(num "2A")
 						)
 						(pin
-							(num "4")
+							(num "1B")
 						)
 						(pin
-							(num "3")
+							(num "2B")
 						)
 					)
 				)
@@ -15608,7 +15608,7 @@
 		(comp
 			(ref "TP1")
 			(value "Ship Power")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
 			(description "Generic connector, single row, 01x05, script generated")
 			(fields
 				(field
@@ -15633,7 +15633,7 @@
 					(name "Mouser Price/Stock")
 				)
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
@@ -15642,8 +15642,8 @@
 			)
 			(libsource
 				(lib "Connector")
-				(part "Conn_01x05_Pin")
-				(description "Generic connector, single row, 01x05, script generated")
+				(part "Conn_01x03_Pin")
+				(description "Generic connector, single row, 01x03, script generated")
 			)
 			(property
 				(name "Arrow Part Number")
@@ -15707,34 +15707,28 @@
 						(pin
 							(num "3")
 						)
-						(pin
-							(num "4")
-						)
-						(pin
-							(num "5")
-						)
 					)
 				)
 			)
 		)
 		(comp
 			(ref "TP2")
-			(value "Iso Power")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x02, script generated")
+			(value "Board Power")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x03, script generated")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x02, script generated")
+					(name "Description") "Generic connector, single row, 01x03, script generated")
 			)
 			(libsource
 				(lib "Connector")
-				(part "Conn_01x02_Pin")
-				(description "Generic connector, single row, 01x02, script generated")
+				(part "Conn_01x03_Pin")
+				(description "Generic connector, single row, 01x03, script generated")
 			)
 			(property
 				(name "Sheetname")
@@ -15767,117 +15761,8 @@
 						(pin
 							(num "2")
 						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "TP3")
-			(value "Board Power")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x05, script generated")
-			(fields
-				(field
-					(name "Arrow Part Number")
-				)
-				(field
-					(name "Arrow Price/Stock")
-				)
-				(field
-					(name "Height")
-				)
-				(field
-					(name "Manufacturer_Name")
-				)
-				(field
-					(name "Manufacturer_Part_Number")
-				)
-				(field
-					(name "Mouser Part Number")
-				)
-				(field
-					(name "Mouser Price/Stock")
-				)
-				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x05, script generated")
-			)
-			(libsource
-				(lib "Connector")
-				(part "Conn_01x05_Pin")
-				(description "Generic connector, single row, 01x05, script generated")
-			)
-			(property
-				(name "Arrow Part Number")
-				(value "")
-			)
-			(property
-				(name "Arrow Price/Stock")
-				(value "")
-			)
-			(property
-				(name "Height")
-				(value "")
-			)
-			(property
-				(name "Manufacturer_Name")
-				(value "")
-			)
-			(property
-				(name "Manufacturer_Part_Number")
-				(value "")
-			)
-			(property
-				(name "Mouser Part Number")
-				(value "")
-			)
-			(property
-				(name "Mouser Price/Stock")
-				(value "")
-			)
-			(property
-				(name "Sheetname")
-				(value "Compass Rose")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Compass Rose.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "connector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Connector*:*_1x??_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "474beb88-1d00-4f9a-ac84-c4fe1844203a")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
 						(pin
 							(num "3")
-						)
-						(pin
-							(num "4")
-						)
-						(pin
-							(num "5")
 						)
 					)
 				)
@@ -21098,6 +20983,45 @@
 		)
 		(libpart
 			(lib "Connector")
+			(part "Conn_01x03_Pin")
+			(description "Generic connector, single row, 01x03, script generated")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x03_Pin")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x03, script generated")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector")
 			(part "Conn_01x05_Pin")
 			(description "Generic connector, single row, 01x05, script generated")
 			(footprints
@@ -21617,22 +21541,22 @@
 			)
 			(pins
 				(pin
-					(num "1")
+					(num "1A")
 					(name "")
 					(type "passive")
 				)
 				(pin
-					(num "2")
+					(num "1B")
 					(name "")
 					(type "passive")
 				)
 				(pin
-					(num "3")
+					(num "2A")
 					(name "")
 					(type "passive")
 				)
 				(pin
-					(num "4")
+					(num "2B")
 					(name "")
 					(type "passive")
 				)
@@ -22901,7 +22825,7 @@
 			)
 			(node
 				(ref "R24")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -22911,12 +22835,12 @@
 			)
 			(node
 				(ref "R28")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "R3")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -22996,7 +22920,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP3")
+				(ref "TP2")
 				(pin "1")
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
@@ -23055,13 +22979,13 @@
 				(pintype "power_out")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "3")
 				(pinfunction "+5V_3")
 				(pintype "power_in")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "9")
 				(pinfunction "+5V_9")
 				(pintype "power_in")
@@ -23107,7 +23031,7 @@
 			)
 			(node
 				(ref "R17")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -23121,9 +23045,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP3")
-				(pin "5")
-				(pinfunction "Pin_5_5")
+				(ref "TP2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
 				(pintype "passive")
 			)
 		)
@@ -23157,12 +23081,6 @@
 				(ref "TP1")
 				(pin "1")
 				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "TP2")
-				(pin "2")
-				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 		)
@@ -25174,7 +25092,7 @@
 		)
 		(net
 			(code "24")
-			(name "/CONFIG_1")
+			(name "/CONFIG1_IN")
 			(class "Default")
 			(node
 				(ref "MCU1")
@@ -25184,13 +25102,13 @@
 			)
 			(node
 				(ref "SW3")
-				(pin "1")
+				(pin "1A")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "25")
-			(name "/CONFIG_2")
+			(name "/CONFIG2_IN")
 			(class "Default")
 			(node
 				(ref "MCU1")
@@ -25200,7 +25118,7 @@
 			)
 			(node
 				(ref "SW3")
-				(pin "2")
+				(pin "2A")
 				(pintype "passive")
 			)
 		)
@@ -25222,7 +25140,7 @@
 			)
 			(node
 				(ref "R22")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -25277,7 +25195,7 @@
 			)
 			(node
 				(ref "R28")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 		)
@@ -25342,8 +25260,8 @@
 			)
 			(node
 				(ref "MCU1")
-				(pin "1")
-				(pinfunction "PB9_1")
+				(pin "21")
+				(pinfunction "PA10_21")
 				(pintype "bidirectional")
 			)
 			(node
@@ -25376,7 +25294,7 @@
 			)
 			(node
 				(ref "R3")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 		)
@@ -25434,7 +25352,7 @@
 			(class "Default")
 			(node
 				(ref "C30")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -25445,7 +25363,7 @@
 			)
 			(node
 				(ref "R25")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -25465,7 +25383,7 @@
 			)
 			(node
 				(ref "R25")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -25497,7 +25415,7 @@
 			)
 			(node
 				(ref "R24")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 		)
@@ -25841,7 +25759,7 @@
 			)
 			(node
 				(ref "C27")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -25856,7 +25774,7 @@
 			)
 			(node
 				(ref "C30")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -25956,19 +25874,19 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "10")
 				(pinfunction "GND_10")
 				(pintype "power_in")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "2")
 				(pinfunction "GND_2")
 				(pintype "power_in")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "8")
 				(pinfunction "GND_8")
 				(pintype "power_in")
@@ -26021,7 +25939,7 @@
 			)
 			(node
 				(ref "R22")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -26078,9 +25996,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP3")
-				(pin "3")
-				(pinfunction "Pin_3_3")
+				(ref "TP2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 			(node
@@ -26185,14 +26103,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "3")
-				(pinfunction "Pin_3_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "TP2")
-				(pin "1")
-				(pinfunction "Pin_1_1")
+				(pin "2")
+				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 			(node
@@ -26313,10 +26225,10 @@
 		)
 		(net
 			(code "59")
-			(name "Net-(LCD2-A-BLUE)")
+			(name "Net-(LCD1-A-BLUE)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "13")
 				(pinfunction "A-BLUE_13")
 				(pintype "input")
@@ -26329,10 +26241,10 @@
 		)
 		(net
 			(code "60")
-			(name "Net-(LCD2-A-GREEN)")
+			(name "Net-(LCD1-A-GREEN)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "12")
 				(pinfunction "A-GREEN_12")
 				(pintype "input")
@@ -26345,10 +26257,10 @@
 		)
 		(net
 			(code "61")
-			(name "Net-(LCD2-A-RED)")
+			(name "Net-(LCD1-A-RED)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "11")
 				(pinfunction "A-RED_11")
 				(pintype "input")
@@ -26361,10 +26273,10 @@
 		)
 		(net
 			(code "62")
-			(name "Net-(LCD2-SCL)")
+			(name "Net-(LCD1-SCL)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "6")
 				(pinfunction "SCL_6")
 				(pintype "input")
@@ -26377,16 +26289,16 @@
 			)
 			(node
 				(ref "R17")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "63")
-			(name "Net-(LCD2-SDA)")
+			(name "Net-(LCD1-SDA)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "7")
 				(pinfunction "SDA_7")
 				(pintype "bidirectional")
@@ -26409,7 +26321,7 @@
 			(class "Default")
 			(node
 				(ref "C27")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -26628,7 +26540,7 @@
 			)
 			(node
 				(ref "SW3")
-				(pin "4")
+				(pin "1B")
 				(pintype "passive")
 			)
 		)
@@ -26643,7 +26555,7 @@
 			)
 			(node
 				(ref "SW3")
-				(pin "3")
+				(pin "2B")
 				(pintype "passive")
 			)
 		)
@@ -26799,8 +26711,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "5")
-				(pinfunction "Pin_5_5")
+				(pin "3")
+				(pinfunction "Pin_3_3")
 				(pintype "passive")
 			)
 		)
@@ -26929,10 +26841,10 @@
 		)
 		(net
 			(code "97")
-			(name "unconnected-(LCD2-NC-Pad5)")
+			(name "unconnected-(LCD1-NC-Pad5)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "5")
 				(pinfunction "NC_5")
 				(pintype "no_connect")
@@ -26940,10 +26852,10 @@
 		)
 		(net
 			(code "98")
-			(name "unconnected-(LCD2-RX-Pad1)")
+			(name "unconnected-(LCD1-RX-Pad1)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "1")
 				(pinfunction "RX_1")
 				(pintype "bidirectional+no_connect")
@@ -26951,10 +26863,10 @@
 		)
 		(net
 			(code "99")
-			(name "unconnected-(LCD2-SPISS-Pad4)")
+			(name "unconnected-(LCD1-SPISS-Pad4)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "4")
 				(pinfunction "SPISS_4")
 				(pintype "bidirectional+no_connect")
@@ -26995,17 +26907,6 @@
 		)
 		(net
 			(code "103")
-			(name "unconnected-(MCU1-PA10-Pad21)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "21")
-				(pinfunction "PA10_21")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "104")
 			(name "unconnected-(MCU1-PA12-Pad23)")
 			(class "Default")
 			(node
@@ -27016,7 +26917,7 @@
 			)
 		)
 		(net
-			(code "105")
+			(code "104")
 			(name "unconnected-(MCU1-PB2-Pad17)")
 			(class "Default")
 			(node
@@ -27027,13 +26928,24 @@
 			)
 		)
 		(net
-			(code "106")
+			(code "105")
 			(name "unconnected-(MCU1-PB5-Pad29)")
 			(class "Default")
 			(node
 				(ref "MCU1")
 				(pin "29")
 				(pinfunction "PB5_29")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "106")
+			(name "unconnected-(MCU1-PB9-Pad1)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "1")
+				(pinfunction "PB9_1")
 				(pintype "bidirectional+no_connect")
 			)
 		)
@@ -27083,50 +26995,6 @@
 		)
 		(net
 			(code "111")
-			(name "unconnected-(TP1-Pin_2-Pad2)")
-			(class "Default")
-			(node
-				(ref "TP1")
-				(pin "2")
-				(pinfunction "Pin_2_2")
-				(pintype "passive+no_connect")
-			)
-		)
-		(net
-			(code "112")
-			(name "unconnected-(TP1-Pin_4-Pad4)")
-			(class "Default")
-			(node
-				(ref "TP1")
-				(pin "4")
-				(pinfunction "Pin_4_4")
-				(pintype "passive+no_connect")
-			)
-		)
-		(net
-			(code "113")
-			(name "unconnected-(TP3-Pin_2-Pad2)")
-			(class "Default")
-			(node
-				(ref "TP3")
-				(pin "2")
-				(pinfunction "Pin_2_2")
-				(pintype "passive+no_connect")
-			)
-		)
-		(net
-			(code "114")
-			(name "unconnected-(TP3-Pin_4-Pad4)")
-			(class "Default")
-			(node
-				(ref "TP3")
-				(pin "4")
-				(pinfunction "Pin_4_4")
-				(pintype "passive+no_connect")
-			)
-		)
-		(net
-			(code "115")
 			(name "unconnected-(TVS4-IO2-Pad2)")
 			(class "Default")
 			(node
