@@ -526,6 +526,20 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "Chassis",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "Isolated",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -533,7 +547,56 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Chassis",
+        "pattern": "GND_SHIP"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "+5V_SHIP"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "V_RAW"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "/N2K_CAN_H"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "/N2K_CAN_L"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(CMC1-I1)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(CMC1-I2)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(IDCB1-+VIN)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(J4-Pin_1)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(PTC2-Pad2)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(SD1-A)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "unconnected-(IDCB1-R.C.-Pad3)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
