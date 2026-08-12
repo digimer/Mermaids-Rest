@@ -7518,9 +7518,28 @@
 				)
 			)
 		)
+		(property "Part" "Bourns SMBJ20A-Q"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30d45eb4-28da-463e-84f7-717e3fd680b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/1231569a-f2e6-4a77-9e11-8a568957509e")
 		(sheetname "/")
 		(sheetfile "Compass Rose.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26524,6 +26543,111 @@
 			)
 		)
 	)
+	(footprint "Fiducial:Fiducial_0.5mm_Mask1.5mm"
+		(layer "F.Cu")
+		(uuid "581c7379-9a6e-48e3-96dc-ebf2e0ba15da")
+		(at 263.8 222.1)
+		(descr "Fiducial, circular marking, 0.5mm bare copper, 1.5mm soldermask opening")
+		(tags "fiducial")
+		(property "Reference" "FID2"
+			(at 0 -1.7 0)
+			(layer "F.SilkS")
+			(uuid "1c32a961-42bb-441f-8ba7-ed6ad6945397")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 0 1.7 0)
+			(layer "F.Fab")
+			(uuid "bb41828e-b727-4117-8753-56cf94b39e92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00bc968e-0780-4ca2-bf00-e3227c881531")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "170d7e7b-3d0e-4eb5-99d6-331e6ece253d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "Fiducial*")
+		(path "/d2607d57-05f1-4886-8911-9de9b74dc8b7")
+		(sheetname "/")
+		(sheetfile "Compass Rose.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr smd exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "c6f7b47c-747d-4322-8bf0-9fa353fc8319")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "681828fd-bb05-4562-92dc-c99c37194a63")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "693f10b7-c7cf-491f-8b79-d4fd97683733")
+			(effects
+				(font
+					(size 0.38 0.38)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "" smd circle
+			(at 0 0)
+			(size 0.5 0.5)
+			(layers "F.Cu" "F.Mask")
+			(solder_mask_margin 0.5)
+			(clearance 0.6)
+			(uuid "d545e82d-6f80-4ed5-9018-fbd0c1c95420")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "mr-stuff:TDK ACT12101012PTL00"
 		(layer "F.Cu")
 		(uuid "591c27f2-af2e-4c51-954b-239cc861aa58")
@@ -30128,10 +30252,120 @@
 				)
 			)
 		)
+		(property "Part" "Pulse PA4340.103NLT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7dfedd95-486b-4ed7-9d8c-2047fad522d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78280587-742e-4741-b891-1e3d432ac4f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43b69b17-f64a-4894-b7e1-c2fefcbd61bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6b49770-644a-47b7-a4e7-861734722bf8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00a80601-ddb8-4d92-ac57-d7cd27fa1109")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eaafb8f2-0fb0-4245-997d-8a0eb91b3f5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "188d85e7-bd0e-4692-bc1a-865460ae95fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce89c747-3e07-4b83-83b9-bdfc2dd8b341")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/34aa3f71-115c-4e03-bf3b-4be87a7e4e3a")
 		(sheetname "/")
 		(sheetfile "Compass Rose.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr board_only)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -46907,10 +47141,120 @@
 				)
 			)
 		)
+		(property "Part" "TI ISO1044BDR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8cb61951-8fb3-4259-aff1-f0aa5f8b327e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8f0d124-f4c9-4b2f-bf7d-98f6352bac1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bd9c1c2-d410-4044-8a39-7419f1a9d24e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3199de73-31bb-48f0-8550-ef5b8e566363")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12d83b2f-3f8a-4f33-80db-f2d9d5418254")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8eac75a8-e113-431f-81ca-d248bccf98f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6381886-8e2e-45e4-afd4-95fc43625e18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "529d3ffa-75e6-4535-bbd8-4bb2fd1e6e2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm*")
 		(path "/e9114a17-af81-4d93-a4de-b6208ef03cb1")
 		(sheetname "/")
 		(sheetfile "Compass Rose.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2" "4" "8" "6" "5" "7")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -54523,6 +54867,111 @@
 				(xyz -90 -0 -0)
 			)
 		)
+	)
+	(footprint "Fiducial:Fiducial_0.5mm_Mask1.5mm"
+		(layer "F.Cu")
+		(uuid "ae33cf51-cf2d-4366-a26f-d0d5cd078c89")
+		(at 263.725 47.025)
+		(descr "Fiducial, circular marking, 0.5mm bare copper, 1.5mm soldermask opening")
+		(tags "fiducial")
+		(property "Reference" "FID1"
+			(at 0 -1.7 0)
+			(layer "F.SilkS")
+			(uuid "de5b0f67-15e5-4661-b97e-c5c75c9274dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 0 1.7 0)
+			(layer "F.Fab")
+			(uuid "62c80620-d7ac-4ddb-9d1e-a70cefbda208")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c894fc8-98b3-4c3b-85f4-d6bca04fea6e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64558ae5-1b7c-4fba-ab6c-867fd769ebe9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "Fiducial*")
+		(path "/82ce328d-1635-415e-9d6f-932005406d21")
+		(sheetname "/")
+		(sheetfile "Compass Rose.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr smd exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "145bd499-d599-418d-8258-c4c4d0488365")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "66661d09-58c1-4c2e-87f7-6675be99ce9f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "25ddb375-d391-412d-b31b-ca3c333dcea4")
+			(effects
+				(font
+					(size 0.38 0.38)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "" smd circle
+			(at 0 0)
+			(size 0.5 0.5)
+			(layers "F.Cu" "F.Mask")
+			(solder_mask_margin 0.5)
+			(clearance 0.6)
+			(uuid "6919ad4c-f662-4969-bbec-d006b24d6983")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "mr-stuff:Kingbright WP383SURDTK"
 		(layer "F.Cu")
@@ -71126,6 +71575,111 @@
 				(xyz -0 -90 -90)
 			)
 		)
+	)
+	(footprint "Fiducial:Fiducial_0.5mm_Mask1.5mm"
+		(layer "F.Cu")
+		(uuid "f0a93771-e250-48f7-8e31-ea0fee44ec17")
+		(at 98.1 221.9)
+		(descr "Fiducial, circular marking, 0.5mm bare copper, 1.5mm soldermask opening")
+		(tags "fiducial")
+		(property "Reference" "FID3"
+			(at 0 -1.7 0)
+			(layer "F.SilkS")
+			(uuid "49f975f5-d57f-4674-9acc-8319a0107db2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 0 1.7 0)
+			(layer "F.Fab")
+			(uuid "9a2469b6-b994-4828-94a4-a4966288260f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d2a2cf6-771a-4182-b3fb-fa77418bef2e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "911280c5-75a6-4d04-9d20-643bb0dca053")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "Fiducial*")
+		(path "/62c3b937-07c0-4954-af1a-dc182cb1000a")
+		(sheetname "/")
+		(sheetfile "Compass Rose.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr smd exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ca46711b-23a1-44f9-8878-4d6ee944e62f")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "27b3b070-1992-41ee-8868-7701626c0e33")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "dbca2d5d-e2ed-496e-97c1-ba7146d6f67e")
+			(effects
+				(font
+					(size 0.38 0.38)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "" smd circle
+			(at 0 0)
+			(size 0.5 0.5)
+			(layers "F.Cu" "F.Mask")
+			(solder_mask_margin 0.5)
+			(clearance 0.6)
+			(uuid "ce04a241-4b13-4cc0-906e-ee6ba3c6436a")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "mr-stuff:Yageo AE0805"
 		(layer "F.Cu")
