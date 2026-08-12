@@ -1,4 +1,11 @@
 (version 1)
+# Barrier between the vessel-referenced side (GND_SHIP, V_RAW, +5V_SHIP,
+# N2K CAN) and the isolated board side. Max potential anywhere is 32.4 V
+# (TVS1 clamp), so this is NOT a creepage requirement -- there is no
+# tracking mechanism below ~100 V. 1.0 mm is chosen for contamination
+# robustness in a PD3 marine environment with acrylic conformal coating,
+# and for visual auditability of the barrier. IDCB1's own pin pitch sets
+# a hard floor near 1 mm regardless.
 (rule "isolation barrier"
-  (constraint clearance (min 2.5mm))
+  (constraint clearance (min 1.0mm))
   (condition "A.NetClass == 'Chassis' && B.NetClass == 'Default'"))
