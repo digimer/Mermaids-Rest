@@ -89752,6 +89752,18 @@
 		(layer "Edge.Cuts")
 		(uuid "44af6e3f-62c5-4f0b-a01e-c810df8e8944")
 	)
+	(gr_text "I2C Addr: 0x28"
+		(at 209.5 120.6 0)
+		(layer "F.SilkS")
+		(uuid "5fd177b7-5e76-4e6d-bf62-6311b884904a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "2-Ring Compass Rose\nv4.1 - Prototype - 01\n© The Digital Mermaid - 2026"
 		(at 97.1 200.8 0)
 		(layer "F.SilkS")
@@ -89974,6 +89986,30 @@
 				(thickness 0.15)
 			)
 			(justify right)
+		)
+	)
+	(gr_text "0x55"
+		(at 140.8 106.7 90)
+		(layer "F.SilkS")
+		(uuid "80370045-2f00-4215-96f4-3da4af0538f2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "0x57"
+		(at 140.8 113 90)
+		(layer "F.SilkS")
+		(uuid "fcfad20f-727c-4ae7-bcb3-5993d41b40a6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "CAN High"

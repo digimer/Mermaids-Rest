@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Battery Display/Battery Display.kicad_sch")
-		(date "2026-08-12T17:44:56")
+		(date "2026-08-13T00:45:46")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -3341,14 +3341,14 @@
 		(comp
 			(ref "DE2")
 			(value "L777SDE09PA4CH4F")
-			(footprint "mr-stuff:Amphenol_L777SDE09PA4CH4F")
+			(footprint "mr-stuff:Amphenol L777SDE09PA4CH4F")
 			(datasheet "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_d_sub_sd_stamped_formed_right_angle_board.pdf")
 			(description "9 Position D-Sub Plug, Male Pins Connector")
 			(fields
 				(field
 					(name "Part") "AAmphenol L777SDE09PA4CH4F")
 				(field
-					(name "Footprint") "mr-stuff:Amphenol_L777SDE09PA4CH4F")
+					(name "Footprint") "mr-stuff:Amphenol L777SDE09PA4CH4F")
 				(field
 					(name "Datasheet") "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_d_sub_sd_stamped_formed_right_angle_board.pdf")
 				(field
@@ -4442,7 +4442,7 @@
 			)
 		)
 		(comp
-			(ref "LCD2")
+			(ref "LCD1")
 			(value "NHD-0216K3Z-NS(RGB)-FBW-V3")
 			(footprint "mr-stuff:Newhaven Display NHD-0216K3Z-NS(RGB)-FBW-V3")
 			(datasheet "https://newhavendisplay.com/content/specs/NHD-0216K3Z-NSRGB-FBW-V3.pdf")
@@ -10116,7 +10116,7 @@
 			)
 		)
 		(comp
-			(ref "Q7")
+			(ref "Q1")
 			(value "BSS314PE")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
 			(datasheet "https://www.infineon.com/assets/row/public/documents/24/49/infineon-bss314pe-datasheet-en.pdf")
@@ -10248,7 +10248,7 @@
 			)
 		)
 		(comp
-			(ref "Q8")
+			(ref "Q2")
 			(value "DMN6075S")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
 			(datasheet "https://www.diodes.com/assets/Datasheets/DMN6075SQ.pdf")
@@ -10388,7 +10388,7 @@
 			)
 		)
 		(comp
-			(ref "Q9")
+			(ref "Q3")
 			(value "BSS314PE")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
 			(datasheet "https://www.infineon.com/assets/row/public/documents/24/49/infineon-bss314pe-datasheet-en.pdf")
@@ -10520,7 +10520,7 @@
 			)
 		)
 		(comp
-			(ref "Q10")
+			(ref "Q4")
 			(value "DMN6075S")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
 			(datasheet "https://www.diodes.com/assets/Datasheets/DMN6075SQ.pdf")
@@ -10660,7 +10660,7 @@
 			)
 		)
 		(comp
-			(ref "Q11")
+			(ref "Q5")
 			(value "BSS314PE")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
 			(datasheet "https://www.infineon.com/assets/row/public/documents/24/49/infineon-bss314pe-datasheet-en.pdf")
@@ -10792,7 +10792,7 @@
 			)
 		)
 		(comp
-			(ref "Q12")
+			(ref "Q6")
 			(value "DMN6075S")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
 			(datasheet "https://www.diodes.com/assets/Datasheets/DMN6075SQ.pdf")
@@ -13912,7 +13912,7 @@
 			)
 		)
 		(comp
-			(ref "SW3")
+			(ref "SW1")
 			(value "Boot")
 			(footprint "mr-stuff:Same Sky TS03-66")
 			(datasheet "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
@@ -14006,7 +14006,7 @@
 			)
 		)
 		(comp
-			(ref "SW4")
+			(ref "SW2")
 			(value "Reset")
 			(footprint "mr-stuff:Same Sky TS03-66")
 			(datasheet "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
@@ -15904,7 +15904,7 @@
 				(field
 					(name "Value") "L777SDE09PA4CH4F")
 				(field
-					(name "Footprint") "mr-stuff:Amphenol_L777SDE09PA4CH4F")
+					(name "Footprint") "mr-stuff:Amphenol L777SDE09PA4CH4F")
 				(field
 					(name "Datasheet") "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_d_sub_sd_stamped_formed_right_angle_board.pdf")
 				(field
@@ -17026,7 +17026,7 @@
 		(net
 			(code "1")
 			(name "+3.3V")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C1")
 				(pin "2")
@@ -17104,7 +17104,7 @@
 			)
 			(node
 				(ref "R24")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -17197,13 +17197,13 @@
 				(pintype "power_in")
 			)
 			(node
-				(ref "SW3")
+				(ref "SW1")
 				(pin "1")
 				(pinfunction "A_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "SW3")
+				(ref "SW1")
 				(pin "2")
 				(pinfunction "A_2")
 				(pintype "passive")
@@ -17218,7 +17218,7 @@
 		(net
 			(code "2")
 			(name "+5V")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C13")
 				(pin "2")
@@ -17268,13 +17268,13 @@
 				(pintype "power_out")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "3")
 				(pinfunction "+5V_3")
 				(pintype "power_in")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "9")
 				(pinfunction "+5V_9")
 				(pintype "power_in")
@@ -17286,19 +17286,19 @@
 				(pintype "power_in")
 			)
 			(node
-				(ref "Q11")
+				(ref "Q1")
 				(pin "2")
 				(pinfunction "S_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "Q7")
+				(ref "Q3")
 				(pin "2")
 				(pinfunction "S_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "Q9")
+				(ref "Q5")
 				(pin "2")
 				(pinfunction "S_2")
 				(pintype "passive")
@@ -17343,7 +17343,7 @@
 		(net
 			(code "3")
 			(name "+5V_SHIP")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "C2")
 				(pin "2")
@@ -17376,7 +17376,7 @@
 		(net
 			(code "4")
 			(name "/BOARD_I2C_SCL")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "LS1")
 				(pin "3")
@@ -17416,7 +17416,7 @@
 		(net
 			(code "5")
 			(name "/BOARD_I2C_SDA")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "LS1")
 				(pin "4")
@@ -17456,7 +17456,7 @@
 		(net
 			(code "6")
 			(name "/CA1")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "21")
@@ -17545,7 +17545,7 @@
 		(net
 			(code "7")
 			(name "/CA2")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "22")
@@ -17634,7 +17634,7 @@
 		(net
 			(code "8")
 			(name "/CA3")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "23")
@@ -17723,7 +17723,7 @@
 		(net
 			(code "9")
 			(name "/CA4")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "24")
@@ -17812,7 +17812,7 @@
 		(net
 			(code "10")
 			(name "/CA5")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "25")
@@ -17901,7 +17901,7 @@
 		(net
 			(code "11")
 			(name "/CA6")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "26")
@@ -17990,7 +17990,7 @@
 		(net
 			(code "12")
 			(name "/CA7")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "27")
@@ -18037,7 +18037,7 @@
 		(net
 			(code "13")
 			(name "/CA8")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "28")
@@ -18084,7 +18084,7 @@
 		(net
 			(code "14")
 			(name "/CA9")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "1")
@@ -18131,7 +18131,7 @@
 		(net
 			(code "15")
 			(name "/CB1")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "7")
@@ -18220,7 +18220,7 @@
 		(net
 			(code "16")
 			(name "/CB2")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "8")
@@ -18309,7 +18309,7 @@
 		(net
 			(code "17")
 			(name "/CB3")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "9")
@@ -18392,7 +18392,7 @@
 		(net
 			(code "18")
 			(name "/CB4")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "10")
@@ -18475,7 +18475,7 @@
 		(net
 			(code "19")
 			(name "/CB5")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "11")
@@ -18558,7 +18558,7 @@
 		(net
 			(code "20")
 			(name "/CB6")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "12")
@@ -18611,7 +18611,7 @@
 		(net
 			(code "21")
 			(name "/CB7")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "13")
@@ -18652,7 +18652,7 @@
 		(net
 			(code "22")
 			(name "/CB8")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "14")
@@ -18693,7 +18693,7 @@
 		(net
 			(code "23")
 			(name "/CB9")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "15")
@@ -18734,7 +18734,7 @@
 		(net
 			(code "24")
 			(name "/DEBUG_SWCLK")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "J3")
 				(pin "4")
@@ -18753,13 +18753,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SW3")
+				(ref "SW1")
 				(pin "3")
 				(pinfunction "B_3")
 				(pintype "passive")
 			)
 			(node
-				(ref "SW3")
+				(ref "SW1")
 				(pin "4")
 				(pinfunction "B_4")
 				(pintype "passive")
@@ -18768,7 +18768,7 @@
 		(net
 			(code "25")
 			(name "/DEBUG_SWDIO")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "J3")
 				(pin "3")
@@ -18785,7 +18785,7 @@
 		(net
 			(code "26")
 			(name "/DISPLAY_ON_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C22")
 				(pin "2")
@@ -18811,7 +18811,7 @@
 		(net
 			(code "27")
 			(name "/DISPLAY_ON_IN_PLUG")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE2")
 				(pin "3")
@@ -18832,7 +18832,7 @@
 		(net
 			(code "28")
 			(name "/IS31_I2C_SCL")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "20")
@@ -18860,7 +18860,7 @@
 		(net
 			(code "29")
 			(name "/IS31_I2C_SDA")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "19")
@@ -18888,7 +18888,7 @@
 		(net
 			(code "30")
 			(name "/IS31_INTB_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "4")
@@ -18903,14 +18903,14 @@
 			)
 			(node
 				(ref "R24")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "31")
 			(name "/LCD_BL_BLUE_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "30")
@@ -18926,7 +18926,7 @@
 		(net
 			(code "32")
 			(name "/LCD_BL_GREEN_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "31")
@@ -18942,7 +18942,7 @@
 		(net
 			(code "33")
 			(name "/LCD_BL_RED_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "32")
@@ -18958,7 +18958,7 @@
 		(net
 			(code "34")
 			(name "/LCD_PGDOWN_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C21")
 				(pin "2")
@@ -18984,7 +18984,7 @@
 		(net
 			(code "35")
 			(name "/LCD_PGDOWN_IN_PLUG")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE2")
 				(pin "4")
@@ -19005,7 +19005,7 @@
 		(net
 			(code "36")
 			(name "/LCD_PGUP_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C20")
 				(pin "2")
@@ -19031,7 +19031,7 @@
 		(net
 			(code "37")
 			(name "/LCD_PGUP_IN_PLUG")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE2")
 				(pin "5")
@@ -19052,7 +19052,7 @@
 		(net
 			(code "38")
 			(name "/N2K_CAN_H")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "CMC1")
 				(pin "4")
@@ -19078,7 +19078,7 @@
 		(net
 			(code "39")
 			(name "/N2K_CAN_L")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "CMC1")
 				(pin "3")
@@ -19104,7 +19104,7 @@
 		(net
 			(code "40")
 			(name "/N2K_FDCAN_RX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "ICT1")
 				(pin "3")
@@ -19121,7 +19121,7 @@
 		(net
 			(code "41")
 			(name "/N2K_FDCAN_TX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "ICT1")
 				(pin "2")
@@ -19138,7 +19138,7 @@
 		(net
 			(code "42")
 			(name "/NRST")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C5")
 				(pin "2")
@@ -19162,13 +19162,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SW4")
+				(ref "SW2")
 				(pin "1")
 				(pinfunction "A_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "SW4")
+				(ref "SW2")
 				(pin "2")
 				(pinfunction "A_2")
 				(pintype "passive")
@@ -19177,7 +19177,7 @@
 		(net
 			(code "43")
 			(name "/OSC_IN")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C6")
 				(pin "1")
@@ -19198,7 +19198,7 @@
 		(net
 			(code "44")
 			(name "/OSC_OUT")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C7")
 				(pin "2")
@@ -19219,7 +19219,7 @@
 		(net
 			(code "45")
 			(name "/RS232_RX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE1")
 				(pin "3")
@@ -19235,7 +19235,7 @@
 		(net
 			(code "46")
 			(name "/RS232_TX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "DE1")
 				(pin "2")
@@ -19251,7 +19251,7 @@
 		(net
 			(code "47")
 			(name "/USART1_RX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "8")
@@ -19268,7 +19268,7 @@
 		(net
 			(code "48")
 			(name "/USART1_TX")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "MCU1")
 				(pin "7")
@@ -19285,7 +19285,7 @@
 		(net
 			(code "49")
 			(name "GND")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C1")
 				(pin "1")
@@ -19483,19 +19483,19 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "10")
 				(pinfunction "GND_10")
 				(pintype "power_in")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "2")
 				(pinfunction "GND_2")
 				(pintype "power_in")
 			)
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "8")
 				(pinfunction "GND_8")
 				(pintype "power_in")
@@ -19529,19 +19529,19 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "Q10")
+				(ref "Q2")
 				(pin "2")
 				(pinfunction "S_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "Q12")
+				(ref "Q4")
 				(pin "2")
 				(pinfunction "S_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "Q8")
+				(ref "Q6")
 				(pin "2")
 				(pinfunction "S_2")
 				(pintype "passive")
@@ -19608,13 +19608,13 @@
 				(pintype "power_in")
 			)
 			(node
-				(ref "SW4")
+				(ref "SW2")
 				(pin "3")
 				(pinfunction "B_3")
 				(pintype "passive")
 			)
 			(node
-				(ref "SW4")
+				(ref "SW2")
 				(pin "4")
 				(pinfunction "B_4")
 				(pintype "passive")
@@ -19641,7 +19641,7 @@
 		(net
 			(code "50")
 			(name "GND_SHIP")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "C10")
 				(pin "2")
@@ -19746,7 +19746,7 @@
 		(net
 			(code "51")
 			(name "Net-(CMC1-I1)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "CMC1")
 				(pin "1")
@@ -19763,7 +19763,7 @@
 		(net
 			(code "52")
 			(name "Net-(CMC1-I2)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "CMC1")
 				(pin "2")
@@ -19780,7 +19780,7 @@
 		(net
 			(code "53")
 			(name "Net-(CPD1-C_FILT)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C30")
 				(pin "2")
@@ -19796,7 +19796,7 @@
 		(net
 			(code "54")
 			(name "Net-(CPD1-R_EXT)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "CPD1")
 				(pin "6")
@@ -19812,7 +19812,7 @@
 		(net
 			(code "55")
 			(name "Net-(IDCB1-+VIN)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "IDCB1")
 				(pin "2")
@@ -19829,7 +19829,7 @@
 		(net
 			(code "56")
 			(name "Net-(J4-Pin_1)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "J4")
 				(pin "1")
@@ -19849,10 +19849,10 @@
 		)
 		(net
 			(code "57")
-			(name "Net-(LCD2-A-BLUE)")
+			(name "Net-(LCD1-A-BLUE)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "13")
 				(pinfunction "A-BLUE_13")
 				(pintype "input")
@@ -19865,10 +19865,10 @@
 		)
 		(net
 			(code "58")
-			(name "Net-(LCD2-A-GREEN)")
+			(name "Net-(LCD1-A-GREEN)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "12")
 				(pinfunction "A-GREEN_12")
 				(pintype "input")
@@ -19881,10 +19881,10 @@
 		)
 		(net
 			(code "59")
-			(name "Net-(LCD2-A-RED)")
+			(name "Net-(LCD1-A-RED)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "11")
 				(pinfunction "A-RED_11")
 				(pintype "input")
@@ -19897,10 +19897,10 @@
 		)
 		(net
 			(code "60")
-			(name "Net-(LCD2-SCL)")
+			(name "Net-(LCD1-SCL)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "6")
 				(pinfunction "SCL_6")
 				(pintype "input")
@@ -19919,10 +19919,10 @@
 		)
 		(net
 			(code "61")
-			(name "Net-(LCD2-SDA)")
+			(name "Net-(LCD1-SDA)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "7")
 				(pinfunction "SDA_7")
 				(pintype "bidirectional")
@@ -19942,7 +19942,7 @@
 		(net
 			(code "62")
 			(name "Net-(LS1-EN)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C23")
 				(pin "2")
@@ -19974,7 +19974,7 @@
 		(net
 			(code "63")
 			(name "Net-(PTC2-Pad2)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "PTC2")
 				(pin "2")
@@ -19993,10 +19993,10 @@
 		)
 		(net
 			(code "64")
-			(name "Net-(Q7-D)")
+			(name "Net-(Q1-D)")
 			(class "Default")
 			(node
-				(ref "Q7")
+				(ref "Q1")
 				(pin "3")
 				(pinfunction "D_3")
 				(pintype "passive")
@@ -20009,16 +20009,16 @@
 		)
 		(net
 			(code "65")
-			(name "Net-(Q7-G)")
+			(name "Net-(Q1-G)")
 			(class "Default")
 			(node
-				(ref "Q7")
+				(ref "Q1")
 				(pin "1")
 				(pinfunction "G_1")
 				(pintype "input")
 			)
 			(node
-				(ref "Q8")
+				(ref "Q2")
 				(pin "3")
 				(pinfunction "D_3")
 				(pintype "passive")
@@ -20031,10 +20031,10 @@
 		)
 		(net
 			(code "66")
-			(name "Net-(Q8-G)")
+			(name "Net-(Q2-G)")
 			(class "Default")
 			(node
-				(ref "Q8")
+				(ref "Q2")
 				(pin "1")
 				(pinfunction "G_1")
 				(pintype "input")
@@ -20052,10 +20052,10 @@
 		)
 		(net
 			(code "67")
-			(name "Net-(Q9-D)")
+			(name "Net-(Q3-D)")
 			(class "Default")
 			(node
-				(ref "Q9")
+				(ref "Q3")
 				(pin "3")
 				(pinfunction "D_3")
 				(pintype "passive")
@@ -20068,19 +20068,19 @@
 		)
 		(net
 			(code "68")
-			(name "Net-(Q10-D)")
+			(name "Net-(Q3-G)")
 			(class "Default")
 			(node
-				(ref "Q10")
-				(pin "3")
-				(pinfunction "D_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "Q9")
+				(ref "Q3")
 				(pin "1")
 				(pinfunction "G_1")
 				(pintype "input")
+			)
+			(node
+				(ref "Q4")
+				(pin "3")
+				(pinfunction "D_3")
+				(pintype "passive")
 			)
 			(node
 				(ref "R14")
@@ -20090,10 +20090,10 @@
 		)
 		(net
 			(code "69")
-			(name "Net-(Q10-G)")
+			(name "Net-(Q4-G)")
 			(class "Default")
 			(node
-				(ref "Q10")
+				(ref "Q4")
 				(pin "1")
 				(pinfunction "G_1")
 				(pintype "input")
@@ -20111,10 +20111,10 @@
 		)
 		(net
 			(code "70")
-			(name "Net-(Q11-D)")
+			(name "Net-(Q5-D)")
 			(class "Default")
 			(node
-				(ref "Q11")
+				(ref "Q5")
 				(pin "3")
 				(pinfunction "D_3")
 				(pintype "passive")
@@ -20127,16 +20127,16 @@
 		)
 		(net
 			(code "71")
-			(name "Net-(Q11-G)")
+			(name "Net-(Q5-G)")
 			(class "Default")
 			(node
-				(ref "Q11")
+				(ref "Q5")
 				(pin "1")
 				(pinfunction "G_1")
 				(pintype "input")
 			)
 			(node
-				(ref "Q12")
+				(ref "Q6")
 				(pin "3")
 				(pinfunction "D_3")
 				(pintype "passive")
@@ -20149,10 +20149,10 @@
 		)
 		(net
 			(code "72")
-			(name "Net-(Q12-G)")
+			(name "Net-(Q6-G)")
 			(class "Default")
 			(node
-				(ref "Q12")
+				(ref "Q6")
 				(pin "1")
 				(pinfunction "G_1")
 				(pintype "input")
@@ -20171,7 +20171,7 @@
 		(net
 			(code "73")
 			(name "Net-(RST1-C1+)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C15")
 				(pin "2")
@@ -20187,7 +20187,7 @@
 		(net
 			(code "74")
 			(name "Net-(RST1-C1-)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C15")
 				(pin "1")
@@ -20203,7 +20203,7 @@
 		(net
 			(code "75")
 			(name "Net-(RST1-C2+)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C18")
 				(pin "2")
@@ -20219,7 +20219,7 @@
 		(net
 			(code "76")
 			(name "Net-(RST1-C2-)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C18")
 				(pin "1")
@@ -20235,7 +20235,7 @@
 		(net
 			(code "77")
 			(name "Net-(RST1-VS+)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C16")
 				(pin "1")
@@ -20251,7 +20251,7 @@
 		(net
 			(code "78")
 			(name "Net-(RST1-VS-)")
-			(class "Default")
+			(class "Isolated,Default")
 			(node
 				(ref "C19")
 				(pin "2")
@@ -20267,7 +20267,7 @@
 		(net
 			(code "79")
 			(name "Net-(SD1-A)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "PTC2")
 				(pin "1")
@@ -20289,7 +20289,7 @@
 		(net
 			(code "80")
 			(name "V_RAW")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "C10")
 				(pin "1")
@@ -20440,7 +20440,7 @@
 		(net
 			(code "92")
 			(name "unconnected-(IDCB1-R.C.-Pad3)")
-			(class "Default")
+			(class "Chassis,Default")
 			(node
 				(ref "IDCB1")
 				(pin "3")
@@ -20450,10 +20450,10 @@
 		)
 		(net
 			(code "93")
-			(name "unconnected-(LCD2-NC-Pad5)")
+			(name "unconnected-(LCD1-NC-Pad5)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "5")
 				(pinfunction "NC_5")
 				(pintype "no_connect")
@@ -20461,10 +20461,10 @@
 		)
 		(net
 			(code "94")
-			(name "unconnected-(LCD2-RX-Pad1)")
+			(name "unconnected-(LCD1-RX-Pad1)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "1")
 				(pinfunction "RX_1")
 				(pintype "bidirectional+no_connect")
@@ -20472,10 +20472,10 @@
 		)
 		(net
 			(code "95")
-			(name "unconnected-(LCD2-SPISS-Pad4)")
+			(name "unconnected-(LCD1-SPISS-Pad4)")
 			(class "Default")
 			(node
-				(ref "LCD2")
+				(ref "LCD1")
 				(pin "4")
 				(pinfunction "SPISS_4")
 				(pintype "bidirectional+no_connect")

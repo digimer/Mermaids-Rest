@@ -4687,7 +4687,7 @@
 					)
 				)
 			)
-			(property "Footprint" "mr-stuff:Amphenol_L777SDE09PA4CH4F"
+			(property "Footprint" "mr-stuff:Amphenol L777SDE09PA4CH4F"
 				(at 0 -18.542 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -11452,7 +11452,7 @@
 		)
 		(uuid "1d3542e2-3278-4ee5-80d3-fa5c1e3c7509")
 	)
-	(text "C6 provided for optional \nCommon Mode EMI suppression\nIf used: Knowles Syfer 2211JA250102JKTSYX"
+	(text "C11 provided for optional \nCommon Mode EMI suppression\nIf used: Knowles Syfer 2211JA250102JKTSYX"
 		(exclude_from_sim no)
 		(at 190.246 106.934 0)
 		(effects
@@ -25887,7 +25887,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17af2452-ef2e-47ee-bc43-fe8f58833695")
-		(property "Reference" "SW4"
+		(property "Reference" "SW2"
 			(at 278.13 120.396 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26087,7 +26087,7 @@
 		(instances
 			(project "Battery Display"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "SW4")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -27519,7 +27519,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Amphenol_L777SDE09PA4CH4F"
+		(property "Footprint" "mr-stuff:Amphenol L777SDE09PA4CH4F"
 			(at 264.16 195.072 0)
 			(hide yes)
 			(show_name no)
@@ -28911,7 +28911,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2c4ab6d0-5f28-484b-9b40-11de89f6e91c")
-		(property "Reference" "Q10"
+		(property "Reference" "Q4"
 			(at 48.26 200.152 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29111,7 +29111,7 @@
 		(instances
 			(project "Battery Display"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "Q10")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -29638,7 +29638,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "33bafe95-a3dd-406c-8fe7-29122d824911")
-		(property "Reference" "SW3"
+		(property "Reference" "SW1"
 			(at 278.13 111.506 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29761,7 +29761,7 @@
 		(instances
 			(project "Battery Display"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "SW3")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -30141,7 +30141,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 177.8 185.42 270)
+		(at 177.8 185.42 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -30151,7 +30151,7 @@
 		(dnp no)
 		(uuid "3797de85-a4c9-4883-9192-f1f7b2cd9f2f")
 		(property "Reference" "R24"
-			(at 176.276 185.42 90)
+			(at 179.578 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30162,7 +30162,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 176.022 187.706 90)
+			(at 179.832 187.452 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30173,7 +30173,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 177.8 183.642 90)
+			(at 177.8 187.198 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33750,7 +33750,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "53f6f953-16eb-4a1d-9bc4-0ea213057ff9")
-		(property "Reference" "Q12"
+		(property "Reference" "Q6"
 			(at 67.31 200.152 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33950,7 +33950,7 @@
 		(instances
 			(project "Battery Display"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "Q12")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -37464,7 +37464,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "771cef85-e0d5-4204-bd0f-a54b6d44a762")
-		(property "Reference" "LCD2"
+		(property "Reference" "LCD1"
 			(at 69.85 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37691,7 +37691,7 @@
 		(instances
 			(project "Battery Display"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "LCD2")
+					(reference "LCD1")
 					(unit 1)
 				)
 			)
@@ -37923,7 +37923,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78f9d03a-f4ca-44cf-906f-6f9b597294ba")
-		(property "Reference" "Q11"
+		(property "Reference" "Q5"
 			(at 62.992 194.056 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38120,7 +38120,7 @@
 		(instances
 			(project "Battery Display"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "Q11")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -39746,7 +39746,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "837388bd-5b9f-4ec4-9f30-e76e5c7a0ab9")
-		(property "Reference" "Q9"
+		(property "Reference" "Q3"
 			(at 43.688 194.056 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39943,7 +39943,7 @@
 		(instances
 			(project "Battery Display"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "Q9")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -47523,7 +47523,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c5f7a2a0-0193-4788-b3de-df63dd7e5e1b")
-		(property "Reference" "Q7"
+		(property "Reference" "Q1"
 			(at 24.638 194.056 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47720,7 +47720,7 @@
 		(instances
 			(project "Battery Display"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "Q7")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -51405,7 +51405,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eaa9bbc3-2b14-4bfb-b86d-363bf9c0703f")
-		(property "Reference" "Q8"
+		(property "Reference" "Q2"
 			(at 29.21 200.152 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51605,7 +51605,7 @@
 		(instances
 			(project "Battery Display"
 				(path "/66b9b57f-ad5a-4774-9c04-72011a45113c"
-					(reference "Q8")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
