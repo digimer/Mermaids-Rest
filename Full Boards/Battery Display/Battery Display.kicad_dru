@@ -1,0 +1,18 @@
+(version 1)
+
+# Barrier between the vessel-referenced side (netclass Chassis: GND_SHIP,
+# V_RAW, +5V_SHIP, N2K CAN) and the isolated board side (netclass Isolated).
+#
+# Maximum potential anywhere on this board is 32.4 V, the TVS clamp, so this
+# is NOT a creepage requirement. No tracking mechanism exists below roughly
+# 100 V and the laminate CTI is therefore irrelevant here.
+#
+# 1.0 mm is chosen for contamination robustness in a pollution degree 3
+# marine environment under acrylic conformal coating, and for visual
+# auditability of the barrier. It is bounded below by the SPBW06F-05 pin
+# pitch: its own cross-barrier pad gap measures 1.203 mm, so no PCB rule
+# can be tighter than that regardless of what a standard might ask for.
+
+(rule "isolation barrier"
+  (constraint clearance (min 1.0mm))
+  (condition "(A.NetClass == 'Chassis' && B.NetClass == 'Isolated') || (A.NetClass == 'Isolated' && B.NetClass == 'Chassis')"))

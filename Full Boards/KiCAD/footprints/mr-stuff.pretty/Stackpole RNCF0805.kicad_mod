@@ -1,0 +1,178 @@
+(footprint "Stackpole RNCF0805"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.5 0)
+		(layer "F.SilkS")
+		(uuid "cee3e6fc-8dca-45ce-9bc8-0b9e05379a30")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Stackpole RNCF0805"
+		(at 0 1.6 0)
+		(layer "F.Fab")
+		(uuid "c4a40cfd-b352-4d73-bec6-787788886a66")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCF.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c6e942b3-1003-40b4-bb1f-cf292c37a176")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "±0.5% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thin Film"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a2b5e702-fcd1-4f1f-847b-9ee371938fa2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.12 -0.7)
+		(end 0.12 -0.7)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5cd185fa-4e20-4f70-9501-1a9efe119473")
+	)
+	(fp_line
+		(start -0.12 0.7)
+		(end 0.12 0.7)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4668e6f3-a400-4103-a559-479c288f58be")
+	)
+	(fp_line
+		(start -1.685 -0.96)
+		(end 1.685 -0.96)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "05a70bc6-168c-4214-b779-20f1592fcf77")
+	)
+	(fp_line
+		(start -1.685 0.96)
+		(end -1.685 -0.96)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cccee2d7-ae9d-4573-970b-d61ae964cc52")
+	)
+	(fp_line
+		(start -1.685 0.96)
+		(end 1.685 0.96)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f40e49a1-4539-48a1-a6fc-6091d6519984")
+	)
+	(fp_line
+		(start 1.685 0.96)
+		(end 1.685 -0.96)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "257e07af-8a30-40c1-a02c-703d3d5b7274")
+	)
+	(fp_line
+		(start -1.07 0.7)
+		(end -1.07 -0.7)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1a6ac2bd-39bb-4950-b33f-1158d963f2b8")
+	)
+	(fp_line
+		(start 1.07 -0.7)
+		(end -1.07 -0.7)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1070731-5a12-43d9-b3d4-dbcc35ae8e6d")
+	)
+	(fp_line
+		(start 1.07 0.7)
+		(end -1.07 0.7)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "694c93bd-56b3-4837-83af-d901bfd4ff4d")
+	)
+	(fp_line
+		(start 1.07 0.7)
+		(end 1.07 -0.7)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "631aa836-1cd2-4e7c-a24d-13154c8a51ca")
+	)
+	(pad "1" smd rect
+		(at -0.935 0)
+		(size 1 1.42)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "1bfe18ed-285e-4019-a133-e73695cf97dd")
+	)
+	(pad "2" smd rect
+		(at 0.935 0)
+		(size 1 1.42)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "40961c4c-4aaf-41bd-a53c-478f1cfa13a6")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Stackpole RNCF0805/RNCF0805DTE3K30.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

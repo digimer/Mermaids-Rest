@@ -7,7 +7,7 @@
 		(at 0 -11 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "d9238bb4-a000-4bbc-a12d-ec14d7d272a0")
+		(uuid "87e5f53d-73e2-42ca-af14-e0e7d9bea49f")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 11.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "48834c70-8adf-431c-986e-71525c513d5b")
+		(uuid "6624fb51-4426-4ead-96e6-41f97e23e63e")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2795a8ec-7dcd-4935-b58a-684c0a6a1814")
+		(uuid "b4a47ba7-cdb4-47b4-b8ca-b206e15e470f")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2d28cdb3-14b1-4843-9d63-14a8f3bdddfd")
+		(uuid "127eba00-1173-4f37-9692-f8fe974d02c2")
 		(effects
 			(font
 				(size 1 1)
@@ -53,24 +53,35 @@
 			)
 		)
 	)
-	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
-		(start -9.1 -9.1)
-		(end 9.1 9.1)
+		(start -9.1 -9.75)
+		(end 9.1 9.8)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "be7c6e12-1182-4f23-b228-a539e0c165d5")
+		(uuid "cc264d1b-48ef-44b9-8e1c-b27983a8c9ab")
+	)
+	(fp_rect
+		(start -9.1 -9.75)
+		(end 9.1 9.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "97a0d859-5b84-425d-b9dc-916ecde0d753")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 13.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "14a46c8c-7086-43de-97ba-2ed07a7a9450")
+		(uuid "db6dc84d-7630-4666-9969-2dd62a65caa0")
 		(effects
 			(font
 				(size 1 1)
@@ -83,14 +94,14 @@
 		(size 6 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.03333333333)
-		(uuid "33b07062-d13e-41e8-8bac-e4470a3c7802")
+		(uuid "b12701fe-d1a3-4311-9633-7ae7a30a02e6")
 	)
 	(pad "2" smd roundrect
 		(at 0 6.65)
 		(size 6 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.03333333333)
-		(uuid "7f474cb5-2137-4b72-a3d4-5b30deb4957a")
+		(uuid "f8231d58-2e77-4ad8-b8b2-5d5219e24f36")
 	)
 	(embedded_fonts no)
 	(model "${MY_3DMODELS}/Codaca CSBL1809-100M/CSBL1809-100M.stp"

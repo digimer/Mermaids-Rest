@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -58,7 +60,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "missing_courtyard|143900000|108400000|7c79160a-373e-4238-9aef-fcdf00b654a1|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -77,6 +84,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -92,30 +100,34 @@
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "warning",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "warning",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "warning",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "ignore",
+        "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "ignore",
+        "text_height": "warning",
         "text_on_edge_cuts": "error",
-        "text_thickness": "ignore",
+        "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -239,17 +251,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": "4.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -439,11 +462,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -466,6 +492,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -481,7 +508,7 @@
     ]
   },
   "meta": {
-    "filename": "Battery Display v1.kicad_pro",
+    "filename": "Battery Display.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -500,24 +527,364 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
+        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "Chassis",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "Isolated",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Chassis",
+        "pattern": "GND_SHIP"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "+5V_SHIP"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "V_RAW"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "/N2K_CAN_H"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "/N2K_CAN_L"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(CMC1-I1)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(CMC1-I2)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(IDCB1-+VIN)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(J4-Pin_1)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(PTC2-Pad2)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(SD1-A)"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "unconnected-(IDCB1-R.C.-Pad3)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/BOARD_I2C_SCL"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/BOARD_I2C_SDA"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA1"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA2"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA3"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA4"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA5"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA6"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA7"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA8"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA9"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB1"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB2"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB3"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB4"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB5"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB6"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB7"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB8"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB9"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/DEBUG_SWCLK"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/DEBUG_SWDIO"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/DISPLAY_ON_IN"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/DISPLAY_ON_IN_PLUG"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/IS31_I2C_SCL"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/IS31_I2C_SDA"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/IS31_INTB_OUT"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/LCD_BL_BLUE_OUT"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/LCD_BL_GREEN_OUT"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/LCD_BL_RED_OUT"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/LCD_PGDOWN_IN"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/LCD_PGDOWN_IN_PLUG"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/LCD_PGUP_IN"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/LCD_PGUP_IN_PLUG"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/N2K_FDCAN_RX"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/N2K_FDCAN_TX"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/NRST"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/OSC_IN"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/OSC_OUT"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/RS232_RX"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/RS232_TX"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/USART1_RX"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/USART1_TX"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(CPD1-C_FILT)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(CPD1-R_EXT)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(LCD2-A-BLUE)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(LCD2-A-GREEN)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(LCD2-A-RED)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(LCD2-SCL)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(LCD2-SDA)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(LS1-EN)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q10-D)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q10-G)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q11-D)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q11-G)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q12-G)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q7-D)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q7-G)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q8-G)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q9-D)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(RST1-C1+)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(RST1-C1-)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(RST1-C2+)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(RST1-C2-)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(RST1-VS+)"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(RST1-VS-)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
       "netlist": "./",
-      "plot": "Gerber/",
+      "plot": "Plots/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -528,6 +895,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -683,6 +1054,7 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -690,6 +1062,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -721,6 +1094,7 @@
     },
     "page_layout_descr_file": "",
     "plot_directory": "PDFs/",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -729,13 +1103,28 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "Battery Display.kicad_sch",
+        "name": "Battery Display",
+        "uuid": "66b9b57f-ad5a-4774-9c04-72011a45113c"
+      }
+    ],
+    "used_designators": "",
+    "variants": []
   },
   "sheets": [
     [
       "66b9b57f-ad5a-4774-9c04-72011a45113c",
-      "Root"
+      "Battery Display"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }

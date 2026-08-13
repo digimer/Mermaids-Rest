@@ -1,12 +1,12 @@
 (footprint "Mermaid Silkscreen - 29.9mm"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "TDM***"
 		(at -0.9 7.5 0)
 		(layer "F.SilkS")
-		(uuid "71fef7e6-7244-4bab-9d89-b27b6fd73e86")
+		(uuid "529399d1-34d3-4545-8093-2d293cc631ca")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -18,7 +18,7 @@
 		(at 0.75 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "4c7bad25-7774-45c6-a4c4-8cb72b3a8a73")
+		(uuid "542b9bf5-89ec-486d-b73c-2553f1648ffa")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -30,7 +30,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "06525c72-9124-4ef3-aeb3-ece396af7218")
+		(uuid "d7266b06-e64c-425a-b379-2fc5045e4eee")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3d72de70-aa3a-4ed0-b085-10dcb3d975c2")
+		(uuid "c6b6ad18-0e21-464b-92f5-baf9cbd56942")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -51,6 +51,7 @@
 		)
 	)
 	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_poly
 		(pts
 			(xy -9.020245 -34.126701) (xy -8.957159 -34.08727) (xy -8.880676 -34.018288) (xy -8.875319 -34.012954)
@@ -1009,7 +1010,7 @@
 		)
 		(fill yes)
 		(layer "F.SilkS")
-		(uuid "ce58e383-0b8a-48e1-9564-3a62be150ea8")
+		(uuid "c22d1eab-8dc8-4c64-a7c5-890dc11c80c9")
 	)
 	(embedded_fonts no)
 )

@@ -1,0 +1,178 @@
+(footprint "Bel Fuse 0ZCG"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.55 0)
+		(layer "F.SilkS")
+		(uuid "a4761be1-b2d3-4e3b-8e88-d4e4abd4b51d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "0ZCG"
+		(at 0 2.65 0)
+		(layer "F.Fab")
+		(uuid "87713c67-2011-4542-9639-c909de5c8849")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d49beeed-e60b-4c73-93bd-9fdd2c0f4dfc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "PTC RESET FUSE"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c0fdc619-ab41-4e9e-8261-e74660fbe472")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.4 -1.62)
+		(end 1.4 -1.62)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7d9e7fa7-6c8a-4842-b13e-b784d125fc06")
+	)
+	(fp_line
+		(start -1.4 1.62)
+		(end 1.4 1.62)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1edea322-949b-4677-850c-021cdce06af6")
+	)
+	(fp_line
+		(start -3.755 -2)
+		(end -3.755 2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b192c15a-f37a-4bee-8433-51a8ddafcaef")
+	)
+	(fp_line
+		(start -3.755 2)
+		(end 3.755 2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "575e65fa-32d8-4cfb-9a23-f2d9448a8da0")
+	)
+	(fp_line
+		(start 3.755 -2)
+		(end -3.755 -2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0857e38f-522b-4a31-8a7b-a1ae9dbbe7d5")
+	)
+	(fp_line
+		(start 3.755 2)
+		(end 3.755 -2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1e938b0c-9df4-4d59-86eb-5537b205d8e3")
+	)
+	(fp_line
+		(start -2.275 -1.62)
+		(end 2.275 -1.62)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bcf4cbff-f873-4263-8c2c-ab927397389f")
+	)
+	(fp_line
+		(start -2.275 1.62)
+		(end -2.275 -1.62)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "55f8d73f-ec40-40ce-b279-7b61b44f1dc2")
+	)
+	(fp_line
+		(start 2.275 -1.62)
+		(end 2.275 1.62)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fe1ab176-1e63-4946-89c3-ab277baa0194")
+	)
+	(fp_line
+		(start 2.275 1.62)
+		(end -2.275 1.62)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f52b9a52-6f1f-4322-afcb-f749be3e69eb")
+	)
+	(pad "1" smd rect
+		(at -2.615 0)
+		(size 1.78 3.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "844e87a9-54c6-4b97-b681-a45b2bd74232")
+	)
+	(pad "2" smd rect
+		(at 2.615 0)
+		(size 1.78 3.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "7cf512c7-5a23-4e27-8653-d5c4441fd51e")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Bel Fuse 0ZCG/0ZCG0110CF2B.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.508,
-          "width": 1.508
+          "drill": 0.0,
+          "height": 0.5,
+          "width": 0.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -62,31 +62,7 @@
       ],
       "drc_exclusions": [
         [
-          "silk_over_copper|172400000|54718863|8f38a542-b64a-479d-9315-53e6a189e79a|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_over_copper|174954884|54794778|77bad81c-b3fc-4c17-82ab-2d5bcd4ede5b|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_over_copper|176350000|53000000|6c5b6397-a2dc-491b-8715-e4100c9029b4|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_over_copper|177300000|48394557|e5ead5d8-a1cc-4810-ae22-250aecc5036b|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_over_copper|179930852|48983399|3f80ef39-de75-4317-bc8f-bde6ff94f443|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_over_copper|221475000|48900000|d5a8a1ae-f899-49b0-b07e-6d781febfdf9|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_over_copper|230100000|50650000|7865ca5e-39d7-4599-8322-30fa4dfbcfba|00000000-0000-0000-0000-000000000000",
+          "missing_courtyard|185000000|181000000|b215267f-7dde-4e29-81af-0918f0ae6dfe|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],
@@ -108,9 +84,9 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
-        "footprint_symbol_field_mismatch": "warning",
+        "footprint_symbol_field_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_to_hole": "error",
         "holes_co_located": "warning",
@@ -124,14 +100,14 @@
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "warning",
         "missing_footprint": "warning",
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "warning",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "warning",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -139,9 +115,9 @@
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "ignore",
+        "text_height": "warning",
         "text_on_edge_cuts": "error",
-        "text_thickness": "ignore",
+        "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
@@ -553,6 +529,20 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "Chassis",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "Isolated",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -560,14 +550,167 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Chassis",
+        "pattern": "GND_SHIP"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "+5V_SHIP"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "V_RAW"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "/N2K_CAN_*"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(SD1-*"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(PTC1-*"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(IDCB1-*"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(J3-*"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "Net-(CMC1-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/NRST"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/BOARD_I2C_*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/IS31_*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/LCD_*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CA*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CB*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/CONFIG*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/DEBUG_*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/DISPLAY_ON_*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/N2K_FDCAN_*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/OSC_*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/RS232_*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "/USART1_*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(CPD1-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(LCD1-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(LS1-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(R1-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(R2-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(RST1-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q1-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q2-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q3-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q4-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q5-*"
+      },
+      {
+        "netclass": "Isolated",
+        "pattern": "Net-(Q6-*"
+      },
+      {
+        "netclass": "Chassis",
+        "pattern": "unconnected-(IDCB1-R.C.-*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "PDFs/",
+      "plot": "Plots/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -582,7 +725,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "Compass Rose v4.1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -728,6 +871,12 @@
           "label": "STANDARD",
           "name": "STANDARD",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part",
+          "name": "Part",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -786,7 +935,7 @@
         "uuid": "e4671408-3e04-42c4-aa2c-7576ad4f645e"
       }
     ],
-    "used_designators": "FID1-3",
+    "used_designators": "R29-31",
     "variants": []
   },
   "sheets": [
