@@ -12884,7 +12884,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Amphenol_L777SDE09PA4CH4F"
+		(property "Footprint" "mr-stuff:Amphenol L777SDE09PA4CH4F"
 			(at 0 -18.542 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23984,13 +23984,19 @@
 		(embedded_fonts no)
 	)
 	(symbol "Kingbright WP383SURDTK"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "LED"
-			(at 0 4.572 0)
+			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24057,6 +24063,30 @@
 		(symbol "Kingbright WP383SURDTK_0_1"
 			(polyline
 				(pts
+					(xy -3.0566 0.4094) (xy -4.5806 1.9334) (xy -4.5806 1.1714) (xy -4.5806 1.9334) (xy -3.8186 1.9334)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.7866 0.4094) (xy -3.3106 1.9334) (xy -3.3106 1.1714) (xy -3.3106 1.9334) (xy -2.5486 1.9334)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
 					(xy -1.27 0) (xy 1.27 0)
 				)
 				(stroke
@@ -24073,30 +24103,6 @@
 				)
 				(stroke
 					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.6731 1.5373) (xy -2.1971 3.0613) (xy -2.1971 2.2993) (xy -2.1971 3.0613) (xy -1.4351 3.0613)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.5969 1.5373) (xy -0.9271 3.0613) (xy -0.9271 2.2993) (xy -0.9271 3.0613) (xy -0.1651 3.0613)
-				)
-				(stroke
-					(width 0)
 					(type default)
 				)
 				(fill
