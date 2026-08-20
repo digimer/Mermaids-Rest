@@ -42106,10 +42106,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a5114f8f-ae5a-4bb9-89dd-e71f0a3af41d")
 		(property "Reference" "FST3"
 			(at 64.77 154.432 90)
@@ -42156,6 +42156,17 @@
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
 			(at 66.04 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 66.04 156.21 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
