@@ -4321,7 +4321,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "PD"
-				(at -0.254 55.88 0)
+				(at 0 51.562 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4331,7 +4331,7 @@
 				)
 			)
 			(property "Value" "CYPD727268LQXQXQSA1"
-				(at -0.254 53.086 0)
+				(at 0 49.022 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4364,6 +4364,17 @@
 			)
 			(property "Description" "ARM® Cortex®-M0 - USB Type C Microcontroller IC FLASH (128kB), ROM (32kB) 68-UFQFN Exposed Pad"
 				(at 0.254 -57.912 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Infineon CYPD727268LQXQXQSA1"
+				(at 0 -52.578 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7072,7 +7083,7 @@
 					)
 				)
 			)
-			(property "Value" "Vishay NTCS0805E3103FHT"
+			(property "Value" "NTCS0805E3103FHT"
 				(at 0 4.064 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7108,6 +7119,17 @@
 			)
 			(property "Description" "NTC Thermistor 10k 0805 (2012 Metric)"
 				(at 0 -11.938 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Vishay NTCS0805E3103FHT"
+				(at 0 -4.318 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -28112,7 +28134,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mr-stuff:Infineon CYPD727x"
+		(property "Footprint" "Package_DFN_QFN:QFN-68-1EP_8x8mm_P0.4mm_EP5.2x5.2mm_ThermalVias"
 			(at 339.344 156.718 0)
 			(hide yes)
 			(show_name no)
@@ -28136,6 +28158,17 @@
 		)
 		(property "Description" "ARM® Cortex®-M0 - USB Type C Microcontroller IC FLASH (128kB), ROM (32kB) 68-UFQFN Exposed Pad"
 			(at 339.344 159.512 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Infineon CYPD727268LQXQXQSA1"
+			(at 339.09 154.178 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32654,6 +32687,17 @@
 				)
 			)
 		)
+		(property "Part" "Vishay NTCS0805E3103FHT"
+			(at 283.718 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f2c3250b-55ae-43a5-a9b6-e7f66c0fac2d")
 		)
@@ -33781,6 +33825,17 @@
 		)
 		(property "Description" "NTC Thermistor 10k 0805 (2012 Metric)"
 			(at 274.828 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay NTCS0805E3103FHT"
+			(at 267.208 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
