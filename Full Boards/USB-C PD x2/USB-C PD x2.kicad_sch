@@ -6005,7 +6005,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mr-parts:Nexperia PESD24"
+		(symbol "mr-parts:Nexperia MMBZ27"
 			(pin_names
 				(offset 0.254)
 			)
@@ -6024,18 +6024,7 @@
 					)
 				)
 			)
-			(property "Value" "Nexperia PESD24"
-				(at 0.254 -11.938 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "mr-stuff:Nexperia PESD24"
+			(property "Value" "MMBZ27VAL,215"
 				(at 0 -9.398 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6043,12 +6032,11 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-				(at 0 -6.858 0)
+			(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+				(at 0 -17.526 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6059,8 +6047,20 @@
 					)
 				)
 			)
-			(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-				(at 0 -14.478 0)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+				(at 0 -14.986 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+				(at 0 -12.192 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6070,19 +6070,8 @@
 					)
 				)
 			)
-			(property "Part" "Nexperia PESD24VU1UT,215"
-				(at 0 -17.018 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Alt Part" "Vishay VGSOT24-HG3-08"
-				(at 0 -19.304 0)
+			(property "Part" "Nexperia MMBZ27VAL,215"
+				(at 0.508 -6.604 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6114,7 +6103,7 @@
 					)
 				)
 			)
-			(symbol "Nexperia PESD24_0_1"
+			(symbol "Nexperia MMBZ27_0_1"
 				(polyline
 					(pts
 						(xy -5.08 2.54) (xy 2.54 2.54)
@@ -6166,6 +6155,18 @@
 				(polyline
 					(pts
 						(xy -2.54 -1.27) (xy -2.54 -3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -2.2225 -1.27)
 					)
 					(stroke
 						(width 0.127)
@@ -6283,7 +6284,7 @@
 					)
 				)
 			)
-			(symbol "Nexperia PESD24_1_1"
+			(symbol "Nexperia MMBZ27_1_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -19830,7 +19831,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
 			(at 270.51 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -19841,7 +19842,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83173/tlmx1100.pdf"
+		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
 			(at 270.51 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -19852,7 +19853,7 @@
 				)
 			)
 		)
-		(property "Description" "Red 633nm LED Indication - Discrete 2.1V 0603 (1608 Metric)"
+		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 270.51 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -19863,18 +19864,7 @@
 				)
 			)
 		)
-		(property "Part" "Vishay TLMS1101-GS15"
-			(at 270.51 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "ams OSRAM LS Q976.01-N1Q2-1-20-R18"
+		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1-20-R18"
 			(at 270.51 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -23195,7 +23185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
 			(at 269.24 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -23206,7 +23196,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83173/tlmx1100.pdf"
+		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
 			(at 269.24 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -23217,7 +23207,7 @@
 				)
 			)
 		)
-		(property "Description" "Red 633nm LED Indication - Discrete 2.1V 0603 (1608 Metric)"
+		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 269.24 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -23228,18 +23218,7 @@
 				)
 			)
 		)
-		(property "Part" "Vishay TLMS1101-GS15"
-			(at 269.24 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "ams OSRAM LS Q976.01-N1Q2-1-20-R18"
+		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1-20-R18"
 			(at 269.24 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -27621,7 +27600,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 205.74 218.44 0)
 		(unit 1)
 		(body_style 1)
@@ -27632,7 +27611,7 @@
 		(dnp no)
 		(uuid "59c3ad52-d864-4fb6-ae3e-3ffa4cd2e20f")
 		(property "Reference" "TVS6"
-			(at 205.74 212.09 0)
+			(at 205.74 211.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27652,8 +27631,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 205.74 227.838 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 205.74 235.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27664,8 +27643,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 205.74 225.298 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 205.74 233.426 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27676,8 +27655,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 205.74 232.918 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 205.74 230.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27687,19 +27666,8 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PESD24VU1UT,215"
-			(at 205.74 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "Vishay VGSOT24-HG3-08"
-			(at 205.74 237.744 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 206.248 225.044 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39316,7 +39284,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 92.71 218.44 0)
 		(unit 1)
 		(body_style 1)
@@ -39327,7 +39295,7 @@
 		(dnp no)
 		(uuid "b03c4470-e215-421e-aa89-c8257be77ceb")
 		(property "Reference" "TVS4"
-			(at 92.71 212.09 0)
+			(at 92.71 211.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39347,8 +39315,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 92.71 227.838 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 92.71 235.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39359,8 +39327,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 92.71 225.298 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 92.71 233.426 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39371,8 +39339,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 92.71 232.918 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 92.71 230.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39382,19 +39350,8 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PESD24VU1UT,215"
-			(at 92.71 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "Vishay VGSOT24-HG3-08"
-			(at 92.71 237.744 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 93.218 225.044 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39639,7 +39596,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 115.57 218.44 0)
 		(unit 1)
 		(body_style 1)
@@ -39650,7 +39607,7 @@
 		(dnp no)
 		(uuid "b308ef11-3296-41ac-add8-53c4d3bfd711")
 		(property "Reference" "TVS2"
-			(at 115.57 212.09 0)
+			(at 115.57 211.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39670,8 +39627,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 115.57 227.838 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 115.57 235.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39682,8 +39639,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 115.57 225.298 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 115.57 233.426 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39694,8 +39651,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 115.57 232.918 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 115.57 230.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39705,19 +39662,8 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PESD24VU1UT,215"
-			(at 115.57 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "Vishay VGSOT24-HG3-08"
-			(at 115.57 237.744 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 116.078 225.044 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41941,7 +41887,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
 			(at 269.24 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -41952,7 +41898,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83173/tlmx1100.pdf"
+		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
 			(at 269.24 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -41963,7 +41909,7 @@
 				)
 			)
 		)
-		(property "Description" "Red 633nm LED Indication - Discrete 2.1V 0603 (1608 Metric)"
+		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 269.24 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -41974,18 +41920,7 @@
 				)
 			)
 		)
-		(property "Part" "Vishay TLMS1101-GS15"
-			(at 269.24 210.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "ams OSRAM LS Q976.01-N1Q2-1-20-R18"
+		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1-20-R18"
 			(at 269.24 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -42222,7 +42157,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 24.13 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -42233,7 +42168,7 @@
 				)
 			)
 		)
-		(property "Description" "51.1 kOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "51.1 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 24.13 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -42244,18 +42179,7 @@
 				)
 			)
 		)
-		(property "Part" "Stackpole RMCF1206FG51K1"
-			(at 24.13 54.61 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "Stackpole RNCP1206FTD51K1"
+		(property "Part" "Stackpole RNCP1206FTD51K1"
 			(at 24.13 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -42641,7 +42565,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 205.74 232.41 0)
 		(unit 1)
 		(body_style 1)
@@ -42652,7 +42576,7 @@
 		(dnp no)
 		(uuid "cb599607-37f7-4b91-a9f5-8d4a4d9c94fb")
 		(property "Reference" "TVS7"
-			(at 205.74 226.06 0)
+			(at 205.74 225.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42672,8 +42596,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 205.74 241.808 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 205.74 249.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42684,8 +42608,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 205.74 239.268 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 205.74 247.396 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42696,8 +42620,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 205.74 246.888 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 205.74 244.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42707,19 +42631,8 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PESD24VU1UT,215"
-			(at 205.74 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "Vishay VGSOT24-HG3-08"
-			(at 205.74 251.714 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 206.248 239.014 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43086,7 +42999,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 92.71 232.41 0)
 		(unit 1)
 		(body_style 1)
@@ -43097,7 +43010,7 @@
 		(dnp no)
 		(uuid "ce4a72b0-dc5e-4dcc-96e9-84d26c2555a0")
 		(property "Reference" "TVS5"
-			(at 92.71 226.06 0)
+			(at 92.71 225.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43117,8 +43030,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 92.71 241.808 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 92.71 249.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43129,8 +43042,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 92.71 239.268 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 92.71 247.396 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43141,8 +43054,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 92.71 246.888 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 92.71 244.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43152,19 +43065,8 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PESD24VU1UT,215"
-			(at 92.71 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "Vishay VGSOT24-HG3-08"
-			(at 92.71 251.714 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 93.218 239.014 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47177,7 +47079,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 228.6 232.41 0)
 		(unit 1)
 		(body_style 1)
@@ -47188,7 +47090,7 @@
 		(dnp no)
 		(uuid "f02dfa21-cbba-48ad-a6eb-6332679b0c52")
 		(property "Reference" "TVS9"
-			(at 228.6 226.06 0)
+			(at 228.6 225.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47208,8 +47110,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 228.6 241.808 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 228.6 249.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47220,8 +47122,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 228.6 239.268 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 228.6 247.396 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47232,8 +47134,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 228.6 246.888 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 228.6 244.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47243,19 +47145,8 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PESD24VU1UT,215"
-			(at 228.6 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "Vishay VGSOT24-HG3-08"
-			(at 228.6 251.714 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 229.108 239.014 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47284,7 +47175,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 228.6 218.44 0)
 		(unit 1)
 		(body_style 1)
@@ -47295,7 +47186,7 @@
 		(dnp no)
 		(uuid "f17db37b-8635-48a3-a4dc-8ad31c424e38")
 		(property "Reference" "TVS8"
-			(at 228.6 212.09 0)
+			(at 228.6 211.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47315,8 +47206,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 228.6 227.838 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 228.6 235.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47327,8 +47218,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 228.6 225.298 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 228.6 233.426 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47339,8 +47230,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 228.6 232.918 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 228.6 230.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47350,19 +47241,8 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PESD24VU1UT,215"
-			(at 228.6 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "Vishay VGSOT24-HG3-08"
-			(at 228.6 237.744 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 229.108 225.044 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47776,7 +47656,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 115.57 232.41 0)
 		(unit 1)
 		(body_style 1)
@@ -47787,7 +47667,7 @@
 		(dnp no)
 		(uuid "f4e5357c-0d60-4c62-bd5a-56e14f553291")
 		(property "Reference" "TVS3"
-			(at 115.57 226.06 0)
+			(at 115.57 225.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47807,8 +47687,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 115.57 241.808 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 115.57 249.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47819,8 +47699,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 115.57 239.268 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 115.57 247.396 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47831,8 +47711,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 115.57 246.888 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 115.57 244.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47842,19 +47722,8 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PESD24VU1UT,215"
-			(at 115.57 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "Vishay VGSOT24-HG3-08"
-			(at 115.57 251.714 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 116.078 239.014 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49816,7 +49685,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
 			(at 269.24 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -49827,7 +49696,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83173/tlmx1100.pdf"
+		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
 			(at 269.24 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -49838,7 +49707,7 @@
 				)
 			)
 		)
-		(property "Description" "Red 633nm LED Indication - Discrete 2.1V 0603 (1608 Metric)"
+		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 269.24 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -49849,18 +49718,7 @@
 				)
 			)
 		)
-		(property "Part" "Vishay TLMS1101-GS15"
-			(at 269.24 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alt Part" "ams OSRAM LS Q976.01-N1Q2-1-20-R18"
+		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1-20-R18"
 			(at 269.24 218.44 0)
 			(hide yes)
 			(show_name no)
