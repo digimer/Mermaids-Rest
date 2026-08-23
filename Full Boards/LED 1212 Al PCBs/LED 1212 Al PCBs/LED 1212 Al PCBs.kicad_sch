@@ -9,129 +9,6 @@
 		(rev "v1.1")
 	)
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "mr-parts:LJ_CRBP.01-JZLX-27-3A4A"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -719,7 +596,7 @@
 		)
 	)
 	(rectangle
-		(start 92.075 72.39)
+		(start 100.33 72.39)
 		(end 146.685 97.79)
 		(stroke
 			(width 0)
@@ -731,28 +608,16 @@
 		(uuid "0d5dd366-a744-448a-bf28-b374284a08ac")
 	)
 	(junction
-		(at 106.68 87.63)
+		(at 115.57 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0e55e8a6-c224-4aed-bcad-d588a6b5990f")
-	)
-	(junction
-		(at 106.68 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "21a7e7d4-8e37-45bb-a2d2-068b77ec81d4")
+		(uuid "3565a762-da7f-43b8-84d7-ba5fb8ad10c9")
 	)
 	(junction
 		(at 115.57 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2fe10ba2-1a6f-4c6d-8b26-21c258984153")
-	)
-	(junction
-		(at 115.57 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e63197d4-de87-4cfc-b49b-3dd88a31d70f")
+		(uuid "a3157284-97bf-467a-a7d2-12b97a47f117")
 	)
 	(no_connect
 		(at 116.84 85.09)
@@ -780,7 +645,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 82.55) (xy 115.57 82.55)
+			(xy 111.76 82.55) (xy 115.57 82.55)
 		)
 		(stroke
 			(width 0)
@@ -790,23 +655,13 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 87.63) (xy 106.68 87.63)
+			(xy 111.76 87.63) (xy 115.57 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2a4a312e-c315-4e2a-a75b-71debccfce90")
-	)
-	(wire
-		(pts
-			(xy 104.14 82.55) (xy 106.68 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ca0c21d-d183-4318-befe-285b0fd32cd7")
 	)
 	(wire
 		(pts
@@ -817,16 +672,6 @@
 			(type default)
 		)
 		(uuid "9bf63b9c-2c10-4aad-a36c-38d394f37d79")
-	)
-	(wire
-		(pts
-			(xy 106.68 87.63) (xy 115.57 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b515f522-e0cf-4ffe-9686-232724225f35")
 	)
 	(wire
 		(pts
@@ -993,86 +838,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 106.68 87.63 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "813126f6-c8fb-44cf-931b-603a3886d7ea")
-		(property "Reference" "TP2"
-			(at 106.934 93.472 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 104.14 89.6621 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
-			(at 101.6 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 106.68 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "802199c9-db53-4a96-8a8b-2f790b23e4c4")
-		)
-		(instances
-			(project "LED 1212 Al PCBs"
-				(path "/230f5e89-ed89-4016-bb7f-48da2e754b45"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 104.14 82.55 270)
+		(at 111.76 82.55 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1082,7 +849,7 @@
 		(dnp no)
 		(uuid "83ac98b2-4b26-4f20-ba90-014bacb9ac1e")
 		(property "Reference" "#PWR02"
-			(at 97.79 82.55 0)
+			(at 105.41 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1093,7 +860,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.838 82.55 90)
+			(at 108.458 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1104,7 +871,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 82.55 0)
+			(at 111.76 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1115,7 +882,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 82.55 0)
+			(at 111.76 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1126,7 +893,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 82.55 0)
+			(at 111.76 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1320,86 +1087,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 106.68 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e2a6e8e7-55a1-4796-98ee-0cedb1d2800e")
-		(property "Reference" "TP1"
-			(at 106.426 76.708 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 109.22 80.5179 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
-			(at 111.76 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 106.68 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4b1032cf-4552-4052-8b7a-1f0b863cdd56")
-		)
-		(instances
-			(project "LED 1212 Al PCBs"
-				(path "/230f5e89-ed89-4016-bb7f-48da2e754b45"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 104.14 87.63 90)
+		(at 111.76 87.63 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1409,7 +1098,7 @@
 		(dnp no)
 		(uuid "fa6672c7-2e18-4e9f-a351-b99fd45a136c")
 		(property "Reference" "#PWR01"
-			(at 107.95 87.63 0)
+			(at 115.57 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1420,7 +1109,7 @@
 			)
 		)
 		(property "Value" "+2.15V"
-			(at 101.092 87.63 90)
+			(at 108.712 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1431,7 +1120,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 87.63 0)
+			(at 111.76 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1442,7 +1131,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 87.63 0)
+			(at 111.76 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1453,7 +1142,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 104.14 87.63 0)
+			(at 111.76 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
