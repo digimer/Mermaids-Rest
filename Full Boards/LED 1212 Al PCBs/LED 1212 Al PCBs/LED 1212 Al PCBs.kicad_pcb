@@ -135,7 +135,7 @@
 			(at -11.25 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "aad9f183-61b3-4896-95f6-a62467824896")
+			(uuid "45a50f45-c78d-4c4d-8590-6206f1102c47")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -147,7 +147,7 @@
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "d7bf2dad-c886-484f-919e-657ec0ab1523")
+			(uuid "8fd8b90e-f09d-45f7-b13a-062e6aa0c42e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -159,7 +159,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4c9894e0-01e5-47c5-b361-2d365bef7db4")
+			(uuid "2d334691-7fe2-411e-a70a-fd62731591e6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -170,19 +170,19 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a8e7bffb-3c31-40bc-9d9c-c28911a33595")
+			(uuid "b7a9efd4-3681-44af-8218-81ec043b37d6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Height" "2.24"
+		(property "Part - Red" "ams OSRAM LJ CRBP.01-JZLX-27-3A4A-350-R18"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "67915144-fea4-43ed-a9d7-0302f64baf82")
+			(uuid "8e370aea-9856-4b28-94db-b86311e9c132")
 			(effects
 				(font
 					(size 1 1)
@@ -190,12 +190,12 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "ams OSRAM"
+		(property "Part - Green" "ams OSRAM LT CRBP.01-KZLZ-36-Q525-350-R18"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9290f524-e6a0-4b8e-a979-f4b4bf7f432f")
+			(uuid "2fca6151-f10d-4848-8f18-9aabc63d3e0c")
 			(effects
 				(font
 					(size 1 1)
@@ -203,64 +203,12 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LJ CRBP.01-JZLX-27-3A4A"
+		(property "Part - White" "ams OSRAM LUW CRBP.01-LYMY-G4J4-Y474-350-R18"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1db807cb-a530-4d8a-a828-2fd0e06f615a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Mouser Part Number" "720-LJCRBP01JZA9260"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d002112a-6d6c-4d3e-9860-a36b851012a4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LJ-CRBP.01-JZLX-27-3A4A?qs=vvQtp7zwQdO%252B1A3QlQcixg%3D%3D"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b2adf071-8bde-40c1-9bcb-0ae94e9ab3e3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d3fbfbf2-a5b1-4a39-aeb7-ceae0eab343f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "09998bf7-bb63-4d6c-a8cf-dcc1add38d41")
+			(uuid "976e30ea-7d82-4865-9f2a-5fe72c2736bb")
 			(effects
 				(font
 					(size 1 1)
@@ -425,7 +373,7 @@
 			(at 0 1.125)
 			(size 0.55 2.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "+2.15V")
+			(net "+2V")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "da8c7894-3570-4f2b-8189-409e692b13aa")
@@ -452,17 +400,17 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_4.0x4.0mm"
+	(footprint "mr-stuff:SolderWirePad_1x01_SMD_4x4mm"
 		(layer "F.Cu")
-		(uuid "63b12335-9965-41a6-a723-3477963c6e55")
-		(at 103.5 111)
-		(descr "SMD rectangular pad as test Point, square 4.0mm side length")
-		(tags "test point SMD pad rectangle square")
-		(property "Reference" "TP1"
-			(at 0 -2.898 0)
+		(uuid "2f11979b-aaf0-4150-9387-b578304dcb93")
+		(at 96.5 111)
+		(descr "Wire Pad, Square, SMD Pad,  2mm x 4mm")
+		(tags "MeasurementPoint Square SMDPad 2mmx4mm ")
+		(property "Reference" "SMD2"
+			(at 0 -2.85 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "8f7cbe1f-ebb6-443e-9997-e5df6ae43bd6")
+			(uuid "d70dee2e-605e-405c-8ade-d25cb536f9ad")
 			(effects
 				(font
 					(size 1 1)
@@ -470,10 +418,10 @@
 				)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 0 3.1 0)
+		(property "Value" "+ Pad"
+			(at 0 3 0)
 			(layer "F.Fab")
-			(uuid "e84d0978-b188-4af9-87e5-a1a195562dce")
+			(uuid "649ee6d9-e362-4647-9263-05496d641d62")
 			(effects
 				(font
 					(size 1 1)
@@ -483,10 +431,9 @@
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
-			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4a68ac79-328f-4ea0-afdc-f9b063ecd3f2")
+			(uuid "b329f7e6-37a9-4244-91d6-09d233604f72")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -494,12 +441,11 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "4x4mm SMD pad"
 			(at 0 0 0)
-			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5a8fd090-cbb1-4a42-9ce8-702213ec8a29")
+			(uuid "3f2beed1-1e15-4716-aa33-3e37796450da")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -507,8 +453,8 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/e2a6e8e7-55a1-4796-98ee-0cedb1d2800e")
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/cfd5f197-f382-4c5a-87ec-d3d95dc4b9aa")
 		(sheetname "/")
 		(sheetfile "LED 1212 Al PCBs.kicad_sch")
 		(units
@@ -518,90 +464,32 @@
 			)
 		)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -2.2 -2.2)
-			(end 2.2 -2.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "81199a7a-e85f-426b-aee1-557d0b6509b2")
-		)
-		(fp_line
-			(start -2.2 2.2)
-			(end -2.2 -2.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ba676176-8a84-46b8-94c6-244591220c16")
-		)
-		(fp_line
-			(start 2.2 -2.2)
-			(end 2.2 2.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "32444f7f-0412-407c-a565-3ebac72105ce")
-		)
-		(fp_line
-			(start 2.2 2.2)
-			(end -2.2 2.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e652a7d5-35bf-4908-942b-aa46d3add2ad")
-		)
-		(fp_line
-			(start -2.5 -2.5)
-			(end -2.5 2.5)
+		(fp_rect
+			(start -2.25 -2.25)
+			(end 2.25 2.25)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "15cb4512-0eee-4fbb-bc4c-0b7660d4e8b7")
+			(uuid "68c1fe7d-1188-4ce5-8b14-5024cf51371d")
 		)
-		(fp_line
-			(start -2.5 -2.5)
-			(end 2.5 -2.5)
+		(fp_rect
+			(start -2.15 -2.15)
+			(end 2.15 2.15)
 			(stroke
-				(width 0.05)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "12c1a568-7a5b-4dd0-a1a9-e919618c48bc")
-		)
-		(fp_line
-			(start 2.5 2.5)
-			(end -2.5 2.5)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "86f17faf-d020-4cfa-bbfb-137148185941")
-		)
-		(fp_line
-			(start 2.5 2.5)
-			(end 2.5 -2.5)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "f011fd00-ed19-459a-bb64-25615e562909")
+			(fill no)
+			(layer "F.Fab")
+			(uuid "7d588659-6779-41e7-9a51-90867a895ecc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.9 0)
+			(at 0 4.5 0)
 			(layer "F.Fab")
-			(uuid "c3ccf911-7eb6-433a-b41b-52c2fd0c473e")
+			(uuid "3fff5df9-1260-4d9b-b3fa-a3d74616743a")
 			(effects
 				(font
 					(size 1 1)
@@ -609,28 +497,29 @@
 				)
 			)
 		)
-		(pad "1" smd rect
+		(pad "1" smd roundrect
 			(at 0 0)
 			(size 4 4)
 			(layers "F.Cu" "F.Mask")
-			(net "GND")
-			(pinfunction "1_1")
+			(roundrect_rratio 0.0625)
+			(net "+2V")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
-			(uuid "950dda8e-e14e-4530-ba1e-8932d96c3600")
+			(uuid "eb4df85f-834c-44c6-ab34-9f07ebf15b30")
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_4.0x4.0mm"
+	(footprint "mr-stuff:SolderWirePad_1x01_SMD_4x4mm"
 		(layer "F.Cu")
-		(uuid "beacaa8a-8a68-47a9-a559-831fbe8a5f63")
-		(at 96.5 111)
-		(descr "SMD rectangular pad as test Point, square 4.0mm side length")
-		(tags "test point SMD pad rectangle square")
-		(property "Reference" "TP2"
-			(at 0 -2.898 0)
+		(uuid "8eb0fc9f-34c0-4449-a38e-6dc82edeb8ba")
+		(at 103.495 111)
+		(descr "Wire Pad, Square, SMD Pad,  2mm x 4mm")
+		(tags "MeasurementPoint Square SMDPad 2mmx4mm ")
+		(property "Reference" "SMD1"
+			(at 0 -2.85 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "7927097f-0184-44a1-b5e9-0f145a0a6085")
+			(uuid "b6e5ce9a-95c3-4edc-be49-651e97e98529")
 			(effects
 				(font
 					(size 1 1)
@@ -638,10 +527,10 @@
 				)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 0 3.1 0)
+		(property "Value" "- Pad"
+			(at 0 3 0)
 			(layer "F.Fab")
-			(uuid "34f44beb-0df4-4259-a6c5-5decb577bb7f")
+			(uuid "f171feb6-b8f3-402a-a623-839c55681205")
 			(effects
 				(font
 					(size 1 1)
@@ -651,10 +540,9 @@
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
-			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2176f047-9222-4f7c-af71-f2366347984a")
+			(uuid "1cd14790-e297-4313-8aad-7d2064f4c618")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -662,12 +550,11 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "4x4mm SMD pad"
 			(at 0 0 0)
-			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "214527f1-144a-4237-a295-068d0fb469d4")
+			(uuid "7c48f2a9-4e0d-4d10-9253-e264cb7c5235")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -675,8 +562,8 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/813126f6-c8fb-44cf-931b-603a3886d7ea")
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/76332da0-3b91-456c-8dbd-aec7e40c6660")
 		(sheetname "/")
 		(sheetfile "LED 1212 Al PCBs.kicad_sch")
 		(units
@@ -686,90 +573,32 @@
 			)
 		)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -2.2 -2.2)
-			(end 2.2 -2.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c73db73b-22cc-4253-b130-e152e9650625")
-		)
-		(fp_line
-			(start -2.2 2.2)
-			(end -2.2 -2.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "133e76e5-05fc-4114-9e00-e033e8ad890e")
-		)
-		(fp_line
-			(start 2.2 -2.2)
-			(end 2.2 2.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "706f0612-be29-445c-bfcf-7d4d07a62632")
-		)
-		(fp_line
-			(start 2.2 2.2)
-			(end -2.2 2.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "13c9425c-9c51-431d-9677-be30c8f7e805")
-		)
-		(fp_line
-			(start -2.5 -2.5)
-			(end -2.5 2.5)
+		(fp_rect
+			(start -2.25 -2.25)
+			(end 2.25 2.25)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "58075451-4f0a-4a00-a480-adeac6321c70")
+			(uuid "929e73cd-d8bd-4117-b4eb-32752d255657")
 		)
-		(fp_line
-			(start -2.5 -2.5)
-			(end 2.5 -2.5)
+		(fp_rect
+			(start -2.15 -2.15)
+			(end 2.15 2.15)
 			(stroke
-				(width 0.05)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "805e7b14-464e-4a7a-8b1f-0c5692266d64")
-		)
-		(fp_line
-			(start 2.5 2.5)
-			(end -2.5 2.5)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "f633aa42-bad5-4f86-a498-a81a81a45654")
-		)
-		(fp_line
-			(start 2.5 2.5)
-			(end 2.5 -2.5)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8d290037-d2ea-4974-b5c3-9fc0cb1e48a5")
+			(fill no)
+			(layer "F.Fab")
+			(uuid "3ee29362-f059-4252-ae45-9430f1e6889b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.9 0)
+			(at 0 4.5 0)
 			(layer "F.Fab")
-			(uuid "5bfbef96-cb81-4f65-9016-073b41fcb325")
+			(uuid "543859e0-a3d1-43db-8216-e25b3bfe81e7")
 			(effects
 				(font
 					(size 1 1)
@@ -777,14 +606,15 @@
 				)
 			)
 		)
-		(pad "1" smd rect
+		(pad "1" smd roundrect
 			(at 0 0)
 			(size 4 4)
 			(layers "F.Cu" "F.Mask")
-			(net "+2.15V")
-			(pinfunction "1_1")
+			(roundrect_rratio 0.0625)
+			(net "GND")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
-			(uuid "fcd603bb-cd25-4fc2-9da8-10c6b69dbee4")
+			(uuid "81a59222-c0b0-4433-a0b4-a4a562d2d54a")
 		)
 		(embedded_fonts no)
 	)
@@ -1018,12 +848,12 @@
 		)
 	)
 	(segment
-		(start 101.125 100)
-		(end 101.125 101.375)
+		(start 101.125 101.375)
+		(end 105.25 105.5)
 		(width 0.508)
 		(layer "F.Cu")
 		(net "GND")
-		(uuid "4d3799e7-82a7-4ba1-b556-13faf781aeee")
+		(uuid "46134e80-28a1-4070-95b6-e27b5f9c5d9d")
 	)
 	(segment
 		(start 105.25 105.5)
@@ -1031,7 +861,7 @@
 		(width 0.508)
 		(layer "F.Cu")
 		(net "GND")
-		(uuid "b01a9270-19a9-4b73-b289-4cd4eeee29b8")
+		(uuid "857a4ea8-8c8c-4069-a6b6-066290e18c8c")
 	)
 	(segment
 		(start 105.25 109.25)
@@ -1039,47 +869,55 @@
 		(width 0.508)
 		(layer "F.Cu")
 		(net "GND")
-		(uuid "cfb0356a-5ebd-460b-a98a-e2f048f047dd")
+		(uuid "b41d787b-1219-4686-95aa-f42332fc986c")
 	)
 	(segment
-		(start 101.125 101.375)
-		(end 105.25 105.5)
+		(start 101.125 100)
+		(end 101.125 101.375)
 		(width 0.508)
 		(layer "F.Cu")
 		(net "GND")
-		(uuid "e10c2aa6-b1d1-41ae-aa52-33a9551b0f26")
+		(uuid "b5410f9a-f03c-42b3-8525-a9c7373507a1")
+	)
+	(segment
+		(start 103.5 111)
+		(end 103.495 111)
+		(width 0.508)
+		(layer "F.Cu")
+		(net "GND")
+		(uuid "c3f099bc-a722-4677-a3a1-5a2404dbe6fe")
 	)
 	(segment
 		(start 98.875 101.375)
 		(end 94.75 105.5)
 		(width 0.508)
 		(layer "F.Cu")
-		(net "+2.15V")
-		(uuid "429b1cc2-52c9-4703-b79c-e0f8daa7a07a")
-	)
-	(segment
-		(start 94.75 105.5)
-		(end 94.75 109.25)
-		(width 0.508)
-		(layer "F.Cu")
-		(net "+2.15V")
-		(uuid "4fb24671-3036-4e99-8eab-8e0b935141d9")
-	)
-	(segment
-		(start 94.75 109.25)
-		(end 96.5 111)
-		(width 0.508)
-		(layer "F.Cu")
-		(net "+2.15V")
-		(uuid "64ee9e5f-e1f6-4301-83f7-0e424ff92c23")
+		(net "+2V")
+		(uuid "1728fdbb-b794-44ea-9f86-925d0a4dd7de")
 	)
 	(segment
 		(start 98.875 100)
 		(end 98.875 101.375)
 		(width 0.508)
 		(layer "F.Cu")
-		(net "+2.15V")
-		(uuid "c967fc71-7b68-4029-8236-5ee47e247d6a")
+		(net "+2V")
+		(uuid "19b9b50d-4da9-4a0d-8a1d-6193fbe4166f")
+	)
+	(segment
+		(start 94.75 109.25)
+		(end 96.5 111)
+		(width 0.508)
+		(layer "F.Cu")
+		(net "+2V")
+		(uuid "7d00fcce-44f5-43d3-89f2-254f965e72df")
+	)
+	(segment
+		(start 94.75 105.5)
+		(end 94.75 109.25)
+		(width 0.508)
+		(layer "F.Cu")
+		(net "+2V")
+		(uuid "e8c32915-a0e9-40d8-adb9-83cc24d37853")
 	)
 	(zone
 		(net "unconnected-(LED1-EP-Pad3)")
@@ -1230,8 +1068,8 @@
 				(xy 104.6 98.677259) (xy 104.6 98.3) (xy 100.5 98.3) (xy 100.5 98.476) (xy 100.480315 98.543039)
 				(xy 100.427511 98.588794) (xy 100.376 98.6) (xy 99.624 98.6) (xy 99.556961 98.580315) (xy 99.511206 98.527511)
 				(xy 99.5 98.476) (xy 99.5 98.3) (xy 95.4 98.3) (xy 95.4 98.676) (xy 95.380315 98.743039) (xy 95.327511 98.788794)
-				(xy 95.276 98.8) (xy 95.042132 98.8) (xy 94.982948 98.802471) (xy 94.982947 98.802471) (xy 94.873584 98.847761)
-				(xy 94.789881 98.931456) (xy 94.744578 99.040816) (xy 94.742132 99.099998) (xy 94.752131 100.897862)
+				(xy 95.276 98.8) (xy 95.042129 98.8) (xy 94.982954 98.802503) (xy 94.873602 98.847788) (xy 94.789907 98.931475)
+				(xy 94.744609 99.040824) (xy 94.742132 99.099968) (xy 94.742132 99.100003) (xy 94.752131 100.897862)
 				(xy 94.754604 100.957048) (xy 94.799894 101.066407) (xy 94.883592 101.150105) (xy 94.992951 101.195395)
 				(xy 95.052134 101.197868) (xy 95.276482 101.19874) (xy 95.343444 101.218685) (xy 95.388994 101.271666)
 				(xy 95.4 101.322739) (xy 95.4 102.876) (xy 95.380315 102.943039) (xy 95.327511 102.988794) (xy 95.276 103)
@@ -1314,8 +1152,8 @@
 				(xy 104.6 98.677259) (xy 104.6 98.3) (xy 100.5 98.3) (xy 100.5 98.476) (xy 100.480315 98.543039)
 				(xy 100.427511 98.588794) (xy 100.376 98.6) (xy 99.624 98.6) (xy 99.556961 98.580315) (xy 99.511206 98.527511)
 				(xy 99.5 98.476) (xy 99.5 98.3) (xy 95.4 98.3) (xy 95.4 98.676) (xy 95.380315 98.743039) (xy 95.327511 98.788794)
-				(xy 95.276 98.8) (xy 95.042132 98.8) (xy 94.982948 98.802471) (xy 94.982947 98.802471) (xy 94.873584 98.847761)
-				(xy 94.789881 98.931456) (xy 94.744578 99.040816) (xy 94.742132 99.099998) (xy 94.752131 100.897862)
+				(xy 95.276 98.8) (xy 95.042129 98.8) (xy 94.982954 98.802503) (xy 94.873602 98.847788) (xy 94.789907 98.931475)
+				(xy 94.744609 99.040824) (xy 94.742132 99.099968) (xy 94.742132 99.100003) (xy 94.752131 100.897862)
 				(xy 94.754604 100.957048) (xy 94.799894 101.066407) (xy 94.883592 101.150105) (xy 94.992951 101.195395)
 				(xy 95.052134 101.197868) (xy 95.276482 101.19874) (xy 95.343444 101.218685) (xy 95.388994 101.271666)
 				(xy 95.4 101.322739) (xy 95.4 102.876) (xy 95.380315 102.943039) (xy 95.327511 102.988794) (xy 95.276 103)

@@ -9,6 +9,135 @@
 		(rev "v1.1")
 	)
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:LJ_CRBP.01-JZLX-27-3A4A"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -16,25 +145,23 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "LED"
-				(at 0 7.366 0)
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify top)
 				)
 			)
 			(property "Value" "LJ_CRBP.01"
-				(at 0 -6.096 0)
+				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify top)
 				)
 			)
 			(property "Footprint" "mr-stuff:Osram LJ CRBP.01"
@@ -62,7 +189,7 @@
 				)
 			)
 			(property "Description" "High Power LEDs - Single Color LJ CRBP.01"
-				(at 0 -9.398 0)
+				(at 0 -9.144 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -70,90 +197,6 @@
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "Height" "2.24"
-				(at 16.51 -394.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Name" "ams OSRAM"
-				(at 16.51 -494.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Part_Number" "LJ CRBP.01-JZLX-27-3A4A"
-				(at 16.51 -594.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Part Number" "720-LJCRBP01JZA9260"
-				(at 16.51 -694.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LJ-CRBP.01-JZLX-27-3A4A?qs=vvQtp7zwQdO%252B1A3QlQcixg%3D%3D"
-				(at 16.51 -794.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 16.51 -894.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 16.51 -994.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
 				)
 			)
 			(symbol "LJ_CRBP.01-JZLX-27-3A4A_1_1"
@@ -596,8 +639,8 @@
 		)
 	)
 	(rectangle
-		(start 100.33 72.39)
-		(end 146.685 97.79)
+		(start 88.265 72.39)
+		(end 133.985 97.79)
 		(stroke
 			(width 0)
 			(type default)
@@ -607,21 +650,54 @@
 		)
 		(uuid "0d5dd366-a744-448a-bf28-b374284a08ac")
 	)
+	(text "Red: ams OSRAM LJ CRBP.01-JZLX-27-3A4A-350-R18\nGreen: ams OSRAM LT CRBP.01-KZLZ-36-Q525-350-R18\nWhite: ams OSRAM LUW CRBP.01-LYMY-G4J4-Y474-350-R18"
+		(exclude_from_sim no)
+		(at 88.392 101.854 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "21589388-bc86-4a73-b6eb-c0737a68b322")
+	)
 	(junction
 		(at 115.57 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3565a762-da7f-43b8-84d7-ba5fb8ad10c9")
+		(uuid "08affb91-48cf-4de6-95d1-260cd6b6d4fe")
+	)
+	(junction
+		(at 106.68 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27c34244-da99-44e2-80d7-c03d9e9b48ca")
+	)
+	(junction
+		(at 106.68 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52539fe9-480b-49ce-9b53-ae047002eef2")
 	)
 	(junction
 		(at 115.57 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a3157284-97bf-467a-a7d2-12b97a47f117")
+		(uuid "e670e657-7994-47c1-8b91-350a5df5e4ef")
 	)
 	(no_connect
 		(at 116.84 85.09)
 		(uuid "26dfb8d9-0b8e-4905-afd4-51544badc848")
+	)
+	(wire
+		(pts
+			(xy 106.68 82.55) (xy 106.68 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04d17473-ef22-4ac5-a4f4-b0ff588a21ee")
 	)
 	(wire
 		(pts
@@ -635,17 +711,27 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 80.01) (xy 115.57 82.55)
+			(xy 102.87 82.55) (xy 106.68 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d6fde78-0833-4eb8-83b4-84f77d4af528")
+		(uuid "085d8dbe-036d-4d5f-85f7-7d1c3b4d8006")
 	)
 	(wire
 		(pts
-			(xy 111.76 82.55) (xy 115.57 82.55)
+			(xy 106.68 87.63) (xy 106.68 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a3746e1-4b88-4025-820d-172ffa9fa69b")
+	)
+	(wire
+		(pts
+			(xy 106.68 82.55) (xy 115.57 82.55)
 		)
 		(stroke
 			(width 0)
@@ -655,13 +741,33 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 87.63) (xy 115.57 87.63)
+			(xy 106.68 87.63) (xy 115.57 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2a4a312e-c315-4e2a-a75b-71debccfce90")
+	)
+	(wire
+		(pts
+			(xy 115.57 80.01) (xy 115.57 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "594d1aa9-3b76-4c37-afb7-fe61e7605fd0")
+	)
+	(wire
+		(pts
+			(xy 102.87 87.63) (xy 106.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a2905f9-434e-45a7-9e8e-be98cb9dfbbe")
 	)
 	(wire
 		(pts
@@ -838,8 +944,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 111.76 82.55 270)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 97.79 82.55 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -847,10 +953,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "83ac98b2-4b26-4f20-ba90-014bacb9ac1e")
-		(property "Reference" "#PWR02"
-			(at 105.41 82.55 0)
-			(hide yes)
+		(uuid "76332da0-3b91-456c-8dbd-aec7e40c6660")
+		(property "Reference" "SMD1"
+			(at 97.79 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -859,19 +964,18 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 108.458 82.55 90)
+		(property "Value" "- Pad"
+			(at 92.964 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 111.76 82.55 0)
+		(property "Footprint" "mr-stuff:SolderWirePad_1x01_SMD_4x4mm"
+			(at 97.79 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -882,7 +986,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 82.55 0)
+			(at 97.79 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4x4mm SMD pad"
+			(at 97.79 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b64f5b2d-bb4b-4a4d-ad6e-2b3287b169a2")
+		)
+		(instances
+			(project "LED 1212 Al PCBs"
+				(path "/230f5e89-ed89-4016-bb7f-48da2e754b45"
+					(reference "SMD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 81.28 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "83ac98b2-4b26-4f20-ba90-014bacb9ac1e")
+		(property "Reference" "#PWR02"
+			(at 106.68 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.648 77.724 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -893,7 +1075,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 82.55 0)
+			(at 106.68 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -925,10 +1107,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b21d7236-80a6-4291-b1d2-1b9bfad39f9d")
 		(property "Reference" "LED1"
-			(at 133.35 83.8199 0)
+			(at 124.46 78.486 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -939,7 +1120,8 @@
 			)
 		)
 		(property "Value" "LJ_CRBP.01"
-			(at 133.35 86.3599 0)
+			(at 122.174 92.202 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -984,7 +1166,7 @@
 				)
 			)
 		)
-		(property "Height" "2.24"
+		(property "Part - Red" "ams OSRAM LJ CRBP.01-JZLX-27-3A4A-350-R18"
 			(at 143.51 480.01 0)
 			(hide yes)
 			(show_name no)
@@ -996,8 +1178,8 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Name" "ams OSRAM"
-			(at 143.51 580.01 0)
+		(property "Part - Green" "ams OSRAM LT CRBP.01-KZLZ-36-Q525-350-R18"
+			(at 127 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1005,11 +1187,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LJ CRBP.01-JZLX-27-3A4A"
-			(at 143.51 680.01 0)
+		(property "Part - White" "ams OSRAM LUW CRBP.01-LYMY-G4J4-Y474-350-R18"
+			(at 127 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1017,55 +1198,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "720-LJCRBP01JZA9260"
-			(at 143.51 780.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/LJ-CRBP.01-JZLX-27-3A4A?qs=vvQtp7zwQdO%252B1A3QlQcixg%3D%3D"
-			(at 143.51 880.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 143.51 980.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 143.51 1080.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
 			)
 		)
 		(pin "3"
@@ -1087,8 +1219,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 111.76 87.63 90)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 97.79 87.63 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1096,10 +1228,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "fa6672c7-2e18-4e9f-a351-b99fd45a136c")
-		(property "Reference" "#PWR01"
-			(at 115.57 87.63 0)
-			(hide yes)
+		(uuid "cfd5f197-f382-4c5a-87ec-d3d95dc4b9aa")
+		(property "Reference" "SMD2"
+			(at 97.79 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1108,19 +1239,18 @@
 				)
 			)
 		)
-		(property "Value" "+2.15V"
-			(at 108.712 87.63 90)
+		(property "Value" "+ Pad"
+			(at 92.964 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 111.76 87.63 0)
+		(property "Footprint" "mr-stuff:SolderWirePad_1x01_SMD_4x4mm"
+			(at 97.79 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1131,7 +1261,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 87.63 0)
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4x4mm SMD pad"
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a2ae883f-a7cd-4396-b5eb-60b5d0b53c8d")
+		)
+		(instances
+			(project "LED 1212 Al PCBs"
+				(path "/230f5e89-ed89-4016-bb7f-48da2e754b45"
+					(reference "SMD2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 106.68 88.9 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa6672c7-2e18-4e9f-a351-b99fd45a136c")
+		(property "Reference" "#PWR01"
+			(at 106.68 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+2V"
+			(at 108.458 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1142,7 +1350,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 111.76 87.63 0)
+			(at 106.68 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
