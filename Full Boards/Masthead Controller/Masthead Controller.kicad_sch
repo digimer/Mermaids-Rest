@@ -7,7 +7,7 @@
 	(title_block
 		(title "Masthead Controller")
 		(date "2026-08-13")
-		(rev "1.2.1")
+		(rev "1.2.2")
 		(company "The Digital Mermaid")
 	)
 	(lib_symbols
@@ -3026,6 +3026,507 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "TI_TPS26631PWP_1"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "EF"
+				(at -5.842 15.494 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "TPS26631PWP"
+				(at -10.16 -16.002 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:TI_TPS26631PWP"
+				(at 0 -33.02 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/tps2663"
+				(at 0 -30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" "e-Fuse, 6A, 60V"
+				(at 0 -28.448 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TI TPS26631PWPR"
+				(at 0 -35.56 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Note" "TI TPS26631PWPT is an orderable alternative that is functionally indentical."
+				(at 0 -37.846 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TPS26631PWPR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOIC_1PWPR_TEX SOIC_1PWPR_TEX-M SOIC_1PWPR_TEX-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TI_TPS26631PWP_1_1_1"
+				(rectangle
+					(start -8.89 13.97)
+					(end 8.89 -13.97)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -11.43 11.43 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 8.89 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 6.35 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -11.43 3.81 0)
+					(length 2.54)
+					(name "B_GATE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "DRV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 -1.27 0)
+					(length 2.54)
+					(name "IN_SYS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 -3.81 0)
+					(length 2.54)
+					(name "UVLO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 -6.35 0)
+					(length 2.54)
+					(name "OVP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 -8.89 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 -11.43 0)
+					(length 2.54)
+					(name "dVdT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 -11.43 180)
+					(length 2.54)
+					(name "ILIM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 -8.89 180)
+					(length 2.54)
+					(name "MODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 -6.35 180)
+					(length 2.54)
+					(name "!SHDN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -3.81 180)
+					(length 2.54)
+					(name "IMON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 11.43 -1.27 180)
+					(length 2.54)
+					(name "!FLT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 1.27 180)
+					(length 2.54)
+					(name "PGTH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 11.43 3.81 180)
+					(length 2.54)
+					(name "PGOOD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 6.35 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 8.89 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 11.43 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -16.51 90)
+					(length 2.54)
+					(name "PowerPAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_FET:2N7002"
 			(pin_names
 				(offset 0)
@@ -3382,7 +3883,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "AL8861MP-13"
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 				(at 0 -23.368 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3394,8 +3895,19 @@
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Diodes Inc AL8861QMP-13"
+				(at 0 -27.94 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5753,56 +6265,8 @@
 					)
 				)
 			)
-			(property "PARTREV" "A2"
+			(property "Part" "GCT USB4145-03-0170-C"
 				(at 12.954 -23.114 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 -25.4 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "SNAPEDA_PN" "USB4145-03-0170-C"
-				(at 0 -23.114 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "7.66mm"
-				(at 0 -27.94 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "GCT"
-				(at -13.462 -23.114 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6626,6 +7090,17 @@
 					)
 				)
 			)
+			(property "Part" "Littelfuse SMCJ33A"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Littelfuse_SMCJ33A_0_1"
 				(polyline
 					(pts
@@ -7364,7 +7839,18 @@
 				)
 			)
 			(property "Description" "Terminal Block 4 Position 45 Deg 5 mm"
-				(at 0 -22.352 0)
+				(at 0 -21.844 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Phoenix Contact 1862437"
+				(at 0 -24.384 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7829,8 +8315,8 @@
 					)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 0 0)
+			(property "Footprint" "mr-stuff:Phoenix Contact 1862440"
+				(at 0 -22.86 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7853,6 +8339,17 @@
 			)
 			(property "Description" "5 Pos Wire to Board TB 45° 5.00mm Through Hole"
 				(at 0 -18.288 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Phoenix Contact 1862440"
+				(at 0 -25.4 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8438,6 +8935,17 @@
 					)
 				)
 			)
+			(property "Part" "Sensirion SHT41A-AW1B-R2"
+				(at 0 -14.732 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Sensirion SHT41A_0_0"
 				(rectangle
 					(start -6.35 3.81)
@@ -8582,6 +9090,17 @@
 			)
 			(property "Description" "CAN Transceive"
 				(at 0 -15.494 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TI TCAN330DR"
+				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8775,9 +9294,6 @@
 			(embedded_fonts no)
 		)
 		(symbol "mr-parts:TDK ACT1210-510-2P-TL00"
-			(pin_names
-				(hide yes)
-			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -8793,7 +9309,7 @@
 					)
 				)
 			)
-			(property "Value" "ACT12101012PTL00"
+			(property "Value" "ACT1210-101-2P-TL00"
 				(at 0.254 -8.382 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8837,7 +9353,7 @@
 					)
 				)
 			)
-			(property "Part" "TDK ACT12101012PTL00"
+			(property "Part" "TDK ACT1210-101-2P-TL00"
 				(at 0 -14.986 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9228,7 +9744,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Value" "TI ADS1115BQDGSRQ1"
+			(property "Value" "ADS1115BQDGSRQ1"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9273,44 +9789,8 @@
 					)
 				)
 			)
-			(property "PARTREV" "D"
+			(property "Part" "TI ADS1115BQDGSRQ1"
 				(at -7.62 -17.272 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "STANDARD" "IPC 7351B"
-				(at 0 -17.272 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "1.1 mm"
-				(at 10.414 -17.272 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "Texas Instruments"
-				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9573,6 +10053,17 @@
 			)
 			(property "Description" "Non-Isolated PoL Module DC DC Converter 1 Output 3.3V 1A 3V - 36V Input"
 				(at 0 -16.002 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TI TPSM33610S3QRDNRQ1"
+				(at 0 -23.368 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9872,6 +10363,28 @@
 			)
 			(property "Description" "e-Fuse, 6A, 60V"
 				(at 0 -28.448 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TI TPS26631PWPR"
+				(at 0 -35.56 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Note" "TI TPS26631PWPT is an orderable alternative that is functionally indentical."
+				(at 0 -37.846 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -24402,30 +24915,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 425.45 131.318 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 425.45 128.778 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-471K"
 			(at 425.45 131.318 0)
 			(hide yes)
@@ -25301,30 +25790,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 530.86 131.318 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 530.86 128.778 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-680M"
 			(at 530.86 131.318 0)
 			(hide yes)
@@ -25373,7 +25838,7 @@
 				)
 			)
 		)
-		(property "Value" "TI ADS1115BQDGSRQ1"
+		(property "Value" "ADS1115BQDGSRQ1"
 			(at 194.31 210.566 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25417,44 +25882,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "D"
+		(property "Part" "TI ADS1115BQDGSRQ1"
 			(at 186.69 236.982 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "IPC 7351B"
-			(at 194.31 236.982 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.1 mm"
-			(at 204.724 236.982 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Texas Instruments"
-			(at 194.31 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25913,30 +26342,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 533.4 52.578 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 533.4 50.038 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-221M"
 			(at 533.4 52.578 0)
 			(hide yes)
@@ -26182,30 +26587,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 425.45 52.578 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 425.45 50.038 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(property "Part" "Bourns SRN6045TA-331K"
@@ -26462,7 +26843,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 384.81 60.198 0)
 			(hide yes)
 			(show_name no)
@@ -26474,8 +26855,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 384.81 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 384.81 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26576,6 +26968,17 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 403.86 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
 			(at 403.86 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -26851,6 +27254,17 @@
 				)
 			)
 		)
+		(property "Part" "TI TPS26631PWPR"
+			(at 189.23 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "16"
 			(uuid "11f9ba1e-de65-40cf-b397-d6d00bd7a50a")
 		)
@@ -27098,10 +27512,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "17a61d3b-f428-4eba-bc9d-2c30c8936b83")
 		(property "Reference" "TP1"
 			(at 21.336 36.068 90)
@@ -27147,6 +27561,17 @@
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
 			(at 22.86 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 22.86 39.37 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27853,6 +28278,17 @@
 				)
 			)
 		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 557.53 145.034 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "7ae6022c-19c8-4298-be83-02e21ffb1c05")
 		)
@@ -28197,6 +28633,17 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 509.27 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fc1e8b56-e66f-4622-9651-dfdd15421992")
 		)
@@ -28367,30 +28814,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 317.5 131.318 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 317.5 128.778 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(property "Part" "Bourns SRN6045TA-221M"
@@ -29269,6 +29692,7 @@
 		)
 	)
 	(symbol
+		(lib_name "TI_TPS26631PWP_1")
 		(lib_id "mr-parts:TI_TPS26631PWP")
 		(at 189.23 48.26 0)
 		(unit 1)
@@ -29325,6 +29749,17 @@
 		)
 		(property "Description" "e-Fuse, 6A, 60V"
 			(at 189.23 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TI TPS26631PWPR"
+			(at 189.23 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29582,10 +30017,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "33480553-3144-429e-9c8d-b6305007baee")
 		(property "Reference" "TP2"
 			(at 100.33 154.178 90)
@@ -29631,6 +30066,17 @@
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
 			(at 99.06 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 99.06 157.48 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30564,7 +31010,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 276.86 138.938 0)
 			(hide yes)
 			(show_name no)
@@ -30576,8 +31022,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 276.86 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 276.86 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31312,7 +31769,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 384.81 97.028 0)
 			(hide yes)
 			(show_name no)
@@ -31324,8 +31781,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 384.81 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 384.81 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32392,7 +32860,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ACT12101012PTL00"
+		(property "Value" "ACT1210-101-2P-TL00"
 			(at 88.9 65.278 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32435,7 +32903,7 @@
 				)
 			)
 		)
-		(property "Part" "TDK ACT12101012PTL00"
+		(property "Part" "TDK ACT1210-101-2P-TL00"
 			(at 88.9 74.676 0)
 			(hide yes)
 			(show_name no)
@@ -32526,6 +32994,17 @@
 		)
 		(property "Description" "Terminal Block 4 Position 45 Deg 5 mm"
 			(at 449.58 64.262 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 449.58 66.294 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32986,6 +33465,17 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 511.81 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a51d05f4-9996-4f6e-972e-9a13b8901989")
 		)
@@ -33059,6 +33549,17 @@
 		)
 		(property "Description" "12 Bit Digital to Analog Converter 4 10-MSOP"
 			(at 198.628 271.272 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Microchip MCP4728T-E/UN"
+			(at 198.12 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33346,6 +33847,17 @@
 				)
 			)
 		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 449.58 145.034 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "005fea5c-807e-492b-9315-39167b470137")
 		)
@@ -33434,6 +33946,17 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 297.18 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
 			(at 297.18 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -33918,6 +34441,17 @@
 		)
 		(property "Description" "Terminal Block 4 Position 45 Deg 5 mm"
 			(at 341.63 143.002 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 341.63 145.034 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34680,6 +35214,17 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 403.86 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
 			(at 403.86 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -35724,54 +36269,6 @@
 				)
 			)
 		)
-		(property "PARTREV" "C"
-			(at 88.9 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 88.9 100.076 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "6.35 mm"
-			(at 88.9 107.188 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Keystone Electronics"
-			(at 88.9 102.362 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "Part" "Keystone 7799"
 			(at 89.154 96.012 0)
 			(hide yes)
@@ -36047,10 +36544,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6b426469-5773-4407-8af7-a203b8fdbcd2")
 		(property "Reference" "TP3"
 			(at 86.36 194.818 90)
@@ -36096,6 +36593,17 @@
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
 			(at 87.63 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 87.63 198.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36827,7 +37335,7 @@
 				)
 			)
 		)
-		(property "Part" "Diodes Inc. DMTH6010SK3Q-13"
+		(property "Part" "Diodes Inc DMTH6010SK3Q-13"
 			(at 168.91 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -37003,6 +37511,17 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 403.86 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
 			(at 403.86 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -38324,6 +38843,17 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 509.27 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7ecb7feb-f244-4b5c-b330-c9b6c1b54765")
 		)
@@ -38486,6 +39016,17 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 403.86 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
 			(at 403.86 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -38708,7 +39249,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 276.86 60.198 0)
 			(hide yes)
 			(show_name no)
@@ -38720,8 +39261,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 276.86 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 276.86 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39495,54 +40047,6 @@
 				)
 			)
 		)
-		(property "PARTREV" "C"
-			(at 88.9 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 88.9 115.316 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "6.35 mm"
-			(at 88.9 122.428 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Keystone Electronics"
-			(at 88.9 117.602 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "Part" "Keystone 7799"
 			(at 89.154 111.252 0)
 			(hide yes)
@@ -40179,7 +40683,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 488.95 175.768 0)
 			(hide yes)
 			(show_name no)
@@ -40191,8 +40695,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 488.95 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 488.95 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40733,6 +41248,17 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 295.91 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cb5e643f-e1f6-459b-87a0-e876f525f3be")
 		)
@@ -40987,30 +41513,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 530.86 168.148 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 530.86 165.608 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-680M"
 			(at 530.86 168.148 0)
 			(hide yes)
@@ -41173,7 +41675,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 488.95 138.938 0)
 			(hide yes)
 			(show_name no)
@@ -41185,8 +41687,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 488.95 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 488.95 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41499,10 +42012,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a29dfb1f-689e-4310-875d-8745381e3513")
 		(property "Reference" "FST2"
 			(at 42.926 265.938 0)
@@ -41548,6 +42061,17 @@
 			)
 		)
 		(property "Description" "Jumpers to test per-circuit fail-safe behaviour of LED circuits"
+			(at 41.91 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Sullins GRPB052VWVN-RC"
 			(at 41.91 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -41855,10 +42379,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a5114f8f-ae5a-4bb9-89dd-e71f0a3af41d")
 		(property "Reference" "FST3"
 			(at 64.77 154.432 90)
@@ -41905,6 +42429,17 @@
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
 			(at 66.04 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 66.04 156.21 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42082,30 +42617,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 533.4 88.138 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 533.4 85.598 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(property "Part" "Bourns SRN6045TA-221M"
@@ -42708,6 +43219,17 @@
 				)
 			)
 		)
+		(property "Part" "Littelfuse SMCJ33A"
+			(at 85.09 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f2783637-7366-462c-ab1a-0c76d9008141")
 		)
@@ -43109,30 +43631,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 317.5 89.408 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 317.5 86.868 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(property "Part" "Bourns SRN6045TA-101M"
@@ -43738,30 +44236,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 425.45 89.408 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 425.45 86.868 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-331K"
 			(at 425.45 89.408 0)
 			(hide yes)
@@ -44056,10 +44530,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ba826c4f-48d6-46a6-86c4-bce805bb3045")
 		(property "Reference" "FST1"
 			(at 57.15 244.094 0)
@@ -44105,6 +44579,17 @@
 			)
 		)
 		(property "Description" "Jumpers to test per-circuit fail-safe behaviour of LED circuits"
+			(at 55.88 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Sullins GRPB052VWVN-RC"
 			(at 55.88 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -44203,7 +44688,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 492.76 95.758 0)
 			(hide yes)
 			(show_name no)
@@ -44215,8 +44700,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 492.76 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 492.76 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44763,6 +45259,17 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 295.91 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6d673383-a6cb-4ef3-89cf-c54ae09eac35")
 		)
@@ -44912,6 +45419,17 @@
 		)
 		(property "Description" "Non-Isolated PoL Module DC DC Converter 1 Output 3.3V 1A 3V - 36V Input"
 			(at 58.42 118.872 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TI TPSM33610S3QRDNRQ1"
+			(at 58.42 126.238 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45118,30 +45636,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 317.5 168.148 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 317.5 165.608 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(property "Part" "Bourns SRN6045TA-221M"
@@ -45553,7 +46047,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 384.81 175.768 0)
 			(hide yes)
 			(show_name no)
@@ -45565,8 +46059,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 384.81 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 384.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45836,6 +46341,17 @@
 		)
 		(property "Description" "5 Pos Wire to Board TB 45° 5.00mm Through Hole"
 			(at 114.808 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Phoenix Contact 1862440"
+			(at 121.92 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46215,6 +46731,17 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 295.91 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "24c50986-6eca-4b9f-a172-1fc8b0ac65f3")
 		)
@@ -46441,6 +46968,17 @@
 		)
 		(property "Description" "CAN Transceive"
 			(at 59.69 73.914 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TI TCAN330DR"
+			(at 59.69 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46772,7 +47310,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 384.81 138.938 0)
 			(hide yes)
 			(show_name no)
@@ -46784,8 +47322,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 384.81 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 384.81 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46986,30 +47535,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 425.45 166.878 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 425.45 164.338 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(property "Part" "Bourns SRN6045TA-471K"
@@ -47405,7 +47930,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 276.86 175.768 0)
 			(hide yes)
 			(show_name no)
@@ -47417,8 +47942,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 276.86 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 276.86 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47977,56 +48513,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "A2"
+		(property "Part" "GCT USB4145-03-0170-C"
 			(at 161.544 186.436 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 163.83 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SNAPEDA_PN" "USB4145-03-0170-C"
-			(at 161.544 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "7.66mm"
-			(at 166.37 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "GCT"
-			(at 161.544 212.852 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48165,6 +48653,17 @@
 		)
 		(property "Description" "Terminal Block 4 Position 45 Deg 5 mm"
 			(at 341.63 64.262 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 341.63 66.294 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48497,6 +48996,17 @@
 		)
 		(property "Description" "Humidity and Temperature Sensor, I2C, Automotive Grade"
 			(at 199.136 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Sensirion SHT41A-AW1B-R2"
+			(at 199.39 206.502 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48906,7 +49416,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 492.76 60.198 0)
 			(hide yes)
 			(show_name no)
@@ -48918,8 +49428,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 492.76 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 492.76 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49110,6 +49631,17 @@
 				)
 			)
 		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 557.53 66.294 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "565afe22-d9d9-48e6-9975-40e300cb56c9")
 		)
@@ -49285,6 +49817,17 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 511.81 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a5f3ed7f-0ef5-4840-98be-0535db1f6e8a")
 		)
@@ -49368,7 +49911,7 @@
 				)
 			)
 		)
-		(property "Part" "Diodes Inc. DMTH6010SK3Q-13"
+		(property "Part" "Diodes Inc DMTH6010SK3Q-13"
 			(at 170.18 30.48 90)
 			(hide yes)
 			(show_name no)
@@ -50112,6 +50655,17 @@
 				)
 			)
 		)
+		(property "Part" "Microchip MCP4728T-E/UN"
+			(at 198.12 307.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4d18bc5c-7ffc-46dc-ad36-eb7a896e0623")
 		)
@@ -50293,30 +50847,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 318.77 52.578 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 318.77 50.038 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-101M"
 			(at 318.77 52.578 0)
 			(hide yes)
@@ -50494,6 +51024,17 @@
 		)
 		(property "Description" "12 Bit Digital to Analog Converter 4 10-MSOP"
 			(at 198.628 296.672 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Microchip MCP4728T-E/UN"
+			(at 198.12 281.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50740,7 +51281,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 276.86 97.028 0)
 			(hide yes)
 			(show_name no)
@@ -50752,8 +51293,19 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 276.86 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 276.86 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50947,6 +51499,17 @@
 			)
 		)
 		(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD"
+			(at 63.5 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Espressif ESP32-S3-WROOM-1-N16R2"
 			(at 63.5 199.39 0)
 			(hide yes)
 			(show_name no)

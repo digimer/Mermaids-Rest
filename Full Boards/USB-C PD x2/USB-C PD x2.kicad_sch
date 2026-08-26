@@ -7,7 +7,7 @@
 	(title_block
 		(title "USB-C PC 2x 100W")
 		(date "2026-08-13")
-		(rev "v1.3.2")
+		(rev "v1.3.3")
 		(company "The Digital Mermaid")
 	)
 	(lib_symbols
@@ -2246,44 +2246,8 @@
 					)
 				)
 			)
-			(property "PARTREV" "F"
-				(at 0 -26.67 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "STANDARD" "IPC 7351B"
-				(at 0 -22.098 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "1.1 mm"
-				(at 0 -19.812 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "Analog Devices"
-				(at 0 -24.13 0)
+			(property "Part" "ADI LTC4368IMS-1#PBF"
+				(at 0 -20.066 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2308,7 +2272,7 @@
 				)
 			)
 			(symbol "ADI LTC4368_1_0"
-				(pin input line
+				(pin power_in line
 					(at -8.89 5.08 0)
 					(length 2.54)
 					(name "VIN"
@@ -2532,8 +2496,8 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
-				(at 0 -9.398 0)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
+				(at 0 -19.812 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2544,8 +2508,19 @@
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+				(at 0 -17.526 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3108,25 +3083,23 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "USBR"
-				(at -17.526 -9.906 0)
+				(at -10.414 -9.144 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "GCT USB4105-GF-A"
-				(at -3.81 -10.16 0)
+			(property "Value" "USB4105-GF-A"
+				(at 8.89 -9.144 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Footprint" "mr-stuff:GCT USB4105-GF-A"
@@ -3163,44 +3136,8 @@
 					)
 				)
 			)
-			(property "PARTREV" "B4"
-				(at 17.78 -26.416 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 -28.702 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "3.31 mm"
-				(at 24.13 -26.416 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "GCT"
-				(at -22.606 -26.416 0)
+			(property "Part" "GCT USB4105-GF-A"
+				(at 0 -28.956 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4384,7 +4321,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "PD"
-				(at -0.254 55.88 0)
+				(at 0 51.562 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4394,7 +4331,7 @@
 				)
 			)
 			(property "Value" "CYPD727268LQXQXQSA1"
-				(at -0.254 53.086 0)
+				(at 0 49.022 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4427,6 +4364,17 @@
 			)
 			(property "Description" "ARM® Cortex®-M0 - USB Type C Microcontroller IC FLASH (128kB), ROM (32kB) 68-UFQFN Exposed Pad"
 				(at 0.254 -57.912 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Infineon CYPD727268LQXQXQSA1"
+				(at 0 -52.578 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6057,7 +6005,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mr-parts:Nexperia PESD24"
+		(symbol "mr-parts:Nexperia MMBZ27"
 			(pin_names
 				(offset 0.254)
 			)
@@ -6076,18 +6024,7 @@
 					)
 				)
 			)
-			(property "Value" "Nexperia PESD24"
-				(at 0.254 -11.938 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "mr-stuff:Nexperia PESD24"
+			(property "Value" "MMBZ27VAL,215"
 				(at 0 -9.398 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6095,12 +6032,11 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-				(at 0 -6.858 0)
+			(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+				(at 0 -17.526 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6111,8 +6047,20 @@
 					)
 				)
 			)
-			(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-				(at 0 -14.478 0)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+				(at 0 -14.986 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+				(at 0 -12.192 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6122,8 +6070,8 @@
 					)
 				)
 			)
-			(property "Part Number" "PESD24VU1UT,215"
-				(at 0 -17.018 0)
+			(property "Part" "Nexperia MMBZ27VAL,215"
+				(at 0.508 -6.604 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6155,7 +6103,7 @@
 					)
 				)
 			)
-			(symbol "Nexperia PESD24_0_1"
+			(symbol "Nexperia MMBZ27_0_1"
 				(polyline
 					(pts
 						(xy -5.08 2.54) (xy 2.54 2.54)
@@ -6207,6 +6155,18 @@
 				(polyline
 					(pts
 						(xy -2.54 -1.27) (xy -2.54 -3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -2.2225 -1.27)
 					)
 					(stroke
 						(width 0.127)
@@ -6324,7 +6284,7 @@
 					)
 				)
 			)
-			(symbol "Nexperia PESD24_1_1"
+			(symbol "Nexperia MMBZ27_1_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -7135,7 +7095,7 @@
 					)
 				)
 			)
-			(property "Value" "Vishay NTCS0805E3103FHT"
+			(property "Value" "NTCS0805E3103FHT"
 				(at 0 4.064 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7171,6 +7131,17 @@
 			)
 			(property "Description" "NTC Thermistor 10k 0805 (2012 Metric)"
 				(at 0 -11.938 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Vishay NTCS0805E3103FHT"
+				(at 0 -4.318 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -17550,6 +17521,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 256.54 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "376aab13-d8c8-4f7c-9853-835edd95722e")
 		)
@@ -17627,6 +17609,17 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD22K1"
+			(at 59.69 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 59.69 69.85 90)
 			(hide yes)
 			(show_name no)
@@ -17782,8 +17775,30 @@
 				)
 			)
 		)
-		(property "Description" "RES 0.005 OHM 1% 3W 2512"
+		(property "Description" "5 mOhms ±1% 3W Chip Resistor 2512 (6332 Metric) Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
 			(at 102.87 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay WSLP25125L000FEA"
+			(at 102.87 135.89 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 102.87 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17873,6 +17888,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 215.9 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a8862466-5211-499a-bacf-37454e4de855")
 		)
@@ -17910,7 +17936,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.5nF"
+		(property "Value" "1500pF"
 			(at 169.418 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17943,7 +17969,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1500 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+			(at 175.26 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kemet C0805C152J5GACAUTO"
+			(at 175.26 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 175.26 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -17991,7 +18039,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 373.888 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18024,7 +18072,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 373.38 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 373.38 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 373.38 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -18173,7 +18243,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 34.29 159.258 0)
 			(hide yes)
 			(show_name no)
@@ -18185,7 +18255,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 34.29 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 34.29 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 34.29 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -18251,7 +18343,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 53.721 155.194 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18284,8 +18376,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 52.07 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 52.07 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 52.07 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18517,8 +18631,30 @@
 				)
 			)
 		)
-		(property "Description" "RES 0.005 OHM 1% 3W 2512"
+		(property "Description" "5 mOhms ±1% 3W Chip Resistor 2512 (6332 Metric) Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
 			(at 153.67 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay WSLP25125L000FEA"
+			(at 153.67 135.89 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 153.67 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18549,10 +18685,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0df975eb-4607-442b-87ea-cc853fd3ba2e")
 		(property "Reference" "TP7"
 			(at 46.736 223.52 0)
@@ -18610,6 +18746,28 @@
 				)
 			)
 		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 48.26 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 48.26 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2eab84a0-1ec8-4a07-97f4-f9245c22a283")
 		)
@@ -18644,7 +18802,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 164.592 142.748 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18677,8 +18835,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 157.48 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 157.48 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 157.48 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18749,7 +18929,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 83.82 265.938 0)
 			(hide yes)
 			(show_name no)
@@ -18761,7 +18941,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 83.82 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 83.82 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 83.82 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -18837,7 +19039,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
 			(at 270.51 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -18848,7 +19050,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83173/tlmx1100.pdf"
+		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
 			(at 270.51 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -18859,7 +19061,7 @@
 				)
 			)
 		)
-		(property "Description" "Vishay TLMS1101-GS15; Red, 2.1V, 20mA, 87.5 mcd"
+		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 270.51 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -18870,7 +19072,18 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
+			(at 270.51 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 270.51 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -19115,6 +19328,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 203.2 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ccc67893-b3ac-4e40-bcbc-75d78bc7bd96")
 		)
@@ -19253,7 +19477,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 182.88 194.818 0)
 			(hide yes)
 			(show_name no)
@@ -19265,7 +19489,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 182.88 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 182.88 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 182.88 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -19362,8 +19608,30 @@
 				)
 			)
 		)
-		(property "Description" "RES 0.005 OHM 1% 3W 2512"
+		(property "Description" "5 mOhms ±1% 3W Chip Resistor 2512 (6332 Metric) Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
 			(at 208.28 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay WSLP25125L000FEA"
+			(at 208.28 135.89 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 208.28 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19487,7 +19755,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 208.28 155.448 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19520,8 +19788,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 201.93 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 201.93 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 201.93 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19568,7 +19858,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 325.12 59.182 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19601,8 +19891,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 326.39 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 326.39 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 326.39 52.07 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19684,6 +19996,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
+			(at 256.54 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 256.54 254 0)
 			(hide yes)
 			(show_name no)
@@ -19847,7 +20170,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD10R0"
+			(at 171.45 184.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 171.45 184.15 90)
 			(hide yes)
 			(show_name no)
@@ -19928,6 +20262,28 @@
 		)
 		(property "Description" "10K 1% 0.5W 1206"
 			(at 252.73 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 252.73 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 252.73 116.84 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20083,8 +20439,30 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "10 µH Shielded Wirewound Inductor 16 A 6.9mOhm Max 2-SMD Flat Wire, High Q Value"
 			(at 157.48 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Codaca CSBL1809-100M"
+			(at 157.48 171.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 157.48 171.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20130,7 +20508,7 @@
 				)
 			)
 		)
-		(property "Value" "330 µF"
+		(property "Value" "330 uF"
 			(at 77.216 59.944 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20184,6 +20562,17 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 71.12 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20256,6 +20645,17 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
+			(at 110.49 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 110.49 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -20348,6 +20748,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 281.94 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "USB-C PD x2"
 				(path "/5152699f-c39d-4ac5-8e07-bebed783643b"
@@ -20379,7 +20790,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "0.22uF"
 			(at 28.194 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20412,7 +20823,29 @@
 				)
 			)
 		)
-		(property "Description" "08055C224J4Z2A - 0.22 µF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)"
+		(property "Description" "0.22 µF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 35.56 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08055C224J4Z2A"
+			(at 35.56 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 35.56 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -20657,6 +21090,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 144.78 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "125a072e-a1d1-4daa-ac89-c227f8007d5d")
 		)
@@ -20714,7 +21158,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 168.91 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -20725,8 +21169,30 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2.21 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 168.91 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD2K21"
+			(at 168.91 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 168.91 54.61 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20937,7 +21403,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
 			(at 269.24 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -20948,7 +21414,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83173/tlmx1100.pdf"
+		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
 			(at 269.24 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -20959,7 +21425,7 @@
 				)
 			)
 		)
-		(property "Description" "Vishay TLMS1101-GS15; Red, 2.1V, 20mA, 87.5 mcd"
+		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 269.24 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -20970,7 +21436,18 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
+			(at 269.24 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 269.24 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -21002,10 +21479,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3b5e19f1-b853-4b23-832e-b0f13a66ecdc")
 		(property "Reference" "TP9"
 			(at 162.306 223.52 0)
@@ -21063,6 +21540,28 @@
 				)
 			)
 		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 163.83 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 163.83 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9edbe843-ff2f-4f2a-a7d6-635a8e2015e6")
 		)
@@ -21081,10 +21580,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3cf88651-4208-4d26-a293-9d1b2d9a1e36")
 		(property "Reference" "TP10"
 			(at 164.592 242.316 0)
@@ -21132,6 +21631,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 163.83 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 163.83 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 163.83 243.84 0)
 			(hide yes)
 			(show_name no)
@@ -21431,7 +21952,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 199.39 265.938 0)
 			(hide yes)
 			(show_name no)
@@ -21443,7 +21964,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 199.39 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 199.39 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 199.39 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -21542,7 +22085,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "390 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+			(at 55.88 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Yageo AC0805JRNPO9BN391"
+			(at 55.88 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 55.88 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -21646,6 +22211,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 34.29 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a4251817-afb4-49ee-a7cb-1081240287c2")
 		)
@@ -21679,7 +22255,7 @@
 				)
 			)
 		)
-		(property "Value" "330 µF"
+		(property "Value" "330 uF"
 			(at 188.976 52.578 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21723,8 +22299,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "30-Sep-20"
-			(at 182.88 62.484 0)
+		(property "Part" "Panasonic EEH-ZU1V331V"
+			(at 182.88 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21732,11 +22308,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 182.88 57.912 0)
+		(property "Sim.Pins" ""
+			(at 182.88 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21744,31 +22319,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
-			(at 182.88 66.802 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Panasonic"
-			(at 182.88 64.516 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "1"
@@ -21986,7 +22536,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 182.88 159.258 0)
 			(hide yes)
 			(show_name no)
@@ -21998,7 +22548,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 182.88 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 182.88 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 182.88 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -22088,7 +22660,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 139.7 159.258 0)
 			(hide yes)
 			(show_name no)
@@ -22100,7 +22672,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 139.7 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 139.7 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 139.7 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -22166,7 +22760,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 370.078 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22199,7 +22793,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 369.57 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 369.57 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 369.57 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -22246,7 +22862,7 @@
 				)
 			)
 		)
-		(property "Value" "330 µF"
+		(property "Value" "330 uF"
 			(at 77.216 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22302,6 +22918,17 @@
 				(justify bottom)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 71.12 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "70ec04cd-f3e2-4609-ba21-f19f9e74f934")
 		)
@@ -22338,7 +22965,7 @@
 				)
 			)
 		)
-		(property "Value" "330 µF"
+		(property "Value" "330 uF"
 			(at 145.796 60.198 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22382,8 +23009,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "30-Sep-20"
-			(at 139.7 70.104 0)
+		(property "Part" "Panasonic EEH-ZU1V331V"
+			(at 139.7 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22391,11 +23018,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 139.7 65.532 0)
+		(property "Sim.Pins" ""
+			(at 139.7 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22403,31 +23029,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
-			(at 139.7 74.422 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Panasonic"
-			(at 139.7 72.136 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "1"
@@ -22451,10 +23052,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4d770e98-a500-421e-b346-c6268541d909")
 		(property "Reference" "TP8"
 			(at 48.768 242.316 0)
@@ -22512,6 +23113,28 @@
 				)
 			)
 		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 48.26 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 48.26 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e4caf5fe-9ece-47ec-a57c-edf860c230f0")
 		)
@@ -22546,7 +23169,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF"
+		(property "Value" "0.470uF"
 			(at 157.48 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22579,7 +23202,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.47 µF ±5% 25V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 163.83 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kemet C1206C474J3RACAUTO"
+			(at 163.83 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 163.83 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -22627,7 +23272,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 277.114 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22660,7 +23305,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 283.21 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 283.21 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 283.21 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -22920,6 +23587,17 @@
 				(justify left top)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 97.79 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "74ec5f76-66e4-4841-8f23-63b6f2a6031d")
 		)
@@ -23036,10 +23714,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "50b3fea9-cc5e-460d-843f-a54c2bd03b1b")
 		(property "Reference" "TP11"
 			(at 269.748 85.09 0)
@@ -23087,6 +23765,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 271.78 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 271.78 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 271.78 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -23173,7 +23873,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD10R0"
+			(at 64.77 184.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 64.77 184.15 90)
 			(hide yes)
 			(show_name no)
@@ -23241,7 +23952,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 229.87 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -23252,8 +23963,30 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2.21 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 229.87 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD2K21"
+			(at 229.87 25.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 229.87 25.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23577,8 +24310,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "B4"
-			(at 122.174 252.73 0)
+		(property "Part" "GCT USB4105-GF-A"
+			(at 119.634 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23589,8 +24322,8 @@
 				(justify bottom)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 119.888 234.95 0)
+		(property "Sim.Pins" ""
+			(at 148.59 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23598,31 +24331,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "3.31 mm"
-			(at 122.174 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "GCT"
-			(at 122.174 212.344 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "A1_B12"
@@ -23760,7 +24468,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 205.74 218.44 0)
 		(unit 1)
 		(body_style 1)
@@ -23771,7 +24479,7 @@
 		(dnp no)
 		(uuid "59c3ad52-d864-4fb6-ae3e-3ffa4cd2e20f")
 		(property "Reference" "TVS6"
-			(at 205.74 212.09 0)
+			(at 205.74 211.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23780,7 +24488,7 @@
 				)
 			)
 		)
-		(property "Value" "Nexperia PESD24"
+		(property "Value" "MMBZ27VAL,215"
 			(at 205.994 230.378 0)
 			(hide yes)
 			(show_name no)
@@ -23791,8 +24499,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 205.74 227.838 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 205.74 235.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23803,8 +24511,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 205.74 225.298 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 205.74 233.426 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23815,8 +24523,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 205.74 232.918 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 205.74 230.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23826,8 +24534,19 @@
 				)
 			)
 		)
-		(property "Part Number" "PESD24VU1UT,215"
-			(at 205.74 235.458 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 206.248 225.044 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 205.74 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23954,7 +24673,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "0.01uF"
 			(at 115.316 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23987,7 +24706,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10000 pF ±5% 25V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 120.65 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kemet C1206C103J3RACAUTO"
+			(at 120.65 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 120.65 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -24308,6 +25049,28 @@
 				)
 			)
 		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 273.05 114.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 273.05 114.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fc1db9d3-afc4-4894-ac9d-d84cbc2ffb02")
 		)
@@ -24329,10 +25092,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6413d2cf-676e-455c-8a60-0606f03e265e")
 		(property "Reference" "R25"
 			(at 337.82 207.01 90)
@@ -24387,7 +25150,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "See Config Note on Schematic"
+			(at 337.82 207.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 337.82 207.01 90)
 			(hide yes)
 			(show_name no)
@@ -24536,7 +25310,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 139.7 194.818 0)
 			(hide yes)
 			(show_name no)
@@ -24548,7 +25322,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 139.7 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 139.7 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 139.7 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -24722,8 +25518,30 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "10 µH Shielded Wirewound Inductor 16 A 6.9mOhm Max 2-SMD Flat Wire, High Q Value"
 			(at 52.07 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Codaca CSBL1809-100M"
+			(at 52.07 171.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 52.07 171.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24770,7 +25588,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1μF"
+		(property "Value" "1uF"
 			(at 388.112 75.946 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24803,7 +25621,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 388.62 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C105K4Z2A"
+			(at 388.62 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 388.62 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -24959,8 +25799,30 @@
 				)
 			)
 		)
-		(property "Description" "RES 0.005 OHM 1% 3W 2512"
+		(property "Description" "5 mOhms ±1% 3W Chip Resistor 2512 (6332 Metric) Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
 			(at 48.26 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay WSLP25125L000FEA"
+			(at 48.26 134.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 48.26 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25007,7 +25869,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 313.69 58.928 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25040,8 +25902,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 314.96 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 314.96 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 314.96 52.07 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25165,7 +26049,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 261.874 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25198,7 +26082,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 267.97 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 267.97 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 267.97 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -25323,7 +26229,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1μF"
+		(property "Value" "1uF"
 			(at 389.89 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25356,7 +26262,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 391.16 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C105K4Z2A"
+			(at 391.16 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 391.16 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -25558,7 +26486,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 356.362 56.642 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25591,7 +26519,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 358.14 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 358.14 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 358.14 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -25672,8 +26622,30 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
+		(property "Description" "Diode 40 V 1A Surface Mount SOD-123W"
 			(at 314.96 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Nexperia PMEG40T10ERX"
+			(at 314.96 147.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 314.96 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25753,6 +26725,17 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
+			(at 97.79 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 97.79 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -25897,7 +26880,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 125.73 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -25908,8 +26891,30 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "20 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 125.73 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD20K0"
+			(at 125.73 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 125.73 54.61 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26187,7 +27192,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.3nF"
+		(property "Value" "3300pF"
 			(at 53.594 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26220,7 +27225,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "3300 pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 59.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera KAM21BR71H332JT"
+			(at 59.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 59.69 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -26388,6 +27415,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 161.29 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fa98be2e-bee6-4a53-8758-d69360b32eb8")
 		)
@@ -26458,8 +27496,30 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
+		(property "Description" "Diode 40 V 1A Surface Mount SOD-123W"
 			(at 334.01 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Nexperia PMEG40T10ERX"
+			(at 334.01 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 334.01 149.86 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26539,7 +27599,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "390 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+			(at 171.45 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Yageo AC0805JRNPO9BN391"
+			(at 171.45 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 171.45 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -26587,7 +27669,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 53.594 142.494 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26620,8 +27702,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 52.07 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 52.07 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 52.07 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26668,7 +27772,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 208.28 149.098 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26701,8 +27805,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 201.93 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 201.93 147.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 201.93 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26749,7 +27875,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 159.131 155.194 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26782,8 +27908,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 157.48 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 157.48 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 157.48 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26814,10 +27962,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7d6f245b-028d-471b-b881-f0dc8f4bb27b")
 		(property "Reference" "TP2"
 			(at 162.306 45.72 0)
@@ -26875,6 +28023,28 @@
 				)
 			)
 		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 163.83 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 163.83 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "54513ce6-5af0-4a16-899a-1112532f0744")
 		)
@@ -26893,10 +28063,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7f770423-aa41-4b0d-ab98-6540173077a5")
 		(property "Reference" "TP1"
 			(at 119.126 45.72 0)
@@ -26944,6 +28114,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 120.65 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 120.65 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 120.65 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -27107,7 +28299,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD681R"
+			(at 259.08 226.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 259.08 226.06 90)
 			(hide yes)
 			(show_name no)
@@ -27179,7 +28382,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 106.68 247.142 0)
 			(hide yes)
 			(show_name no)
@@ -27191,7 +28394,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 106.68 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 106.68 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 106.68 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -27300,6 +28525,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 82.55 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "93d1bb04-0e81-45ae-8c12-f0b715c39c3b")
 		)
@@ -27368,7 +28604,7 @@
 				)
 			)
 		)
-		(property "Description" "10K Ohms ±1% 0.5W, 1/2W Chip Resistor"
+		(property "Description" "10K 1% 0.5W 1206"
 			(at 337.82 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -27379,7 +28615,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 337.82 201.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 337.82 201.93 90)
 			(hide yes)
 			(show_name no)
@@ -27635,6 +28882,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 48.26 25.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ad0804c2-61e4-4924-9b4c-f2ac5f7d6129")
 		)
@@ -27656,10 +28914,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8845afa8-eee9-46a7-aae6-2c117e3eb404")
 		(property "Reference" "TP5"
 			(at 129.286 166.37 0)
@@ -27707,6 +28965,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 130.81 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 130.81 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 130.81 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -27828,7 +29108,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 103.886 143.002 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27861,8 +29141,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 96.52 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 96.52 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 96.52 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27965,6 +29267,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 77.47 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "2601d8c9-97ca-49b0-a90f-cfb5f9ed6255")
 		)
@@ -28031,7 +29344,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 229.87 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -28042,8 +29355,30 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2.21 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 229.87 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD2K21"
+			(at 229.87 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 229.87 36.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28101,7 +29436,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mr-stuff:Infineon CYPD727x"
+		(property "Footprint" "Package_DFN_QFN:QFN-68-1EP_8x8mm_P0.4mm_EP5.2x5.2mm_ThermalVias"
 			(at 339.344 156.718 0)
 			(hide yes)
 			(show_name no)
@@ -28125,6 +29460,28 @@
 		)
 		(property "Description" "ARM® Cortex®-M0 - USB Type C Microcontroller IC FLASH (128kB), ROM (32kB) 68-UFQFN Exposed Pad"
 			(at 339.344 159.512 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Infineon CYPD727268LQXQXQSA1"
+			(at 339.09 154.178 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 339.09 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28433,10 +29790,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "90eef702-abd1-403d-8734-f1cd0439042c")
 		(property "Reference" "TP6"
 			(at 177.038 134.366 0)
@@ -28484,6 +29841,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 181.61 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 181.61 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 181.61 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -28581,6 +29960,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 27.94 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9f119d67-f361-4ccc-97e6-97cc9f1cb86e")
 		)
@@ -28617,7 +30007,7 @@
 				)
 			)
 		)
-		(property "Value" "68µF"
+		(property "Value" "68uF"
 			(at 56.134 161.544 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28661,8 +30051,8 @@
 				)
 			)
 		)
-		(property "PARTREV" ""
-			(at 50.8 171.704 0)
+		(property "Part" "Nichicon GXC1H680MCW1GS"
+			(at 50.8 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28670,11 +30060,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "STANDARD" ""
-			(at 50.8 167.132 0)
+		(property "Sim.Pins" ""
+			(at 50.8 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28682,31 +30071,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 50.8 176.022 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 50.8 173.736 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "1"
@@ -28788,7 +30152,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD10R0"
+			(at 128.27 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 128.27 148.59 90)
 			(hide yes)
 			(show_name no)
@@ -28860,7 +30235,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 34.29 193.548 0)
 			(hide yes)
 			(show_name no)
@@ -28872,7 +30247,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 34.29 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 34.29 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 34.29 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -28983,6 +30380,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 281.94 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "USB-C PD x2"
 				(path "/5152699f-c39d-4ac5-8e07-bebed783643b"
@@ -29014,7 +30422,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 267.716 103.886 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29047,7 +30455,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 273.05 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 273.05 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 273.05 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -29079,7 +30509,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -29138,6 +30568,28 @@
 				)
 			)
 		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 209.55 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 209.55 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c807e8f9-16e6-4207-b2a7-67a3b2f40617")
 		)
@@ -29184,7 +30636,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 209.042 142.494 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29217,8 +30669,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 201.93 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 201.93 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 201.93 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29418,7 +30892,7 @@
 				)
 			)
 		)
-		(property "Value" "330 µF"
+		(property "Value" "330 uF"
 			(at 188.976 60.198 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29462,8 +30936,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "30-Sep-20"
-			(at 182.88 70.104 0)
+		(property "Part" "Panasonic EEH-ZU1V331V"
+			(at 182.88 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29471,11 +30945,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 182.88 65.532 0)
+		(property "Sim.Pins" ""
+			(at 182.88 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29483,31 +30956,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
-			(at 182.88 74.422 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Panasonic"
-			(at 182.88 72.136 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "1"
@@ -29531,10 +30979,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9faf75d7-b59c-4208-9924-55e86f2e94b6")
 		(property "Reference" "TP3"
 			(at 23.876 166.37 0)
@@ -29582,6 +31030,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 25.4 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 25.4 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 25.4 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -29668,7 +31138,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD10R0"
+			(at 67.31 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 67.31 148.59 90)
 			(hide yes)
 			(show_name no)
@@ -29749,6 +31230,28 @@
 			)
 		)
 		(property "Description" "Connector Header Through Hole 10 position 0.050\" (1.27mm)"
+			(at 219.71 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Sullins GRPB052VWVN-RC"
+			(at 219.71 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 219.71 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -29864,7 +31367,7 @@
 				)
 			)
 		)
-		(property "Part" "ADI LTC4368"
+		(property "Part" "ADI LTC4368IMS-1#PBF"
 			(at 49.53 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -29874,6 +31377,17 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 49.53 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -29983,8 +31497,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "B4"
-			(at 6.604 252.73 0)
+		(property "Part" "GCT USB4105-GF-A"
+			(at 4.064 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29995,8 +31509,8 @@
 				(justify bottom)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 4.318 234.95 0)
+		(property "Sim.Pins" ""
+			(at 33.02 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30004,31 +31518,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "3.31 mm"
-			(at 6.604 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "GCT"
-			(at 6.604 212.344 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "A1_B12"
@@ -30248,10 +31737,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a3747390-a2ec-4a4b-b3bc-d3f1c63d78dd")
 		(property "Reference" "TP4"
 			(at 71.882 134.366 0)
@@ -30299,6 +31788,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 76.2 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 76.2 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 76.2 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -30386,6 +31897,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 39.37 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "41771fa7-da26-4808-9b20-505b3ce646e2")
 		)
@@ -30456,8 +31978,30 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
+		(property "Description" "Diode 40 V 1A Surface Mount SOD-123W"
 			(at 331.47 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Nexperia PMEG40T10ERX"
+			(at 331.47 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 331.47 52.07 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30504,7 +32048,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 208.28 161.798 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30537,8 +32081,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 201.93 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 201.93 160.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 201.93 160.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30584,7 +32150,7 @@
 				)
 			)
 		)
-		(property "Value" "68µF"
+		(property "Value" "68uF"
 			(at 161.544 161.544 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30628,8 +32194,8 @@
 				)
 			)
 		)
-		(property "PARTREV" ""
-			(at 156.21 171.704 0)
+		(property "Part" "Nichicon GXC1H680MCW1GS"
+			(at 156.21 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30637,11 +32203,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "STANDARD" ""
-			(at 156.21 167.132 0)
+		(property "Sim.Pins" ""
+			(at 156.21 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30649,31 +32214,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 156.21 176.022 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 156.21 173.736 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "1"
@@ -30833,7 +32373,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD10R0"
+			(at 128.27 184.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 128.27 184.15 90)
 			(hide yes)
 			(show_name no)
@@ -30937,7 +32488,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 92.71 218.44 0)
 		(unit 1)
 		(body_style 1)
@@ -30948,7 +32499,7 @@
 		(dnp no)
 		(uuid "b03c4470-e215-421e-aa89-c8257be77ceb")
 		(property "Reference" "TVS4"
-			(at 92.71 212.09 0)
+			(at 92.71 211.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30957,7 +32508,7 @@
 				)
 			)
 		)
-		(property "Value" "Nexperia PESD24"
+		(property "Value" "MMBZ27VAL,215"
 			(at 92.964 230.378 0)
 			(hide yes)
 			(show_name no)
@@ -30968,8 +32519,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 92.71 227.838 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 92.71 235.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30980,8 +32531,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 92.71 225.298 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 92.71 233.426 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30992,8 +32543,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 92.71 232.918 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 92.71 230.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31003,8 +32554,19 @@
 				)
 			)
 		)
-		(property "Part Number" "PESD24VU1UT,215"
-			(at 92.71 235.458 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 93.218 225.044 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 92.71 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31053,7 +32615,7 @@
 				)
 			)
 		)
-		(property "Value" "330 µF"
+		(property "Value" "330 uF"
 			(at 145.796 67.818 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31097,8 +32659,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "30-Sep-20"
-			(at 139.7 77.724 0)
+		(property "Part" "Panasonic EEH-ZU1V331V"
+			(at 139.7 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31106,11 +32668,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 139.7 73.152 0)
+		(property "Sim.Pins" ""
+			(at 139.7 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31118,31 +32679,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
-			(at 139.7 82.042 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Panasonic"
-			(at 139.7 79.756 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "1"
@@ -31161,7 +32697,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 115.57 218.44 0)
 		(unit 1)
 		(body_style 1)
@@ -31172,7 +32708,7 @@
 		(dnp no)
 		(uuid "b308ef11-3296-41ac-add8-53c4d3bfd711")
 		(property "Reference" "TVS2"
-			(at 115.57 212.09 0)
+			(at 115.57 211.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31181,7 +32717,7 @@
 				)
 			)
 		)
-		(property "Value" "Nexperia PESD24"
+		(property "Value" "MMBZ27VAL,215"
 			(at 115.824 230.378 0)
 			(hide yes)
 			(show_name no)
@@ -31192,8 +32728,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 115.57 227.838 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 115.57 235.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31204,8 +32740,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 115.57 225.298 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 115.57 233.426 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31216,8 +32752,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 115.57 232.918 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 115.57 230.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31227,8 +32763,19 @@
 				)
 			)
 		)
-		(property "Part Number" "PESD24VU1UT,215"
-			(at 115.57 235.458 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 116.078 225.044 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 115.57 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31379,7 +32926,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 222.25 247.142 0)
 			(hide yes)
 			(show_name no)
@@ -31391,7 +32938,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 222.25 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 222.25 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 222.25 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -31457,7 +33026,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 342.9 160.782 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31490,8 +33059,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 344.17 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 344.17 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 344.17 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31538,7 +33129,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 311.658 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31571,7 +33162,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 317.5 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 317.5 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 317.5 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -31752,6 +33365,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 30.48 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ba086e7b-4e81-4aa6-a086-89bec6763b8d")
 		)
@@ -31896,8 +33520,30 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
+		(property "Description" "Diode 40 V 1A Surface Mount SOD-123W"
 			(at 311.15 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Nexperia PMEG40T10ERX"
+			(at 311.15 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 311.15 57.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32217,7 +33863,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD10R0"
+			(at 22.86 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 22.86 148.59 90)
 			(hide yes)
 			(show_name no)
@@ -32265,7 +33922,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 102.87 162.052 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32298,8 +33955,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 96.52 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 96.52 160.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 96.52 160.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32553,6 +34232,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 86.36 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "104eb700-f3c0-4424-9d28-3a6d976b6112")
 		)
@@ -32635,6 +34325,28 @@
 				)
 			)
 		)
+		(property "Part" "Vishay NTCS0805E3103FHT"
+			(at 283.718 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 279.4 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f2c3250b-55ae-43a5-a9b6-e7f66c0fac2d")
 		)
@@ -32682,7 +34394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
 			(at 269.24 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -32693,7 +34405,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83173/tlmx1100.pdf"
+		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
 			(at 269.24 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -32704,7 +34416,7 @@
 				)
 			)
 		)
-		(property "Description" "Vishay TLMS1101-GS15; Red, 2.1V, 20mA, 87.5 mcd"
+		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 269.24 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -32715,7 +34427,18 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
+			(at 269.24 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 269.24 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -32796,7 +34519,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "220 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+			(at 132.08 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kemet C0805C221J5GACAUTO"
+			(at 132.08 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 132.08 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -32864,7 +34609,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
 			(at 24.13 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -32875,7 +34620,7 @@
 				)
 			)
 		)
-		(property "Description" "51.1 kOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "51.1 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
 			(at 24.13 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -32886,7 +34631,18 @@
 				)
 			)
 		)
-		(property "Part" "Stackpole RMCF1206FG51K1"
+		(property "Part" "Stackpole RNCP1206FTD51K1"
+			(at 24.13 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 24.13 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -32958,7 +34714,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 77.47 159.258 0)
 			(hide yes)
 			(show_name no)
@@ -32970,7 +34726,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 77.47 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 77.47 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 77.47 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -33036,7 +34814,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 53.721 148.844 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33069,8 +34847,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 52.07 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 52.07 147.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 52.07 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33096,7 +34896,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 205.74 232.41 0)
 		(unit 1)
 		(body_style 1)
@@ -33107,7 +34907,7 @@
 		(dnp no)
 		(uuid "cb599607-37f7-4b91-a9f5-8d4a4d9c94fb")
 		(property "Reference" "TVS7"
-			(at 205.74 226.06 0)
+			(at 205.74 225.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33116,7 +34916,7 @@
 				)
 			)
 		)
-		(property "Value" "Nexperia PESD24"
+		(property "Value" "MMBZ27VAL,215"
 			(at 205.994 244.348 0)
 			(hide yes)
 			(show_name no)
@@ -33127,8 +34927,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 205.74 241.808 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 205.74 249.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33139,8 +34939,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 205.74 239.268 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 205.74 247.396 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33151,8 +34951,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 205.74 246.888 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 205.74 244.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33162,8 +34962,19 @@
 				)
 			)
 		)
-		(property "Part Number" "PESD24VU1UT,215"
-			(at 205.74 249.428 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 206.248 239.014 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 205.74 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33213,7 +35024,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 277.114 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33246,7 +35057,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 283.21 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 283.21 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 283.21 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -33294,7 +35127,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1μF"
+		(property "Value" "1uF"
 			(at 274.32 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33327,7 +35160,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 275.59 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C105K4Z2A"
+			(at 275.59 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 275.59 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -33354,7 +35209,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 92.71 232.41 0)
 		(unit 1)
 		(body_style 1)
@@ -33365,7 +35220,7 @@
 		(dnp no)
 		(uuid "ce4a72b0-dc5e-4dcc-96e9-84d26c2555a0")
 		(property "Reference" "TVS5"
-			(at 92.71 226.06 0)
+			(at 92.71 225.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33374,7 +35229,7 @@
 				)
 			)
 		)
-		(property "Value" "Nexperia PESD24"
+		(property "Value" "MMBZ27VAL,215"
 			(at 92.964 244.348 0)
 			(hide yes)
 			(show_name no)
@@ -33385,8 +35240,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 92.71 241.808 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 92.71 249.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33397,8 +35252,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 92.71 239.268 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 92.71 247.396 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33409,8 +35264,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 92.71 246.888 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 92.71 244.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33420,8 +35275,19 @@
 				)
 			)
 		)
-		(property "Part Number" "PESD24VU1UT,215"
-			(at 92.71 249.428 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 93.218 239.014 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 92.71 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33667,7 +35533,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD681R"
+			(at 259.08 210.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 259.08 210.82 90)
 			(hide yes)
 			(show_name no)
@@ -33751,6 +35628,28 @@
 		)
 		(property "Description" "NTC Thermistor 10k 0805 (2012 Metric)"
 			(at 274.828 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay NTCS0805E3103FHT"
+			(at 267.208 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 262.89 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33916,6 +35815,28 @@
 				)
 			)
 		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 279.4 142.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 279.4 142.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ce23d198-65e4-4fbb-8a27-e3f77daf0533")
 		)
@@ -33995,7 +35916,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD681R"
+			(at 259.08 201.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 259.08 201.93 90)
 			(hide yes)
 			(show_name no)
@@ -34120,7 +36052,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 164.084 149.098 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34153,8 +36085,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 157.48 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 157.48 147.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 157.48 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34200,7 +36154,7 @@
 				)
 			)
 		)
-		(property "Value" "330 µF"
+		(property "Value" "330 uF"
 			(at 145.796 52.578 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34244,8 +36198,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "30-Sep-20"
-			(at 139.7 62.484 0)
+		(property "Part" "Panasonic EEH-ZU1V331V"
+			(at 139.7 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34253,11 +36207,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 139.7 57.912 0)
+		(property "Sim.Pins" ""
+			(at 139.7 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34265,31 +36218,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
-			(at 139.7 66.802 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Panasonic"
-			(at 139.7 64.516 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "1"
@@ -34459,6 +36387,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 24.13 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a364238f-6f4e-4c54-aa68-048b116faa0a")
 		)
@@ -34531,6 +36470,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
+			(at 256.54 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 256.54 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -34632,6 +36582,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 33.02 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d452157c-6e0f-4b3c-ba6e-6424db2192f1")
 		)
@@ -34669,7 +36630,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 288.798 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34702,8 +36663,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 281.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 281.94 114.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 281.94 114.3 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34851,7 +36834,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMTH45M5LPSWQ.pdf"
 			(at 77.47 194.818 0)
 			(hide yes)
 			(show_name no)
@@ -34863,7 +36846,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 40 V 86A (Tc) 3.5W (Ta), 72W (Tc) Surface Mount, Wettable Flank PowerDI5060-8 (Type UX)"
+			(at 77.47 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc DMTH45M5LPSWQ-13"
+			(at 77.47 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 77.47 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -34974,6 +36979,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 256.54 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9e68dc33-a482-4763-9d2f-7ca6b412edd7")
 		)
@@ -35050,7 +37066,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD10R0"
+			(at 172.72 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 172.72 148.59 90)
 			(hide yes)
 			(show_name no)
@@ -35098,7 +37125,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 65.278 272.796 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35131,7 +37158,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 71.12 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 71.12 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 71.12 270.51 0)
 			(hide yes)
 			(show_name no)
@@ -35212,7 +37261,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "390 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+			(at 59.69 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Yageo AC0805JRNPO9BN391"
+			(at 59.69 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 59.69 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -35337,7 +37408,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 103.378 149.098 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35370,8 +37441,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 96.52 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 96.52 147.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 96.52 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35451,7 +37544,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "390 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+			(at 175.26 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Yageo AC0805JRNPO9BN391"
+			(at 175.26 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 175.26 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -35499,7 +37614,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10μF"
+		(property "Value" "10uF"
 			(at 103.124 155.448 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35532,8 +37647,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
 			(at 96.52 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 96.52 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 96.52 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35622,7 +37759,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD10R0"
+			(at 22.86 182.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 22.86 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -35713,6 +37861,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 55.88 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5f6e6c5c-a374-4bea-b423-c3d99dac3b8d")
 		)
@@ -35729,7 +37888,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 228.6 232.41 0)
 		(unit 1)
 		(body_style 1)
@@ -35740,7 +37899,7 @@
 		(dnp no)
 		(uuid "f02dfa21-cbba-48ad-a6eb-6332679b0c52")
 		(property "Reference" "TVS9"
-			(at 228.6 226.06 0)
+			(at 228.6 225.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35749,7 +37908,7 @@
 				)
 			)
 		)
-		(property "Value" "Nexperia PESD24"
+		(property "Value" "MMBZ27VAL,215"
 			(at 228.854 244.348 0)
 			(hide yes)
 			(show_name no)
@@ -35760,8 +37919,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 228.6 241.808 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 228.6 249.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35772,8 +37931,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 228.6 239.268 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 228.6 247.396 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35784,8 +37943,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 228.6 246.888 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 228.6 244.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35795,8 +37954,19 @@
 				)
 			)
 		)
-		(property "Part Number" "PESD24VU1UT,215"
-			(at 228.6 249.428 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 229.108 239.014 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 228.6 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35825,7 +37995,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 228.6 218.44 0)
 		(unit 1)
 		(body_style 1)
@@ -35836,7 +38006,7 @@
 		(dnp no)
 		(uuid "f17db37b-8635-48a3-a4dc-8ad31c424e38")
 		(property "Reference" "TVS8"
-			(at 228.6 212.09 0)
+			(at 228.6 211.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35845,7 +38015,7 @@
 				)
 			)
 		)
-		(property "Value" "Nexperia PESD24"
+		(property "Value" "MMBZ27VAL,215"
 			(at 228.854 230.378 0)
 			(hide yes)
 			(show_name no)
@@ -35856,8 +38026,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 228.6 227.838 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 228.6 235.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35868,8 +38038,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 228.6 225.298 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 228.6 233.426 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35880,8 +38050,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 228.6 232.918 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 228.6 230.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35891,8 +38061,19 @@
 				)
 			)
 		)
-		(property "Part Number" "PESD24VU1UT,215"
-			(at 228.6 235.458 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 229.108 225.044 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 228.6 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35942,7 +38123,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 338.582 54.102 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35975,8 +38156,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 340.36 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 340.36 46.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 340.36 46.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36022,7 +38225,7 @@
 				)
 			)
 		)
-		(property "Value" "330 µF"
+		(property "Value" "330 uF"
 			(at 188.976 67.818 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36066,8 +38269,8 @@
 				)
 			)
 		)
-		(property "PARTREV" "30-Sep-20"
-			(at 182.88 77.724 0)
+		(property "Part" "Panasonic EEH-ZU1V331V"
+			(at 182.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36075,11 +38278,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 182.88 73.152 0)
+		(property "Sim.Pins" ""
+			(at 182.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36087,31 +38289,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
-			(at 182.88 82.042 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Panasonic"
-			(at 182.88 79.756 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "1"
@@ -36130,7 +38307,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Nexperia PESD24")
+		(lib_id "mr-parts:Nexperia MMBZ27")
 		(at 115.57 232.41 0)
 		(unit 1)
 		(body_style 1)
@@ -36141,7 +38318,7 @@
 		(dnp no)
 		(uuid "f4e5357c-0d60-4c62-bd5a-56e14f553291")
 		(property "Reference" "TVS3"
-			(at 115.57 226.06 0)
+			(at 115.57 225.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36150,7 +38327,7 @@
 				)
 			)
 		)
-		(property "Value" "Nexperia PESD24"
+		(property "Value" "MMBZ27VAL,215"
 			(at 115.824 244.348 0)
 			(hide yes)
 			(show_name no)
@@ -36161,8 +38338,8 @@
 				)
 			)
 		)
-		(property "Footprint" "mr-stuff:Nexperia PESD24"
-			(at 115.57 241.808 0)
+		(property "Footprint" "mr-stuff:Nexperia MMBZ27"
+			(at 115.57 249.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36173,8 +38350,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXU1UT_SER.pdf"
-			(at 115.57 239.268 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBZ27VAL.pdf"
+			(at 115.57 247.396 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36185,8 +38362,8 @@
 				)
 			)
 		)
-		(property "Description" "76V Clamp 3A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 115.57 246.888 0)
+		(property "Description" "40V Clamp 1A Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 115.57 244.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36196,8 +38373,19 @@
 				)
 			)
 		)
-		(property "Part Number" "PESD24VU1UT,215"
-			(at 115.57 249.428 0)
+		(property "Part" "Nexperia MMBZ27VAL,215"
+			(at 116.078 239.014 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 115.57 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36289,7 +38477,18 @@
 				)
 			)
 		)
-		(property "Field5" ""
+		(property "Part" "Stackpole RNCP0805FTD681R"
+			(at 259.08 218.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 259.08 218.44 90)
 			(hide yes)
 			(show_name no)
@@ -36337,7 +38536,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 180.848 272.796 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36370,7 +38569,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 186.69 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 186.69 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 186.69 270.51 0)
 			(hide yes)
 			(show_name no)
@@ -36418,7 +38639,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 274.574 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36451,7 +38672,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 280.67 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 280.67 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 280.67 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -36544,6 +38787,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 281.94 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "USB-C PD x2"
 				(path "/5152699f-c39d-4ac5-8e07-bebed783643b"
@@ -36575,7 +38829,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 327.406 156.972 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36608,8 +38862,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 328.93 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 328.93 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 328.93 149.86 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36776,6 +39052,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 82.55 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b9803b5e-95d3-4a2e-b5e1-0fd42277edfd")
 		)
@@ -36813,7 +39100,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 250.444 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36846,7 +39133,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 256.54 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 256.54 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 256.54 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -36971,7 +39280,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 266.954 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37004,7 +39313,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 273.05 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 273.05 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 273.05 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -37052,7 +39383,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1μF"
+		(property "Value" "1uF"
 			(at 259.08 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37085,7 +39416,29 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 260.35 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C105K4Z2A"
+			(at 260.35 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 260.35 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -37210,7 +39563,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "0.1uF"
 			(at 361.696 160.528 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37243,8 +39596,30 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
 			(at 363.22 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 363.22 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 363.22 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37301,7 +39676,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
 			(at 269.24 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -37312,7 +39687,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83173/tlmx1100.pdf"
+		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
 			(at 269.24 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -37323,7 +39698,7 @@
 				)
 			)
 		)
-		(property "Description" "Vishay TLMS1101-GS15; Red, 2.1V, 20mA, 87.5 mcd"
+		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 269.24 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -37334,7 +39709,18 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
+			(at 269.24 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 269.24 218.44 0)
 			(hide yes)
 			(show_name no)

@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "Masthead Controller")
-		(date "2026-08-13")
-		(rev "1.2.1")
+		(date "2026-08-22")
+		(rev "1.2.2")
 		(company "Mermaid's Rest")
 	)
 	(layers
@@ -1192,6 +1192,19 @@
 				)
 			)
 		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5b57bdd-9ec1-4bac-8dca-59c4861faa9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/a5114f8f-ae5a-4bb9-89dd-e71f0a3af41d")
 		(sheetname "/")
@@ -1202,7 +1215,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -1735,7 +1748,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf"
+		(property "Datasheet" "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1747,7 +1760,7 @@
 				)
 			)
 		)
-		(property "Description" "MEC 5G single pole normally-open tactile switch"
+		(property "Description" "Tactile Switch SPST-NO Top Actuated Through Hole"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1755,6 +1768,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "Same Sky TS03-66-50-BK-160-LCR-D-67"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a0ba8f8-3018-43a7-a851-94fc58873c83")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2349,32 +2375,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "793a25af-92a9-45fa-afd5-9c6f3b7729c9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "52586471-6306-4bd7-b1f3-53e37bf72ecf")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-101M"
 			(at 0 0 180)
 			(unlocked yes)
@@ -2819,32 +2819,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a8f58c62-4c77-4f29-b5cb-0e8faa9e1771")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e00c5ee1-2d72-4a6d-90f8-71a3f20e6df1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -5072,6 +5046,19 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31def6ac-76c7-4a3d-890d-fba32bbaab9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/5430a9b6-36a6-43a7-8ebc-8e32fbbbb5ec")
 		(sheetname "/")
@@ -5348,6 +5335,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd5b5f1d-39c1-4bcb-ba78-c66354e9803b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5953,6 +5953,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Microchip MCP4728T-E/UN"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84924516-1d98-47f5-9a74-8be75841db10")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -8281,32 +8294,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "959de4d9-6863-4426-9d4e-edffa35e3420")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f3c3c41c-670f-46c7-b953-5efa64bdb2bf")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-221M"
 			(at 0 0 180)
 			(unlocked yes)
@@ -8531,7 +8518,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8542,7 +8529,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8550,6 +8537,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e61158f9-5132-4752-9194-0d83abf372dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -9266,6 +9266,19 @@
 				)
 			)
 		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f15bfa33-16d6-48d2-a104-a93a82d857ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/6b426469-5773-4407-8af7-a203b8fdbcd2")
 		(sheetname "/")
@@ -9276,7 +9289,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -9512,32 +9525,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "79143564-ce5a-4e94-bc18-b8fb8391b614")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1648e2f1-5ae8-4709-906f-c7ac0884c542")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -9787,6 +9774,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc948890-c886-4f76-af86-4115aff5b1b4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10063,6 +10063,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Sensirion SHT41A-AW1B-R2"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e12e414f-5a33-4c2e-af1d-8874aaecceb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -10456,32 +10469,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0a17d5e8-ab5c-4480-8a59-67b2c8157ba3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bac5bb7a-2463-4cc9-8769-bf68aafacadb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -11776,64 +11763,12 @@
 				)
 			)
 		)
-		(property "PARTREV" "A2"
+		(property "Part" "GCT USB4145-03-0170-C"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cfafd421-a368-48cc-854c-f35b47b2c485")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4fcb606d-8952-4e1d-a6f5-ff1535c3a976")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "SNAPEDA_PN" "USB4145-03-0170-C"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fad5fcee-717f-4fe1-8a9f-5cfb1beab62c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "7.66mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5531d7aa-8991-4963-a81a-08fec4b45c43")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MANUFACTURER" "GCT"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "14011d1f-ba7a-480d-b6e8-6f30a31bf6dc")
+			(uuid "3d827717-410d-45bc-b481-342eac17f8e0")
 			(effects
 				(font
 					(size 1 1)
@@ -13820,7 +13755,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -13831,7 +13766,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -13839,6 +13774,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cd2cd072-a3c2-42ea-a037-f1a557dad5ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -15932,7 +15880,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf"
+		(property "Datasheet" "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15944,7 +15892,7 @@
 				)
 			)
 		)
-		(property "Description" "MEC 5G single pole normally-open tactile switch"
+		(property "Description" "Tactile Switch SPST-NO Top Actuated Through Hole"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15956,8 +15904,21 @@
 				)
 			)
 		)
+		(property "Part" "Same Sky TS03-66-50-BK-160-LCR-D-67"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9de57e0d-58a0-43f6-bec8-99bafb519f64")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SW*MEC*5G*")
-		(path "/0cc45896-c873-4ed4-b768-66a2e1cb5c67")
+		(path "/9d8b872f-3ff8-4edd-9a0f-ba5dbabaa177")
 		(sheetname "/")
 		(sheetfile "Masthead Controller.kicad_sch")
 		(units
@@ -16521,7 +16482,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -16532,7 +16493,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -16540,6 +16501,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad6450b5-624b-4f18-a455-563bb824d94f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -17273,6 +17247,19 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af985ebe-6b7a-4288-9138-39e67543bc8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/20d8b0e6-7272-4e72-aa63-34afadc17585")
 		(sheetname "/")
@@ -17547,32 +17534,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d83bbc68-352a-4f5d-8729-67f2f5bdd800")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9d7ac986-d9e8-4f8b-a900-8cfbde700d5c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-221M"
 			(at 0 0 180)
 			(unlocked yes)
@@ -17797,7 +17758,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17808,7 +17769,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17816,6 +17777,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ddc3083-3c45-4dbc-991e-3a5d8c3ced33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -19724,6 +19698,19 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e6a2c84-5d82-4188-a410-54701d0de422")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/86baee37-5748-4de1-843e-acabd59093f7")
 		(sheetname "/")
@@ -20000,6 +19987,19 @@
 				)
 			)
 		)
+		(property "Part" "Sullins GRPB052VWVN-RC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86b3ae9f-95a5-4a92-aa3c-ec09dd760e35")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/ba826c4f-48d6-46a6-86c4-bce805bb3045")
 		(sheetname "/")
@@ -20010,7 +20010,7 @@
 				(pins "1" "3" "5" "7" "9" "11" "2" "4" "6" "8" "10" "12")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -20359,6 +20359,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07400bbc-a48b-4193-9fb4-98c6b6a46882")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -21260,7 +21273,7 @@
 				)
 			)
 		)
-		(property "Value" "TI ADS1115BQDGSRQ1"
+		(property "Value" "ADS1115BQDGSRQ1"
 			(at 0 4.1 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21294,51 +21307,12 @@
 				)
 			)
 		)
-		(property "PARTREV" "D"
+		(property "Part" "TI ADS1115BQDGSRQ1"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6fa7ce2e-1b03-448d-9ff1-84c9b09a67a3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "IPC 7351B"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "06ec68ea-3688-4a94-96eb-ffe4be7e9dc3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.1 mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "83eb72e5-d449-4ef4-aa73-91895e3fff14")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MANUFACTURER" "Texas Instruments"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c38af736-d2b3-4206-a9fe-fdc5e84ab8db")
+			(uuid "00dd7ae6-51a0-4366-b327-e8f8d0bbf2b2")
 			(effects
 				(font
 					(size 1 1)
@@ -22974,6 +22948,19 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d24ec76-3aea-42ac-b73a-f5a3e5f22822")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/5d960a3c-d60c-4c0d-a986-929b858ff2ad")
 		(sheetname "/")
@@ -23248,6 +23235,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TI TPSM33610S3QRDNRQ1"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dca20659-9e21-4240-9718-0bf25460beed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -23892,6 +23892,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb484916-3010-48d7-8347-1a5e24368dca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -24547,6 +24560,19 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be92bf39-d9ed-4512-9dc2-fa399a2f9c14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/13680d34-c812-412b-a33c-68af9ef8a96b")
 		(sheetname "/")
@@ -24821,32 +24847,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "47727039-7aac-46eb-a5a6-f3ff9bc35514")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c5f375b2-c779-4927-b36c-fe0322d9bdc0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-221M"
 			(at 0 0 0)
 			(unlocked yes)
@@ -25087,32 +25087,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3f36fbfb-cff4-41d3-8a1a-4b811551cde2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "de5800e3-248f-4005-a3e7-e8c73850a0d6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -25976,7 +25950,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25987,7 +25961,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25995,6 +25969,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "54a71765-2a7f-4040-b446-61466eb73bd6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -26719,58 +26706,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "PARTREV" "C"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8a686d71-ecbf-4eee-b985-81a09467363a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "73e12fbe-129f-4d36-badc-548f308dc85a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "6.35 mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "057f7b31-7009-4e1b-911b-25544b4caead")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MANUFACTURER" "Keystone Electronics"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ae35b71a-9212-4da7-9bca-87f1c51c98e9")
-			(effects
-				(font
-					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -29137,7 +29072,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -29148,7 +29083,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -29156,6 +29091,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "652ae2b7-0b64-46d2-8c29-3cb2c6c87d6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -29885,6 +29833,19 @@
 				)
 			)
 		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5179c49c-adba-4fa1-86d7-b75afdf93b5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "CONN_1862437")
 		(path "/1f631083-c005-4818-975f-55559c1fb32e")
 		(sheetname "/")
@@ -30205,6 +30166,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7c67cf0-d2c5-41de-99a0-22251eb5b9aa")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -31350,32 +31324,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8914cd7a-0f7f-4d23-a680-a9b885fd8be6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6f766777-a22a-452e-931a-b4f5e50cf2ff")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -32575,7 +32523,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -32586,7 +32534,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -32594,6 +32542,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f73c8d8e-b95a-4bfc-850a-9cdf333023a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -33514,58 +33475,6 @@
 				)
 			)
 		)
-		(property "PARTREV" "C"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5da23bc3-6c55-4c07-8aa9-4f3398b38373")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3922f416-1406-43bb-86d8-11e3aebad55f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "6.35 mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1baa5504-dfcc-47f3-8d40-ec7ebe78ddb0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MANUFACTURER" "Keystone Electronics"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "30830191-f30f-461b-a83c-e78b62d62cf7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Part" "Keystone 7799"
 			(at 0 0 90)
 			(unlocked yes)
@@ -33820,6 +33729,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ffef7137-a7e2-49c0-a33c-d9e7b74404da")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -34481,6 +34403,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "549bad9c-2ba1-4177-ad7a-733b37d0fd34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -36499,7 +36434,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -36510,7 +36445,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -36518,6 +36453,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66a498ab-4017-4540-841f-fce040cca129")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -38040,32 +37988,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "45a88768-0ea0-4980-b546-8efcd3c83f3a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6bf04e31-1cab-409c-aaac-9d6134ff6c61")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-680M"
 			(at 0 0 0)
 			(unlocked yes)
@@ -38496,7 +38418,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -38507,7 +38429,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -38515,6 +38437,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "059d7942-532d-426a-a5ac-f14af2cc8825")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -43118,7 +43053,7 @@
 				)
 			)
 		)
-		(property "Part" "Diodes Inc. DMTH6010SK3Q-13"
+		(property "Part" "Diodes Inc DMTH6010SK3Q-13"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45404,6 +45339,19 @@
 				)
 			)
 		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bed1250-36b8-4801-909e-c2432e141c98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/33480553-3144-429e-9c8d-b6305007baee")
 		(sheetname "/")
@@ -45414,7 +45362,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -46471,7 +46419,7 @@
 				)
 			)
 		)
-		(property "Value" "ACT12101012PTL00"
+		(property "Value" "ACT1210-101-2P-TL00"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -46507,7 +46455,7 @@
 				)
 			)
 		)
-		(property "Part" "TDK ACT12101012PTL00"
+		(property "Part" "TDK ACT1210-101-2P-TL00"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47033,6 +46981,19 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05b4d8b7-e36f-4e56-be5c-4079680bf4da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/85ee0fa4-10a5-42fe-bf97-62bfc3fc9993")
 		(sheetname "/")
@@ -47307,6 +47268,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay SS36HE3_B/I"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08c70f20-392c-4a99-be53-75ad660b13b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -49291,6 +49265,19 @@
 				)
 			)
 		)
+		(property "Part" "TI TCAN330DR"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a68bc9b-45db-4e6e-8b9a-23d845bb4cd8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "D0008A_N D0008A_M D0008A_L")
 		(path "/caf61aa3-3086-4fa0-bdb9-e886446aa498")
 		(sheetname "/")
@@ -51226,32 +51213,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7aa1e25d-db59-4808-86db-f8e2242a96a0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b56adb1d-7d66-48ba-8785-5ca4d4a22a66")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Part" "Bourns SRN6045TA-221M"
 			(at 0 0 0)
 			(unlocked yes)
@@ -51492,32 +51453,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d84ffcbb-dc46-4f49-ab3b-89f7ee36cb21")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2cad7b18-738e-4511-8911-3794f52c5f50")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -52301,7 +52236,7 @@
 				)
 			)
 		)
-		(property "Part" "Diodes Inc. DMTH6010SK3Q-13"
+		(property "Part" "Diodes Inc DMTH6010SK3Q-13"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -53144,7 +53079,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -53155,7 +53090,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -53163,6 +53098,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8fbd131e-6927-4fd3-b8b8-beaae5d77b6d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -54863,6 +54811,19 @@
 				)
 			)
 		)
+		(property "Part" "Littelfuse SMCJ33A"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8e056a6-1364-43cc-a6e1-8f59fabfd913")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/a9d09673-a871-4fbd-8c94-eaabd98d6dc3")
 		(sheetname "/")
 		(sheetfile "Masthead Controller.kicad_sch")
@@ -55749,6 +55710,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Microchip MCP4728T-E/UN"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df64651c-0f61-4780-9b0e-67c2d7030596")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -57249,6 +57223,19 @@
 				)
 			)
 		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b53271d-4b94-4e44-bcde-dcd75613628f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "CONN_1862437")
 		(path "/e16b7f68-2e2a-427a-b42a-9fc291740be7")
 		(sheetname "/")
@@ -57567,6 +57554,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Microchip MCP4728T-E/UN"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c9789da-2a2f-4bb0-8eeb-5caca0845fd4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -59347,6 +59347,19 @@
 				)
 			)
 		)
+		(property "Part" "TI TPS26631PWPR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "639813f0-ef92-4109-a942-fccb4ab1f2e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOIC_1PWPR_TEX SOIC_1PWPR_TEX-M SOIC_1PWPR_TEX-L")
 		(path "/16938869-1296-4ebe-b79c-3fbd02f55aac")
 		(sheetname "/")
@@ -60688,6 +60701,19 @@
 				)
 			)
 		)
+		(property "Part" "Sullins GRPB052VWVN-RC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ab491fc-2dc4-4fe8-b783-4535116a794e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/a29dfb1f-689e-4310-875d-8745381e3513")
 		(sheetname "/")
@@ -60698,7 +60724,7 @@
 				(pins "1" "3" "5" "7" "9" "11" "2" "4" "6" "8" "10" "12")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -61363,6 +61389,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TI TPS26631PWPR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f64fe848-d010-4479-84cf-89ead0adda58")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -63358,6 +63397,19 @@
 				)
 			)
 		)
+		(property "Part" "Espressif ESP32-S3-WROOM-1-N16R2"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "277e6f2e-7aa7-4d95-9861-05c5b98348ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "ESP32?S3?WROOM?1*")
 		(path "/f92f21b3-0214-4915-9a7f-494bde4e444d")
 		(sheetname "/")
@@ -64345,6 +64397,19 @@
 				)
 			)
 		)
+		(property "Part" "Amphenol 68001-416HLF"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f2682f5-fd1c-4857-b13b-f143c1657b8f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/17a61d3b-f428-4eba-bc9d-2c30c8936b83")
 		(sheetname "/")
@@ -64355,7 +64420,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -64572,6 +64637,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Phoenix Contact 1862440"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0294c5d1-f101-4ef8-8ba5-220d19d76bb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -64893,7 +64971,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -64904,7 +64982,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -64912,6 +64990,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c9ac9bf-e61f-4a97-98df-2c8bf198a3b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -67813,6 +67904,19 @@
 				)
 			)
 		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de732796-eba1-4b31-af1b-ff6dd8cf4399")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/e4927eda-1ded-401d-9bf5-23691ffbb6b2")
 		(sheetname "/")
@@ -68087,6 +68191,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e9478fc-e618-40fd-b436-4bed55c9a237")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -68408,6 +68525,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Phoenix Contact 1862437"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea8be1d1-b03d-4869-9997-3c30658767b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -68891,7 +69021,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "AL8861MP-13"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AL8861Q.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -68902,7 +69032,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED Driver IC 1 Output DC DC Regulator Step-Down (Buck) Analog, PWM Dimming 1.5A 8-MSOP-EP"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -68910,6 +69040,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Diodes Inc AL8861QMP-13"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d5689e77-12de-4dfb-8a80-cd3955436b40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
