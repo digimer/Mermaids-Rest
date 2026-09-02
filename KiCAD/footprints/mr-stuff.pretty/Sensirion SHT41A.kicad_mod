@@ -7,7 +7,7 @@
 	(property "Reference" "REF**"
 		(at 0 -1.8 0)
 		(layer "F.SilkS")
-		(uuid "4b57884f-1d38-456e-8eb8-33df24954ebe")
+		(uuid "818d2ccb-d896-4a8c-aba0-8f4f5cc9c134")
 		(effects
 			(font
 				(size 1 1)
@@ -18,7 +18,7 @@
 	(property "Value" "SHT41A"
 		(at 0 2 0)
 		(layer "F.Fab")
-		(uuid "111973b9-ec12-4a3b-8321-aee6f4212fcb")
+		(uuid "e5633658-9b88-4dff-92a9-8df7eff10d29")
 		(effects
 			(font
 				(size 1 1)
@@ -30,7 +30,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "65696ac4-ea4e-4db6-811a-f880c9be0633")
+		(uuid "03d2ea4e-469d-4c81-a1cb-e7c074c8769a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -41,7 +41,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9c86dda4-231a-4246-a114-c4ca802c5fe6")
+		(uuid "5eafbc04-b5e1-451d-a8db-38621dd07187")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -58,7 +58,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "34193607-79b2-4cd9-88d9-93ab30c848ef")
+		(uuid "91df51de-35a6-4037-8fed-8bf65f43d9bb")
 	)
 	(fp_line
 		(start -0.7 0.75)
@@ -68,7 +68,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "ef9c20f9-2b21-4f8c-845b-29a53a903b9d")
+		(uuid "c1b947d0-490d-4bab-82a9-827cfcc451e6")
 	)
 	(fp_circle
 		(center -1 -0.8)
@@ -79,7 +79,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "4142b1a8-f0af-4a72-b0d2-5121a5364991")
+		(uuid "454ea5f9-0386-45e5-940d-0e5c301a8bb9")
 	)
 	(fp_line
 		(start -0.75 -0.75)
@@ -89,7 +89,7 @@
 			(type solid)
 		)
 		(layer "Dwgs.User")
-		(uuid "0de6e49f-161a-4053-950a-0206e4bee5ea")
+		(uuid "b7d9c1cb-ee49-44c0-914b-c80999225265")
 	)
 	(fp_line
 		(start -0.75 0.75)
@@ -99,7 +99,7 @@
 			(type solid)
 		)
 		(layer "Dwgs.User")
-		(uuid "e2c538f4-c855-4ee0-8930-55aeb8a4bd05")
+		(uuid "f74afc96-a7a7-4811-bb0c-149bce9eec3d")
 	)
 	(fp_line
 		(start 0.75 -0.75)
@@ -109,7 +109,7 @@
 			(type solid)
 		)
 		(layer "Dwgs.User")
-		(uuid "09fcbfc6-849f-4cfa-a589-b9428d680983")
+		(uuid "78d891fa-8259-4fad-8d04-90067c2bfde4")
 	)
 	(fp_line
 		(start 0.75 0.75)
@@ -119,47 +119,18 @@
 			(type solid)
 		)
 		(layer "Dwgs.User")
-		(uuid "15f3c6bb-310d-4986-ade9-6018e4bfe39f")
+		(uuid "41bd911e-915f-46a2-bf08-996d05699f64")
 	)
-	(fp_line
-		(start -1.2 -1)
-		(end -1.2 1)
+	(fp_rect
+		(start -1.35 -1)
+		(end 1.35 1)
 		(stroke
 			(width 0.05)
-			(type solid)
+			(type default)
 		)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "6f0616ea-9781-4285-9058-cbe264fbea41")
-	)
-	(fp_line
-		(start -1.2 1)
-		(end 1.2 1)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "5249b4cc-c146-4461-ac67-54c196ea29f8")
-	)
-	(fp_line
-		(start 1.2 -1)
-		(end -1.2 -1)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "097ebbfa-02b8-4980-909a-e50d4be7a8b3")
-	)
-	(fp_line
-		(start 1.2 1)
-		(end 1.2 -1)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "a03992cf-9952-41ba-a0d7-6ccf06028ab7")
+		(uuid "13117e03-a75f-472a-8fe3-6d02ae43767d")
 	)
 	(fp_circle
 		(center 0 0)
@@ -170,35 +141,35 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "ace4f598-3ddf-431e-9686-521d924f056a")
+		(uuid "18b15710-7a99-4e13-8c42-53c8760d583e")
 	)
 	(pad "1" smd rect
-		(at -0.7 -0.4)
-		(size 0.5 0.4)
+		(at -0.8 -0.4)
+		(size 0.8 0.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.102)
-		(uuid "0b5a9ad3-b211-4edf-80c5-66becb6afa08")
+		(uuid "ea98e728-c760-47af-9c8e-ee93caab58b1")
 	)
 	(pad "2" smd rect
-		(at -0.7 0.4)
-		(size 0.5 0.4)
+		(at -0.8 0.4)
+		(size 0.8 0.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.102)
-		(uuid "47178558-36e0-40ad-9686-069924e5bfd7")
+		(uuid "6d6a1df3-b009-4430-94fd-aaf825cf1d0d")
 	)
 	(pad "3" smd rect
-		(at 0.7 0.4)
-		(size 0.5 0.4)
+		(at 0.8 0.4)
+		(size 0.8 0.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.102)
-		(uuid "5abaf13d-445f-4aa5-b68b-2bbff64fa273")
+		(uuid "c3c84c9c-de70-4130-ab12-e17aa81945b4")
 	)
 	(pad "4" smd rect
-		(at 0.7 -0.4)
-		(size 0.5 0.4)
+		(at 0.8 -0.4)
+		(size 0.8 0.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.102)
-		(uuid "e056dc74-d910-498d-8ca4-2b260e066368")
+		(uuid "87fc7026-7031-4b82-8968-e3f37dcff33a")
 	)
 	(embedded_fonts no)
 	(model "${MY_3DMODELS}/Sensirion SHT41A/SHT4XA.step"

@@ -6352,7 +6352,7 @@
 			(at 3.7 -0.1 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "77ad9e6f-2abe-4259-a957-ea4ca21a95d1")
+			(uuid "63bf68ee-90b3-4036-b7ae-733fb64634ad")
 			(effects
 				(font
 					(size 1 1)
@@ -6364,7 +6364,7 @@
 			(at 0 4.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "1f921a3a-0122-43af-9e3a-e49b66f17b2c")
+			(uuid "bb706cd6-38a2-44ca-9d3a-5b5975509682")
 			(effects
 				(font
 					(size 1 1)
@@ -6376,7 +6376,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8a573694-18d8-4b10-80e3-adfe927d1b04")
+			(uuid "3f36d7a4-68d7-4e39-a129-fd43f393d51a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6387,23 +6387,10 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eaf49c35-b6f0-4577-a307-574004474a9f")
+			(uuid "cb266cf5-fa92-4867-af22-8fca56263efb")
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Microchip MCP4728T-E/UN"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "84924516-1d98-47f5-9a74-8be75841db10")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -6411,12 +6398,6 @@
 		(path "/ef166d31-4b9f-4471-bd8b-374f26c259b7")
 		(sheetname "/")
 		(sheetfile "Masthead Controller.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "10" "9" "8" "7" "6")
-			)
-		)
 		(clearance 0.16)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -7012,10 +6993,10 @@
 			(uuid "9590dc49-cc01-456a-8e11-5bd374120212")
 		)
 		(fp_text user "*"
-			(at -2.9 -1 0)
+			(at -2.6 -1.3 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "2cb81425-b1d5-44c4-ae71-98347abce15e")
+			(uuid "ee9e922d-874c-405c-8a67-84c197ebb83b")
 			(effects
 				(font
 					(size 1 1)
@@ -7036,9 +7017,10 @@
 			)
 		)
 		(fp_text user "*"
-			(at -2.6 -1.3 90)
+			(at -2.9 -1 0)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "98c0c9f4-a888-456b-8944-c220c124fbe1")
+			(uuid "2cb81425-b1d5-44c4-ae71-98347abce15e")
 			(effects
 				(font
 					(size 1 1)
@@ -7047,10 +7029,9 @@
 			)
 		)
 		(fp_text user "*"
-			(at -2.6 -1.3 270)
-			(unlocked yes)
+			(at -2.6 -1.3 90)
 			(layer "F.Fab")
-			(uuid "ee9e922d-874c-405c-8a67-84c197ebb83b")
+			(uuid "98c0c9f4-a888-456b-8944-c220c124fbe1")
 			(effects
 				(font
 					(size 1 1)
@@ -7149,6 +7130,17 @@
 			(uuid "5ba8c02f-0b9d-4cfa-be82-53b82f47c372")
 		)
 		(embedded_fonts no)
+		(model "${MY_3DMODELS}/Microchip Technology MCP4728/MSOP10_MC_MCH.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "mr-stuff:TDK CGA5"
 		(layer "F.Cu")
@@ -20598,7 +20590,7 @@
 				(pins "1" "3" "5" "7" "9" "11" "2" "4" "6" "8" "10" "12")
 			)
 		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.995 1.82)
@@ -57531,7 +57523,7 @@
 			(at 3.8 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "39ffb749-f2a4-40f6-b838-4066a1a629fa")
+			(uuid "dccb43b1-2a5c-41b0-b738-9200c3e6b994")
 			(effects
 				(font
 					(size 1 1)
@@ -57543,7 +57535,7 @@
 			(at 0 4.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "411fb459-2972-4c67-a642-e43266fb2e8d")
+			(uuid "67f854f8-576c-4b09-9683-c547f5b480ab")
 			(effects
 				(font
 					(size 1 1)
@@ -57555,7 +57547,7 @@
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2ba6379e-9a6f-4bf3-9916-d008f86bd001")
+			(uuid "db1ad2e5-db98-4080-a929-ecacfe7ea2cd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57566,23 +57558,10 @@
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "66dce72e-d155-4957-9dd0-ed5fe1d357a9")
+			(uuid "c31b1e78-40b6-4a6a-b5b4-c34dcbdbc0c5")
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Microchip MCP4728T-E/UN"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "df64651c-0f61-4780-9b0e-67c2d7030596")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -57590,12 +57569,6 @@
 		(path "/ed0dfd39-41bb-4406-8334-eeb173ad526f")
 		(sheetname "/")
 		(sheetfile "Masthead Controller.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "10" "9" "8" "7" "6")
-			)
-		)
 		(clearance 0.16)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -58191,7 +58164,7 @@
 			(uuid "a5ee729c-6b0e-4eff-a6a0-527a0dae9f72")
 		)
 		(fp_text user "*"
-			(at -3.1 -1 0)
+			(at -2.3 -1.6 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "2ce889c8-ebee-418a-b584-27282e42c773")
@@ -58328,6 +58301,17 @@
 			(uuid "9bfb0022-0cdf-4ec5-a6af-1231a0c3334e")
 		)
 		(embedded_fonts no)
+		(model "${MY_3DMODELS}/Microchip Technology MCP4728/MSOP10_MC_MCH.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "mr-stuff:Stackpole RMCA0805"
 		(layer "F.Cu")
@@ -59375,7 +59359,7 @@
 			(at 3.7 0.0576 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "a2ba49ce-1b8d-4044-b134-93221fbb1105")
+			(uuid "d5f55f4e-52a2-4d7b-aa1b-d5c2551eced1")
 			(effects
 				(font
 					(size 1 1)
@@ -59387,7 +59371,7 @@
 			(at 0 4.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "dbe77b83-b3bb-4922-ac38-6a0a81c8bd5e")
+			(uuid "a896b476-0e79-47b6-973d-74a994e15134")
 			(effects
 				(font
 					(size 1 1)
@@ -59399,7 +59383,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c02e3320-8f17-405a-aa5a-ec6143b33810")
+			(uuid "7a5cb7df-28d7-451c-a4df-44fc0d694be6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59410,23 +59394,10 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f8ce489b-385b-48b4-befc-272803f37878")
+			(uuid "b31ad813-8a9f-48ed-b44c-b7600f63436e")
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Microchip MCP4728T-E/UN"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1c9789da-2a2f-4bb0-8eeb-5caca0845fd4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -59434,12 +59405,6 @@
 		(path "/5196ba2b-74b5-4236-9c02-8d7f97b1ea55")
 		(sheetname "/")
 		(sheetfile "Masthead Controller.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "10" "9" "8" "7" "6")
-			)
-		)
 		(clearance 0.16)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -60035,10 +60000,10 @@
 			(uuid "07094cef-b74b-4ed0-bbcf-f3387b231951")
 		)
 		(fp_text user "*"
-			(at -3 -1.0424 0)
+			(at -2.6 -1.3 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "0dc0d161-faac-41f6-89db-deedbdfdfa01")
+			(uuid "87916d31-97ad-40e8-bd78-c01b933266bb")
 			(effects
 				(font
 					(size 1 1)
@@ -60059,9 +60024,10 @@
 			)
 		)
 		(fp_text user "*"
-			(at -2.6 -1.3 90)
+			(at -3 -1.0424 0)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "2dd69e55-d260-4319-957d-66712859dee0")
+			(uuid "0dc0d161-faac-41f6-89db-deedbdfdfa01")
 			(effects
 				(font
 					(size 1 1)
@@ -60070,10 +60036,9 @@
 			)
 		)
 		(fp_text user "*"
-			(at -2.6 -1.3 270)
-			(unlocked yes)
+			(at -2.6 -1.3 90)
 			(layer "F.Fab")
-			(uuid "87916d31-97ad-40e8-bd78-c01b933266bb")
+			(uuid "2dd69e55-d260-4319-957d-66712859dee0")
 			(effects
 				(font
 					(size 1 1)
@@ -60172,6 +60137,17 @@
 			(uuid "44c2178c-ae73-48c3-8cce-d269c120179c")
 		)
 		(embedded_fonts no)
+		(model "${MY_3DMODELS}/Microchip Technology MCP4728/MSOP10_MC_MCH.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "mr-stuff:Stackpole_RNCP1206"
 		(layer "F.Cu")
@@ -62583,7 +62559,7 @@
 				(pins "1" "3" "5" "7" "9" "11" "2" "4" "6" "8" "10" "12")
 			)
 		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.995 1.82)
