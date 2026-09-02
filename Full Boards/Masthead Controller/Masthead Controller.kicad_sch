@@ -1114,7 +1114,7 @@
 				)
 			)
 			(property "Description" "Schottky diode"
-				(at 0 0 0)
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8870,6 +8870,241 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:STM_M24C64-RMN6P"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "ROM"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "STM_M24C64-RMN6P"
+				(at 0 -7.874 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:STM M24C64-RMN6P"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf"
+				(at 0 -17.018 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC"
+				(at 0 -12.446 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "STM M24C64-RMN6P"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "STM_M24C64-RMN6P_0_0"
+				(rectangle
+					(start -5.08 6.35)
+					(end 5.08 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "STM_M24C64-RMN6P_1_0"
+				(pin input line
+					(at -7.62 3.81 0)
+					(length 2.54)
+					(name "E0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 1.27 0)
+					(length 2.54)
+					(name "E1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -1.27 0)
+					(length 2.54)
+					(name "E2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 -3.81 180)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 -1.27 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at 7.62 1.27 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -3.81 0)
+					(length 2.54)
+					(name "~{WC}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 3.81 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:Sensirion SHT41A"
 			(pin_names
 				(offset 1.016)
@@ -11456,6 +11691,18 @@
 		)
 	)
 	(rectangle
+		(start 241.3 180.34)
+		(end 307.975 219.71)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "00b9e1c9-ee90-4cd5-bd5b-095e06ea3019")
+	)
+	(rectangle
 		(start 353.06 95.25)
 		(end 456.565 170.18)
 		(stroke
@@ -11901,7 +12148,7 @@
 	)
 	(text "All \"EPAD\" grounds must be stitched with vias."
 		(exclude_from_sim no)
-		(at 245.872 172.72 0)
+		(at 245.618 172.212 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12043,6 +12290,18 @@
 		)
 		(uuid "a58b102d-a78d-452c-9ea2-b0301880faf5")
 	)
+	(text "I2C Address (Ax = Ex)\n+----+----+----++------+\n| E0 | E1 | E2 || Hex  |\n+----+----+----++------+\n|  0 |  0 |  0 || 0x50 |\n|  0 |  0 |  1 || 0x51 |\n|  0 |  1 |  0 || 0x52 |\n|  0 |  1 |  1 || 0x53 |\n|  1 |  0 |  0 || 0x54 |\n|  1 |  0 |  1 || 0x55 |\n|  1 |  1 |  0 || 0x56 |\n|  1 |  1 |  1 || 0x57 |\n+----+----+----++------+"
+		(exclude_from_sim no)
+		(at 285.75 188.468 0)
+		(effects
+			(font
+				(face "DejaVu Sans Mono")
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "aa4a882a-8a85-406c-8c59-bf7b1a065385")
+	)
 	(text "16-Bit 2/4-ch ADC (0x48)"
 		(exclude_from_sim no)
 		(at 194.056 204.216 0)
@@ -12163,6 +12422,16 @@
 		)
 		(uuid "fc3d9b0b-676c-4768-bfed-59631f23ae51")
 	)
+	(text "64KiB EEPROM - Redundant (at 0x55h and 0x57h)"
+		(exclude_from_sim no)
+		(at 266.954 179.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fce5477e-7379-4a0b-a3fe-33524193efd5")
+	)
 	(text "N2K 60R Termination Note:\nDirect connection to a single Airmar \n200WX weather station. Cable from 200WX \nto 1988451 less than 1 meter."
 		(exclude_from_sim no)
 		(at 16.256 21.59 0)
@@ -12179,6 +12448,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "00a817cb-4602-4d25-9edd-0a1f54b69d9b")
+	)
+	(junction
+		(at 245.11 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "012fff7f-3d2d-4e55-a86d-25b409d2e434")
 	)
 	(junction
 		(at 548.64 50.8)
@@ -12343,6 +12618,12 @@
 		(uuid "206bc4be-c620-4933-883f-7c4153b414be")
 	)
 	(junction
+		(at 278.13 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "209b64c2-8fb2-47e6-8692-611621253f05")
+	)
+	(junction
 		(at 53.34 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12407,6 +12688,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c04e5d3-54f1-4533-8922-a71ede045468")
+	)
+	(junction
+		(at 278.13 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e78ae4c-e599-4c2e-8d9f-3380ca00b1e2")
 	)
 	(junction
 		(at 412.75 40.64)
@@ -12557,6 +12844,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "46a39118-e29e-4d38-9bfd-7d0ebd185c57")
+	)
+	(junction
+		(at 245.11 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4725b710-151d-42cf-92ec-f6029f8fb3c4")
 	)
 	(junction
 		(at 520.7 76.2)
@@ -12865,6 +13158,12 @@
 		(uuid "85a12b4c-e39b-41b0-9ccd-ddff4e30e5de")
 	)
 	(junction
+		(at 278.13 213.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85ecfd7e-1192-49b8-999c-a864d2857efe")
+	)
+	(junction
 		(at 172.72 219.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12961,6 +13260,12 @@
 		(uuid "92732df4-5347-49ab-a8e0-1ce9a2cc7449")
 	)
 	(junction
+		(at 278.13 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93c23d86-5f17-4fc6-b4ae-31ec19e7cd51")
+	)
+	(junction
 		(at 133.35 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13045,6 +13350,12 @@
 		(uuid "ab517c6e-0ffa-4751-af24-2f073d501624")
 	)
 	(junction
+		(at 245.11 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abee6f50-d49d-4fa1-a306-de5c8cb67d24")
+	)
+	(junction
 		(at 384.81 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13061,6 +13372,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af9c4b8b-f0d0-4894-9514-9b4814d99d7e")
+	)
+	(junction
+		(at 247.65 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0352497-163a-440b-8042-80cd4ef7beda")
 	)
 	(junction
 		(at 110.49 88.9)
@@ -13800,6 +14117,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 186.69) (xy 248.92 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03fc381f-d1aa-4174-8903-9a09beace434")
+	)
+	(wire
+		(pts
 			(xy 161.29 44.45) (xy 173.99 44.45)
 		)
 		(stroke
@@ -13817,6 +14144,16 @@
 			(type default)
 		)
 		(uuid "04214fc1-d655-4e6d-be78-53e6e96d6c9c")
+	)
+	(wire
+		(pts
+			(xy 245.11 191.77) (xy 245.11 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04278e7f-e7ef-4280-916b-12aa1d8931cf")
 	)
 	(wire
 		(pts
@@ -13877,6 +14214,16 @@
 			(type default)
 		)
 		(uuid "05f52cb7-a2a8-411d-a502-73533ad94e29")
+	)
+	(wire
+		(pts
+			(xy 245.11 213.36) (xy 248.92 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06413127-ddbe-4958-9b98-8d498ca58664")
 	)
 	(wire
 		(pts
@@ -14310,6 +14657,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 191.77) (xy 265.43 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "105d0154-044c-4fd1-a6c7-fb09f3ebe143")
+	)
+	(wire
+		(pts
 			(xy 26.67 62.23) (xy 30.48 62.23)
 		)
 		(stroke
@@ -14487,6 +14844,16 @@
 			(type default)
 		)
 		(uuid "13d621de-a5d9-4171-982e-65248bb90e4d")
+	)
+	(wire
+		(pts
+			(xy 248.92 210.82) (xy 245.11 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13dd401f-aa60-42b3-b55e-e59635259192")
 	)
 	(wire
 		(pts
@@ -14707,6 +15074,16 @@
 			(type default)
 		)
 		(uuid "18ad3129-ae9a-450e-9b75-1a881f639c6c")
+	)
+	(wire
+		(pts
+			(xy 264.16 186.69) (xy 278.13 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18b2a935-9820-451a-aedc-a1c56a785b23")
 	)
 	(wire
 		(pts
@@ -15280,6 +15657,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 210.82) (xy 245.11 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27e802e4-6d90-4e9a-9602-fd85768c1019")
+	)
+	(wire
+		(pts
 			(xy 396.24 138.43) (xy 400.05 138.43)
 		)
 		(stroke
@@ -15440,6 +15827,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 205.74) (xy 248.92 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bc93522-5320-4bae-ae9d-277abd2fd70d")
+	)
+	(wire
+		(pts
 			(xy 44.45 184.15) (xy 44.45 181.61)
 		)
 		(stroke
@@ -15580,6 +15977,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 189.23) (xy 265.43 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f7d882a-0a81-4ca8-877b-bc5065669cb8")
+	)
+	(wire
+		(pts
 			(xy 40.64 118.11) (xy 40.64 110.49)
 		)
 		(stroke
@@ -15617,6 +16024,16 @@
 			(type default)
 		)
 		(uuid "3143a701-e00c-4a42-b3d1-65a98823da75")
+	)
+	(wire
+		(pts
+			(xy 247.65 194.31) (xy 248.92 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31e2fe93-20f7-4f6e-b155-094aa29a803d")
 	)
 	(wire
 		(pts
@@ -15747,6 +16164,16 @@
 			(type default)
 		)
 		(uuid "3619e403-9c29-4a35-acd8-11e01f9fd8a3")
+	)
+	(wire
+		(pts
+			(xy 245.11 208.28) (xy 248.92 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3625c777-127a-4394-a808-9e5fd66518ca")
 	)
 	(wire
 		(pts
@@ -15987,6 +16414,26 @@
 			(type default)
 		)
 		(uuid "3b01c428-8812-4e9b-9531-b17449fed5e1")
+	)
+	(wire
+		(pts
+			(xy 264.16 210.82) (xy 265.43 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b1b3fde-7eed-408e-85ba-6f2f91a55d11")
+	)
+	(wire
+		(pts
+			(xy 264.16 213.36) (xy 278.13 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bb4337e-05f9-46a6-bf0f-cbbe3a9c0c51")
 	)
 	(wire
 		(pts
@@ -16597,6 +17044,16 @@
 			(type default)
 		)
 		(uuid "4a04384a-d4ab-4ac8-a03c-bb1d7e05e070")
+	)
+	(wire
+		(pts
+			(xy 245.11 194.31) (xy 247.65 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a4e14f4-39b8-4fe7-ac92-b21d67cf84a2")
 	)
 	(wire
 		(pts
@@ -17920,6 +18377,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 189.23) (xy 247.65 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6941cff6-4eac-4dfb-a15f-2e2278977bf9")
+	)
+	(wire
+		(pts
 			(xy 332.74 111.76) (xy 334.01 111.76)
 		)
 		(stroke
@@ -18620,6 +19087,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 194.31) (xy 278.13 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c0d08ab-daa1-41f3-9da9-8e4d0b8c7bb5")
+	)
+	(wire
+		(pts
 			(xy 548.64 50.8) (xy 546.1 50.8)
 		)
 		(stroke
@@ -18877,6 +19354,16 @@
 			(type default)
 		)
 		(uuid "8420b2cc-d57d-4625-ba66-665d1f578b2d")
+	)
+	(wire
+		(pts
+			(xy 264.16 208.28) (xy 265.43 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "842c4b1c-c57b-43de-8fa5-a4731f4cc90d")
 	)
 	(wire
 		(pts
@@ -21210,6 +21697,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 191.77) (xy 245.11 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcdc2c44-ca40-4b92-8836-0a1f434d61e7")
+	)
+	(wire
+		(pts
 			(xy 113.03 167.64) (xy 113.03 189.23)
 		)
 		(stroke
@@ -21277,6 +21774,16 @@
 			(type default)
 		)
 		(uuid "bec031f8-6fa4-44a6-b750-af5a5ff3926a")
+	)
+	(wire
+		(pts
+			(xy 247.65 189.23) (xy 247.65 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beef4651-057f-4bee-89ab-b4cd7623ab7e")
 	)
 	(wire
 		(pts
@@ -22380,6 +22887,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 205.74) (xy 278.13 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8dc0dcd-a133-4631-82ae-40271eeefa12")
+	)
+	(wire
+		(pts
 			(xy 137.16 215.9) (xy 137.16 224.79)
 		)
 		(stroke
@@ -23380,6 +23897,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 208.28) (xy 245.11 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f630b381-3b8a-4add-9db0-3af24b10cd9e")
+	)
+	(wire
+		(pts
 			(xy 520.7 68.58) (xy 520.7 76.2)
 		)
 		(stroke
@@ -23928,6 +24455,16 @@
 		)
 		(uuid "26930183-36b7-4270-8c4a-7250fe122010")
 	)
+	(label "DAC_SDA"
+		(at 265.43 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "274b4e69-f0ff-4bc4-ade7-ae6ca3351261")
+	)
 	(label "DECK_PRI_VSET"
 		(at 66.04 257.81 0)
 		(effects
@@ -23957,6 +24494,16 @@
 			(justify right bottom)
 		)
 		(uuid "32ccaa70-af4c-4395-99e8-8e1402f0f010")
+	)
+	(label "DAC_SCL"
+		(at 265.43 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "32f230b5-b21b-4337-ab56-708fad579d04")
 	)
 	(label "CAN_TX_LOCAL"
 		(at 45.72 54.61 180)
@@ -24438,6 +24985,16 @@
 		)
 		(uuid "9a701654-1fbf-47f7-9601-a218c9a973c8")
 	)
+	(label "DAC_SDA"
+		(at 265.43 210.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9aed2292-502e-4922-9ed9-92e82cd7f36a")
+	)
 	(label "I2C_SDA"
 		(at 45.72 194.31 180)
 		(effects
@@ -24447,6 +25004,16 @@
 			(justify right bottom)
 		)
 		(uuid "9c0a78d8-4dae-4c4c-a83a-aacc260d552f")
+	)
+	(label "DAC_SCL"
+		(at 265.43 208.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c135698-26a2-4c26-860a-e9af84fe9e61")
 	)
 	(label "EFUSE_N2K_IMON"
 		(at 224.79 119.38 0)
@@ -27189,6 +27756,115 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:STM_M24C64-RMN6P")
+		(at 256.54 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "15fdc486-8baf-4d63-9043-6af2f710da01")
+		(property "Reference" "ROM2"
+			(at 256.54 201.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M24C64"
+			(at 256.54 217.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:STM M24C64-RMN6P"
+			(at 256.54 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf"
+			(at 256.54 226.568 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC"
+			(at 256.54 221.996 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "STM M24C64-RMN6P"
+			(at 256.54 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab4dea60-0d12-4d0d-9cde-ba1ea0b54c0a")
+		)
+		(pin "8"
+			(uuid "a7876a7c-1d1d-43b4-ad23-294039f37cec")
+		)
+		(pin "4"
+			(uuid "827609ba-8f0f-4de4-afa3-b8401d93f72e")
+		)
+		(pin "7"
+			(uuid "58f82af5-ab07-4101-b0a3-384705f0e0f6")
+		)
+		(pin "2"
+			(uuid "dd35d963-ad77-48e9-813d-2d87b0f2acc9")
+		)
+		(pin "6"
+			(uuid "489c9de0-f0ce-474d-a9f8-293e344b724d")
+		)
+		(pin "5"
+			(uuid "45c28c1a-7df2-4d98-89b5-381981f942f7")
+		)
+		(pin "3"
+			(uuid "4b08cb9a-d95c-4d71-9eac-e8804c77789e")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "ROM2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:TI_TPS26631PWP")
 		(at 189.23 115.57 0)
 		(unit 1)
@@ -27775,6 +28451,115 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:STM_M24C64-RMN6P")
+		(at 256.54 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1c1b80ea-2d14-4b63-b2d8-69ffde4d91d8")
+		(property "Reference" "ROM1"
+			(at 256.54 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M24C64"
+			(at 256.54 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:STM M24C64-RMN6P"
+			(at 256.54 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf"
+			(at 256.54 207.518 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC"
+			(at 256.54 202.946 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "STM M24C64-RMN6P"
+			(at 256.54 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2492c58b-fd82-4e93-8507-7e1bd9de311d")
+		)
+		(pin "8"
+			(uuid "0c8fd163-22ce-4001-8700-be8a30e6ef68")
+		)
+		(pin "4"
+			(uuid "23d5d6b7-af7a-414e-9deb-2efaff9a36e7")
+		)
+		(pin "7"
+			(uuid "346666b8-fb49-48dd-b017-c6cfa9a3da0b")
+		)
+		(pin "2"
+			(uuid "2fcd7240-cd68-465b-bb64-d8668a0858b1")
+		)
+		(pin "6"
+			(uuid "403ff5ed-e8c8-4e7e-baaa-134b6b297c53")
+		)
+		(pin "5"
+			(uuid "8e0e1bd5-de15-46b9-9329-b7d249f9bbd6")
+		)
+		(pin "3"
+			(uuid "9465753a-e58c-4a63-a86a-818198178dfa")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "ROM1")
 					(unit 1)
 				)
 			)
@@ -29179,6 +29964,83 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 245.11 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2754ea73-067b-4a00-b603-47c39c13c6b3")
+		(property "Reference" "#PWR0218"
+			(at 245.11 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 245.11 202.184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 245.11 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bb05d40-d8c0-4e10-b695-e458ad8ca0c7")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0218")
 					(unit 1)
 				)
 			)
@@ -32086,6 +32948,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 278.13 209.55 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "48e424da-36d0-4220-9dab-e34e7355e1fe")
+		(property "Reference" "C41"
+			(at 282.448 207.264 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 283.972 212.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
+			(at 277.1648 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf"
+			(at 278.13 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 278.13 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 278.13 209.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e34df86a-9a77-4ba3-bdea-e99a46f82fe6")
+		)
+		(pin "2"
+			(uuid "b54b9425-a9c9-452d-9b3f-45ce52541431")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 209.55 107.95 270)
 		(unit 1)
@@ -33945,7 +34899,7 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
+		(property "Description" "Diode 40 V 3A Surface Mount SMA"
 			(at 297.18 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -38273,6 +39227,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 278.13 194.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e376816-f745-4cac-8786-7e7fe56d3950")
+		(property "Reference" "#PWR0242"
+			(at 278.13 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.13 197.866 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 278.13 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f7884975-6160-4977-98b4-f93abe61272f")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0242")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 224.79 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -39889,6 +40920,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 245.11 194.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ebd5b66-6d61-4aee-a84f-6199ce6ed4d1")
+		(property "Reference" "#PWR0217"
+			(at 245.11 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 245.11 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 245.11 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31c70554-d1f8-4b32-83d0-744900b1bb29")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0217")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 189.23 180.34 90)
 		(unit 1)
@@ -40297,6 +41405,83 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 245.11 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91623b33-9d98-4e1a-8a0a-0a0f2afca3f5")
+		(property "Reference" "#PWR0219"
+			(at 245.11 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 245.11 217.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 245.11 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "817ec1a6-8bb0-48b2-a9a1-4dd023bf3493")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0219")
 					(unit 1)
 				)
 			)
@@ -41449,6 +42634,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 278.13 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9dc8d1ea-5a8e-4c95-a9a7-6a8a7205b52f")
+		(property "Reference" "#PWR0244"
+			(at 278.13 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.13 216.916 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 278.13 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "226085cd-9edf-4339-8d49-c04ddb47ad96")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0244")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Bourns SRN6045TA-680M")
 		(at 530.86 156.21 0)
 		(unit 1)
@@ -42038,7 +43300,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical"
+		(property "Footprint" "mr-stuff:Amphenol 20021111-00012T4LF"
 			(at 41.91 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -42049,7 +43311,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_minitek127_btb.pdf"
 			(at 41.91 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -42071,7 +43333,7 @@
 				)
 			)
 		)
-		(property "Part" "Sullins GRPB052VWVN-RC"
+		(property "Part" "Amphenol 20021111-00012T4LF"
 			(at 41.91 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -43401,6 +44663,83 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 245.11 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "acfe5075-06f6-4300-a23f-c5ae6de6fc68")
+		(property "Reference" "#PWR0216"
+			(at 245.11 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 245.11 183.134 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 245.11 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65c932e1-449d-47c1-ac48-8680ce87908a")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 19.05 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -43824,6 +45163,83 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 278.13 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b061f612-f203-4e18-b07e-0370d349b4b4")
+		(property "Reference" "#PWR0243"
+			(at 278.13 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 278.13 202.184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 278.13 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24ef25fc-5671-4282-a1a5-f3ed42587de3")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0243")
 					(unit 1)
 				)
 			)
@@ -44519,127 +45935,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x06_Odd_Even")
-		(at 55.88 252.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "ba826c4f-48d6-46a6-86c4-bce805bb3045")
-		(property "Reference" "FST1"
-			(at 57.15 244.094 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x06_Odd_Even"
-			(at 57.15 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical"
-			(at 55.88 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Jumpers to test per-circuit fail-safe behaviour of LED circuits"
-			(at 55.88 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Sullins GRPB052VWVN-RC"
-			(at 55.88 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "9"
-			(uuid "23e9fd6e-cf8a-41fd-87b5-4b013ae74139")
-		)
-		(pin "3"
-			(uuid "386700e7-18bf-47db-98ee-92d725d0dc0e")
-		)
-		(pin "1"
-			(uuid "cdc05ee0-025a-4e5d-9f9a-fffcd7a52862")
-		)
-		(pin "11"
-			(uuid "a7675b22-d8be-44be-979b-aa16c3c55689")
-		)
-		(pin "10"
-			(uuid "d6a3a82b-5612-4ade-a483-5eddcd3adc54")
-		)
-		(pin "8"
-			(uuid "3e133310-f1e2-4182-8199-20fcf0677246")
-		)
-		(pin "2"
-			(uuid "121129e4-f74e-496c-9c21-85d56cd25503")
-		)
-		(pin "6"
-			(uuid "093196b2-77c7-486a-9fb6-83638abea255")
-		)
-		(pin "12"
-			(uuid "bbe31a33-a85b-4b3e-9def-163bf9615981")
-		)
-		(pin "4"
-			(uuid "6bd86ee0-6e89-444a-a646-db79cd2ef9df")
-		)
-		(pin "5"
-			(uuid "839408a4-b7ea-4ff1-9bc3-d81ed0318dae")
-		)
-		(pin "7"
-			(uuid "1a485685-592a-467a-8247-8dab4b65fc1d")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "FST1")
 					(unit 1)
 				)
 			)
@@ -47734,6 +49029,127 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_02x06_Odd_Even")
+		(at 55.88 252.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "d31b5b31-a3bf-43fd-aa42-7eaa1d9b75a2")
+		(property "Reference" "FST1"
+			(at 56.896 244.348 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x06_Odd_Even"
+			(at 57.15 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Amphenol 20021111-00012T4LF"
+			(at 55.88 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_minitek127_btb.pdf"
+			(at 55.88 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumpers to test per-circuit fail-safe behaviour of LED circuits"
+			(at 55.88 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Amphenol 20021111-00012T4LF"
+			(at 55.88 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "536acb4e-e28d-49ff-b459-4a28b1d2da3e")
+		)
+		(pin "3"
+			(uuid "351bd7aa-07c4-40d1-a581-0e7c42c3397c")
+		)
+		(pin "1"
+			(uuid "36435982-77bc-4fe0-9b1f-a4fa76ead1de")
+		)
+		(pin "11"
+			(uuid "5b82143b-0769-4071-8b4e-5e439d0b0612")
+		)
+		(pin "10"
+			(uuid "23b8430f-ec84-4f37-83cd-ffcc5cbdb6a3")
+		)
+		(pin "8"
+			(uuid "5b6ad8bb-fdab-4755-b835-6ae43f1d3562")
+		)
+		(pin "2"
+			(uuid "ee6dd2bb-d4e1-4fc1-93d4-cb6f70e51b87")
+		)
+		(pin "6"
+			(uuid "fbcc64cf-9162-4cb6-869b-6cfdd81dbd63")
+		)
+		(pin "12"
+			(uuid "dd71b9eb-cac0-439e-abe8-bede69277029")
+		)
+		(pin "4"
+			(uuid "6a16a88d-ade2-4811-9587-0b493e664d84")
+		)
+		(pin "5"
+			(uuid "678ae5d4-6aed-4cec-ad0a-88e1976e10bf")
+		)
+		(pin "7"
+			(uuid "bcb958a2-9c58-420d-8110-d19956fc27ca")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "FST1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 476.25 35.56 0)
 		(unit 1)
@@ -50203,6 +51619,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 278.13 190.5 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e7ff9f05-c4fd-4b1f-9109-8383bde3d1f6")
+		(property "Reference" "C40"
+			(at 282.448 188.214 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 283.972 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
+			(at 277.1648 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf"
+			(at 278.13 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 278.13 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 278.13 190.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bcf8aaf0-59cb-4832-a463-1e1a35ceadb5")
+		)
+		(pin "2"
+			(uuid "a8eb7e04-5474-48c7-9299-f2db9de737f7")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 525.78 58.42 0)
 		(unit 1)
@@ -51346,6 +52854,83 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "LD2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 278.13 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3ef4233-9232-4beb-ab3d-2f9a03bdbb6c")
+		(property "Reference" "#PWR0241"
+			(at 278.13 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 278.13 183.134 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 278.13 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb315c95-5e7f-47f2-816d-bb20553041f4")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0241")
 					(unit 1)
 				)
 			)
