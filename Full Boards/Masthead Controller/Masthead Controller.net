@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-08-26T21:31:39")
+		(date "2026-09-02T02:19:29")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -2471,6 +2471,126 @@
 			)
 		)
 		(comp
+			(ref "C40")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e7ff9f05-c4fd-4b1f-9109-8383bde3d1f6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C41")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "48e424da-36d0-4220-9dab-e34e7355e1fe")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "CAN1")
 			(value "TCAN330DR")
 			(footprint "mr-stuff:TI TCAN330DR")
@@ -2722,7 +2842,7 @@
 			(value "NRVBA340NT3G")
 			(footprint "mr-stuff:Onsemi NRVBA340NT3G")
 			(datasheet "https://www.onsemi.com/pdf/datasheet/mbra340t3-d.pdf")
-			(description "Schottky diode")
+			(description "Diode 40 V 3A Surface Mount SMA")
 			(fields
 				(field
 					(name "Part") "Onsemi NRVBA340NT3G")
@@ -2731,7 +2851,7 @@
 				(field
 					(name "Datasheet") "https://www.onsemi.com/pdf/datasheet/mbra340t3-d.pdf")
 				(field
-					(name "Description") "Schottky diode")
+					(name "Description") "Diode 40 V 3A Surface Mount SMA")
 			)
 			(libsource
 				(lib "Device")
@@ -3986,16 +4106,16 @@
 		(comp
 			(ref "FST1")
 			(value "Conn_02x06_Odd_Even")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical")
+			(footprint "mr-stuff:Amphenol 20021111-00012T4LF")
+			(datasheet "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_minitek127_btb.pdf")
 			(description "Jumpers to test per-circuit fail-safe behaviour of LED circuits")
 			(fields
 				(field
-					(name "Part") "Sullins GRPB052VWVN-RC")
+					(name "Part") "Amphenol 20021111-00012T4LF")
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical")
+					(name "Footprint") "mr-stuff:Amphenol 20021111-00012T4LF")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_minitek127_btb.pdf")
 				(field
 					(name "Description") "Jumpers to test per-circuit fail-safe behaviour of LED circuits")
 			)
@@ -4006,7 +4126,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Sullins GRPB052VWVN-RC")
+				(value "Amphenol 20021111-00012T4LF")
 			)
 			(property
 				(name "Sheetname")
@@ -4034,7 +4154,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ba826c4f-48d6-46a6-86c4-bce805bb3045")
+			(tstamps "d31b5b31-a3bf-43fd-aa42-7eaa1d9b75a2")
 			(units
 				(unit
 					(name "A")
@@ -4082,16 +4202,16 @@
 		(comp
 			(ref "FST2")
 			(value "Conn_02x06_Odd_Even")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical")
+			(footprint "mr-stuff:Amphenol 20021111-00012T4LF")
+			(datasheet "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_minitek127_btb.pdf")
 			(description "Jumpers to test per-circuit fail-safe behaviour of LED circuits")
 			(fields
 				(field
-					(name "Part") "Sullins GRPB052VWVN-RC")
+					(name "Part") "Amphenol 20021111-00012T4LF")
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical")
+					(name "Footprint") "mr-stuff:Amphenol 20021111-00012T4LF")
 				(field
-					(name "Datasheet")
-				)
+					(name "Datasheet") "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_minitek127_btb.pdf")
 				(field
 					(name "Description") "Jumpers to test per-circuit fail-safe behaviour of LED circuits")
 			)
@@ -4102,7 +4222,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Sullins GRPB052VWVN-RC")
+				(value "Amphenol 20021111-00012T4LF")
 			)
 			(property
 				(name "Sheetname")
@@ -10603,6 +10723,146 @@
 			)
 		)
 		(comp
+			(ref "ROM1")
+			(value "M24C64")
+			(footprint "mr-stuff:STM M24C64-RMN6P")
+			(datasheet "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf")
+			(description "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
+			(fields
+				(field
+					(name "Part") "STM M24C64-RMN6P")
+				(field
+					(name "Footprint") "mr-stuff:STM M24C64-RMN6P")
+				(field
+					(name "Datasheet") "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf")
+				(field
+					(name "Description") "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "STM_M24C64-RMN6P")
+				(description "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
+			)
+			(property
+				(name "Part")
+				(value "STM M24C64-RMN6P")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1c1b80ea-2d14-4b63-b2d8-69ffde4d91d8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROM2")
+			(value "M24C64")
+			(footprint "mr-stuff:STM M24C64-RMN6P")
+			(datasheet "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf")
+			(description "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
+			(fields
+				(field
+					(name "Part") "STM M24C64-RMN6P")
+				(field
+					(name "Footprint") "mr-stuff:STM M24C64-RMN6P")
+				(field
+					(name "Datasheet") "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf")
+				(field
+					(name "Description") "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "STM_M24C64-RMN6P")
+				(description "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
+			)
+			(property
+				(name "Part")
+				(value "STM M24C64-RMN6P")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "15fdc486-8baf-4d63-9043-6af2f710da01")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "SW1")
 			(value "SW_MEC_5G")
 			(footprint "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
@@ -13346,6 +13606,68 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "STM_M24C64-RMN6P")
+			(description "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
+			(docs "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf")
+			(fields
+				(field
+					(name "Reference") "ROM")
+				(field
+					(name "Value") "STM_M24C64-RMN6P")
+				(field
+					(name "Footprint") "mr-stuff:STM M24C64-RMN6P")
+				(field
+					(name "Datasheet") "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf")
+				(field
+					(name "Description") "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
+				(field
+					(name "Part") "STM M24C64-RMN6P")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "E0")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "E1")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "E2")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "VSS")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "SDA")
+					(type "bidirectional")
+				)
+				(pin
+					(num "6")
+					(name "SCL")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "~{WC}")
+					(type "input")
+				)
+				(pin
+					(num "8")
+					(name "VCC")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Sensirion SHT41A")
 			(description "Humidity and Temperature Sensor, I2C, Automotive Grade")
 			(docs "https://sensirion.com/media/documents/C43ACD8C/67BD838A/HT_DS_Datasheet_SHT4xA_3.pdf")
@@ -13889,6 +14211,16 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C40")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C41")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "C5")
 				(pin "1")
 				(pintype "passive")
@@ -14003,6 +14335,48 @@
 				(ref "R8")
 				(pin "1")
 				(pintype "passive")
+			)
+			(node
+				(ref "ROM1")
+				(pin "1")
+				(pinfunction "E0_1")
+				(pintype "input")
+			)
+			(node
+				(ref "ROM1")
+				(pin "3")
+				(pinfunction "E2_3")
+				(pintype "input")
+			)
+			(node
+				(ref "ROM1")
+				(pin "8")
+				(pinfunction "VCC_8")
+				(pintype "power_in")
+			)
+			(node
+				(ref "ROM2")
+				(pin "1")
+				(pinfunction "E0_1")
+				(pintype "input")
+			)
+			(node
+				(ref "ROM2")
+				(pin "2")
+				(pinfunction "E1_2")
+				(pintype "input")
+			)
+			(node
+				(ref "ROM2")
+				(pin "3")
+				(pinfunction "E2_3")
+				(pintype "input")
+			)
+			(node
+				(ref "ROM2")
+				(pin "8")
+				(pinfunction "VCC_8")
+				(pintype "power_in")
 			)
 			(node
 				(ref "TP2")
@@ -14615,6 +14989,18 @@
 				(pin "2")
 				(pintype "passive")
 			)
+			(node
+				(ref "ROM1")
+				(pin "6")
+				(pinfunction "SCL_6")
+				(pintype "input")
+			)
+			(node
+				(ref "ROM2")
+				(pin "6")
+				(pinfunction "SCL_6")
+				(pintype "input")
+			)
 		)
 		(net
 			(code "12")
@@ -14648,6 +15034,18 @@
 				(ref "R8")
 				(pin "2")
 				(pintype "passive")
+			)
+			(node
+				(ref "ROM1")
+				(pin "5")
+				(pinfunction "SDA_5")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "ROM2")
+				(pin "5")
+				(pinfunction "SDA_5")
+				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -15517,6 +15915,16 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C40")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C41")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "C5")
 				(pin "2")
 				(pintype "passive")
@@ -15971,6 +16379,36 @@
 				(ref "R6")
 				(pin "1")
 				(pintype "passive")
+			)
+			(node
+				(ref "ROM1")
+				(pin "2")
+				(pinfunction "E1_2")
+				(pintype "input")
+			)
+			(node
+				(ref "ROM1")
+				(pin "4")
+				(pinfunction "VSS_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "ROM1")
+				(pin "7")
+				(pinfunction "~{WC}_7")
+				(pintype "input")
+			)
+			(node
+				(ref "ROM2")
+				(pin "4")
+				(pinfunction "VSS_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "ROM2")
+				(pin "7")
+				(pinfunction "~{WC}_7")
+				(pintype "input")
 			)
 			(node
 				(ref "SW1")
