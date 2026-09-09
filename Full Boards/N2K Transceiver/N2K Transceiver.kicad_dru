@@ -8,6 +8,6 @@
   (constraint hole_clearance (min 1.0mm))
   (condition "A.NetClass == 'ShipSide' && B.NetClass != 'ShipSide'"))
 
-(rule "iso_barrier_physical"
-  (constraint physical_clearance (min 1.0mm))
+(rule "iso_barrier_creepage"
+  (constraint creepage (min 1.0mm))
   (condition "A.NetClass == 'ShipSide' && B.NetClass != 'ShipSide'"))
