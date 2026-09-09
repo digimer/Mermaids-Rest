@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-09T12:53:46")
+		(date "2026-09-09T18:55:38")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -962,6 +962,377 @@
 			)
 		)
 		(comp
+			(ref "FID1")
+			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_1mm_Mask2mm")
+			(description "Fiducial Marker")
+			(fields
+				(field
+					(name "Sim.Pins")
+				)
+				(field
+					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Fiducial Marker")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "Fiducial")
+				(description "Fiducial Marker")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fiducial marker")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Fiducial*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "defdff74-a975-41d5-90d0-9a40e2322be0")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "FID2")
+			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_1mm_Mask2mm")
+			(description "Fiducial Marker")
+			(fields
+				(field
+					(name "Sim.Pins")
+				)
+				(field
+					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Fiducial Marker")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "Fiducial")
+				(description "Fiducial Marker")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fiducial marker")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Fiducial*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a41bab48-40a6-441d-8039-4b436e0b1480")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "FID3")
+			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_1mm_Mask2mm")
+			(description "Fiducial Marker")
+			(fields
+				(field
+					(name "Sim.Pins")
+				)
+				(field
+					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Fiducial Marker")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "Fiducial")
+				(description "Fiducial Marker")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fiducial marker")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Fiducial*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a03de29b-d303-44f8-a263-8992e1267fa1")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H1")
+			(value "MountingHole_Pad")
+			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(description "Mounting Hole without connection")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9037ef58-1286-4938-ac0a-6f3a27ed81e5")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H2")
+			(value "MountingHole_Pad")
+			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(description "Mounting Hole without connection")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "98563d7b-602f-4dd2-a8a6-23be6cc53a55")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H3")
+			(value "MountingHole_Pad")
+			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(description "Mounting Hole without connection")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1491c520-bb8a-4d57-afb7-aa0ad9279251")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H4")
+			(value "MountingHole_Pad")
+			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(description "Mounting Hole without connection")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1a72ca46-405e-49ec-b442-15b7926e3cd5")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
 			(ref "ICT1")
 			(value "ISO1044BD")
 			(footprint "mr-stuff:TI ISO1044BDR")
@@ -1172,11 +1543,11 @@
 		(comp
 			(ref "J2")
 			(value "PSU TP")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
 			(description "Generic connector, single row, 01x03, script generated")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
@@ -4010,7 +4381,7 @@
 		)
 		(comp
 			(ref "TP1")
-			(value "Tx/Rx")
+			(value "MCU Tx/Rx")
 			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
 			(description "Generic connector, single row, 01x04, script generated")
 			(fields
@@ -4151,12 +4522,12 @@
 		)
 		(comp
 			(ref "TP3")
-			(value "Tx/Rx")
+			(value "CAN Tx/Rx")
+			(footprint "mr-stuff:PinHeader_1x05_P2.54mm_Vertical_No_Pin_3")
 			(description "Generic connector, single row, 01x05, script generated")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "mr-stuff:PinHeader_1x05_P2.54mm_Vertical_No_Pin_3")
 				(field
 					(name "Datasheet")
 				)
@@ -4739,6 +5110,50 @@
 					(name "")
 					(type "passive")
 				)
+			)
+		)
+		(libpart
+			(lib "Mechanical")
+			(part "Fiducial")
+			(description "Fiducial Marker")
+			(footprints
+				(fp "Fiducial*")
+			)
+			(fields
+				(field
+					(name "Reference") "FID")
+				(field
+					(name "Value") "Fiducial")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Fiducial Marker")
+			)
+		)
+		(libpart
+			(lib "Mechanical")
+			(part "MountingHole")
+			(description "Mounting Hole without connection")
+			(footprints
+				(fp "MountingHole*")
+			)
+			(fields
+				(field
+					(name "Reference") "H")
+				(field
+					(name "Value") "MountingHole")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
 			)
 		)
 		(libpart
@@ -5696,6 +6111,10 @@
 			(uri "${KICAD9_SYMBOL_DIR}/Device.kicad_sym")
 		)
 		(library
+			(logical "Mechanical")
+			(uri "${KICAD9_SYMBOL_DIR}/Mechanical.kicad_sym")
+		)
+		(library
 			(logical "RF_Module")
 			(uri "${KICAD9_SYMBOL_DIR}/RF_Module.kicad_sym")
 		)
@@ -5858,7 +6277,7 @@
 		(net
 			(code "2")
 			(name "+5V_SHIP")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "C2")
 				(pin "2")
@@ -5891,7 +6310,7 @@
 		(net
 			(code "3")
 			(name "/CAN_HIGH")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "CMC2")
 				(pin "1")
@@ -5914,7 +6333,7 @@
 		(net
 			(code "4")
 			(name "/CAN_LOW")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "CMC2")
 				(pin "2")
@@ -6080,7 +6499,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R21")
+				(ref "R23")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6096,7 +6515,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R20")
+				(ref "R22")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6243,7 +6662,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R23")
+				(ref "R21")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6259,7 +6678,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R22")
+				(ref "R20")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6554,7 +6973,7 @@
 		(net
 			(code "22")
 			(name "GND_SHIP")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "C2")
 				(pin "1")
@@ -6640,7 +7059,7 @@
 		(net
 			(code "23")
 			(name "Net-(CMC2-O1)")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "CMC2")
 				(pin "4")
@@ -6666,7 +7085,7 @@
 		(net
 			(code "24")
 			(name "Net-(CMC2-O2)")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "CMC2")
 				(pin "3")
@@ -6692,7 +7111,7 @@
 		(net
 			(code "25")
 			(name "Net-(IDCB1-+VIN)")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "IDCB1")
 				(pin "2")
@@ -6715,7 +7134,7 @@
 		(net
 			(code "26")
 			(name "Net-(IDCB1-R.C.)")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "IDCB1")
 				(pin "3")
@@ -6732,7 +7151,7 @@
 		(net
 			(code "27")
 			(name "Net-(J1-Pin_1)")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "J1")
 				(pin "1")
@@ -6753,7 +7172,7 @@
 		(net
 			(code "28")
 			(name "Net-(J2-Pin_3)")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "J2")
 				(pin "3")
@@ -7143,7 +7562,7 @@
 		(net
 			(code "49")
 			(name "Net-(PTC1-Pad2)")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "PTC1")
 				(pin "2")
@@ -7163,7 +7582,7 @@
 		(net
 			(code "50")
 			(name "Net-(SD1-A)")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "PTC1")
 				(pin "1")
@@ -7217,7 +7636,7 @@
 		(net
 			(code "53")
 			(name "V_RAW")
-			(class "Default")
+			(class "ShipSide,Default")
 			(node
 				(ref "C3")
 				(pin "2")
