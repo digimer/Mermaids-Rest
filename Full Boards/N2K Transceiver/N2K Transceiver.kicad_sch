@@ -1751,13 +1751,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
@@ -1765,7 +1761,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
-				(at 0 6.35 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1774,8 +1770,8 @@
 					)
 				)
 			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1806,7 +1802,7 @@
 					)
 				)
 			)
-			(property "Description" "Mounting Hole with connection"
+			(property "Description" "Mounting Hole without connection"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1828,7 +1824,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
+			(property "ki_fp_filters" "MountingHole*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1839,9 +1835,9 @@
 					)
 				)
 			)
-			(symbol "MountingHole_Pad_0_1"
+			(symbol "MountingHole_0_1"
 				(circle
-					(center 0 1.27)
+					(center 0 0)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -1849,26 +1845,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 			)
@@ -7259,133 +7235,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:-BATT"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "-BATT"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"-BATT\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power battery"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "-BATT_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.27) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "-BATT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -7667,7 +7516,7 @@
 	)
 	(rectangle
 		(start 82.55 168.91)
-		(end 149.86 191.135)
+		(end 122.555 191.77)
 		(stroke
 			(width 0)
 			(type default)
@@ -7703,7 +7552,7 @@
 	)
 	(rectangle
 		(start 15.24 168.91)
-		(end 78.74 191.135)
+		(end 78.74 191.77)
 		(stroke
 			(width 0)
 			(type default)
@@ -8144,12 +7993,6 @@
 		(uuid "a6fb1fb3-ae63-4322-9d91-a9edb5f9f14b")
 	)
 	(junction
-		(at 109.22 184.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a9530f93-2d35-4827-85ee-4cc8865acfc5")
-	)
-	(junction
 		(at 194.31 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8220,12 +8063,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb78a7c5-48a4-40de-8213-fb533acd7015")
-	)
-	(junction
-		(at 109.22 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cb79df98-6db1-4865-809c-3d828514b134")
 	)
 	(junction
 		(at 31.75 135.89)
@@ -8615,16 +8452,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 176.53) (xy 109.22 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1703c3bd-e6ee-48f6-970e-207cfb6d3518")
-	)
-	(wire
-		(pts
 			(xy 229.87 140.97) (xy 232.41 140.97)
 		)
 		(stroke
@@ -8892,16 +8719,6 @@
 			(type default)
 		)
 		(uuid "25fecf16-9fb2-4e43-b7fa-dd91b952d6e7")
-	)
-	(wire
-		(pts
-			(xy 113.03 184.15) (xy 109.22 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "271cbaf2-9e27-4af6-bf0f-5700eb627bef")
 	)
 	(wire
 		(pts
@@ -9475,16 +9292,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 176.53) (xy 109.22 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d204bf4-2c1d-44d1-a838-c440489fd954")
-	)
-	(wire
-		(pts
 			(xy 62.23 81.28) (xy 69.85 81.28)
 		)
 		(stroke
@@ -9722,16 +9529,6 @@
 			(type default)
 		)
 		(uuid "5b238b30-1f21-4a54-bdb5-098dd5ca9885")
-	)
-	(wire
-		(pts
-			(xy 86.36 176.53) (xy 109.22 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b97b6b7-6131-44af-887f-26ce056a5c18")
 	)
 	(wire
 		(pts
@@ -11252,16 +11049,6 @@
 			(type default)
 		)
 		(uuid "ce886c41-bccb-4b4c-9233-49bf87903547")
-	)
-	(wire
-		(pts
-			(xy 86.36 184.15) (xy 109.22 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0099bf0-e79d-496f-a172-e178869e8a94")
 	)
 	(wire
 		(pts
@@ -13110,8 +12897,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 113.03 173.99 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 86.36 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13122,7 +12909,7 @@
 		(fields_autoplaced yes)
 		(uuid "1491c520-bb8a-4d57-afb7-aa0ad9279251")
 		(property "Reference" "H3"
-			(at 115.57 171.4499 0)
+			(at 88.9 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13133,7 +12920,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 115.57 173.9899 0)
+			(at 88.9 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13143,8 +12930,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4mm_Pad_Via"
-			(at 113.03 173.99 0)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+			(at 86.36 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13155,7 +12942,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 173.99 0)
+			(at 86.36 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13165,8 +12952,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 113.03 173.99 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 86.36 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13175,20 +12962,6 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Sim.Pins" ""
-			(at 113.03 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b1a3fc31-cdef-4aad-bf06-56f1eb1598ca")
 		)
 		(instances
 			(project "N2K Transceiver"
@@ -13410,8 +13183,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 113.03 181.61 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 86.36 187.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13422,7 +13195,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a72ca46-405e-49ec-b442-15b7926e3cd5")
 		(property "Reference" "H4"
-			(at 115.57 179.0699 0)
+			(at 88.9 186.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13433,7 +13206,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 115.57 181.6099 0)
+			(at 88.9 189.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13443,8 +13216,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4mm_Pad_Via"
-			(at 113.03 181.61 0)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+			(at 86.36 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13455,7 +13228,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 181.61 0)
+			(at 86.36 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13465,8 +13238,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 113.03 181.61 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 86.36 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13475,20 +13248,6 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Sim.Pins" ""
-			(at 113.03 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "51f28f11-a119-4081-8f2c-7e3149b6172d")
 		)
 		(instances
 			(project "N2K Transceiver"
@@ -18263,8 +18022,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 86.36 173.99 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 86.36 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18296,8 +18055,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4mm_Pad_Via"
-			(at 86.36 173.99 0)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+			(at 86.36 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18308,7 +18067,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 173.99 0)
+			(at 86.36 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18318,8 +18077,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 86.36 173.99 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 86.36 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18328,20 +18087,6 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Sim.Pins" ""
-			(at 86.36 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13e7d67a-3982-4332-a3dc-bdce16d31052")
 		)
 		(instances
 			(project "N2K Transceiver"
@@ -18597,8 +18342,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 86.36 181.61 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 86.36 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18609,7 +18354,7 @@
 		(fields_autoplaced yes)
 		(uuid "98563d7b-602f-4dd2-a8a6-23be6cc53a55")
 		(property "Reference" "H2"
-			(at 88.9 179.0699 0)
+			(at 88.9 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18620,7 +18365,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 88.9 181.6099 0)
+			(at 88.9 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18630,8 +18375,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4mm_Pad_Via"
-			(at 86.36 181.61 0)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+			(at 86.36 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18642,7 +18387,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 181.61 0)
+			(at 86.36 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18652,8 +18397,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 86.36 181.61 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 86.36 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18662,20 +18407,6 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Sim.Pins" ""
-			(at 86.36 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4f88b024-1a35-4f00-afbf-29f716c9443e")
 		)
 		(instances
 			(project "N2K Transceiver"
@@ -19418,7 +19149,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 137.16 182.88 0)
+		(at 110.49 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19429,7 +19160,7 @@
 		(fields_autoplaced yes)
 		(uuid "a03de29b-d303-44f8-a263-8992e1267fa1")
 		(property "Reference" "FID3"
-			(at 139.7 181.6099 0)
+			(at 113.03 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19440,7 +19171,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 139.7 184.1499 0)
+			(at 113.03 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19451,7 +19182,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 137.16 182.88 0)
+			(at 110.49 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19462,7 +19193,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 182.88 0)
+			(at 110.49 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19473,7 +19204,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 137.16 182.88 0)
+			(at 110.49 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19484,7 +19215,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 137.16 182.88 0)
+			(at 110.49 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19683,7 +19414,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 137.16 177.8 0)
+		(at 110.49 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19694,7 +19425,7 @@
 		(fields_autoplaced yes)
 		(uuid "a41bab48-40a6-441d-8039-4b436e0b1480")
 		(property "Reference" "FID2"
-			(at 139.7 176.5299 0)
+			(at 113.03 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19705,7 +19436,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 139.7 179.0699 0)
+			(at 113.03 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19716,7 +19447,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 137.16 177.8 0)
+			(at 110.49 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19727,7 +19458,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 177.8 0)
+			(at 110.49 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19738,7 +19469,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 137.16 177.8 0)
+			(at 110.49 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19749,7 +19480,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 137.16 177.8 0)
+			(at 110.49 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22303,7 +22034,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 137.16 172.72 0)
+		(at 110.49 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22314,7 +22045,7 @@
 		(fields_autoplaced yes)
 		(uuid "defdff74-a975-41d5-90d0-9a40e2322be0")
 		(property "Reference" "FID1"
-			(at 139.7 171.4499 0)
+			(at 113.03 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22325,7 +22056,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 139.7 173.9899 0)
+			(at 113.03 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22336,7 +22067,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 137.16 172.72 0)
+			(at 110.49 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22347,7 +22078,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 172.72 0)
+			(at 110.49 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22358,7 +22089,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 137.16 172.72 0)
+			(at 110.49 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22369,7 +22100,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 137.16 172.72 0)
+			(at 110.49 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22383,83 +22114,6 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "FID1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 109.22 185.42 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dfe9b175-8b51-42af-b58b-f7ea518d66f2")
-		(property "Reference" "#PWR059"
-			(at 109.22 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND_SHIP"
-			(at 109.22 189.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 109.22 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c707650b-ee53-4524-808e-85ac08917b28")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "#PWR059")
 					(unit 1)
 				)
 			)
