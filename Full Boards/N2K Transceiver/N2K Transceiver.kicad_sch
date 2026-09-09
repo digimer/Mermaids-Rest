@@ -677,6 +677,310 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x05_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05_Pin"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x05_Pin_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2717,6 +3021,259 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:Conn_01x05_Pin_No_Pin_3"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05_Pin_No_Pin_3"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated"
+				(at -0.254 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x05_Pin_No_Pin_3_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6716,7 +7273,7 @@
 	)
 	(rectangle
 		(start 176.53 78.74)
-		(end 257.81 125.095)
+		(end 262.255 125.095)
 		(stroke
 			(width 0)
 			(type default)
@@ -6788,7 +7345,7 @@
 	)
 	(rectangle
 		(start 15.24 168.91)
-		(end 69.85 191.135)
+		(end 78.74 191.135)
 		(stroke
 			(width 0)
 			(type default)
@@ -6882,7 +7439,7 @@
 		)
 		(uuid "8948df97-56b3-46d4-aff9-7865b372ef6c")
 	)
-	(text "* C6 provides optional common-mode EMI suppression\n* PSU TP V_RAW to RC 15V MAX (Test at 13V)\n  Jumper to GND_SHIP for normal operation.\n  (Note: Remove J1 and tie R13 to GND_SHIP before prod)"
+	(text "* C6 provides optional common-mode EMI suppression\n* PSU TP V_RAW to RC 15V MAX (Test at 13V)\n  Jumper to GND_SHIP for normal operation.\n  (Note: Remove J1 and tie R2 to GND_SHIP before prod)"
 		(exclude_from_sim no)
 		(at 198.12 59.944 0)
 		(effects
@@ -7055,12 +7612,6 @@
 		(uuid "53056741-602e-41d6-b192-a65ba43c46af")
 	)
 	(junction
-		(at 40.64 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54d4ebda-9bd1-41a6-85fb-58b71f65ff5f")
-	)
-	(junction
 		(at 19.05 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7085,10 +7636,10 @@
 		(uuid "5e6c960c-3646-4e45-ad12-0b9e18b31644")
 	)
 	(junction
-		(at 114.3 133.35)
+		(at 256.54 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5ee2fee0-e128-49d7-8fd4-a305ec652d36")
+		(uuid "60b82748-8c5f-4a30-8994-db30a73bdeaf")
 	)
 	(junction
 		(at 156.21 27.94)
@@ -7109,7 +7660,7 @@
 		(uuid "6f8c0948-0532-4c33-b854-9fbc12548368")
 	)
 	(junction
-		(at 114.3 143.51)
+		(at 29.21 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a8b04d5-ca2b-4573-a9b7-4e2c72d63763")
@@ -7167,12 +7718,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99d82a4d-2a2e-45de-93cd-3b4764b25f74")
-	)
-	(junction
-		(at 40.64 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9a540a05-a7d6-42c6-98c5-e6606047d73c")
 	)
 	(junction
 		(at 19.05 110.49)
@@ -7283,6 +7828,12 @@
 		(uuid "cb78a7c5-48a4-40de-8213-fb533acd7015")
 	)
 	(junction
+		(at 31.75 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd36190e-aa3e-41ac-bf56-2b81335b35d5")
+	)
+	(junction
 		(at 69.85 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7379,6 +7930,10 @@
 		(uuid "fc2ee9e5-5c5d-4a9f-8345-bac1a1180e6b")
 	)
 	(no_connect
+		(at 57.15 142.24)
+		(uuid "26f3b9e1-11f5-4891-b535-08410c9fbe88")
+	)
+	(no_connect
 		(at 87.63 127)
 		(uuid "362d610f-1618-426c-89f4-aeb5d040cbe2")
 	)
@@ -7389,6 +7944,10 @@
 	(no_connect
 		(at 87.63 124.46)
 		(uuid "8662913e-baa7-4491-927f-862f8b6851a5")
+	)
+	(no_connect
+		(at 57.15 139.7)
+		(uuid "8dcbb1cc-5867-42a8-9cdb-5d2896890d05")
 	)
 	(no_connect
 		(at 87.63 121.92)
@@ -7423,6 +7982,16 @@
 			(type default)
 		)
 		(uuid "0053c86b-973e-45c9-928c-b865b6838766")
+	)
+	(wire
+		(pts
+			(xy 252.73 110.49) (xy 256.54 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00565a2a-8140-4c46-bf1c-9d6d6bd1da2f")
 	)
 	(wire
 		(pts
@@ -7486,6 +8055,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 116.84) (xy 256.54 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04a0253c-55dd-44d5-b05e-f36acb197f35")
+	)
+	(wire
+		(pts
 			(xy 190.5 147.32) (xy 193.04 147.32)
 		)
 		(stroke
@@ -7496,6 +8075,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 144.78) (xy 38.1 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06db7acb-dad1-4e59-9d57-9e0d1fb85477")
+	)
+	(wire
+		(pts
 			(xy 240.03 147.32) (xy 242.57 147.32)
 		)
 		(stroke
@@ -7503,16 +8092,6 @@
 			(type default)
 		)
 		(uuid "0710616e-5be6-47e9-9cfd-69265a27a31c")
-	)
-	(wire
-		(pts
-			(xy 49.53 180.34) (xy 49.53 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07e4438b-c794-41e8-b49a-5e7993f8e528")
 	)
 	(wire
 		(pts
@@ -7566,16 +8145,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 142.24) (xy 57.15 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f74bdd6-1658-4d95-849d-639744dc42cf")
-	)
-	(wire
-		(pts
 			(xy 128.27 36.83) (xy 128.27 39.37)
 		)
 		(stroke
@@ -7606,16 +8175,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 143.51) (xy 114.3 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "124ebd71-dc43-436e-a541-a5e780155d51")
-	)
-	(wire
-		(pts
 			(xy 198.12 113.03) (xy 194.31 113.03)
 		)
 		(stroke
@@ -7623,6 +8182,16 @@
 			(type default)
 		)
 		(uuid "13dd401f-aa60-42b3-b55e-e59635259192")
+	)
+	(wire
+		(pts
+			(xy 242.57 116.84) (xy 245.11 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13dd771d-3d74-4dd7-a4f4-2fd357ed2777")
 	)
 	(wire
 		(pts
@@ -7813,6 +8382,16 @@
 			(type default)
 		)
 		(uuid "2162dbbe-d045-4eae-8c66-1a48cecfa69b")
+	)
+	(wire
+		(pts
+			(xy 38.1 144.78) (xy 38.1 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21b11e23-ad58-4957-bcb2-2f5bf01d39c6")
 	)
 	(wire
 		(pts
@@ -8026,7 +8605,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 186.69) (xy 54.61 186.69)
+			(xy 46.99 186.69) (xy 57.15 186.69)
 		)
 		(stroke
 			(width 0)
@@ -8156,16 +8735,6 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 147.32) (xy 31.75 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "373b2f17-2635-4dde-8c86-c0b0857d8d41")
-	)
-	(wire
-		(pts
 			(xy 120.65 48.26) (xy 120.65 52.07)
 		)
 		(stroke
@@ -8176,13 +8745,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 152.4) (xy 114.3 154.94)
+			(xy 252.73 116.84) (xy 256.54 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3811d49a-882e-494c-8f15-e71eaa004ab3")
+		(uuid "3836069b-392a-42fb-89ce-37573d9ebe0a")
 	)
 	(wire
 		(pts
@@ -8233,6 +8802,16 @@
 			(type default)
 		)
 		(uuid "3d946bc7-f734-4dfa-a18b-612afa41aea9")
+	)
+	(wire
+		(pts
+			(xy 54.61 181.61) (xy 54.61 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dc1509f-fa65-4af0-a487-65cb89e2cf40")
 	)
 	(wire
 		(pts
@@ -8706,13 +9285,13 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 134.62) (xy 39.37 134.62)
+			(xy 26.67 135.89) (xy 31.75 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5b233433-ebd6-404d-b22a-2a4f8c2cf7fe")
+		(uuid "5b238b30-1f21-4a54-bdb5-098dd5ca9885")
 	)
 	(wire
 		(pts
@@ -8846,7 +9425,17 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 181.61) (xy 52.07 181.61)
+			(xy 31.75 135.89) (xy 38.1 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62b5f6ef-7f64-4339-ac75-b252d755207f")
+	)
+	(wire
+		(pts
+			(xy 52.07 184.15) (xy 57.15 184.15)
 		)
 		(stroke
 			(width 0)
@@ -8863,6 +9452,16 @@
 			(type default)
 		)
 		(uuid "63d40833-818c-4d83-a96a-da4cdcaf87fb")
+	)
+	(wire
+		(pts
+			(xy 38.1 135.89) (xy 38.1 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64ad5b13-96f9-45ee-88f7-942b7b9acf03")
 	)
 	(wire
 		(pts
@@ -8976,6 +9575,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 134.62) (xy 31.75 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b25107-1a35-40ce-a7d0-2428e875036c")
+	)
+	(wire
+		(pts
 			(xy 41.91 91.44) (xy 41.91 93.98)
 		)
 		(stroke
@@ -9086,7 +9695,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 181.61) (xy 52.07 180.34)
+			(xy 52.07 184.15) (xy 52.07 180.34)
 		)
 		(stroke
 			(width 0)
@@ -9256,16 +9865,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 147.32) (xy 40.64 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82534bf6-2445-4754-a75b-dbcb2fc76329")
-	)
-	(wire
-		(pts
 			(xy 90.17 54.61) (xy 92.71 54.61)
 		)
 		(stroke
@@ -9346,16 +9945,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 133.35) (xy 114.3 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "866b2138-1dd2-4b0a-a91d-0d874d8e57ce")
-	)
-	(wire
-		(pts
 			(xy 83.82 33.02) (xy 95.25 33.02)
 		)
 		(stroke
@@ -9416,6 +10005,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 130.81) (xy 101.6 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a5d5e89-fd5b-40b3-aeca-380a76f785a3")
+	)
+	(wire
+		(pts
 			(xy 128.27 59.69) (xy 130.81 59.69)
 		)
 		(stroke
@@ -9466,16 +10065,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 133.35) (xy 114.3 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "908a3945-c1a0-4493-ace2-a678ea63e898")
-	)
-	(wire
-		(pts
 			(xy 54.61 147.32) (xy 57.15 147.32)
 		)
 		(stroke
@@ -9483,16 +10072,6 @@
 			(type default)
 		)
 		(uuid "90e5ec00-7f3b-4952-84e9-7779282d626f")
-	)
-	(wire
-		(pts
-			(xy 34.29 139.7) (xy 40.64 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90f5a6f7-d393-421a-badd-101633384776")
 	)
 	(wire
 		(pts
@@ -9606,16 +10185,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 128.27) (xy 109.22 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a6d6215-a767-4809-a020-61c94ad92d38")
-	)
-	(wire
-		(pts
 			(xy 247.65 33.02) (xy 240.03 33.02)
 		)
 		(stroke
@@ -9723,16 +10292,6 @@
 			(type default)
 		)
 		(uuid "a2d731ae-6877-49c6-b6a6-486b15d126b6")
-	)
-	(wire
-		(pts
-			(xy 49.53 184.15) (xy 54.61 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3b252a3-609a-4f8d-9f82-41bd914e379a")
 	)
 	(wire
 		(pts
@@ -9876,7 +10435,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 142.24) (xy 114.3 143.51)
+			(xy 29.21 139.7) (xy 29.21 142.24)
 		)
 		(stroke
 			(width 0)
@@ -9933,16 +10492,6 @@
 			(type default)
 		)
 		(uuid "aff0566e-338b-44a4-824b-08c55d28e189")
-	)
-	(wire
-		(pts
-			(xy 34.29 142.24) (xy 40.64 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b174f332-97d4-4d64-b10d-f29483aa4361")
 	)
 	(wire
 		(pts
@@ -10006,16 +10555,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 134.62) (xy 40.64 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b718b538-cfca-4766-a432-3e0fe2fe9f01")
-	)
-	(wire
-		(pts
 			(xy 30.48 55.88) (xy 39.37 55.88)
 		)
 		(stroke
@@ -10066,7 +10605,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 189.23) (xy 54.61 189.23)
+			(xy 44.45 189.23) (xy 57.15 189.23)
 		)
 		(stroke
 			(width 0)
@@ -10276,6 +10815,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 110.49) (xy 245.11 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0730e5e-5cd5-46df-b2f8-dc951d26d15b")
+	)
+	(wire
+		(pts
 			(xy 194.31 152.4) (xy 194.31 154.94)
 		)
 		(stroke
@@ -10326,7 +10875,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 143.51) (xy 114.3 143.51)
+			(xy 26.67 142.24) (xy 29.21 142.24)
 		)
 		(stroke
 			(width 0)
@@ -10366,6 +10915,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 142.24) (xy 29.21 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4d079ed-4c78-4929-a488-334a004660e2")
+	)
+	(wire
+		(pts
 			(xy 69.85 90.17) (xy 69.85 91.44)
 		)
 		(stroke
@@ -10383,6 +10942,16 @@
 			(type default)
 		)
 		(uuid "d61649d5-73a1-48e4-b938-54968fffde3c")
+	)
+	(wire
+		(pts
+			(xy 57.15 181.61) (xy 54.61 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6673310-4c7f-49aa-9e2a-525653211e8f")
 	)
 	(wire
 		(pts
@@ -10546,6 +11115,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 139.7) (xy 36.83 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de55deb0-f52f-422c-b65c-f7890ba82703")
+	)
+	(wire
+		(pts
 			(xy 189.23 96.52) (xy 187.96 96.52)
 		)
 		(stroke
@@ -10603,16 +11182,6 @@
 			(type default)
 		)
 		(uuid "e0ff81df-22f3-4883-9f08-e78aa5c27396")
-	)
-	(wire
-		(pts
-			(xy 114.3 132.08) (xy 114.3 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1a3efc5-04b4-45b2-864c-126ba1e09669")
 	)
 	(wire
 		(pts
@@ -10856,16 +11425,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 139.7) (xy 57.15 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4f6e863-c2eb-43a8-9f06-e2cfef5d8a7d")
-	)
-	(wire
-		(pts
 			(xy 215.9 40.64) (xy 215.9 36.83)
 		)
 		(stroke
@@ -10946,26 +11505,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 147.32) (xy 40.64 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa6111de-558f-4a99-8584-072f6a6ad652")
-	)
-	(wire
-		(pts
-			(xy 31.75 134.62) (xy 21.59 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa7db434-8ea7-4ef1-b1ae-6ac9d23eef11")
-	)
-	(wire
-		(pts
 			(xy 240.03 140.97) (xy 242.57 140.97)
 		)
 		(stroke
@@ -10995,7 +11534,7 @@
 		(uuid "ffe13623-f842-4085-9f87-e26b95955f37")
 	)
 	(label "CAN_TX_LOCAL"
-		(at 54.61 186.69 0)
+		(at 57.15 186.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11104,6 +11643,16 @@
 		)
 		(uuid "3d2d8e24-3eb0-416d-9ac6-6c1a0c19b54d")
 	)
+	(label "VBUS"
+		(at 26.67 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "41fd7ad4-7134-4b1f-afaa-b8cd15133259")
+	)
 	(label "LED_ENABLE"
 		(at 190.5 152.4 180)
 		(effects
@@ -11123,16 +11672,6 @@
 			(justify right bottom)
 		)
 		(uuid "4cdd331b-2929-4e3d-819d-d2b167cd9092")
-	)
-	(label "DAC_SCL"
-		(at 34.29 139.7 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4dc28a4b-41b7-48b8-907a-05233a23ff8f")
 	)
 	(label "VBUS"
 		(at 140.97 146.05 270)
@@ -11174,6 +11713,16 @@
 		)
 		(uuid "54eb161a-21e0-4590-aeb0-5b795bad0d71")
 	)
+	(label "I2C_SDA"
+		(at 242.57 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5cd3f61d-0ffb-4101-812e-15e6b4ca33ca")
+	)
 	(label "I2C_SCL"
 		(at 54.61 119.38 180)
 		(effects
@@ -11183,16 +11732,6 @@
 			(justify right bottom)
 		)
 		(uuid "7741d141-6761-4320-9cab-ef9156687bae")
-	)
-	(label "VBUS"
-		(at 114.3 132.08 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7a87747c-c604-46e5-89e1-1e03d489129a")
 	)
 	(label "VBUS"
 		(at 153.67 146.05 270)
@@ -11234,15 +11773,15 @@
 		)
 		(uuid "89f2491e-80bb-4704-b4c9-1d47852a8a9e")
 	)
-	(label "DAC_SDA"
-		(at 34.29 142.24 180)
+	(label "CAN_HIGH"
+		(at 57.15 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "8e11797d-9c18-449c-9bc0-e20473ee873d")
+		(uuid "97403c5d-e372-4e33-a462-0d8559414ba1")
 	)
 	(label "ROM2_WP"
 		(at 186.69 115.57 180)
@@ -11335,7 +11874,7 @@
 		(uuid "b5b0826e-98f3-4a4b-a633-88e6b445e23e")
 	)
 	(label "CAN_RX_LOCAL"
-		(at 54.61 189.23 0)
+		(at 57.15 189.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11343,26 +11882,6 @@
 			(justify left bottom)
 		)
 		(uuid "b6ae41df-3d5c-4770-99fc-5f5e8eb6cb14")
-	)
-	(label "CAN_LOW"
-		(at 54.61 184.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be2aef56-6373-4440-979a-e5cfc8f928fc")
-	)
-	(label "CAN_HIGH"
-		(at 54.61 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "beab66ca-7f8f-4f85-83c7-369f11ec540e")
 	)
 	(label "N2K_RX_LED"
 		(at 229.87 140.97 180)
@@ -11373,6 +11892,16 @@
 			(justify right bottom)
 		)
 		(uuid "bf0ffcb1-516d-4b51-849a-257c772aba93")
+	)
+	(label "CAN_LOW"
+		(at 57.15 184.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8e15b4c-b6de-4d57-a0df-a3e530d12ead")
 	)
 	(label "N2K_RX_LED"
 		(at 54.61 129.54 180)
@@ -11385,7 +11914,7 @@
 		(uuid "dab83482-1853-4fb8-9601-4439b33c8ad6")
 	)
 	(label "VBUS_MCU"
-		(at 111.76 143.51 180)
+		(at 26.67 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11393,6 +11922,16 @@
 			(justify right bottom)
 		)
 		(uuid "e0b09aaa-ee39-4ca7-88bf-2e4f23e375de")
+	)
+	(label "I2C_SCL"
+		(at 242.57 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e0d06c26-3692-4184-ac0d-3d410d14c3e2")
 	)
 	(label "POWER_LED"
 		(at 54.61 144.78 180)
@@ -11716,7 +12255,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "081f5d78-f072-4a32-9d56-92ad4607c52d")
-		(property "Reference" "R14"
+		(property "Reference" "R12"
 			(at 194.818 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11791,7 +12330,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R14")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -11869,6 +12408,83 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0280")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 101.6 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "09e8041a-35f9-499c-a1f1-43a25cf914f3")
+		(property "Reference" "#PWR079"
+			(at 101.6 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 136.906 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bbfd0bb5-eb69-49bf-92c1-c0e5b6971a8b")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -12648,98 +13264,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 35.56 147.32 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "26560d94-e771-4c62-9981-5920743e19ca")
-		(property "Reference" "R9"
-			(at 34.29 147.32 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7kR"
-			(at 33.02 145.034 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 35.56 145.542 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 35.56 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4.75 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 35.56 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Stackpole RNCP1206FTD4K75"
-			(at 35.56 147.32 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "706a2563-c6cf-47b5-800e-55396515ee95")
-		)
-		(pin "1"
-			(uuid "e988aa12-3588-4449-9d28-849f92d7b92d")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 194.31 107.95 0)
 		(unit 1)
@@ -13033,7 +13557,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "33480553-3144-429e-9c8d-b6305007baee")
-		(property "Reference" "TP2"
+		(property "Reference" "TP1"
 			(at 109.22 81.788 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13112,7 +13636,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "TP2")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -13366,7 +13890,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 114.3 138.43 180)
+		(at 33.02 139.7 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13375,8 +13899,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ab184e1-0cca-41b2-89c6-ab1316de09a6")
-		(property "Reference" "R10"
-			(at 114.3 136.652 90)
+		(property "Reference" "R8"
+			(at 31.496 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13387,7 +13911,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 116.586 135.89 90)
+			(at 30.48 137.414 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13398,7 +13922,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 116.078 138.43 90)
+			(at 33.02 137.922 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13409,7 +13933,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 114.3 138.43 0)
+			(at 33.02 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13420,7 +13944,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 114.3 138.43 0)
+			(at 33.02 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13431,7 +13955,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD10K0"
-			(at 114.3 138.43 90)
+			(at 33.02 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13450,7 +13974,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R10")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -13790,7 +14314,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "42b54fef-0d90-4ed5-99e1-faab70e186ed")
-		(property "Reference" "R15"
+		(property "Reference" "R13"
 			(at 194.818 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13865,16 +14389,15 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R15")
+					(reference "R13")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 46.99 175.26 90)
-		(mirror x)
+		(lib_id "mr-parts:Conn_01x05_Pin_No_Pin_3")
+		(at 49.53 175.26 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13882,9 +14405,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
-		(uuid "42b68977-701b-44f8-aece-8f7cafabe942")
-		(property "Reference" "TP5"
-			(at 48.26 171.958 90)
+		(uuid "44ede0cd-97c6-47da-85b7-3ca39b1478a5")
+		(property "Reference" "TP3"
+			(at 49.276 171.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13894,7 +14417,7 @@
 			)
 		)
 		(property "Value" "Tx/Rx"
-			(at 48.26 173.99 90)
+			(at 49.276 173.736 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13903,8 +14426,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 46.99 175.26 0)
+		(property "Footprint" ""
+			(at 49.53 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13915,7 +14438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 175.26 0)
+			(at 49.53 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13925,19 +14448,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 46.99 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Amphenol 68001-416HLF"
-			(at 46.99 175.26 90)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 39.37 175.006 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13948,21 +14460,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "bd192e61-ca6b-4c6a-8ec5-d32a8b79719c")
+			(uuid "55ea5b5a-4349-48df-b0fe-c30f5bcac830")
 		)
-		(pin "2"
-			(uuid "ee60b324-1cb3-44a1-b947-16ad73fbbe8e")
+		(pin "5"
+			(uuid "6c840d4b-73bc-449f-9893-12ebb953d277")
 		)
 		(pin "4"
-			(uuid "aec7f702-f35b-4dd8-93d8-e2ff5384df24")
+			(uuid "b7f8a6b4-129a-4219-86aa-419969edb293")
 		)
-		(pin "3"
-			(uuid "8490ea96-61e2-4200-b291-7df8b371d0c8")
+		(pin "2"
+			(uuid "530a548b-a662-4a85-af2d-8433e3f1604b")
 		)
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "TP5")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -14148,7 +14660,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "53112842-7924-4e7f-9c70-fb8e1d108123")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 230.886 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14213,7 +14725,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -14625,83 +15137,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 21.59 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5ec5acd8-b3ec-42e0-a06d-4c6fbe6eab51")
-		(property "Reference" "#PWR069"
-			(at 21.59 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 21.59 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 21.59 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 21.59 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 21.59 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "273def88-7533-4238-8b04-b42d3155f473")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "#PWR069")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 95.25 40.64 0)
 		(unit 1)
@@ -14773,98 +15208,6 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 35.56 134.62 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "646de626-e025-41a2-81e7-7b2ba3b56571")
-		(property "Reference" "R8"
-			(at 36.83 134.62 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7kR"
-			(at 38.354 132.588 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 35.56 136.398 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 35.56 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4.75 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 35.56 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Stackpole RNCP1206FTD4K75"
-			(at 35.56 134.62 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "daae1bcb-ee00-456d-b916-9ece4ed7390f")
-		)
-		(pin "1"
-			(uuid "414e5fd7-81cd-4929-af10-8bdd181ec628")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -15323,18 +15666,18 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
+		(lib_id "Connector:Conn_01x05_Pin")
 		(at 96.52 125.73 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "6b426469-5773-4407-8af7-a203b8fdbcd2")
-		(property "Reference" "TP3"
-			(at 95.25 122.428 90)
+		(property "Reference" "J3"
+			(at 96.52 122.174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15344,7 +15687,7 @@
 			)
 		)
 		(property "Value" "JTAG"
-			(at 95.25 124.46 90)
+			(at 96.52 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15353,7 +15696,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 96.52 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -15375,19 +15718,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
+		(property "Description" "Generic connector, single row, 01x05, script generated"
 			(at 96.52 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Amphenol 68001-416HLF"
-			(at 96.52 125.73 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15409,10 +15741,13 @@
 		(pin "3"
 			(uuid "d8526cd8-5166-4bd5-aa47-c8203b4f4b56")
 		)
+		(pin "5"
+			(uuid "1ff98d33-562b-4c8a-959f-f4f876412bdc")
+		)
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "TP3")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -15583,7 +15918,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f7ea1ad-c0ab-4116-b30b-ac372621228f")
-		(property "Reference" "R13"
+		(property "Reference" "R11"
 			(at 156.972 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15658,7 +15993,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R13")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -15742,6 +16077,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 31.75 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "75cc1e51-4e91-4fc7-81a8-1d75d66ab816")
+		(property "Reference" "#FLG0110"
+			(at 31.75 132.715 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 31.75 130.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 31.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fbecddc2-a9bf-4cbe-910f-cf442213ef7b")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#FLG0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 156.21 39.37 0)
 		(unit 1)
@@ -15819,83 +16231,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 109.22 128.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "78ba2027-8dfd-4dca-82b0-ea8087905e73")
-		(property "Reference" "#FLG0110"
-			(at 109.22 126.365 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 109.22 124.206 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 109.22 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d4539a26-4d7f-429a-bd14-12e921848f8e")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "#FLG0110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 184.15 121.92 0)
 		(unit 1)
@@ -15967,6 +16302,98 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0217")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 248.92 116.84 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7ba0e4be-69f1-4bea-a336-40aec66aed9f")
+		(property "Reference" "R15"
+			(at 250.698 116.84 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 251.46 114.808 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 248.92 118.618 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 248.92 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 248.92 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 248.92 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4f40f732-5292-4b92-aacd-198cc2415220")
+		)
+		(pin "1"
+			(uuid "8eb095e9-73c1-41b8-9cd9-1f1137d9e345")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -17370,7 +17797,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "981ff72c-ddf2-4cf7-a8df-f3fb0dfa702f")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 127 20.574 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17443,7 +17870,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "J3")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -17451,7 +17878,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 114.3 148.59 180)
+		(at 33.02 144.78 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17460,8 +17887,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9901f622-423d-4c52-b6de-bebce3c2f1a5")
-		(property "Reference" "R11"
-			(at 114.3 146.558 90)
+		(property "Reference" "R9"
+			(at 31.496 144.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17472,7 +17899,7 @@
 			)
 		)
 		(property "Value" "15kR"
-			(at 116.586 146.05 90)
+			(at 30.48 142.494 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17483,7 +17910,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 116.078 148.59 90)
+			(at 33.02 143.002 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17494,7 +17921,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 114.3 148.59 0)
+			(at 33.02 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17505,7 +17932,7 @@
 			)
 		)
 		(property "Description" "15 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 114.3 148.59 0)
+			(at 33.02 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17516,7 +17943,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD15K0"
-			(at 114.3 148.59 90)
+			(at 33.02 144.78 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17535,7 +17962,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R11")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -17720,6 +18147,98 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "SD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 248.92 110.49 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9d563fff-4ee7-45de-abc0-d089e3a45402")
+		(property "Reference" "R14"
+			(at 250.698 110.49 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR"
+			(at 251.46 108.458 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
+			(at 248.92 112.268 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 248.92 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
+			(at 248.92 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP1206FTD10K0"
+			(at 248.92 110.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c2eec317-2d53-4ef5-b4a2-76b00fed3d61")
+		)
+		(pin "1"
+			(uuid "c90c0350-19ae-4235-a1b0-245bd59ecb94")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -18369,7 +18888,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 154.94 0)
+		(at 38.1 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18379,7 +18898,7 @@
 		(dnp no)
 		(uuid "ac36a0a2-e65f-4041-acc0-8ba50da6e08d")
 		(property "Reference" "#PWR081"
-			(at 114.3 161.29 0)
+			(at 38.1 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18390,7 +18909,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 158.496 0)
+			(at 38.1 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18400,7 +18919,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 154.94 0)
+			(at 38.1 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18411,7 +18930,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 154.94 0)
+			(at 38.1 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18422,7 +18941,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 154.94 0)
+			(at 38.1 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18763,7 +19282,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "b36c2fbf-a974-4a21-8282-97072e07f52d")
-		(property "Reference" "TP4"
+		(property "Reference" "TP2"
 			(at 26.67 171.958 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18839,7 +19358,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "TP4")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -19571,83 +20090,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 21.59 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "be0475a6-85d7-4f8f-801c-8c716dc49d57")
-		(property "Reference" "#PWR071"
-			(at 21.59 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 21.59 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 21.59 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 21.59 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 21.59 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6e0510bc-6181-45a3-ab40-1fc95637ab4f")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "#PWR071")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 139.7 100.33 270)
 		(unit 1)
@@ -19658,7 +20100,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1f162fd-b36b-4c56-8848-9732e0c35d2d")
-		(property "Reference" "R12"
+		(property "Reference" "R10"
 			(at 137.668 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19733,7 +20175,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R12")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -21575,6 +22017,83 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 256.54 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e9dc1986-9d13-41b6-abda-99fe6dba4d7c")
+		(property "Reference" "#PWR0247"
+			(at 256.54 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 256.54 106.934 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 256.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9f1f82c9-97d0-4e58-a38a-823489d25985")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0247")
 					(unit 1)
 				)
 			)
