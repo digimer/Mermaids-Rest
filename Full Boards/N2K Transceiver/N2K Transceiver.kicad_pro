@@ -525,6 +525,20 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "IsolatedSide",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "ShipSide",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -532,7 +546,60 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "ShipSide",
+        "pattern": "GND_SHIP"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "V_RAW"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "+5V_SHIP"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "/CAN_HIGH"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "/CAN_LOW"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "Net-(SD1-A)"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "Net-(PTC1-Pad2)"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "Net-(CMC2-O1)"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "Net-(CMC2-O2)"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "Net-(IDCB1-+VIN)"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "Net-(IDCB1-R.C.)"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "Net-(J2-Pin_3)"
+      },
+      {
+        "netclass": "ShipSide",
+        "pattern": "Net-(J1-Pin_1)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

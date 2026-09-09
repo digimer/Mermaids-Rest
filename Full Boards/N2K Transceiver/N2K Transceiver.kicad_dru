@@ -1,0 +1,17 @@
+(version 1)
+
+(rule "iso_barrier_clearance"
+  (constraint clearance (min 3.0mm))
+  (condition "A.NetClass == 'ShipSide' && B.NetClass == 'IsolatedSide'"))
+
+(rule "iso_barrier_clearance_rev"
+  (constraint clearance (min 3.0mm))
+  (condition "A.NetClass == 'IsolatedSide' && B.NetClass == 'ShipSide'"))
+
+(rule "iso_barrier_hole"
+  (constraint hole_clearance (min 3.0mm))
+  (condition "A.NetClass == 'ShipSide' && B.NetClass == 'IsolatedSide'"))
+
+(rule "iso_barrier_physical"
+  (constraint physical_clearance (min 3.0mm))
+  (condition "A.NetClass == 'ShipSide' && B.NetClass == 'IsolatedSide'"))
