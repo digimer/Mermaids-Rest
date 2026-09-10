@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-10T19:02:23")
+		(date "2026-09-10T19:57:25")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -295,66 +295,6 @@
 			)
 		)
 		(comp
-			(ref "C5")
-			(value "22uF")
-			(footprint "mr-stuff:Murata GCJ32ER71C")
-			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
-			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
-			(fields
-				(field
-					(name "Part") "Murata GCJ32ER71C226KE01L")
-				(field
-					(name "Footprint") "mr-stuff:Murata GCJ32ER71C")
-				(field
-					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
-				(field
-					(name "Description") "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
-			)
-			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Part")
-				(value "Murata GCJ32ER71C226KE01L")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "07a1cc4e-96a8-4c88-a669-ea8cbd0ce101")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "C6")
 			(value "22uF")
 			(footprint "mr-stuff:Murata GCJ32ER71C")
@@ -460,6 +400,66 @@
 				(tstamps "/")
 			)
 			(tstamps "0a44ac48-2181-4181-acb5-605b723e956b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C8")
+			(value "10uF")
+			(footprint "mr-stuff:TDK CGA5")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA5")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b6a463bf-6a77-4a19-929c-bebb030200c9")
 			(units
 				(unit
 					(name "A")
@@ -716,19 +716,19 @@
 		)
 		(comp
 			(ref "C14")
-			(value "1uF")
+			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "Kyocera 08051C105K4Z2A")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
 					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
 				(field
-					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -737,7 +737,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Kyocera 08051C105K4Z2A")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -759,7 +759,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "25bd1dc7-c4b3-41c8-b2c7-88fd19bf8182")
+			(tstamps "e950f1ea-d640-40ad-ad92-df0d46beca2e")
 			(units
 				(unit
 					(name "A")
@@ -3857,6 +3857,66 @@
 			)
 		)
 		(comp
+			(ref "R27")
+			(value "1kR")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD1K00")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD1K00")
+				(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD1K00")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4f4df9e2-5451-4bec-b155-3527c120150f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "ROM1")
 			(value "M24C64")
 			(footprint "mr-stuff:STM M24C64-RMN6P")
@@ -5824,6 +5884,41 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "Stackpole RNCP0805FTD1K00")
+			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(docs "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "RNCP0805FTD1K00")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+				(field
+					(name "Part") "Stackpole RNCP0805FTD1K00")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "TDK ACT1210-510-2P-TL00")
 			(description "100 µH @ 100 kHz 2 Line Common Mode Choke Surface Mount 5.1 kOhms @ 10 MHz 150mA DCR 1.5Ohm")
 			(docs "https://product.tdk.com/info/en/catalog/datasheets/cmf_automotive_signal_act1210_en.pdf?ref_disty=digikey")
@@ -6138,11 +6233,6 @@
 			(node
 				(ref "C16")
 				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C5")
-				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6484,43 +6574,11 @@
 		)
 		(net
 			(code "11")
-			(name "/N2K_RX_LED")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "12")
-				(pinfunction "IO8_12")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "R23")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "12")
-			(name "/N2K_TX_LED")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "6")
-				(pinfunction "IO6_6")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "R22")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "13")
-			(name "/PGOOD")
+			(name "/MCU_RESET")
 			(class "Default")
 			(node
 				(ref "C14")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6534,6 +6592,11 @@
 				(pin "3")
 				(pinfunction "EN_3")
 				(pintype "input")
+			)
+			(node
+				(ref "R27")
+				(pin "1")
+				(pintype "passive")
 			)
 			(node
 				(ref "R3")
@@ -6552,11 +6615,37 @@
 				(pinfunction "B_4")
 				(pintype "passive")
 			)
+		)
+		(net
+			(code "12")
+			(name "/N2K_RX_LED")
+			(class "Default")
 			(node
-				(ref "VR1")
+				(ref "MCU1")
+				(pin "12")
+				(pinfunction "IO8_12")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R23")
 				(pin "1")
-				(pinfunction "PGOOD_1")
-				(pintype "open_collector")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "/N2K_TX_LED")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "6")
+				(pinfunction "IO6_6")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R22")
+				(pin "1")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -6769,7 +6858,7 @@
 			)
 			(node
 				(ref "C14")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -6798,17 +6887,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C5")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "C6")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7600,6 +7689,22 @@
 		)
 		(net
 			(code "52")
+			(name "Net-(VR1-PGOOD)")
+			(class "Default")
+			(node
+				(ref "R27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "VR1")
+				(pin "1")
+				(pinfunction "PGOOD_1")
+				(pintype "open_collector")
+			)
+		)
+		(net
+			(code "53")
 			(name "Net-(VR1-VCC)")
 			(class "Default")
 			(node
@@ -7615,7 +7720,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "54")
 			(name "Net-(VR1-VIN)")
 			(class "Default")
 			(node
@@ -7629,8 +7734,13 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "R26")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -7641,7 +7751,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "55")
 			(name "V_RAW")
 			(class "ShipSide,Default")
 			(node
@@ -7651,7 +7761,7 @@
 			)
 			(node
 				(ref "R26")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -7668,7 +7778,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "56")
 			(name "unconnected-(MCU1-IO13-Pad21)")
 			(class "Default")
 			(node
@@ -7679,7 +7789,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "57")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -7690,7 +7800,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "58")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -7701,7 +7811,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "59")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -7712,7 +7822,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "60")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -7723,7 +7833,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "61")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -7734,7 +7844,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "62")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -7745,7 +7855,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "63")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -7756,7 +7866,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "64")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -7767,7 +7877,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "65")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -7778,7 +7888,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "66")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -7789,7 +7899,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "67")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
