@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-09T18:55:38")
+		(date "2026-09-09T21:09:10")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -422,35 +422,28 @@
 		)
 		(comp
 			(ref "C7")
-			(value "330uF")
-			(footprint "mr-stuff:Panasonic EEH-ZU")
-			(datasheet "https://na.industrial.panasonic.com/file-download/244145")
-			(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "Panasonic EEH-ZU1V331V")
+					(name "Part") "Kyocera 08051C104K4Z2A")
 				(field
-					(name "Sim.Pins")
-				)
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Footprint") "mr-stuff:Panasonic EEH-ZU")
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
 				(field
-					(name "Datasheet") "https://na.industrial.panasonic.com/file-download/244145")
-				(field
-					(name "Description") "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
-				(lib "mr-parts")
-				(part "Panasonic EEH-ZU")
-				(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
 			)
 			(property
 				(name "Part")
-				(value "Panasonic EEH-ZU1V331V")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "")
+				(value "Kyocera 08051C104K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -460,11 +453,19 @@
 				(name "Sheetfile")
 				(value "N2K Transceiver.kicad_sch")
 			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "822c7bdc-fa23-4a62-a69d-9c8dc02e0bab")
+			(tstamps "1c336509-96d5-4a84-a892-1f0393ddc835")
 			(units
 				(unit
 					(name "A")
@@ -524,7 +525,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
+			(tstamps "097a6dbf-3e1d-43b5-9477-085b147e2a4c")
 			(units
 				(unit
 					(name "A")
@@ -541,28 +542,35 @@
 		)
 		(comp
 			(ref "C9")
-			(value "1uF")
-			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
-			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(value "330uF")
+			(footprint "mr-stuff:Panasonic EEH-ZU")
+			(datasheet "https://na.industrial.panasonic.com/file-download/244145")
+			(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
 			(fields
 				(field
-					(name "Part") "Kyocera 08051C105K4Z2A")
+					(name "Part") "Panasonic EEH-ZU1V331V")
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+					(name "Sim.Pins")
+				)
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Footprint") "mr-stuff:Panasonic EEH-ZU")
 				(field
-					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+					(name "Datasheet") "https://na.industrial.panasonic.com/file-download/244145")
+				(field
+					(name "Description") "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Panasonic EEH-ZU")
+				(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
 			)
 			(property
 				(name "Part")
-				(value "Kyocera 08051C105K4Z2A")
+				(value "Panasonic EEH-ZU1V331V")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
 			)
 			(property
 				(name "Sheetname")
@@ -572,19 +580,11 @@
 				(name "Sheetfile")
 				(value "N2K Transceiver.kicad_sch")
 			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "25cc698a-4beb-4f0e-93fc-016b1b659b00")
+			(tstamps "822c7bdc-fa23-4a62-a69d-9c8dc02e0bab")
 			(units
 				(unit
 					(name "A")
@@ -601,19 +601,19 @@
 		)
 		(comp
 			(ref "C10")
-			(value "0.1uF")
-			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(value "10uF")
+			(footprint "mr-stuff:TDK CGA5")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
 				(field
-					(name "Part") "Kyocera 08051C104K4Z2A")
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
-					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -622,7 +622,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Kyocera 08051C104K4Z2A")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -644,7 +644,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "05c8062f-cdaf-48f2-be5c-62554c462a42")
+			(tstamps "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
 			(units
 				(unit
 					(name "A")
@@ -704,7 +704,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "8e8860b3-35a9-4af2-acb4-6919bd86c522")
+			(tstamps "25cc698a-4beb-4f0e-93fc-016b1b659b00")
 			(units
 				(unit
 					(name "A")
@@ -721,6 +721,126 @@
 		)
 		(comp
 			(ref "C12")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "05c8062f-cdaf-48f2-be5c-62554c462a42")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C13")
+			(value "1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C105K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+				(field
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C105K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8e8860b3-35a9-4af2-acb4-6919bd86c522")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C14")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
@@ -780,7 +900,7 @@
 			)
 		)
 		(comp
-			(ref "C13")
+			(ref "C15")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
@@ -840,7 +960,7 @@
 			)
 		)
 		(comp
-			(ref "C14")
+			(ref "C16")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
@@ -1543,21 +1663,21 @@
 		(comp
 			(ref "J2")
 			(value "PSU TP")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x03, script generated")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x02, script generated")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x03, script generated")
+					(name "Description") "Generic connector, single row, 01x02, script generated")
 			)
 			(libsource
 				(lib "Connector")
-				(part "Conn_01x03_Pin")
-				(description "Generic connector, single row, 01x03, script generated")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
 			)
 			(property
 				(name "Sheetname")
@@ -1589,9 +1709,6 @@
 						)
 						(pin
 							(num "2")
-						)
-						(pin
-							(num "3")
 						)
 					)
 				)
@@ -6139,16 +6256,26 @@
 			)
 			(node
 				(ref "C10")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C13")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C14")
+				(ref "C11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C16")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6710,7 +6837,7 @@
 			)
 			(node
 				(ref "C10")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6720,16 +6847,26 @@
 			)
 			(node
 				(ref "C12")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C13")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C16")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7147,6 +7284,11 @@
 				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "27")
@@ -7171,22 +7313,6 @@
 		)
 		(net
 			(code "28")
-			(name "Net-(J2-Pin_3)")
-			(class "ShipSide,Default")
-			(node
-				(ref "J2")
-				(pin "3")
-				(pinfunction "Pin_3_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "R2")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "29")
 			(name "Net-(J3-Pin_2)")
 			(class "Default")
 			(node
@@ -7203,7 +7329,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "29")
 			(name "Net-(J3-Pin_3)")
 			(class "Default")
 			(node
@@ -7220,7 +7346,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "30")
 			(name "Net-(J3-Pin_4)")
 			(class "Default")
 			(node
@@ -7237,7 +7363,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "31")
 			(name "Net-(J3-Pin_5)")
 			(class "Default")
 			(node
@@ -7254,7 +7380,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "32")
 			(name "Net-(LED1-A)")
 			(class "Default")
 			(node
@@ -7270,7 +7396,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "33")
 			(name "Net-(LED2-A)")
 			(class "Default")
 			(node
@@ -7286,7 +7412,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "34")
 			(name "Net-(LED3-A)")
 			(class "Default")
 			(node
@@ -7302,7 +7428,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "35")
 			(name "Net-(LED4-A)")
 			(class "Default")
 			(node
@@ -7318,7 +7444,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "36")
 			(name "Net-(LED5-A)")
 			(class "Default")
 			(node
@@ -7334,7 +7460,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "37")
 			(name "Net-(LED6-A)")
 			(class "Default")
 			(node
@@ -7350,7 +7476,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "38")
 			(name "Net-(LED7-A)")
 			(class "Default")
 			(node
@@ -7366,11 +7492,11 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "39")
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
-				(ref "C12")
+				(ref "C14")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7399,11 +7525,11 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "40")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
-				(ref "C11")
+				(ref "C13")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7432,7 +7558,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "41")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -7448,7 +7574,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "42")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -7464,7 +7590,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "43")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -7480,7 +7606,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "44")
 			(name "Net-(MCU1-RXD0)")
 			(class "Default")
 			(node
@@ -7497,7 +7623,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "45")
 			(name "Net-(MCU1-TXD0)")
 			(class "Default")
 			(node
@@ -7514,7 +7640,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "46")
 			(name "Net-(MCU1-USB_D+)")
 			(class "Default")
 			(node
@@ -7537,7 +7663,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "47")
 			(name "Net-(MCU1-USB_D-)")
 			(class "Default")
 			(node
@@ -7560,7 +7686,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "48")
 			(name "Net-(PTC1-Pad2)")
 			(class "ShipSide,Default")
 			(node
@@ -7580,7 +7706,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "49")
 			(name "Net-(SD1-A)")
 			(class "ShipSide,Default")
 			(node
@@ -7602,7 +7728,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "50")
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
@@ -7618,7 +7744,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "51")
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
@@ -7634,7 +7760,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "52")
 			(name "V_RAW")
 			(class "ShipSide,Default")
 			(node
@@ -7673,7 +7799,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "53")
 			(name "unconnected-(IDCB1-N.C.-Pad8)")
 			(class "Default")
 			(node
@@ -7684,7 +7810,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "54")
 			(name "unconnected-(MCU1-IO12-Pad20)")
 			(class "Default")
 			(node
@@ -7695,7 +7821,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "55")
 			(name "unconnected-(MCU1-IO13-Pad21)")
 			(class "Default")
 			(node
@@ -7706,7 +7832,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "56")
 			(name "unconnected-(MCU1-IO21-Pad23)")
 			(class "Default")
 			(node
@@ -7717,7 +7843,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "57")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -7728,7 +7854,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "58")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -7739,7 +7865,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "59")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -7750,7 +7876,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "60")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -7761,7 +7887,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "61")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -7772,7 +7898,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "62")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -7783,7 +7909,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "63")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -7794,7 +7920,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "64")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
