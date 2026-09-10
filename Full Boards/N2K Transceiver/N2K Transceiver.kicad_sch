@@ -7492,7 +7492,7 @@
 	)
 	(rectangle
 		(start 197.485 15.875)
-		(end 260.985 68.58)
+		(end 260.985 71.755)
 		(stroke
 			(width 0)
 			(type default)
@@ -7668,7 +7668,7 @@
 	)
 	(text "* C6 provides optional common-mode EMI suppression\n* PSU TP V_RAW to RC 15V MAX (Test at 13V)\n  Jumper to GND_SHIP for normal operation.\n  (Note: Remove J1 and tie R2 to GND_SHIP before prod)"
 		(exclude_from_sim no)
-		(at 198.12 59.944 0)
+		(at 198.12 62.738 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7807,6 +7807,12 @@
 		(uuid "209b64c2-8fb2-47e6-8692-611621253f05")
 	)
 	(junction
+		(at 242.57 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d3c99e6-f031-405d-87a0-7df1ca9c917c")
+	)
+	(junction
 		(at 227.33 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7865,6 +7871,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ac7a44d-5b84-43dd-b1d3-e9e52fced94c")
+	)
+	(junction
+		(at 231.14 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b2204dd-918a-4b8f-ae32-6c2d05fb3b8d")
 	)
 	(junction
 		(at 194.31 154.94)
@@ -7951,10 +7963,22 @@
 		(uuid "95646b90-d856-4ebb-b6c2-ebda1a80fd49")
 	)
 	(junction
+		(at 257.81 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9853c42b-035e-4ef7-be6d-ec75f878a31d")
+	)
+	(junction
 		(at 62.23 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99d82a4d-2a2e-45de-93cd-3b4764b25f74")
+	)
+	(junction
+		(at 257.81 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a8da8e1-659f-4eb2-9bb0-d0a6d64823d7")
 	)
 	(junction
 		(at 19.05 110.49)
@@ -7979,6 +8003,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ce43046-4549-4fc8-afc9-a7fbf1d9b722")
+	)
+	(junction
+		(at 242.57 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fe660e2-5433-4630-b91b-3c0b3d8c6f7d")
 	)
 	(junction
 		(at 54.61 81.28)
@@ -8462,16 +8492,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 49.53) (xy 231.14 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17f7bed8-ac80-4fcd-8d44-5c25579281e8")
-	)
-	(wire
-		(pts
 			(xy 231.14 29.21) (xy 231.14 30.48)
 		)
 		(stroke
@@ -8692,6 +8712,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 52.07) (xy 242.57 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "255372b0-637a-4a93-bd5f-15198c484caf")
+	)
+	(wire
+		(pts
 			(xy 227.33 30.48) (xy 231.14 30.48)
 		)
 		(stroke
@@ -8749,6 +8779,16 @@
 			(type default)
 		)
 		(uuid "2919f05d-7355-40e6-911b-0f8c9df0cf87")
+	)
+	(wire
+		(pts
+			(xy 245.11 46.99) (xy 257.81 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29c5f144-5753-4301-a3f0-60926b742351")
 	)
 	(wire
 		(pts
@@ -9152,6 +9192,26 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 52.07) (xy 242.57 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44760f37-8198-4371-a246-666e2034b23c")
+	)
+	(wire
+		(pts
+			(xy 231.14 44.45) (xy 231.14 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "466a59f0-c64c-4306-9070-0a0cb711dd04")
+	)
+	(wire
+		(pts
 			(xy 229.87 153.67) (xy 232.41 153.67)
 		)
 		(stroke
@@ -9412,6 +9472,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 52.07) (xy 257.81 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55b5f08c-b758-432a-a731-6d5ae34159d3")
+	)
+	(wire
+		(pts
 			(xy 87.63 109.22) (xy 90.17 109.22)
 		)
 		(stroke
@@ -9489,16 +9559,6 @@
 			(type default)
 		)
 		(uuid "58b7dfb2-85ef-4b88-b244-f3d546803412")
-	)
-	(wire
-		(pts
-			(xy 231.14 49.53) (xy 231.14 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58e643e5-50c5-4b33-aad8-45afc609cbcd")
 	)
 	(wire
 		(pts
@@ -9612,6 +9672,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 52.07) (xy 257.81 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60668f06-28d8-4c3e-b357-9a56f990a192")
+	)
+	(wire
+		(pts
 			(xy 121.92 116.84) (xy 121.92 154.94)
 		)
 		(stroke
@@ -9682,7 +9752,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 49.53) (xy 219.71 49.53)
+			(xy 219.71 49.53) (xy 220.98 49.53)
 		)
 		(stroke
 			(width 0)
@@ -9842,16 +9912,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 55.88) (xy 242.57 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6afb98ab-b8bd-44bb-b999-a3b3897df7aa")
-	)
-	(wire
-		(pts
 			(xy 132.08 109.22) (xy 125.73 109.22)
 		)
 		(stroke
@@ -9902,16 +9962,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 53.34) (xy 245.11 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72f451e5-b45b-4058-bd35-5c537fa8860b")
-	)
-	(wire
-		(pts
 			(xy 30.48 100.33) (xy 31.75 100.33)
 		)
 		(stroke
@@ -9949,6 +9999,16 @@
 			(type default)
 		)
 		(uuid "75c5065d-3f94-4f5e-8e8f-bcf11f8b6143")
+	)
+	(wire
+		(pts
+			(xy 242.57 58.42) (xy 245.11 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7764aac2-4abb-4aae-a885-aa266d060694")
 	)
 	(wire
 		(pts
@@ -10532,6 +10592,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 58.42) (xy 257.81 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a49254ee-ac68-4d61-8ee6-ca6471830c10")
+	)
+	(wire
+		(pts
 			(xy 92.71 54.61) (xy 95.25 54.61)
 		)
 		(stroke
@@ -10692,7 +10762,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 49.53) (xy 218.44 52.07)
+			(xy 219.71 49.53) (xy 219.71 52.07)
 		)
 		(stroke
 			(width 0)
@@ -10872,7 +10942,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 49.53) (xy 227.33 49.53)
+			(xy 257.81 46.99) (xy 257.81 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be194ca4-f485-4645-b9de-7a22512c423f")
+	)
+	(wire
+		(pts
+			(xy 228.6 49.53) (xy 231.14 49.53)
 		)
 		(stroke
 			(width 0)
@@ -10999,6 +11079,16 @@
 			(type default)
 		)
 		(uuid "c9a0b70f-c301-48c8-b2d9-b31606c15601")
+	)
+	(wire
+		(pts
+			(xy 257.81 58.42) (xy 257.81 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca145732-4120-4e6e-a4ee-3c058cb74b21")
 	)
 	(wire
 		(pts
@@ -11129,16 +11219,6 @@
 			(type default)
 		)
 		(uuid "d3859748-a9c4-4c18-824a-1a9e34f29033")
-	)
-	(wire
-		(pts
-			(xy 228.6 44.45) (xy 228.6 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3ced808-abfe-4fce-83b7-95a3cebb7b16")
 	)
 	(wire
 		(pts
@@ -11732,6 +11812,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 49.53) (xy 240.03 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f918c3b9-c752-4cb6-997e-890cd445fdf5")
+	)
+	(wire
+		(pts
 			(xy 19.05 180.34) (xy 19.05 181.61)
 		)
 		(stroke
@@ -11739,6 +11829,26 @@
 			(type default)
 		)
 		(uuid "f96a4ad6-0a45-40e2-8ade-7852f3ceb985")
+	)
+	(wire
+		(pts
+			(xy 242.57 38.1) (xy 242.57 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9dd49b9-ebfd-4535-a676-63599801f939")
+	)
+	(wire
+		(pts
+			(xy 245.11 40.64) (xy 245.11 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbedfdff-55d9-49e2-9d03-a863883bf289")
 	)
 	(wire
 		(pts
@@ -11762,7 +11872,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 55.88) (xy 242.57 55.88)
+			(xy 237.49 58.42) (xy 242.57 58.42)
 		)
 		(stroke
 			(width 0)
@@ -12400,7 +12510,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "05c8062f-cdaf-48f2-be5c-62554c462a42")
-		(property "Reference" "C10"
+		(property "Reference" "C12"
 			(at 70.358 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12475,7 +12585,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C10")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -12645,6 +12755,98 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0280")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 248.92 58.42 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "097a6dbf-3e1d-43b5-9477-085b147e2a4c")
+		(property "Reference" "C8"
+			(at 250.444 56.896 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 250.19 59.944 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:TDK CGA5"
+			(at 245.11 59.3852 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+			(at 248.92 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 248.92 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 248.92 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c133d5f9-6382-4652-aec8-da5f18e412d4")
+		)
+		(pin "1"
+			(uuid "2b764188-c7d8-438e-8405-0f668822d9d4")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -13369,6 +13571,98 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 248.92 52.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1c336509-96d5-4a84-a892-1f0393ddc835")
+		(property "Reference" "C7"
+			(at 250.444 50.292 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 250.444 53.594 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
+			(at 252.73 51.1048 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf"
+			(at 248.92 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 248.92 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 248.92 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f2636d15-18d4-4ab1-b431-e9068b8ebc8b")
+		)
+		(pin "1"
+			(uuid "10257c79-a1cf-4e0b-97d3-e3f805eaaa95")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 52.07 97.79 180)
 		(unit 1)
 		(body_style 1)
@@ -13378,7 +13672,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "25bd1dc7-c4b3-41c8-b2c7-88fd19bf8182")
-		(property "Reference" "C12"
+		(property "Reference" "C14"
 			(at 56.388 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13453,7 +13747,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C12")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -13470,7 +13764,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "25cc698a-4beb-4f0e-93fc-016b1b659b00")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 62.738 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13545,7 +13839,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -14457,7 +14751,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
-		(property "Reference" "C8"
+		(property "Reference" "C10"
 			(at 55.118 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14532,7 +14826,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C8")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -14957,7 +15251,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "48e424da-36d0-4220-9dab-e34e7355e1fe")
-		(property "Reference" "C14"
+		(property "Reference" "C16"
 			(at 231.648 109.474 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15032,15 +15326,15 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C14")
+					(reference "C16")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 231.14 39.37 270)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 233.68 39.37 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15050,7 +15344,7 @@
 		(dnp no)
 		(uuid "53112842-7924-4e7f-9c70-fb8e1d108123")
 		(property "Reference" "J2"
-			(at 230.886 35.56 90)
+			(at 232.41 35.814 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15060,7 +15354,7 @@
 			)
 		)
 		(property "Value" "PSU TP"
-			(at 231.14 37.846 90)
+			(at 232.41 37.846 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15069,8 +15363,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 231.14 39.37 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 233.68 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15081,7 +15375,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 39.37 0)
+			(at 233.68 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15091,8 +15385,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 231.14 39.37 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 233.68 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15101,9 +15395,6 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "3"
-			(uuid "edf59fd1-948f-4575-ae40-f258393f88fd")
 		)
 		(pin "1"
 			(uuid "18702614-3b2a-4b07-9f93-bd71adb0c46e")
@@ -16221,7 +16512,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 238.76 55.88 0)
+		(at 237.49 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16231,7 +16522,7 @@
 		(dnp no)
 		(uuid "6ba2cffa-5970-4bfd-8819-5d1f8e76e226")
 		(property "Reference" "#PWR0129"
-			(at 238.76 59.69 0)
+			(at 237.49 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16242,7 +16533,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 238.76 52.07 0)
+			(at 237.49 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16252,7 +16543,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 238.76 55.88 0)
+			(at 237.49 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16263,7 +16554,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 55.88 0)
+			(at 237.49 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16274,7 +16565,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 238.76 55.88 0)
+			(at 237.49 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17150,7 +17441,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "822c7bdc-fa23-4a62-a69d-9c8dc02e0bab")
-		(property "Reference" "C7"
+		(property "Reference" "C9"
 			(at 48.514 84.328 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17235,7 +17526,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C7")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -17499,7 +17790,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 245.11 53.34 0)
+		(at 257.81 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17509,7 +17800,7 @@
 		(dnp no)
 		(uuid "8668dbc4-d9c9-4746-94e6-49d4726fe3a4")
 		(property "Reference" "#PWR0245"
-			(at 245.11 59.69 0)
+			(at 257.81 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17520,7 +17811,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 245.11 56.896 0)
+			(at 257.81 63.246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17530,7 +17821,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 53.34 0)
+			(at 257.81 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17541,7 +17832,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 53.34 0)
+			(at 257.81 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17552,7 +17843,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 245.11 53.34 0)
+			(at 257.81 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17940,7 +18231,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e8860b3-35a9-4af2-acb4-6919bd86c522")
-		(property "Reference" "C11"
+		(property "Reference" "C13"
 			(at 25.4 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18015,7 +18306,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C11")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -18511,7 +18802,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 223.52 49.53 90)
+		(at 224.79 49.53 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18521,7 +18812,7 @@
 		(dnp no)
 		(uuid "9cb89e23-c66d-4e39-9739-10e166511437")
 		(property "Reference" "R2"
-			(at 224.79 49.53 90)
+			(at 226.06 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18532,7 +18823,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 223.52 51.816 90)
+			(at 224.79 51.816 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18542,7 +18833,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 223.52 51.308 90)
+			(at 224.79 51.308 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18553,7 +18844,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 223.52 49.53 0)
+			(at 224.79 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18564,7 +18855,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 223.52 49.53 0)
+			(at 224.79 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18575,7 +18866,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD10K0"
-			(at 223.52 49.53 90)
+			(at 224.79 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22580,7 +22871,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 218.44 52.07 0)
+		(at 219.71 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22590,7 +22881,7 @@
 		(dnp no)
 		(uuid "e5b17e66-ebcd-4085-a0e2-f8bf1f505e82")
 		(property "Reference" "#PWR0126"
-			(at 218.44 58.42 0)
+			(at 219.71 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22601,7 +22892,7 @@
 			)
 		)
 		(property "Value" "GND_SHIP"
-			(at 218.44 55.88 0)
+			(at 219.71 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22611,7 +22902,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 52.07 0)
+			(at 219.71 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22622,7 +22913,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 52.07 0)
+			(at 219.71 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22633,7 +22924,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 52.07 0)
+			(at 219.71 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22743,7 +23034,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7ff9f05-c4fd-4b1f-9109-8383bde3d1f6")
-		(property "Reference" "C13"
+		(property "Reference" "C15"
 			(at 231.648 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22818,7 +23109,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C13")
+					(reference "C15")
 					(unit 1)
 				)
 			)
