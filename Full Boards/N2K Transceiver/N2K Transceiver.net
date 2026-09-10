@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-09T22:33:29")
+		(date "2026-09-10T19:02:23")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -116,19 +116,19 @@
 		)
 		(comp
 			(ref "C2")
-			(value "0.1uF")
-			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(value "10uF")
+			(footprint "mr-stuff:TDK CGA5")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			(fields
 				(field
-					(name "Part") "Kyocera 08051C104K4Z2A")
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+					(name "Footprint") "mr-stuff:TDK CGA5")
 				(field
-					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
 				(field
-					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -137,7 +137,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Kyocera 08051C104K4Z2A")
+				(value "TDK CGA5L1X7R1H106K160AE")
 			)
 			(property
 				(name "Sheetname")
@@ -159,7 +159,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "d82bdf09-65e5-41db-bd0f-3a7d8e64853f")
+			(tstamps "3c3deb41-490f-4cae-8e37-d413e30e96d3")
 			(units
 				(unit
 					(name "A")
@@ -219,7 +219,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "8b69548a-c697-40e9-b463-1439edbe5717")
+			(tstamps "36ab98fa-7c95-4d57-8e25-905dd5d05c39")
 			(units
 				(unit
 					(name "A")
@@ -236,19 +236,19 @@
 		)
 		(comp
 			(ref "C4")
-			(value "22uF")
-			(footprint "mr-stuff:Murata GCJ31CR71A")
-			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ31CR71A226KE01%23")
-			(description "22 µF ±10% 10V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(value "1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "Murata GCJ31CR71A226KE01L")
+					(name "Part") "Kyocera 08051C105K4Z2A")
 				(field
-					(name "Footprint") "mr-stuff:Murata GCJ31CR71A")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ31CR71A226KE01%23")
+					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
 				(field
-					(name "Description") "22 µF ±10% 10V Ceramic Capacitor X7R 1206 (3216 Metric)")
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -257,7 +257,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Murata GCJ31CR71A226KE01L")
+				(value "Kyocera 08051C105K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -279,7 +279,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "03686318-0a9e-460d-9ff2-710de83e565e")
+			(tstamps "c8f951ad-d22d-4c6b-b6f1-6d59e734bb67")
 			(units
 				(unit
 					(name "A")
@@ -296,19 +296,19 @@
 		)
 		(comp
 			(ref "C5")
-			(value "2.2uF")
-			(footprint "mr-stuff:Kyocera AVX 1210")
-			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
-			(description "2.2 µF ±10% 100V Ceramic Capacitor X7R 1210 (3225 Metric)")
+			(value "22uF")
+			(footprint "mr-stuff:Murata GCJ32ER71C")
+			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			(fields
 				(field
-					(name "Part") "Kyocera AVX 12101C225K4Z2A")
+					(name "Part") "Murata GCJ32ER71C226KE01L")
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 1210")
+					(name "Footprint") "mr-stuff:Murata GCJ32ER71C")
 				(field
-					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
 				(field
-					(name "Description") "2.2 µF ±10% 100V Ceramic Capacitor X7R 1210 (3225 Metric)")
+					(name "Description") "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -317,7 +317,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Kyocera AVX 12101C225K4Z2A")
+				(value "Murata GCJ32ER71C226KE01L")
 			)
 			(property
 				(name "Sheetname")
@@ -339,7 +339,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "67d43994-ebc9-434d-b4ee-ad958fc6258f")
+			(tstamps "07a1cc4e-96a8-4c88-a669-ea8cbd0ce101")
 			(units
 				(unit
 					(name "A")
@@ -356,19 +356,19 @@
 		)
 		(comp
 			(ref "C6")
-			(value "1500pF")
-			(footprint "mr-stuff:Knowles Syfer 1808YA25")
-			(datasheet "https://BAEDF7E13CB74DD3BF3C78231C835DE9:077C85C8E9B8495DB18DA89D51DE1DA7@api.knowlescapacitors.com/api/Datasheet/GetDatasheetByPartNumber?partnumber=1808YA250152KSTSYX")
-			(description "1500 pF ±10% 250VAC Ceramic Capacitor X7R 1808 (4520 Metric)")
+			(value "22uF")
+			(footprint "mr-stuff:Murata GCJ32ER71C")
+			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			(fields
 				(field
-					(name "Part") "Knowles Syfer 1808YA250152KSTSYX")
+					(name "Part") "Murata GCJ32ER71C226KE01L")
 				(field
-					(name "Footprint") "mr-stuff:Knowles Syfer 1808YA25")
+					(name "Footprint") "mr-stuff:Murata GCJ32ER71C")
 				(field
-					(name "Datasheet") "https://BAEDF7E13CB74DD3BF3C78231C835DE9:077C85C8E9B8495DB18DA89D51DE1DA7@api.knowlescapacitors.com/api/Datasheet/GetDatasheetByPartNumber?partnumber=1808YA250152KSTSYX")
+					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
 				(field
-					(name "Description") "1500 pF ±10% 250VAC Ceramic Capacitor X7R 1808 (4520 Metric)")
+					(name "Description") "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -377,7 +377,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Knowles Syfer 1808YA250152KSTSYX")
+				(value "Murata GCJ32ER71C226KE01L")
 			)
 			(property
 				(name "Sheetname")
@@ -386,12 +386,6 @@
 			(property
 				(name "Sheetfile")
 				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "exclude_from_bom")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -405,7 +399,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "d23b86fb-9bf8-4225-9f2f-c3c5efac7e17")
+			(tstamps "c2e0083d-81af-4035-8d23-e710ca092aad")
 			(units
 				(unit
 					(name "A")
@@ -422,19 +416,19 @@
 		)
 		(comp
 			(ref "C7")
-			(value "0.1uF")
-			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(value "22uF")
+			(footprint "mr-stuff:Murata GCJ32ER71C")
+			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			(fields
 				(field
-					(name "Part") "Kyocera 08051C104K4Z2A")
+					(name "Part") "Murata GCJ32ER71C226KE01L")
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+					(name "Footprint") "mr-stuff:Murata GCJ32ER71C")
 				(field
-					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
 				(field
-					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+					(name "Description") "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			)
 			(libsource
 				(lib "Device")
@@ -443,7 +437,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Kyocera 08051C104K4Z2A")
+				(value "Murata GCJ32ER71C226KE01L")
 			)
 			(property
 				(name "Sheetname")
@@ -465,126 +459,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "1c336509-96d5-4a84-a892-1f0393ddc835")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C8")
-			(value "10uF")
-			(footprint "mr-stuff:TDK CGA5")
-			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
-			(fields
-				(field
-					(name "Part") "TDK CGA5L1X7R1H106K160AE")
-				(field
-					(name "Footprint") "mr-stuff:TDK CGA5")
-				(field
-					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-				(field
-					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
-			)
-			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Part")
-				(value "TDK CGA5L1X7R1H106K160AE")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "097a6dbf-3e1d-43b5-9477-085b147e2a4c")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C9")
-			(value "330uF")
-			(footprint "mr-stuff:Panasonic EEH-ZU")
-			(datasheet "https://na.industrial.panasonic.com/file-download/244145")
-			(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-			(fields
-				(field
-					(name "Part") "Panasonic EEH-ZU1V331V")
-				(field
-					(name "Sim.Pins")
-				)
-				(field
-					(name "Footprint") "mr-stuff:Panasonic EEH-ZU")
-				(field
-					(name "Datasheet") "https://na.industrial.panasonic.com/file-download/244145")
-				(field
-					(name "Description") "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "Panasonic EEH-ZU")
-				(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-			)
-			(property
-				(name "Part")
-				(value "Panasonic EEH-ZU1V331V")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "822c7bdc-fa23-4a62-a69d-9c8dc02e0bab")
+			(tstamps "0a44ac48-2181-4181-acb5-605b723e956b")
 			(units
 				(unit
 					(name "A")
@@ -1014,6 +889,84 @@
 						)
 						(pin
 							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "CAN1")
+			(value "TCAN3404DRQ1")
+			(footprint "mr-stuff:TI TCAN3404")
+			(datasheet "https://www.ti.com/lit/ds/symlink/tcan3404-q1.pdf")
+			(description "TCAN3404")
+			(fields
+				(field
+					(name "Part") "TI TCAN3404DRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TCAN3404")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/tcan3404-q1.pdf")
+				(field
+					(name "Description") "TCAN3404")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TI TCAN3404DRQ1")
+				(description "TCAN3404")
+			)
+			(property
+				(name "Part")
+				(value "TI TCAN3404DRQ1")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "TCAN330DR")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "D0008A_N D0008A_M D0008A_L")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a9f154fe-257a-47cf-b6a2-11b811c50e14")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
 						)
 					)
 				)
@@ -1453,148 +1406,6 @@
 			)
 		)
 		(comp
-			(ref "ICT1")
-			(value "ISO1044BD")
-			(footprint "mr-stuff:TI ISO1044BDR")
-			(datasheet "https://www.ti.com/lit/ds/symlink/iso1044.pdf")
-			(description "Isolated CAN FD Transceiver, SOIC-8")
-			(fields
-				(field
-					(name "Part") "TI ISO1044BDR")
-				(field
-					(name "Footprint") "mr-stuff:TI ISO1044BDR")
-				(field
-					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/iso1044.pdf")
-				(field
-					(name "Description") "Isolated CAN FD Transceiver, SOIC-8")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "TI_ISO1044BDR")
-				(description "Isolated CAN FD Transceiver, SOIC-8")
-			)
-			(property
-				(name "Part")
-				(value "TI ISO1044BDR")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "CAN-FD Isolated")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "SOIC*3.9x4.9mm*P1.27mm*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "871ec27d-df17-4702-b6d9-7ee98b061bca")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "3")
-						)
-						(pin
-							(num "2")
-						)
-						(pin
-							(num "4")
-						)
-						(pin
-							(num "8")
-						)
-						(pin
-							(num "6")
-						)
-						(pin
-							(num "5")
-						)
-						(pin
-							(num "7")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "IDCB1")
-			(value "SPAN02W8-03")
-			(footprint "mr-stuff:Mean Well SPAN02W8")
-			(datasheet "https://www.meanwell.com/webapp/product/search.aspx?prod=SPAN02W8")
-			(description "Isolated Module DC DC Converter 1 Output 3.3V 500mA 9V - 75V Input SIP8,-40C ~ 95C")
-			(fields
-				(field
-					(name "Part") "Mean Well SPAN02W8-03")
-				(field
-					(name "Footprint") "mr-stuff:Mean Well SPAN02W8")
-				(field
-					(name "Datasheet") "https://www.meanwell.com/webapp/product/search.aspx?prod=SPAN02W8")
-				(field
-					(name "Description") "Isolated Module DC DC Converter 1 Output 3.3V 500mA 9V - 75V Input SIP8,-40C ~ 95C")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "Mean Well SPAN02W8-03")
-				(description "Isolated Module DC DC Converter 1 Output 3.3V 500mA 9V - 75V Input SIP8,-40C ~ 95C")
-			)
-			(property
-				(name "Part")
-				(value "Mean Well SPAN02W8-03")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "29bb59cb-f048-47bd-b47d-c7aa3ade0c18")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-						(pin
-							(num "3")
-						)
-						(pin
-							(num "6")
-						)
-						(pin
-							(num "7")
-						)
-						(pin
-							(num "8")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "J1")
 			(value "Optional Bond")
 			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
@@ -1646,60 +1457,6 @@
 				(tstamps "/")
 			)
 			(tstamps "981ff72c-ddf2-4cf7-a8df-f3fb0dfa702f")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "J2")
-			(value "PSU TP")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x02, script generated")
-			(fields
-				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x02, script generated")
-			)
-			(libsource
-				(lib "Connector")
-				(part "Conn_01x02_Pin")
-				(description "Generic connector, single row, 01x02, script generated")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "connector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Connector*:*_1x??_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "53112842-7924-4e7f-9c70-fb8e1d108123")
 			(units
 				(unit
 					(name "A")
@@ -1775,66 +1532,6 @@
 						)
 						(pin
 							(num "5")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "L1")
-			(value "SRN8040HA-220M")
-			(footprint "mr-stuff:Bourns SRN8040HA")
-			(datasheet "https://www.bourns.com/docs/Product-Datasheets/SRN8040HA.pdf")
-			(description "22 µH Shielded Wirewound Inductor 2.2 A 120mOhm Max Nonstandard")
-			(fields
-				(field
-					(name "Part") "Bourns SRN8040HA-220M")
-				(field
-					(name "Footprint") "mr-stuff:Bourns SRN8040HA")
-				(field
-					(name "Datasheet") "https://www.bourns.com/docs/Product-Datasheets/SRN8040HA.pdf")
-				(field
-					(name "Description") "22 µH Shielded Wirewound Inductor 2.2 A 120mOhm Max Nonstandard")
-			)
-			(libsource
-				(lib "Device")
-				(part "L")
-				(description "Inductor")
-			)
-			(property
-				(name "Part")
-				(value "Bourns SRN8040HA-220M")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "inductor choke coil reactor magnetic")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Choke_* *Coil* Inductor_* L_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "ba1fd3c6-128d-4cea-a32d-cac6a7d7470a")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
 						)
 					)
 				)
@@ -2310,69 +2007,6 @@
 			)
 		)
 		(comp
-			(ref "LVR1")
-			(value "BD450S5FP-CE2")
-			(footprint "mr-stuff:Rohm BD4xxS5 TO252-3")
-			(datasheet "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bd4xxs5efj-e.pdf")
-			(description "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
-			(fields
-				(field
-					(name "Part") "Rohm BD450S5FP-CE2")
-				(field
-					(name "Footprint") "mr-stuff:Rohm BD4xxS5 TO252-3")
-				(field
-					(name "Datasheet") "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bd4xxs5efj-e.pdf")
-				(field
-					(name "Description") "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "Rohm BD450S5FP-CE2")
-				(description "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
-			)
-			(property
-				(name "Part")
-				(value "Rohm BD450S5FP-CE2")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "BD450S5FP-CE2")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "TO252-3_ROM TO252-3_ROM-M TO252-3_ROM-L")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "813da777-33f5-481c-9572-f687d7e2e3a2")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "4")
-						)
-						(pin
-							(num "3")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "MCU1")
 			(value "ESP32-S3-WROOM-1-N16R2")
 			(footprint "mr-stuff:ESP32-S3-WROOM-1")
@@ -2551,28 +2185,28 @@
 		)
 		(comp
 			(ref "PTC1")
-			(value "0ZCG0110CF2B")
-			(footprint "mr-stuff:Bel Fuse 0ZCG")
-			(datasheet "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf")
-			(description "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
+			(value "nanoASMDCH020F")
+			(footprint "mr-stuff:Littelfuse NANOASMDCH020F")
+			(datasheet "https://www.littelfuse.com/assetdocs/littelfuse-ptc-auto-hightemp-smd-datasheet?assetguid=eb355431-c672-4f9e-aeb0-4d3e11a483c0")
+			(description "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 			(fields
 				(field
-					(name "Part") "Bel Fuse 0ZCG0110CF2B")
+					(name "Part") "Littelfuse nanoASMDCH020F")
 				(field
-					(name "Footprint") "mr-stuff:Bel Fuse 0ZCG")
+					(name "Footprint") "mr-stuff:Littelfuse NANOASMDCH020F")
 				(field
-					(name "Datasheet") "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf")
+					(name "Datasheet") "https://www.littelfuse.com/assetdocs/littelfuse-ptc-auto-hightemp-smd-datasheet?assetguid=eb355431-c672-4f9e-aeb0-4d3e11a483c0")
 				(field
-					(name "Description") "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
+					(name "Description") "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Bel Fuse 0ZCG0110CF2B")
-				(description "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
+				(part "Littelfuse nanoASMDCH020F")
+				(description "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 			)
 			(property
 				(name "Part")
-				(value "Bel Fuse 0ZCG0110CF2B")
+				(value "Littelfuse nanoASMDCH020F")
 			)
 			(property
 				(name "Sheetname")
@@ -2706,7 +2340,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9cb89e23-c66d-4e39-9739-10e166511437")
+			(tstamps "eda212a1-79d9-4d95-a746-766916e06de5")
 			(units
 				(unit
 					(name "A")
@@ -4031,6 +3665,198 @@
 			)
 		)
 		(comp
+			(ref "R24")
+			(value "100kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "100 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT100K-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "100 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT100K-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ffc789e0-2af6-4b35-b0d1-38d63ac17dca")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R25")
+			(value "470kR")
+			(footprint "mr-stuff:Wurth WRIS-RSKS")
+			(datasheet "https://www.we-online.com/components/products/datasheet/560112120009.pdf")
+			(description "470 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thick Film")
+			(fields
+				(field
+					(name "Part") "Wurth 560112120009")
+				(field
+					(name "Footprint") "mr-stuff:Wurth WRIS-RSKS")
+				(field
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/560112120009.pdf")
+				(field
+					(name "Description") "470 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thick Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Wurth 560112120009")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9eddd782-eef4-4698-9700-f71a63f96530")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R26")
+			(value "0R")
+			(footprint "mr-stuff:Vishay RCA-SR e3")
+			(datasheet "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Vishay RCA08050000ZSEASR")
+				(field
+					(name "Alternate") "Murata LQW21FT1R5M0HL")
+				(field
+					(name "Note") "Placeholder if bench testing shows an inductor is needed for VHF noise")
+				(field
+					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+				(field
+					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Vishay RCA08050000ZSEASR")
+				(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Vishay RCA08050000ZSEASR")
+			)
+			(property
+				(name "Alternate")
+				(value "Murata LQW21FT1R5M0HL")
+			)
+			(property
+				(name "Note")
+				(value "Placeholder if bench testing shows an inductor is needed for VHF noise")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "801597a4-fb69-4f2a-8437-0aedce72e9fd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "ROM1")
 			(value "M24C64")
 			(footprint "mr-stuff:STM M24C64-RMN6P")
@@ -4178,7 +4004,7 @@
 			(description "Diode 40 V 3A Surface Mount DO-214AC (SMA)")
 			(fields
 				(field
-					(name "Height") "Vishay VS-30MQ040-M3_5AT")
+					(name "Part") "Vishay VS-30MQ040-M3_5AT")
 				(field
 					(name "Footprint") "mr-stuff:Vishay 30MQ040")
 				(field
@@ -4192,7 +4018,7 @@
 				(description "Diode 40 V 3A Surface Mount DO-214AC (SMA)")
 			)
 			(property
-				(name "Height")
+				(name "Part")
 				(value "Vishay VS-30MQ040-M3_5AT")
 			)
 			(property
@@ -4916,6 +4742,93 @@
 				)
 			)
 		)
+		(comp
+			(ref "VR1")
+			(value "TPSM33610S3QRDNRQ1")
+			(footprint "mr-stuff:TI TPSM336")
+			(datasheet "https://www.ti.com/lit/ds/symlink/tpsm33606-q1.pdf")
+			(description "Non-Isolated PoL Module DC DC Converter 1 Output 3.3V 600mA 3V - 36V Input")
+			(fields
+				(field
+					(name "Part") "TI TPSM33606S3QRDNRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPSM336")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/tpsm33606-q1.pdf")
+				(field
+					(name "Description") "Non-Isolated PoL Module DC DC Converter 1 Output 3.3V 600mA 3V - 36V Input")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TI TPSM33606S3QRDNRQ1")
+				(description "Non-Isolated PoL Module DC DC Converter 1 Output 3.3V 600mA 3V - 36V Input")
+			)
+			(property
+				(name "Part")
+				(value "TI TPSM33606S3QRDNRQ1")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "TPSM33610S3QRDNRQ1")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "U_QFN-FCMOD_RDN0011B_TEX")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e95b795c-0c17-4e40-b43b-ee3eb1df247d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
 	)
 	(groups)
 	(variants)
@@ -5116,43 +5029,6 @@
 				(pin
 					(num "2")
 					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Device")
-			(part "L")
-			(description "Inductor")
-			(footprints
-				(fp "Choke_*")
-				(fp "*Coil*")
-				(fp "Inductor_*")
-				(fp "L_*")
-			)
-			(fields
-				(field
-					(name "Reference") "L")
-				(field
-					(name "Value") "L")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Inductor")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "2")
 					(type "passive")
 				)
 			)
@@ -5547,38 +5423,6 @@
 		)
 		(libpart
 			(lib "mr-parts")
-			(part "Bel Fuse 0ZCG0110CF2B")
-			(description "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
-			(docs "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf")
-			(fields
-				(field
-					(name "Reference") "PTC")
-				(field
-					(name "Value") "0ZCG0110CF2B")
-				(field
-					(name "Footprint") "mr-stuff:Bel Fuse 0ZCG")
-				(field
-					(name "Datasheet") "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcg-series.pdf")
-				(field
-					(name "Description") "Polymeric PTC Resettable Fuse 33V 1.1 A Ih Surface Mount 1812 (4532 Metric), Concave")
-				(field
-					(name "Part") "Bel Fuse 0ZCG0110CF2B")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
 			(part "Bouns SMBJ20A-Q")
 			(description "32.4V Clamp 18.6A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
 			(docs "https://www.bourns.com/docs/Product-Datasheets/SMBJ-Q.pdf")
@@ -5777,53 +5621,33 @@
 		)
 		(libpart
 			(lib "mr-parts")
-			(part "Mean Well SPAN02W8-03")
-			(description "Isolated Module DC DC Converter 1 Output 3.3V 500mA 9V - 75V Input SIP8,-40C ~ 95C")
-			(docs "https://www.meanwell.com/webapp/product/search.aspx?prod=SPAN02W8")
+			(part "Littelfuse nanoASMDCH020F")
+			(description "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
+			(docs "https://www.littelfuse.com/assetdocs/littelfuse-ptc-auto-hightemp-smd-datasheet?assetguid=eb355431-c672-4f9e-aeb0-4d3e11a483c0")
 			(fields
 				(field
-					(name "Reference") "IDCB")
+					(name "Reference") "PTC")
 				(field
-					(name "Value") "Mean Well SPAN02W8-03")
+					(name "Value") "nanoASMDCH020F")
 				(field
-					(name "Footprint") "mr-stuff:Mean Well SPAN02W8")
+					(name "Footprint") "mr-stuff:Littelfuse NANOASMDCH020F")
 				(field
-					(name "Datasheet") "https://www.meanwell.com/webapp/product/search.aspx?prod=SPAN02W8")
+					(name "Datasheet") "https://www.littelfuse.com/assetdocs/littelfuse-ptc-auto-hightemp-smd-datasheet?assetguid=eb355431-c672-4f9e-aeb0-4d3e11a483c0")
 				(field
-					(name "Description") "Isolated Module DC DC Converter 1 Output 3.3V 500mA 9V - 75V Input SIP8,-40C ~ 95C")
+					(name "Description") "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 				(field
-					(name "Part") "Mean Well SPAN02W8-03")
+					(name "Part") "Littelfuse nanoASMDCH020F")
 			)
 			(pins
 				(pin
 					(num "1")
-					(name "-VIN")
-					(type "power_in")
+					(name "")
+					(type "passive")
 				)
 				(pin
 					(num "2")
-					(name "+VIN")
-					(type "power_in")
-				)
-				(pin
-					(num "3")
-					(name "R.C.")
-					(type "input")
-				)
-				(pin
-					(num "6")
-					(name "+VOUT")
-					(type "power_out")
-				)
-				(pin
-					(num "7")
-					(name "-VOUT")
-					(type "power_out")
-				)
-				(pin
-					(num "8")
-					(name "N.C.")
-					(type "no_connect")
+					(name "")
+					(type "passive")
 				)
 			)
 		)
@@ -5859,44 +5683,6 @@
 				)
 				(pin
 					(num "3")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
-			(part "Panasonic EEH-ZU")
-			(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-			(docs "https://na.industrial.panasonic.com/file-download/244145")
-			(fields
-				(field
-					(name "Reference") "C")
-				(field
-					(name "Value") "Panasonic EEH-ZU")
-				(field
-					(name "Footprint") "mr-stuff:Panasonic EEH-ZU")
-				(field
-					(name "Datasheet") "https://na.industrial.panasonic.com/file-download/244145")
-				(field
-					(name "Description") "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-				(field
-					(name "PARTREV") "30-Sep-20")
-				(field
-					(name "STANDARD") "Manufacturer Recommendations")
-				(field
-					(name "MAXIMUM_PACKAGE_HEIGHT") "12.8mm")
-				(field
-					(name "MANUFACTURER") "Panasonic")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
 					(name "")
 					(type "passive")
 				)
@@ -5971,48 +5757,6 @@
 					(num "10")
 					(name "")
 					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
-			(part "Rohm BD450S5FP-CE2")
-			(description "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
-			(docs "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bd4xxs5efj-e.pdf")
-			(footprints
-				(fp "TO252-3_ROM")
-				(fp "TO252-3_ROM-M")
-				(fp "TO252-3_ROM-L")
-			)
-			(fields
-				(field
-					(name "Reference") "LVR")
-				(field
-					(name "Value") "BD450S5FP-CE2")
-				(field
-					(name "Footprint") "mr-stuff:Rohm BD4xxS5 TO252-3")
-				(field
-					(name "Datasheet") "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bd4xxs5efj-e.pdf")
-				(field
-					(name "Description") "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA TO-252-3")
-				(field
-					(name "Part") "Rohm BD450S5FP-CE2")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "VCC")
-					(type "power_in")
-				)
-				(pin
-					(num "3")
-					(name "VOUT")
-					(type "power_out")
-				)
-				(pin
-					(num "4")
-					(name "GND")
-					(type "power_in")
 				)
 			)
 		)
@@ -6122,66 +5866,183 @@
 		)
 		(libpart
 			(lib "mr-parts")
-			(part "TI_ISO1044BDR")
-			(description "Isolated CAN FD Transceiver, SOIC-8")
-			(docs "https://www.ti.com/lit/ds/symlink/iso1044.pdf")
+			(part "TI TCAN3404DRQ1")
+			(description "TCAN3404")
+			(docs "https://www.ti.com/lit/ds/symlink/tcan3404-q1.pdf")
 			(footprints
-				(fp "SOIC*3.9x4.9mm*P1.27mm*")
+				(fp "D0008A_N")
+				(fp "D0008A_M")
+				(fp "D0008A_L")
 			)
 			(fields
 				(field
-					(name "Reference") "ICT")
+					(name "Reference") "CAN")
 				(field
-					(name "Value") "TI_ISO1044BDR")
+					(name "Value") "TCAN3404DRQ1")
 				(field
-					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+					(name "Footprint") "mr-stuff:TI TCAN3404")
 				(field
-					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/iso1044.pdf")
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/tcan3404-q1.pdf")
 				(field
-					(name "Description") "Isolated CAN FD Transceiver, SOIC-8")
+					(name "Description") "TCAN3404")
 				(field
-					(name "Part") "TI ISO1044BDR")
+					(name "Part") "TI TCAN3404DRQ1")
 			)
 			(pins
 				(pin
 					(num "1")
-					(name "VCC1")
-					(type "power_in")
-				)
-				(pin
-					(num "2")
 					(name "TXD")
 					(type "input")
 				)
 				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
 					(num "3")
+					(name "VCC")
+					(type "power_in")
+				)
+				(pin
+					(num "4")
 					(name "RXD")
 					(type "output")
 				)
 				(pin
-					(num "4")
-					(name "GND1")
-					(type "power_in")
+					(num "5")
+					(name "SHDN")
+					(type "input")
 				)
 				(pin
-					(num "5")
+					(num "6")
 					(name "CANL")
 					(type "bidirectional")
 				)
 				(pin
-					(num "6")
+					(num "7")
 					(name "CANH")
 					(type "bidirectional")
 				)
 				(pin
-					(num "7")
-					(name "GND2")
+					(num "8")
+					(name "STB")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "TI TPSM33606S3QRDNRQ1")
+			(description "Non-Isolated PoL Module DC DC Converter 1 Output 3.3V 600mA 3V - 36V Input")
+			(docs "https://www.ti.com/lit/ds/symlink/tpsm33606-q1.pdf")
+			(footprints
+				(fp "U_QFN-FCMOD_RDN0011B_TEX")
+			)
+			(fields
+				(field
+					(name "Reference") "VR")
+				(field
+					(name "Value") "TPSM33606S3QRDNRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPSM336")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/tpsm33606-q1.pdf")
+				(field
+					(name "Description") "Non-Isolated PoL Module DC DC Converter 1 Output 3.3V 600mA 3V - 36V Input")
+				(field
+					(name "Part") "TI TPSM33606S3QRDNRQ1")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "PGOOD")
+					(type "open_collector")
+				)
+				(pin
+					(num "2")
+					(name "EN")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "VIN")
 					(type "power_in")
 				)
 				(pin
+					(num "4")
+					(name "VOUT")
+					(type "power_out")
+				)
+				(pin
+					(num "5")
+					(name "SW")
+					(type "no_connect")
+				)
+				(pin
+					(num "6")
+					(name "SW")
+					(type "no_connect")
+				)
+				(pin
+					(num "7")
+					(name "BOOT")
+					(type "no_connect")
+				)
+				(pin
 					(num "8")
-					(name "VCC2")
+					(name "VCC")
+					(type "power_out")
+				)
+				(pin
+					(num "9")
+					(name "FB")
+					(type "input")
+				)
+				(pin
+					(num "10")
+					(name "GND")
 					(type "power_in")
+				)
+				(pin
+					(num "11")
+					(name "MODE/SYNC")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Vishay RCA08050000ZSEASR")
+			(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(docs "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "RCA08050000ZSEASR")
+				(field
+					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+				(field
+					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+				(field
+					(name "Part") "Vishay RCA08050000ZSEASR")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
 				)
 			)
 		)
@@ -6202,7 +6063,7 @@
 				(field
 					(name "Description") "Diode 40 V 3A Surface Mount DO-214AC (SMA)")
 				(field
-					(name "Height") "Vishay VS-30MQ040-M3_5AT")
+					(name "Part") "Vishay VS-30MQ040-M3_5AT")
 			)
 			(pins
 				(pin
@@ -6280,31 +6141,25 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "C7")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C8")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C9")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "ICT1")
-				(pin "1")
-				(pinfunction "VCC1_1")
+				(ref "CAN1")
+				(pin "3")
+				(pinfunction "VCC_3")
 				(pintype "power_in")
-			)
-			(node
-				(ref "IDCB1")
-				(pin "6")
-				(pinfunction "+VOUT_6")
-				(pintype "power_out")
 			)
 			(node
 				(ref "MCU1")
@@ -6400,33 +6255,23 @@
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
 			)
+			(node
+				(ref "VR1")
+				(pin "4")
+				(pinfunction "VOUT_4")
+				(pintype "power_out")
+			)
+			(node
+				(ref "VR1")
+				(pin "9")
+				(pinfunction "FB_9")
+				(pintype "input")
+			)
 		)
 		(net
 			(code "2")
 			(name "+5V_SHIP")
 			(class "ShipSide,Default")
-			(node
-				(ref "C2")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C4")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "ICT1")
-				(pin "8")
-				(pinfunction "VCC2_8")
-				(pintype "power_in")
-			)
-			(node
-				(ref "LVR1")
-				(pin "3")
-				(pinfunction "VOUT_3")
-				(pintype "power_out")
-			)
 			(node
 				(ref "TP2")
 				(pin "1")
@@ -6439,16 +6284,16 @@
 			(name "/CAN_HIGH")
 			(class "ShipSide,Default")
 			(node
+				(ref "CAN1")
+				(pin "7")
+				(pinfunction "CANH_7")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "CMC1")
 				(pin "1")
 				(pinfunction "I1_1")
 				(pintype "passive")
-			)
-			(node
-				(ref "ICT1")
-				(pin "6")
-				(pinfunction "CANH_6")
-				(pintype "bidirectional")
 			)
 			(node
 				(ref "TP3")
@@ -6462,16 +6307,16 @@
 			(name "/CAN_LOW")
 			(class "ShipSide,Default")
 			(node
+				(ref "CAN1")
+				(pin "6")
+				(pinfunction "CANL_6")
+				(pintype "bidirectional")
+			)
+			(node
 				(ref "CMC1")
 				(pin "2")
 				(pinfunction "I2_2")
 				(pintype "passive")
-			)
-			(node
-				(ref "ICT1")
-				(pin "5")
-				(pinfunction "CANL_5")
-				(pintype "bidirectional")
 			)
 			(node
 				(ref "TP3")
@@ -6485,9 +6330,9 @@
 			(name "/CAN_RX_LOCAL")
 			(class "Default")
 			(node
-				(ref "ICT1")
-				(pin "3")
-				(pinfunction "RXD_3")
+				(ref "CAN1")
+				(pin "4")
+				(pinfunction "RXD_4")
 				(pintype "output")
 			)
 			(node
@@ -6505,12 +6350,34 @@
 		)
 		(net
 			(code "6")
+			(name "/CAN_STANDBY")
+			(class "Default")
+			(node
+				(ref "CAN1")
+				(pin "8")
+				(pinfunction "STB_8")
+				(pintype "input")
+			)
+			(node
+				(ref "MCU1")
+				(pin "23")
+				(pinfunction "IO21_23")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
 			(name "/CAN_TX_LOCAL")
 			(class "Default")
 			(node
-				(ref "ICT1")
-				(pin "2")
-				(pinfunction "TXD_2")
+				(ref "CAN1")
+				(pin "1")
+				(pinfunction "TXD_1")
 				(pintype "input")
 			)
 			(node
@@ -6532,7 +6399,7 @@
 			)
 		)
 		(net
-			(code "7")
+			(code "8")
 			(name "/I2C_SCL")
 			(class "Default")
 			(node
@@ -6560,7 +6427,7 @@
 			)
 		)
 		(net
-			(code "8")
+			(code "9")
 			(name "/I2C_SDA")
 			(class "Default")
 			(node
@@ -6588,7 +6455,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "10")
 			(name "/LED_ENABLE")
 			(class "Default")
 			(node
@@ -6616,7 +6483,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "11")
 			(name "/N2K_RX_LED")
 			(class "Default")
 			(node
@@ -6632,7 +6499,7 @@
 			)
 		)
 		(net
-			(code "11")
+			(code "12")
 			(name "/N2K_TX_LED")
 			(class "Default")
 			(node
@@ -6648,7 +6515,52 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "13")
+			(name "/PGOOD")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "MCU1")
+				(pin "20")
+				(pinfunction "IO12_20")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "MCU1")
+				(pin "3")
+				(pinfunction "EN_3")
+				(pintype "input")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "3")
+				(pinfunction "B_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "4")
+				(pinfunction "B_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "VR1")
+				(pin "1")
+				(pinfunction "PGOOD_1")
+				(pintype "open_collector")
+			)
+		)
+		(net
+			(code "14")
 			(name "/POWER_LED")
 			(class "Default")
 			(node
@@ -6664,7 +6576,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "15")
 			(name "/ROM1_WP")
 			(class "Default")
 			(node
@@ -6686,7 +6598,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "16")
 			(name "/ROM2_WP")
 			(class "Default")
 			(node
@@ -6708,7 +6620,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "17")
 			(name "/SRV_UP_LED")
 			(class "Default")
 			(node
@@ -6724,7 +6636,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "18")
 			(name "/VBUS")
 			(class "Default")
 			(node
@@ -6758,7 +6670,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "19")
 			(name "/VBUS_MCU")
 			(class "Default")
 			(node
@@ -6779,7 +6691,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "20")
 			(name "/WIFI_RX_LED")
 			(class "Default")
 			(node
@@ -6795,7 +6707,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "21")
 			(name "/WIFI_TX_LED")
 			(class "Default")
 			(node
@@ -6811,7 +6723,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "22")
 			(name "/WIFI_UP_LED")
 			(class "Default")
 			(node
@@ -6827,7 +6739,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "23")
 			(name "GND")
 			(class "Default")
 			(node
@@ -6871,8 +6783,28 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "C6")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -6881,26 +6813,16 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C8")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C9")
+				(ref "CAN1")
 				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "ICT1")
-				(pin "4")
-				(pinfunction "GND1_4")
+				(pinfunction "GND_2")
 				(pintype "power_in")
 			)
 			(node
-				(ref "IDCB1")
-				(pin "7")
-				(pinfunction "-VOUT_7")
-				(pintype "power_out")
+				(ref "CAN1")
+				(pin "5")
+				(pinfunction "SHDN_5")
+				(pintype "input")
 			)
 			(node
 				(ref "J3")
@@ -6975,6 +6897,16 @@
 			)
 			(node
 				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7106,63 +7038,27 @@
 				(pinfunction "SHIELD_3_S4")
 				(pintype "passive")
 			)
+			(node
+				(ref "VR1")
+				(pin "10")
+				(pinfunction "GND_10")
+				(pintype "power_in")
+			)
+			(node
+				(ref "VR1")
+				(pin "11")
+				(pinfunction "MODE/SYNC_11")
+				(pintype "input")
+			)
 		)
 		(net
-			(code "22")
+			(code "24")
 			(name "GND_SHIP")
 			(class "ShipSide,Default")
-			(node
-				(ref "C2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C3")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C4")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C5")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C6")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "ICT1")
-				(pin "7")
-				(pinfunction "GND2_7")
-				(pintype "power_in")
-			)
-			(node
-				(ref "IDCB1")
-				(pin "1")
-				(pinfunction "-VIN_1")
-				(pintype "power_in")
-			)
 			(node
 				(ref "J1")
 				(pin "2")
 				(pinfunction "Pin_2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "LVR1")
-				(pin "4")
-				(pinfunction "GND_4")
-				(pintype "power_in")
-			)
-			(node
-				(ref "R2")
-				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -7194,7 +7090,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "25")
 			(name "Net-(CMC1-O1)")
 			(class "Default")
 			(node
@@ -7220,7 +7116,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "26")
 			(name "Net-(CMC1-O2)")
 			(class "Default")
 			(node
@@ -7241,51 +7137,6 @@
 			)
 			(node
 				(ref "TVS2")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "25")
-			(name "Net-(IDCB1-+VIN)")
-			(class "ShipSide,Default")
-			(node
-				(ref "IDCB1")
-				(pin "2")
-				(pinfunction "+VIN_2")
-				(pintype "power_in")
-			)
-			(node
-				(ref "J2")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L1")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "26")
-			(name "Net-(IDCB1-R.C.)")
-			(class "ShipSide,Default")
-			(node
-				(ref "IDCB1")
-				(pin "3")
-				(pinfunction "R.C._3")
-				(pintype "input")
-			)
-			(node
-				(ref "J2")
-				(pin "2")
-				(pinfunction "Pin_2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R2")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7493,39 +7344,6 @@
 		)
 		(net
 			(code "39")
-			(name "Net-(MCU1-EN)")
-			(class "Default")
-			(node
-				(ref "C14")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "MCU1")
-				(pin "3")
-				(pinfunction "EN_3")
-				(pintype "input")
-			)
-			(node
-				(ref "R3")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW1")
-				(pin "3")
-				(pinfunction "B_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW1")
-				(pin "4")
-				(pinfunction "B_4")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "40")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
@@ -7558,7 +7376,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "40")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -7574,7 +7392,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "41")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -7590,7 +7408,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "42")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -7606,7 +7424,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "43")
 			(name "Net-(MCU1-RXD0)")
 			(class "Default")
 			(node
@@ -7623,7 +7441,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "44")
 			(name "Net-(MCU1-TXD0)")
 			(class "Default")
 			(node
@@ -7640,7 +7458,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "45")
 			(name "Net-(MCU1-USB_D+)")
 			(class "Default")
 			(node
@@ -7663,7 +7481,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "46")
 			(name "Net-(MCU1-USB_D-)")
 			(class "Default")
 			(node
@@ -7686,7 +7504,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "47")
 			(name "Net-(PTC1-Pad2)")
 			(class "ShipSide,Default")
 			(node
@@ -7706,7 +7524,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "48")
 			(name "Net-(SD1-A)")
 			(class "ShipSide,Default")
 			(node
@@ -7728,7 +7546,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "49")
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
@@ -7744,7 +7562,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "50")
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
@@ -7760,30 +7578,81 @@
 			)
 		)
 		(net
+			(code "51")
+			(name "Net-(VR1-EN)")
+			(class "Default")
+			(node
+				(ref "R24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "VR1")
+				(pin "2")
+				(pinfunction "EN_2")
+				(pintype "input")
+			)
+		)
+		(net
 			(code "52")
-			(name "V_RAW")
-			(class "ShipSide,Default")
+			(name "Net-(VR1-VCC)")
+			(class "Default")
+			(node
+				(ref "C4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "VR1")
+				(pin "8")
+				(pinfunction "VCC_8")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "53")
+			(name "Net-(VR1-VIN)")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "passive")
+			)
 			(node
 				(ref "C3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C5")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L1")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "LVR1")
-				(pin "1")
-				(pinfunction "VCC_1")
+				(ref "VR1")
+				(pin "3")
+				(pinfunction "VIN_3")
 				(pintype "power_in")
+			)
+		)
+		(net
+			(code "54")
+			(name "V_RAW")
+			(class "ShipSide,Default")
+			(node
+				(ref "R25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "1")
+				(pintype "passive")
 			)
 			(node
 				(ref "SD1")
@@ -7799,28 +7668,6 @@
 			)
 		)
 		(net
-			(code "53")
-			(name "unconnected-(IDCB1-N.C.-Pad8)")
-			(class "Default")
-			(node
-				(ref "IDCB1")
-				(pin "8")
-				(pinfunction "N.C._8")
-				(pintype "no_connect")
-			)
-		)
-		(net
-			(code "54")
-			(name "unconnected-(MCU1-IO12-Pad20)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "20")
-				(pinfunction "IO12_20")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
 			(code "55")
 			(name "unconnected-(MCU1-IO13-Pad21)")
 			(class "Default")
@@ -7833,17 +7680,6 @@
 		)
 		(net
 			(code "56")
-			(name "unconnected-(MCU1-IO21-Pad23)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "23")
-				(pinfunction "IO21_23")
-				(pintype "bidirectional+no_connect")
-			)
-		)
-		(net
-			(code "57")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -7854,7 +7690,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "57")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -7865,7 +7701,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "58")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -7876,7 +7712,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "59")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -7887,7 +7723,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "60")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -7898,7 +7734,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "61")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -7909,7 +7745,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "62")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -7920,7 +7756,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "63")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -7928,6 +7764,39 @@
 				(pin "B8")
 				(pinfunction "SBU2_B8")
 				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "64")
+			(name "unconnected-(VR1-BOOT-Pad7)")
+			(class "Default")
+			(node
+				(ref "VR1")
+				(pin "7")
+				(pinfunction "BOOT_7")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "65")
+			(name "unconnected-(VR1-SW-Pad5)")
+			(class "Default")
+			(node
+				(ref "VR1")
+				(pin "5")
+				(pinfunction "SW_5")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "66")
+			(name "unconnected-(VR1-SW-Pad6)")
+			(class "Default")
+			(node
+				(ref "VR1")
+				(pin "6")
+				(pinfunction "SW_6")
+				(pintype "no_connect")
 			)
 		)
 	)
