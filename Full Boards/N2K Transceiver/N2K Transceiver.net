@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-09T21:09:10")
+		(date "2026-09-09T22:33:29")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -1020,7 +1020,7 @@
 			)
 		)
 		(comp
-			(ref "CMC2")
+			(ref "CMC1")
 			(value "ACT12101012PTL00")
 			(footprint "mr-stuff:TDK ACT12101012PTL00")
 			(datasheet "https://product.tdk.com/info/en/catalog/datasheets/cmf_automotive_signal_act1210_en.pdf?ref_disty=digikey")
@@ -6439,7 +6439,7 @@
 			(name "/CAN_HIGH")
 			(class "ShipSide,Default")
 			(node
-				(ref "CMC2")
+				(ref "CMC1")
 				(pin "1")
 				(pinfunction "I1_1")
 				(pintype "passive")
@@ -6462,7 +6462,7 @@
 			(name "/CAN_LOW")
 			(class "ShipSide,Default")
 			(node
-				(ref "CMC2")
+				(ref "CMC1")
 				(pin "2")
 				(pinfunction "I2_2")
 				(pintype "passive")
@@ -7195,10 +7195,10 @@
 		)
 		(net
 			(code "23")
-			(name "Net-(CMC2-O1)")
-			(class "ShipSide,Default")
+			(name "Net-(CMC1-O1)")
+			(class "Default")
 			(node
-				(ref "CMC2")
+				(ref "CMC1")
 				(pin "4")
 				(pinfunction "O1_4")
 				(pintype "passive")
@@ -7221,10 +7221,10 @@
 		)
 		(net
 			(code "24")
-			(name "Net-(CMC2-O2)")
-			(class "ShipSide,Default")
+			(name "Net-(CMC1-O2)")
+			(class "Default")
 			(node
-				(ref "CMC2")
+				(ref "CMC1")
 				(pin "3")
 				(pinfunction "O2_3")
 				(pintype "passive")
