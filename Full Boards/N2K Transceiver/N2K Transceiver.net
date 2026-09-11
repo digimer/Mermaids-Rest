@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-10T21:24:59")
+		(date "2026-09-10T21:30:45")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -1478,72 +1478,6 @@
 				(unit
 					(name "A")
 					(pins)
-				)
-			)
-		)
-		(comp
-			(ref "J1")
-			(value "Optional Bond")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x02, script generated")
-			(fields
-				(field
-					(name "Part") "Amphenol 68001-416HLF")
-				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x02, script generated")
-			)
-			(libsource
-				(lib "Connector")
-				(part "Conn_01x02_Pin")
-				(description "Generic connector, single row, 01x02, script generated")
-			)
-			(property
-				(name "Part")
-				(value "Amphenol 68001-416HLF")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "exclude_from_bom")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "connector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Connector*:*_1x??_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "981ff72c-ddf2-4cf7-a8df-f3fb0dfa702f")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
 				)
 			)
 		)
@@ -3934,7 +3868,7 @@
 		)
 		(comp
 			(ref "R27")
-			(value "0.2mR")
+			(value "0.2R")
 			(footprint "mr-stuff:KOA SR73")
 			(datasheet "https://www.vishay.com/docs/20132/rca-sre3.pdf")
 			(description "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
@@ -4906,40 +4840,6 @@
 	(groups)
 	(variants)
 	(libparts
-		(libpart
-			(lib "Connector")
-			(part "Conn_01x02_Pin")
-			(description "Generic connector, single row, 01x02, script generated")
-			(footprints
-				(fp "Connector*:*_1x??_*")
-			)
-			(fields
-				(field
-					(name "Reference") "J")
-				(field
-					(name "Value") "Conn_01x02_Pin")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x02, script generated")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "Pin_1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "Pin_2")
-					(type "passive")
-				)
-			)
-		)
 		(libpart
 			(lib "Connector")
 			(part "Conn_01x04_Pin")
@@ -7036,9 +6936,30 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TB1")
+				(pin "5")
+				(pintype "passive")
+			)
+			(node
+				(ref "TB1")
+				(pin "6")
+				(pintype "passive")
+			)
+			(node
 				(ref "TP1")
 				(pin "4")
 				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS2")
+				(pin "3")
 				(pintype "passive")
 			)
 			(node
@@ -7104,38 +7025,6 @@
 		)
 		(net
 			(code "22")
-			(name "GND_SHIP")
-			(class "ShipSide,Default")
-			(node
-				(ref "J1")
-				(pin "2")
-				(pinfunction "Pin_2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "TB1")
-				(pin "5")
-				(pintype "passive")
-			)
-			(node
-				(ref "TB1")
-				(pin "6")
-				(pintype "passive")
-			)
-			(node
-				(ref "TVS1")
-				(pin "2")
-				(pinfunction "A_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "TVS2")
-				(pin "3")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "23")
 			(name "Net-(C5-Pad1)")
 			(class "Default")
 			(node
@@ -7150,7 +7039,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "23")
 			(name "Net-(CMC1-O1)")
 			(class "Default")
 			(node
@@ -7176,7 +7065,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "24")
 			(name "Net-(CMC1-O2)")
 			(class "Default")
 			(node
@@ -7202,28 +7091,7 @@
 			)
 		)
 		(net
-			(code "26")
-			(name "Net-(J1-Pin_1)")
-			(class "ShipSide,Default")
-			(node
-				(ref "J1")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "TB1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "TB1")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "27")
+			(code "25")
 			(name "Net-(J3-Pin_2)")
 			(class "Default")
 			(node
@@ -7240,7 +7108,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "26")
 			(name "Net-(J3-Pin_3)")
 			(class "Default")
 			(node
@@ -7257,7 +7125,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "27")
 			(name "Net-(J3-Pin_4)")
 			(class "Default")
 			(node
@@ -7274,7 +7142,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "28")
 			(name "Net-(J3-Pin_5)")
 			(class "Default")
 			(node
@@ -7291,7 +7159,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "29")
 			(name "Net-(LED1-A)")
 			(class "Default")
 			(node
@@ -7307,7 +7175,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "30")
 			(name "Net-(LED2-A)")
 			(class "Default")
 			(node
@@ -7323,7 +7191,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "31")
 			(name "Net-(LED3-A)")
 			(class "Default")
 			(node
@@ -7339,7 +7207,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "32")
 			(name "Net-(LED4-A)")
 			(class "Default")
 			(node
@@ -7355,7 +7223,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "33")
 			(name "Net-(LED5-A)")
 			(class "Default")
 			(node
@@ -7371,7 +7239,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "34")
 			(name "Net-(LED6-A)")
 			(class "Default")
 			(node
@@ -7387,7 +7255,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "35")
 			(name "Net-(LED7-A)")
 			(class "Default")
 			(node
@@ -7403,7 +7271,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "36")
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
@@ -7436,7 +7304,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "37")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
@@ -7469,7 +7337,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "38")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -7485,7 +7353,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "39")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -7501,7 +7369,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "40")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -7517,7 +7385,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "41")
 			(name "Net-(MCU1-RXD0)")
 			(class "Default")
 			(node
@@ -7534,7 +7402,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "42")
 			(name "Net-(MCU1-TXD0)")
 			(class "Default")
 			(node
@@ -7551,7 +7419,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "43")
 			(name "Net-(MCU1-USB_D+)")
 			(class "Default")
 			(node
@@ -7574,7 +7442,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "44")
 			(name "Net-(MCU1-USB_D-)")
 			(class "Default")
 			(node
@@ -7597,7 +7465,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "45")
 			(name "Net-(PTC1-Pad2)")
 			(class "ShipSide,Default")
 			(node
@@ -7617,7 +7485,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "46")
 			(name "Net-(SD1-A)")
 			(class "ShipSide,Default")
 			(node
@@ -7639,7 +7507,22 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "47")
+			(name "Net-(TB1-Pad1)")
+			(class "Default")
+			(node
+				(ref "TB1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TB1")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "48")
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
@@ -7655,7 +7538,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "49")
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
@@ -7671,7 +7554,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "50")
 			(name "Net-(VR1-EN)")
 			(class "Default")
 			(node
@@ -7692,7 +7575,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "51")
 			(name "Net-(VR1-VCC)")
 			(class "Default")
 			(node
@@ -7708,7 +7591,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "52")
 			(name "Net-(VR1-VIN)")
 			(class "Default")
 			(node
@@ -7744,7 +7627,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "53")
 			(name "V_RAW")
 			(class "ShipSide,Default")
 			(node
@@ -7765,7 +7648,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "54")
 			(name "unconnected-(MCU1-IO12-Pad20)")
 			(class "Default")
 			(node
@@ -7776,7 +7659,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "55")
 			(name "unconnected-(MCU1-IO13-Pad21)")
 			(class "Default")
 			(node
@@ -7787,7 +7670,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "56")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -7798,7 +7681,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "57")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -7809,7 +7692,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "58")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -7820,7 +7703,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "59")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -7831,7 +7714,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "60")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -7842,7 +7725,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "61")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -7853,7 +7736,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "62")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -7864,7 +7747,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "63")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -7875,7 +7758,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "64")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -7886,7 +7769,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "65")
 			(name "unconnected-(VR1-PGOOD-Pad1)")
 			(class "Default")
 			(node
@@ -7897,7 +7780,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "66")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -7908,7 +7791,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "67")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
