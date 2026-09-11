@@ -3563,6 +3563,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:Kemet C0805X101J5GACAUTO"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100pF"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "mr-stuff:Kemet C0805X"
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD"
+				(at 0 -18.796 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+				(at 0 -14.224 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Kemet C0805X101J5GACAUTO"
+				(at 0 -11.938 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Kemet C0805X101J5GACAUTO_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Kemet C0805X101J5GACAUTO_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:Littelfuse nanoASMDCH020F"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7020,9 +7186,9 @@
 		)
 		(uuid "c6ddc48e-1be6-4b44-94de-28b9ed45a755")
 	)
-	(text "Populate R3 _or_ R4, not both!\nR3: Forces PWM mode; consistent 2.2MHz switching. \n    Noisier, but consistently so. VHF squelch may be quieter.\nR4: Auto mode; switches to PFM (bursts, 50 KHz) under 10~15% load (60~90mA).\n    Expected that this board will live in that boundary, possibly\n    resulting in frequent PWM <-> FPWM transitions. Bench testing required.\nDecide and hard wire for final production."
+	(text "Populate R3 _or_ R4, not both!\nR3: Forces PWM mode; consistent 2.2MHz switching. \n    Noisier, but consistently so. VHF squelch may be\n    quieter.\nR4: Auto mode; switches to PFM (bursts, 50 KHz) under\n    10~15% load (60~90mA). Expected that this board \n    will live in that boundary, possibly resulting in \n    frequent PWM <-> FPWM transitions. Bench testing \n    required.\nDecide and hard wire for final production."
 		(exclude_from_sim no)
-		(at 227.33 17.526 0)
+		(at 227.838 17.526 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7105,6 +7271,12 @@
 		(uuid "195baef5-5476-4d28-b6a4-1d56ba344544")
 	)
 	(junction
+		(at 170.18 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ad7a127-5abf-48a6-a07f-46954b849a9b")
+	)
+	(junction
 		(at 101.6 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7141,10 +7313,22 @@
 		(uuid "2fec8214-1cab-4e4d-b108-25f3977ba926")
 	)
 	(junction
+		(at 182.88 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ffe2aa7-b71f-4559-91a8-8faab7e56fb3")
+	)
+	(junction
 		(at 135.89 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3578801c-a03a-4149-9e82-212919f8a84d")
+	)
+	(junction
+		(at 163.83 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3786a85e-202f-488f-8345-59ddae5678c8")
 	)
 	(junction
 		(at 175.26 24.13)
@@ -7169,6 +7353,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4af7fd29-2942-4dec-810a-c795d0fb915e")
+	)
+	(junction
+		(at 176.53 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53ddd53c-4b0c-4858-a057-447d164e0bfc")
 	)
 	(junction
 		(at 57.15 91.44)
@@ -7225,28 +7415,10 @@
 		(uuid "756c36b8-d860-44b4-9a33-c2abdb313ca8")
 	)
 	(junction
-		(at 179.07 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "75d5fd8f-8b8d-4644-9470-225926a4096b")
-	)
-	(junction
-		(at 179.07 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a090313-8b84-41f1-adfc-ded6ac1160b0")
-	)
-	(junction
 		(at 29.21 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a8b04d5-ca2b-4573-a9b7-4e2c72d63763")
-	)
-	(junction
-		(at 185.42 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81c494b2-eb36-47f4-b736-4c885b74e92c")
 	)
 	(junction
 		(at 132.08 109.22)
@@ -7265,12 +7437,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85ecfd7e-1192-49b8-999c-a864d2857efe")
-	)
-	(junction
-		(at 172.72 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e58defd-c00d-4b59-8b89-0e11882e6dd5")
 	)
 	(junction
 		(at 162.56 107.95)
@@ -7345,6 +7511,12 @@
 		(uuid "ad756a5f-6525-4067-bf65-55b31432fcf5")
 	)
 	(junction
+		(at 172.72 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aef8fa61-9c47-466e-a350-1e4c50fc27f8")
+	)
+	(junction
 		(at 135.89 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7375,6 +7547,12 @@
 		(uuid "b7256447-859c-48db-8daf-6ec75028f7e6")
 	)
 	(junction
+		(at 170.18 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "baeb85c1-87a6-4062-9285-b66819efdb00")
+	)
+	(junction
 		(at 72.39 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7391,12 +7569,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c80fc2e6-c152-4869-8a10-835b7c5882a2")
-	)
-	(junction
-		(at 172.72 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c829b9c5-766d-4d33-a2c9-6c4672fb5618")
 	)
 	(junction
 		(at 133.35 41.91)
@@ -7463,6 +7635,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed2cebfd-ebf6-400d-8c9a-87b88ece1e31")
+	)
+	(junction
+		(at 176.53 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6eef219-d767-4d79-8fff-8dab36e9f63d")
 	)
 	(junction
 		(at 135.89 52.07)
@@ -7570,7 +7748,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 46.99) (xy 185.42 48.26)
+			(xy 176.53 46.99) (xy 176.53 48.26)
 		)
 		(stroke
 			(width 0)
@@ -7660,7 +7838,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 58.42) (xy 185.42 55.88)
+			(xy 176.53 58.42) (xy 176.53 55.88)
 		)
 		(stroke
 			(width 0)
@@ -7677,6 +7855,16 @@
 			(type default)
 		)
 		(uuid "08459ae5-1ebd-4367-b3fe-df52385c26b2")
+	)
+	(wire
+		(pts
+			(xy 163.83 45.72) (xy 163.83 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "093341be-bcc2-4a80-8f62-5b29eb4ad482")
 	)
 	(wire
 		(pts
@@ -7890,6 +8078,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 58.42) (xy 176.53 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b7edf07-3b55-4227-8cf2-aec0f8ffcc8a")
+	)
+	(wire
+		(pts
 			(xy 189.23 38.1) (xy 189.23 35.56)
 		)
 		(stroke
@@ -7987,6 +8185,16 @@
 			(type default)
 		)
 		(uuid "2423070e-d27b-4744-9eda-3e8894bb6038")
+	)
+	(wire
+		(pts
+			(xy 163.83 58.42) (xy 170.18 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24870f40-0957-48c0-9c00-ccb4be8138df")
 	)
 	(wire
 		(pts
@@ -8137,16 +8345,6 @@
 			(type default)
 		)
 		(uuid "2d5dcf0a-f5b6-453f-a7c1-7459d9fb27bc")
-	)
-	(wire
-		(pts
-			(xy 162.56 40.64) (xy 162.56 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ecfa6f8-4aea-44a2-a1e2-701cabac2989")
 	)
 	(wire
 		(pts
@@ -8360,6 +8558,26 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 55.88) (xy 182.88 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "401c0ae4-3af2-496c-a26d-25deaab815da")
+	)
+	(wire
+		(pts
+			(xy 176.53 46.99) (xy 182.88 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "405def8a-eeaf-42c9-b32b-1273afba9bf5")
+	)
+	(wire
+		(pts
 			(xy 54.61 144.78) (xy 57.15 144.78)
 		)
 		(stroke
@@ -8417,6 +8635,16 @@
 			(type default)
 		)
 		(uuid "437ee3c1-394b-4834-b48f-f5cc247a9001")
+	)
+	(wire
+		(pts
+			(xy 170.18 58.42) (xy 172.72 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4512a090-ab42-45d5-b02b-ddc22bb1b6fb")
 	)
 	(wire
 		(pts
@@ -8507,6 +8735,16 @@
 			(type default)
 		)
 		(uuid "4a69e9fa-0aab-4320-8461-646cf54e1bcb")
+	)
+	(wire
+		(pts
+			(xy 163.83 36.83) (xy 163.83 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a8d26ec-6ef4-436e-8b1d-9c464ae7fc81")
 	)
 	(wire
 		(pts
@@ -8610,7 +8848,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 40.64) (xy 172.72 46.99)
+			(xy 170.18 44.45) (xy 170.18 46.99)
 		)
 		(stroke
 			(width 0)
@@ -8950,6 +9188,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 46.99) (xy 170.18 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64c75730-352d-432c-ae77-222261a8f548")
+	)
+	(wire
+		(pts
 			(xy 180.34 39.37) (xy 180.34 38.1)
 		)
 		(stroke
@@ -9070,7 +9318,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 55.88) (xy 179.07 58.42)
+			(xy 170.18 55.88) (xy 170.18 58.42)
 		)
 		(stroke
 			(width 0)
@@ -9127,6 +9375,16 @@
 			(type default)
 		)
 		(uuid "71593f47-7798-4f23-bce9-f0c47426f00d")
+	)
+	(wire
+		(pts
+			(xy 182.88 46.99) (xy 195.58 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71fd4325-0607-4406-81a9-cf4506e8fd51")
 	)
 	(wire
 		(pts
@@ -9190,7 +9448,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 46.99) (xy 179.07 48.26)
+			(xy 170.18 46.99) (xy 170.18 48.26)
 		)
 		(stroke
 			(width 0)
@@ -9330,26 +9588,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 46.99) (xy 185.42 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8121806a-67e9-4b4f-baaf-5b8051bfda3b")
-	)
-	(wire
-		(pts
-			(xy 185.42 46.99) (xy 195.58 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81b49552-ec40-4327-b8eb-2fd3cdedbb24")
-	)
-	(wire
-		(pts
 			(xy 97.79 54.61) (xy 101.6 54.61)
 		)
 		(stroke
@@ -9480,16 +9718,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 46.99) (xy 172.72 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "896f4034-04ea-4ef6-9b6d-0997a0f824f5")
-	)
-	(wire
-		(pts
 			(xy 213.36 140.97) (xy 213.36 147.32)
 		)
 		(stroke
@@ -9507,16 +9735,6 @@
 			(type default)
 		)
 		(uuid "8997263f-cb00-48cb-a5af-95f25f856b07")
-	)
-	(wire
-		(pts
-			(xy 172.72 58.42) (xy 179.07 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a2571d0-3613-48bb-a410-bf883614250a")
 	)
 	(wire
 		(pts
@@ -9547,16 +9765,6 @@
 			(type default)
 		)
 		(uuid "8a97621e-73aa-4326-a192-d88eeecc53c2")
-	)
-	(wire
-		(pts
-			(xy 172.72 46.99) (xy 179.07 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bbc502d-cc84-463f-90a4-54a14a32ec6a")
 	)
 	(wire
 		(pts
@@ -9860,7 +10068,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 55.88) (xy 172.72 58.42)
+			(xy 163.83 55.88) (xy 163.83 58.42)
 		)
 		(stroke
 			(width 0)
@@ -9950,6 +10158,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 46.99) (xy 182.88 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae2934a6-6110-48c8-b174-a50b90bf5cc1")
+	)
+	(wire
+		(pts
 			(xy 181.61 158.75) (xy 184.15 158.75)
 		)
 		(stroke
@@ -10020,7 +10238,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 58.42) (xy 185.42 58.42)
+			(xy 176.53 58.42) (xy 182.88 58.42)
 		)
 		(stroke
 			(width 0)
@@ -10330,17 +10548,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 46.99) (xy 163.83 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbfff9b6-8282-48dd-b477-e0458dea8b50")
-	)
-	(wire
-		(pts
-			(xy 172.72 46.99) (xy 172.72 48.26)
+			(xy 163.83 46.99) (xy 163.83 48.26)
 		)
 		(stroke
 			(width 0)
@@ -10927,6 +11135,16 @@
 			(type default)
 		)
 		(uuid "f15eecb1-7591-4090-a5a4-ef7ca57f35d2")
+	)
+	(wire
+		(pts
+			(xy 170.18 46.99) (xy 176.53 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1c15926-32a5-43f6-b6ec-7bdde17180b6")
 	)
 	(wire
 		(pts
@@ -11673,7 +11891,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "05c8062f-cdaf-48f2-be5c-62554c462a42")
-		(property "Reference" "C10"
+		(property "Reference" "C11"
 			(at 65.278 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11748,7 +11966,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C10")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -11934,7 +12152,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a44ac48-2181-4181-acb5-605b723e956b")
-		(property "Reference" "C6"
+		(property "Reference" "C7"
 			(at 207.518 58.674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12009,7 +12227,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -12743,7 +12961,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "25cc698a-4beb-4f0e-93fc-016b1b659b00")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 57.658 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12818,7 +13036,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -13202,7 +13420,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 185.42 52.07 0)
+		(at 176.53 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13212,7 +13430,7 @@
 		(dnp no)
 		(uuid "36ab98fa-7c95-4d57-8e25-905dd5d05c39")
 		(property "Reference" "C4"
-			(at 185.674 49.784 0)
+			(at 176.784 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13223,7 +13441,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 185.674 54.61 0)
+			(at 176.784 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13234,7 +13452,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
-			(at 186.3852 55.88 0)
+			(at 177.4952 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13245,7 +13463,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf"
-			(at 185.42 52.07 0)
+			(at 176.53 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13256,7 +13474,7 @@
 			)
 		)
 		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 185.42 52.07 0)
+			(at 176.53 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13267,7 +13485,7 @@
 			)
 		)
 		(property "Part" "Kyocera 08051C104K4Z2A"
-			(at 185.42 52.07 0)
+			(at 176.53 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13478,7 +13696,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 179.07 52.07 0)
+		(at 170.18 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13488,7 +13706,7 @@
 		(dnp no)
 		(uuid "3c3deb41-490f-4cae-8e37-d413e30e96d3")
 		(property "Reference" "C3"
-			(at 179.324 49.784 0)
+			(at 170.434 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13499,7 +13717,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 179.324 54.356 0)
+			(at 170.434 54.356 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13510,7 +13728,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:TDK CGA5"
-			(at 180.0352 55.88 0)
+			(at 171.1452 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13521,7 +13739,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
-			(at 179.07 52.07 0)
+			(at 170.18 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13532,7 +13750,7 @@
 			)
 		)
 		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
-			(at 179.07 52.07 0)
+			(at 170.18 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13543,7 +13761,7 @@
 			)
 		)
 		(property "Part" "TDK CGA5L1X7R1H106K160AE"
-			(at 179.07 52.07 0)
+			(at 170.18 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13579,7 +13797,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 50.038 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13654,7 +13872,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -14002,7 +14220,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "48e424da-36d0-4220-9dab-e34e7355e1fe")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 231.648 109.474 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14077,7 +14295,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -14364,6 +14582,98 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Kemet C0805X101J5GACAUTO")
+		(at 182.88 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b2fd29d-8cd8-401c-ab3d-dff35f68ce58")
+		(property "Reference" "C5"
+			(at 183.388 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100pF"
+			(at 183.388 54.356 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Kemet C0805X"
+			(at 182.88 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD"
+			(at 182.88 70.866 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
+			(at 182.88 66.294 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kemet C0805X101J5GACAUTO"
+			(at 182.88 64.008 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dfb14fc7-2d53-45c0-99c8-67f711dd991c")
+		)
+		(pin "1"
+			(uuid "cc94929d-ac6e-4645-9407-9714f7cfe4a1")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -15050,7 +15360,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 172.72 40.64 0)
+		(at 170.18 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15060,7 +15370,7 @@
 		(dnp no)
 		(uuid "6d31117d-c98f-49a3-84f1-3e33ff0379ad")
 		(property "Reference" "#FLG05"
-			(at 172.72 38.735 0)
+			(at 170.18 42.545 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15071,7 +15381,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 172.72 36.83 0)
+			(at 170.18 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15081,7 +15391,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 40.64 0)
+			(at 170.18 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15092,7 +15402,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 40.64 0)
+			(at 170.18 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15103,7 +15413,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 172.72 40.64 0)
+			(at 170.18 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16217,7 +16527,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e8860b3-35a9-4af2-acb4-6919bd86c522")
-		(property "Reference" "C11"
+		(property "Reference" "C12"
 			(at 25.4 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16292,7 +16602,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C11")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -18299,7 +18609,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 172.72 52.07 0)
+		(at 163.83 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18309,7 +18619,7 @@
 		(dnp no)
 		(uuid "b6a463bf-6a77-4a19-929c-bebb030200c9")
 		(property "Reference" "C2"
-			(at 172.974 49.784 0)
+			(at 164.084 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18320,7 +18630,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 172.974 54.356 0)
+			(at 164.084 54.356 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18331,7 +18641,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:TDK CGA5"
-			(at 173.6852 55.88 0)
+			(at 164.7952 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18342,7 +18652,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
-			(at 172.72 52.07 0)
+			(at 163.83 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18353,7 +18663,7 @@
 			)
 		)
 		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
-			(at 172.72 52.07 0)
+			(at 163.83 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18364,7 +18674,7 @@
 			)
 		)
 		(property "Part" "TDK CGA5L1X7R1H106K160AE"
-			(at 172.72 52.07 0)
+			(at 163.83 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19280,7 +19590,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2e0083d-81af-4035-8d23-e710ca092aad")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 201.168 58.674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19355,7 +19665,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C5")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -19561,7 +19871,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c8f951ad-d22d-4c6b-b6f1-6d59e734bb67")
-		(property "Reference" "C7"
+		(property "Reference" "C8"
 			(at 224.028 35.814 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19636,7 +19946,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C7")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -19987,7 +20297,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 162.56 40.64 0)
+		(at 163.83 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19997,7 +20307,7 @@
 		(dnp no)
 		(uuid "dbb023b7-13cd-4601-a83f-d505269fb1e5")
 		(property "Reference" "#PWR045"
-			(at 162.56 44.45 0)
+			(at 163.83 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20008,7 +20318,7 @@
 			)
 		)
 		(property "Value" "V_RAW"
-			(at 162.56 36.83 0)
+			(at 163.83 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20018,7 +20328,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 40.64 0)
+			(at 163.83 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20029,7 +20339,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 40.64 0)
+			(at 163.83 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20040,7 +20350,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 162.56 40.64 0)
+			(at 163.83 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20964,7 +21274,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7ff9f05-c4fd-4b1f-9109-8383bde3d1f6")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 231.648 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21039,7 +21349,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -21048,7 +21358,7 @@
 	(symbol
 		(lib_name "Vishay RCA08050000ZSEASR_1")
 		(lib_id "mr-parts:Vishay RCA08050000ZSEASR")
-		(at 167.64 46.99 0)
+		(at 163.83 41.91 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21058,7 +21368,7 @@
 		(dnp no)
 		(uuid "e8b1c737-1f96-48d7-90e8-9a87c78409f1")
 		(property "Reference" "R7"
-			(at 167.64 46.99 0)
+			(at 163.83 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21068,7 +21378,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 167.64 44.704 0)
+			(at 161.544 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21078,7 +21388,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Vishay RCA-SR e3"
-			(at 167.64 54.356 0)
+			(at 171.196 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21089,7 +21399,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
-			(at 167.64 56.642 0)
+			(at 173.482 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21100,7 +21410,7 @@
 			)
 		)
 		(property "Description" "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film"
-			(at 167.64 52.07 0)
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21111,7 +21421,7 @@
 			)
 		)
 		(property "Part" "Vishay RCA08050000ZSEASR"
-			(at 167.64 59.182 0)
+			(at 176.022 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21122,7 +21432,7 @@
 			)
 		)
 		(property "Alternate" "Murata LQW21FT1R5M0HL"
-			(at 167.64 46.99 0)
+			(at 163.83 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21133,7 +21443,7 @@
 			)
 		)
 		(property "Note" "Placeholder if bench testing shows an inductor is needed for VHF noise"
-			(at 167.64 46.99 0)
+			(at 163.83 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21246,7 +21556,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e950f1ea-d640-40ad-ad92-df0d46beca2e")
-		(property "Reference" "C12"
+		(property "Reference" "C13"
 			(at 51.308 95.504 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21321,7 +21631,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C12")
+					(reference "C13")
 					(unit 1)
 				)
 			)
