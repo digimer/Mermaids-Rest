@@ -1,0 +1,165 @@
+(footprint "Mean Well SPA01W8"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Isolated DC/DC Buck Converter")
+	(tags "Power Supply")
+	(property "Reference" "REF**"
+		(at 0 -4.7 0)
+		(layer "F.SilkS")
+		(uuid "48631ffd-efd6-459f-b72c-5171798fee98")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SPBW06F05"
+		(at 8.9 1.1 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "96d2aa7f-6fcc-4c79-8eae-0037f6156544")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2289/SPBW06%2CDPBW06_Ds.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae57933f-a566-4909-8460-2a1185241d55")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Isolated Module DC DC Converter 1 Output 5V 1.2A 9V - 36V Input"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fab81074-a100-4aef-899d-96cc322145c6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -8.7 -3.875)
+		(end 8.7 3.875)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "61179c6b-4710-45d9-9a55-f9f5f98e1813")
+	)
+	(fp_rect
+		(start -8.9 -4.1)
+		(end 8.9 4.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bff68c61-f882-4900-bfa8-5c8241d74fdb")
+	)
+	(fp_rect
+		(start -8.7 -3.85)
+		(end 8.7 3.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9b3872a6-e117-4c6d-a4a0-27fb03485868")
+	)
+	(fp_text user "*"
+		(at -6.3 4.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6a42b2ad-7c62-4e26-a9a7-0a7d93a6dc2b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 6.5 0)
+		(layer "F.Fab")
+		(uuid "e93cd410-e711-47eb-8a48-8b21f418ca23")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -6.35 1.45)
+		(size 1.337 1.337)
+		(drill 0.78)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6db355a2-c08f-4671-88bf-47a835c0cdce")
+	)
+	(pad "2" thru_hole circle
+		(at -3.81 1.45)
+		(size 1.337 1.337)
+		(drill 0.78)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fbf09511-79cd-4c7b-b1e5-e143676454f9")
+	)
+	(pad "4" thru_hole circle
+		(at 1.27 1.45)
+		(size 1.337 1.337)
+		(drill 0.78)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "89168818-eed3-428a-943e-2281ccb214f8")
+	)
+	(pad "5" thru_hole circle
+		(at 3.81 1.45)
+		(size 1.337 1.337)
+		(drill 0.78)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "54f9b2ef-628b-47da-a27b-448ac2b80e74")
+	)
+	(pad "6" thru_hole circle
+		(at 6.35 1.45)
+		(size 1.337 1.337)
+		(drill 0.78)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "57dc2c21-a51d-482e-9c9a-1cbef1ba68a5")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Mean Well SPA01W8/Mean Well SPA01W8.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

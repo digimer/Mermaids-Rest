@@ -1,0 +1,258 @@
+(footprint "Mean Well SPAN02W8"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Mean Well isolated potted PSU")
+	(tags "Power Supply")
+	(property "Reference" "REF**"
+		(at 0 -4.4 0)
+		(layer "F.SilkS")
+		(uuid "5c9c0760-151a-4b71-a627-3551c8bf4584")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SPAN02W8-03"
+		(at 8.9 1.1 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7365f990-5a5a-4019-8a7f-f96b5767a61d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3f26c082-a026-44e4-aa37-a5cee25a488a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5922cd78-a3dc-4d5b-b5ac-82e1ba20808d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -10.9 -3.5)
+		(end 10.9 -3.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "431c928c-cfdd-4b02-9bf7-10a2aa975e77")
+	)
+	(fp_line
+		(start -10.9 5.7)
+		(end -10.9 -3.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5c826536-87e4-4141-becc-8c9d5735a911")
+	)
+	(fp_line
+		(start 10.9 -3.5)
+		(end 10.9 5.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5cc1fcd4-5c71-421e-ad06-15b1253a35d5")
+	)
+	(fp_line
+		(start 10.9 5.7)
+		(end -10.9 5.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8cc48a39-e829-4dd3-8089-c786b3e4aac2")
+	)
+	(fp_line
+		(start -11.9 -4.5)
+		(end 11.9 -4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7f0b2a45-fc2a-41c3-b083-500395462160")
+	)
+	(fp_line
+		(start -11.9 6.7)
+		(end -11.9 -4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "25e5656c-9ac1-4990-bced-75b16fa724f0")
+	)
+	(fp_line
+		(start 11.9 -4.5)
+		(end 11.9 6.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "db67d6ef-17b4-406f-927d-1d88bae7bca7")
+	)
+	(fp_line
+		(start 11.9 6.7)
+		(end -11.9 6.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8b370f0c-af52-4fd7-8a5e-055c789947ab")
+	)
+	(fp_line
+		(start -10.9 -3.5)
+		(end 10.9 -3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "da89c4bd-8851-4ba2-b55a-d680627d95bc")
+	)
+	(fp_line
+		(start -10.9 5.7)
+		(end -10.9 -3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "aef8aa06-7e67-4c23-abc4-06fb700544a0")
+	)
+	(fp_line
+		(start 10.9 -3.5)
+		(end 10.9 5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2aa9691c-681c-45f2-a2ac-cc768590bdf9")
+	)
+	(fp_line
+		(start 10.9 5.7)
+		(end -10.9 5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "41712f65-2322-4539-9142-595091e9276f")
+	)
+	(fp_text user "*"
+		(at -11.5 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "59360827-2061-4284-88f0-6cbe38abff0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 6.8 0)
+		(layer "F.Fab")
+		(uuid "f055b66e-00b2-4fce-9fd0-5a7d4ea08853")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -8.9 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8cac571c-c6a0-4ccb-8504-2673daf3f583")
+	)
+	(pad "2" thru_hole circle
+		(at -6.36 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "821ab9da-7f0d-4613-ac26-4f0bea465e11")
+	)
+	(pad "3" thru_hole circle
+		(at -3.82 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9105265e-babe-4a47-ac57-109eec75f21b")
+	)
+	(pad "6" thru_hole circle
+		(at 3.8 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "45c91ed7-b42b-4a5f-abd2-2f5fe12ea0f9")
+	)
+	(pad "7" thru_hole circle
+		(at 6.34 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7df390d9-6d16-4f7f-b416-9c9711582583")
+	)
+	(pad "8" thru_hole circle
+		(at 8.88 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1eda3260-fe38-48be-a1e9-9ef3c60c0226")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Mean Well SPAN02W8-03/SPAN02W8-03.stp"
+		(offset
+			(xyz -9 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
