@@ -3695,7 +3695,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mr-parts:Panasonic EEH-ZU"
+		(symbol "mr-parts:Panasonic EEH-ZU1V331V"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3719,7 +3719,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "Panasonic EEH-ZU"
+			(property "Value" "EEH-ZU1V331V"
 				(at 0 -4.318 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3763,43 +3763,7 @@
 					)
 				)
 			)
-			(property "PARTREV" "30-Sep-20"
-				(at 0 -11.684 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 -7.112 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
-				(at 0 -16.002 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "Panasonic"
+			(property "Part" "Panasonic EEH-ZU1V331V"
 				(at 0 -13.716 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3811,7 +3775,7 @@
 					(justify bottom)
 				)
 			)
-			(symbol "Panasonic EEH-ZU_0_0"
+			(symbol "Panasonic EEH-ZU1V331V_0_0"
 				(rectangle
 					(start -1.173 -1.532)
 					(end -0.284 -1.405)
@@ -5750,9 +5714,6 @@
 			(embedded_fonts no)
 		)
 		(symbol "mr-parts:Vishay RCA08050000ZSEASR"
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
 			)
@@ -13224,25 +13185,25 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Panasonic EEH-ZU")
+		(lib_id "mr-parts:Panasonic EEH-ZU1V331V")
 		(at 163.83 53.34 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "285c6264-7a92-4169-9b46-3b12b492f2f0")
 		(property "Reference" "C2"
-			(at 164.338 52.578 90)
+			(at 164.338 53.086 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left bottom)
 			)
 		)
 		(property "Value" "330uF"
@@ -13290,43 +13251,7 @@
 				)
 			)
 		)
-		(property "PARTREV" "30-Sep-20"
-			(at 152.146 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 156.718 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
-			(at 147.828 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Panasonic"
+		(property "Part" "Panasonic EEH-ZU1V331V"
 			(at 150.114 53.34 0)
 			(hide yes)
 			(show_name no)
