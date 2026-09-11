@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-11T16:40:24")
+		(date "2026-09-11T17:40:40")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -2346,7 +2346,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e8b1c737-1f96-48d7-90e8-9a87c78409f1")
+			(tstamps "9f73cda2-4f83-4977-a9e6-5b99a17e8a9d")
 			(units
 				(unit
 					(name "A")
@@ -2363,6 +2363,84 @@
 		)
 		(comp
 			(ref "R4")
+			(value "0R")
+			(footprint "mr-stuff:Vishay RCA-SR e3")
+			(datasheet "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Vishay RCA08050000ZSEASR")
+				(field
+					(name "Alternate") "Murata LQW21FT1R5M0HL")
+				(field
+					(name "Note") "Placeholder if bench testing shows an inductor is needed for VHF noise")
+				(field
+					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+				(field
+					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Vishay RCA08050000ZSEASR")
+				(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Vishay RCA08050000ZSEASR")
+			)
+			(property
+				(name "Alternate")
+				(value "Murata LQW21FT1R5M0HL")
+			)
+			(property
+				(name "Note")
+				(value "Placeholder if bench testing shows an inductor is needed for VHF noise")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4f9b82f3-e32c-4f64-89c1-98db05a5ae7f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
 			(value "470kR")
 			(footprint "mr-stuff:Wurth WRIS-RSKS")
 			(datasheet "https://www.we-online.com/components/products/datasheet/560112120009.pdf")
@@ -2422,7 +2500,7 @@
 			)
 		)
 		(comp
-			(ref "R5")
+			(ref "R6")
 			(value "100kR")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -2482,89 +2560,41 @@
 			)
 		)
 		(comp
-			(ref "R6")
-			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
-				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "cbdd2032-9a3b-408f-81d1-12e0504e694d")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "R7")
-			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(value "0R")
+			(footprint "mr-stuff:Vishay RCA-SR e3")
+			(datasheet "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Vishay RCA08050000ZSEASR")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Alternate") "Murata LQW21FT1R5M0HL")
 				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+					(name "Note") "Placeholder if bench testing shows an inductor is needed for VHF noise")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+				(field
+					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "")
+				(part "Vishay RCA08050000ZSEASR_1")
+				(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Vishay RCA08050000ZSEASR")
+			)
+			(property
+				(name "Alternate")
+				(value "Murata LQW21FT1R5M0HL")
+			)
+			(property
+				(name "Note")
+				(value "Placeholder if bench testing shows an inductor is needed for VHF noise")
 			)
 			(property
 				(name "Sheetname")
@@ -2586,7 +2616,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0b14d34c-e801-4623-8922-5fff75d410bc")
+			(tstamps "e8b1c737-1f96-48d7-90e8-9a87c78409f1")
 			(units
 				(unit
 					(name "A")
@@ -2646,7 +2676,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9f98dcb4-e28e-4aea-ab53-154d0e6da407")
+			(tstamps "cbdd2032-9a3b-408f-81d1-12e0504e694d")
 			(units
 				(unit
 					(name "A")
@@ -2706,7 +2736,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ba5685f5-58bf-44a3-9742-fe78a03e7fe2")
+			(tstamps "0b14d34c-e801-4623-8922-5fff75d410bc")
 			(units
 				(unit
 					(name "A")
@@ -2766,7 +2796,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3aa3c123-9471-4820-801b-c6cb82f156e8")
+			(tstamps "9f98dcb4-e28e-4aea-ab53-154d0e6da407")
 			(units
 				(unit
 					(name "A")
@@ -2826,7 +2856,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3ab184e1-0cca-41b2-89c6-ab1316de09a6")
+			(tstamps "ba5685f5-58bf-44a3-9742-fe78a03e7fe2")
 			(units
 				(unit
 					(name "A")
@@ -2843,6 +2873,126 @@
 		)
 		(comp
 			(ref "R12")
+			(value "10kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP1206FTD10K0")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP1206FTD10K0")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3aa3c123-9471-4820-801b-c6cb82f156e8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R13")
+			(value "10kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP1206FTD10K0")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP1206FTD10K0")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3ab184e1-0cca-41b2-89c6-ab1316de09a6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R14")
 			(value "15kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -2902,7 +3052,7 @@
 			)
 		)
 		(comp
-			(ref "R13")
+			(ref "R15")
 			(value "5.11kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -2962,7 +3112,7 @@
 			)
 		)
 		(comp
-			(ref "R14")
+			(ref "R16")
 			(value "5.11kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -3022,7 +3172,7 @@
 			)
 		)
 		(comp
-			(ref "R15")
+			(ref "R17")
 			(value "10kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -3082,7 +3232,7 @@
 			)
 		)
 		(comp
-			(ref "R16")
+			(ref "R18")
 			(value "10kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -3142,7 +3292,7 @@
 			)
 		)
 		(comp
-			(ref "R17")
+			(ref "R19")
 			(value "10kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -3202,7 +3352,7 @@
 			)
 		)
 		(comp
-			(ref "R18")
+			(ref "R20")
 			(value "10kR")
 			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -3247,140 +3397,6 @@
 				(tstamps "/")
 			)
 			(tstamps "7ba0e4be-69f1-4bea-a336-40aec66aed9f")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R19")
-			(value "681R")
-			(footprint "mr-stuff:Stackpole RMCA0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RNCP0805FTD681R")
-				(field
-					(name "Sim.Pins")
-				)
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-				(field
-					(name "Description") "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RNCP0805FTD681R")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "dff42777-24d1-46d1-8d5a-da4634a7cdab")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R20")
-			(value "681R")
-			(footprint "mr-stuff:Stackpole RMCA0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RNCP0805FTD681R")
-				(field
-					(name "Sim.Pins")
-				)
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-				(field
-					(name "Description") "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RNCP0805FTD681R")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "a3c6a39d-c5f7-48e6-bc52-b85e3ae5625a")
 			(units
 				(unit
 					(name "A")
@@ -3447,7 +3463,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "262e8bde-2e88-4708-ae5a-2a23a2002a3c")
+			(tstamps "dff42777-24d1-46d1-8d5a-da4634a7cdab")
 			(units
 				(unit
 					(name "A")
@@ -3464,19 +3480,22 @@
 		)
 		(comp
 			(ref "R22")
-			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(value "681R")
+			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD681R")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Sim.Pins")
+				)
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
 				(lib "Device")
@@ -3485,7 +3504,11 @@
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD681R")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
 			)
 			(property
 				(name "Sheetname")
@@ -3507,7 +3530,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "f8d458ea-ac9b-4585-a2b5-31a6a098e12f")
+			(tstamps "a3c6a39d-c5f7-48e6-bc52-b85e3ae5625a")
 			(units
 				(unit
 					(name "A")
@@ -3574,7 +3597,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "bba89206-1bff-4773-9285-29268337f595")
+			(tstamps "262e8bde-2e88-4708-ae5a-2a23a2002a3c")
 			(units
 				(unit
 					(name "A")
@@ -3591,22 +3614,19 @@
 		)
 		(comp
 			(ref "R24")
-			(value "681R")
-			(footprint "mr-stuff:Stackpole RMCA0805")
+			(value "10kR")
+			(footprint "mr-stuff:Stackpole_RNCP1206")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP0805FTD681R")
+					(name "Part") "Stackpole RNCP1206FTD10K0")
 				(field
-					(name "Sim.Pins")
-				)
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
 				(lib "Device")
@@ -3615,11 +3635,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP0805FTD681R")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "")
+				(value "Stackpole RNCP1206FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -3641,7 +3657,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "2b8b14b6-359c-426b-b30a-0208c5235ed0")
+			(tstamps "f8d458ea-ac9b-4585-a2b5-31a6a098e12f")
 			(units
 				(unit
 					(name "A")
@@ -3708,7 +3724,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "684b1b11-82fd-47ff-b8db-10b95f737972")
+			(tstamps "bba89206-1bff-4773-9285-29268337f595")
 			(units
 				(unit
 					(name "A")
@@ -3725,6 +3741,140 @@
 		)
 		(comp
 			(ref "R26")
+			(value "681R")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD681R")
+				(field
+					(name "Sim.Pins")
+				)
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD681R")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2b8b14b6-359c-426b-b30a-0208c5235ed0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R27")
+			(value "681R")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD681R")
+				(field
+					(name "Sim.Pins")
+				)
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD681R")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "684b1b11-82fd-47ff-b8db-10b95f737972")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R28")
 			(value "681R")
 			(footprint "mr-stuff:Stackpole RMCA0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -4698,6 +4848,41 @@
 	(groups)
 	(variants)
 	(libparts
+		(libpart
+			(lib "")
+			(part "Vishay RCA08050000ZSEASR_1")
+			(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(docs "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "RCA08050000ZSEASR")
+				(field
+					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+				(field
+					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+				(field
+					(name "Part") "Vishay RCA08050000ZSEASR")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
 		(libpart
 			(lib "Connector")
 			(part "Conn_01x04_Pin")
@@ -5960,37 +6145,37 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R15")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R16")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "R17")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "R18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R22")
+				(ref "R20")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R6")
+				(ref "R24")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R7")
+				(ref "R8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6185,7 +6370,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R17")
+				(ref "R19")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6213,7 +6398,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R18")
+				(ref "R20")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6241,7 +6426,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R22")
+				(ref "R24")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6269,7 +6454,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R26")
+				(ref "R28")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6285,7 +6470,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R25")
+				(ref "R27")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6301,7 +6486,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R19")
+				(ref "R21")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6317,7 +6502,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R15")
+				(ref "R17")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6339,7 +6524,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R16")
+				(ref "R18")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6361,7 +6546,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R21")
+				(ref "R23")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6371,7 +6556,7 @@
 			(name "/VBUS")
 			(class "Default")
 			(node
-				(ref "R11")
+				(ref "R13")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6411,12 +6596,12 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R11")
+				(ref "R13")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R12")
+				(ref "R14")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6432,7 +6617,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R24")
+				(ref "R26")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6448,7 +6633,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R23")
+				(ref "R25")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6464,7 +6649,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R20")
+				(ref "R22")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6627,17 +6812,27 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "R12")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R13")
+				(ref "R14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R14")
+				(ref "R16")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6647,18 +6842,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R5")
+				(ref "R4")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R8")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R9")
-				(pin "1")
+				(ref "R6")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -6796,12 +6986,6 @@
 				(pinfunction "GND_10")
 				(pintype "power_in")
 			)
-			(node
-				(ref "VR1")
-				(pin "11")
-				(pinfunction "MODE/SYNC_11")
-				(pintype "input")
-			)
 		)
 		(net
 			(code "22")
@@ -6934,7 +7118,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R19")
+				(ref "R21")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6950,7 +7134,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R20")
+				(ref "R22")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6966,7 +7150,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R21")
+				(ref "R23")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6982,7 +7166,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R23")
+				(ref "R25")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -6998,7 +7182,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R24")
+				(ref "R26")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7014,7 +7198,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R25")
+				(ref "R27")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7030,7 +7214,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R26")
+				(ref "R28")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7051,7 +7235,7 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R6")
+				(ref "R8")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7084,7 +7268,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R7")
+				(ref "R9")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7112,7 +7296,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R8")
+				(ref "R10")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7128,7 +7312,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R9")
+				(ref "R11")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7144,7 +7328,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R10")
+				(ref "R12")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7276,7 +7460,7 @@
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
-				(ref "R13")
+				(ref "R15")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7292,7 +7476,7 @@
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
-				(ref "R14")
+				(ref "R16")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7308,12 +7492,12 @@
 			(name "Net-(VR1-EN)")
 			(class "Default")
 			(node
-				(ref "R4")
+				(ref "R5")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R5")
+				(ref "R6")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7326,6 +7510,27 @@
 		)
 		(net
 			(code "49")
+			(name "Net-(VR1-MODE{slash}SYNC)")
+			(class "Default")
+			(node
+				(ref "R3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "VR1")
+				(pin "11")
+				(pinfunction "MODE/SYNC_11")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "50")
 			(name "Net-(VR1-VCC)")
 			(class "Default")
 			(node
@@ -7341,7 +7546,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "51")
 			(name "Net-(VR1-VIN)")
 			(class "Default")
 			(node
@@ -7360,7 +7565,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R3")
+				(ref "R7")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7372,7 +7577,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "52")
 			(name "V_RAW")
 			(class "Default")
 			(node
@@ -7381,8 +7586,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R4")
+				(ref "R5")
 				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -7393,7 +7603,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "53")
 			(name "unconnected-(MCU1-IO12-Pad20)")
 			(class "Default")
 			(node
@@ -7404,7 +7614,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "54")
 			(name "unconnected-(MCU1-IO13-Pad21)")
 			(class "Default")
 			(node
@@ -7415,7 +7625,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "55")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -7426,7 +7636,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "56")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -7437,7 +7647,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "57")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -7448,7 +7658,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "58")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -7459,7 +7669,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "59")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -7470,7 +7680,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "60")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -7481,7 +7691,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "61")
 			(name "unconnected-(TB1-Pad1)")
 			(class "Default")
 			(node
@@ -7491,7 +7701,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "62")
 			(name "unconnected-(TB1-Pad2)")
 			(class "Default")
 			(node
@@ -7501,7 +7711,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "63")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -7512,7 +7722,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "64")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -7523,7 +7733,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "65")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -7534,7 +7744,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "66")
 			(name "unconnected-(VR1-PGOOD-Pad1)")
 			(class "Default")
 			(node
@@ -7545,7 +7755,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "67")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -7556,7 +7766,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "68")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
