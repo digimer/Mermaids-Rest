@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-11T02:07:34")
+		(date "2026-09-11T16:35:26")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -100,61 +100,6 @@
 				(tstamps "/")
 			)
 			(tstamps "c388eba1-92f1-450c-98c7-a7d3ff54c431")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C2")
-			(value "330uF")
-			(footprint "mr-stuff:Panasonic EEH-ZU")
-			(datasheet "https://na.industrial.panasonic.com/file-download/244145")
-			(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-			(fields
-				(field
-					(name "Part") "Panasonic EEH-ZU1V331V")
-				(field
-					(name "Footprint") "mr-stuff:Panasonic EEH-ZU")
-				(field
-					(name "Datasheet") "https://na.industrial.panasonic.com/file-download/244145")
-				(field
-					(name "Description") "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "Panasonic EEH-ZU1V331V")
-				(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-			)
-			(property
-				(name "Part")
-				(value "Panasonic EEH-ZU1V331V")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "dnp")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "285c6264-7a92-4169-9b46-3b12b492f2f0")
 			(units
 				(unit
 					(name "A")
@@ -2402,72 +2347,6 @@
 				(tstamps "/")
 			)
 			(tstamps "e8b1c737-1f96-48d7-90e8-9a87c78409f1")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R4")
-			(value "0.2R")
-			(footprint "mr-stuff:KOA SR73")
-			(datasheet "https://www.vishay.com/docs/20132/rca-sre3.pdf")
-			(description "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
-			(fields
-				(field
-					(name "Part") "KOA Speer SR732BTTDR200F")
-				(field
-					(name "Footprint") "mr-stuff:KOA SR73")
-				(field
-					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
-				(field
-					(name "Description") "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "KOA Speer SR732BTTDR200F")
-				(description "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
-			)
-			(property
-				(name "Part")
-				(value "KOA Speer SR732BTTDR200F")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "exclude_from_bom")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "3d03fd4a-5afe-4716-bd69-302be1cf2730")
 			(units
 				(unit
 					(name "A")
@@ -5534,41 +5413,6 @@
 		)
 		(libpart
 			(lib "mr-parts")
-			(part "KOA Speer SR732BTTDR200F")
-			(description "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
-			(docs "https://www.vishay.com/docs/20132/rca-sre3.pdf")
-			(footprints
-				(fp "R_*")
-			)
-			(fields
-				(field
-					(name "Reference") "R")
-				(field
-					(name "Value") "SR732BTTDR200F")
-				(field
-					(name "Footprint") "mr-stuff:KOA SR73")
-				(field
-					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
-				(field
-					(name "Description") "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
-				(field
-					(name "Part") "KOA Speer SR732BTTDR200F")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
 			(part "Littelfuse nanoASMDCH020F")
 			(description "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 			(docs "https://www.littelfuse.com/assetdocs/littelfuse-ptc-auto-hightemp-smd-datasheet?assetguid=eb355431-c672-4f9e-aeb0-4d3e11a483c0")
@@ -5585,38 +5429,6 @@
 					(name "Description") "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 				(field
 					(name "Part") "Littelfuse nanoASMDCH020F")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
-			(part "Panasonic EEH-ZU1V331V")
-			(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-			(docs "https://na.industrial.panasonic.com/file-download/244145")
-			(fields
-				(field
-					(name "Reference") "C")
-				(field
-					(name "Value") "EEH-ZU1V331V")
-				(field
-					(name "Footprint") "mr-stuff:Panasonic EEH-ZU")
-				(field
-					(name "Datasheet") "https://na.industrial.panasonic.com/file-download/244145")
-				(field
-					(name "Description") "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
-				(field
-					(name "Part") "Panasonic EEH-ZU1V331V")
 			)
 			(pins
 				(pin
@@ -6697,11 +6509,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C2")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "C3")
 				(pin "2")
 				(pintype "passive")
@@ -6998,21 +6805,6 @@
 		)
 		(net
 			(code "22")
-			(name "Net-(C2-Pad1)")
-			(class "Default")
-			(node
-				(ref "C2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R4")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "23")
 			(name "Net-(CMC1-O1)")
 			(class "Default")
 			(node
@@ -7038,7 +6830,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "23")
 			(name "Net-(CMC1-O2)")
 			(class "Default")
 			(node
@@ -7064,7 +6856,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "24")
 			(name "Net-(J1-Pin_2)")
 			(class "Default")
 			(node
@@ -7081,7 +6873,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "25")
 			(name "Net-(J1-Pin_3)")
 			(class "Default")
 			(node
@@ -7098,7 +6890,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "26")
 			(name "Net-(J1-Pin_4)")
 			(class "Default")
 			(node
@@ -7115,7 +6907,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "27")
 			(name "Net-(J1-Pin_5)")
 			(class "Default")
 			(node
@@ -7132,7 +6924,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "28")
 			(name "Net-(LED1-A)")
 			(class "Default")
 			(node
@@ -7148,7 +6940,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "29")
 			(name "Net-(LED2-A)")
 			(class "Default")
 			(node
@@ -7164,7 +6956,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "30")
 			(name "Net-(LED3-A)")
 			(class "Default")
 			(node
@@ -7180,7 +6972,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "31")
 			(name "Net-(LED4-A)")
 			(class "Default")
 			(node
@@ -7196,7 +6988,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "32")
 			(name "Net-(LED5-A)")
 			(class "Default")
 			(node
@@ -7212,7 +7004,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "33")
 			(name "Net-(LED6-A)")
 			(class "Default")
 			(node
@@ -7228,7 +7020,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "34")
 			(name "Net-(LED7-A)")
 			(class "Default")
 			(node
@@ -7244,7 +7036,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "35")
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
@@ -7277,7 +7069,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "36")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
@@ -7310,7 +7102,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "37")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -7326,7 +7118,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "38")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -7342,7 +7134,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "39")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -7358,7 +7150,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "40")
 			(name "Net-(MCU1-RXD0)")
 			(class "Default")
 			(node
@@ -7375,7 +7167,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "41")
 			(name "Net-(MCU1-TXD0)")
 			(class "Default")
 			(node
@@ -7392,7 +7184,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "42")
 			(name "Net-(MCU1-USB_D+)")
 			(class "Default")
 			(node
@@ -7415,7 +7207,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "43")
 			(name "Net-(MCU1-USB_D-)")
 			(class "Default")
 			(node
@@ -7438,7 +7230,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "44")
 			(name "Net-(PTC1-Pad2)")
 			(class "Default")
 			(node
@@ -7458,7 +7250,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "45")
 			(name "Net-(SD1-A)")
 			(class "Default")
 			(node
@@ -7480,7 +7272,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "46")
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
@@ -7496,7 +7288,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "47")
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
@@ -7512,7 +7304,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "48")
 			(name "Net-(VR1-EN)")
 			(class "Default")
 			(node
@@ -7533,7 +7325,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "49")
 			(name "Net-(VR1-VCC)")
 			(class "Default")
 			(node
@@ -7549,7 +7341,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "50")
 			(name "Net-(VR1-VIN)")
 			(class "Default")
 			(node
@@ -7573,11 +7365,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R4")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "VR1")
 				(pin "3")
 				(pinfunction "VIN_3")
@@ -7585,7 +7372,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "51")
 			(name "V_RAW")
 			(class "Default")
 			(node
@@ -7606,7 +7393,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "52")
 			(name "unconnected-(MCU1-IO12-Pad20)")
 			(class "Default")
 			(node
@@ -7617,7 +7404,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "53")
 			(name "unconnected-(MCU1-IO13-Pad21)")
 			(class "Default")
 			(node
@@ -7628,7 +7415,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "54")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -7639,7 +7426,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "55")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -7650,7 +7437,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "56")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -7661,7 +7448,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "57")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -7672,7 +7459,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "58")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -7683,7 +7470,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "59")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -7694,7 +7481,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "60")
 			(name "unconnected-(TB1-Pad1)")
 			(class "Default")
 			(node
@@ -7704,7 +7491,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "61")
 			(name "unconnected-(TB1-Pad2)")
 			(class "Default")
 			(node
@@ -7714,7 +7501,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "62")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -7725,7 +7512,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "63")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -7736,7 +7523,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "64")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -7747,7 +7534,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "65")
 			(name "unconnected-(VR1-PGOOD-Pad1)")
 			(class "Default")
 			(node
@@ -7758,7 +7545,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "66")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -7769,7 +7556,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "67")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
