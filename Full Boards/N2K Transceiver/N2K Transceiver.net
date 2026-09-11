@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-11T01:40:56")
+		(date "2026-09-11T02:07:34")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -12,7 +12,7 @@
 				(title "N2K Transceiver")
 				(company "The Digital Mermaid")
 				(rev "1.0.0")
-				(date "2026-09-07")
+				(date "2026-09-11")
 				(source "N2K Transceiver.kicad_sch")
 				(comment
 					(number "1")
@@ -1461,7 +1461,7 @@
 			)
 		)
 		(comp
-			(ref "J3")
+			(ref "J1")
 			(value "JTAG")
 			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
 			(description "Generic connector, single row, 01x05, script generated")
@@ -4450,7 +4450,7 @@
 			)
 		)
 		(comp
-			(ref "TP3")
+			(ref "TP2")
 			(value "CAN Tx/Rx")
 			(footprint "mr-stuff:PinHeader_1x05_P2.54mm_Vertical_No_Pin_3")
 			(description "Generic connector, single row, 01x05, script generated")
@@ -6260,7 +6260,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP3")
+				(ref "TP2")
 				(pin "1")
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
@@ -6283,7 +6283,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP3")
+				(ref "TP2")
 				(pin "2")
 				(pinfunction "Pin_2_2")
 				(pintype "passive")
@@ -6306,7 +6306,7 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "TP3")
+				(ref "TP2")
 				(pin "5")
 				(pinfunction "Pin_5_5")
 				(pintype "passive")
@@ -6356,7 +6356,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP3")
+				(ref "TP2")
 				(pin "4")
 				(pinfunction "Pin_4_4")
 				(pintype "passive")
@@ -6749,7 +6749,7 @@
 				(pintype "input")
 			)
 			(node
-				(ref "J3")
+				(ref "J1")
 				(pin "1")
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
@@ -7065,10 +7065,10 @@
 		)
 		(net
 			(code "25")
-			(name "Net-(J3-Pin_2)")
+			(name "Net-(J1-Pin_2)")
 			(class "Default")
 			(node
-				(ref "J3")
+				(ref "J1")
 				(pin "2")
 				(pinfunction "Pin_2_2")
 				(pintype "passive")
@@ -7082,10 +7082,10 @@
 		)
 		(net
 			(code "26")
-			(name "Net-(J3-Pin_3)")
+			(name "Net-(J1-Pin_3)")
 			(class "Default")
 			(node
-				(ref "J3")
+				(ref "J1")
 				(pin "3")
 				(pinfunction "Pin_3_3")
 				(pintype "passive")
@@ -7099,10 +7099,10 @@
 		)
 		(net
 			(code "27")
-			(name "Net-(J3-Pin_4)")
+			(name "Net-(J1-Pin_4)")
 			(class "Default")
 			(node
-				(ref "J3")
+				(ref "J1")
 				(pin "4")
 				(pinfunction "Pin_4_4")
 				(pintype "passive")
@@ -7116,10 +7116,10 @@
 		)
 		(net
 			(code "28")
-			(name "Net-(J3-Pin_5)")
+			(name "Net-(J1-Pin_5)")
 			(class "Default")
 			(node
-				(ref "J3")
+				(ref "J1")
 				(pin "5")
 				(pinfunction "Pin_5_5")
 				(pintype "passive")
