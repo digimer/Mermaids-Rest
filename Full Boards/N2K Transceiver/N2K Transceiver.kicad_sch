@@ -5213,7 +5213,7 @@
 				)
 			)
 			(property "Footprint" "mr-stuff:TI TCAN3404"
-				(at 0 -10.922 0)
+				(at 0 -9.906 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5225,7 +5225,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tcan3404-q1.pdf"
-				(at 0 -13.208 0)
+				(at 0 -12.192 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5237,7 +5237,7 @@
 				)
 			)
 			(property "Description" "TCAN3404"
-				(at 0 -15.494 0)
+				(at 0 -14.732 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5248,7 +5248,7 @@
 				)
 			)
 			(property "Part" "TI TCAN3404DRQ1"
-				(at 0 -17.78 0)
+				(at 0 -17.018 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7128,8 +7128,8 @@
 		(uuid "4f5a3a71-2a75-4672-98e3-158009574189")
 	)
 	(rectangle
-		(start 50.8 168.91)
-		(end 90.805 191.77)
+		(start 15.24 168.91)
+		(end 55.245 191.77)
 		(stroke
 			(width 0)
 			(type default)
@@ -7150,18 +7150,6 @@
 			(type none)
 		)
 		(uuid "b94fdbcf-7f37-4840-812e-96f26a63352f")
-	)
-	(rectangle
-		(start 15.24 168.91)
-		(end 46.99 191.77)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "c3aef84f-e3b1-45ac-b675-25d7ce0becf4")
 	)
 	(text "V_RAW can be 10~16 VDC\nTB1 connect to Amphenol MSAS-05PMMC-SF8C15"
 		(exclude_from_sim no)
@@ -7186,7 +7174,7 @@
 	)
 	(text "Mounts and Fiducials"
 		(exclude_from_sim no)
-		(at 61.214 168.148 0)
+		(at 25.654 168.148 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7257,17 +7245,6 @@
 			(justify left top)
 		)
 		(uuid "aa4a882a-8a85-406c-8c59-bf7b1a065385")
-	)
-	(text "Test Points"
-		(exclude_from_sim no)
-		(at 15.24 167.894 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ac7cc921-129c-45d4-9dbf-279ddf519fd4")
 	)
 	(text "Reset"
 		(exclude_from_sim no)
@@ -7683,6 +7660,12 @@
 		(uuid "d74de94e-7cc0-4066-be9a-9eb1593fe714")
 	)
 	(junction
+		(at 175.26 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dbb5e91c-9b51-4cba-9c13-2e21ff04b400")
+	)
+	(junction
 		(at 57.15 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7795,16 +7778,6 @@
 			(type default)
 		)
 		(uuid "00565a2a-8140-4c46-bf1c-9d6d6bd1da2f")
-	)
-	(wire
-		(pts
-			(xy 172.72 45.72) (xy 172.72 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "007b20c2-a980-4f10-b493-5bb9317293d3")
 	)
 	(wire
 		(pts
@@ -7995,16 +7968,6 @@
 			(type default)
 		)
 		(uuid "0d84e9a5-42a8-4429-b26d-50821877b764")
-	)
-	(wire
-		(pts
-			(xy 172.72 36.83) (xy 172.72 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0dc49b3e-2bdf-453c-a66e-4383994cf71a")
 	)
 	(wire
 		(pts
@@ -8238,7 +8201,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 180.34) (xy 21.59 186.69)
+			(xy 24.13 29.21) (xy 24.13 35.56)
 		)
 		(stroke
 			(width 0)
@@ -8428,7 +8391,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 186.69) (xy 31.75 186.69)
+			(xy 24.13 35.56) (xy 34.29 35.56)
 		)
 		(stroke
 			(width 0)
@@ -8598,7 +8561,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 181.61) (xy 29.21 180.34)
+			(xy 31.75 30.48) (xy 31.75 29.21)
 		)
 		(stroke
 			(width 0)
@@ -8608,7 +8571,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 180.34) (xy 19.05 189.23)
+			(xy 21.59 29.21) (xy 21.59 38.1)
 		)
 		(stroke
 			(width 0)
@@ -8705,6 +8668,16 @@
 			(type default)
 		)
 		(uuid "437ee3c1-394b-4834-b48f-f5cc247a9001")
+	)
+	(wire
+		(pts
+			(xy 163.83 40.64) (xy 163.83 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43f5a14a-6b23-41d6-9a54-f51b9d992985")
 	)
 	(wire
 		(pts
@@ -8898,6 +8871,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 39.37) (xy 175.26 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "532721b0-eb2a-4aa2-ae3d-a7529c60e535")
+	)
+	(wire
+		(pts
 			(xy 190.5 140.97) (xy 193.04 140.97)
 		)
 		(stroke
@@ -9068,7 +9051,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 46.99) (xy 179.07 46.99)
+			(xy 172.72 46.99) (xy 175.26 46.99)
 		)
 		(stroke
 			(width 0)
@@ -9115,6 +9098,16 @@
 			(type default)
 		)
 		(uuid "604d15e5-3ad8-42d1-9dfd-49b93b93fa92")
+	)
+	(wire
+		(pts
+			(xy 172.72 43.18) (xy 172.72 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60a6a069-fa47-4f4c-b052-fcd3382b3cad")
 	)
 	(wire
 		(pts
@@ -9188,7 +9181,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 184.15) (xy 31.75 184.15)
+			(xy 29.21 33.02) (xy 34.29 33.02)
 		)
 		(stroke
 			(width 0)
@@ -9458,7 +9451,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 184.15) (xy 26.67 180.34)
+			(xy 29.21 33.02) (xy 29.21 29.21)
 		)
 		(stroke
 			(width 0)
@@ -9485,6 +9478,16 @@
 			(type default)
 		)
 		(uuid "77e649b4-a322-4d9e-934a-6bd40af195de")
+	)
+	(wire
+		(pts
+			(xy 175.26 46.99) (xy 179.07 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78d67fe3-d3e0-4376-95ee-b53c1d1bc756")
 	)
 	(wire
 		(pts
@@ -9745,6 +9748,16 @@
 			(type default)
 		)
 		(uuid "893518ce-9d7d-456a-83be-6353c7b97e2b")
+	)
+	(wire
+		(pts
+			(xy 171.45 43.18) (xy 172.72 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "896f4034-04ea-4ef6-9b6d-0997a0f824f5")
 	)
 	(wire
 		(pts
@@ -10368,7 +10381,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 189.23) (xy 31.75 189.23)
+			(xy 21.59 38.1) (xy 34.29 38.1)
 		)
 		(stroke
 			(width 0)
@@ -10728,7 +10741,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 181.61) (xy 29.21 181.61)
+			(xy 34.29 30.48) (xy 31.75 30.48)
 		)
 		(stroke
 			(width 0)
@@ -11247,7 +11260,7 @@
 		(uuid "febd4773-0074-401a-823e-6b398d5205d6")
 	)
 	(label "CAN_TX_LOCAL"
-		(at 31.75 186.69 0)
+		(at 34.29 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11497,7 +11510,7 @@
 		(uuid "844082dd-3e20-423d-b804-3469df5b5be9")
 	)
 	(label "CAN_HIGH"
-		(at 31.75 181.61 0)
+		(at 34.29 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11597,7 +11610,7 @@
 		(uuid "b5b0826e-98f3-4a4b-a633-88e6b445e23e")
 	)
 	(label "CAN_RX_LOCAL"
-		(at 31.75 189.23 0)
+		(at 34.29 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11607,7 +11620,7 @@
 		(uuid "b6ae41df-3d5c-4770-99fc-5f5e8eb6cb14")
 	)
 	(label "CAN_LOW"
-		(at 31.75 184.15 0)
+		(at 34.29 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11881,7 +11894,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "05c8062f-cdaf-48f2-be5c-62554c462a42")
-		(property "Reference" "C12"
+		(property "Reference" "C11"
 			(at 65.278 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11956,7 +11969,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C12")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -11973,7 +11986,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "081f5d78-f072-4a32-9d56-92ad4607c52d")
-		(property "Reference" "R12"
+		(property "Reference" "R16"
 			(at 194.818 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12048,7 +12061,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R12")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -12234,7 +12247,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b14d34c-e801-4623-8922-5fff75d410bc")
-		(property "Reference" "R4"
+		(property "Reference" "R8"
 			(at 36.83 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12309,7 +12322,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R4")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -12394,7 +12407,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 54.61 182.88 0)
+		(at 19.05 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12405,7 +12418,7 @@
 		(fields_autoplaced yes)
 		(uuid "1491c520-bb8a-4d57-afb7-aa0ad9279251")
 		(property "Reference" "H3"
-			(at 57.15 181.6099 0)
+			(at 21.59 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12416,7 +12429,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 57.15 184.1499 0)
+			(at 21.59 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12427,7 +12440,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 54.61 182.88 0)
+			(at 19.05 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12438,7 +12451,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 182.88 0)
+			(at 19.05 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12449,7 +12462,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 54.61 182.88 0)
+			(at 19.05 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12665,7 +12678,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a580783-2340-4d8a-9972-9b139d97943b")
-		(property "Reference" "R23"
+		(property "Reference" "R27"
 			(at 236.22 153.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12749,7 +12762,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R23")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -12757,7 +12770,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 54.61 187.96 0)
+		(at 19.05 187.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12768,7 +12781,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a72ca46-405e-49ec-b442-15b7926e3cd5")
 		(property "Reference" "H4"
-			(at 57.15 186.6899 0)
+			(at 21.59 186.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12779,7 +12792,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 57.15 189.2299 0)
+			(at 21.59 189.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12790,7 +12803,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 54.61 187.96 0)
+			(at 19.05 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12801,7 +12814,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 187.96 0)
+			(at 19.05 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12812,7 +12825,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 54.61 187.96 0)
+			(at 19.05 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12951,7 +12964,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "25cc698a-4beb-4f0e-93fc-016b1b659b00")
-		(property "Reference" "C11"
+		(property "Reference" "C10"
 			(at 57.658 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13026,7 +13039,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C11")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -13043,7 +13056,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "262e8bde-2e88-4708-ae5a-2a23a2002a3c")
-		(property "Reference" "R18"
+		(property "Reference" "R22"
 			(at 196.85 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13127,7 +13140,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R18")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -13221,7 +13234,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "285c6264-7a92-4169-9b46-3b12b492f2f0")
-		(property "Reference" "C5"
+		(property "Reference" "C2"
 			(at 164.338 52.578 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13334,7 +13347,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C5")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -13351,7 +13364,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b8b14b6-359c-426b-b30a-0208c5235ed0")
-		(property "Reference" "R21"
+		(property "Reference" "R25"
 			(at 236.22 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13435,7 +13448,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R21")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -13549,7 +13562,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "36ab98fa-7c95-4d57-8e25-905dd5d05c39")
-		(property "Reference" "C3"
+		(property "Reference" "C5"
 			(at 185.674 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13624,7 +13637,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C3")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -13641,8 +13654,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3aa3c123-9471-4820-801b-c6cb82f156e8")
-		(property "Reference" "R7"
-			(at 26.67 119.38 90)
+		(property "Reference" "R11"
+			(at 27.178 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13716,7 +13729,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R7")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -13733,8 +13746,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ab184e1-0cca-41b2-89c6-ab1316de09a6")
-		(property "Reference" "R8"
-			(at 31.496 139.7 90)
+		(property "Reference" "R12"
+			(at 30.988 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13808,7 +13821,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R8")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -13825,7 +13838,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c3deb41-490f-4cae-8e37-d413e30e96d3")
-		(property "Reference" "C2"
+		(property "Reference" "C4"
 			(at 179.324 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13900,7 +13913,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C2")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -13917,7 +13930,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "3d03fd4a-5afe-4716-bd69-302be1cf2730")
-		(property "Reference" "R27"
+		(property "Reference" "R4"
 			(at 167.64 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13990,7 +14003,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R27")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -14007,7 +14020,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
-		(property "Reference" "C10"
+		(property "Reference" "C9"
 			(at 50.038 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14082,7 +14095,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C10")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -14176,7 +14189,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "42b54fef-0d90-4ed5-99e1-faab70e186ed")
-		(property "Reference" "R13"
+		(property "Reference" "R17"
 			(at 194.818 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14251,7 +14264,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R13")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -14259,7 +14272,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:Conn_01x05_Pin_No_Pin_3")
-		(at 24.13 175.26 270)
+		(at 26.67 24.13 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14269,7 +14282,7 @@
 		(dnp yes)
 		(uuid "44ede0cd-97c6-47da-85b7-3ca39b1478a5")
 		(property "Reference" "TP3"
-			(at 23.876 171.45 90)
+			(at 26.416 20.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14279,7 +14292,7 @@
 			)
 		)
 		(property "Value" "CAN Tx/Rx"
-			(at 23.876 173.736 90)
+			(at 26.416 22.606 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14289,7 +14302,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:PinHeader_1x05_P2.54mm_Vertical_No_Pin_3"
-			(at 24.13 175.26 0)
+			(at 26.67 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14300,7 +14313,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 24.13 175.26 0)
+			(at 26.67 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14311,7 +14324,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 13.97 175.006 0)
+			(at 16.51 23.876 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14430,7 +14443,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "48e424da-36d0-4220-9dab-e34e7355e1fe")
-		(property "Reference" "C16"
+		(property "Reference" "C15"
 			(at 231.648 109.474 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14505,7 +14518,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C16")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -15032,7 +15045,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "684b1b11-82fd-47ff-b8db-10b95f737972")
-		(property "Reference" "R22"
+		(property "Reference" "R26"
 			(at 236.22 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15116,7 +15129,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R22")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -15288,6 +15301,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 175.26 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6d31117d-c98f-49a3-84f1-3e33ff0379ad")
+		(property "Reference" "#FLG05"
+			(at 175.26 37.465 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 175.26 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 175.26 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7df51898-8a43-404b-a4cd-56e3e0dd475f")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 154.94 154.94 90)
 		(unit 1)
@@ -15298,7 +15388,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f7ea1ad-c0ab-4116-b30b-ac372621228f")
-		(property "Reference" "R11"
+		(property "Reference" "R15"
 			(at 156.972 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15373,7 +15463,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R11")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -15621,7 +15711,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7ba0e4be-69f1-4bea-a336-40aec66aed9f")
-		(property "Reference" "R15"
+		(property "Reference" "R19"
 			(at 250.698 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15696,7 +15786,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R15")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -15960,83 +16050,6 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 172.72 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7ee62297-4369-4a33-a501-450bf273bae4")
-		(property "Reference" "#PWR045"
-			(at 172.72 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "V_RAW"
-			(at 172.72 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 172.72 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 172.72 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f4e120e7-6fb8-441b-9a89-30369aa179aa")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
 		(at 209.55 22.86 0)
 		(unit 1)
 		(body_style 1)
@@ -16107,118 +16120,6 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR061")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mr-parts:Vishay RCA08050000ZSEASR")
-		(at 172.72 41.91 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "801597a4-fb69-4f2a-8437-0aedce72e9fd")
-		(property "Reference" "R26"
-			(at 172.72 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 170.434 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "mr-stuff:Vishay RCA-SR e3"
-			(at 180.086 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
-			(at 182.372 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film"
-			(at 177.8 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Vishay RCA08050000ZSEASR"
-			(at 184.912 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alternate" "Murata LQW21FT1R5M0HL"
-			(at 172.72 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "Placeholder if bench testing shows an inductor is needed for VHF noise"
-			(at 172.72 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "222c02fc-de38-42aa-90ba-e05313bc33a6")
-		)
-		(pin "1"
-			(uuid "d74a542d-41a6-4da2-8eba-55153311bb76")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -16491,7 +16392,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e8860b3-35a9-4af2-acb4-6919bd86c522")
-		(property "Reference" "C13"
+		(property "Reference" "C12"
 			(at 25.4 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16566,7 +16467,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C13")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -16574,7 +16475,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 54.61 172.72 0)
+		(at 19.05 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16585,7 +16486,7 @@
 		(fields_autoplaced yes)
 		(uuid "9037ef58-1286-4938-ac0a-6f3a27ed81e5")
 		(property "Reference" "H1"
-			(at 57.15 171.4499 0)
+			(at 21.59 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16596,7 +16497,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 57.15 173.9899 0)
+			(at 21.59 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16607,7 +16508,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 54.61 172.72 0)
+			(at 19.05 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16618,7 +16519,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 172.72 0)
+			(at 19.05 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16629,7 +16530,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 54.61 172.72 0)
+			(at 19.05 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16727,7 +16628,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 54.61 177.8 0)
+		(at 19.05 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16738,7 +16639,7 @@
 		(fields_autoplaced yes)
 		(uuid "98563d7b-602f-4dd2-a8a6-23be6cc53a55")
 		(property "Reference" "H2"
-			(at 57.15 176.5299 0)
+			(at 21.59 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16749,7 +16650,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 57.15 179.0699 0)
+			(at 21.59 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16760,7 +16661,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 54.61 177.8 0)
+			(at 19.05 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16771,7 +16672,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 177.8 0)
+			(at 19.05 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16782,7 +16683,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 54.61 177.8 0)
+			(at 19.05 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16812,8 +16713,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9901f622-423d-4c52-b6de-bebce3c2f1a5")
-		(property "Reference" "R9"
-			(at 31.496 144.78 90)
+		(property "Reference" "R13"
+			(at 30.988 144.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16887,7 +16788,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R9")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -16997,7 +16898,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9d563fff-4ee7-45de-abc0-d089e3a45402")
-		(property "Reference" "R14"
+		(property "Reference" "R18"
 			(at 250.698 110.49 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17072,7 +16973,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R14")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -17263,7 +17164,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9eddd782-eef4-4698-9700-f71a63f96530")
-		(property "Reference" "R25"
+		(property "Reference" "R5"
 			(at 185.42 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17336,7 +17237,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R25")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -17353,7 +17254,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f98dcb4-e28e-4aea-ab53-154d0e6da407")
-		(property "Reference" "R5"
+		(property "Reference" "R9"
 			(at 48.26 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17428,7 +17329,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R5")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -17436,7 +17337,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 78.74 182.88 0)
+		(at 43.18 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17447,7 +17348,7 @@
 		(fields_autoplaced yes)
 		(uuid "a03de29b-d303-44f8-a263-8992e1267fa1")
 		(property "Reference" "FID3"
-			(at 81.28 181.6099 0)
+			(at 45.72 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17458,7 +17359,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 81.28 184.1499 0)
+			(at 45.72 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17469,7 +17370,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 78.74 182.88 0)
+			(at 43.18 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17480,7 +17381,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 182.88 0)
+			(at 43.18 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17491,7 +17392,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 78.74 182.88 0)
+			(at 43.18 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17502,7 +17403,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 78.74 182.88 0)
+			(at 43.18 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17609,7 +17510,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a3c6a39d-c5f7-48e6-bc52-b85e3ae5625a")
-		(property "Reference" "R17"
+		(property "Reference" "R21"
 			(at 196.85 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17693,7 +17594,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R17")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -17701,7 +17602,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 78.74 177.8 0)
+		(at 43.18 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17712,7 +17613,7 @@
 		(fields_autoplaced yes)
 		(uuid "a41bab48-40a6-441d-8039-4b436e0b1480")
 		(property "Reference" "FID2"
-			(at 81.28 176.5299 0)
+			(at 45.72 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17723,7 +17624,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 81.28 179.0699 0)
+			(at 45.72 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17734,7 +17635,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 78.74 177.8 0)
+			(at 43.18 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17745,7 +17646,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 177.8 0)
+			(at 43.18 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17756,7 +17657,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 78.74 177.8 0)
+			(at 43.18 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17767,7 +17668,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 78.74 177.8 0)
+			(at 43.18 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18471,7 +18372,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b6a463bf-6a77-4a19-929c-bebb030200c9")
-		(property "Reference" "C8"
+		(property "Reference" "C3"
 			(at 172.974 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18546,7 +18447,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C8")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -18832,8 +18733,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba5685f5-58bf-44a3-9742-fe78a03e7fe2")
-		(property "Reference" "R6"
-			(at 48.26 114.3 90)
+		(property "Reference" "R10"
+			(at 48.768 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18907,7 +18808,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R6")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -19001,7 +18902,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bba89206-1bff-4773-9285-29268337f595")
-		(property "Reference" "R20"
+		(property "Reference" "R24"
 			(at 236.22 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19085,7 +18986,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R20")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -19275,7 +19176,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1f162fd-b36b-4c56-8848-9732e0c35d2d")
-		(property "Reference" "R10"
+		(property "Reference" "R14"
 			(at 137.668 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19350,7 +19251,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R10")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -19725,7 +19626,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c8f951ad-d22d-4c6b-b6f1-6d59e734bb67")
-		(property "Reference" "C4"
+		(property "Reference" "C8"
 			(at 224.028 35.814 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19800,7 +19701,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C4")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -19919,7 +19820,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cbdd2032-9a3b-408f-81d1-12e0504e694d")
-		(property "Reference" "R3"
+		(property "Reference" "R7"
 			(at 35.56 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19994,7 +19895,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R3")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -20144,6 +20045,83 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "USBRV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 163.83 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dbb023b7-13cd-4601-a83f-d505269fb1e5")
+		(property "Reference" "#PWR045"
+			(at 163.83 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V_RAW"
+			(at 163.83 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 163.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "319e677a-f189-46c2-b4b4-34982dad5856")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -20496,7 +20474,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 78.74 172.72 0)
+		(at 43.18 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20507,7 +20485,7 @@
 		(fields_autoplaced yes)
 		(uuid "defdff74-a975-41d5-90d0-9a40e2322be0")
 		(property "Reference" "FID1"
-			(at 81.28 171.4499 0)
+			(at 45.72 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20518,7 +20496,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 81.28 173.9899 0)
+			(at 45.72 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20529,7 +20507,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 78.74 172.72 0)
+			(at 43.18 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20540,7 +20518,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 172.72 0)
+			(at 43.18 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20551,7 +20529,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 78.74 172.72 0)
+			(at 43.18 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20562,7 +20540,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 78.74 172.72 0)
+			(at 43.18 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20592,7 +20570,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dff42777-24d1-46d1-8d5a-da4634a7cdab")
-		(property "Reference" "R16"
+		(property "Reference" "R20"
 			(at 196.85 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20676,7 +20654,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R16")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -21051,7 +21029,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7ff9f05-c4fd-4b1f-9109-8383bde3d1f6")
-		(property "Reference" "C15"
+		(property "Reference" "C14"
 			(at 231.648 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21126,7 +21104,119 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C15")
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Vishay RCA08050000ZSEASR")
+		(at 167.64 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e8b1c737-1f96-48d7-90e8-9a87c78409f1")
+		(property "Reference" "R3"
+			(at 167.64 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 167.64 40.894 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Vishay RCA-SR e3"
+			(at 167.64 50.546 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
+			(at 167.64 52.832 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film"
+			(at 167.64 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay RCA08050000ZSEASR"
+			(at 167.64 55.372 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Alternate" "Murata LQW21FT1R5M0HL"
+			(at 167.64 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "Placeholder if bench testing shows an inductor is needed for VHF noise"
+			(at 167.64 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e5218781-962d-4a40-8cb9-fc67e3731430")
+		)
+		(pin "1"
+			(uuid "a2a5d87e-727e-44d5-9cf7-2f0b4e4d8060")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -21220,7 +21310,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e950f1ea-d640-40ad-ad92-df0d46beca2e")
-		(property "Reference" "C14"
+		(property "Reference" "C13"
 			(at 51.308 95.504 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21295,7 +21385,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C14")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -22158,7 +22248,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f8d458ea-ac9b-4585-a2b5-31a6a098e12f")
-		(property "Reference" "R19"
+		(property "Reference" "R23"
 			(at 186.182 158.75 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22233,7 +22323,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R19")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -22536,7 +22626,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ffc789e0-2af6-4b35-b0d1-38d63ac17dca")
-		(property "Reference" "R24"
+		(property "Reference" "R6"
 			(at 185.42 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22609,7 +22699,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R24")
+					(reference "R6")
 					(unit 1)
 				)
 			)
