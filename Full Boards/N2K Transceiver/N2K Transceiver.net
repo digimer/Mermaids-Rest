@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-10T19:57:25")
+		(date "2026-09-10T21:01:54")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -280,6 +280,82 @@
 				(tstamps "/")
 			)
 			(tstamps "c8f951ad-d22d-4c6b-b6f1-6d59e734bb67")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C5")
+			(value "330uF")
+			(footprint "mr-stuff:Panasonic EEH-ZU")
+			(datasheet "https://na.industrial.panasonic.com/file-download/244145")
+			(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
+			(fields
+				(field
+					(name "PARTREV") "30-Sep-20")
+				(field
+					(name "STANDARD") "Manufacturer Recommendations")
+				(field
+					(name "MAXIMUM_PACKAGE_HEIGHT") "12.8mm")
+				(field
+					(name "MANUFACTURER") "Panasonic")
+				(field
+					(name "Footprint") "mr-stuff:Panasonic EEH-ZU")
+				(field
+					(name "Datasheet") "https://na.industrial.panasonic.com/file-download/244145")
+				(field
+					(name "Description") "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Panasonic EEH-ZU")
+				(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
+			)
+			(property
+				(name "PARTREV")
+				(value "30-Sep-20")
+			)
+			(property
+				(name "STANDARD")
+				(value "Manufacturer Recommendations")
+			)
+			(property
+				(name "MAXIMUM_PACKAGE_HEIGHT")
+				(value "12.8mm")
+			)
+			(property
+				(name "MANUFACTURER")
+				(value "Panasonic")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "dnp")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5572e20d-9985-47b9-9c12-45a71b389573")
 			(units
 				(unit
 					(name "A")
@@ -3858,28 +3934,28 @@
 		)
 		(comp
 			(ref "R27")
-			(value "1kR")
-			(footprint "mr-stuff:Stackpole RNCP0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(value "0.2mR")
+			(footprint "mr-stuff:KOA SR73")
+			(datasheet "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(description "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP0805FTD1K00")
+					(name "Part") "KOA Speer SR732BTTDR200F")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+					(name "Footprint") "mr-stuff:KOA SR73")
 				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
 				(field
-					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Stackpole RNCP0805FTD1K00")
-				(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+				(part "KOA Speer SR732BTTDR200F")
+				(description "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP0805FTD1K00")
+				(value "KOA Speer SR732BTTDR200F")
 			)
 			(property
 				(name "Sheetname")
@@ -3888,6 +3964,12 @@
 			(property
 				(name "Sheetfile")
 				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -3901,7 +3983,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "4f4df9e2-5451-4bec-b155-3527c120150f")
+			(tstamps "76621c68-4428-49b7-8e51-8acd1301a215")
 			(units
 				(unit
 					(name "A")
@@ -5681,6 +5763,41 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "KOA Speer SR732BTTDR200F")
+			(description "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
+			(docs "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "SR732BTTDR200F")
+				(field
+					(name "Footprint") "mr-stuff:KOA SR73")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+				(field
+					(name "Description") "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film")
+				(field
+					(name "Part") "KOA Speer SR732BTTDR200F")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Littelfuse nanoASMDCH020F")
 			(description "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 			(docs "https://www.littelfuse.com/assetdocs/littelfuse-ptc-auto-hightemp-smd-datasheet?assetguid=eb355431-c672-4f9e-aeb0-4d3e11a483c0")
@@ -5743,6 +5860,44 @@
 				)
 				(pin
 					(num "3")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Panasonic EEH-ZU")
+			(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
+			(docs "https://na.industrial.panasonic.com/file-download/244145")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "Panasonic EEH-ZU")
+				(field
+					(name "Footprint") "mr-stuff:Panasonic EEH-ZU")
+				(field
+					(name "Datasheet") "https://na.industrial.panasonic.com/file-download/244145")
+				(field
+					(name "Description") "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
+				(field
+					(name "PARTREV") "30-Sep-20")
+				(field
+					(name "STANDARD") "Manufacturer Recommendations")
+				(field
+					(name "MAXIMUM_PACKAGE_HEIGHT") "12.8mm")
+				(field
+					(name "MANUFACTURER") "Panasonic")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
 					(name "")
 					(type "passive")
 				)
@@ -5879,41 +6034,6 @@
 					(num "8")
 					(name "VCC")
 					(type "power_in")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
-			(part "Stackpole RNCP0805FTD1K00")
-			(description "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
-			(docs "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(footprints
-				(fp "R_*")
-			)
-			(fields
-				(field
-					(name "Reference") "R")
-				(field
-					(name "Value") "RNCP0805FTD1K00")
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-				(field
-					(name "Description") "1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
-				(field
-					(name "Part") "Stackpole RNCP0805FTD1K00")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
 				)
 			)
 		)
@@ -6288,6 +6408,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "R3")
 				(pin "2")
 				(pintype "passive")
@@ -6574,50 +6699,6 @@
 		)
 		(net
 			(code "11")
-			(name "/MCU_RESET")
-			(class "Default")
-			(node
-				(ref "C14")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "MCU1")
-				(pin "20")
-				(pinfunction "IO12_20")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "MCU1")
-				(pin "3")
-				(pinfunction "EN_3")
-				(pintype "input")
-			)
-			(node
-				(ref "R27")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R3")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW1")
-				(pin "3")
-				(pinfunction "B_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW1")
-				(pin "4")
-				(pinfunction "B_4")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "12")
 			(name "/N2K_RX_LED")
 			(class "Default")
 			(node
@@ -6633,7 +6714,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "12")
 			(name "/N2K_TX_LED")
 			(class "Default")
 			(node
@@ -6649,7 +6730,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "13")
 			(name "/POWER_LED")
 			(class "Default")
 			(node
@@ -6665,7 +6746,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "14")
 			(name "/ROM1_WP")
 			(class "Default")
 			(node
@@ -6687,7 +6768,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "15")
 			(name "/ROM2_WP")
 			(class "Default")
 			(node
@@ -6709,7 +6790,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "16")
 			(name "/SRV_UP_LED")
 			(class "Default")
 			(node
@@ -6725,7 +6806,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "17")
 			(name "/VBUS")
 			(class "Default")
 			(node
@@ -6759,7 +6840,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "18")
 			(name "/VBUS_MCU")
 			(class "Default")
 			(node
@@ -6780,7 +6861,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "19")
 			(name "/WIFI_RX_LED")
 			(class "Default")
 			(node
@@ -6796,7 +6877,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "20")
 			(name "/WIFI_TX_LED")
 			(class "Default")
 			(node
@@ -6812,7 +6893,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "21")
 			(name "/WIFI_UP_LED")
 			(class "Default")
 			(node
@@ -6828,7 +6909,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "22")
 			(name "GND")
 			(class "Default")
 			(node
@@ -6883,6 +6964,11 @@
 			)
 			(node
 				(ref "C4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C5")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7141,7 +7227,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "23")
 			(name "GND_SHIP")
 			(class "ShipSide,Default")
 			(node
@@ -7175,6 +7261,21 @@
 			(node
 				(ref "TVS2")
 				(pin "3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "24")
+			(name "Net-(C5-Pad1)")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
+				(pin "1")
 				(pintype "passive")
 			)
 		)
@@ -7433,6 +7534,39 @@
 		)
 		(net
 			(code "39")
+			(name "Net-(MCU1-EN)")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "MCU1")
+				(pin "3")
+				(pinfunction "EN_3")
+				(pintype "input")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "3")
+				(pinfunction "B_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "4")
+				(pinfunction "B_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "40")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
@@ -7465,7 +7599,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "41")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -7481,7 +7615,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "42")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -7497,7 +7631,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "43")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -7513,7 +7647,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "44")
 			(name "Net-(MCU1-RXD0)")
 			(class "Default")
 			(node
@@ -7530,7 +7664,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "45")
 			(name "Net-(MCU1-TXD0)")
 			(class "Default")
 			(node
@@ -7547,7 +7681,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "46")
 			(name "Net-(MCU1-USB_D+)")
 			(class "Default")
 			(node
@@ -7570,7 +7704,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "47")
 			(name "Net-(MCU1-USB_D-)")
 			(class "Default")
 			(node
@@ -7593,7 +7727,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "48")
 			(name "Net-(PTC1-Pad2)")
 			(class "ShipSide,Default")
 			(node
@@ -7613,7 +7747,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "49")
 			(name "Net-(SD1-A)")
 			(class "ShipSide,Default")
 			(node
@@ -7635,7 +7769,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "50")
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
@@ -7651,7 +7785,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "51")
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
@@ -7667,7 +7801,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "52")
 			(name "Net-(VR1-EN)")
 			(class "Default")
 			(node
@@ -7685,22 +7819,6 @@
 				(pin "2")
 				(pinfunction "EN_2")
 				(pintype "input")
-			)
-		)
-		(net
-			(code "52")
-			(name "Net-(VR1-PGOOD)")
-			(class "Default")
-			(node
-				(ref "R27")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "VR1")
-				(pin "1")
-				(pinfunction "PGOOD_1")
-				(pintype "open_collector")
 			)
 		)
 		(net
@@ -7779,6 +7897,17 @@
 		)
 		(net
 			(code "56")
+			(name "unconnected-(MCU1-IO12-Pad20)")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "20")
+				(pinfunction "IO12_20")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "57")
 			(name "unconnected-(MCU1-IO13-Pad21)")
 			(class "Default")
 			(node
@@ -7789,7 +7918,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "58")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -7800,7 +7929,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "59")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -7811,7 +7940,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "60")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -7822,7 +7951,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "61")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -7833,7 +7962,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "62")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -7844,7 +7973,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "63")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -7855,7 +7984,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "64")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -7866,7 +7995,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "65")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -7877,7 +8006,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "66")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -7888,7 +8017,18 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "67")
+			(name "unconnected-(VR1-PGOOD-Pad1)")
+			(class "Default")
+			(node
+				(ref "VR1")
+				(pin "1")
+				(pinfunction "PGOOD_1")
+				(pintype "open_collector+no_connect")
+			)
+		)
+		(net
+			(code "68")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -7899,7 +8039,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "69")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
