@@ -7744,16 +7744,10 @@
 		(uuid "0b4dc280-58a3-4091-b3fb-c31ca8e455d2")
 	)
 	(junction
-		(at 73.66 91.44)
+		(at 64.77 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1025c5e4-3a21-4506-bebe-708b669e740e")
-	)
-	(junction
-		(at 58.42 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1628b2b3-2571-455a-95bc-234f9aba3670")
 	)
 	(junction
 		(at 109.22 39.37)
@@ -7816,7 +7810,7 @@
 		(uuid "4af7fd29-2942-4dec-810a-c795d0fb915e")
 	)
 	(junction
-		(at 66.04 91.44)
+		(at 57.15 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "543d661a-a9d2-4966-a37e-f7486667858a")
@@ -7858,7 +7852,7 @@
 		(uuid "669b4fb7-7a8e-4849-9a33-ea6dbb103d64")
 	)
 	(junction
-		(at 73.66 81.28)
+		(at 64.77 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "692579c2-048a-4709-b2f4-622989d0e203")
@@ -7880,6 +7874,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75d5fd8f-8b8d-4644-9470-225926a4096b")
+	)
+	(junction
+		(at 179.07 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a090313-8b84-41f1-adfc-ded6ac1160b0")
 	)
 	(junction
 		(at 29.21 142.24)
@@ -7966,12 +7966,6 @@
 		(uuid "a6fb1fb3-ae63-4322-9d91-a9edb5f9f14b")
 	)
 	(junction
-		(at 179.07 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a71f22de-e929-4f0e-9fc2-84b36e5585f8")
-	)
-	(junction
 		(at 115.57 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8038,10 +8032,10 @@
 		(uuid "b7256447-859c-48db-8daf-6ec75028f7e6")
 	)
 	(junction
-		(at 172.72 57.15)
+		(at 72.39 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bb1af25a-7254-40e1-b554-c784d87b65d8")
+		(uuid "c66fe677-d376-4cc2-ac0e-e021e9acdb0f")
 	)
 	(junction
 		(at 69.85 58.42)
@@ -8054,6 +8048,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c80fc2e6-c152-4869-8a10-835b7c5882a2")
+	)
+	(junction
+		(at 172.72 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c829b9c5-766d-4d33-a2c9-6c4672fb5618")
 	)
 	(junction
 		(at 133.35 41.91)
@@ -8092,7 +8092,7 @@
 		(uuid "d74de94e-7cc0-4066-be9a-9eb1593fe714")
 	)
 	(junction
-		(at 66.04 81.28)
+		(at 57.15 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df12ce39-03aa-41a8-9bda-6e23339e377e")
@@ -8120,18 +8120,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed2cebfd-ebf6-400d-8c9a-87b88ece1e31")
-	)
-	(junction
-		(at 58.42 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f03a74d0-c875-4c3b-b3f0-71c4c2f195b6")
-	)
-	(junction
-		(at 81.28 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f37cf1b0-5db3-4c21-ad09-922c117ba9e2")
 	)
 	(junction
 		(at 135.89 52.07)
@@ -8331,7 +8319,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 57.15) (xy 185.42 55.88)
+			(xy 185.42 58.42) (xy 185.42 55.88)
 		)
 		(stroke
 			(width 0)
@@ -8348,6 +8336,16 @@
 			(type default)
 		)
 		(uuid "08459ae5-1ebd-4367-b3fe-df52385c26b2")
+	)
+	(wire
+		(pts
+			(xy 171.45 46.99) (xy 172.72 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0880e7af-3f7a-4c45-86df-d277e57fdde4")
 	)
 	(wire
 		(pts
@@ -8601,6 +8599,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 46.99) (xy 163.83 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dbf522f-f189-485c-af49-e6ff5625e56d")
+	)
+	(wire
+		(pts
 			(xy 87.63 132.08) (xy 91.44 132.08)
 		)
 		(stroke
@@ -8701,7 +8709,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 81.28) (xy 73.66 82.55)
+			(xy 64.77 81.28) (xy 64.77 82.55)
 		)
 		(stroke
 			(width 0)
@@ -8841,7 +8849,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 81.28) (xy 58.42 82.55)
+			(xy 49.53 81.28) (xy 49.53 82.55)
 		)
 		(stroke
 			(width 0)
@@ -8911,16 +8919,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 57.15) (xy 172.72 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33acf098-d1b7-4d50-bd0b-e27503dc699f")
-	)
-	(wire
-		(pts
 			(xy 132.08 110.49) (xy 132.08 109.22)
 		)
 		(stroke
@@ -8951,16 +8949,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 91.44) (xy 58.42 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3693c9df-7118-490c-be61-b0af4dcd7faf")
-	)
-	(wire
-		(pts
 			(xy 133.35 59.69) (xy 135.89 59.69)
 		)
 		(stroke
@@ -8968,16 +8956,6 @@
 			(type default)
 		)
 		(uuid "36eb1955-d390-4fdb-81c2-98a0534709df")
-	)
-	(wire
-		(pts
-			(xy 45.72 82.55) (xy 45.72 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "373f9d7f-6a8f-4f29-a5e6-82374b6631c8")
 	)
 	(wire
 		(pts
@@ -9031,7 +9009,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 91.44) (xy 73.66 92.71)
+			(xy 64.77 91.44) (xy 64.77 92.71)
 		)
 		(stroke
 			(width 0)
@@ -9321,16 +9299,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 90.17) (xy 45.72 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "512ef0cd-276a-4691-8327-2815079b367b")
-	)
-	(wire
-		(pts
 			(xy 210.82 140.97) (xy 213.36 140.97)
 		)
 		(stroke
@@ -9561,7 +9529,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 91.44) (xy 66.04 91.44)
+			(xy 49.53 91.44) (xy 57.15 91.44)
 		)
 		(stroke
 			(width 0)
@@ -9818,6 +9786,16 @@
 			(type default)
 		)
 		(uuid "6924dbda-e73e-4925-8053-12d81add19bf")
+	)
+	(wire
+		(pts
+			(xy 179.07 55.88) (xy 179.07 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a4b0f25-f810-4437-81d9-696e9aff6857")
 	)
 	(wire
 		(pts
@@ -10231,7 +10209,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 90.17) (xy 58.42 91.44)
+			(xy 49.53 90.17) (xy 49.53 91.44)
 		)
 		(stroke
 			(width 0)
@@ -10241,7 +10219,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 57.15) (xy 179.07 57.15)
+			(xy 172.72 58.42) (xy 179.07 58.42)
 		)
 		(stroke
 			(width 0)
@@ -10278,16 +10256,6 @@
 			(type default)
 		)
 		(uuid "8a97621e-73aa-4326-a192-d88eeecc53c2")
-	)
-	(wire
-		(pts
-			(xy 57.15 81.28) (xy 58.42 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b58c614-b3c0-46f0-9654-3ce6cb4787de")
 	)
 	(wire
 		(pts
@@ -10338,16 +10306,6 @@
 			(type default)
 		)
 		(uuid "91c6eb1c-9276-42c0-8b28-75501cadf85d")
-	)
-	(wire
-		(pts
-			(xy 45.72 81.28) (xy 49.53 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93523688-bdc2-41b5-b17b-f0624da7d384")
 	)
 	(wire
 		(pts
@@ -10481,16 +10439,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 55.88) (xy 179.07 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c814dab-ad8e-4f72-b89b-8515a2c50acc")
-	)
-	(wire
-		(pts
 			(xy 26.67 180.34) (xy 26.67 181.61)
 		)
 		(stroke
@@ -10511,16 +10459,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 97.79) (xy 81.28 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e1f5e4c-c2a9-468b-8ab2-42e2e771caa4")
-	)
-	(wire
-		(pts
 			(xy 82.55 26.67) (xy 82.55 33.02)
 		)
 		(stroke
@@ -10531,7 +10469,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 181.61) (xy 35.56 181.61)
+			(xy 29.21 181.61) (xy 34.29 181.61)
 		)
 		(stroke
 			(width 0)
@@ -10581,16 +10519,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 97.79) (xy 85.09 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a42d2387-7295-4646-8520-601ef299f729")
-	)
-	(wire
-		(pts
 			(xy 100.33 54.61) (xy 102.87 54.61)
 		)
 		(stroke
@@ -10621,7 +10549,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 81.28) (xy 73.66 81.28)
+			(xy 57.15 81.28) (xy 64.77 81.28)
 		)
 		(stroke
 			(width 0)
@@ -10641,7 +10569,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 55.88) (xy 172.72 57.15)
+			(xy 172.72 55.88) (xy 172.72 58.42)
 		)
 		(stroke
 			(width 0)
@@ -10731,7 +10659,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 91.44) (xy 73.66 91.44)
+			(xy 57.15 91.44) (xy 64.77 91.44)
 		)
 		(stroke
 			(width 0)
@@ -10811,7 +10739,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 57.15) (xy 185.42 57.15)
+			(xy 179.07 58.42) (xy 185.42 58.42)
 		)
 		(stroke
 			(width 0)
@@ -10838,6 +10766,16 @@
 			(type default)
 		)
 		(uuid "b3e83ef5-b91f-478f-b687-237ca49ae2b3")
+	)
+	(wire
+		(pts
+			(xy 172.72 58.42) (xy 172.72 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4ed7f41-de6a-4a91-a58f-e3772022e8af")
 	)
 	(wire
 		(pts
@@ -10871,7 +10809,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 180.34) (xy 35.56 181.61)
+			(xy 34.29 180.34) (xy 34.29 181.61)
 		)
 		(stroke
 			(width 0)
@@ -10918,6 +10856,16 @@
 			(type default)
 		)
 		(uuid "ba760f7f-b2da-4607-9627-46e7aa368b0b")
+	)
+	(wire
+		(pts
+			(xy 72.39 97.79) (xy 76.2 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb9f895a-25d3-479d-b78e-76a86f69d34b")
 	)
 	(wire
 		(pts
@@ -10981,7 +10929,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 81.28) (xy 81.28 81.28)
+			(xy 64.77 81.28) (xy 72.39 81.28)
 		)
 		(stroke
 			(width 0)
@@ -11101,7 +11049,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 81.28) (xy 66.04 81.28)
+			(xy 49.53 81.28) (xy 57.15 81.28)
 		)
 		(stroke
 			(width 0)
@@ -11211,7 +11159,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 81.28) (xy 81.28 97.79)
+			(xy 72.39 81.28) (xy 72.39 97.79)
 		)
 		(stroke
 			(width 0)
@@ -11271,7 +11219,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 90.17) (xy 73.66 91.44)
+			(xy 64.77 90.17) (xy 64.77 91.44)
 		)
 		(stroke
 			(width 0)
@@ -11601,7 +11549,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 81.28) (xy 66.04 82.55)
+			(xy 57.15 81.28) (xy 57.15 82.55)
 		)
 		(stroke
 			(width 0)
@@ -11701,7 +11649,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 90.17) (xy 66.04 91.44)
+			(xy 57.15 90.17) (xy 57.15 91.44)
 		)
 		(stroke
 			(width 0)
@@ -11741,7 +11689,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 96.52) (xy 85.09 97.79)
+			(xy 76.2 96.52) (xy 76.2 97.79)
 		)
 		(stroke
 			(width 0)
@@ -11798,6 +11746,16 @@
 			(type default)
 		)
 		(uuid "fd5642dd-85d9-4151-889f-d83b452c25b0")
+	)
+	(wire
+		(pts
+			(xy 163.83 58.42) (xy 172.72 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdd4bd64-42b8-4375-9293-74f9ce25cfc2")
 	)
 	(wire
 		(pts
@@ -12445,7 +12403,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 73.66 86.36 0)
+		(at 64.77 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12455,7 +12413,7 @@
 		(dnp no)
 		(uuid "05c8062f-cdaf-48f2-be5c-62554c462a42")
 		(property "Reference" "C12"
-			(at 74.168 84.074 0)
+			(at 65.278 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12466,7 +12424,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 74.168 88.9 0)
+			(at 65.278 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12477,7 +12435,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
-			(at 74.6252 90.17 0)
+			(at 65.7352 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12488,7 +12446,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf"
-			(at 73.66 86.36 0)
+			(at 64.77 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12499,7 +12457,7 @@
 			)
 		)
 		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 73.66 86.36 0)
+			(at 64.77 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12510,7 +12468,7 @@
 			)
 		)
 		(property "Part" "Kyocera 08051C104K4Z2A"
-			(at 73.66 86.36 0)
+			(at 64.77 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12649,7 +12607,7 @@
 				)
 			)
 		)
-		(property "Value" "GND_SHIP"
+		(property "Value" "GND"
 			(at 26.67 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13515,7 +13473,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 66.04 86.36 0)
+		(at 57.15 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13525,7 +13483,7 @@
 		(dnp no)
 		(uuid "25cc698a-4beb-4f0e-93fc-016b1b659b00")
 		(property "Reference" "C11"
-			(at 66.548 84.074 0)
+			(at 57.658 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13536,7 +13494,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 66.802 88.646 0)
+			(at 57.912 88.646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13547,7 +13505,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
-			(at 67.0052 90.17 0)
+			(at 58.1152 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13558,7 +13516,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf"
-			(at 66.04 86.36 0)
+			(at 57.15 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13569,7 +13527,7 @@
 			)
 		)
 		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 66.04 86.36 0)
+			(at 57.15 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13580,7 +13538,7 @@
 			)
 		)
 		(property "Part" "Kyocera 08051C105K4Z2A"
-			(at 66.04 86.36 0)
+			(at 57.15 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13784,6 +13742,136 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:Panasonic EEH-ZU")
+		(at 163.83 53.34 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "285c6264-7a92-4169-9b46-3b12b492f2f0")
+		(property "Reference" "C5"
+			(at 164.338 52.578 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330uF"
+			(at 164.592 57.15 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Panasonic EEH-ZU"
+			(at 154.432 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://na.industrial.panasonic.com/file-download/244145"
+			(at 144.272 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C"
+			(at 146.558 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" "30-Sep-20"
+			(at 152.146 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 156.718 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
+			(at 147.828 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Panasonic"
+			(at 150.114 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "1"
+			(uuid "089b99cf-cd60-4cb8-81c5-efd4e681dd0c")
+		)
+		(pin "2"
+			(uuid "5a1f23af-4bfa-47c2-95c5-9e5468b29f6d")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 236.22 140.97 90)
 		(unit 1)
@@ -13976,83 +14064,6 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 35.56 180.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3424a664-b3f3-48ce-b606-43c000c8ad9f")
-		(property "Reference" "#PWR0281"
-			(at 35.56 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V_SHIP"
-			(at 35.56 176.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 35.56 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d5005785-9501-4e3b-ba10-89147fa89a39")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "#PWR0281")
 					(unit 1)
 				)
 			)
@@ -14427,8 +14438,98 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:KOA Speer SR732BTTDR200F")
+		(at 167.64 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "3d03fd4a-5afe-4716-bd69-302be1cf2730")
+		(property "Reference" "R27"
+			(at 167.64 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.2mR"
+			(at 167.64 49.276 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:KOA SR73"
+			(at 167.64 54.356 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
+			(at 167.64 56.642 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
+			(at 167.64 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KOA Speer SR732BTTDR200F"
+			(at 167.64 59.182 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9042b272-6902-4a23-a690-0681ce5cc5db")
+		)
+		(pin "2"
+			(uuid "573cf61f-5838-4704-a633-bec1cf8b0675")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
-		(at 58.42 86.36 180)
+		(at 49.53 86.36 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14438,7 +14539,7 @@
 		(dnp no)
 		(uuid "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
 		(property "Reference" "C10"
-			(at 58.928 84.074 0)
+			(at 50.038 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14449,7 +14550,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 63.5 88.9 0)
+			(at 54.61 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14460,7 +14561,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:TDK CGA5"
-			(at 57.4548 82.55 0)
+			(at 48.5648 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14471,7 +14572,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
-			(at 58.42 86.36 0)
+			(at 49.53 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14482,7 +14583,7 @@
 			)
 		)
 		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
-			(at 58.42 86.36 0)
+			(at 49.53 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14493,7 +14594,7 @@
 			)
 		)
 		(property "Part" "TDK CGA5L1X7R1H106K160AE"
-			(at 58.42 86.36 0)
+			(at 49.53 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15033,136 +15134,6 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mr-parts:Panasonic EEH-ZU")
-		(at 45.72 85.09 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "5572e20d-9985-47b9-9c12-45a71b389573")
-		(property "Reference" "C5"
-			(at 46.228 84.328 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330uF"
-			(at 46.482 88.9 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Panasonic EEH-ZU"
-			(at 36.322 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://na.industrial.panasonic.com/file-download/244145"
-			(at 26.162 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C"
-			(at 28.448 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" "30-Sep-20"
-			(at 34.036 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 38.608 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "12.8mm"
-			(at 29.718 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Panasonic"
-			(at 32.004 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "1"
-			(uuid "d28fd5ea-3cc1-471b-ae24-f6bb37793841")
-		)
-		(pin "2"
-			(uuid "54783453-8047-41b4-ab13-a17f29970c39")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -16088,96 +16059,6 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#FLG0110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mr-parts:KOA Speer SR732BTTDR200F")
-		(at 53.34 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "76621c68-4428-49b7-8e51-8acd1301a215")
-		(property "Reference" "R27"
-			(at 53.34 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.2mR"
-			(at 53.34 83.566 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 53.34 88.646 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
-			(at 53.34 90.932 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
-			(at 53.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "KOA Speer SR732BTTDR200F"
-			(at 53.34 93.472 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a58674b7-09ba-4e95-b869-980359b38e2d")
-		)
-		(pin "2"
-			(uuid "71d9f13d-7172-4f8b-9761-acbc82c76990")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -17208,6 +17089,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 34.29 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8880073a-abb9-40b9-9913-e4a855adf350")
+		(property "Reference" "#PWR040"
+			(at 34.29 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 34.29 176.784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 34.29 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "79998058-99fa-4fbb-bf7d-fc67597ae3c3")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 252.73 156.21 0)
 		(unit 1)
@@ -17454,7 +17412,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 85.09 96.52 0)
+		(at 76.2 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17464,7 +17422,7 @@
 		(dnp no)
 		(uuid "96c23439-1f39-4b50-956f-f661277f572b")
 		(property "Reference" "#PWR034"
-			(at 85.09 100.33 0)
+			(at 76.2 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17475,7 +17433,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 85.09 92.964 0)
+			(at 76.2 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17485,7 +17443,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 96.52 0)
+			(at 76.2 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17496,7 +17454,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 96.52 0)
+			(at 76.2 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17507,7 +17465,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 85.09 96.52 0)
+			(at 76.2 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21425,7 +21383,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 92.71 0)
+		(at 64.77 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21435,7 +21393,7 @@
 		(dnp no)
 		(uuid "de9fb4e3-5be0-4dbe-8323-9cd4d1c4097e")
 		(property "Reference" "#PWR036"
-			(at 73.66 99.06 0)
+			(at 64.77 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21446,7 +21404,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 96.266 0)
+			(at 64.77 96.266 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21456,7 +21414,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 92.71 0)
+			(at 64.77 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21467,7 +21425,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 92.71 0)
+			(at 64.77 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21478,7 +21436,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 92.71 0)
+			(at 64.77 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23315,7 +23273,7 @@
 		(dnp no)
 		(uuid "f92f21b3-0214-4915-9a7f-494bde4e444d")
 		(property "Reference" "MCU1"
-			(at 60.706 100.076 0)
+			(at 60.198 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
