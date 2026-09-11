@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-10T21:30:45")
+		(date "2026-09-10T21:41:03")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -6273,7 +6273,7 @@
 		(net
 			(code "2")
 			(name "/CAN_HIGH")
-			(class "ShipSide,Default")
+			(class "Default")
 			(node
 				(ref "CAN1")
 				(pin "7")
@@ -6296,7 +6296,7 @@
 		(net
 			(code "3")
 			(name "/CAN_LOW")
-			(class "ShipSide,Default")
+			(class "Default")
 			(node
 				(ref "CAN1")
 				(pin "6")
@@ -7467,7 +7467,7 @@
 		(net
 			(code "45")
 			(name "Net-(PTC1-Pad2)")
-			(class "ShipSide,Default")
+			(class "Default")
 			(node
 				(ref "PTC1")
 				(pin "2")
@@ -7487,7 +7487,7 @@
 		(net
 			(code "46")
 			(name "Net-(SD1-A)")
-			(class "ShipSide,Default")
+			(class "Default")
 			(node
 				(ref "PTC1")
 				(pin "1")
@@ -7508,21 +7508,6 @@
 		)
 		(net
 			(code "47")
-			(name "Net-(TB1-Pad1)")
-			(class "Default")
-			(node
-				(ref "TB1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "TB1")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "48")
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
@@ -7538,7 +7523,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "48")
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
@@ -7554,7 +7539,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "49")
 			(name "Net-(VR1-EN)")
 			(class "Default")
 			(node
@@ -7575,7 +7560,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "50")
 			(name "Net-(VR1-VCC)")
 			(class "Default")
 			(node
@@ -7591,7 +7576,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "51")
 			(name "Net-(VR1-VIN)")
 			(class "Default")
 			(node
@@ -7627,9 +7612,9 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "52")
 			(name "V_RAW")
-			(class "ShipSide,Default")
+			(class "Default")
 			(node
 				(ref "R25")
 				(pin "2")
@@ -7648,7 +7633,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "53")
 			(name "unconnected-(MCU1-IO12-Pad20)")
 			(class "Default")
 			(node
@@ -7659,7 +7644,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "54")
 			(name "unconnected-(MCU1-IO13-Pad21)")
 			(class "Default")
 			(node
@@ -7670,7 +7655,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "55")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -7681,7 +7666,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "56")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -7692,7 +7677,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "57")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -7703,7 +7688,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "58")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -7714,7 +7699,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "59")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -7725,7 +7710,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "60")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -7736,7 +7721,27 @@
 			)
 		)
 		(net
+			(code "61")
+			(name "unconnected-(TB1-Pad1)")
+			(class "Default")
+			(node
+				(ref "TB1")
+				(pin "1")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
 			(code "62")
+			(name "unconnected-(TB1-Pad2)")
+			(class "Default")
+			(node
+				(ref "TB1")
+				(pin "2")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "63")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -7747,7 +7752,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "64")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -7758,7 +7763,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "65")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -7769,7 +7774,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "66")
 			(name "unconnected-(VR1-PGOOD-Pad1)")
 			(class "Default")
 			(node
@@ -7780,7 +7785,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "67")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -7791,7 +7796,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "68")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
