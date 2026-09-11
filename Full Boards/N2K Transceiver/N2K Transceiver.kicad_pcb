@@ -54,7 +54,7 @@
 			(layer "dielectric 1"
 				(type "prepreg")
 				(thickness 0.1)
-				(material "FR4")
+				(material "S1000H")
 				(epsilon_r 4.2)
 				(loss_tangent 0.02)
 			)
@@ -65,7 +65,7 @@
 			(layer "dielectric 2"
 				(type "core")
 				(thickness 1.334981)
-				(material "FR4")
+				(material "S1000H")
 				(epsilon_r 4.2)
 				(loss_tangent 0.02)
 			)
@@ -76,7 +76,7 @@
 			(layer "dielectric 3"
 				(type "prepreg")
 				(thickness 0.1)
-				(material "FR4")
+				(material "S1000H")
 				(epsilon_r 4.2)
 				(loss_tangent 0.02)
 			)
@@ -24405,6 +24405,18 @@
 			)
 		)
 	)
+	(gr_text "N2K Bus\nPower Only!"
+		(at 119.5 86.2 0)
+		(layer "F.SilkS")
+		(uuid "1f6ba68d-af64-453a-bd78-cc9cc4e89c40")
+		(effects
+			(font
+				(size 1.4 1.4)
+				(thickness 0.2)
+			)
+			(justify top)
+		)
+	)
 	(gr_text "NMEA2000  LEN: 1"
 		(at 99.4 102.7 0)
 		(layer "F.SilkS")
@@ -24441,8 +24453,19 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Shield"
-		(at 90.5 86 90)
+	(gr_text "Not Isolated"
+		(at 68.2 83.5 90)
+		(layer "F.SilkS")
+		(uuid "b03044d3-d23f-4891-972d-0fe49d22e08e")
+		(effects
+			(font
+				(size 1.4 1.4)
+				(thickness 0.2)
+			)
+		)
+	)
+	(gr_text "Shield\n(n/c)"
+		(at 91.4 86 90)
 		(layer "F.SilkS")
 		(uuid "9617983c-93b0-4ce0-ab33-aef0db438af6")
 		(effects
@@ -24453,7 +24476,7 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "24V"
+	(gr_text "12V"
 		(at 95.5 87.2 90)
 		(layer "F.SilkS")
 		(uuid "2dc65c19-af02-4a5a-90e7-5aebd21261e7")
