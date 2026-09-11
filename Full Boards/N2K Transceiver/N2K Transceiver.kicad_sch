@@ -3411,157 +3411,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mr-parts:KOA Speer SR732BTTDR200F"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SR732BTTDR200F"
-				(at 0 -2.286 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "mr-stuff:KOA SR73"
-				(at 0 -7.366 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
-				(at 0 -9.652 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Part" "KOA Speer SR732BTTDR200F"
-				(at 0 -12.192 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "KOA Speer SR732BTTDR200F_0_1"
-				(rectangle
-					(start 2.54 -1.016)
-					(end -2.54 1.016)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "KOA Speer SR732BTTDR200F_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "mr-parts:Littelfuse nanoASMDCH020F"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3688,208 +3537,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "mr-parts:Panasonic EEH-ZU1V331V"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at -2.54 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "EEH-ZU1V331V"
-				(at 0 -4.318 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "mr-stuff:Panasonic EEH-ZU"
-				(at 0 -9.398 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" "https://na.industrial.panasonic.com/file-download/244145"
-				(at 0 -19.558 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C"
-				(at 0 -17.272 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Part" "Panasonic EEH-ZU1V331V"
-				(at 0 -13.716 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(symbol "Panasonic EEH-ZU1V331V_0_0"
-				(rectangle
-					(start -1.173 -1.532)
-					(end -0.284 -1.405)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -0.792 -1.913)
-					(end -0.665 -1.024)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 2.54) (xy 0.508 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 0) (xy 0.508 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.286 -2.54)
-					(mid 1.4851 0)
-					(end 2.286 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
 							)
 						)
 					)
@@ -7054,7 +6701,7 @@
 	)
 	(rectangle
 		(start 158.75 15.875)
-		(end 227.965 74.93)
+		(end 226.06 74.93)
 		(stroke
 			(width 0)
 			(type default)
@@ -7621,12 +7268,6 @@
 		(uuid "d74de94e-7cc0-4066-be9a-9eb1593fe714")
 	)
 	(junction
-		(at 175.26 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dbb5e91c-9b51-4cba-9c13-2e21ff04b400")
-	)
-	(junction
 		(at 57.15 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7872,16 +7513,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 46.99) (xy 172.72 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0880e7af-3f7a-4c45-86df-d277e57fdde4")
-	)
-	(wire
-		(pts
 			(xy 200.66 64.77) (xy 200.66 66.04)
 		)
 		(stroke
@@ -8099,16 +7730,6 @@
 			(type default)
 		)
 		(uuid "1c4b55c6-4c79-45c8-96f4-b092ecd0fee9")
-	)
-	(wire
-		(pts
-			(xy 163.83 46.99) (xy 163.83 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1dbf522f-f189-485c-af49-e6ff5625e56d")
 	)
 	(wire
 		(pts
@@ -8359,6 +7980,16 @@
 			(type default)
 		)
 		(uuid "2d5dcf0a-f5b6-453f-a7c1-7459d9fb27bc")
+	)
+	(wire
+		(pts
+			(xy 162.56 40.64) (xy 162.56 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ecfa6f8-4aea-44a2-a1e2-701cabac2989")
 	)
 	(wire
 		(pts
@@ -8632,16 +8263,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 40.64) (xy 163.83 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43f5a14a-6b23-41d6-9a54-f51b9d992985")
-	)
-	(wire
-		(pts
 			(xy 229.87 153.67) (xy 232.41 153.67)
 		)
 		(stroke
@@ -8832,7 +8453,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 39.37) (xy 175.26 46.99)
+			(xy 172.72 40.64) (xy 172.72 46.99)
 		)
 		(stroke
 			(width 0)
@@ -9012,16 +8633,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 46.99) (xy 175.26 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d5a1e72-9fa4-43bc-8d5b-1acd049f651d")
-	)
-	(wire
-		(pts
 			(xy 135.89 49.53) (xy 138.43 49.53)
 		)
 		(stroke
@@ -9059,16 +8670,6 @@
 			(type default)
 		)
 		(uuid "604d15e5-3ad8-42d1-9dfd-49b93b93fa92")
-	)
-	(wire
-		(pts
-			(xy 172.72 43.18) (xy 172.72 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60a6a069-fa47-4f4c-b052-fcd3382b3cad")
 	)
 	(wire
 		(pts
@@ -9442,16 +9043,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 46.99) (xy 179.07 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78d67fe3-d3e0-4376-95ee-b53c1d1bc756")
-	)
-	(wire
-		(pts
 			(xy 19.05 114.3) (xy 41.91 114.3)
 		)
 		(stroke
@@ -9712,7 +9303,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 43.18) (xy 172.72 43.18)
+			(xy 171.45 46.99) (xy 172.72 46.99)
 		)
 		(stroke
 			(width 0)
@@ -9779,6 +9370,16 @@
 			(type default)
 		)
 		(uuid "8a97621e-73aa-4326-a192-d88eeecc53c2")
+	)
+	(wire
+		(pts
+			(xy 172.72 46.99) (xy 179.07 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bbc502d-cc84-463f-90a4-54a14a32ec6a")
 	)
 	(wire
 		(pts
@@ -10522,6 +10123,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 46.99) (xy 163.83 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbfff9b6-8282-48dd-b477-e0458dea8b50")
+	)
+	(wire
+		(pts
 			(xy 172.72 46.99) (xy 172.72 48.26)
 		)
 		(stroke
@@ -11189,16 +10800,6 @@
 			(type default)
 		)
 		(uuid "fd5642dd-85d9-4151-889f-d83b452c25b0")
-	)
-	(wire
-		(pts
-			(xy 163.83 58.42) (xy 172.72 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdd4bd64-42b8-4375-9293-74f9ce25cfc2")
 	)
 	(wire
 		(pts
@@ -13185,100 +12786,6 @@
 		)
 	)
 	(symbol
-		(lib_id "mr-parts:Panasonic EEH-ZU1V331V")
-		(at 163.83 53.34 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "285c6264-7a92-4169-9b46-3b12b492f2f0")
-		(property "Reference" "C2"
-			(at 164.338 53.086 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "330uF"
-			(at 164.592 57.15 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Panasonic EEH-ZU"
-			(at 154.432 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://na.industrial.panasonic.com/file-download/244145"
-			(at 144.272 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C"
-			(at 146.558 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Panasonic EEH-ZU1V331V"
-			(at 150.114 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "1"
-			(uuid "089b99cf-cd60-4cb8-81c5-efd4e681dd0c")
-		)
-		(pin "2"
-			(uuid "5a1f23af-4bfa-47c2-95c5-9e5468b29f6d")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 236.22 140.97 90)
 		(unit 1)
@@ -13839,96 +13346,6 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mr-parts:KOA Speer SR732BTTDR200F")
-		(at 167.64 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "3d03fd4a-5afe-4716-bd69-302be1cf2730")
-		(property "Reference" "R4"
-			(at 167.64 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.2R"
-			(at 167.64 49.276 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "mr-stuff:KOA SR73"
-			(at 167.64 54.356 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
-			(at 167.64 56.642 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "200 mOhms ±1% 0.333W, 1/3W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"
-			(at 167.64 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "KOA Speer SR732BTTDR200F"
-			(at 167.64 59.182 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9042b272-6902-4a23-a690-0681ce5cc5db")
-		)
-		(pin "2"
-			(uuid "573cf61f-5838-4704-a633-bec1cf8b0675")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -15227,7 +14644,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 175.26 39.37 0)
+		(at 172.72 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15237,7 +14654,7 @@
 		(dnp no)
 		(uuid "6d31117d-c98f-49a3-84f1-3e33ff0379ad")
 		(property "Reference" "#FLG05"
-			(at 175.26 37.465 0)
+			(at 172.72 38.735 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15248,7 +14665,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 175.26 35.56 0)
+			(at 172.72 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15258,7 +14675,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 39.37 0)
+			(at 172.72 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15269,7 +14686,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 39.37 0)
+			(at 172.72 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15280,7 +14697,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 175.26 39.37 0)
+			(at 172.72 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19977,7 +19394,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 163.83 40.64 0)
+		(at 162.56 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19987,7 +19404,7 @@
 		(dnp no)
 		(uuid "dbb023b7-13cd-4601-a83f-d505269fb1e5")
 		(property "Reference" "#PWR045"
-			(at 163.83 44.45 0)
+			(at 162.56 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19998,7 +19415,7 @@
 			)
 		)
 		(property "Value" "V_RAW"
-			(at 163.83 36.83 0)
+			(at 162.56 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20008,7 +19425,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 40.64 0)
+			(at 162.56 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20019,7 +19436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 40.64 0)
+			(at 162.56 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20030,7 +19447,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 163.83 40.64 0)
+			(at 162.56 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21037,7 +20454,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:Vishay RCA08050000ZSEASR")
-		(at 167.64 43.18 0)
+		(at 167.64 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21047,7 +20464,7 @@
 		(dnp no)
 		(uuid "e8b1c737-1f96-48d7-90e8-9a87c78409f1")
 		(property "Reference" "R3"
-			(at 167.64 43.18 0)
+			(at 167.64 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21057,7 +20474,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 167.64 40.894 0)
+			(at 167.64 44.704 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21067,7 +20484,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Vishay RCA-SR e3"
-			(at 167.64 50.546 0)
+			(at 167.64 54.356 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21078,7 +20495,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
-			(at 167.64 52.832 0)
+			(at 167.64 56.642 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21089,7 +20506,7 @@
 			)
 		)
 		(property "Description" "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film"
-			(at 167.64 48.26 0)
+			(at 167.64 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21100,7 +20517,7 @@
 			)
 		)
 		(property "Part" "Vishay RCA08050000ZSEASR"
-			(at 167.64 55.372 0)
+			(at 167.64 59.182 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21111,7 +20528,7 @@
 			)
 		)
 		(property "Alternate" "Murata LQW21FT1R5M0HL"
-			(at 167.64 43.18 0)
+			(at 167.64 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21122,7 +20539,7 @@
 			)
 		)
 		(property "Note" "Placeholder if bench testing shows an inductor is needed for VHF noise"
-			(at 167.64 43.18 0)
+			(at 167.64 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
