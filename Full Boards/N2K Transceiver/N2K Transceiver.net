@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-11T17:40:40")
+		(date "2026-09-11T18:38:10")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -296,6 +296,126 @@
 		)
 		(comp
 			(ref "C5")
+			(value "100pF")
+			(footprint "mr-stuff:Kemet C0805X")
+			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
+			(description "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kemet C0805X101J5GACAUTO")
+				(field
+					(name "Footprint") "mr-stuff:Kemet C0805X")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
+				(field
+					(name "Description") "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kemet C0805X101J5GACAUTO")
+				(description "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kemet C0805X101J5GACAUTO")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5b2fd29d-8cd8-401c-ab3d-dff35f68ce58")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "100pF")
+			(footprint "mr-stuff:Kemet C0805X")
+			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
+			(description "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kemet C0805X101J5GACAUTO")
+				(field
+					(name "Footprint") "mr-stuff:Kemet C0805X")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
+				(field
+					(name "Description") "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kemet C0805X101J5GACAUTO")
+				(description "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kemet C0805X101J5GACAUTO")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "06be94e8-8ad8-4090-884c-3b822e86cc9c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C7")
 			(value "22uF")
 			(footprint "mr-stuff:Murata GCJ32ER71C")
 			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
@@ -355,7 +475,7 @@
 			)
 		)
 		(comp
-			(ref "C6")
+			(ref "C8")
 			(value "22uF")
 			(footprint "mr-stuff:Murata GCJ32ER71C")
 			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
@@ -415,7 +535,7 @@
 			)
 		)
 		(comp
-			(ref "C7")
+			(ref "C9")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
@@ -475,7 +595,7 @@
 			)
 		)
 		(comp
-			(ref "C8")
+			(ref "C10")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -535,7 +655,7 @@
 			)
 		)
 		(comp
-			(ref "C9")
+			(ref "C11")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
@@ -595,7 +715,7 @@
 			)
 		)
 		(comp
-			(ref "C10")
+			(ref "C12")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
@@ -655,7 +775,7 @@
 			)
 		)
 		(comp
-			(ref "C11")
+			(ref "C13")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
@@ -715,7 +835,7 @@
 			)
 		)
 		(comp
-			(ref "C12")
+			(ref "C14")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
@@ -775,7 +895,7 @@
 			)
 		)
 		(comp
-			(ref "C13")
+			(ref "C16")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
@@ -835,7 +955,7 @@
 			)
 		)
 		(comp
-			(ref "C14")
+			(ref "C17")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
@@ -5598,6 +5718,41 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "Kemet C0805X101J5GACAUTO")
+			(description "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
+			(docs "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100pF")
+				(field
+					(name "Footprint") "mr-stuff:Kemet C0805X")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
+				(field
+					(name "Description") "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
+				(field
+					(name "Part") "Kemet C0805X101J5GACAUTO")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Littelfuse nanoASMDCH020F")
 			(description "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 			(docs "https://www.littelfuse.com/assetdocs/littelfuse-ptc-auto-hightemp-smd-datasheet?assetguid=eb355431-c672-4f9e-aeb0-4d3e11a483c0")
@@ -6094,22 +6249,27 @@
 			)
 			(node
 				(ref "C10")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C13")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C14")
+				(ref "C11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C16")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C5")
-				(pin "1")
+				(ref "C17")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -6118,12 +6278,12 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C8")
-				(pin "2")
+				(ref "C7")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C9")
+				(ref "C8")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6665,7 +6825,7 @@
 			)
 			(node
 				(ref "C10")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6680,11 +6840,21 @@
 			)
 			(node
 				(ref "C13")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C17")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -6720,7 +6890,7 @@
 			)
 			(node
 				(ref "C8")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -7224,7 +7394,7 @@
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
-				(ref "C12")
+				(ref "C14")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7257,7 +7427,7 @@
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
-				(ref "C11")
+				(ref "C13")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7534,7 +7704,7 @@
 			(name "Net-(VR1-VCC)")
 			(class "Default")
 			(node
-				(ref "C7")
+				(ref "C9")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7565,8 +7735,13 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "R7")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -7592,7 +7767,7 @@
 			)
 			(node
 				(ref "R7")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
