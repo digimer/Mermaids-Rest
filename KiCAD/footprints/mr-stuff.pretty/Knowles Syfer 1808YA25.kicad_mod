@@ -1,0 +1,180 @@
+(footprint "Knowles Syfer 1808YA25"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "1808 unpolarised ceramic capacitor")
+	(tags "Capacitor")
+	(property "Reference" "C**"
+		(at 0 -1.9 0)
+		(layer "F.SilkS")
+		(uuid "cf6db2dc-74d0-4293-96e7-c1596e65c781")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "1808YA25"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6e8d9a4b-b047-45ea-bef6-3cac2850f244")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e11c422a-0915-4f5e-a18c-699d4f38fa65")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "1808 unpolarised ceramic capacitor"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a0788538-7a64-45f1-9f04-e2e8540ae535")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 0 -0.9)
+		(end 0 0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a64dc884-0ad5-4e5a-af2c-42fc7218b55b")
+	)
+	(fp_line
+		(start -2.785 -1.31)
+		(end 2.785 -1.31)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2c0250a7-2072-45e0-8188-923f8442e099")
+	)
+	(fp_line
+		(start -2.785 1.31)
+		(end -2.785 -1.31)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d2d9c2f9-01fa-40a6-9912-604f80d87bfd")
+	)
+	(fp_line
+		(start 2.785 -1.31)
+		(end 2.785 1.31)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ae9ca89d-1a8d-492b-989d-60cf25c712ad")
+	)
+	(fp_line
+		(start 2.785 1.31)
+		(end -2.785 1.31)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fc1e154f-921c-4837-af25-cf6840461f65")
+	)
+	(fp_line
+		(start -2.25 -1)
+		(end 2.25 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "94363e12-dacd-4471-97f3-b1e592643c06")
+	)
+	(fp_line
+		(start -2.25 1)
+		(end -2.25 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "184d4721-e7b3-4ad2-b8ac-7e5725b39a71")
+	)
+	(fp_line
+		(start 2.25 -1)
+		(end 2.25 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "82b4b01f-a3f1-43f3-84e1-451a3c22434d")
+	)
+	(fp_line
+		(start 2.25 1)
+		(end -2.25 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "42a947fa-2e90-43eb-ac3f-75b39556f4fa")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.1 0)
+		(layer "F.Fab")
+		(uuid "313d3fec-5b59-4e75-9340-a6137b736557")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.97 0)
+		(size 1.33 2.32)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f7b38d47-0a31-4a51-b5d9-2d7c803da1f7")
+	)
+	(pad "2" smd rect
+		(at 1.97 0)
+		(size 1.33 2.32)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "26566332-d331-4c52-8cf0-f8428fc22079")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Knowles Syfer 1808YA25 /1808YA250151KXTSY2.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
