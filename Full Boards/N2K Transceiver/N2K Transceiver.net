@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-10T21:41:03")
+		(date "2026-09-10T22:12:40")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -4590,28 +4590,28 @@
 		)
 		(comp
 			(ref "TVS2")
-			(value "PESD2CANFD54VT-QR")
-			(footprint "mr-stuff:Nexperia PESD2CANFD")
-			(datasheet "https://assets.nexperia.com/documents/data-sheet/PESD2CANFD54VT-Q.pdf")
-			(description "41V Clamp 5A (8/20s) Ip EsD Diode Surface Mount TO-236AB ,24V (Max) 41V .-55C ~ 150C (TA)")
+			(value "VCAN33A2-03SHE3A08")
+			(datasheet "https://www.vishay.com/docs/86323/vcan33a2-03s.pdf")
+			(description "56V Clamp 2.7A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
 			(fields
 				(field
-					(name "Part") "Nexperia PESD2CANFD54VT-QR")
+					(name "Part") "Vishay VCAN33A2-03SHE3A08")
 				(field
-					(name "Footprint") "mr-stuff:Nexperia PESD2CANFD")
+					(name "Footprint")
+				)
 				(field
-					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/PESD2CANFD54VT-Q.pdf")
+					(name "Datasheet") "https://www.vishay.com/docs/86323/vcan33a2-03s.pdf")
 				(field
-					(name "Description") "41V Clamp 5A (8/20s) Ip EsD Diode Surface Mount TO-236AB ,24V (Max) 41V .-55C ~ 150C (TA)")
+					(name "Description") "56V Clamp 2.7A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Nexperia PESD2CANFD54VT-QR")
-				(description "41V Clamp 5A (8/20s) Ip EsD Diode Surface Mount TO-236AB ,24V (Max) 41V .-55C ~ 150C (TA)")
+				(part "Vishay VCAN33A2-03SHE3A08")
+				(description "56V Clamp 2.7A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
 			)
 			(property
 				(name "Part")
-				(value "Nexperia PESD2CANFD54VT-QR")
+				(value "Vishay VCAN33A2-03SHE3A08")
 			)
 			(property
 				(name "Sheetname")
@@ -4625,7 +4625,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9f05936d-1a8d-461b-b6cf-18b5c005864b")
+			(tstamps "f03e329e-4406-4edd-8d3d-6560f090248a")
 			(units
 				(unit
 					(name "A")
@@ -5622,43 +5622,6 @@
 		)
 		(libpart
 			(lib "mr-parts")
-			(part "Nexperia PESD2CANFD54VT-QR")
-			(description "41V Clamp 5A (8/20s) Ip EsD Diode Surface Mount TO-236AB ,24V (Max) 41V .-55C ~ 150C (TA)")
-			(docs "https://assets.nexperia.com/documents/data-sheet/PESD2CANFD54VT-Q.pdf")
-			(fields
-				(field
-					(name "Reference") "TVS")
-				(field
-					(name "Value") "PESD2CANFD54VT-QR")
-				(field
-					(name "Footprint") "mr-stuff:Nexperia PESD2CANFD")
-				(field
-					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/PESD2CANFD54VT-Q.pdf")
-				(field
-					(name "Description") "41V Clamp 5A (8/20s) Ip EsD Diode Surface Mount TO-236AB ,24V (Max) 41V .-55C ~ 150C (TA)")
-				(field
-					(name "Part") "Nexperia PESD2CANFD54VT-QR")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "3")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
 			(part "Panasonic EEH-ZU")
 			(description "330 µF 35 V Aluminum - Polymer Capacitors Radial, Can - SMD 11mOhm 4000 Hrs @ 135°C")
 			(docs "https://na.industrial.panasonic.com/file-download/244145")
@@ -6048,6 +6011,44 @@
 				)
 				(pin
 					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Vishay VCAN33A2-03SHE3A08")
+			(description "56V Clamp 2.7A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			(docs "https://www.vishay.com/docs/86323/vcan33a2-03s.pdf")
+			(fields
+				(field
+					(name "Reference") "TVS")
+				(field
+					(name "Value") "VCAN33A2-03SHE3A08")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/86323/vcan33a2-03s.pdf")
+				(field
+					(name "Description") "56V Clamp 2.7A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+				(field
+					(name "Part") "Vishay VCAN33A2-03SHE3A08")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "3")
 					(name "")
 					(type "passive")
 				)
