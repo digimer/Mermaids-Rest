@@ -5589,6 +5589,387 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:TVS TPD2E2U06QDBZRQ1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TVS"
+				(at 0 6.096 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPD2E2U06QDBZRQ1"
+				(at 0.254 -6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:TI TPD2E2U06"
+				(at 0 -16.256 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1"
+				(at 0 -13.716 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TI TPD2E2U06QDBZRQ1"
+				(at -0.254 -11.684 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TVS TPD2E2U06QDBZRQ1_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -2.286 4.318)
+					(end 1.27 -4.318)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 3.81) (xy -2.794 3.048) (xy -1.778 3.048) (xy -2.286 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.286 2.54)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.54) (xy -6.35 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.032) (xy -2.794 1.27) (xy -1.778 1.27) (xy -2.286 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 3.81) (xy -2.794 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.032) (xy -2.794 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.762 4.318)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -1.27) (xy -1.27 -2.032) (xy -0.254 -2.032) (xy -0.762 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.762 -2.54)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -2.54) (xy -6.35 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -3.048) (xy -1.27 -3.81) (xy -0.254 -3.81) (xy -0.762 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.762 -4.318)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -4.318) (xy -0.762 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -3.048) (xy -1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 2.286 1.524) (xy 0.254 1.524) (xy 1.27 3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 3.556) (xy 0.254 3.556) (xy 0.254 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TVS TPD2E2U06QDBZRQ1_1_1"
+				(pin passive line
+					(at -8.89 2.54 0)
+					(length 2.54)
+					(name "IO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:Vishay RCA08050000ZSEASR"
 			(pin_numbers
 				(hide yes)
@@ -6921,8 +7302,8 @@
 		)
 	)
 	(rectangle
-		(start 176.53 78.74)
-		(end 262.255 125.095)
+		(start 189.23 78.74)
+		(end 274.955 125.095)
 		(stroke
 			(width 0)
 			(type default)
@@ -6945,8 +7326,8 @@
 		(uuid "11b59c1f-f4db-4d20-b5e0-a64ec198abcd")
 	)
 	(rectangle
-		(start 176.53 130.175)
-		(end 257.81 161.925)
+		(start 189.23 130.175)
+		(end 270.51 161.925)
 		(stroke
 			(width 0)
 			(type default)
@@ -6958,7 +7339,7 @@
 	)
 	(rectangle
 		(start 15.24 78.74)
-		(end 172.085 162.56)
+		(end 185.42 162.56)
 		(stroke
 			(width 0)
 			(type default)
@@ -7068,7 +7449,7 @@
 	)
 	(text "Status LEDs"
 		(exclude_from_sim no)
-		(at 182.626 129.032 0)
+		(at 195.326 129.032 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7099,7 +7480,7 @@
 	)
 	(text "I2C Address (Ax = Ex)\n+----+----+----++------+\n| E0 | E1 | E2 || Hex  |\n+----+----+----++------+\n|  0 |  0 |  0 || 0x50 |\n|  0 |  0 |  1 || 0x51 |\n|  0 |  1 |  0 || 0x52 |\n|  0 |  1 |  1 || 0x53 |\n|  1 |  0 |  0 || 0x54 |\n|  1 |  0 |  1 || 0x55 |\n|  1 |  1 |  0 || 0x56 |\n|  1 |  1 |  1 || 0x57 |\n+----+----+----++------+"
 		(exclude_from_sim no)
-		(at 235.204 81.28 0)
+		(at 247.904 81.28 0)
 		(effects
 			(font
 				(face "DejaVu Sans Mono")
@@ -7153,7 +7534,7 @@
 	)
 	(text "8KiB EEPROM - Redundant (at 0x55h and 0x57h)"
 		(exclude_from_sim no)
-		(at 201.422 77.216 0)
+		(at 214.122 77.216 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7162,10 +7543,16 @@
 		(uuid "fce5477e-7379-4a0b-a3fe-33524193efd5")
 	)
 	(junction
-		(at 194.31 85.09)
+		(at 207.01 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "012fff7f-3d2d-4e55-a86d-25b409d2e434")
+	)
+	(junction
+		(at 106.68 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03537231-add4-4825-93e8-abc0a0527692")
 	)
 	(junction
 		(at 41.91 93.98)
@@ -7210,7 +7597,7 @@
 		(uuid "1b4f0813-9cff-442a-8d66-b50c534c18af")
 	)
 	(junction
-		(at 162.56 144.78)
+		(at 175.26 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f674163-5b51-46ba-b7db-d1bd56ec463c")
@@ -7222,13 +7609,13 @@
 		(uuid "1faaaf0f-0e08-4096-8d90-177da0912f87")
 	)
 	(junction
-		(at 158.75 144.78)
+		(at 171.45 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "206bc4be-c620-4933-883f-7c4153b414be")
 	)
 	(junction
-		(at 227.33 107.95)
+		(at 240.03 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "209b64c2-8fb2-47e6-8692-611621253f05")
@@ -7240,7 +7627,13 @@
 		(uuid "2e246c0c-8022-4199-b6b4-d9a7832e8508")
 	)
 	(junction
-		(at 227.33 92.71)
+		(at 106.68 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e54207d-cd96-422d-be8b-4c8fbedc8df7")
+	)
+	(junction
+		(at 240.03 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e78ae4c-e599-4c2e-8d9f-3380ca00b1e2")
@@ -7258,7 +7651,7 @@
 		(uuid "2ffe2aa7-b71f-4559-91a8-8faab7e56fb3")
 	)
 	(junction
-		(at 135.89 109.22)
+		(at 148.59 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3578801c-a03a-4149-9e82-212919f8a84d")
@@ -7276,19 +7669,13 @@
 		(uuid "441051a4-d45a-4bbd-8b87-2316007d6ec9")
 	)
 	(junction
-		(at 119.38 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4483a59b-c9ec-43ae-bfc4-d1bffd874e62")
-	)
-	(junction
-		(at 194.31 107.95)
+		(at 207.01 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4725b710-151d-42cf-92ec-f6029f8fb3c4")
 	)
 	(junction
-		(at 213.36 140.97)
+		(at 226.06 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4af7fd29-2942-4dec-810a-c795d0fb915e")
@@ -7312,19 +7699,25 @@
 		(uuid "556fff9e-49f4-4452-8a77-95363f3cabb9")
 	)
 	(junction
-		(at 167.64 144.78)
+		(at 132.08 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5771c43a-6dd1-4bb6-ae78-a5a7a5673d56")
+	)
+	(junction
+		(at 180.34 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ac7a44d-5b84-43dd-b1d3-e9e52fced94c")
 	)
 	(junction
-		(at 194.31 154.94)
+		(at 207.01 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e6c960c-3646-4e45-ad12-0b9e18b31644")
 	)
 	(junction
-		(at 256.54 110.49)
+		(at 269.24 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60b82748-8c5f-4a30-8994-db30a73bdeaf")
@@ -7360,43 +7753,43 @@
 		(uuid "7a8b04d5-ca2b-4573-a9b7-4e2c72d63763")
 	)
 	(junction
-		(at 132.08 109.22)
+		(at 144.78 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8428fdf9-b714-4571-ad04-7306a709cb78")
 	)
 	(junction
-		(at 252.73 147.32)
+		(at 265.43 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84683b3c-b057-4bf6-a9a6-6e76d4a49a1f")
 	)
 	(junction
-		(at 227.33 115.57)
+		(at 240.03 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85ecfd7e-1192-49b8-999c-a864d2857efe")
 	)
 	(junction
-		(at 162.56 107.95)
+		(at 175.26 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ea57250-b3f0-47d6-808d-89466e162375")
 	)
 	(junction
-		(at 227.33 85.09)
+		(at 240.03 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93c23d86-5f17-4fc6-b4ae-31ec19e7cd51")
 	)
 	(junction
-		(at 213.36 147.32)
+		(at 226.06 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "946dbb49-ee57-4ab5-beaa-cccc12ad8cd8")
 	)
 	(junction
-		(at 252.73 140.97)
+		(at 265.43 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "947e6539-13db-4555-8dbf-26811da17e42")
@@ -7426,25 +7819,25 @@
 		(uuid "ab6ab25d-059a-4589-9e59-0502db236021")
 	)
 	(junction
-		(at 194.31 110.49)
+		(at 207.01 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "abee6f50-d49d-4fa1-a306-de5c8cb67d24")
 	)
 	(junction
-		(at 132.08 144.78)
+		(at 144.78 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac66195b-6f8b-4112-9932-a53d4f1c208f")
 	)
 	(junction
-		(at 252.73 153.67)
+		(at 265.43 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad1a2d8c-31ae-49a1-b990-cc962a2f70fd")
 	)
 	(junction
-		(at 198.12 92.71)
+		(at 210.82 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad756a5f-6525-4067-bf65-55b31432fcf5")
@@ -7468,7 +7861,7 @@
 		(uuid "b1378464-67a4-4487-b05b-eb0cf18946ad")
 	)
 	(junction
-		(at 198.12 115.57)
+		(at 210.82 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3c4666d-b475-4f9f-bf58-df21e5820a9a")
@@ -7516,12 +7909,6 @@
 		(uuid "cb1196d7-fe7c-41d0-9fba-263e884f5053")
 	)
 	(junction
-		(at 121.92 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cb78a7c5-48a4-40de-8213-fb533acd7015")
-	)
-	(junction
 		(at 31.75 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7546,10 +7933,16 @@
 		(uuid "d5bd29e6-3d88-4f85-a254-af63bfc786ff")
 	)
 	(junction
-		(at 125.73 144.78)
+		(at 138.43 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d74de94e-7cc0-4066-be9a-9eb1593fe714")
+	)
+	(junction
+		(at 134.62 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d83b6c95-b217-4249-957e-59b70b782e72")
 	)
 	(junction
 		(at 57.15 81.28)
@@ -7564,7 +7957,7 @@
 		(uuid "df5db1a8-5e29-4b9d-b69d-055517f549d4")
 	)
 	(junction
-		(at 213.36 154.94)
+		(at 226.06 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e24f6472-ea0a-4fcf-9aab-79f09d11d6db")
@@ -7632,7 +8025,7 @@
 		(uuid "a2ec0c15-a23e-43bf-aba1-29cb82842743")
 	)
 	(no_connect
-		(at 143.51 143.51)
+		(at 156.21 143.51)
 		(uuid "b4321d71-a439-40d4-907b-3d6b8765a7ef")
 	)
 	(no_connect
@@ -7644,7 +8037,7 @@
 		(uuid "e85a49bc-aa9a-46ce-842b-b3729f9a60e9")
 	)
 	(no_connect
-		(at 151.13 110.49)
+		(at 163.83 110.49)
 		(uuid "fb2de750-d5f0-4653-8456-4a6d5bcdcd26")
 	)
 	(no_connect
@@ -7663,7 +8056,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 110.49) (xy 256.54 110.49)
+			(xy 265.43 110.49) (xy 269.24 110.49)
 		)
 		(stroke
 			(width 0)
@@ -7673,7 +8066,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 143.51) (xy 148.59 154.94)
+			(xy 161.29 143.51) (xy 161.29 154.94)
 		)
 		(stroke
 			(width 0)
@@ -7713,7 +8106,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 85.09) (xy 198.12 85.09)
+			(xy 207.01 85.09) (xy 210.82 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7723,7 +8116,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 90.17) (xy 194.31 85.09)
+			(xy 207.01 90.17) (xy 207.01 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7733,7 +8126,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 116.84) (xy 256.54 110.49)
+			(xy 269.24 116.84) (xy 269.24 110.49)
 		)
 		(stroke
 			(width 0)
@@ -7743,7 +8136,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 147.32) (xy 193.04 147.32)
+			(xy 203.2 147.32) (xy 205.74 147.32)
 		)
 		(stroke
 			(width 0)
@@ -7763,7 +8156,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 147.32) (xy 242.57 147.32)
+			(xy 252.73 147.32) (xy 255.27 147.32)
 		)
 		(stroke
 			(width 0)
@@ -7813,6 +8206,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 114.3) (xy 106.68 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a24cc7b-1cbf-463a-b01b-47991ba451eb")
+	)
+	(wire
+		(pts
 			(xy 44.45 116.84) (xy 44.45 119.38)
 		)
 		(stroke
@@ -7833,7 +8236,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 85.09) (xy 189.23 86.36)
+			(xy 201.93 85.09) (xy 201.93 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7863,7 +8266,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 90.17) (xy 214.63 90.17)
+			(xy 226.06 90.17) (xy 227.33 90.17)
 		)
 		(stroke
 			(width 0)
@@ -7873,7 +8276,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 113.03) (xy 194.31 113.03)
+			(xy 210.82 113.03) (xy 207.01 113.03)
 		)
 		(stroke
 			(width 0)
@@ -7883,7 +8286,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 116.84) (xy 245.11 116.84)
+			(xy 255.27 116.84) (xy 257.81 116.84)
 		)
 		(stroke
 			(width 0)
@@ -7893,7 +8296,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 107.95) (xy 167.64 144.78)
+			(xy 180.34 107.95) (xy 180.34 144.78)
 		)
 		(stroke
 			(width 0)
@@ -7933,7 +8336,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 140.97) (xy 232.41 140.97)
+			(xy 242.57 140.97) (xy 245.11 140.97)
 		)
 		(stroke
 			(width 0)
@@ -7953,7 +8356,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 85.09) (xy 227.33 85.09)
+			(xy 226.06 85.09) (xy 240.03 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7963,7 +8366,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 156.21) (xy 252.73 153.67)
+			(xy 265.43 156.21) (xy 265.43 153.67)
 		)
 		(stroke
 			(width 0)
@@ -7973,7 +8376,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 143.51) (xy 158.75 144.78)
+			(xy 171.45 143.51) (xy 171.45 144.78)
 		)
 		(stroke
 			(width 0)
@@ -7983,7 +8386,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 107.95) (xy 153.67 110.49)
+			(xy 166.37 107.95) (xy 166.37 110.49)
 		)
 		(stroke
 			(width 0)
@@ -8033,6 +8436,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 95.25) (xy 134.62 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bba3dc3-ea94-4322-9f7b-7431d6ab023c")
+	)
+	(wire
+		(pts
 			(xy 189.23 38.1) (xy 189.23 35.56)
 		)
 		(stroke
@@ -8053,7 +8466,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 140.97) (xy 252.73 147.32)
+			(xy 265.43 140.97) (xy 265.43 147.32)
 		)
 		(stroke
 			(width 0)
@@ -8070,6 +8483,16 @@
 			(type default)
 		)
 		(uuid "1f4eae47-9ea6-4eeb-b5f8-d1a8328c89db")
+	)
+	(wire
+		(pts
+			(xy 106.68 124.46) (xy 134.62 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fe220f9-42e6-491c-b3bf-f516b818ce64")
 	)
 	(wire
 		(pts
@@ -8113,7 +8536,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 147.32) (xy 252.73 147.32)
+			(xy 262.89 147.32) (xy 265.43 147.32)
 		)
 		(stroke
 			(width 0)
@@ -8143,7 +8566,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 154.94) (xy 151.13 143.51)
+			(xy 163.83 154.94) (xy 163.83 143.51)
 		)
 		(stroke
 			(width 0)
@@ -8173,7 +8596,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 113.03) (xy 194.31 110.49)
+			(xy 207.01 113.03) (xy 207.01 110.49)
 		)
 		(stroke
 			(width 0)
@@ -8193,7 +8616,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 119.38) (xy 198.12 115.57)
+			(xy 210.82 119.38) (xy 210.82 115.57)
 		)
 		(stroke
 			(width 0)
@@ -8223,7 +8646,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 107.95) (xy 198.12 107.95)
+			(xy 207.01 107.95) (xy 210.82 107.95)
 		)
 		(stroke
 			(width 0)
@@ -8243,7 +8666,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 153.67) (xy 242.57 153.67)
+			(xy 252.73 153.67) (xy 255.27 153.67)
 		)
 		(stroke
 			(width 0)
@@ -8273,7 +8696,17 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 87.63) (xy 214.63 87.63)
+			(xy 106.68 118.11) (xy 106.68 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea04cb1-bf6b-4f6e-95f1-bc9cadf69203")
+	)
+	(wire
+		(pts
+			(xy 226.06 87.63) (xy 227.33 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8283,7 +8716,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 147.32) (xy 232.41 147.32)
+			(xy 242.57 147.32) (xy 245.11 147.32)
 		)
 		(stroke
 			(width 0)
@@ -8303,7 +8736,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 115.57) (xy 198.12 115.57)
+			(xy 199.39 115.57) (xy 210.82 115.57)
 		)
 		(stroke
 			(width 0)
@@ -8323,7 +8756,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 110.49) (xy 132.08 109.22)
+			(xy 144.78 110.49) (xy 144.78 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8333,7 +8766,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 107.95) (xy 140.97 110.49)
+			(xy 153.67 107.95) (xy 153.67 110.49)
 		)
 		(stroke
 			(width 0)
@@ -8343,7 +8776,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 110.49) (xy 198.12 110.49)
+			(xy 207.01 110.49) (xy 210.82 110.49)
 		)
 		(stroke
 			(width 0)
@@ -8373,7 +8806,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 116.84) (xy 256.54 116.84)
+			(xy 265.43 116.84) (xy 269.24 116.84)
 		)
 		(stroke
 			(width 0)
@@ -8403,7 +8836,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 113.03) (xy 214.63 113.03)
+			(xy 226.06 113.03) (xy 227.33 113.03)
 		)
 		(stroke
 			(width 0)
@@ -8413,7 +8846,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 115.57) (xy 227.33 115.57)
+			(xy 226.06 115.57) (xy 240.03 115.57)
 		)
 		(stroke
 			(width 0)
@@ -8443,7 +8876,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 152.4) (xy 119.38 152.4)
+			(xy 158.75 152.4) (xy 132.08 152.4)
 		)
 		(stroke
 			(width 0)
@@ -8523,7 +8956,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 154.94) (xy 213.36 154.94)
+			(xy 219.71 154.94) (xy 226.06 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8563,7 +8996,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 153.67) (xy 232.41 153.67)
+			(xy 242.57 153.67) (xy 245.11 153.67)
 		)
 		(stroke
 			(width 0)
@@ -8573,7 +9006,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 85.09) (xy 191.77 87.63)
+			(xy 204.47 85.09) (xy 204.47 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8583,7 +9016,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 144.78) (xy 125.73 146.05)
+			(xy 138.43 144.78) (xy 138.43 146.05)
 		)
 		(stroke
 			(width 0)
@@ -8593,7 +9026,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 143.51) (xy 153.67 146.05)
+			(xy 166.37 143.51) (xy 166.37 146.05)
 		)
 		(stroke
 			(width 0)
@@ -8623,23 +9056,13 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 140.97) (xy 252.73 140.97)
+			(xy 262.89 140.97) (xy 265.43 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "49ad3f93-cb9d-46e7-9eb6-973e47decb76")
-	)
-	(wire
-		(pts
-			(xy 119.38 114.3) (xy 119.38 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49b68e0c-9b0e-4e9a-8d1b-0c51369b5bbc")
 	)
 	(wire
 		(pts
@@ -8663,7 +9086,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 147.32) (xy 252.73 153.67)
+			(xy 265.43 147.32) (xy 265.43 153.67)
 		)
 		(stroke
 			(width 0)
@@ -8723,7 +9146,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 140.97) (xy 213.36 140.97)
+			(xy 223.52 140.97) (xy 226.06 140.97)
 		)
 		(stroke
 			(width 0)
@@ -8763,7 +9186,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 140.97) (xy 193.04 140.97)
+			(xy 203.2 140.97) (xy 205.74 140.97)
 		)
 		(stroke
 			(width 0)
@@ -8783,7 +9206,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 158.75) (xy 194.31 154.94)
+			(xy 207.01 158.75) (xy 207.01 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8793,7 +9216,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 87.63) (xy 198.12 87.63)
+			(xy 204.47 87.63) (xy 210.82 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8823,7 +9246,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 143.51) (xy 135.89 144.78)
+			(xy 148.59 143.51) (xy 148.59 144.78)
 		)
 		(stroke
 			(width 0)
@@ -8833,7 +9256,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 110.49) (xy 135.89 109.22)
+			(xy 148.59 110.49) (xy 148.59 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8853,7 +9276,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 144.78) (xy 132.08 144.78)
+			(xy 148.59 144.78) (xy 144.78 144.78)
 		)
 		(stroke
 			(width 0)
@@ -8863,7 +9286,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 100.33) (xy 143.51 110.49)
+			(xy 156.21 100.33) (xy 156.21 110.49)
 		)
 		(stroke
 			(width 0)
@@ -8883,7 +9306,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 152.4) (xy 194.31 152.4)
+			(xy 203.2 152.4) (xy 207.01 152.4)
 		)
 		(stroke
 			(width 0)
@@ -8913,6 +9336,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 107.95) (xy 132.08 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c0b3e57-fb01-4500-a2f5-44414f5a6e40")
+	)
+	(wire
+		(pts
 			(xy 19.05 100.33) (xy 19.05 110.49)
 		)
 		(stroke
@@ -8933,7 +9366,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 144.78) (xy 162.56 143.51)
+			(xy 175.26 144.78) (xy 175.26 143.51)
 		)
 		(stroke
 			(width 0)
@@ -8983,17 +9416,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 116.84) (xy 121.92 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60b4a55e-349e-42a4-a5ea-ccc867e563f4")
-	)
-	(wire
-		(pts
-			(xy 167.64 144.78) (xy 167.64 146.05)
+			(xy 180.34 144.78) (xy 180.34 146.05)
 		)
 		(stroke
 			(width 0)
@@ -9103,7 +9526,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 99.06) (xy 187.96 99.06)
+			(xy 196.85 99.06) (xy 200.66 99.06)
 		)
 		(stroke
 			(width 0)
@@ -9153,7 +9576,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 119.38) (xy 187.96 119.38)
+			(xy 201.93 119.38) (xy 200.66 119.38)
 		)
 		(stroke
 			(width 0)
@@ -9163,7 +9586,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 92.71) (xy 198.12 92.71)
+			(xy 199.39 92.71) (xy 210.82 92.71)
 		)
 		(stroke
 			(width 0)
@@ -9223,7 +9646,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 109.22) (xy 125.73 109.22)
+			(xy 144.78 109.22) (xy 138.43 109.22)
 		)
 		(stroke
 			(width 0)
@@ -9273,6 +9696,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 115.57) (xy 128.27 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71a7b058-c9e1-4b30-a4ef-92408a9ae3b0")
+	)
+	(wire
+		(pts
 			(xy 182.88 46.99) (xy 195.58 46.99)
 		)
 		(stroke
@@ -9280,16 +9713,6 @@
 			(type default)
 		)
 		(uuid "71fd4325-0607-4406-81a9-cf4506e8fd51")
-	)
-	(wire
-		(pts
-			(xy 87.63 116.84) (xy 121.92 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72c26405-d528-460e-a0ba-103214ece5d1")
 	)
 	(wire
 		(pts
@@ -9330,6 +9753,16 @@
 			(type default)
 		)
 		(uuid "75c5065d-3f94-4f5e-8e8f-bcf11f8b6143")
+	)
+	(wire
+		(pts
+			(xy 106.68 118.11) (xy 109.22 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75e639ae-388b-4afd-a86f-2cb276e81ff7")
 	)
 	(wire
 		(pts
@@ -9413,7 +9846,17 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 92.71) (xy 227.33 92.71)
+			(xy 106.68 113.03) (xy 106.68 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c077da1-c16e-4658-a6bf-056a6ca65605")
+	)
+	(wire
+		(pts
+			(xy 226.06 92.71) (xy 240.03 92.71)
 		)
 		(stroke
 			(width 0)
@@ -9423,7 +9866,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 140.97) (xy 203.2 140.97)
+			(xy 213.36 140.97) (xy 215.9 140.97)
 		)
 		(stroke
 			(width 0)
@@ -9453,7 +9896,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 85.09) (xy 191.77 85.09)
+			(xy 201.93 85.09) (xy 204.47 85.09)
 		)
 		(stroke
 			(width 0)
@@ -9513,7 +9956,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 110.49) (xy 214.63 110.49)
+			(xy 226.06 110.49) (xy 227.33 110.49)
 		)
 		(stroke
 			(width 0)
@@ -9523,7 +9966,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 153.67) (xy 252.73 153.67)
+			(xy 262.89 153.67) (xy 265.43 153.67)
 		)
 		(stroke
 			(width 0)
@@ -9603,7 +10046,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 96.52) (xy 198.12 92.71)
+			(xy 210.82 96.52) (xy 210.82 92.71)
 		)
 		(stroke
 			(width 0)
@@ -9613,7 +10056,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 92.71) (xy 148.59 92.71)
+			(xy 132.08 92.71) (xy 161.29 92.71)
 		)
 		(stroke
 			(width 0)
@@ -9623,7 +10066,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 140.97) (xy 213.36 147.32)
+			(xy 226.06 140.97) (xy 226.06 147.32)
 		)
 		(stroke
 			(width 0)
@@ -9693,7 +10136,17 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 154.94) (xy 196.85 154.94)
+			(xy 106.68 107.95) (xy 132.08 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8daa3c47-9120-4290-a5ba-a45fe85e71b2")
+	)
+	(wire
+		(pts
+			(xy 207.01 154.94) (xy 209.55 154.94)
 		)
 		(stroke
 			(width 0)
@@ -9733,7 +10186,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 119.38) (xy 187.96 121.92)
+			(xy 200.66 119.38) (xy 200.66 121.92)
 		)
 		(stroke
 			(width 0)
@@ -9803,7 +10256,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 109.22) (xy 135.89 100.33)
+			(xy 148.59 109.22) (xy 148.59 100.33)
 		)
 		(stroke
 			(width 0)
@@ -9823,7 +10276,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 144.78) (xy 162.56 144.78)
+			(xy 171.45 144.78) (xy 175.26 144.78)
 		)
 		(stroke
 			(width 0)
@@ -9863,17 +10316,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 114.3) (xy 119.38 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b4bacd9-5a1a-4d30-87b5-fd5bd3496195")
-	)
-	(wire
-		(pts
-			(xy 240.03 134.62) (xy 242.57 134.62)
+			(xy 252.73 134.62) (xy 255.27 134.62)
 		)
 		(stroke
 			(width 0)
@@ -9943,7 +10386,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 134.62) (xy 203.2 134.62)
+			(xy 213.36 134.62) (xy 215.9 134.62)
 		)
 		(stroke
 			(width 0)
@@ -9963,7 +10406,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 92.71) (xy 148.59 110.49)
+			(xy 161.29 92.71) (xy 161.29 110.49)
 		)
 		(stroke
 			(width 0)
@@ -10023,7 +10466,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 109.22) (xy 132.08 109.22)
+			(xy 148.59 109.22) (xy 144.78 109.22)
 		)
 		(stroke
 			(width 0)
@@ -10033,7 +10476,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 143.51) (xy 140.97 146.05)
+			(xy 153.67 143.51) (xy 153.67 146.05)
 		)
 		(stroke
 			(width 0)
@@ -10103,7 +10546,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 158.75) (xy 184.15 158.75)
+			(xy 194.31 158.75) (xy 196.85 158.75)
 		)
 		(stroke
 			(width 0)
@@ -10143,7 +10586,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 109.22) (xy 125.73 144.78)
+			(xy 138.43 109.22) (xy 138.43 144.78)
 		)
 		(stroke
 			(width 0)
@@ -10183,7 +10626,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 147.32) (xy 213.36 147.32)
+			(xy 223.52 147.32) (xy 226.06 147.32)
 		)
 		(stroke
 			(width 0)
@@ -10253,7 +10696,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 144.78) (xy 125.73 144.78)
+			(xy 144.78 144.78) (xy 138.43 144.78)
 		)
 		(stroke
 			(width 0)
@@ -10263,7 +10706,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 134.62) (xy 252.73 134.62)
+			(xy 262.89 134.62) (xy 265.43 134.62)
 		)
 		(stroke
 			(width 0)
@@ -10303,7 +10746,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 95.25) (xy 121.92 95.25)
+			(xy 158.75 95.25) (xy 134.62 95.25)
 		)
 		(stroke
 			(width 0)
@@ -10313,23 +10756,13 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 90.17) (xy 194.31 90.17)
+			(xy 210.82 90.17) (xy 207.01 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bcdc2c44-ca40-4b92-8836-0a1f434d61e7")
-	)
-	(wire
-		(pts
-			(xy 121.92 95.25) (xy 121.92 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd171b34-449d-45b9-9a5d-798d502327c2")
 	)
 	(wire
 		(pts
@@ -10353,7 +10786,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 134.62) (xy 252.73 140.97)
+			(xy 265.43 134.62) (xy 265.43 140.97)
 		)
 		(stroke
 			(width 0)
@@ -10373,7 +10806,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 107.95) (xy 162.56 107.95)
+			(xy 171.45 107.95) (xy 175.26 107.95)
 		)
 		(stroke
 			(width 0)
@@ -10383,7 +10816,17 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 154.94) (xy 121.92 154.94)
+			(xy 106.68 113.03) (xy 109.22 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c47e4169-4cfd-48a5-87f7-c59e5e930379")
+	)
+	(wire
+		(pts
+			(xy 161.29 154.94) (xy 134.62 154.94)
 		)
 		(stroke
 			(width 0)
@@ -10393,7 +10836,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 110.49) (xy 158.75 107.95)
+			(xy 171.45 110.49) (xy 171.45 107.95)
 		)
 		(stroke
 			(width 0)
@@ -10433,7 +10876,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 134.62) (xy 232.41 134.62)
+			(xy 242.57 134.62) (xy 245.11 134.62)
 		)
 		(stroke
 			(width 0)
@@ -10443,7 +10886,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 110.49) (xy 162.56 107.95)
+			(xy 175.26 110.49) (xy 175.26 107.95)
 		)
 		(stroke
 			(width 0)
@@ -10453,7 +10896,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 134.62) (xy 213.36 140.97)
+			(xy 226.06 134.62) (xy 226.06 140.97)
 		)
 		(stroke
 			(width 0)
@@ -10523,7 +10966,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 110.49) (xy 245.11 110.49)
+			(xy 255.27 110.49) (xy 257.81 110.49)
 		)
 		(stroke
 			(width 0)
@@ -10543,7 +10986,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 152.4) (xy 194.31 154.94)
+			(xy 207.01 152.4) (xy 207.01 154.94)
 		)
 		(stroke
 			(width 0)
@@ -10573,13 +11016,23 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 134.62) (xy 213.36 134.62)
+			(xy 223.52 134.62) (xy 226.06 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d16624c3-80ea-4578-9fd2-a8102f81ecce")
+	)
+	(wire
+		(pts
+			(xy 87.63 116.84) (xy 106.68 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2f94719-a103-44d3-974b-884edae1f8b2")
 	)
 	(wire
 		(pts
@@ -10603,7 +11056,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 156.21) (xy 213.36 154.94)
+			(xy 226.06 156.21) (xy 226.06 154.94)
 		)
 		(stroke
 			(width 0)
@@ -10653,7 +11106,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 158.75) (xy 194.31 158.75)
+			(xy 204.47 158.75) (xy 207.01 158.75)
 		)
 		(stroke
 			(width 0)
@@ -10703,7 +11156,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 144.78) (xy 167.64 144.78)
+			(xy 175.26 144.78) (xy 180.34 144.78)
 		)
 		(stroke
 			(width 0)
@@ -10723,7 +11176,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 119.38) (xy 198.12 119.38)
+			(xy 209.55 119.38) (xy 210.82 119.38)
 		)
 		(stroke
 			(width 0)
@@ -10733,7 +11186,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 107.95) (xy 227.33 107.95)
+			(xy 226.06 107.95) (xy 240.03 107.95)
 		)
 		(stroke
 			(width 0)
@@ -10743,7 +11196,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 96.52) (xy 198.12 96.52)
+			(xy 209.55 96.52) (xy 210.82 96.52)
 		)
 		(stroke
 			(width 0)
@@ -10753,7 +11206,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 143.51) (xy 146.05 152.4)
+			(xy 158.75 143.51) (xy 158.75 152.4)
 		)
 		(stroke
 			(width 0)
@@ -10763,7 +11216,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 143.51) (xy 132.08 144.78)
+			(xy 144.78 143.51) (xy 144.78 144.78)
 		)
 		(stroke
 			(width 0)
@@ -10773,7 +11226,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 121.92) (xy 184.15 121.92)
+			(xy 200.66 121.92) (xy 196.85 121.92)
 		)
 		(stroke
 			(width 0)
@@ -10823,7 +11276,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 96.52) (xy 187.96 96.52)
+			(xy 201.93 96.52) (xy 200.66 96.52)
 		)
 		(stroke
 			(width 0)
@@ -10843,7 +11296,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 96.52) (xy 187.96 99.06)
+			(xy 200.66 96.52) (xy 200.66 99.06)
 		)
 		(stroke
 			(width 0)
@@ -10883,6 +11336,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 124.46) (xy 134.62 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e352b568-91e2-4ee8-8ff8-84fd64e4c7ee")
+	)
+	(wire
+		(pts
 			(xy 138.43 57.15) (xy 135.89 57.15)
 		)
 		(stroke
@@ -10903,6 +11366,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 116.84) (xy 106.68 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4216926-cf42-4253-921e-0777e57b8d5b")
+	)
+	(wire
+		(pts
 			(xy 215.9 55.88) (xy 215.9 57.15)
 		)
 		(stroke
@@ -10913,13 +11386,23 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 92.71) (xy 119.38 114.3)
+			(xy 132.08 92.71) (xy 132.08 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e544aecf-82a6-4b4c-bdda-2193ef298e1f")
+	)
+	(wire
+		(pts
+			(xy 87.63 114.3) (xy 106.68 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e632613f-4121-4eee-958b-7b126f5136e9")
 	)
 	(wire
 		(pts
@@ -10933,7 +11416,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 154.94) (xy 158.75 144.78)
+			(xy 171.45 154.94) (xy 171.45 144.78)
 		)
 		(stroke
 			(width 0)
@@ -10993,7 +11476,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 147.32) (xy 213.36 154.94)
+			(xy 226.06 147.32) (xy 226.06 154.94)
 		)
 		(stroke
 			(width 0)
@@ -11003,7 +11486,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 107.95) (xy 167.64 107.95)
+			(xy 175.26 107.95) (xy 180.34 107.95)
 		)
 		(stroke
 			(width 0)
@@ -11023,7 +11506,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 147.32) (xy 203.2 147.32)
+			(xy 213.36 147.32) (xy 215.9 147.32)
 		)
 		(stroke
 			(width 0)
@@ -11033,7 +11516,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 134.62) (xy 193.04 134.62)
+			(xy 203.2 134.62) (xy 205.74 134.62)
 		)
 		(stroke
 			(width 0)
@@ -11043,7 +11526,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 110.49) (xy 146.05 95.25)
+			(xy 158.75 110.49) (xy 158.75 95.25)
 		)
 		(stroke
 			(width 0)
@@ -11103,7 +11586,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 110.49) (xy 194.31 107.95)
+			(xy 207.01 110.49) (xy 207.01 107.95)
 		)
 		(stroke
 			(width 0)
@@ -11153,7 +11636,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 140.97) (xy 242.57 140.97)
+			(xy 252.73 140.97) (xy 255.27 140.97)
 		)
 		(stroke
 			(width 0)
@@ -11252,7 +11735,7 @@
 		(uuid "25cba388-38fc-4b1c-aded-cd3e11577419")
 	)
 	(label "I2C_SDA"
-		(at 214.63 90.17 0)
+		(at 227.33 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11272,7 +11755,7 @@
 		(uuid "29ea380c-09e3-4119-8b5f-2e72e9750e1f")
 	)
 	(label "I2C_SCL"
-		(at 214.63 87.63 0)
+		(at 227.33 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11332,7 +11815,7 @@
 		(uuid "41fd7ad4-7134-4b1f-afaa-b8cd15133259")
 	)
 	(label "LED_ENABLE"
-		(at 190.5 152.4 180)
+		(at 203.2 152.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11352,7 +11835,7 @@
 		(uuid "4cdd331b-2929-4e3d-819d-d2b167cd9092")
 	)
 	(label "VBUS"
-		(at 140.97 146.05 270)
+		(at 153.67 146.05 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11382,7 +11865,7 @@
 		(uuid "52662abb-7e14-49f3-bc10-9b294fa0a9ed")
 	)
 	(label "VBUS"
-		(at 140.97 107.95 90)
+		(at 153.67 107.95 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11392,7 +11875,7 @@
 		(uuid "54eb161a-21e0-4590-aeb0-5b795bad0d71")
 	)
 	(label "I2C_SDA"
-		(at 242.57 116.84 180)
+		(at 255.27 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11402,7 +11885,7 @@
 		(uuid "5cd3f61d-0ffb-4101-812e-15e6b4ca33ca")
 	)
 	(label "N2K_TX_LED"
-		(at 229.87 147.32 180)
+		(at 242.57 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11422,7 +11905,7 @@
 		(uuid "63fa675d-f8b5-4a1c-907d-0db4ab7e6495")
 	)
 	(label "N2K_RX_LED"
-		(at 229.87 153.67 180)
+		(at 242.57 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11442,7 +11925,7 @@
 		(uuid "654d59ea-b063-472e-9d90-a248af11262a")
 	)
 	(label "WIFI_RX_LED"
-		(at 229.87 140.97 180)
+		(at 242.57 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11462,7 +11945,7 @@
 		(uuid "7741d141-6761-4320-9cab-ef9156687bae")
 	)
 	(label "VBUS"
-		(at 153.67 146.05 270)
+		(at 166.37 146.05 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11472,7 +11955,7 @@
 		(uuid "8083cce8-4e56-4f2b-be7a-3bf4e577c7d6")
 	)
 	(label "POWER_LED"
-		(at 190.5 134.62 180)
+		(at 203.2 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11492,7 +11975,7 @@
 		(uuid "8acb79d8-0970-418b-8acd-fbb99832ac6a")
 	)
 	(label "ROM2_WP"
-		(at 186.69 115.57 180)
+		(at 199.39 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11502,7 +11985,7 @@
 		(uuid "9ab691ee-bc7b-4ca7-95b1-19239dfd6434")
 	)
 	(label "I2C_SDA"
-		(at 214.63 113.03 0)
+		(at 227.33 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11522,7 +12005,7 @@
 		(uuid "9c0a78d8-4dae-4c4c-a83a-aacc260d552f")
 	)
 	(label "I2C_SCL"
-		(at 214.63 110.49 0)
+		(at 227.33 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11532,7 +12015,7 @@
 		(uuid "9c135698-26a2-4c26-860a-e9af84fe9e61")
 	)
 	(label "WIFI_UP_LED"
-		(at 190.5 140.97 180)
+		(at 203.2 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11542,7 +12025,7 @@
 		(uuid "a7ad4cc6-fada-4db6-81db-656eaf64d991")
 	)
 	(label "ROM1_WP"
-		(at 186.69 92.71 180)
+		(at 199.39 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11632,7 +12115,7 @@
 		(uuid "e0b09aaa-ee39-4ca7-88bf-2e4f23e375de")
 	)
 	(label "I2C_SCL"
-		(at 242.57 110.49 180)
+		(at 255.27 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11652,7 +12135,7 @@
 		(uuid "e3b7cbcc-eb6b-42d3-910f-f8754caf35e8")
 	)
 	(label "WIFI_TX_LED"
-		(at 229.87 134.62 180)
+		(at 242.57 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11672,7 +12155,7 @@
 		(uuid "edaaa495-64bd-4672-8143-0dfa61068a02")
 	)
 	(label "VBUS"
-		(at 153.67 107.95 90)
+		(at 166.37 107.95 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11682,7 +12165,7 @@
 		(uuid "f6e9d9a1-37a0-4d09-bfbf-4ce04d2a20de")
 	)
 	(label "SRV_UP_LED"
-		(at 190.5 147.32 180)
+		(at 203.2 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12051,7 +12534,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 193.04 96.52 90)
+		(at 205.74 96.52 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12061,7 +12544,7 @@
 		(dnp no)
 		(uuid "081f5d78-f072-4a32-9d56-92ad4607c52d")
 		(property "Reference" "R17"
-			(at 194.818 96.52 90)
+			(at 207.518 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12072,7 +12555,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 195.58 94.488 90)
+			(at 208.28 94.488 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12083,7 +12566,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 193.04 98.298 90)
+			(at 205.74 98.298 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12094,7 +12577,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 193.04 96.52 0)
+			(at 205.74 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12105,7 +12588,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 193.04 96.52 0)
+			(at 205.74 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12116,7 +12599,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD10K0"
-			(at 193.04 96.52 90)
+			(at 205.74 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12404,7 +12887,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.64 146.05 0)
+		(at 180.34 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12414,7 +12897,7 @@
 		(dnp no)
 		(uuid "0c550dfe-562c-480a-84d4-6d973003eb48")
 		(property "Reference" "#PWR062"
-			(at 167.64 152.4 0)
+			(at 180.34 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12425,7 +12908,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 149.606 0)
+			(at 180.34 149.606 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12435,7 +12918,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 146.05 0)
+			(at 180.34 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12446,7 +12929,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 146.05 0)
+			(at 180.34 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12457,7 +12940,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 146.05 0)
+			(at 180.34 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12634,7 +13117,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:STM_M24C64-RMN6P")
-		(at 205.74 111.76 0)
+		(at 218.44 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12644,7 +13127,7 @@
 		(dnp no)
 		(uuid "15fdc486-8baf-4d63-9043-6af2f710da01")
 		(property "Reference" "ROM2"
-			(at 205.74 104.14 0)
+			(at 218.44 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12654,7 +13137,7 @@
 			)
 		)
 		(property "Value" "M24C64"
-			(at 205.74 119.38 0)
+			(at 218.44 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12664,7 +13147,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:STM M24C64-RMN6P"
-			(at 205.74 127 0)
+			(at 218.44 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12676,7 +13159,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf"
-			(at 205.74 128.778 0)
+			(at 218.44 128.778 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12687,7 +13170,7 @@
 			)
 		)
 		(property "Description" "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC"
-			(at 205.74 124.206 0)
+			(at 218.44 124.206 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12698,7 +13181,7 @@
 			)
 		)
 		(property "Part" "STM M24C64-RMN6P"
-			(at 205.74 121.92 0)
+			(at 218.44 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12820,7 +13303,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 236.22 153.67 90)
+		(at 248.92 153.67 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12830,7 +13313,7 @@
 		(dnp no)
 		(uuid "1a580783-2340-4d8a-9972-9b139d97943b")
 		(property "Reference" "R28"
-			(at 236.22 153.67 90)
+			(at 248.92 153.67 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12840,7 +13323,7 @@
 			)
 		)
 		(property "Value" "681R"
-			(at 236.22 151.384 90)
+			(at 248.92 151.384 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12850,7 +13333,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 236.22 155.448 90)
+			(at 248.92 155.448 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12861,7 +13344,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 236.22 153.67 0)
+			(at 248.92 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12872,7 +13355,7 @@
 			)
 		)
 		(property "Description" "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 236.22 153.67 0)
+			(at 248.92 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12883,7 +13366,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD681R"
-			(at 236.22 153.67 90)
+			(at 248.92 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12894,7 +13377,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 236.22 153.67 90)
+			(at 248.92 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12997,7 +13480,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:STM_M24C64-RMN6P")
-		(at 205.74 88.9 0)
+		(at 218.44 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13007,7 +13490,7 @@
 		(dnp no)
 		(uuid "1c1b80ea-2d14-4b63-b2d8-69ffde4d91d8")
 		(property "Reference" "ROM1"
-			(at 205.74 81.28 0)
+			(at 218.44 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13017,7 +13500,7 @@
 			)
 		)
 		(property "Value" "M24C64"
-			(at 205.74 96.52 0)
+			(at 218.44 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13027,7 +13510,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:STM M24C64-RMN6P"
-			(at 205.74 104.14 0)
+			(at 218.44 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13039,7 +13522,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf"
-			(at 205.74 105.918 0)
+			(at 218.44 105.918 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13050,7 +13533,7 @@
 			)
 		)
 		(property "Description" "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC"
-			(at 205.74 101.346 0)
+			(at 218.44 101.346 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13061,7 +13544,7 @@
 			)
 		)
 		(property "Part" "STM M24C64-RMN6P"
-			(at 205.74 99.06 0)
+			(at 218.44 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13198,7 +13681,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 196.85 147.32 90)
+		(at 209.55 147.32 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13208,7 +13691,7 @@
 		(dnp no)
 		(uuid "262e8bde-2e88-4708-ae5a-2a23a2002a3c")
 		(property "Reference" "R23"
-			(at 196.85 147.32 90)
+			(at 209.55 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13218,7 +13701,7 @@
 			)
 		)
 		(property "Value" "681R"
-			(at 196.85 145.034 90)
+			(at 209.55 145.034 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13228,7 +13711,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 196.85 149.098 90)
+			(at 209.55 149.098 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13239,7 +13722,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 196.85 147.32 0)
+			(at 209.55 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13250,7 +13733,7 @@
 			)
 		)
 		(property "Description" "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 196.85 147.32 0)
+			(at 209.55 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13261,7 +13744,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD681R"
-			(at 196.85 147.32 90)
+			(at 209.55 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13272,7 +13755,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 196.85 147.32 90)
+			(at 209.55 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13299,7 +13782,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 194.31 107.95 0)
+		(at 207.01 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13309,7 +13792,7 @@
 		(dnp no)
 		(uuid "2754ea73-067b-4a00-b603-47c39c13c6b3")
 		(property "Reference" "#PWR0218"
-			(at 194.31 111.76 0)
+			(at 207.01 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13320,7 +13803,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 194.31 104.394 0)
+			(at 207.01 104.394 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13330,7 +13813,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 107.95 0)
+			(at 207.01 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13341,7 +13824,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 107.95 0)
+			(at 207.01 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13352,7 +13835,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 194.31 107.95 0)
+			(at 207.01 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13376,7 +13859,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 236.22 140.97 90)
+		(at 248.92 140.97 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13386,7 +13869,7 @@
 		(dnp no)
 		(uuid "2b8b14b6-359c-426b-b30a-0208c5235ed0")
 		(property "Reference" "R26"
-			(at 236.22 140.97 90)
+			(at 248.92 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13396,7 +13879,7 @@
 			)
 		)
 		(property "Value" "681R"
-			(at 236.22 138.684 90)
+			(at 248.92 138.684 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13406,7 +13889,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 236.22 142.748 90)
+			(at 248.92 142.748 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13417,7 +13900,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 236.22 140.97 0)
+			(at 248.92 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13428,7 +13911,7 @@
 			)
 		)
 		(property "Description" "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 236.22 140.97 0)
+			(at 248.92 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13439,7 +13922,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD681R"
-			(at 236.22 140.97 90)
+			(at 248.92 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13450,7 +13933,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 236.22 140.97 90)
+			(at 248.92 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14112,7 +14595,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 193.04 119.38 90)
+		(at 205.74 119.38 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14122,7 +14605,7 @@
 		(dnp no)
 		(uuid "42b54fef-0d90-4ed5-99e1-faab70e186ed")
 		(property "Reference" "R18"
-			(at 194.818 119.38 90)
+			(at 207.518 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14133,7 +14616,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 195.58 117.348 90)
+			(at 208.28 117.348 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14144,7 +14627,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 193.04 121.158 90)
+			(at 205.74 121.158 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14155,7 +14638,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 193.04 119.38 0)
+			(at 205.74 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14166,7 +14649,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 193.04 119.38 0)
+			(at 205.74 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14177,7 +14660,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD10K0"
-			(at 193.04 119.38 90)
+			(at 205.74 119.38 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14204,7 +14687,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 189.23 86.36 0)
+		(at 201.93 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14214,7 +14697,7 @@
 		(dnp no)
 		(uuid "451a34c8-5500-4fa1-bc71-95fa59a00567")
 		(property "Reference" "#PWR0220"
-			(at 189.23 92.71 0)
+			(at 201.93 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14225,7 +14708,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 90.17 0)
+			(at 201.93 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14235,7 +14718,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 86.36 0)
+			(at 201.93 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14246,7 +14729,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 86.36 0)
+			(at 201.93 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14257,7 +14740,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 189.23 86.36 0)
+			(at 201.93 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14281,7 +14764,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 227.33 111.76 180)
+		(at 240.03 111.76 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14291,7 +14774,7 @@
 		(dnp no)
 		(uuid "48e424da-36d0-4220-9dab-e34e7355e1fe")
 		(property "Reference" "C17"
-			(at 231.648 109.474 0)
+			(at 244.348 109.474 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14302,7 +14785,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 233.172 114.3 0)
+			(at 245.872 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14313,7 +14796,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
-			(at 226.3648 107.95 0)
+			(at 239.0648 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14324,7 +14807,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf"
-			(at 227.33 111.76 0)
+			(at 240.03 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14335,7 +14818,7 @@
 			)
 		)
 		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 227.33 111.76 0)
+			(at 240.03 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14346,7 +14829,7 @@
 			)
 		)
 		(property "Part" "Kyocera 08051C104K4Z2A"
-			(at 227.33 111.76 90)
+			(at 240.03 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14485,7 +14968,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_MEC_5G")
-		(at 201.93 154.94 0)
+		(at 214.63 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14495,7 +14978,7 @@
 		(dnp no)
 		(uuid "549ecda0-75e1-4deb-a30c-c9c7162bb27f")
 		(property "Reference" "SW3"
-			(at 201.93 150.622 0)
+			(at 214.63 150.622 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14505,7 +14988,7 @@
 			)
 		)
 		(property "Value" "SW_MEC_5G"
-			(at 201.93 149.86 0)
+			(at 214.63 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14516,7 +14999,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67"
-			(at 201.93 149.86 0)
+			(at 214.63 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14527,7 +15010,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf"
-			(at 201.93 149.86 0)
+			(at 214.63 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14538,7 +15021,7 @@
 			)
 		)
 		(property "Description" "Tactile Switch SPST-NO Top Actuated Through Hole"
-			(at 201.93 154.94 0)
+			(at 214.63 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14549,7 +15032,7 @@
 			)
 		)
 		(property "Part" "Same Sky TS03-66-50-BK-160-LCR-D-67"
-			(at 201.93 154.94 0)
+			(at 214.63 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15087,7 +15570,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 236.22 147.32 90)
+		(at 248.92 147.32 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15097,7 +15580,7 @@
 		(dnp no)
 		(uuid "684b1b11-82fd-47ff-b8db-10b95f737972")
 		(property "Reference" "R27"
-			(at 236.22 147.32 90)
+			(at 248.92 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15107,7 +15590,7 @@
 			)
 		)
 		(property "Value" "681R"
-			(at 236.22 145.034 90)
+			(at 248.92 145.034 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15117,7 +15600,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 236.22 149.098 90)
+			(at 248.92 149.098 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15128,7 +15611,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 236.22 147.32 0)
+			(at 248.92 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15139,7 +15622,7 @@
 			)
 		)
 		(property "Description" "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 236.22 147.32 0)
+			(at 248.92 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15150,7 +15633,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD681R"
-			(at 236.22 147.32 90)
+			(at 248.92 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15161,7 +15644,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 236.22 147.32 90)
+			(at 248.92 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15353,7 +15836,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.73 146.05 0)
+		(at 138.43 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15363,7 +15846,7 @@
 		(dnp no)
 		(uuid "6b59501b-7df1-4415-8491-bd37fab217bf")
 		(property "Reference" "#PWR066"
-			(at 125.73 152.4 0)
+			(at 138.43 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15374,7 +15857,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.73 149.606 0)
+			(at 138.43 149.606 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15384,7 +15867,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 146.05 0)
+			(at 138.43 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15395,7 +15878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 146.05 0)
+			(at 138.43 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15406,7 +15889,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 146.05 0)
+			(at 138.43 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15507,7 +15990,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 154.94 154.94 90)
+		(at 167.64 154.94 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15517,7 +16000,7 @@
 		(dnp no)
 		(uuid "6f7ea1ad-c0ab-4116-b30b-ac372621228f")
 		(property "Reference" "R16"
-			(at 156.972 154.94 90)
+			(at 169.672 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15528,7 +16011,7 @@
 			)
 		)
 		(property "Value" "5.11kR"
-			(at 158.242 157.226 90)
+			(at 170.942 157.226 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15539,7 +16022,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 154.94 156.718 90)
+			(at 167.64 156.718 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15550,7 +16033,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 154.94 154.94 0)
+			(at 167.64 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15561,7 +16044,7 @@
 			)
 		)
 		(property "Description" "5.11 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 154.94 154.94 0)
+			(at 167.64 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15572,7 +16055,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD5K11"
-			(at 154.94 154.94 90)
+			(at 167.64 154.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15752,8 +16235,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 184.15 121.92 0)
+		(lib_id "power:GND")
+		(at 128.27 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15761,9 +16244,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "7aedc033-e372-4028-9cfb-1c037d04bb2d")
-		(property "Reference" "#PWR0217"
-			(at 184.15 125.73 0)
+		(uuid "7826d769-6083-414c-a153-f3ddbf139c21")
+		(property "Reference" "#PWR065"
+			(at 128.27 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15773,8 +16256,8 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 184.15 118.364 0)
+		(property "Value" "GND"
+			(at 128.27 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15784,7 +16267,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 121.92 0)
+			(at 128.27 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15795,7 +16278,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 121.92 0)
+			(at 128.27 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "be2123f6-76f6-47f3-b1df-bfe88a5ed9ff")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 196.85 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7aedc033-e372-4028-9cfb-1c037d04bb2d")
+		(property "Reference" "#PWR0217"
+			(at 196.85 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 196.85 118.364 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15806,7 +16366,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 184.15 121.92 0)
+			(at 196.85 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15907,7 +16467,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 248.92 116.84 90)
+		(at 261.62 116.84 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15917,7 +16477,7 @@
 		(dnp no)
 		(uuid "7ba0e4be-69f1-4bea-a336-40aec66aed9f")
 		(property "Reference" "R20"
-			(at 250.698 116.84 90)
+			(at 263.398 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15928,7 +16488,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 251.46 114.808 90)
+			(at 264.16 114.808 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15939,7 +16499,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 248.92 118.618 90)
+			(at 261.62 118.618 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15950,7 +16510,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 248.92 116.84 0)
+			(at 261.62 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15961,7 +16521,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 248.92 116.84 0)
+			(at 261.62 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15972,7 +16532,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD10K0"
-			(at 248.92 116.84 90)
+			(at 261.62 116.84 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15999,7 +16559,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 246.38 147.32 180)
+		(at 259.08 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16009,7 +16569,7 @@
 		(dnp no)
 		(uuid "7cbd9918-8cf6-4d84-a726-102576e3fd53")
 		(property "Reference" "LED6"
-			(at 246.38 144.272 0)
+			(at 259.08 144.272 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16019,7 +16579,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 247.9675 142.24 0)
+			(at 260.6675 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16030,7 +16590,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
-			(at 246.38 147.32 0)
+			(at 259.08 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16041,7 +16601,7 @@
 			)
 		)
 		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
-			(at 246.38 147.32 0)
+			(at 259.08 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16052,7 +16612,7 @@
 			)
 		)
 		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 246.38 147.32 0)
+			(at 259.08 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16063,7 +16623,7 @@
 			)
 		)
 		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
-			(at 246.38 147.32 0)
+			(at 259.08 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16074,7 +16634,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 246.38 147.32 0)
+			(at 259.08 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16101,7 +16661,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 227.33 92.71 0)
+		(at 240.03 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16111,7 +16671,7 @@
 		(dnp no)
 		(uuid "7e376816-f745-4cac-8786-7e7fe56d3950")
 		(property "Reference" "#PWR0242"
-			(at 227.33 99.06 0)
+			(at 240.03 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16122,7 +16682,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 227.33 96.266 0)
+			(at 240.03 96.266 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16132,7 +16692,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 92.71 0)
+			(at 240.03 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16143,7 +16703,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 92.71 0)
+			(at 240.03 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16154,7 +16714,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 227.33 92.71 0)
+			(at 240.03 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16332,7 +16892,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 207.01 140.97 180)
+		(at 219.71 140.97 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16342,7 +16902,7 @@
 		(dnp no)
 		(uuid "858813bc-d6fb-4406-a7c0-7cc2a6e89e4b")
 		(property "Reference" "LED2"
-			(at 207.01 137.922 0)
+			(at 219.71 137.922 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16352,7 +16912,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 208.5975 135.89 0)
+			(at 221.2975 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16363,7 +16923,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
-			(at 207.01 140.97 0)
+			(at 219.71 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16374,7 +16934,7 @@
 			)
 		)
 		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
-			(at 207.01 140.97 0)
+			(at 219.71 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16385,7 +16945,7 @@
 			)
 		)
 		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 207.01 140.97 0)
+			(at 219.71 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16396,7 +16956,7 @@
 			)
 		)
 		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
-			(at 207.01 140.97 0)
+			(at 219.71 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16407,7 +16967,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 207.01 140.97 0)
+			(at 219.71 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16434,7 +16994,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 252.73 156.21 0)
+		(at 265.43 156.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16444,7 +17004,7 @@
 		(dnp no)
 		(uuid "8cd91f5f-28f2-4a16-b784-66292f472d13")
 		(property "Reference" "#PWR068"
-			(at 252.73 162.56 0)
+			(at 265.43 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16455,7 +17015,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 252.73 159.766 0)
+			(at 265.43 159.766 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16465,7 +17025,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 156.21 0)
+			(at 265.43 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16476,7 +17036,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 156.21 0)
+			(at 265.43 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16487,7 +17047,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 252.73 156.21 0)
+			(at 265.43 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17017,7 +17577,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 248.92 110.49 90)
+		(at 261.62 110.49 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17027,7 +17587,7 @@
 		(dnp no)
 		(uuid "9d563fff-4ee7-45de-abc0-d089e3a45402")
 		(property "Reference" "R19"
-			(at 250.698 110.49 90)
+			(at 263.398 110.49 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17038,7 +17598,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 251.46 108.458 90)
+			(at 264.16 108.458 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17049,7 +17609,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 248.92 112.268 90)
+			(at 261.62 112.268 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17060,7 +17620,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 248.92 110.49 0)
+			(at 261.62 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17071,7 +17631,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 248.92 110.49 0)
+			(at 261.62 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17082,7 +17642,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD10K0"
-			(at 248.92 110.49 90)
+			(at 261.62 110.49 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17206,7 +17766,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 227.33 115.57 0)
+		(at 240.03 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17216,7 +17776,7 @@
 		(dnp no)
 		(uuid "9dc8d1ea-5a8e-4c95-a9a7-6a8a7205b52f")
 		(property "Reference" "#PWR0244"
-			(at 227.33 121.92 0)
+			(at 240.03 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17227,7 +17787,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 227.33 119.126 0)
+			(at 240.03 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17237,7 +17797,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 115.57 0)
+			(at 240.03 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17248,7 +17808,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 115.57 0)
+			(at 240.03 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17259,7 +17819,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 227.33 115.57 0)
+			(at 240.03 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17740,7 +18300,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 196.85 140.97 90)
+		(at 209.55 140.97 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17750,7 +18310,7 @@
 		(dnp no)
 		(uuid "a3c6a39d-c5f7-48e6-bc52-b85e3ae5625a")
 		(property "Reference" "R22"
-			(at 196.85 140.97 90)
+			(at 209.55 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17760,7 +18320,7 @@
 			)
 		)
 		(property "Value" "681R"
-			(at 196.85 138.684 90)
+			(at 209.55 138.684 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17770,7 +18330,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 196.85 142.748 90)
+			(at 209.55 142.748 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17781,7 +18341,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 196.85 140.97 0)
+			(at 209.55 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17792,7 +18352,7 @@
 			)
 		)
 		(property "Description" "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 196.85 140.97 0)
+			(at 209.55 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17803,7 +18363,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD681R"
-			(at 196.85 140.97 90)
+			(at 209.55 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17814,7 +18374,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 196.85 140.97 90)
+			(at 209.55 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18115,7 +18675,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 207.01 134.62 180)
+		(at 219.71 134.62 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18125,7 +18685,7 @@
 		(dnp no)
 		(uuid "ab2a2662-a628-4206-8135-22ccf30911fc")
 		(property "Reference" "LED1"
-			(at 207.01 131.572 0)
+			(at 219.71 131.572 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18135,7 +18695,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 208.5975 129.54 0)
+			(at 221.2975 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18146,7 +18706,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
-			(at 207.01 134.62 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18157,7 +18717,7 @@
 			)
 		)
 		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
-			(at 207.01 134.62 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18168,7 +18728,7 @@
 			)
 		)
 		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 207.01 134.62 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18179,7 +18739,7 @@
 			)
 		)
 		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
-			(at 207.01 134.62 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18190,7 +18750,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 207.01 134.62 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18294,7 +18854,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 194.31 85.09 0)
+		(at 207.01 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18304,7 +18864,7 @@
 		(dnp no)
 		(uuid "acfe5075-06f6-4300-a23f-c5ae6de6fc68")
 		(property "Reference" "#PWR0216"
-			(at 194.31 88.9 0)
+			(at 207.01 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18315,7 +18875,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 194.31 81.534 0)
+			(at 207.01 81.534 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18325,7 +18885,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 85.09 0)
+			(at 207.01 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18336,7 +18896,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 85.09 0)
+			(at 207.01 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18347,7 +18907,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 194.31 85.09 0)
+			(at 207.01 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18448,7 +19008,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 213.36 156.21 0)
+		(at 226.06 156.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18458,7 +19018,7 @@
 		(dnp no)
 		(uuid "aef4b98a-f100-4628-ad9e-516dc49c1684")
 		(property "Reference" "#PWR073"
-			(at 213.36 162.56 0)
+			(at 226.06 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18469,7 +19029,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 213.36 159.766 0)
+			(at 226.06 159.766 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18479,7 +19039,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 213.36 156.21 0)
+			(at 226.06 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18490,7 +19050,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 156.21 0)
+			(at 226.06 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18501,7 +19061,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 213.36 156.21 0)
+			(at 226.06 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18525,7 +19085,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 227.33 107.95 0)
+		(at 240.03 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18535,7 +19095,7 @@
 		(dnp no)
 		(uuid "b061f612-f203-4e18-b07e-0370d349b4b4")
 		(property "Reference" "#PWR0243"
-			(at 227.33 111.76 0)
+			(at 240.03 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18546,7 +19106,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 227.33 104.394 0)
+			(at 240.03 104.394 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18556,7 +19116,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 107.95 0)
+			(at 240.03 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18567,7 +19127,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 107.95 0)
+			(at 240.03 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18578,7 +19138,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 227.33 107.95 0)
+			(at 240.03 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18595,6 +19155,99 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0243")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:TVS TPD2E2U06QDBZRQ1")
+		(at 118.11 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b36ca1fd-7171-4289-a15f-da85a5d98952")
+		(property "Reference" "TVS3"
+			(at 118.11 109.474 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD2E2U06QDBZRQ1"
+			(at 118.11 122.428 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:TI TPD2E2U06"
+			(at 118.11 131.826 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1"
+			(at 118.11 129.286 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3"
+			(at 118.11 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TI TPD2E2U06QDBZRQ1"
+			(at 117.856 127.254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc97c80d-0ac6-4b9e-8312-136cfc2c11b8")
+		)
+		(pin "2"
+			(uuid "1cc5f4da-1f41-4e6a-aa13-b1eb498d9040")
+		)
+		(pin "3"
+			(uuid "df7ea149-9f0f-4108-ac16-5620997c86f4")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "TVS3")
 					(unit 1)
 				)
 			)
@@ -18784,7 +19437,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 207.01 147.32 180)
+		(at 219.71 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18794,7 +19447,7 @@
 		(dnp no)
 		(uuid "b804df81-90ef-4a69-9fa3-347d29ae782d")
 		(property "Reference" "LED3"
-			(at 207.01 144.272 0)
+			(at 219.71 144.272 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18804,7 +19457,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 208.5975 142.24 0)
+			(at 221.2975 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18815,7 +19468,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
-			(at 207.01 147.32 0)
+			(at 219.71 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18826,7 +19479,7 @@
 			)
 		)
 		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
-			(at 207.01 147.32 0)
+			(at 219.71 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18837,7 +19490,7 @@
 			)
 		)
 		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 207.01 147.32 0)
+			(at 219.71 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18848,7 +19501,7 @@
 			)
 		)
 		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
-			(at 207.01 147.32 0)
+			(at 219.71 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18859,7 +19512,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 207.01 147.32 0)
+			(at 219.71 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18886,7 +19539,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 184.15 99.06 0)
+		(at 196.85 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18896,7 +19549,7 @@
 		(dnp no)
 		(uuid "b99acee3-5c41-43f9-a0d0-5bb3522326fd")
 		(property "Reference" "#PWR0219"
-			(at 184.15 102.87 0)
+			(at 196.85 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18907,7 +19560,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 184.15 95.504 0)
+			(at 196.85 95.504 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18917,7 +19570,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 99.06 0)
+			(at 196.85 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18928,7 +19581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 99.06 0)
+			(at 196.85 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18939,7 +19592,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 184.15 99.06 0)
+			(at 196.85 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19131,7 +19784,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 236.22 134.62 90)
+		(at 248.92 134.62 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19141,7 +19794,7 @@
 		(dnp no)
 		(uuid "bba89206-1bff-4773-9285-29268337f595")
 		(property "Reference" "R25"
-			(at 236.22 134.62 90)
+			(at 248.92 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19151,7 +19804,7 @@
 			)
 		)
 		(property "Value" "681R"
-			(at 236.22 132.334 90)
+			(at 248.92 132.334 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19161,7 +19814,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 236.22 136.398 90)
+			(at 248.92 136.398 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19172,7 +19825,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 236.22 134.62 0)
+			(at 248.92 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19183,7 +19836,7 @@
 			)
 		)
 		(property "Description" "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 236.22 134.62 0)
+			(at 248.92 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19194,7 +19847,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD681R"
-			(at 236.22 134.62 90)
+			(at 248.92 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19205,7 +19858,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 236.22 134.62 90)
+			(at 248.92 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19405,7 +20058,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 100.33 270)
+		(at 152.4 100.33 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19415,7 +20068,7 @@
 		(dnp no)
 		(uuid "c1f162fd-b36b-4c56-8848-9732e0c35d2d")
 		(property "Reference" "R15"
-			(at 137.668 100.33 90)
+			(at 150.368 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19426,7 +20079,7 @@
 			)
 		)
 		(property "Value" "5.11kR"
-			(at 136.144 98.044 90)
+			(at 148.844 98.044 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19437,7 +20090,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 139.7 98.552 90)
+			(at 152.4 98.552 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19448,7 +20101,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 139.7 100.33 0)
+			(at 152.4 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19459,7 +20112,7 @@
 			)
 		)
 		(property "Description" "5.11 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 139.7 100.33 0)
+			(at 152.4 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19470,7 +20123,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD5K11"
-			(at 139.7 100.33 90)
+			(at 152.4 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19947,7 +20600,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 246.38 134.62 180)
+		(at 259.08 134.62 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19957,7 +20610,7 @@
 		(dnp no)
 		(uuid "cadb46f0-c46e-4e79-9b61-76df18c50752")
 		(property "Reference" "LED4"
-			(at 246.38 131.572 0)
+			(at 259.08 131.572 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19967,7 +20620,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 247.9675 129.54 0)
+			(at 260.6675 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19978,7 +20631,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
-			(at 246.38 134.62 0)
+			(at 259.08 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19989,7 +20642,7 @@
 			)
 		)
 		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
-			(at 246.38 134.62 0)
+			(at 259.08 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20000,7 +20653,7 @@
 			)
 		)
 		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 246.38 134.62 0)
+			(at 259.08 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20011,7 +20664,7 @@
 			)
 		)
 		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
-			(at 246.38 134.62 0)
+			(at 259.08 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20022,7 +20675,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 246.38 134.62 0)
+			(at 259.08 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20141,7 +20794,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:GCT USB4145-03-0170-C")
-		(at 147.32 127 90)
+		(at 160.02 127 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20151,7 +20804,7 @@
 		(dnp no)
 		(uuid "d8f05aea-5ee4-49ab-9fab-71a0d324cbe2")
 		(property "Reference" "USBRV1"
-			(at 128.016 123.698 0)
+			(at 140.716 123.698 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20162,7 +20815,7 @@
 			)
 		)
 		(property "Value" "USB4145-03-0170-C"
-			(at 166.37 128.2699 90)
+			(at 179.07 128.2699 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20174,7 +20827,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:GCT USB4145-03-0170-C"
-			(at 177.8 127 0)
+			(at 190.5 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20186,7 +20839,7 @@
 			)
 		)
 		(property "Datasheet" "https://gct.co/files/specs/usb4145-spec.pdf"
-			(at 147.32 127 0)
+			(at 160.02 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20197,7 +20850,7 @@
 			)
 		)
 		(property "Description" "USB 2.0 TYPE-C RECPT VERT SMT 1."
-			(at 147.32 127 0)
+			(at 160.02 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20208,7 +20861,7 @@
 			)
 		)
 		(property "Part" "GCT USB4145-03-0170-C"
-			(at 170.434 114.046 0)
+			(at 183.134 114.046 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20799,7 +21452,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 196.85 134.62 90)
+		(at 209.55 134.62 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20809,7 +21462,7 @@
 		(dnp no)
 		(uuid "dff42777-24d1-46d1-8d5a-da4634a7cdab")
 		(property "Reference" "R21"
-			(at 196.85 134.62 90)
+			(at 209.55 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20819,7 +21472,7 @@
 			)
 		)
 		(property "Value" "681R"
-			(at 196.85 132.334 90)
+			(at 209.55 132.334 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20829,7 +21482,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 196.85 136.398 90)
+			(at 209.55 136.398 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20840,7 +21493,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 196.85 134.62 0)
+			(at 209.55 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20851,7 +21504,7 @@
 			)
 		)
 		(property "Description" "681 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 196.85 134.62 0)
+			(at 209.55 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20862,7 +21515,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD681R"
-			(at 196.85 134.62 90)
+			(at 209.55 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20873,7 +21526,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 196.85 134.62 90)
+			(at 209.55 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20977,7 +21630,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 246.38 140.97 180)
+		(at 259.08 140.97 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20987,7 +21640,7 @@
 		(dnp no)
 		(uuid "e17b9403-461b-43fe-bbad-3f1b08bd1be2")
 		(property "Reference" "LED5"
-			(at 246.38 137.922 0)
+			(at 259.08 137.922 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20997,7 +21650,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 247.9675 135.89 0)
+			(at 260.6675 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21008,7 +21661,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
-			(at 246.38 140.97 0)
+			(at 259.08 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21019,7 +21672,7 @@
 			)
 		)
 		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
-			(at 246.38 140.97 0)
+			(at 259.08 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21030,7 +21683,7 @@
 			)
 		)
 		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 246.38 140.97 0)
+			(at 259.08 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21041,7 +21694,7 @@
 			)
 		)
 		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
-			(at 246.38 140.97 0)
+			(at 259.08 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21052,7 +21705,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 246.38 140.97 0)
+			(at 259.08 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21079,7 +21732,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 246.38 153.67 180)
+		(at 259.08 153.67 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21089,7 +21742,7 @@
 		(dnp no)
 		(uuid "e30a9c72-2ed7-4271-a0d4-a07a8f06a80c")
 		(property "Reference" "LED7"
-			(at 246.38 150.622 0)
+			(at 259.08 150.622 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21099,7 +21752,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 247.9675 148.59 0)
+			(at 260.6675 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21110,7 +21763,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:ams OSRAM LS Q976.01"
-			(at 246.38 153.67 0)
+			(at 259.08 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21121,7 +21774,7 @@
 			)
 		)
 		(property "Datasheet" "https://look.ams-osram.com/m/1a7835c3b65b6351/original/LS-Q976-01.pdf"
-			(at 246.38 153.67 0)
+			(at 259.08 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21132,7 +21785,7 @@
 			)
 		)
 		(property "Description" "Red 633nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 246.38 153.67 0)
+			(at 259.08 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21143,7 +21796,7 @@
 			)
 		)
 		(property "Part" "ams OSRAM LS Q976.01-N1Q2-1"
-			(at 246.38 153.67 0)
+			(at 259.08 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21154,7 +21807,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 246.38 153.67 0)
+			(at 259.08 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21258,7 +21911,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 227.33 88.9 180)
+		(at 240.03 88.9 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21268,7 +21921,7 @@
 		(dnp no)
 		(uuid "e7ff9f05-c4fd-4b1f-9109-8383bde3d1f6")
 		(property "Reference" "C16"
-			(at 231.648 86.614 0)
+			(at 244.348 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21279,7 +21932,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 233.172 91.44 0)
+			(at 245.872 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21290,7 +21943,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
-			(at 226.3648 85.09 0)
+			(at 239.0648 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21301,7 +21954,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf"
-			(at 227.33 88.9 0)
+			(at 240.03 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21312,7 +21965,7 @@
 			)
 		)
 		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 227.33 88.9 0)
+			(at 240.03 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21323,7 +21976,7 @@
 			)
 		)
 		(property "Part" "Kyocera 08051C104K4Z2A"
-			(at 227.33 88.9 90)
+			(at 240.03 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21751,7 +22404,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 256.54 110.49 0)
+		(at 269.24 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21761,7 +22414,7 @@
 		(dnp no)
 		(uuid "e9dc1986-9d13-41b6-abda-99fe6dba4d7c")
 		(property "Reference" "#PWR0247"
-			(at 256.54 114.3 0)
+			(at 269.24 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21772,7 +22425,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 256.54 106.934 0)
+			(at 269.24 106.934 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21782,7 +22435,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 110.49 0)
+			(at 269.24 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21793,7 +22446,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 110.49 0)
+			(at 269.24 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21804,7 +22457,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 256.54 110.49 0)
+			(at 269.24 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22093,7 +22746,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 181.61 158.75 0)
+		(at 194.31 158.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22103,7 +22756,7 @@
 		(dnp no)
 		(uuid "f3b7befa-bf21-49f2-8b2c-b6d5bc86bae4")
 		(property "Reference" "#PWR039"
-			(at 181.61 162.56 0)
+			(at 194.31 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22114,7 +22767,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 181.61 155.194 0)
+			(at 194.31 155.194 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22124,7 +22777,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 158.75 0)
+			(at 194.31 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22135,7 +22788,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 158.75 0)
+			(at 194.31 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22146,7 +22799,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 181.61 158.75 0)
+			(at 194.31 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22247,7 +22900,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 227.33 85.09 0)
+		(at 240.03 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22257,7 +22910,7 @@
 		(dnp no)
 		(uuid "f3ef4233-9232-4beb-ab3d-2f9a03bdbb6c")
 		(property "Reference" "#PWR0241"
-			(at 227.33 88.9 0)
+			(at 240.03 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22268,7 +22921,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 227.33 81.534 0)
+			(at 240.03 81.534 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22278,7 +22931,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 85.09 0)
+			(at 240.03 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22289,7 +22942,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 85.09 0)
+			(at 240.03 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22300,7 +22953,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 227.33 85.09 0)
+			(at 240.03 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22478,7 +23131,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 187.96 158.75 270)
+		(at 200.66 158.75 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22488,7 +23141,7 @@
 		(dnp no)
 		(uuid "f8d458ea-ac9b-4585-a2b5-31a6a098e12f")
 		(property "Reference" "R24"
-			(at 186.182 158.75 90)
+			(at 198.882 158.75 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22499,7 +23152,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 185.42 156.464 90)
+			(at 198.12 156.464 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22510,7 +23163,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole_RNCP1206"
-			(at 187.96 156.972 90)
+			(at 200.66 156.972 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22521,7 +23174,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 187.96 158.75 0)
+			(at 200.66 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22532,7 +23185,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film"
-			(at 187.96 158.75 0)
+			(at 200.66 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22543,7 +23196,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP1206FTD10K0"
-			(at 187.96 158.75 90)
+			(at 200.66 158.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

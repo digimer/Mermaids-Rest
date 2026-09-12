@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-11T23:22:50")
+		(date "2026-09-12T01:09:12")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -4709,6 +4709,61 @@
 			)
 		)
 		(comp
+			(ref "TVS3")
+			(value "TPD2E2U06QDBZRQ1")
+			(footprint "mr-stuff:TI TPD2E2U06")
+			(datasheet "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+			(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			(fields
+				(field
+					(name "Part") "TI TPD2E2U06QDBZRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPD2E2U06")
+				(field
+					(name "Datasheet") "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+				(field
+					(name "Description") "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TVS TPD2E2U06QDBZRQ1")
+				(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(property
+				(name "Part")
+				(value "TI TPD2E2U06QDBZRQ1")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b36ca1fd-7171-4289-a15f-da85a5d98952")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "USBRV1")
 			(value "USB4145-03-0170-C")
 			(footprint "mr-stuff:GCT USB4145-03-0170-C")
@@ -6021,6 +6076,43 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "TVS TPD2E2U06QDBZRQ1")
+			(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			(docs "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+			(fields
+				(field
+					(name "Reference") "TVS")
+				(field
+					(name "Value") "TPD2E2U06QDBZRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPD2E2U06")
+				(field
+					(name "Datasheet") "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+				(field
+					(name "Description") "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+				(field
+					(name "Part") "TI TPD2E2U06QDBZRQ1")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IO1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "IO2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Vishay RCA08050000ZSEASR")
 			(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			(docs "https://www.vishay.com/docs/20132/rca-sre3.pdf")
@@ -7050,6 +7142,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TVS3")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
 				(ref "USBRV1")
 				(pin "A1")
 				(pinfunction "GND_A_A1")
@@ -7461,6 +7559,12 @@
 				(pintype "bidirectional")
 			)
 			(node
+				(ref "TVS3")
+				(pin "2")
+				(pinfunction "IO2_2")
+				(pintype "passive")
+			)
+			(node
 				(ref "USBRV1")
 				(pin "A6")
 				(pinfunction "DP1_A6")
@@ -7482,6 +7586,12 @@
 				(pin "13")
 				(pinfunction "USB_D-_13")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "TVS3")
+				(pin "1")
+				(pinfunction "IO1_1")
+				(pintype "passive")
 			)
 			(node
 				(ref "USBRV1")
