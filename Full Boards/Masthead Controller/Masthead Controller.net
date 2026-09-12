@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-09-12T14:34:06")
+		(date "2026-09-12T14:49:00")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -12204,22 +12204,28 @@
 		)
 		(comp
 			(ref "TP1")
-			(value "Comms TP")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x10, script generated")
+			(value "Conn_02x06_Odd_Even")
+			(footprint "mr-stuff:Amphenol 20021111-00012T4LF")
+			(datasheet "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_minitek127_btb.pdf")
+			(description "Jumpers to test per-circuit fail-safe behaviour of LED circuits")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
+					(name "Part") "Amphenol 20021111-00012T4LF")
 				(field
-					(name "Datasheet")
-				)
+					(name "Footprint") "mr-stuff:Amphenol 20021111-00012T4LF")
 				(field
-					(name "Description") "Generic connector, single row, 01x10, script generated")
+					(name "Datasheet") "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_minitek127_btb.pdf")
+				(field
+					(name "Description") "Jumpers to test per-circuit fail-safe behaviour of LED circuits")
 			)
 			(libsource
-				(lib "Connector")
-				(part "Conn_01x10_Pin")
-				(description "Generic connector, single row, 01x10, script generated")
+				(lib "Connector_Generic")
+				(part "Conn_02x06_Odd_Even")
+				(description "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Part")
+				(value "Amphenol 20021111-00012T4LF")
 			)
 			(property
 				(name "Sheetname")
@@ -12230,21 +12236,18 @@
 				(value "Masthead Controller.kicad_sch")
 			)
 			(property
-				(name "dnp")
-			)
-			(property
 				(name "ki_keywords")
 				(value "connector")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "Connector*:*_1x??_*")
+				(value "Connector*:*_2x??_*")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e599d95c-c2ff-479f-885e-ae28d5246612")
+			(tstamps "d3e98377-eef1-4171-b3df-4ffdf5fe72bd")
 			(units
 				(unit
 					(name "A")
@@ -12253,31 +12256,37 @@
 							(num "1")
 						)
 						(pin
-							(num "2")
-						)
-						(pin
 							(num "3")
-						)
-						(pin
-							(num "4")
 						)
 						(pin
 							(num "5")
 						)
 						(pin
-							(num "6")
-						)
-						(pin
 							(num "7")
-						)
-						(pin
-							(num "8")
 						)
 						(pin
 							(num "9")
 						)
 						(pin
+							(num "11")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
 							(num "10")
+						)
+						(pin
+							(num "12")
 						)
 					)
 				)
@@ -13035,80 +13044,6 @@
 				(pin
 					(num "4")
 					(name "Pin_4")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Connector")
-			(part "Conn_01x10_Pin")
-			(description "Generic connector, single row, 01x10, script generated")
-			(footprints
-				(fp "Connector*:*_1x??_*")
-			)
-			(fields
-				(field
-					(name "Reference") "J")
-				(field
-					(name "Value") "Conn_01x10_Pin")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x10, script generated")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "Pin_1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "Pin_2")
-					(type "passive")
-				)
-				(pin
-					(num "3")
-					(name "Pin_3")
-					(type "passive")
-				)
-				(pin
-					(num "4")
-					(name "Pin_4")
-					(type "passive")
-				)
-				(pin
-					(num "5")
-					(name "Pin_5")
-					(type "passive")
-				)
-				(pin
-					(num "6")
-					(name "Pin_6")
-					(type "passive")
-				)
-				(pin
-					(num "7")
-					(name "Pin_7")
-					(type "passive")
-				)
-				(pin
-					(num "8")
-					(name "Pin_8")
-					(type "passive")
-				)
-				(pin
-					(num "9")
-					(name "Pin_9")
-					(type "passive")
-				)
-				(pin
-					(num "10")
-					(name "Pin_10")
 					(type "passive")
 				)
 			)
@@ -15347,8 +15282,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "10")
-				(pinfunction "Pin_10_10")
+				(pin "1")
+				(pinfunction "Pin_1_1")
 				(pintype "passive")
 			)
 			(node
@@ -15452,6 +15387,11 @@
 			(node
 				(ref "R50")
 				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R69")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -15889,8 +15829,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "7")
-				(pinfunction "Pin_7_7")
+				(pin "8")
+				(pinfunction "Pin_8_8")
 				(pintype "passive")
 			)
 		)
@@ -15935,8 +15875,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "4")
-				(pinfunction "Pin_4_4")
+				(pin "2")
+				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 		)
@@ -15963,8 +15903,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "5")
-				(pinfunction "Pin_5_5")
+				(pin "4")
+				(pinfunction "Pin_4_4")
 				(pintype "passive")
 			)
 		)
@@ -16013,6 +15953,12 @@
 				(pinfunction "SCL_6")
 				(pintype "input")
 			)
+			(node
+				(ref "TP1")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "14")
@@ -16058,6 +16004,12 @@
 				(pin "5")
 				(pinfunction "SDA_5")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "TP1")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -16287,8 +16239,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "3")
-				(pinfunction "Pin_3_3")
+				(pin "7")
+				(pinfunction "Pin_7_7")
 				(pintype "passive")
 			)
 		)
@@ -16321,8 +16273,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "2")
-				(pinfunction "Pin_2_2")
+				(pin "9")
+				(pinfunction "Pin_9_9")
 				(pintype "passive")
 			)
 		)
@@ -16477,8 +16429,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "8")
-				(pinfunction "Pin_8_8")
+				(pin "10")
+				(pinfunction "Pin_10_10")
 				(pintype "passive")
 			)
 		)
@@ -16758,8 +16710,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "9")
-				(pinfunction "Pin_9_9")
+				(pin "12")
+				(pinfunction "Pin_12_12")
 				(pintype "passive")
 			)
 		)
@@ -17571,8 +17523,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "1")
-				(pinfunction "Pin_1_1")
+				(pin "11")
+				(pinfunction "Pin_11_11")
 				(pintype "passive")
 			)
 			(node
@@ -19661,16 +19613,6 @@
 		)
 		(net
 			(code "146")
-			(name "V_RAW")
-			(class "Default")
-			(node
-				(ref "R69")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "147")
 			(name "unconnected-(D3-NC-Pad2)")
 			(class "Default")
 			(node
@@ -19681,7 +19623,7 @@
 			)
 		)
 		(net
-			(code "148")
+			(code "147")
 			(name "unconnected-(EF1-MODE-Pad12)")
 			(class "Default")
 			(node
@@ -19692,7 +19634,7 @@
 			)
 		)
 		(net
-			(code "149")
+			(code "148")
 			(name "unconnected-(EF2-MODE-Pad12)")
 			(class "Default")
 			(node
@@ -19703,7 +19645,7 @@
 			)
 		)
 		(net
-			(code "150")
+			(code "149")
 			(name "unconnected-(LD1-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19714,7 +19656,7 @@
 			)
 		)
 		(net
-			(code "151")
+			(code "150")
 			(name "unconnected-(LD2-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19725,7 +19667,7 @@
 			)
 		)
 		(net
-			(code "152")
+			(code "151")
 			(name "unconnected-(LD3-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19736,7 +19678,7 @@
 			)
 		)
 		(net
-			(code "153")
+			(code "152")
 			(name "unconnected-(LD4-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19747,7 +19689,7 @@
 			)
 		)
 		(net
-			(code "154")
+			(code "153")
 			(name "unconnected-(LD5-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19758,7 +19700,7 @@
 			)
 		)
 		(net
-			(code "155")
+			(code "154")
 			(name "unconnected-(LD6-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19769,7 +19711,7 @@
 			)
 		)
 		(net
-			(code "156")
+			(code "155")
 			(name "unconnected-(LD7-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19780,7 +19722,7 @@
 			)
 		)
 		(net
-			(code "157")
+			(code "156")
 			(name "unconnected-(LD8-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19791,7 +19733,7 @@
 			)
 		)
 		(net
-			(code "158")
+			(code "157")
 			(name "unconnected-(LD9-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19802,7 +19744,7 @@
 			)
 		)
 		(net
-			(code "159")
+			(code "158")
 			(name "unconnected-(LD10-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19813,7 +19755,7 @@
 			)
 		)
 		(net
-			(code "160")
+			(code "159")
 			(name "unconnected-(LD11-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19824,7 +19766,7 @@
 			)
 		)
 		(net
-			(code "161")
+			(code "160")
 			(name "unconnected-(LD12-NC-Pad7)")
 			(class "Default")
 			(node
@@ -19835,7 +19777,7 @@
 			)
 		)
 		(net
-			(code "162")
+			(code "161")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -19846,7 +19788,7 @@
 			)
 		)
 		(net
-			(code "163")
+			(code "162")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -19857,7 +19799,7 @@
 			)
 		)
 		(net
-			(code "164")
+			(code "163")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -19868,7 +19810,7 @@
 			)
 		)
 		(net
-			(code "165")
+			(code "164")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -19879,7 +19821,7 @@
 			)
 		)
 		(net
-			(code "166")
+			(code "165")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -19890,7 +19832,7 @@
 			)
 		)
 		(net
-			(code "167")
+			(code "166")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -19901,7 +19843,7 @@
 			)
 		)
 		(net
-			(code "168")
+			(code "167")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -19912,7 +19854,7 @@
 			)
 		)
 		(net
-			(code "169")
+			(code "168")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -19923,7 +19865,7 @@
 			)
 		)
 		(net
-			(code "170")
+			(code "169")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -19934,7 +19876,7 @@
 			)
 		)
 		(net
-			(code "171")
+			(code "170")
 			(name "unconnected-(VR1-PGOOD-Pad1)")
 			(class "Default")
 			(node
@@ -19945,7 +19887,7 @@
 			)
 		)
 		(net
-			(code "172")
+			(code "171")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -19956,7 +19898,7 @@
 			)
 		)
 		(net
-			(code "173")
+			(code "172")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
