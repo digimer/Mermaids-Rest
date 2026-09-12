@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-11T18:38:10")
+		(date "2026-09-11T23:22:50")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -4528,28 +4528,22 @@
 		)
 		(comp
 			(ref "TP1")
-			(value "MCU Tx/Rx")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x04, script generated")
+			(value "Comms TP")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x08, script generated")
 			(fields
 				(field
-					(name "Part") "Amphenol 68001-416HLF")
-				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x04, script generated")
+					(name "Description") "Generic connector, single row, 01x08, script generated")
 			)
 			(libsource
 				(lib "Connector")
-				(part "Conn_01x04_Pin")
-				(description "Generic connector, single row, 01x04, script generated")
-			)
-			(property
-				(name "Part")
-				(value "Amphenol 68001-416HLF")
+				(part "Conn_01x08_Pin")
+				(description "Generic connector, single row, 01x08, script generated")
 			)
 			(property
 				(name "Sheetname")
@@ -4558,9 +4552,6 @@
 			(property
 				(name "Sheetfile")
 				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "exclude_from_bom")
 			)
 			(property
 				(name "dnp")
@@ -4594,71 +4585,17 @@
 						(pin
 							(num "4")
 						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "TP2")
-			(value "CAN Tx/Rx")
-			(footprint "mr-stuff:PinHeader_1x05_P2.54mm_Vertical_No_Pin_3")
-			(description "Generic connector, single row, 01x05, script generated")
-			(fields
-				(field
-					(name "Footprint") "mr-stuff:PinHeader_1x05_P2.54mm_Vertical_No_Pin_3")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x05, script generated")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "Conn_01x05_Pin_No_Pin_3")
-				(description "Generic connector, single row, 01x05, script generated")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "exclude_from_bom")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "connector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Connector*:*_1x??_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "44ede0cd-97c6-47da-85b7-3ca39b1478a5")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-						(pin
-							(num "4")
-						)
 						(pin
 							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
 						)
 					)
 				)
@@ -5005,50 +4942,6 @@
 		)
 		(libpart
 			(lib "Connector")
-			(part "Conn_01x04_Pin")
-			(description "Generic connector, single row, 01x04, script generated")
-			(footprints
-				(fp "Connector*:*_1x??_*")
-			)
-			(fields
-				(field
-					(name "Reference") "J")
-				(field
-					(name "Value") "Conn_01x04_Pin")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x04, script generated")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "Pin_1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "Pin_2")
-					(type "passive")
-				)
-				(pin
-					(num "3")
-					(name "Pin_3")
-					(type "passive")
-				)
-				(pin
-					(num "4")
-					(name "Pin_4")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Connector")
 			(part "Conn_01x05_Pin")
 			(description "Generic connector, single row, 01x05, script generated")
 			(footprints
@@ -5092,6 +4985,70 @@
 				(pin
 					(num "5")
 					(name "Pin_5")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector")
+			(part "Conn_01x08_Pin")
+			(description "Generic connector, single row, 01x08, script generated")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x08_Pin")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x08, script generated")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "Pin_5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "Pin_6")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "Pin_7")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "Pin_8")
 					(type "passive")
 				)
 			)
@@ -5546,50 +5503,6 @@
 				(pin
 					(num "2")
 					(name "A")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
-			(part "Conn_01x05_Pin_No_Pin_3")
-			(description "Generic connector, single row, 01x05, script generated")
-			(footprints
-				(fp "Connector*:*_1x??_*")
-			)
-			(fields
-				(field
-					(name "Reference") "TP")
-				(field
-					(name "Value") "Conn_01x05_Pin_No_Pin_3")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x05, script generated")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "Pin_1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "Pin_2")
-					(type "passive")
-				)
-				(pin
-					(num "4")
-					(name "Pin_4")
-					(type "passive")
-				)
-				(pin
-					(num "5")
-					(name "Pin_5")
 					(type "passive")
 				)
 			)
@@ -6417,9 +6330,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP2")
-				(pin "1")
-				(pinfunction "Pin_1_1")
+				(ref "TP1")
+				(pin "4")
+				(pinfunction "Pin_4_4")
 				(pintype "passive")
 			)
 		)
@@ -6440,9 +6353,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP2")
-				(pin "2")
-				(pinfunction "Pin_2_2")
+				(ref "TP1")
+				(pin "5")
+				(pinfunction "Pin_5_5")
 				(pintype "passive")
 			)
 		)
@@ -6463,9 +6376,9 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "TP2")
-				(pin "5")
-				(pinfunction "Pin_5_5")
+				(ref "TP1")
+				(pin "7")
+				(pinfunction "Pin_7_7")
 				(pintype "passive")
 			)
 		)
@@ -6513,9 +6426,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP2")
-				(pin "4")
-				(pinfunction "Pin_4_4")
+				(ref "TP1")
+				(pin "6")
+				(pinfunction "Pin_6_6")
 				(pintype "passive")
 			)
 		)
@@ -6697,6 +6610,23 @@
 		)
 		(net
 			(code "15")
+			(name "/RXD0")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "36")
+				(pinfunction "RXD0_36")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "TP1")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
 			(name "/SRV_UP_LED")
 			(class "Default")
 			(node
@@ -6712,7 +6642,24 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "17")
+			(name "/TXD0")
+			(class "Default")
+			(node
+				(ref "MCU1")
+				(pin "37")
+				(pinfunction "TXD0_37")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "TP1")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
 			(name "/VBUS")
 			(class "Default")
 			(node
@@ -6746,7 +6693,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "19")
 			(name "/VBUS_MCU")
 			(class "Default")
 			(node
@@ -6767,7 +6714,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "20")
 			(name "/WIFI_RX_LED")
 			(class "Default")
 			(node
@@ -6783,7 +6730,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "21")
 			(name "/WIFI_TX_LED")
 			(class "Default")
 			(node
@@ -6799,7 +6746,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "22")
 			(name "/WIFI_UP_LED")
 			(class "Default")
 			(node
@@ -6815,7 +6762,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "23")
 			(name "GND")
 			(class "Default")
 			(node
@@ -7087,8 +7034,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "4")
-				(pinfunction "Pin_4_4")
+				(pin "8")
+				(pinfunction "Pin_8_8")
 				(pintype "passive")
 			)
 			(node
@@ -7158,7 +7105,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "24")
 			(name "Net-(CMC1-O1)")
 			(class "Default")
 			(node
@@ -7184,7 +7131,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "25")
 			(name "Net-(CMC1-O2)")
 			(class "Default")
 			(node
@@ -7210,7 +7157,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "26")
 			(name "Net-(J1-Pin_2)")
 			(class "Default")
 			(node
@@ -7227,7 +7174,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "27")
 			(name "Net-(J1-Pin_3)")
 			(class "Default")
 			(node
@@ -7244,7 +7191,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "28")
 			(name "Net-(J1-Pin_4)")
 			(class "Default")
 			(node
@@ -7261,7 +7208,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "29")
 			(name "Net-(J1-Pin_5)")
 			(class "Default")
 			(node
@@ -7278,7 +7225,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "30")
 			(name "Net-(LED1-A)")
 			(class "Default")
 			(node
@@ -7294,7 +7241,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "31")
 			(name "Net-(LED2-A)")
 			(class "Default")
 			(node
@@ -7310,7 +7257,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "32")
 			(name "Net-(LED3-A)")
 			(class "Default")
 			(node
@@ -7326,7 +7273,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "33")
 			(name "Net-(LED4-A)")
 			(class "Default")
 			(node
@@ -7342,7 +7289,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "34")
 			(name "Net-(LED5-A)")
 			(class "Default")
 			(node
@@ -7358,7 +7305,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "35")
 			(name "Net-(LED6-A)")
 			(class "Default")
 			(node
@@ -7374,7 +7321,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "36")
 			(name "Net-(LED7-A)")
 			(class "Default")
 			(node
@@ -7390,7 +7337,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "37")
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
@@ -7423,7 +7370,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "38")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
@@ -7456,7 +7403,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "39")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -7472,7 +7419,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "40")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -7488,7 +7435,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "41")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -7500,40 +7447,6 @@
 			(node
 				(ref "R12")
 				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "40")
-			(name "Net-(MCU1-RXD0)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "36")
-				(pinfunction "RXD0_36")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "TP1")
-				(pin "3")
-				(pinfunction "Pin_3_3")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "41")
-			(name "Net-(MCU1-TXD0)")
-			(class "Default")
-			(node
-				(ref "MCU1")
-				(pin "37")
-				(pinfunction "TXD0_37")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "TP1")
-				(pin "2")
-				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 		)
