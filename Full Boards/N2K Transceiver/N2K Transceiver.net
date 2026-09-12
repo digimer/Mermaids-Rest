@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-12T01:09:12")
+		(date "2026-09-12T01:27:24")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -4529,21 +4529,21 @@
 		(comp
 			(ref "TP1")
 			(value "Comms TP")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x08, script generated")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x10, script generated")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x08, script generated")
+					(name "Description") "Generic connector, single row, 01x10, script generated")
 			)
 			(libsource
 				(lib "Connector")
-				(part "Conn_01x08_Pin")
-				(description "Generic connector, single row, 01x08, script generated")
+				(part "Conn_01x10_Pin")
+				(description "Generic connector, single row, 01x10, script generated")
 			)
 			(property
 				(name "Sheetname")
@@ -4596,6 +4596,12 @@
 						)
 						(pin
 							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
 						)
 					)
 				)
@@ -5046,8 +5052,8 @@
 		)
 		(libpart
 			(lib "Connector")
-			(part "Conn_01x08_Pin")
-			(description "Generic connector, single row, 01x08, script generated")
+			(part "Conn_01x10_Pin")
+			(description "Generic connector, single row, 01x10, script generated")
 			(footprints
 				(fp "Connector*:*_1x??_*")
 			)
@@ -5055,7 +5061,7 @@
 				(field
 					(name "Reference") "J")
 				(field
-					(name "Value") "Conn_01x08_Pin")
+					(name "Value") "Conn_01x10_Pin")
 				(field
 					(name "Footprint")
 				)
@@ -5063,7 +5069,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x08, script generated")
+					(name "Description") "Generic connector, single row, 01x10, script generated")
 			)
 			(pins
 				(pin
@@ -5104,6 +5110,16 @@
 				(pin
 					(num "8")
 					(name "Pin_8")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "Pin_9")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "Pin_10")
 					(type "passive")
 				)
 			)
@@ -6551,6 +6567,12 @@
 				(pinfunction "SCL_6")
 				(pintype "input")
 			)
+			(node
+				(ref "TP1")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "8")
@@ -6578,6 +6600,12 @@
 				(pin "5")
 				(pinfunction "SDA_5")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "TP1")
+				(pin "9")
+				(pinfunction "Pin_9_9")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -7126,8 +7154,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "8")
-				(pinfunction "Pin_8_8")
+				(pin "10")
+				(pinfunction "Pin_10_10")
 				(pintype "passive")
 			)
 			(node
