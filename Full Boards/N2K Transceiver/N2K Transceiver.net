@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-12T01:27:24")
+		(date "2026-09-12T01:46:23")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -776,6 +776,62 @@
 		)
 		(comp
 			(ref "C13")
+			(value "1000pF")
+			(footprint "mr-stuff:TDK CGA 0805")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "TDK CGA4F2X7R2A102K085AE")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA 0805")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TDK CGA4F2X7R2A102K085AE")
+				(description "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA4F2X7R2A102K085AE")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9abd3152-c538-4021-b6ea-66569d9ec14f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C14")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
@@ -819,67 +875,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "8e8860b3-35a9-4af2-acb4-6919bd86c522")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C14")
-			(value "0.1uF")
-			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			(fields
-				(field
-					(name "Part") "Kyocera 08051C104K4Z2A")
-				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
-				(field
-					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-				(field
-					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			)
-			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Part")
-				(value "Kyocera 08051C104K4Z2A")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "e950f1ea-d640-40ad-ad92-df0d46beca2e")
+			(tstamps "44c25c4d-3d08-48fa-8fe9-6afb54014bd1")
 			(units
 				(unit
 					(name "A")
@@ -5945,6 +5941,41 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "TDK CGA4F2X7R2A102K085AE")
+			(description "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(docs "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1000pF")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA 0805")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+				(field
+					(name "Part") "TDK CGA4F2X7R2A102K085AE")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "TI TCAN3404DRQ1")
 			(description "TCAN3404")
 			(docs "https://www.ti.com/lit/ds/symlink/tcan3404-q1.pdf")
@@ -6907,7 +6938,7 @@
 			)
 			(node
 				(ref "C13")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -7501,7 +7532,7 @@
 			(class "Default")
 			(node
 				(ref "C13")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node

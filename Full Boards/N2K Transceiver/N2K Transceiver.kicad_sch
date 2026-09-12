@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "N2K Transceiver")
-		(date "2026-09-11")
+		(date "2026-09-12")
 		(rev "1.0.0")
 		(company "The Digital Mermaid")
 	)
@@ -5105,6 +5105,161 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:TDK CGA4F2X7R2A102K085AE"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1000pF"
+				(at 0.254 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "mr-stuff:TDK CGA 0805"
+				(at 0 -18.034 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+				(at 0 -15.748 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TDK CGA4F2X7R2A102K085AE"
+				(at -0.254 -13.716 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TDK CGA4F2X7R2A102K085AE_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TDK CGA4F2X7R2A102K085AE_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:TI TCAN3404DRQ1"
 			(pin_names
 				(offset 0.254)
@@ -7775,10 +7930,10 @@
 		(uuid "543d661a-a9d2-4966-a37e-f7486667858a")
 	)
 	(junction
-		(at 19.05 100.33)
+		(at 19.05 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "556fff9e-49f4-4452-8a77-95363f3cabb9")
+		(uuid "5740b4d7-003f-4324-96b3-35e774415bf2")
 	)
 	(junction
 		(at 132.08 107.95)
@@ -7797,6 +7952,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e6c960c-3646-4e45-ad12-0b9e18b31644")
+	)
+	(junction
+		(at 30.48 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "606c63b8-2426-47d4-aa20-53a38186ef47")
 	)
 	(junction
 		(at 269.24 110.49)
@@ -7829,6 +7990,12 @@
 		(uuid "756c36b8-d860-44b4-9a33-c2abdb313ca8")
 	)
 	(junction
+		(at 50.8 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79901084-96d0-4c2c-a5b1-b57f0490ccc9")
+	)
+	(junction
 		(at 29.21 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7859,6 +8026,12 @@
 		(uuid "8ea57250-b3f0-47d6-808d-89466e162375")
 	)
 	(junction
+		(at 17.78 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "939209cf-0572-4ad2-8c87-43ad93754cc8")
+	)
+	(junction
 		(at 240.03 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7883,16 +8056,16 @@
 		(uuid "996aab95-c6c8-4f3c-85af-e9ea2f35cc0d")
 	)
 	(junction
-		(at 19.05 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b7ef320-1280-49ac-992e-d532771ccf80")
-	)
-	(junction
 		(at 200.66 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2e81491-1d31-4092-ae5e-0e5a71ec4aa6")
+	)
+	(junction
+		(at 17.78 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a41d1375-98bb-42a9-be7f-22f7a6397370")
 	)
 	(junction
 		(at 115.57 26.67)
@@ -7935,12 +8108,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af3d00af-4c9a-4ead-8b08-630f61bc3843")
-	)
-	(junction
-		(at 50.8 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b1378464-67a4-4487-b05b-eb0cf18946ad")
 	)
 	(junction
 		(at 210.82 115.57)
@@ -8003,18 +8170,6 @@
 		(uuid "cd872c05-41ba-4999-9f67-984fa8f267fc")
 	)
 	(junction
-		(at 30.48 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d2bed433-4fd5-477b-87d0-132fd2b30359")
-	)
-	(junction
-		(at 19.05 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5bd29e6-3d88-4f85-a254-af63bfc786ff")
-	)
-	(junction
 		(at 138.43 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8045,16 +8200,16 @@
 		(uuid "e24f6472-ea0a-4fcf-9aab-79f09d11d6db")
 	)
 	(junction
-		(at 19.05 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e4166863-0a30-49f5-b859-542cc219aacf")
-	)
-	(junction
 		(at 58.42 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed2cebfd-ebf6-400d-8c9a-87b88ece1e31")
+	)
+	(junction
+		(at 17.78 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f00b67fe-e678-474d-9093-aa9dad9a9f49")
 	)
 	(junction
 		(at 176.53 46.99)
@@ -8338,6 +8493,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 110.49) (xy 29.21 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ecdf0c1-b57a-4ba1-a6cb-d71283cd32bd")
+	)
+	(wire
+		(pts
 			(xy 35.56 49.53) (xy 38.1 49.53)
 		)
 		(stroke
@@ -8615,16 +8780,6 @@
 			(type default)
 		)
 		(uuid "23075ebc-b7af-4390-b137-1a6efde6c311")
-	)
-	(wire
-		(pts
-			(xy 20.32 100.33) (xy 19.05 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23435aa4-629a-4883-819f-5d97eee543bc")
 	)
 	(wire
 		(pts
@@ -8908,6 +9063,16 @@
 	)
 	(wire
 		(pts
+			(xy 17.78 114.3) (xy 41.91 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "363b74a5-62ab-401e-94ea-8a13249747d3")
+	)
+	(wire
+		(pts
 			(xy 133.35 59.69) (xy 135.89 59.69)
 		)
 		(stroke
@@ -8948,7 +9113,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 93.98) (xy 19.05 100.33)
+			(xy 17.78 93.98) (xy 17.78 100.33)
 		)
 		(stroke
 			(width 0)
@@ -9248,6 +9413,16 @@
 	)
 	(wire
 		(pts
+			(xy 17.78 100.33) (xy 20.32 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dd6dc1a-32d1-43c8-8f57-030a1b9f710b")
+	)
+	(wire
+		(pts
 			(xy 54.61 105.41) (xy 54.61 109.22)
 		)
 		(stroke
@@ -9488,7 +9663,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 100.33) (xy 19.05 110.49)
+			(xy 17.78 100.33) (xy 17.78 110.49)
 		)
 		(stroke
 			(width 0)
@@ -9935,16 +10110,6 @@
 			(type default)
 		)
 		(uuid "77f15ffc-c920-4051-be9a-4d2d674ddc5a")
-	)
-	(wire
-		(pts
-			(xy 19.05 114.3) (xy 41.91 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78db4157-939e-405b-8b4f-b4c9f4e9d51e")
 	)
 	(wire
 		(pts
@@ -10498,7 +10663,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 110.49) (xy 19.05 114.3)
+			(xy 17.78 110.49) (xy 17.78 114.3)
 		)
 		(stroke
 			(width 0)
@@ -10788,7 +10953,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 93.98) (xy 57.15 93.98)
+			(xy 41.91 93.98) (xy 50.8 93.98)
 		)
 		(stroke
 			(width 0)
@@ -10905,6 +11070,16 @@
 			(type default)
 		)
 		(uuid "be4a13d0-9a2d-4cfe-af74-dab585651bf2")
+	)
+	(wire
+		(pts
+			(xy 50.8 93.98) (xy 57.15 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf199565-176f-4cba-9900-1bfbb12e8e07")
 	)
 	(wire
 		(pts
@@ -11135,6 +11310,16 @@
 			(type default)
 		)
 		(uuid "d16624c3-80ea-4578-9fd2-a8102f81ecce")
+	)
+	(wire
+		(pts
+			(xy 17.78 110.49) (xy 19.05 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2a63947-f814-49ce-aefb-d5258969088e")
 	)
 	(wire
 		(pts
@@ -11408,16 +11593,6 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 110.49) (xy 20.32 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e064cb3e-d55c-4206-9d2a-b4c2c6dca0c8")
-	)
-	(wire
-		(pts
 			(xy 82.55 33.02) (xy 83.82 33.02)
 		)
 		(stroke
@@ -11495,6 +11670,16 @@
 			(type default)
 		)
 		(uuid "e544aecf-82a6-4b4c-bdda-2193ef298e1f")
+	)
+	(wire
+		(pts
+			(xy 17.78 93.98) (xy 19.05 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5a5bf49-84c2-4188-bf7f-6b5a38f49a72")
 	)
 	(wire
 		(pts
@@ -11598,7 +11783,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 114.3) (xy 19.05 119.38)
+			(xy 17.78 114.3) (xy 17.78 119.38)
 		)
 		(stroke
 			(width 0)
@@ -11728,16 +11913,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 93.98) (xy 50.8 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f85f36fa-c92a-419e-822b-5c17ef1c77d8")
-	)
-	(wire
-		(pts
 			(xy 252.73 140.97) (xy 255.27 140.97)
 		)
 		(stroke
@@ -11755,6 +11930,16 @@
 			(type default)
 		)
 		(uuid "fd5642dd-85d9-4151-889f-d83b452c25b0")
+	)
+	(wire
+		(pts
+			(xy 17.78 119.38) (xy 19.05 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdbb718b-a91d-4970-a24d-e72800d653c1")
 	)
 	(wire
 		(pts
@@ -14737,6 +14922,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 50.8 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "44c25c4d-3d08-48fa-8fe9-6afb54014bd1")
+		(property "Reference" "C14"
+			(at 51.054 95.758 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 51.054 100.076 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
+			(at 51.7652 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf"
+			(at 50.8 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 50.8 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C105K4Z2A"
+			(at 50.8 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9a04ba12-3eb1-48fd-bf36-180221200a7f")
+		)
+		(pin "1"
+			(uuid "4a151384-173c-41c8-81fd-98faaa383ca9")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 201.93 86.36 0)
 		(unit 1)
@@ -17198,98 +17475,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 24.13 100.33 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8e8860b3-35a9-4af2-acb4-6919bd86c522")
-		(property "Reference" "C13"
-			(at 25.4 99.06 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 25.4 101.6 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
-			(at 20.32 101.2952 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf"
-			(at 24.13 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 24.13 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Kyocera 08051C105K4Z2A"
-			(at 24.13 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3173d563-9e7d-49bf-a915-9cd4a9eecfa9")
-		)
-		(pin "1"
-			(uuid "bc3eecd5-9b3e-40d6-99b0-05f9ae9972f3")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 19.05 170.18 0)
 		(unit 1)
@@ -17611,6 +17796,97 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:TDK CGA4F2X7R2A102K085AE")
+		(at 24.13 100.33 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9abd3152-c538-4021-b6ea-66569d9ec14f")
+		(property "Reference" "C13"
+			(at 22.86 99.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000pF"
+			(at 24.13 103.632 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:TDK CGA 0805"
+			(at 42.164 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+			(at 35.56 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 39.878 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA4F2X7R2A102K085AE"
+			(at 37.846 100.584 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "44589a03-0a68-42e2-a3af-22cb80a9927f")
+		)
+		(pin "1"
+			(uuid "98e186ef-3533-45bf-b041-d57cc550fd42")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Vishay VS-30MQ040-M3_5AT")
 		(at 69.85 26.67 0)
 		(unit 1)
@@ -17797,7 +18073,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_MEC_5G")
-		(at 25.4 110.49 0)
+		(at 24.13 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17807,7 +18083,7 @@
 		(dnp no)
 		(uuid "9d8b872f-3ff8-4edd-9a0f-ba5dbabaa177")
 		(property "Reference" "SW2"
-			(at 25.4 106.172 0)
+			(at 21.336 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17817,7 +18093,7 @@
 			)
 		)
 		(property "Value" "SW_MEC_5G"
-			(at 25.4 105.41 0)
+			(at 24.13 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17828,7 +18104,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67"
-			(at 25.4 105.41 0)
+			(at 24.13 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17839,7 +18115,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf"
-			(at 25.4 105.41 0)
+			(at 24.13 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17850,7 +18126,7 @@
 			)
 		)
 		(property "Description" "Tactile Switch SPST-NO Top Actuated Through Hole"
-			(at 25.4 110.49 0)
+			(at 24.13 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17861,7 +18137,7 @@
 			)
 		)
 		(property "Part" "Same Sky TS03-66-50-BK-160-LCR-D-67"
-			(at 25.4 110.49 0)
+			(at 24.13 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20549,7 +20825,7 @@
 		(dnp no)
 		(uuid "c8bbe66b-ca77-470d-82fe-4c19825af2b0")
 		(property "Reference" "SW1"
-			(at 24.13 89.662 0)
+			(at 21.844 91.186 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22314,98 +22590,6 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0159")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 50.8 97.79 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e950f1ea-d640-40ad-ad92-df0d46beca2e")
-		(property "Reference" "C14"
-			(at 51.308 95.504 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 51.308 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
-			(at 51.7652 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf"
-			(at 50.8 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 50.8 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Kyocera 08051C104K4Z2A"
-			(at 50.8 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0c30155e-3404-44cf-998e-331ecebb5b80")
-		)
-		(pin "1"
-			(uuid "6a84d5bd-90b6-4b01-931c-38ed34e679fe")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C14")
 					(unit 1)
 				)
 			)
