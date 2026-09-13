@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-09-12T21:49:04")
+		(date "2026-09-12T22:01:28")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -1449,21 +1449,27 @@
 		(comp
 			(ref "C24")
 			(value "0.047uF")
-			(description "0.047 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(footprint "mr-stuff:Murata GCJ 0805")
+			(datasheet "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ21BR72A473KA01-02D-EN_PDF_CERAMICCAPACITORSMD")
+			(description "0.047 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Part") "Murata GCJ21BR72A473KA01L")
 				(field
-					(name "Datasheet")
-				)
+					(name "Footprint") "mr-stuff:Murata GCJ 0805")
 				(field
-					(name "Description") "0.047 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)")
+					(name "Datasheet") "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ21BR72A473KA01-02D-EN_PDF_CERAMICCAPACITORSMD")
+				(field
+					(name "Description") "0.047 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Murata GCJ21BR72A473KA01L")
+				(description "0.047 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Murata GCJ21BR72A473KA01L")
 			)
 			(property
 				(name "Sheetname")
@@ -7649,27 +7655,27 @@
 		(comp
 			(ref "R13")
 			(value "15kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "15 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD15K0")
+					(name "Part") "Stackpole RMCA0805FT15K0-HP")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
 				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
 				(field
-					(name "Description") "15 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT15K0-HP")
+				(description "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD15K0")
+				(value "Stackpole RMCA0805FT15K0-HP")
 			)
 			(property
 				(name "Sheetname")
@@ -12997,40 +13003,6 @@
 		)
 		(libpart
 			(lib "Device")
-			(part "C")
-			(description "Unpolarized capacitor")
-			(footprints
-				(fp "C_*")
-			)
-			(fields
-				(field
-					(name "Reference") "C")
-				(field
-					(name "Value") "C")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Unpolarized capacitor")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Device")
 			(part "D_Schottky")
 			(description "Schottky diode")
 			(footprints
@@ -13086,40 +13058,6 @@
 				)
 				(field
 					(name "Description") "Fuse")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Device")
-			(part "R")
-			(description "Resistor")
-			(footprints
-				(fp "R_*")
-			)
-			(fields
-				(field
-					(name "Reference") "R")
-				(field
-					(name "Value") "R")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor")
 			)
 			(pins
 				(pin
@@ -14140,6 +14078,41 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "Murata GCJ21BR72A473KA01L")
+			(description "0.047 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(docs "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ21BR72A473KA01-02D-EN_PDF_CERAMICCAPACITORSMD")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "0.047uF")
+				(field
+					(name "Footprint") "mr-stuff:Murata GCJ 0805")
+				(field
+					(name "Datasheet") "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ21BR72A473KA01-02D-EN_PDF_CERAMICCAPACITORSMD")
+				(field
+					(name "Description") "0.047 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+				(field
+					(name "Part") "Murata GCJ21BR72A473KA01L")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Murata GCJ32ER71C226KE01L")
 			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			(docs "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
@@ -14507,6 +14480,41 @@
 					(name "Description") "100 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 				(field
 					(name "Part") "Stackpole RMCA0805FT100K-HP")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Stackpole RMCA0805FT15K0-HP")
+			(description "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(docs "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "15kR")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+				(field
+					(name "Part") "Stackpole RMCA0805FT15K0-HP")
 			)
 			(pins
 				(pin
@@ -17261,7 +17269,7 @@
 			)
 			(node
 				(ref "R13")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 		)
@@ -17845,7 +17853,7 @@
 			)
 			(node
 				(ref "R13")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
