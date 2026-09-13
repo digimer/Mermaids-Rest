@@ -1,0 +1,172 @@
+(footprint "Panasonic ERJ-UP6 0805"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "ERJUP6")
+	(tags "Resistor")
+	(property "Reference" "REF**"
+		(at 0 -1.4 0)
+		(layer "F.SilkS")
+		(uuid "88ae349d-ddb5-4673-a0a2-b49a8b98bae2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Panasonic ERJ-UP6 0805"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "40c297b9-3b81-4bbe-ab58-971df544a52f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ee71d75e-367e-4ebf-a43f-240f700501f8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4e20fd85-e417-48b7-b022-7e606f97bf8d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1 -0.7)
+		(end 1 -0.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3c25c7e4-53ee-42d0-9692-d2b9a7ff321a")
+	)
+	(fp_line
+		(start 1 0.7)
+		(end -1 0.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4007cc21-c984-4ebd-bdea-25d9f0feb74e")
+	)
+	(fp_circle
+		(center -1.575 0.85)
+		(end -1.575 0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "36fc2d4b-926b-41aa-bdda-37eb624bab59")
+	)
+	(fp_rect
+		(start -1.7 -0.85)
+		(end 1.7 0.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "dc75a75e-6261-471f-8b81-0bf7e20feecb")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a16cf1c0-b032-433d-9bb4-57e14c2003b0")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1a149b64-a18e-4184-b2b8-bf2d4f7a8bce")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "381a1675-519a-4b86-b7c2-3fdfa4737c61")
+	)
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "240cd6d8-6899-459c-b234-47d3bea47687")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 1.55 0)
+		(layer "F.Fab")
+		(uuid "a8a30cc3-9540-457e-8da0-3f2408a572c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1 0)
+		(size 1.15 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0c54e9f2-7116-406c-864b-cfb4481bf037")
+	)
+	(pad "2" smd rect
+		(at 1 0)
+		(size 1.15 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e99617ec-2566-4934-9ecf-939ffafab295")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Panasonic ERJ-UP6/ERJUP6F1020V.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
