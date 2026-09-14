@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-09-12T22:01:28")
+		(date "2026-09-14T02:19:36")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -1492,66 +1492,6 @@
 				(tstamps "/")
 			)
 			(tstamps "3c338c19-9bbc-40e6-a02b-46588323b7a5")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C25")
-			(value "1uF")
-			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
-			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			(fields
-				(field
-					(name "Part") "Kyocera 08051C105K4Z2A")
-				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
-				(field
-					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
-				(field
-					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "Kyocera 08051C105K4Z2A")
-				(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			)
-			(property
-				(name "Part")
-				(value "Kyocera 08051C105K4Z2A")
-			)
-			(property
-				(name "Sheetname")
-				(value "Root")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Masthead Controller.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "8c26870f-cda4-42e5-88d0-68568bca8796")
 			(units
 				(unit
 					(name "A")
@@ -4280,6 +4220,177 @@
 			)
 		)
 		(comp
+			(ref "FID1")
+			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_1mm_Mask2mm")
+			(description "Fiducial Marker")
+			(fields
+				(field
+					(name "Sim.Pins")
+				)
+				(field
+					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Fiducial Marker")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "Fiducial")
+				(description "Fiducial Marker")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fiducial marker")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Fiducial*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a5b04fda-d3b0-469a-ad12-5e7ef87d3926")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "FID2")
+			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_1mm_Mask2mm")
+			(description "Fiducial Marker")
+			(fields
+				(field
+					(name "Sim.Pins")
+				)
+				(field
+					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Fiducial Marker")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "Fiducial")
+				(description "Fiducial Marker")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fiducial marker")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Fiducial*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a05432cf-6625-4259-9496-a0958bb34ba0")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "FID3")
+			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_1mm_Mask2mm")
+			(description "Fiducial Marker")
+			(fields
+				(field
+					(name "Sim.Pins")
+				)
+				(field
+					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Fiducial Marker")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "Fiducial")
+				(description "Fiducial Marker")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fiducial marker")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Fiducial*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c1954776-c3d3-4789-a180-64f89769c57b")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
 			(ref "FST1")
 			(value "Conn_02x06_Odd_Even")
 			(footprint "mr-stuff:Amphenol 20021111-00012T4LF")
@@ -4528,21 +4639,21 @@
 		(comp
 			(ref "H1")
 			(value "MountingHole_Pad")
-			(footprint "MountingHole:MountingHole_4mm_Pad_Via")
-			(description "Mounting Hole with connection")
+			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_4mm_Pad_Via")
+					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Mounting Hole with connection")
+					(name "Description") "Mounting Hole without connection")
 			)
 			(libsource
 				(lib "Mechanical")
-				(part "MountingHole_Pad")
-				(description "Mounting Hole with connection")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
 			)
 			(property
 				(name "Sheetname")
@@ -4561,42 +4672,38 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "MountingHole*Pad*")
+				(value "MountingHole*")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "26547f8a-4e11-4e5a-913d-2d5aaf1c4186")
+			(tstamps "28f95b34-e9f1-401a-80f0-c0b88ef72d2d")
 			(units
 				(unit
 					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-					)
+					(pins)
 				)
 			)
 		)
 		(comp
 			(ref "H2")
 			(value "MountingHole_Pad")
-			(footprint "MountingHole:MountingHole_4mm_Pad_Via")
-			(description "Mounting Hole with connection")
+			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_4mm_Pad_Via")
+					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Mounting Hole with connection")
+					(name "Description") "Mounting Hole without connection")
 			)
 			(libsource
 				(lib "Mechanical")
-				(part "MountingHole_Pad")
-				(description "Mounting Hole with connection")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
 			)
 			(property
 				(name "Sheetname")
@@ -4615,42 +4722,38 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "MountingHole*Pad*")
+				(value "MountingHole*")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "db758def-7af4-404f-85db-63aa13e6f9d8")
+			(tstamps "c8837915-0fb8-469f-8e15-a9fa1071becb")
 			(units
 				(unit
 					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-					)
+					(pins)
 				)
 			)
 		)
 		(comp
 			(ref "H3")
 			(value "MountingHole_Pad")
-			(footprint "MountingHole:MountingHole_4mm_Pad_Via")
-			(description "Mounting Hole with connection")
+			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_4mm_Pad_Via")
+					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Mounting Hole with connection")
+					(name "Description") "Mounting Hole without connection")
 			)
 			(libsource
 				(lib "Mechanical")
-				(part "MountingHole_Pad")
-				(description "Mounting Hole with connection")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
 			)
 			(property
 				(name "Sheetname")
@@ -4669,42 +4772,38 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "MountingHole*Pad*")
+				(value "MountingHole*")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "5357a6d0-6391-4dcf-a259-2efb3a4ee93e")
+			(tstamps "c55106be-36c8-4f19-b4d9-f1b95d1407d2")
 			(units
 				(unit
 					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-					)
+					(pins)
 				)
 			)
 		)
 		(comp
 			(ref "H4")
 			(value "MountingHole_Pad")
-			(footprint "MountingHole:MountingHole_4mm_Pad_Via")
-			(description "Mounting Hole with connection")
+			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_4mm_Pad_Via")
+					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Mounting Hole with connection")
+					(name "Description") "Mounting Hole without connection")
 			)
 			(libsource
 				(lib "Mechanical")
-				(part "MountingHole_Pad")
-				(description "Mounting Hole with connection")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
 			)
 			(property
 				(name "Sheetname")
@@ -4723,79 +4822,17 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "MountingHole*Pad*")
+				(value "MountingHole*")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "6fafccf1-8035-4c73-b95c-8becd072d279")
+			(tstamps "900eb02c-5d42-4a63-b92b-dc8474a2a6af")
 			(units
 				(unit
 					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "HTS1")
-			(value "SHT41A")
-			(footprint "mr-stuff:Sensirion SHT41A")
-			(datasheet "https://sensirion.com/media/documents/C43ACD8C/67BD838A/HT_DS_Datasheet_SHT4xA_3.pdf")
-			(description "Humidity and Temperature Sensor, I2C, Automotive Grade")
-			(fields
-				(field
-					(name "Part") "Sensirion SHT41A-AW1B-R2")
-				(field
-					(name "Footprint") "mr-stuff:Sensirion SHT41A")
-				(field
-					(name "Datasheet") "https://sensirion.com/media/documents/C43ACD8C/67BD838A/HT_DS_Datasheet_SHT4xA_3.pdf")
-				(field
-					(name "Description") "Humidity and Temperature Sensor, I2C, Automotive Grade")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "Sensirion SHT41A")
-				(description "Humidity and Temperature Sensor, I2C, Automotive Grade")
-			)
-			(property
-				(name "Part")
-				(value "Sensirion SHT41A-AW1B-R2")
-			)
-			(property
-				(name "Sheetname")
-				(value "Root")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Masthead Controller.kicad_sch")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "dcecfa67-6908-4aef-b4ee-df180e87648c")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "2")
-						)
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "3")
-						)
-						(pin
-							(num "4")
-						)
-					)
+					(pins)
 				)
 			)
 		)
@@ -9873,126 +9910,6 @@
 			)
 		)
 		(comp
-			(ref "R50")
-			(value "4.7kR")
-			(footprint "mr-stuff:Stackpole RMCA0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
-			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RMCA0805FT4K70-HP")
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
-				(field
-					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "Stackpole RMCA0805FT4K70-HP")
-				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RMCA0805FT4K70-HP")
-			)
-			(property
-				(name "Sheetname")
-				(value "Root")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Masthead Controller.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "8f83247c-3b64-4d2e-89d6-0235c8be575a")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R51")
-			(value "4.7kR")
-			(footprint "mr-stuff:Stackpole RMCA0805")
-			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
-			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RMCA0805FT4K70-HP")
-				(field
-					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
-				(field
-					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-			)
-			(libsource
-				(lib "mr-parts")
-				(part "Stackpole RMCA0805FT4K70-HP")
-				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RMCA0805FT4K70-HP")
-			)
-			(property
-				(name "Sheetname")
-				(value "Root")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Masthead Controller.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "4b9db74d-7e7d-4ae3-9216-2c5c9d7f9845")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "R52")
 			(value "10kR")
 			(footprint "mr-stuff:Stackpole RNCP0805")
@@ -13074,16 +12991,16 @@
 		)
 		(libpart
 			(lib "Mechanical")
-			(part "MountingHole_Pad")
-			(description "Mounting Hole with connection")
+			(part "Fiducial")
+			(description "Fiducial Marker")
 			(footprints
-				(fp "MountingHole*Pad*")
+				(fp "Fiducial*")
 			)
 			(fields
 				(field
-					(name "Reference") "H")
+					(name "Reference") "FID")
 				(field
-					(name "Value") "MountingHole_Pad")
+					(name "Value") "Fiducial")
 				(field
 					(name "Footprint")
 				)
@@ -13091,14 +13008,29 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Mounting Hole with connection")
+					(name "Description") "Fiducial Marker")
 			)
-			(pins
-				(pin
-					(num "1")
-					(name "1")
-					(type "input")
+		)
+		(libpart
+			(lib "Mechanical")
+			(part "MountingHole")
+			(description "Mounting Hole without connection")
+			(footprints
+				(fp "MountingHole*")
+			)
+			(fields
+				(field
+					(name "Reference") "H")
+				(field
+					(name "Value") "MountingHole")
+				(field
+					(name "Footprint")
 				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
 			)
 		)
 		(libpart
@@ -14419,48 +14351,6 @@
 		)
 		(libpart
 			(lib "mr-parts")
-			(part "Sensirion SHT41A")
-			(description "Humidity and Temperature Sensor, I2C, Automotive Grade")
-			(docs "https://sensirion.com/media/documents/C43ACD8C/67BD838A/HT_DS_Datasheet_SHT4xA_3.pdf")
-			(fields
-				(field
-					(name "Reference") "HTS")
-				(field
-					(name "Value") "SHT41A")
-				(field
-					(name "Footprint") "mr-stuff:Sensirion SHT41A")
-				(field
-					(name "Datasheet") "https://sensirion.com/media/documents/C43ACD8C/67BD838A/HT_DS_Datasheet_SHT4xA_3.pdf")
-				(field
-					(name "Description") "Humidity and Temperature Sensor, I2C, Automotive Grade")
-				(field
-					(name "Part") "Sensirion SHT41A-AW1B-R2")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "SDA/RH")
-					(type "bidirectional")
-				)
-				(pin
-					(num "2")
-					(name "SCL/T")
-					(type "bidirectional")
-				)
-				(pin
-					(num "3")
-					(name "VDD")
-					(type "power_in")
-				)
-				(pin
-					(num "4")
-					(name "VSS")
-					(type "power_in")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
 			(part "Stackpole RMCA0805FT100K-HP")
 			(description "100 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			(docs "https://www.seielect.com/catalog/SEI-RMCA.pdf")
@@ -15565,11 +15455,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C25")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "C26")
 				(pin "1")
 				(pintype "passive")
@@ -15650,12 +15535,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "HTS1")
-				(pin "3")
-				(pinfunction "VDD_3")
-				(pintype "power_in")
-			)
-			(node
 				(ref "R1")
 				(pin "2")
 				(pintype "passive")
@@ -15693,16 +15572,6 @@
 			(node
 				(ref "R46")
 				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R50")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R51")
-				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -16718,21 +16587,10 @@
 				(pintype "input")
 			)
 			(node
-				(ref "HTS1")
-				(pin "2")
-				(pinfunction "SCL/T_2")
-				(pintype "bidirectional")
-			)
-			(node
 				(ref "MCU1")
 				(pin "4")
 				(pinfunction "IO4_4")
 				(pintype "bidirectional")
-			)
-			(node
-				(ref "R51")
-				(pin "1")
-				(pintype "passive")
 			)
 			(node
 				(ref "TP1")
@@ -16752,21 +16610,10 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "HTS1")
-				(pin "1")
-				(pinfunction "SDA/RH_1")
-				(pintype "bidirectional")
-			)
-			(node
 				(ref "MCU1")
 				(pin "5")
 				(pinfunction "IO5_5")
 				(pintype "bidirectional")
-			)
-			(node
-				(ref "R50")
-				(pin "1")
-				(pintype "passive")
 			)
 			(node
 				(ref "TP1")
@@ -17376,11 +17223,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C25")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "C26")
 				(pin "2")
 				(pintype "passive")
@@ -17573,36 +17415,6 @@
 				(ref "EF2")
 				(pin "9")
 				(pinfunction "GND_9")
-				(pintype "power_in")
-			)
-			(node
-				(ref "H1")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "input")
-			)
-			(node
-				(ref "H2")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "input")
-			)
-			(node
-				(ref "H3")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "input")
-			)
-			(node
-				(ref "H4")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "input")
-			)
-			(node
-				(ref "HTS1")
-				(pin "4")
-				(pinfunction "VSS_4")
 				(pintype "power_in")
 			)
 			(node
