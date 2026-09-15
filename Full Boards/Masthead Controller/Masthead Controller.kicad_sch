@@ -3240,6 +3240,169 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "TDK CGA5L1X7R1H106K160AE_1"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10uF"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "mr-stuff:TDK CGA5"
+				(at 0 -13.462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
+				(at 0 -15.494 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TDK CGA5L1X7R1H106K160AE"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TDK CGA5L1X7R1H106K160AE_1_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TDK CGA5L1X7R1H106K160AE_1_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "TI_TPS26631PWP_1"
 			(pin_names
 				(offset 0.254)
@@ -4320,6 +4483,195 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:Bourns SRN4018BTA-220M"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -0.3175 2.0955 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "220uH"
+				(at -0.3175 -1.7145 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Bourns SRN4018BTA"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/SRN4018BTA.pdf"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "22 µH Shielded Wirewound Inductor 720 mA 290mOhm 1616 (4040 Metric)"
+				(at 0 -9.398 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Bourns SRN4018BTA-220M"
+				(at 0 -7.366 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Bourns SRN4018BTA-220M_0_1"
+				(arc
+					(start -2.54 0)
+					(mid -1.905 0.6323)
+					(end -1.27 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 0)
+					(mid -0.635 0.6323)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.635 0.6323)
+					(end 1.27 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 0)
+					(mid 1.905 0.6323)
+					(end 2.54 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Bourns SRN4018BTA-220M_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -14624,154 +14976,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mr-parts:Vishay SS36HE3_B/I"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.794 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SS36HE3_B/I"
-				(at 0 -3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "mr-stuff:Vishay SS36HE3_BI"
-				(at -0.254 -8.382 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
-				(at -0.254 -10.414 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Schottky Barrier Rectifier, 3.0A, 60V"
-				(at -0.254 -6.096 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Part" "Vishay SS36HE3_B/I"
-				(at 0 -12.954 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Vishay SS36HE3_B/I_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Vishay SS36HE3_B/I_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "mr-parts:Vishay VCAN33A2-03SHE3A08"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -15225,6 +15429,324 @@
 					(at 11.43 0 180)
 					(length 2.54)
 					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:Wurth 782853601"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FB"
+				(at 2.794 1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "782853601"
+				(at 0 -3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Würth 782853601"
+				(at 0 -7.874 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.we-online.com/components/products/datasheet/782853601.pdf"
+				(at 0 -9.906 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "600 Ohms @ 100 MHz 1 Signal Line Ferrite Bead 0805 (2012 Metric) 500mA 300mOhm"
+				(at 0 -12.192 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Wurth 782853601"
+				(at 0 -5.842 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Wurth 782853601_0_1"
+				(polyline
+					(pts
+						(xy -0.889 0) (xy -1.2954 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.2794 -1.8288) (xy -1.4986 -1.1176) (xy 0.2032 1.8288) (xy 1.4224 1.1176) (xy -0.2794 -1.8288)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.7874 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Wurth 782853601_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:XP Power RBT05W24S12"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "PS"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RBT05W24S12"
+				(at 0.254 -6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:XP Power RBT05W"
+				(at 21.59 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.xppower.com/storage/portals/0/pdfs/SF_RBT05W.pdf"
+				(at 21.59 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Non-Isolated DC/DC Converters DC-DC, 0.5A switching regulator in a SIP3 package, 1.8V to 15VDC"
+				(at -0.254 -15.494 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "XP Power RBT05W"
+				(at 21.59 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "XP Power RBT05W24S12_1_1"
+				(rectangle
+					(start -3.81 5.08)
+					(end 3.81 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name "+VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -6.35 -2.54 0)
+					(length 2.54)
+					(name "+VOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -15987,6 +16509,18 @@
 		(uuid "6be43a05-f349-4b70-87d5-b9e96fd9ac12")
 	)
 	(rectangle
+		(start 181.61 342.265)
+		(end 247.015 377.825)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6ca21197-cfdf-4526-99b5-0247ae8611d0")
+	)
+	(rectangle
 		(start 142.875 16.51)
 		(end 256.54 76.835)
 		(stroke
@@ -16250,6 +16784,17 @@
 		)
 		(uuid "31716ea2-b196-477f-88a8-a120160bf77e")
 	)
+	(text "N2K 24V -> 12V (Class B)"
+		(exclude_from_sim no)
+		(at 182.118 341.122 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34e7feb0-924a-4051-8ee8-ec838ac20883")
+	)
 	(text "1+"
 		(exclude_from_sim no)
 		(at 467.106 110.744 0)
@@ -16506,9 +17051,9 @@
 		)
 		(uuid "a48ace93-8411-43f2-9d68-60e1d434d673")
 	)
-	(text "24V Power & N2K"
+	(text "N2K, 12V Power Out (Max 500mA)"
 		(exclude_from_sim no)
-		(at 24.892 15.494 0)
+		(at 32.258 15.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16518,7 +17063,7 @@
 	)
 	(text "I2C Address (Ax = Ex)\n+----+----+----++------+\n| E0 | E1 | E2 || Hex  |\n+----+----+----++------+\n|  0 |  0 |  0 || 0x50 |\n|  0 |  0 |  1 || 0x51 |\n|  0 |  1 |  0 || 0x52 |\n|  0 |  1 |  1 || 0x53 |\n|  1 |  0 |  0 || 0x54 |\n|  1 |  0 |  1 || 0x55 |\n|  1 |  1 |  0 || 0x56 |\n|  1 |  1 |  1 || 0x57 |\n+----+----+----++------+"
 		(exclude_from_sim no)
-		(at 238.76 311.658 0)
+		(at 238.76 306.324 0)
 		(effects
 			(font
 				(face "DejaVu Sans Mono")
@@ -16840,6 +17385,12 @@
 		(uuid "10a701e1-44e7-4dd5-825d-9c29fa2fddd5")
 	)
 	(junction
+		(at 226.06 350.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11c3a380-2320-4238-b171-e317c6316553")
+	)
+	(junction
 		(at 199.39 325.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -16862,6 +17413,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ab891d4-6257-4ec8-8228-7bb9ca86711e")
+	)
+	(junction
+		(at 218.44 361.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ae2d4a3-b97d-49c7-b852-21805747721b")
 	)
 	(junction
 		(at 160.02 96.52)
@@ -17098,6 +17655,12 @@
 		(uuid "38f797a6-b1b5-44f8-bb04-d4540059aecf")
 	)
 	(junction
+		(at 218.44 350.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3abd2e36-a5c5-48c5-83f5-d8d36e135298")
+	)
+	(junction
 		(at 292.1 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -17146,12 +17709,6 @@
 		(uuid "46a39118-e29e-4d38-9bfd-7d0ebd185c57")
 	)
 	(junction
-		(at 119.38 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48611ff4-2203-479f-bd7f-bdfebf939149")
-	)
-	(junction
 		(at 535.94 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -17180,12 +17737,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4da26538-1b9d-4495-b204-b2953f280912")
-	)
-	(junction
-		(at 39.37 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4f81b591-a3ed-4b04-9c92-fa73efd8c749")
 	)
 	(junction
 		(at 411.48 33.02)
@@ -17228,6 +17779,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "572f51f3-bc51-463d-9e61-b07092592291")
+	)
+	(junction
+		(at 198.12 350.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "578f2f82-83f0-4c1b-ac11-931a43c4ca38")
+	)
+	(junction
+		(at 187.96 361.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5805b71a-be01-4fb5-8a5c-2060dcccbf39")
 	)
 	(junction
 		(at 283.21 35.56)
@@ -17362,6 +17925,12 @@
 		(uuid "6cfd811c-56cd-4cf2-a7d7-8e35fd5be926")
 	)
 	(junction
+		(at 21.59 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "703a7bd4-2ca5-48ae-bf74-f069be2d6976")
+	)
+	(junction
 		(at 455.93 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -17396,12 +17965,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "784d450f-384a-4d3d-8e02-bfd2c5d40e7f")
-	)
-	(junction
-		(at 22.86 214.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "786dbd5c-154e-49b9-854c-387df557f19f")
 	)
 	(junction
 		(at 411.48 22.86)
@@ -17554,6 +18117,12 @@
 		(uuid "8ea57250-b3f0-47d6-808d-89466e162375")
 	)
 	(junction
+		(at 219.71 372.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f43335f-7f0f-499b-8515-3ce009ac4a08")
+	)
+	(junction
 		(at 280.67 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -17570,6 +18139,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "915d3c24-7da1-4ede-9e00-654f7974202a")
+	)
+	(junction
+		(at 39.37 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "917ab8e9-faad-444b-bd22-bbddfa097842")
 	)
 	(junction
 		(at 154.94 29.21)
@@ -17594,12 +18169,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95faddf2-b4e4-4159-be27-edfb91071b72")
-	)
-	(junction
-		(at 127 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "984189d3-cac3-4ef5-89a8-feb0f67b724e")
 	)
 	(junction
 		(at 25.4 57.15)
@@ -17638,10 +18207,22 @@
 		(uuid "9c9e09c8-9087-427c-8fa5-9d07a9c661c0")
 	)
 	(junction
+		(at 187.96 350.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d29551b-273f-4a7d-b827-db98071a3258")
+	)
+	(junction
 		(at 388.62 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e02d5fa-7c3a-468d-979f-097d26003c32")
+	)
+	(junction
+		(at 219.71 364.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0e05c75-48c5-49a5-9b79-5dce16d53344")
 	)
 	(junction
 		(at 563.88 45.72)
@@ -17738,6 +18319,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7af5a77-e8dc-40c4-b2a8-a87dd9771837")
+	)
+	(junction
+		(at 198.12 361.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b85876a2-71d0-402d-bd56-937f0f25eb7b")
 	)
 	(junction
 		(at 455.93 45.72)
@@ -18010,6 +18597,12 @@
 		(uuid "e0334955-4aed-4dbf-9f05-f57b15bea1a9")
 	)
 	(junction
+		(at 226.06 364.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e199a5e1-0bc4-4c51-a71c-cdd7d10c282a")
+	)
+	(junction
 		(at 203.2 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -18257,7 +18850,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 41.91) (xy 127 64.77)
+			(xy 127 36.83) (xy 127 64.77)
 		)
 		(stroke
 			(width 0)
@@ -18467,7 +19060,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 229.87) (xy 22.86 229.87)
+			(xy 26.67 229.87) (xy 21.59 229.87)
 		)
 		(stroke
 			(width 0)
@@ -18614,6 +19207,16 @@
 			(type default)
 		)
 		(uuid "0882e8d2-f6de-4112-a45b-af2770d51495")
+	)
+	(wire
+		(pts
+			(xy 198.12 361.95) (xy 198.12 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08b568d9-bd03-41f5-be5c-d3d478a531d4")
 	)
 	(wire
 		(pts
@@ -19437,6 +20040,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 356.87) (xy 231.14 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19819289-7f3f-4b63-8d3c-9e28f19317fb")
+	)
+	(wire
+		(pts
 			(xy 165.1 215.9) (xy 165.1 217.17)
 		)
 		(stroke
@@ -19514,6 +20127,16 @@
 			(type default)
 		)
 		(uuid "1b83fc9f-0c03-4616-81d2-d9bc62c089ed")
+	)
+	(wire
+		(pts
+			(xy 187.96 350.52) (xy 189.23 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ba4d58a-4c95-4743-8004-d997a7aa30d8")
 	)
 	(wire
 		(pts
@@ -19847,7 +20470,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 95.25) (xy 24.13 97.79)
+			(xy 25.4 83.82) (xy 25.4 86.36)
 		)
 		(stroke
 			(width 0)
@@ -20077,6 +20700,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 350.52) (xy 218.44 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "290c67be-15c7-47a6-b7e0-6452b975f20c")
+	)
+	(wire
+		(pts
 			(xy 170.18 100.33) (xy 170.18 116.84)
 		)
 		(stroke
@@ -20094,6 +20727,16 @@
 			(type default)
 		)
 		(uuid "2961cd0d-3eaf-45a7-82a7-b74346287a86")
+	)
+	(wire
+		(pts
+			(xy 218.44 350.52) (xy 218.44 351.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e7fa53-a027-4121-804e-e9ed8a9a5921")
 	)
 	(wire
 		(pts
@@ -20184,6 +20827,16 @@
 			(type default)
 		)
 		(uuid "2c6e0823-659a-440c-929a-b5266f354f3d")
+	)
+	(wire
+		(pts
+			(xy 226.06 349.25) (xy 226.06 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cca2edf-ea5d-45f6-afd0-7f4b5f2f2f9e")
 	)
 	(wire
 		(pts
@@ -20487,6 +21140,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 364.49) (xy 215.9 369.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3679fb21-28c1-4262-a48d-fcc083a1b27c")
+	)
+	(wire
+		(pts
 			(xy 34.29 247.65) (xy 36.83 247.65)
 		)
 		(stroke
@@ -20534,6 +21197,16 @@
 			(type default)
 		)
 		(uuid "374f45c7-9899-40f4-b9bb-facf50a9b31e")
+	)
+	(wire
+		(pts
+			(xy 39.37 86.36) (xy 39.37 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37817b9d-429d-4574-a9e5-41fc1ec95bfb")
 	)
 	(wire
 		(pts
@@ -20684,6 +21357,16 @@
 			(type default)
 		)
 		(uuid "3ad0f986-aad5-4824-94bf-b18cdcc83c96")
+	)
+	(wire
+		(pts
+			(xy 19.05 214.63) (xy 21.59 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad1ff40-e75d-4198-a642-c9ffc257e08c")
 	)
 	(wire
 		(pts
@@ -21127,6 +21810,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 214.63) (xy 48.26 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44b616a3-943a-418d-a767-47c850d610ab")
+	)
+	(wire
+		(pts
 			(xy 433.07 22.86) (xy 426.72 22.86)
 		)
 		(stroke
@@ -21317,7 +22010,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 36.83) (xy 119.38 41.91)
+			(xy 119.38 36.83) (xy 119.38 46.99)
 		)
 		(stroke
 			(width 0)
@@ -21387,7 +22080,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 110.49) (xy 39.37 110.49)
+			(xy 35.56 105.41) (xy 39.37 105.41)
 		)
 		(stroke
 			(width 0)
@@ -21464,6 +22157,16 @@
 			(type default)
 		)
 		(uuid "4b611de1-3a96-4397-8c3e-a862c026a684")
+	)
+	(wire
+		(pts
+			(xy 198.12 361.95) (xy 218.44 361.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b677590-464a-49f2-9321-d2970065562d")
 	)
 	(wire
 		(pts
@@ -21727,6 +22430,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 359.41) (xy 218.44 361.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50d4b471-5be1-44bd-80dc-5ff901c047e9")
+	)
+	(wire
+		(pts
 			(xy 198.12 285.75) (xy 200.66 285.75)
 		)
 		(stroke
@@ -21754,6 +22467,16 @@
 			(type default)
 		)
 		(uuid "519d24dc-a9b5-4041-b378-0b1b1884ccb5")
+	)
+	(wire
+		(pts
+			(xy 215.9 369.57) (xy 209.55 369.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51bfb742-9bc0-4c56-b33b-f61ab3785cc3")
 	)
 	(wire
 		(pts
@@ -21917,7 +22640,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 214.63) (xy 22.86 217.17)
+			(xy 21.59 214.63) (xy 21.59 217.17)
 		)
 		(stroke
 			(width 0)
@@ -22217,6 +22940,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 361.95) (xy 187.96 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c3ae3af-6325-46bb-bd2f-333b5afe3550")
+	)
+	(wire
+		(pts
 			(xy 175.26 96.52) (xy 177.8 96.52)
 		)
 		(stroke
@@ -22377,7 +23110,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 110.49) (xy 22.86 110.49)
+			(xy 21.59 105.41) (xy 22.86 105.41)
 		)
 		(stroke
 			(width 0)
@@ -22637,6 +23370,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 356.87) (xy 232.41 356.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6521a665-ad8f-4951-acc9-7a5d0c08aa4e")
+	)
+	(wire
+		(pts
 			(xy 115.57 210.82) (xy 115.57 212.09)
 		)
 		(stroke
@@ -22797,6 +23540,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 372.11) (xy 226.06 372.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6960572f-0dcb-458c-bb5e-b1f34f2832f7")
+	)
+	(wire
+		(pts
 			(xy 195.58 330.2) (xy 199.39 330.2)
 		)
 		(stroke
@@ -22914,6 +23667,16 @@
 			(type default)
 		)
 		(uuid "6ccc08f8-4f1d-47d5-92a2-12c9ce2ffa04")
+	)
+	(wire
+		(pts
+			(xy 196.85 350.52) (xy 198.12 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d158a91-ce85-4802-971b-7bcdd9893a87")
 	)
 	(wire
 		(pts
@@ -23147,7 +23910,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 229.87) (xy 22.86 224.79)
+			(xy 21.59 229.87) (xy 21.59 224.79)
 		)
 		(stroke
 			(width 0)
@@ -23477,6 +24240,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 350.52) (xy 231.14 351.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a94ef43-5c46-44a2-aaf1-f7755fe9a938")
+	)
+	(wire
+		(pts
 			(xy 280.67 111.76) (xy 283.21 111.76)
 		)
 		(stroke
@@ -23594,6 +24367,16 @@
 			(type default)
 		)
 		(uuid "7d5a4e72-3b9f-4b9d-932b-fd2f970afe32")
+	)
+	(wire
+		(pts
+			(xy 215.9 372.11) (xy 219.71 372.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dbd31d6-71b9-41d6-9443-d90404b120fa")
 	)
 	(wire
 		(pts
@@ -24057,7 +24840,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 97.79) (xy 40.64 97.79)
+			(xy 35.56 86.36) (xy 39.37 86.36)
 		)
 		(stroke
 			(width 0)
@@ -24427,6 +25210,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 361.95) (xy 226.06 361.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "931662fb-f293-4614-b8e6-e35259ac64d5")
+	)
+	(wire
+		(pts
 			(xy 455.93 35.56) (xy 457.2 35.56)
 		)
 		(stroke
@@ -24544,6 +25337,16 @@
 			(type default)
 		)
 		(uuid "963734ab-22a4-422e-b918-d881ee3526c6")
+	)
+	(wire
+		(pts
+			(xy 215.9 364.49) (xy 219.71 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "968c9742-fa24-4964-abcc-0af358a6e743")
 	)
 	(wire
 		(pts
@@ -24677,13 +25480,33 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 97.79) (xy 26.67 97.79)
+			(xy 187.96 361.95) (xy 198.12 361.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "995a90e4-395a-49e3-997a-e27c6bd9aaf1")
+	)
+	(wire
+		(pts
+			(xy 25.4 86.36) (xy 27.94 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "997b3aa4-44ae-4e2b-92c4-87d27e7a97a6")
+	)
+	(wire
+		(pts
+			(xy 39.37 100.33) (xy 39.37 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9993a4bd-a815-4c25-a872-a0223d23e0df")
 	)
 	(wire
 		(pts
@@ -24844,6 +25667,16 @@
 			(type default)
 		)
 		(uuid "9d1237a9-0339-4afe-b1bb-5929989175fc")
+	)
+	(wire
+		(pts
+			(xy 25.4 29.21) (xy 27.94 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dfe68c9-6ea0-4d36-a611-4a29fda223c7")
 	)
 	(wire
 		(pts
@@ -25087,16 +25920,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 214.63) (xy 48.26 214.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3b933b0-4c60-4bba-b6d5-b05ff268d960")
-	)
-	(wire
-		(pts
 			(xy 228.6 260.35) (xy 231.14 260.35)
 		)
 		(stroke
@@ -25184,6 +26007,16 @@
 			(type default)
 		)
 		(uuid "a50a39da-9c7d-4f36-b011-e615530b2f6d")
+	)
+	(wire
+		(pts
+			(xy 198.12 350.52) (xy 198.12 353.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a50ac9c0-5f43-4c16-91bc-434d33cf0c57")
 	)
 	(wire
 		(pts
@@ -25334,6 +26167,16 @@
 			(type default)
 		)
 		(uuid "a84b342e-de7c-4cf9-8a2a-dc26aa146d99")
+	)
+	(wire
+		(pts
+			(xy 219.71 364.49) (xy 226.06 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a84cc9ae-d7c7-4bd3-b5b7-499158bf9473")
 	)
 	(wire
 		(pts
@@ -25517,26 +26360,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 97.79) (xy 52.07 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac3f84db-27d5-4757-9b5e-f73b32067125")
-	)
-	(wire
-		(pts
-			(xy 48.26 97.79) (xy 52.07 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac3fb1d4-8e8b-4def-bc3c-5c2d73fbd105")
-	)
-	(wire
-		(pts
 			(xy 195.58 217.17) (xy 195.58 218.44)
 		)
 		(stroke
@@ -25687,6 +26510,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 350.52) (xy 207.01 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0ffc02e-1862-4fc4-adf2-06909efa1079")
+	)
+	(wire
+		(pts
 			(xy 77.47 114.3) (xy 77.47 115.57)
 		)
 		(stroke
@@ -25694,16 +26527,6 @@
 			(type default)
 		)
 		(uuid "b1451536-3ce3-4a1a-af71-074067ea03df")
-	)
-	(wire
-		(pts
-			(xy 20.32 214.63) (xy 22.86 214.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b174f332-97d4-4d64-b10d-f29483aa4361")
 	)
 	(wire
 		(pts
@@ -25794,6 +26617,16 @@
 			(type default)
 		)
 		(uuid "b47f52f6-e150-4313-be64-d60e15abc756")
+	)
+	(wire
+		(pts
+			(xy 187.96 361.95) (xy 187.96 363.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b48bf210-ff77-4041-9eeb-f4fa82101274")
 	)
 	(wire
 		(pts
@@ -25914,6 +26747,16 @@
 			(type default)
 		)
 		(uuid "b6b4acc1-77a8-49b2-9569-78b3f52d0fe3")
+	)
+	(wire
+		(pts
+			(xy 218.44 350.52) (xy 226.06 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6d2ddfe-cd5e-47c5-a285-2177edddbfed")
 	)
 	(wire
 		(pts
@@ -26367,6 +27210,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 351.79) (xy 232.41 351.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0dccf7a-7335-4a27-8eca-d0283cd3b00e")
+	)
+	(wire
+		(pts
 			(xy 388.62 148.59) (xy 391.16 148.59)
 		)
 		(stroke
@@ -26684,16 +27537,6 @@
 			(type default)
 		)
 		(uuid "c8588939-d48e-4fc2-932e-0051a293c774")
-	)
-	(wire
-		(pts
-			(xy 119.38 41.91) (xy 119.38 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c867c4eb-194c-4130-b748-2c623fd2a1a6")
 	)
 	(wire
 		(pts
@@ -27047,13 +27890,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 36.83) (xy 127 41.91)
+			(xy 226.06 354.33) (xy 226.06 361.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1a5f7f0-0e79-4546-a65b-d1bf7724e3b0")
+		(uuid "d1adbcb3-d068-4425-bafc-3ed6a35b09a7")
 	)
 	(wire
 		(pts
@@ -27217,6 +28060,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 364.49) (xy 231.14 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d47a7b0e-75e2-42b2-8144-d27938506f77")
+	)
+	(wire
+		(pts
 			(xy 508 82.55) (xy 508 81.28)
 		)
 		(stroke
@@ -27354,6 +28207,16 @@
 			(type default)
 		)
 		(uuid "d6df213f-e476-488a-b767-48121621c960")
+	)
+	(wire
+		(pts
+			(xy 187.96 347.98) (xy 187.96 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6e0a2c4-9284-4454-9288-f391485edde8")
 	)
 	(wire
 		(pts
@@ -27554,6 +28417,16 @@
 			(type default)
 		)
 		(uuid "dca7193e-4529-4ac5-a739-ffe8851d7d58")
+	)
+	(wire
+		(pts
+			(xy 187.96 350.52) (xy 187.96 353.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcc0882c-bd1b-4c7a-8438-ebb7f8536ba3")
 	)
 	(wire
 		(pts
@@ -28247,6 +29120,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 354.33) (xy 232.41 354.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1f9b189-72f9-4125-85a6-11867005a837")
+	)
+	(wire
+		(pts
 			(xy 292.1 59.69) (xy 303.53 59.69)
 		)
 		(stroke
@@ -28324,6 +29207,16 @@
 			(type default)
 		)
 		(uuid "f40f7976-0b4f-4dab-8c62-af366bdfb116")
+	)
+	(wire
+		(pts
+			(xy 226.06 350.52) (xy 231.14 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f43b7158-6b94-44fd-b789-a2d137632ba7")
 	)
 	(wire
 		(pts
@@ -28564,6 +29457,16 @@
 			(type default)
 		)
 		(uuid "f94c2f19-2002-4728-9e26-c6f8838dab1d")
+	)
+	(wire
+		(pts
+			(xy 35.56 29.21) (xy 38.1 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f95c01b8-f0d2-453a-9a92-8ce1ca29a241")
 	)
 	(wire
 		(pts
@@ -28875,15 +29778,15 @@
 		)
 		(uuid "ffcbc245-6d65-485c-baa1-4ac225e80a4c")
 	)
-	(label "TC_STERN_SEC_VSET"
-		(at 66.04 250.19 0)
+	(label "TC_STBD_PRI_VSET"
+		(at 34.29 281.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "000fc782-0143-44f0-b99f-55e37fbd281d")
+		(uuid "02a0851f-9635-4363-93a0-d7f93111d6b6")
 	)
 	(label "DECK_PRI_JPR"
 		(at 492.76 119.38 180)
@@ -28895,6 +29798,16 @@
 		)
 		(uuid "02b1e02f-fdba-43ca-bd6e-c6ed5712890e")
 	)
+	(label "DECK_PRI_VSET"
+		(at 231.14 232.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "03e9ae66-4e11-4c8f-a44a-343d933c6837")
+	)
 	(label "TC_STERN_PRI_JPR"
 		(at 280.67 119.38 180)
 		(effects
@@ -28904,16 +29817,6 @@
 			(justify right bottom)
 		)
 		(uuid "06458f5c-3e82-4d50-b0ce-2c7c5e6d9528")
-	)
-	(label "EFUSE_LED_SHUTDOWN"
-		(at 45.72 201.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0691bf69-48fa-4e12-a92b-4fb43284fe30")
 	)
 	(label "ROM2_WP"
 		(at 195.58 330.2 180)
@@ -28925,25 +29828,25 @@
 		)
 		(uuid "09c23206-0c42-4d24-905b-a73ceb79c45c")
 	)
-	(label "TC_STERN_PRI_JPR"
-		(at 34.29 247.65 180)
+	(label "DECK_PRI_VSET"
+		(at 34.29 271.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "0c661492-8923-4428-a33c-be7e06e6e188")
+		(uuid "0e1905bf-6342-4edb-befb-7ad2b0b56ae1")
 	)
-	(label "ANCHOR_SEC_VSET"
-		(at 34.29 269.24 180)
+	(label "STEAMING_SEC_VSET"
+		(at 231.14 234.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "0d31ab97-9bbf-426f-89a6-6ea319677097")
+		(uuid "1071ac05-9cf0-4506-b74c-3b290cc04f65")
 	)
 	(label "ANCHOR_SEC_JPR"
 		(at 280.67 77.47 180)
@@ -28955,15 +29858,25 @@
 		)
 		(uuid "11f5b203-5114-48e0-af38-2ca74a61cc14")
 	)
-	(label "ANCHOR_SEC_VSET"
-		(at 231.14 280.67 0)
+	(label "DECK_PRI_JPR"
+		(at 66.04 271.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "151ce877-3bef-4066-a507-1d3da4e671cb")
+		(uuid "131c773e-5026-491b-88a7-11605d07b77a")
+	)
+	(label "TC_STBD_PRI_VSET"
+		(at 231.14 257.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "17247d53-b03b-4d54-bc4f-6e3d4679da0e")
 	)
 	(label "STEAMING_SEC_JPR"
 		(at 496.57 76.2 180)
@@ -28985,25 +29898,25 @@
 		)
 		(uuid "190bd0e7-2ca0-4393-9cdb-0a8e9411f2c8")
 	)
-	(label "TC_STBD_SEC_VSET"
-		(at 231.14 229.87 0)
+	(label "TC_STERN_SEC_VSET"
+		(at 231.14 280.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "1a2a1f0c-e504-47bf-a792-2997a9cdfe1f")
+		(uuid "195e09ac-c2db-42b0-bd47-c8ddcb389593")
 	)
-	(label "VBUS_MCU"
-		(at 45.72 199.39 180)
+	(label "ANCHOR_PRI_VSET"
+		(at 66.04 247.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "1cb0f4bc-15c0-4b14-b723-6dc8f7f9f022")
+		(uuid "20552a2f-868e-4448-9c4a-84e669d545ab")
 	)
 	(label "ROM1_WP"
 		(at 195.58 311.15 180)
@@ -29025,26 +29938,6 @@
 		)
 		(uuid "21044792-5af5-4fd9-8cd6-e0392f94715b")
 	)
-	(label "PGOOD_N2K"
-		(at 45.72 219.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "21ca307a-38a7-45f4-8954-0fc39005dc1f")
-	)
-	(label "STEAMING_SEC_JPR"
-		(at 66.04 279.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "26930183-36b7-4270-8c4a-7250fe122010")
-	)
 	(label "DAC_SDA"
 		(at 218.44 308.61 0)
 		(effects
@@ -29055,25 +29948,25 @@
 		)
 		(uuid "274b4e69-f0ff-4bc4-ade7-ae6ca3351261")
 	)
-	(label "DECK_PRI_VSET"
-		(at 66.04 257.81 0)
+	(label "DECK_SEC_JPR"
+		(at 66.04 269.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "29276492-2ba1-4ad8-b560-4641acd66121")
+		(uuid "28139b33-8ee6-4f9f-b01c-dcc276242042")
 	)
-	(label "LDAC_DAC3"
-		(at 45.72 209.55 180)
+	(label "DECK_SEC_VSET"
+		(at 34.29 269.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "2dbfbe4f-5a13-42ae-aa29-971b9d1ab9d6")
+		(uuid "29924b4d-eebb-4a73-a383-ba338851d29f")
 	)
 	(label "DAC_SCL"
 		(at 198.12 229.87 180)
@@ -29135,15 +30028,15 @@
 		)
 		(uuid "3e77ae41-a987-4e0f-bc2d-c3cb09696f5c")
 	)
-	(label "TC_PORT_SEC_JPR"
-		(at 66.04 274.32 0)
+	(label "CAN_LOW"
+		(at 25.4 29.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "4292975c-e2b6-4e17-9ecf-a233998249d0")
+		(uuid "3ef5dc59-3d76-46a4-bee4-403c52d3611e")
 	)
 	(label "DAC_SCL"
 		(at 198.12 255.27 180)
@@ -29155,17 +30048,7 @@
 		)
 		(uuid "43727ba9-3534-493b-b547-89a0a029eda2")
 	)
-	(label "DECK_PRI_VSET"
-		(at 231.14 262.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "44a15fd7-5bc0-4090-89df-0335c6cb50e6")
-	)
-	(label "TC_PORT_SEC_VSET"
+	(label "ANCHOR_SEC_VSET"
 		(at 231.14 285.75 0)
 		(effects
 			(font
@@ -29173,17 +30056,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "451888dd-9ba7-4afc-a332-61c9d24ac309")
-	)
-	(label "DECK_PRI_JPR"
-		(at 34.29 257.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "47479bcd-c493-424b-9c7d-a27f47e03c7c")
+		(uuid "442219a4-413e-4f14-bdbb-453385dc32bc")
 	)
 	(label "TXD0"
 		(at 81.28 176.53 0)
@@ -29195,45 +30068,25 @@
 		)
 		(uuid "4755c556-40a1-4617-a40b-c4c170d8cb48")
 	)
-	(label "TC_PORT_PRI_VSET"
-		(at 34.29 276.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "49375020-64ab-4cb5-92ce-9f2ff40759dd")
-	)
-	(label "ANCHOR_PRI_VSET"
-		(at 34.29 271.78 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4ab92733-c873-4205-8b7f-9755eb6f9d08")
-	)
-	(label "TC_STBD_PRI_VSET"
-		(at 66.04 252.73 0)
+	(label "STEAMING_PRI_VSET"
+		(at 231.14 237.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "4bc5a370-a7be-4d61-925a-e8a3386450d9")
+		(uuid "496cf6d1-f676-422c-9e9e-f8b929252725")
 	)
-	(label "STEAMING_PRI_VSET"
-		(at 34.29 281.94 180)
+	(label "TC_STBD_SEC_VSET"
+		(at 229.87 251.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "4cc531dd-9d0b-4e34-acfb-b1519391ca00")
+		(uuid "4b72ffa1-1590-496b-a2a3-6fbb3f5ae048")
 	)
 	(label "DAC_SCL"
 		(at 25.4 212.09 180)
@@ -29255,6 +30108,16 @@
 		)
 		(uuid "4f62d14b-55f5-4aca-8678-f26700dae5f0")
 	)
+	(label "TC_PORT_PRI_JPR"
+		(at 34.29 257.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "50a4bcaa-287b-4ad5-b57c-cf3c1aeb677a")
+	)
 	(label "EFUSE_N2K_SHUTDOWN"
 		(at 227.33 142.24 0)
 		(effects
@@ -29265,15 +30128,15 @@
 		)
 		(uuid "532fd50b-2fa3-402b-9130-4f68528e7565")
 	)
-	(label "TC_STBD_PRI_VSET"
-		(at 231.14 232.41 0)
+	(label "TC_PORT_SEC_VSET"
+		(at 66.04 260.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "53d550f2-93f0-4d6a-a2a1-6f87df3549df")
+		(uuid "543af496-f6eb-4b50-9a4d-f408feb2986e")
 	)
 	(label "CAN_HIGH"
 		(at 161.29 255.27 0)
@@ -29295,18 +30158,8 @@
 		)
 		(uuid "54eb161a-21e0-4590-aeb0-5b795bad0d71")
 	)
-	(label "TC_STERN_PRI_VSET"
-		(at 66.04 247.65 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "567f6ce4-b46f-4069-8145-1352bd91663d")
-	)
 	(label "VBUS"
-		(at 21.59 110.49 180)
+		(at 21.59 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29315,15 +30168,15 @@
 		)
 		(uuid "58df79c9-3b25-4edf-b531-0ac09327f248")
 	)
-	(label "TC_PORT_PRI_JPR"
-		(at 66.04 276.86 0)
+	(label "TC_STERN_PRI_VSET"
+		(at 66.04 252.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "5a448ee1-1927-45c5-8d67-341507428e9e")
+		(uuid "5accd867-c5ca-4f3a-b5ff-f803100b11c6")
 	)
 	(label "EFUSE_LED_FAULT"
 		(at 238.76 49.53 0)
@@ -29335,15 +30188,15 @@
 		)
 		(uuid "5bca5e17-adea-44f7-9427-b52ccbfe73d9")
 	)
-	(label "TC_STERN_SEC_JPR"
-		(at 34.29 250.19 180)
+	(label "TC_STBD_PRI_JPR"
+		(at 66.04 281.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "5cd1f0eb-e6b8-45e1-8738-4c61cbed1083")
+		(uuid "5e7432f1-b6fb-40af-aa27-e43ef35e89b4")
 	)
 	(label "EFUSE_LED_IMON"
 		(at 238.76 52.07 0)
@@ -29355,6 +30208,16 @@
 		)
 		(uuid "64f0c628-088e-487d-b6a7-2d4443b5d940")
 	)
+	(label "ANCHOR_SEC_JPR"
+		(at 34.29 250.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "67941cc4-11f9-4b68-9c50-b7c15bd7b4db")
+	)
 	(label "I2C_SDA"
 		(at 228.6 189.23 90)
 		(effects
@@ -29365,15 +30228,15 @@
 		)
 		(uuid "695f8a46-24a9-4202-8214-9e4355659a0f")
 	)
-	(label "ANCHOR_PRI_VSET"
-		(at 231.14 283.21 0)
+	(label "STEAMING_PRI_JPR"
+		(at 66.04 276.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "6d06d68b-c4e0-4d28-bbef-750df4133e95")
+		(uuid "6a6372cd-a370-4467-b04a-7d7e7264948e")
 	)
 	(label "TC_PORT_PRI_JPR"
 		(at 388.62 40.64 180)
@@ -29385,6 +30248,26 @@
 		)
 		(uuid "70eb55da-d9bb-4aa8-93d6-c5f816274754")
 	)
+	(label "TC_PORT_SEC_JPR"
+		(at 34.29 260.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "73bbbc57-3ee8-4fe2-8a3c-14be9054e4f5")
+	)
+	(label "LDAC_DAC1"
+		(at 45.72 209.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "73f868b2-139a-4c7e-82c4-ca812a343168")
+	)
 	(label "VBUS"
 		(at 116.84 212.09 0)
 		(effects
@@ -29395,15 +30278,15 @@
 		)
 		(uuid "747dd009-7a65-4f4f-bed0-7f75023a9c1a")
 	)
-	(label "STEAMING_SEC_VSET"
-		(at 231.14 255.27 0)
+	(label "STEAMING_SEC_JPR"
+		(at 66.04 274.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "75ebd6d4-3379-4f90-a792-dfcb6493fd2d")
+		(uuid "7662faac-1df2-4223-abcc-b3949eeed4c8")
 	)
 	(label "I2C_SCL"
 		(at 45.72 191.77 180)
@@ -29445,16 +30328,6 @@
 		)
 		(uuid "7d7a7922-231f-49f9-b1e8-4457421f1be3")
 	)
-	(label "STEAMING_PRI_JPR"
-		(at 66.04 281.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7e069a32-f108-4e52-8246-213351f61eb9")
-	)
 	(label "VBUS"
 		(at 160.02 218.44 270)
 		(effects
@@ -29475,6 +30348,16 @@
 		)
 		(uuid "81600917-c408-4e3a-b2eb-9d3c864a9d8e")
 	)
+	(label "CAN_HIGH"
+		(at 38.1 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "81af8be9-3b79-40c9-a078-59a40a6af734")
+	)
 	(label "DAC_SDA"
 		(at 143.51 252.73 180)
 		(effects
@@ -29485,15 +30368,25 @@
 		)
 		(uuid "81bda19e-e6b3-4c61-a0f0-ad70d79443c5")
 	)
-	(label "TC_STBD_SEC_JPR"
-		(at 34.29 255.27 180)
+	(label "DECK_SEC_VSET"
+		(at 231.14 229.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "829a534e-6d76-405f-ad35-ccd62933453e")
+	)
+	(label "PGOOD_N2K"
+		(at 45.72 201.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "83684611-225f-4fb6-96a8-d2b33f83c20d")
+		(uuid "83549ec4-078e-4701-81b3-059b02c3d518")
 	)
 	(label "TC_STERN_SEC_JPR"
 		(at 280.67 156.21 180)
@@ -29515,6 +30408,16 @@
 		)
 		(uuid "864fe8cd-545a-418e-b828-96786877095e")
 	)
+	(label "TC_STERN_SEC_JPR"
+		(at 34.29 255.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8775d808-bfb5-4fdd-ada5-b6fb20dcbcb8")
+	)
 	(label "TXD0"
 		(at 161.29 260.35 0)
 		(effects
@@ -29526,7 +30429,7 @@
 		(uuid "89b6bfdd-7f13-44c0-ba1e-91761299b604")
 	)
 	(label "DAC_SDA"
-		(at 20.32 214.63 270)
+		(at 19.05 214.63 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29534,16 +30437,6 @@
 			(justify right bottom)
 		)
 		(uuid "8e11797d-9c18-449c-9bc0-e20473ee873d")
-	)
-	(label "TC_PORT_PRI_VSET"
-		(at 231.14 288.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8e11f3a6-4094-40dc-9259-d334ef2402d3")
 	)
 	(label "I2C_SCL"
 		(at 226.06 189.23 90)
@@ -29575,16 +30468,6 @@
 		)
 		(uuid "93465ade-f702-47ec-81c8-7c4c5ba40247")
 	)
-	(label "STEAMING_PRI_VSET"
-		(at 231.14 257.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "97d1f1be-30ce-4259-ba17-f07140ff5755")
-	)
 	(label "CAN_TX_LOCAL"
 		(at 161.29 250.19 0)
 		(effects
@@ -29594,26 +30477,6 @@
 			(justify left bottom)
 		)
 		(uuid "97f172a4-d21d-4a5f-ba0f-88132716f710")
-	)
-	(label "TC_STBD_SEC_VSET"
-		(at 66.04 255.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "98472162-8c9c-4514-be52-181299cd75be")
-	)
-	(label "LDAC_DAC1"
-		(at 45.72 204.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "997fdf57-81bd-432e-8cc7-fcd68e50ff38")
 	)
 	(label "DAC_SCL"
 		(at 143.51 250.19 180)
@@ -29665,6 +30528,26 @@
 		)
 		(uuid "9c135698-26a2-4c26-860a-e9af84fe9e61")
 	)
+	(label "STEAMING_PRI_VSET"
+		(at 34.29 276.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d69d117-05cc-410c-93ba-446c1a27c751")
+	)
+	(label "STEAMING_SEC_VSET"
+		(at 34.29 274.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d6f615a-c5a0-4595-9e0a-e005ba16db6e")
+	)
 	(label "EFUSE_N2K_IMON"
 		(at 238.76 119.38 0)
 		(effects
@@ -29685,25 +30568,15 @@
 		)
 		(uuid "9ef58c27-cc9c-4df0-afd5-0cff08cdd39d")
 	)
-	(label "TC_PORT_SEC_VSET"
-		(at 34.29 274.32 180)
+	(label "TC_STBD_SEC_VSET"
+		(at 34.29 279.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "a4538364-d49f-42bf-b661-96bb64713567")
-	)
-	(label "ANCHOR_PRI_JPR"
-		(at 66.04 271.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a6fc426a-7840-4a05-80e6-2afd98dd9a80")
+		(uuid "a7b08812-3f2d-4bc0-b54e-1c532b7d8426")
 	)
 	(label "RXD0"
 		(at 81.28 179.07 0)
@@ -29725,15 +30598,25 @@
 		)
 		(uuid "a967b852-ceb7-4d77-908d-92d17d246bca")
 	)
-	(label "DECK_SEC_VSET"
-		(at 66.04 260.35 0)
+	(label "TC_PORT_SEC_VSET"
+		(at 231.14 260.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "b3f8ee66-4a52-48aa-b1da-4d2dd635ca49")
+		(uuid "b56ab1f7-d3ee-4637-9b27-9b769defb077")
+	)
+	(label "LDAC_DAC3"
+		(at 45.72 204.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b64968b6-848b-4438-bdeb-ec82501e0173")
 	)
 	(label "DAC_SCL"
 		(at 198.12 280.67 180)
@@ -29745,6 +30628,16 @@
 		)
 		(uuid "b97d19b0-794d-4745-98e0-c36d7e817e70")
 	)
+	(label "TC_STERN_PRI_JPR"
+		(at 34.29 252.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bff29731-46c2-4263-9b70-c622fe418633")
+	)
 	(label "ROM1_WP"
 		(at 81.28 181.61 0)
 		(effects
@@ -29754,6 +30647,26 @@
 			(justify left bottom)
 		)
 		(uuid "c1a58d8a-e0a6-4a87-8de3-c7a9628d7ceb")
+	)
+	(label "ANCHOR_PRI_JPR"
+		(at 34.29 247.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c2aa1788-dbf0-4181-af8c-95fcfbd93cf2")
+	)
+	(label "TC_PORT_PRI_VSET"
+		(at 66.04 257.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c643fd28-3522-4513-93d3-ed726a73bd7a")
 	)
 	(label "TC_STBD_PRI_JPR"
 		(at 388.62 119.38 180)
@@ -29775,16 +30688,6 @@
 		)
 		(uuid "c737c830-d36c-487b-8450-4752b4bcdbb4")
 	)
-	(label "DECK_SEC_JPR"
-		(at 34.29 260.35 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c810f066-1a7d-4844-af9b-11bba15ec11c")
-	)
 	(label "EFUSE_N2K_SHUTDOWN"
 		(at 45.72 217.17 180)
 		(effects
@@ -29794,16 +30697,6 @@
 			(justify right bottom)
 		)
 		(uuid "cdd00030-5597-4fea-9bf1-00ac73674e92")
-	)
-	(label "DECK_SEC_VSET"
-		(at 231.14 260.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cfe030e4-1767-46b2-8a97-6c2c662b029c")
 	)
 	(label "EFUSE_N2K_FAULT"
 		(at 238.76 116.84 0)
@@ -29845,35 +30738,15 @@
 		)
 		(uuid "d3dbbf99-275f-4392-a1e2-989a8b549f6a")
 	)
-	(label "STEAMING_SEC_VSET"
-		(at 34.29 279.4 180)
+	(label "TC_STERN_SEC_VSET"
+		(at 66.04 255.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "d5c48873-2591-4e7b-b2a8-7d5589cdba52")
-	)
-	(label "EFUSE_LED_FAULT"
-		(at 45.72 196.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "db1f25f1-1f1c-4cda-969f-b5e07bbbe78f")
-	)
-	(label "TC_STBD_PRI_JPR"
-		(at 34.29 252.73 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "dddbf628-9c03-4d40-a3e9-3f1c62d80909")
+		(uuid "d5727e83-ab81-4816-a737-e95730984ab3")
 	)
 	(label "VBUS_MCU"
 		(at 104.14 214.63 180)
@@ -29884,6 +30757,26 @@
 			(justify right bottom)
 		)
 		(uuid "e0b09aaa-ee39-4ca7-88bf-2e4f23e375de")
+	)
+	(label "EFUSE_LED_SHUTDOWN"
+		(at 45.72 199.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e1eab191-9885-4ca1-999a-bbb2ea68a9d9")
+	)
+	(label "EFUSE_LED_FAULT"
+		(at 45.72 219.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e29edb90-1a6b-4075-855d-74a9e75b3c2e")
 	)
 	(label "EFUSE_N2K_IMON"
 		(at 198.12 205.74 0)
@@ -29904,6 +30797,16 @@
 			(justify right bottom)
 		)
 		(uuid "e4d15470-1816-4671-a309-3a5a5ae3ec84")
+	)
+	(label "ANCHOR_PRI_VSET"
+		(at 231.14 288.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5c3dcde-a056-4eaa-9c1b-f27e13a39497")
 	)
 	(label "CAN_RX_LOCAL"
 		(at 161.29 247.65 0)
@@ -29935,25 +30838,45 @@
 		)
 		(uuid "e7db14ac-dd45-45a5-853b-a14895423690")
 	)
-	(label "TC_STERN_SEC_VSET"
-		(at 231.14 234.95 0)
+	(label "TC_STBD_SEC_JPR"
+		(at 66.04 279.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "eb021ff0-1416-4399-aec9-e5bc676b052d")
+		(uuid "ea17f5b1-eeac-4693-9c4f-1820a1810b6e")
 	)
-	(label "ANCHOR_SEC_JPR"
-		(at 66.04 269.24 0)
+	(label "VBUS_MCU"
+		(at 45.72 196.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eb3e8117-7d8e-45eb-9129-1ea7ed5df994")
+	)
+	(label "ANCHOR_SEC_VSET"
+		(at 66.04 250.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "f1fbb97b-2064-4886-b2bc-03dda37b074c")
+		(uuid "ef2c1984-a26d-41f3-b3ea-29d8709b4d8b")
+	)
+	(label "TC_STERN_PRI_VSET"
+		(at 231.14 283.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1955cc8-df28-4e5e-933e-04132e5a7e92")
 	)
 	(label "ANCHOR_PRI_JPR"
 		(at 280.67 40.64 180)
@@ -29985,6 +30908,16 @@
 		)
 		(uuid "f6e9d9a1-37a0-4d09-bfbf-4ce04d2a20de")
 	)
+	(label "TC_PORT_PRI_VSET"
+		(at 231.14 262.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa9a5e37-dafd-4c15-8f03-6478fe658701")
+	)
 	(label "LDAC_DAC2"
 		(at 45.72 207.01 180)
 		(effects
@@ -30004,16 +30937,6 @@
 			(justify right bottom)
 		)
 		(uuid "fbda4490-5acb-44f3-85b2-cb8a4c483275")
-	)
-	(label "TC_STERN_PRI_VSET"
-		(at 231.14 237.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fdeacbba-e16b-40f9-abfa-8033a7519c3e")
 	)
 	(label "CAN_RX_LOCAL"
 		(at 81.28 222.25 0)
@@ -30229,7 +31152,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "01cc5afb-a3c6-4507-9ecb-753231ab7064")
-		(property "Reference" "C30"
+		(property "Reference" "C29"
 			(at 196.088 271.018 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30304,7 +31227,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C30")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -30312,7 +31235,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 24.13 95.25 0)
+		(at 25.4 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -30322,7 +31245,7 @@
 		(dnp no)
 		(uuid "01d84b7c-79be-4e3d-aa65-9ee1d55eac8b")
 		(property "Reference" "#PWR045"
-			(at 24.13 99.06 0)
+			(at 25.4 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30333,7 +31256,7 @@
 			)
 		)
 		(property "Value" "+24V_ISO"
-			(at 24.13 91.44 0)
+			(at 25.4 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30343,7 +31266,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 24.13 95.25 0)
+			(at 25.4 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30354,7 +31277,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 24.13 95.25 0)
+			(at 25.4 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30365,7 +31288,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 24.13 95.25 0)
+			(at 25.4 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30475,7 +31398,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "05c8062f-cdaf-48f2-be5c-62554c462a42")
-		(property "Reference" "C12"
+		(property "Reference" "C13"
 			(at 53.848 156.718 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30487,7 +31410,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 53.975 161.29 0)
+			(at 53.848 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30550,7 +31473,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C12")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -30735,6 +31658,96 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Bourns SRN4018BTA-220M")
+		(at 193.04 350.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07915e80-c730-4a95-8c54-39424a346975")
+		(property "Reference" "L13"
+			(at 193.04 348.488 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22uH"
+			(at 193.04 351.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Bourns SRN4018BTA"
+			(at 193.04 361.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/SRN4018BTA.pdf"
+			(at 193.04 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22 µH Shielded Wirewound Inductor 720 mA 290mOhm 1616 (4040 Metric)"
+			(at 193.04 359.918 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Bourns SRN4018BTA-220M"
+			(at 193.04 357.886 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eac3222e-0849-40f5-8084-aff0b54f1bc7")
+		)
+		(pin "2"
+			(uuid "e13b36f8-f7ab-4d0d-8ce3-d0850b10a7fb")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "L13")
 					(unit 1)
 				)
 			)
@@ -30985,6 +31998,97 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "TVS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 39.37 96.52 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "09f3d5e9-c002-49c1-856d-f51d4d41d973")
+		(property "Reference" "D1"
+			(at 37.846 93.726 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NRVBA340NT3G"
+			(at 41.91 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Onsemi NRVBA340NT3G"
+			(at 39.37 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mbra340t3-d.pdf"
+			(at 39.37 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 39.37 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Onsemi NRVBA340NT3G"
+			(at 39.37 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e8fb2476-4811-4712-a19c-fa60dc8991b6")
+		)
+		(pin "1"
+			(uuid "9f182029-4970-49e8-a706-0e41448eb14d")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -31718,7 +32822,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "10a064b4-fc6e-4d88-a8ff-46d43a30c5ee")
-		(property "Reference" "C37"
+		(property "Reference" "C41"
 			(at 424.18 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31793,7 +32897,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C37")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -32701,7 +33805,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "16b0f911-1ebc-480a-925b-6609c180eca0")
-		(property "Reference" "C28"
+		(property "Reference" "C27"
 			(at 196.088 220.218 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32776,7 +33880,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C28")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -33119,6 +34223,96 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:Vishay MBA02040C6009FC100")
+		(at 31.75 29.21 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ab6fe88-dbb9-43b3-bcc5-1a1f7ead9cf7")
+		(property "Reference" "R2"
+			(at 31.75 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "60R"
+			(at 31.75 27.178 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 31.75 19.812 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/28766/mbxsma.pdf"
+			(at 31.75 17.526 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "60 Ohms ±1% 0.25W, 1/4W Through Hole Resistor Axial Automotive AEC-Q200 Metal Film"
+			(at 31.75 22.098 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay MBA02040C6009FC100"
+			(at 31.75 24.384 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ceb8bcf5-7c21-46b9-b32a-45e9341e73d7")
+		)
+		(pin "1"
+			(uuid "da803fab-8850-4153-91b7-e43c57d3e647")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:STM_M24C64-RMN6P")
 		(at 209.55 307.34 0)
 		(unit 1)
@@ -33328,7 +34522,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c698ab4-8e87-4cf6-a539-25993c969f58")
-		(property "Reference" "C26"
+		(property "Reference" "C25"
 			(at 232.918 197.358 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33403,7 +34597,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C26")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -33840,7 +35034,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "204f9f3d-bb50-4c57-a0dc-b22d2e857471")
-		(property "Reference" "C35"
+		(property "Reference" "C39"
 			(at 316.23 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33915,7 +35109,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C35")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -34198,7 +35392,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:Stackpole RMCA0805FT4K70-HP")
-		(at 22.86 220.98 90)
+		(at 21.59 220.98 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34208,7 +35402,7 @@
 		(dnp no)
 		(uuid "26560d94-e771-4c62-9981-5920743e19ca")
 		(property "Reference" "R11"
-			(at 22.86 220.98 0)
+			(at 21.59 220.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34218,7 +35412,7 @@
 			)
 		)
 		(property "Value" "4.7kR"
-			(at 24.892 220.98 0)
+			(at 23.622 220.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34228,7 +35422,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RMCA0805"
-			(at 32.258 220.98 0)
+			(at 30.988 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34239,7 +35433,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCA.pdf"
-			(at 34.544 220.98 0)
+			(at 33.274 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34250,7 +35444,7 @@
 			)
 		)
 		(property "Description" "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film"
-			(at 29.972 220.98 0)
+			(at 28.702 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34261,7 +35455,7 @@
 			)
 		)
 		(property "Part" "Stackpole RMCA0805FT4K70-HP"
-			(at 27.686 220.98 0)
+			(at 26.416 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35887,6 +37081,98 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:TDK CGA5L1X7R1H106K160AE")
+		(at 198.12 356.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "37e2cf46-c50c-412a-9776-707b4a1a145a")
+		(property "Reference" "C33"
+			(at 198.374 354.838 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 198.374 359.156 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:TDK CGA5"
+			(at 198.12 370.332 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+			(at 198.12 374.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 198.12 372.364 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 198.12 368.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2618ec3a-057d-420b-8bfb-53ea4e9b6264")
+		)
+		(pin "1"
+			(uuid "17dc6c58-0bae-4336-92c9-3c5820193bd7")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Yageo AE0805BR-07300KL")
 		(at 154.94 104.14 90)
 		(unit 1)
@@ -36151,96 +37437,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mr-parts:Vishay MBA02040C6009FC100")
-		(at 123.19 41.91 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3b930fb1-466b-4584-8c05-46e5b6d5b7a7")
-		(property "Reference" "R2"
-			(at 123.19 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "60R"
-			(at 123.19 39.878 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 123.19 32.512 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28766/mbxsma.pdf"
-			(at 123.19 30.226 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "60 Ohms ±1% 0.25W, 1/4W Through Hole Resistor Axial Automotive AEC-Q200 Metal Film"
-			(at 123.19 34.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Vishay MBA02040C6009FC100"
-			(at 123.19 37.084 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "035a0cb2-d525-40a5-a6df-4bb0949a39ed")
-		)
-		(pin "1"
-			(uuid "b7aa107d-6720-4813-9aca-11e2b7ceb804")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -36616,8 +37812,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
-		(property "Reference" "C11"
-			(at 47.625 156.21 0)
+		(property "Reference" "C12"
+			(at 47.244 156.464 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36628,7 +37824,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 47.625 161.29 0)
+			(at 47.244 161.036 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36691,7 +37887,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C11")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -37030,7 +38226,7 @@
 		(dnp no)
 		(uuid "3fe23d0e-f4e2-4e5d-a8ce-4a867f9345b9")
 		(property "Reference" "C16"
-			(at 126.365 255.27 0)
+			(at 126.238 255.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37041,7 +38237,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 126.365 260.35 0)
+			(at 126.238 260.096 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37121,7 +38317,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "401254ab-189a-4117-b955-6b91a80fcb97")
-		(property "Reference" "C39"
+		(property "Reference" "C43"
 			(at 420.37 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37196,7 +38392,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C39")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -37547,6 +38743,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 215.9 372.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "42bfb10b-9947-441c-b763-f19bb80e0c60")
+		(property "Reference" "#PWR0247"
+			(at 215.9 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 375.666 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "672d18a3-222c-40f6-a51a-c7829459ddd7")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0247")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Stackpole RNCP0805FTD10K0")
 		(at 231.14 134.62 180)
 		(unit 1)
@@ -37631,6 +38904,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:TDK CGA5L1X7R1H106K160AE")
+		(at 219.71 368.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "46b04722-170a-4ca6-9bf5-5e14647fefd5")
+		(property "Reference" "C35"
+			(at 220.218 366.268 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 220.218 370.586 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:TDK CGA5"
+			(at 219.71 381.762 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+			(at 219.71 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 219.71 383.794 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 219.71 379.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "736d1c72-7ecf-4346-92c5-993edada7234")
+		)
+		(pin "1"
+			(uuid "795241a1-6fe3-4e3c-a58a-9f9d09102da6")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -37878,7 +39243,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "48e424da-36d0-4220-9dab-e34e7355e1fe")
-		(property "Reference" "C32"
+		(property "Reference" "C31"
 			(at 231.648 324.358 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37953,7 +39318,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C32")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -40687,7 +42052,7 @@
 		(dnp no)
 		(uuid "59e60c9a-ecf7-48ff-ab48-8f83a3eec2f7")
 		(property "Reference" "C15"
-			(at 120.015 255.27 0)
+			(at 119.634 255.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40698,7 +42063,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 120.015 260.35 0)
+			(at 119.888 260.096 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41868,7 +43233,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64514a58-5451-426b-a4f0-f8685b3dbe70")
-		(property "Reference" "C40"
+		(property "Reference" "C44"
 			(at 420.37 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41943,7 +43308,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C40")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -42188,6 +43553,102 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:XP Power RBT05W24S12")
+		(at 238.76 354.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "663b8c9c-c8d1-43fc-b472-6c8e8c66a114")
+		(property "Reference" "PS1"
+			(at 238.76 347.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RBT05W24S12"
+			(at 238.76 360.934 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:XP Power RBT05W"
+			(at 260.35 449.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.xppower.com/storage/portals/0/pdfs/SF_RBT05W.pdf"
+			(at 260.35 549.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Non-Isolated DC/DC Converters DC-DC, 0.5A switching regulator in a SIP3 package, 1.8V to 15VDC"
+			(at 238.506 369.824 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "XP Power RBT05W"
+			(at 260.35 749.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3"
+			(uuid "cc333db8-02aa-4408-a432-fc1dac0b2aec")
+		)
+		(pin "1"
+			(uuid "f5ae1e50-d53f-421a-b740-39889d3f7093")
+		)
+		(pin "2"
+			(uuid "ffd99535-8a5d-44eb-8f7f-3c941e873c05")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "PS1")
 					(unit 1)
 				)
 			)
@@ -42618,6 +44079,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 187.96 347.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b1064d2-e801-4d01-82e3-2e187833d1b2")
+		(property "Reference" "#PWR077"
+			(at 187.96 351.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+24V_N2K"
+			(at 187.96 344.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 347.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 347.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 187.96 347.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9d5287b1-266f-4422-9a9c-09a579531e55")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
 		(at 87.63 198.12 270)
 		(unit 1)
@@ -42869,7 +44407,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:Kyocera 08051C105K4Z2A")
-		(at 99.06 96.52 180)
+		(at 99.06 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -42878,8 +44416,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d22538e-d19e-4403-88db-0649c32c032e")
-		(property "Reference" "C50"
-			(at 98.425 99.06 0)
+		(property "Reference" "C10"
+			(at 99.06 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42890,7 +44428,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 98.425 93.98 0)
+			(at 99.314 98.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42901,7 +44439,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
-			(at 99.06 80.01 0)
+			(at 99.06 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42912,7 +44450,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf"
-			(at 99.06 77.724 0)
+			(at 99.06 115.316 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42923,7 +44461,7 @@
 			)
 		)
 		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 99.06 82.296 0)
+			(at 99.06 110.744 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42934,7 +44472,7 @@
 			)
 		)
 		(property "Part" "Kyocera 08051C105K4Z2A"
-			(at 99.06 84.582 0)
+			(at 99.06 108.458 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42953,7 +44491,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C50")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -43632,7 +45170,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "70b1c9ec-fd2b-49ec-ab03-b4a869823178")
-		(property "Reference" "C38"
+		(property "Reference" "C42"
 			(at 424.18 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43707,7 +45245,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C38")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -44551,7 +46089,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c67fc62-09b2-471f-8af3-17f902ae22e6")
-		(property "Reference" "C43"
+		(property "Reference" "C47"
 			(at 529.59 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44626,7 +46164,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C43")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -44704,6 +46242,98 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0242")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Kyocera 08051C104K4Z2A")
+		(at 226.06 368.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7f256af6-adde-4916-a3d6-1f34bc6636c4")
+		(property "Reference" "C36"
+			(at 226.568 366.268 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 226.695 370.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
+			(at 226.06 382.016 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf"
+			(at 226.06 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 226.06 384.048 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C104K4Z2A"
+			(at 226.06 379.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5c0af163-c13c-4592-8dca-446ae3dbc492")
+		)
+		(pin "2"
+			(uuid "c84bd425-df9f-4049-b81f-b511abe6b2a6")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -44952,7 +46582,7 @@
 		(dnp no)
 		(uuid "821a615b-11c5-496c-b08d-b28727f13421")
 		(property "Reference" "C17"
-			(at 164.338 36.068 0)
+			(at 164.084 35.814 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44963,7 +46593,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 164.465 40.64 0)
+			(at 164.338 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45133,7 +46763,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82b1ff85-adfc-451a-bfbb-9d5fdefb0ccc")
-		(property "Reference" "C34"
+		(property "Reference" "C38"
 			(at 316.23 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45208,7 +46838,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C34")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -45293,7 +46923,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:Diodes Inc ZLLS500QTA")
-		(at 29.21 110.49 180)
+		(at 29.21 105.41 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -45303,7 +46933,7 @@
 		(dnp no)
 		(uuid "855b587a-69fa-45f5-a1c2-917f12ea669f")
 		(property "Reference" "D2"
-			(at 29.21 105.664 0)
+			(at 29.21 100.584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45313,7 +46943,7 @@
 			)
 		)
 		(property "Value" "ZLLS500QTA"
-			(at 29.21 114.554 0)
+			(at 29.21 109.474 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45323,7 +46953,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Diodes Inc ZLLS500"
-			(at 29.21 98.806 0)
+			(at 29.21 93.726 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45334,7 +46964,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ZLLS500QTA.pdf"
-			(at 29.21 96.774 0)
+			(at 29.21 91.694 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45345,7 +46975,7 @@
 			)
 		)
 		(property "Description" "Diode 40 V 700mA Surface Mount SOT-23-3"
-			(at 29.21 101.092 0)
+			(at 29.21 96.012 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45356,7 +46986,7 @@
 			)
 		)
 		(property "Part" "Diodes Inc ZLLS500QTA"
-			(at 29.21 102.87 0)
+			(at 29.21 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45560,6 +47190,99 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "TDK CGA5L1X7R1H106K160AE_1")
+		(lib_id "mr-parts:TDK CGA5L1X7R1H106K160AE")
+		(at 218.44 355.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "868eee8d-0c90-4975-b2dc-4156acd42d90")
+		(property "Reference" "C34"
+			(at 219.075 353.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 219.075 358.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:TDK CGA5"
+			(at 218.44 369.062 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+			(at 218.44 373.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 218.44 371.094 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 218.44 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "79989335-ae71-4352-81d8-7dc58a500297")
+		)
+		(pin "1"
+			(uuid "401c4efd-8473-4e5e-a3e0-af20b3881e16")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -45821,7 +47544,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "88ae4f54-755c-458c-a9ef-0f9624e98faa")
-		(property "Reference" "C42"
+		(property "Reference" "C46"
 			(at 532.13 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45896,7 +47619,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C42")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -46840,6 +48563,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 95.25 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90f59a3a-f493-4717-8367-feef9637c97e")
+		(property "Reference" "#PWR082"
+			(at 95.25 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_N2K"
+			(at 95.25 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 95.25 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c24bd83b-fc4b-45f8-a122-42f62d71a112")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 163.83 43.18 0)
 		(unit 1)
@@ -47004,7 +48804,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96e2765f-6ea2-4943-940c-5361dd49dac7")
-		(property "Reference" "C29"
+		(property "Reference" "C28"
 			(at 196.088 245.618 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47079,7 +48879,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C29")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -47299,8 +49099,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "997d56e3-d3de-45a0-8ddf-0173799690cb")
-		(property "Reference" "C13"
-			(at 25.146 172.466 90)
+		(property "Reference" "C14"
+			(at 24.892 172.974 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47310,7 +49110,7 @@
 			)
 		)
 		(property "Value" "1000pF"
-			(at 26.67 175.768 90)
+			(at 26.67 175.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47372,7 +49172,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -49320,7 +51120,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 30.48 97.79 270)
+		(at 31.75 86.36 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -49330,7 +51130,7 @@
 		(dnp no)
 		(uuid "a53d5be4-f6eb-4fe1-8725-6aad59fef50e")
 		(property "Reference" "F1"
-			(at 30.48 96.012 90)
+			(at 31.75 84.582 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49340,7 +51140,7 @@
 			)
 		)
 		(property "Value" "0440001.WRA"
-			(at 30.48 99.822 90)
+			(at 31.75 88.392 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49350,7 +51150,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Littelfuse 440001"
-			(at 30.48 96.012 90)
+			(at 31.75 84.582 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49361,7 +51161,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse_fuse_440a_datasheet.pdf?assetguid=6d192b67-f97d-4680-8f7f-25afc4412752"
-			(at 30.48 97.79 0)
+			(at 31.75 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49372,7 +51172,7 @@
 			)
 		)
 		(property "Description" "1 A 63 V 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 1206 (3216 Metric)"
-			(at 30.48 97.79 0)
+			(at 31.75 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49383,7 +51183,7 @@
 			)
 		)
 		(property "Part" "Littelfuse 0440001.WRA"
-			(at 30.48 97.79 0)
+			(at 31.75 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49675,7 +51475,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6dc71ae-8bf4-465a-9cdb-c00d90ae3b11")
-		(property "Reference" "C41"
+		(property "Reference" "C45"
 			(at 532.13 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49750,7 +51550,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C41")
+					(reference "C45")
 					(unit 1)
 				)
 			)
@@ -51128,7 +52928,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b2e7a780-3613-4850-acb4-a83f747f03e1")
-		(property "Reference" "C44"
+		(property "Reference" "C48"
 			(at 529.59 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51203,7 +53003,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C44")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -51659,83 +53459,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 95.25 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bb299afc-3827-417a-9029-d156a7e4a992")
-		(property "Reference" "#PWR046"
-			(at 95.25 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+24V_N2K"
-			(at 95.25 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.25 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 95.25 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3bb6440d-ea0e-4e41-b97c-c379b3f82aa0")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 325.12 59.69 0)
 		(unit 1)
@@ -52012,7 +53735,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bd056854-46bc-42a2-973a-7146297857ec")
-		(property "Reference" "C33"
+		(property "Reference" "C37"
 			(at 316.23 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52087,7 +53810,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C33")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -52347,6 +54070,83 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 363.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c128021d-1872-4a44-812c-b34ea1560d88")
+		(property "Reference" "#PWR0248"
+			(at 187.96 369.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 366.776 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 363.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 363.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 187.96 363.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "80ce4331-770d-4a39-94e3-4f4e105ad7ef")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR0248")
 					(unit 1)
 				)
 			)
@@ -55654,8 +57454,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8b755be-6447-43d7-a667-084b7ca6b882")
-		(property "Reference" "C10"
-			(at 37.465 158.75 0)
+		(property "Reference" "C11"
+			(at 37.084 159.258 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -55666,7 +57466,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 37.465 163.83 0)
+			(at 37.338 163.576 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -55729,7 +57529,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C10")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -55975,6 +57775,96 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:Wurth 782853601")
+		(at 209.55 350.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d989e08a-499f-4e30-a102-40631cfa7562")
+		(property "Reference" "FB1"
+			(at 209.55 347.472 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "782853601"
+			(at 209.296 353.568 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Würth 782853601"
+			(at 209.55 358.394 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/782853601.pdf"
+			(at 209.55 360.426 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "600 Ohms @ 100 MHz 1 Signal Line Ferrite Bead 0805 (2012 Metric) 500mA 300mOhm"
+			(at 209.55 362.712 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Wurth 782853601"
+			(at 209.55 356.362 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7ae83119-70ad-4e9a-b3ed-51e9970d3e12")
+		)
+		(pin "1"
+			(uuid "3a2df638-5efe-41c7-9a10-44001ee6273d")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Phoenix Contact 1862437")
 		(at 356.87 41.91 0)
 		(unit 1)
@@ -56159,96 +58049,6 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mr-parts:Vishay SS36HE3_B/I")
-		(at 44.45 97.79 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dd0bc926-347d-43c4-9d66-9cc59747e902")
-		(property "Reference" "D1"
-			(at 44.45 94.996 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS36HE3_B/I"
-			(at 44.45 100.584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "mr-stuff:Vishay SS36HE3_BI"
-			(at 44.704 89.408 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
-			(at 44.704 87.376 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky Barrier Rectifier, 3.0A, 60V"
-			(at 44.704 91.694 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Vishay SS36HE3_B/I"
-			(at 44.45 84.836 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f84d59e6-0e03-4e76-946e-a956b9fdf5db")
-		)
-		(pin "2"
-			(uuid "dcd3d84b-1ea7-4506-aae9-c28dafab2a8b")
-		)
-		(instances
-			(project "Masthead Controller"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -57315,6 +59115,98 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:TDK CGA5L1X7R1H106K160AE")
+		(at 187.96 356.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e788968f-0f97-4f69-ab26-0a09b5a7fbd9")
+		(property "Reference" "C32"
+			(at 188.214 354.838 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 188.468 359.156 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:TDK CGA5"
+			(at 187.96 370.332 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+			(at 187.96 374.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 187.96 372.364 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA5L1X7R1H106K160AE"
+			(at 187.96 368.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0356069b-e97c-4667-b400-4752207b5008")
+		)
+		(pin "1"
+			(uuid "6093135c-8a8c-4f80-bcd7-6b8dcc1ca290")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Kyocera 08051C104K4Z2A")
 		(at 231.14 307.34 0)
 		(unit 1)
@@ -57325,7 +59217,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7ff9f05-c4fd-4b1f-9109-8383bde3d1f6")
-		(property "Reference" "C31"
+		(property "Reference" "C30"
 			(at 231.648 305.308 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57400,7 +59292,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C31")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -57651,6 +59543,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 209.55 369.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e9a69705-94d4-4e57-ad26-ac58f7a7985e")
+		(property "Reference" "#PWR078"
+			(at 209.55 373.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_N2K"
+			(at 209.55 365.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 369.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 369.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 209.55 369.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed656c45-5019-4a9c-b690-683a1b78a0d4")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:TDK CGA5L1X7R1H106K160AE")
 		(at 314.96 138.43 270)
 		(unit 1)
@@ -57661,7 +59630,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eb4c62fb-1d80-4293-b421-e7b177b26b45")
-		(property "Reference" "C36"
+		(property "Reference" "C40"
 			(at 316.23 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57736,7 +59705,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C36")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -58194,7 +60163,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eeef700e-631f-443d-8be2-402e27aee38e")
-		(property "Reference" "C27"
+		(property "Reference" "C26"
 			(at 248.158 201.168 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58269,7 +60238,7 @@
 		(instances
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C27")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -59122,6 +61091,83 @@
 			(project "Masthead Controller"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "MCU1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 226.06 349.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f93a7583-4458-4fca-a3ed-b3a21c34cae7")
+		(property "Reference" "#FLG06"
+			(at 226.06 347.345 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 226.06 345.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 226.06 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8734304-15c8-41ae-9378-0514b71dbc17")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
