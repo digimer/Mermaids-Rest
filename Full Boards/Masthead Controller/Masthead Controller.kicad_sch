@@ -192,7 +192,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x04_Pin"
+		(symbol "Connector:Conn_01x05_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -203,7 +203,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -212,7 +212,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x04_Pin"
+			(property "Value" "Conn_01x05_Pin"
 				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -244,7 +244,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
+			(property "Description" "Generic connector, single row, 01x05, script generated"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -287,7 +287,18 @@
 					)
 				)
 			)
-			(symbol "Conn_01x04_Pin_1_1"
+			(symbol "Conn_01x05_Pin_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(rectangle
 					(start 0.8636 2.667)
 					(end 0 2.413)
@@ -330,6 +341,18 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(polyline
@@ -381,7 +404,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 5.08 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -399,7 +422,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -417,7 +440,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -435,7 +458,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -5.08 180)
+					(at 5.08 -2.54 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -445,6 +468,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -16640,6 +16681,16 @@
 		)
 		(uuid "f8b8eb11-5643-4eb3-b1f8-5d0dddf247d2")
 	)
+	(text "Boot"
+		(exclude_from_sim no)
+		(at 24.13 187.198 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "00cd7a58-c54d-494f-b0b9-0a54abba6056")
+	)
 	(text "Mounts and Fiducials"
 		(exclude_from_sim no)
 		(at 24.892 290.068 0)
@@ -16979,6 +17030,16 @@
 			)
 		)
 		(uuid "75973805-c47c-41c7-a070-3ca8c9292238")
+	)
+	(text "Reset"
+		(exclude_from_sim no)
+		(at 22.86 168.402 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7c18cbef-ddf1-44da-858d-5bf22c1c78a7")
 	)
 	(text "1-"
 		(exclude_from_sim no)
@@ -17751,12 +17812,6 @@
 		(uuid "524718d0-f8ca-4a42-9928-fa9c0acb66a9")
 	)
 	(junction
-		(at 31.75 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "53d89209-c2f5-4c13-aa00-7c661c526ba3")
-	)
-	(junction
 		(at 232.41 195.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -18343,6 +18398,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb09cb98-29ca-40a8-a05f-04b910584303")
+	)
+	(junction
+		(at 31.75 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb9aed4a-72dd-4927-8e46-a02360f00eca")
 	)
 	(junction
 		(at 187.96 44.45)
@@ -19347,6 +19408,16 @@
 			(type default)
 		)
 		(uuid "0c55b779-ea5d-4e5a-9c76-b9f96b1ce39b")
+	)
+	(wire
+		(pts
+			(xy 92.71 203.2) (xy 92.71 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c5f43d2-e426-4079-9408-60cc988f6c1c")
 	)
 	(wire
 		(pts
@@ -22857,16 +22928,6 @@
 			(type default)
 		)
 		(uuid "5a07abdf-a64f-4002-884f-b4c56b65896b")
-	)
-	(wire
-		(pts
-			(xy 17.78 166.37) (xy 20.32 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a4985a0-6ed4-4d19-afec-f1e0b16807f0")
 	)
 	(wire
 		(pts
@@ -29110,7 +29171,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 166.37) (xy 31.75 166.37)
+			(xy 27.94 166.37) (xy 31.75 166.37)
 		)
 		(stroke
 			(width 0)
@@ -30079,7 +30140,7 @@
 		(uuid "496cf6d1-f676-422c-9e9e-f8b929252725")
 	)
 	(label "TC_STBD_SEC_VSET"
-		(at 229.87 251.46 0)
+		(at 231.14 255.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40173,6 +40234,7 @@
 	(symbol
 		(lib_id "mr-parts:TVS TPD2E2U06QDBZRQ1")
 		(at 111.76 187.96 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -40192,7 +40254,7 @@
 			)
 		)
 		(property "Value" "TPD2E2U06QDBZRQ1"
-			(at 111.76 194.818 0)
+			(at 111.76 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40202,7 +40264,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:TI TPD2E2U06"
-			(at 111.76 204.216 0)
+			(at 111.76 171.704 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40213,7 +40275,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1"
-			(at 111.76 201.676 0)
+			(at 111.76 174.244 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40224,7 +40286,7 @@
 			)
 		)
 		(property "Description" "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3"
-			(at 111.76 196.85 0)
+			(at 111.76 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40235,7 +40297,7 @@
 			)
 		)
 		(property "Part" "TI TPD2E2U06QDBZRQ1"
-			(at 111.506 199.644 0)
+			(at 111.506 176.276 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42538,6 +42600,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 92.71 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5d87069b-3ff6-44bc-9e8d-581627e8b562")
+		(property "Reference" "#PWR083"
+			(at 92.71 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 209.296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 92.71 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0b88020a-1485-43d5-b19b-6cebf20ab7b7")
+		)
+		(instances
+			(project "Masthead Controller"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 419.1 111.76 0)
 		(mirror x)
@@ -44156,12 +44295,12 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
+		(lib_id "Connector:Conn_01x05_Pin")
 		(at 87.63 198.12 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -44186,7 +44325,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 87.63 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -44208,19 +44347,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
+		(property "Description" "Generic connector, single row, 01x05, script generated"
 			(at 87.63 198.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "Amphenol 68001-416HLF"
-			(at 87.63 198.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44241,6 +44369,9 @@
 		)
 		(pin "3"
 			(uuid "d8526cd8-5166-4bd5-aa47-c8203b4f4b56")
+		)
+		(pin "5"
+			(uuid "a17ed71d-50eb-447b-9a77-ef8157c52282")
 		)
 		(instances
 			(project "Masthead Controller"
@@ -55294,7 +55425,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_MEC_5G")
-		(at 25.4 166.37 0)
+		(at 22.86 166.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -55304,7 +55435,7 @@
 		(dnp no)
 		(uuid "c8bbe66b-ca77-470d-82fe-4c19825af2b0")
 		(property "Reference" "SW1"
-			(at 25.4 162.052 0)
+			(at 22.86 162.052 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -55314,7 +55445,7 @@
 			)
 		)
 		(property "Value" "SW_MEC_5G"
-			(at 25.4 161.29 0)
+			(at 22.86 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55325,7 +55456,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67"
-			(at 25.4 161.29 0)
+			(at 22.86 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55336,7 +55467,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf"
-			(at 25.4 161.29 0)
+			(at 22.86 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55347,7 +55478,7 @@
 			)
 		)
 		(property "Description" "Tactile Switch SPST-NO Top Actuated Through Hole"
-			(at 25.4 166.37 0)
+			(at 22.86 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55358,7 +55489,7 @@
 			)
 		)
 		(property "Part" "Same Sky TS03-66-50-BK-160-LCR-D-67"
-			(at 25.4 166.37 0)
+			(at 22.86 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
