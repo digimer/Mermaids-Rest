@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-09-16T18:33:40")
+		(date "2026-09-16T18:38:52")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -17184,11 +17184,6 @@
 			(name "+12V_N2K")
 			(class "Power_3V3,Default")
 			(node
-				(ref "C1")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "C37")
 				(pin "1")
 				(pintype "passive")
@@ -19745,6 +19740,11 @@
 			(code "61")
 			(name "Net-(D1-K)")
 			(class "Power_24V,Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
 			(node
 				(ref "D1")
 				(pin "1")
