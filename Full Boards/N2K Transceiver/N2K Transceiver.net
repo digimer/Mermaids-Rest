@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/N2K Transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-12T01:46:23")
+		(date "2026-09-12T13:43:40")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -12,7 +12,7 @@
 				(title "N2K Transceiver")
 				(company "The Digital Mermaid")
 				(rev "1.0.0")
-				(date "2026-09-11")
+				(date "2026-09-12")
 				(source "N2K Transceiver.kicad_sch")
 				(comment
 					(number "1")
@@ -6382,6 +6382,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "R8")
 				(pin "2")
 				(pintype "passive")
@@ -7837,11 +7842,6 @@
 			(code "52")
 			(name "V_RAW")
 			(class "Default")
-			(node
-				(ref "R3")
-				(pin "1")
-				(pintype "passive")
-			)
 			(node
 				(ref "R5")
 				(pin "2")

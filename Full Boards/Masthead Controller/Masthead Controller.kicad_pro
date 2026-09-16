@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -525,6 +525,38 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "name": "LED_Switching",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.25,
+        "name": "Power_24V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.2,
+        "name": "Power_3V3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.2,
+        "name": "Signal_Analog",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -532,7 +564,304 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L6-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/ANCHOR_PRI_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/ANCHOR_SEC_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD9-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/DECK_PRI_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD8-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/DECK_SEC_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD7-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD6-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD5-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/STEAMING_PRI_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD4-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/STEAMING_SEC_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD3-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/TC_PORT_PRI_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD2-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/TC_PORT_SEC_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD12-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/TC_STBD_PRI_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD11-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/TC_STBD_SEC_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD10-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/TC_STERN_PRI_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(LD1-ISENSE)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "/TC_STERN_SEC_JPR"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L9-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L8-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D10-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D11-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D12-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D13-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D14-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D15-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D4-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D5-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D6-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D7-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D8-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(D9-A)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L7-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L1-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L10-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L11-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L12-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L2-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L3-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L4-Pad2)"
+      },
+      {
+        "netclass": "LED_Switching",
+        "pattern": "Net-(L5-Pad2)"
+      },
+      {
+        "netclass": "Power_24V",
+        "pattern": "+24V_ISO"
+      },
+      {
+        "netclass": "Power_24V",
+        "pattern": "+24V_LED"
+      },
+      {
+        "netclass": "Power_24V",
+        "pattern": "+24V_N2K"
+      },
+      {
+        "netclass": "Power_24V",
+        "pattern": "Net-(PS1-+VIN)"
+      },
+      {
+        "netclass": "Power_24V",
+        "pattern": "Net-(NFET*)"
+      },
+      {
+        "netclass": "Power_24V",
+        "pattern": "Net-(D1-A)"
+      },
+      {
+        "netclass": "Power_24V",
+        "pattern": "Net-(D1-K)"
+      },
+      {
+        "netclass": "Power_3V3",
+        "pattern": "+12V_N2K"
+      },
+      {
+        "netclass": "Power_3V3",
+        "pattern": "Net-(FST3-Pin_2)"
+      },
+      {
+        "netclass": "Power_3V3",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Power_3V3",
+        "pattern": "Net-(VR1-VCC)"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "Net-(ADC1-AIN*)"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/TC_STERN_SEC_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/TC_STERN_PRI_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/TC_STBD_SEC_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/TC_STBD_PRI_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/TC_PORT_SEC_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/TC_PORT_PRI_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/STEAMING_SEC_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/STEAMING_PRI_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/EFUSE_N2K_IMON"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/EFUSE_LED_IMON"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/DECK_SEC_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/DECK_PRI_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/ANCHOR_SEC_VSET"
+      },
+      {
+        "netclass": "Signal_Analog",
+        "pattern": "/ANCHOR_PRI_VSET"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -688,7 +1017,7 @@
         "uuid": "2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR46,#PWR59,#PWR61,C49",
     "variants": []
   },
   "sheets": [

@@ -1,0 +1,208 @@
+(footprint "Murata GCJ 0805"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.55 0)
+		(layer "F.SilkS")
+		(uuid "a79d6e47-bc27-481d-b8ed-1940fb3ec51a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Murata GCJ 0805"
+		(at 0 1.65 0)
+		(layer "F.Fab")
+		(uuid "7bf0380f-a0ce-4718-a93c-12523efbf36d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "08e7da94-4537-47a5-9ef6-9ed7eff2a28e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0d9e59af-05ac-416e-aebf-0382acdbfc4d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.4 -0.75)
+		(end 0.4 -0.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "282d0278-93fb-4961-9213-cd22704df579")
+	)
+	(fp_line
+		(start -0.4 0.75)
+		(end 0.4 0.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a65dc30f-13c9-4a3b-bb34-bb5a58e84c2b")
+	)
+	(fp_line
+		(start -1.755 -0.983)
+		(end 1.755 -0.983)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e7bd1b6f-21d8-4190-b9b3-01986d434020")
+	)
+	(fp_line
+		(start -1.755 0.983)
+		(end -1.755 -0.983)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "72ead347-e32c-4d80-a824-4a8a4d6945a8")
+	)
+	(fp_line
+		(start -1.755 0.983)
+		(end 1.755 0.983)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "43e85399-8644-475c-a527-6a9c7d64ca9b")
+	)
+	(fp_line
+		(start 1.755 0.983)
+		(end 1.755 -0.983)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c1918f03-579f-47ab-aa08-16ebeadf8517")
+	)
+	(fp_line
+		(start -1.15 0.72)
+		(end -1.15 -0.72)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dbcffbda-d5da-478b-a598-419cf76e5999")
+	)
+	(fp_line
+		(start 1.15 -0.72)
+		(end -1.15 -0.72)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4e26045a-55b2-46ff-b369-b32a0c43df1a")
+	)
+	(fp_line
+		(start 1.15 0.72)
+		(end -1.15 0.72)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "85c00311-b2de-4fef-b3d9-efc415753d30")
+	)
+	(fp_line
+		(start 1.15 0.72)
+		(end 1.15 -0.72)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "93a533a3-4d7a-4056-9d7c-9822a75c8f76")
+	)
+	(pad "1" smd rect
+		(at -1 0)
+		(size 1.1 1.47)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "78fe7fb5-13b8-4ae7-bdf4-09280f876091")
+	)
+	(pad "2" smd rect
+		(at 1 0)
+		(size 1.1 1.47)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "2acc29b8-fe2e-4973-ac27-950c86faf87f")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "ccc55144-b80a-450e-bc32-ed8e115b4aba")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -0.4 -0.65) (xy 0.4 -0.65) (xy 0.4 0.7) (xy -0.4 0.7)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Murata GCJ 0805/CAPC2012X145N.step"
+		(offset
+			(xyz 0 -0.72 0.6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

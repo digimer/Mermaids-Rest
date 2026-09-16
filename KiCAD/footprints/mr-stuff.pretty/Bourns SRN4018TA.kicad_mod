@@ -1,0 +1,161 @@
+(footprint "Bourns SRN4018TA"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Bourns SRN4018")
+	(tags "Inductor")
+	(property "Reference" "REF**"
+		(at 0 -2.95 0)
+		(layer "F.SilkS")
+		(uuid "7b930c46-638c-4a3c-baea-9be0a69d417e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Bourns SRN4018TA"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "15ce1f35-ee08-480b-9c8d-d15aa01f3908")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRN4018TA.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "41e9ec37-5885-4bf8-add1-26673b09de6c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0aea4e27-589e-4b70-b27a-6e3664e97ac7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2 2.2)
+		(end 2 2.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7e220d38-2bea-4f05-9604-52d75f796c82")
+	)
+	(fp_line
+		(start 2 -2.2)
+		(end -2 -2.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "71d825dd-f5db-4837-b560-4eba3094f686")
+	)
+	(fp_rect
+		(start -2.2 -2.35)
+		(end 2.2 2.35)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "1c772e66-27bf-4501-a6ad-4458b1ec2877")
+	)
+	(fp_line
+		(start -2 -2.2)
+		(end 2 -2.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "046f9483-2a38-42b9-8330-1a026343c05b")
+	)
+	(fp_line
+		(start -2 2)
+		(end -2 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9dfbe41b-db58-427f-914e-ad55ff2859da")
+	)
+	(fp_line
+		(start 2 -2)
+		(end 2 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ac433763-debd-4d29-9fed-a76ad2526171")
+	)
+	(fp_line
+		(start 2 2.2)
+		(end -2 2.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e0247051-7c88-4526-9a58-1943576f7148")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.1 0)
+		(layer "F.Fab")
+		(uuid "2d77a665-9b23-4d0f-b11d-53b9914e4833")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.4 0)
+		(size 1.4 4.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9b41a0a1-76b1-427f-a8a0-99ea2499d582")
+	)
+	(pad "2" smd rect
+		(at 1.4 0)
+		(size 1.4 4.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1de3e0b5-0873-49f6-9ebf-58b4180f8b73")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Bourns SRN4018TA/INDP4040X180_Bourns_SRN4018TA_Series_wm.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

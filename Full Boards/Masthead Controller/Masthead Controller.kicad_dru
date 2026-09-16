@@ -1,0 +1,5 @@
+(version 1)
+
+(rule "AL8861 internal pad pitch exemption"
+  (constraint clearance (min 0.2mm))
+  (condition "(A.memberOfFootprint('LD1') && B.memberOfFootprint('LD1')) || (A.memberOfFootprint('LD2') && B.memberOfFootprint('LD2')) || (A.memberOfFootprint('LD3') && B.memberOfFootprint('LD3')) || (A.memberOfFootprint('LD4') && B.memberOfFootprint('LD4')) || (A.memberOfFootprint('LD5') && B.memberOfFootprint('LD5')) || (A.memberOfFootprint('LD6') && B.memberOfFootprint('LD6')) || (A.memberOfFootprint('LD7') && B.memberOfFootprint('LD7')) || (A.memberOfFootprint('LD8') && B.memberOfFootprint('LD8')) || (A.memberOfFootprint('LD9') && B.memberOfFootprint('LD9')) || (A.memberOfFootprint('LD10') && B.memberOfFootprint('LD10')) || (A.memberOfFootprint('LD11') && B.memberOfFootprint('LD11')) || (A.memberOfFootprint('LD12') && B.memberOfFootprint('LD12'))"))

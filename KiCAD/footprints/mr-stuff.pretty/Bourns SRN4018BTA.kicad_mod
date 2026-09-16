@@ -1,0 +1,232 @@
+(footprint "Bourns SRN4018BTA"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SRN4018BTA")
+	(tags "Inductor")
+	(property "Reference" "REF**"
+		(at 0 -2.95 0)
+		(layer "F.SilkS")
+		(uuid "21de59ec-61bd-457a-906f-0b3531f38182")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SRN4018BTA"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d7a3a83e-1efe-46c3-8cfd-2093e9938c7c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/SRN4018BTA.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "519b3453-9390-4f59-ac34-d84af14014e9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87158dcd-6f5b-4f6f-8f3b-45fa7269a959")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.8 0)
+		(end -2.8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9d5d8a81-8828-4ebc-bbae-6e047526c941")
+	)
+	(fp_line
+		(start -2.7 0)
+		(end -2.7 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "71dcebdc-ca3f-4ff0-87e9-8369fa62bc17")
+	)
+	(fp_line
+		(start -0.4 -2)
+		(end 0.4 -2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "edd07a02-13b2-43ee-b0d1-9e3bbebb71ed")
+	)
+	(fp_line
+		(start -0.4 2)
+		(end 0.4 2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5cc9a9ab-5a39-4e98-aab6-2f3974f60060")
+	)
+	(fp_arc
+		(start -2.8 0)
+		(mid -2.75 -0.05)
+		(end -2.7 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "45b01e67-972b-4b12-8be8-f83b3405edea")
+	)
+	(fp_arc
+		(start -2.7 0)
+		(mid -2.75 0.05)
+		(end -2.8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff9ccec9-f24d-470f-969c-0dec45358e05")
+	)
+	(fp_line
+		(start -3.25 -3.25)
+		(end 3.25 -3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8ab2fb17-706c-4cfa-ba67-cc0de9ad28ed")
+	)
+	(fp_line
+		(start -3.25 3.25)
+		(end -3.25 -3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3c43cbe2-c6ef-40e6-817d-4f2e8fe89417")
+	)
+	(fp_line
+		(start 3.25 -3.25)
+		(end 3.25 3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bdfc5b32-50f4-4bc4-b375-120b3179b6d8")
+	)
+	(fp_line
+		(start 3.25 3.25)
+		(end -3.25 3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "36e304c0-a7a3-46a1-8bbf-e52920234f16")
+	)
+	(fp_line
+		(start -2 -2)
+		(end -2 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d5a27475-d33f-4637-80f7-f1dab51f591a")
+	)
+	(fp_line
+		(start -2 2)
+		(end 2 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a00547ee-4829-49f0-a1aa-13ac79cf05c8")
+	)
+	(fp_line
+		(start 2 -2)
+		(end -2 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e83f1a17-4f82-4b40-87cb-2e4a6fbb9e9f")
+	)
+	(fp_line
+		(start 2 2)
+		(end 2 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "67cd0c92-7ba0-4804-8277-3ce6533771eb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.05 0)
+		(layer "F.Fab")
+		(uuid "a3409d19-c618-42be-8fe1-9eefc70fe8e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.5 0)
+		(size 1.5 4.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "248253b4-f5ff-46e0-9db5-fe3e57b033d4")
+	)
+	(pad "2" smd rect
+		(at 1.5 0)
+		(size 1.5 4.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "93cbbd20-35e5-414a-8e7b-cfaadca99645")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Bourns SRN4018BTA/SRN4018BTA-220M.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 -90)
+		)
+	)
+)
