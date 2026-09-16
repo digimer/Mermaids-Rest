@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-09-16T18:14:46")
+		(date "2026-09-16T18:33:40")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -132,6 +132,66 @@
 		)
 		(comp
 			(ref "C1")
+			(value "10uF")
+			(footprint "mr-stuff:TDK CGA5")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA5")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TDK CGA5L1X7R1H106K160AE")
+				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "04ab08a8-6176-4ab6-9174-794e3ef4a4b1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -191,7 +251,7 @@
 			)
 		)
 		(comp
-			(ref "C2")
+			(ref "C3")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -251,7 +311,7 @@
 			)
 		)
 		(comp
-			(ref "C3")
+			(ref "C4")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -311,7 +371,7 @@
 			)
 		)
 		(comp
-			(ref "C4")
+			(ref "C5")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -371,7 +431,7 @@
 			)
 		)
 		(comp
-			(ref "C5")
+			(ref "C6")
 			(value "100pF")
 			(footprint "mr-stuff:Kemet C0805X")
 			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
@@ -431,7 +491,7 @@
 			)
 		)
 		(comp
-			(ref "C6")
+			(ref "C7")
 			(value "100pF")
 			(footprint "mr-stuff:Kemet C0805X")
 			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
@@ -491,7 +551,7 @@
 			)
 		)
 		(comp
-			(ref "C7")
+			(ref "C8")
 			(value "22uF")
 			(footprint "mr-stuff:Murata GCJ32ER71C")
 			(datasheet "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
@@ -551,7 +611,7 @@
 			)
 		)
 		(comp
-			(ref "C8")
+			(ref "C9")
 			(value "22uF")
 			(footprint "mr-stuff:Murata GCJ32ER71C")
 			(datasheet "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
@@ -611,7 +671,7 @@
 			)
 		)
 		(comp
-			(ref "C9")
+			(ref "C10")
 			(value "22uF")
 			(footprint "mr-stuff:Murata GCJ32ER71C")
 			(datasheet "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
@@ -671,7 +731,7 @@
 			)
 		)
 		(comp
-			(ref "C10")
+			(ref "C11")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -731,7 +791,7 @@
 			)
 		)
 		(comp
-			(ref "C11")
+			(ref "C12")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -791,7 +851,7 @@
 			)
 		)
 		(comp
-			(ref "C12")
+			(ref "C13")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -851,7 +911,7 @@
 			)
 		)
 		(comp
-			(ref "C13")
+			(ref "C14")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -911,7 +971,7 @@
 			)
 		)
 		(comp
-			(ref "C14")
+			(ref "C15")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -971,7 +1031,7 @@
 			)
 		)
 		(comp
-			(ref "C15")
+			(ref "C16")
 			(value "100pF")
 			(footprint "mr-stuff:Kemet C0805X")
 			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
@@ -1031,7 +1091,7 @@
 			)
 		)
 		(comp
-			(ref "C16")
+			(ref "C17")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1091,7 +1151,7 @@
 			)
 		)
 		(comp
-			(ref "C17")
+			(ref "C18")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1151,7 +1211,7 @@
 			)
 		)
 		(comp
-			(ref "C18")
+			(ref "C19")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1211,7 +1271,7 @@
 			)
 		)
 		(comp
-			(ref "C19")
+			(ref "C20")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1271,7 +1331,7 @@
 			)
 		)
 		(comp
-			(ref "C20")
+			(ref "C21")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1331,7 +1391,7 @@
 			)
 		)
 		(comp
-			(ref "C21")
+			(ref "C22")
 			(value "0.01uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1391,7 +1451,7 @@
 			)
 		)
 		(comp
-			(ref "C22")
+			(ref "C23")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1451,7 +1511,7 @@
 			)
 		)
 		(comp
-			(ref "C23")
+			(ref "C24")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1511,7 +1571,7 @@
 			)
 		)
 		(comp
-			(ref "C24")
+			(ref "C25")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1571,7 +1631,7 @@
 			)
 		)
 		(comp
-			(ref "C25")
+			(ref "C26")
 			(value "0.047uF")
 			(footprint "mr-stuff:Murata GCJ 0805")
 			(datasheet "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ21BR72A473KA01-02D-EN_PDF_CERAMICCAPACITORSMD")
@@ -1631,7 +1691,7 @@
 			)
 		)
 		(comp
-			(ref "C26")
+			(ref "C27")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1691,7 +1751,7 @@
 			)
 		)
 		(comp
-			(ref "C27")
+			(ref "C28")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1751,7 +1811,7 @@
 			)
 		)
 		(comp
-			(ref "C28")
+			(ref "C29")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1811,7 +1871,7 @@
 			)
 		)
 		(comp
-			(ref "C29")
+			(ref "C30")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1871,7 +1931,7 @@
 			)
 		)
 		(comp
-			(ref "C30")
+			(ref "C31")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1931,7 +1991,7 @@
 			)
 		)
 		(comp
-			(ref "C31")
+			(ref "C32")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1991,7 +2051,7 @@
 			)
 		)
 		(comp
-			(ref "C32")
+			(ref "C33")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -2051,7 +2111,7 @@
 			)
 		)
 		(comp
-			(ref "C33")
+			(ref "C34")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2111,7 +2171,7 @@
 			)
 		)
 		(comp
-			(ref "C34")
+			(ref "C35")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2171,7 +2231,7 @@
 			)
 		)
 		(comp
-			(ref "C35")
+			(ref "C36")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2231,7 +2291,7 @@
 			)
 		)
 		(comp
-			(ref "C36")
+			(ref "C37")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2291,7 +2351,7 @@
 			)
 		)
 		(comp
-			(ref "C37")
+			(ref "C38")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -2351,7 +2411,7 @@
 			)
 		)
 		(comp
-			(ref "C38")
+			(ref "C39")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2411,7 +2471,7 @@
 			)
 		)
 		(comp
-			(ref "C39")
+			(ref "C40")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -2471,7 +2531,7 @@
 			)
 		)
 		(comp
-			(ref "C40")
+			(ref "C41")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2531,7 +2591,7 @@
 			)
 		)
 		(comp
-			(ref "C41")
+			(ref "C42")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -2591,7 +2651,7 @@
 			)
 		)
 		(comp
-			(ref "C42")
+			(ref "C43")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2651,7 +2711,7 @@
 			)
 		)
 		(comp
-			(ref "C43")
+			(ref "C44")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -2711,7 +2771,7 @@
 			)
 		)
 		(comp
-			(ref "C44")
+			(ref "C45")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2771,7 +2831,7 @@
 			)
 		)
 		(comp
-			(ref "C45")
+			(ref "C46")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -2831,7 +2891,7 @@
 			)
 		)
 		(comp
-			(ref "C46")
+			(ref "C47")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2891,7 +2951,7 @@
 			)
 		)
 		(comp
-			(ref "C47")
+			(ref "C48")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -2951,7 +3011,7 @@
 			)
 		)
 		(comp
-			(ref "C48")
+			(ref "C49")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -3011,7 +3071,7 @@
 			)
 		)
 		(comp
-			(ref "C49")
+			(ref "C50")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -3071,7 +3131,7 @@
 			)
 		)
 		(comp
-			(ref "C50")
+			(ref "C51")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -3131,7 +3191,7 @@
 			)
 		)
 		(comp
-			(ref "C51")
+			(ref "C52")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -3191,7 +3251,7 @@
 			)
 		)
 		(comp
-			(ref "C52")
+			(ref "C53")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -3251,7 +3311,7 @@
 			)
 		)
 		(comp
-			(ref "C53")
+			(ref "C54")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -3311,7 +3371,7 @@
 			)
 		)
 		(comp
-			(ref "C54")
+			(ref "C55")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -3371,7 +3431,7 @@
 			)
 		)
 		(comp
-			(ref "C55")
+			(ref "C56")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -3431,7 +3491,7 @@
 			)
 		)
 		(comp
-			(ref "C56")
+			(ref "C57")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -3491,7 +3551,7 @@
 			)
 		)
 		(comp
-			(ref "C57")
+			(ref "C58")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -3551,7 +3611,7 @@
 			)
 		)
 		(comp
-			(ref "C58")
+			(ref "C59")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -3611,7 +3671,7 @@
 			)
 		)
 		(comp
-			(ref "C59")
+			(ref "C60")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -3671,7 +3731,7 @@
 			)
 		)
 		(comp
-			(ref "C60")
+			(ref "C61")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -3731,7 +3791,7 @@
 			)
 		)
 		(comp
-			(ref "C61")
+			(ref "C62")
 			(value "1000pF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -16894,18 +16954,18 @@
 				(pintype "power_in")
 			)
 			(node
-				(ref "C1")
+				(ref "C10")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C26")
+				(ref "C2")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C28")
-				(pin "2")
+				(ref "C27")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -16920,7 +16980,7 @@
 			)
 			(node
 				(ref "C31")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -16929,7 +16989,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C6")
+				(ref "C33")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -17124,12 +17184,17 @@
 			(name "+12V_N2K")
 			(class "Power_3V3,Default")
 			(node
-				(ref "C36")
-				(pin "1")
+				(ref "C1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C37")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C38")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -17151,11 +17216,6 @@
 			(name "+24V_ISO")
 			(class "Power_24V,Default")
 			(node
-				(ref "C16")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "C17")
 				(pin "1")
 				(pintype "passive")
@@ -17166,7 +17226,12 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C22")
+				(ref "C19")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -17252,67 +17317,67 @@
 			(name "+24V_LED")
 			(class "Power_24V,Default")
 			(node
-				(ref "C20")
+				(ref "C21")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C38")
+				(ref "C39")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C40")
+				(ref "C41")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C42")
+				(ref "C43")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C44")
+				(ref "C45")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C46")
+				(ref "C47")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C48")
+				(ref "C49")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C50")
+				(ref "C51")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C52")
+				(ref "C53")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C54")
+				(ref "C55")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C56")
+				(ref "C57")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C58")
+				(ref "C59")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C60")
+				(ref "C61")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -17549,12 +17614,12 @@
 			(name "+24V_N2K")
 			(class "Power_24V,Default")
 			(node
-				(ref "C24")
+				(ref "C25")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C33")
+				(ref "C34")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -17593,7 +17658,7 @@
 			(name "/ANCHOR_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C39")
+				(ref "C40")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -17631,7 +17696,7 @@
 			(name "/ANCHOR_SEC_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C41")
+				(ref "C42")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -17880,7 +17945,7 @@
 			(name "/DECK_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C59")
+				(ref "C60")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -17918,7 +17983,7 @@
 			(name "/DECK_SEC_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C61")
+				(ref "C62")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -18290,7 +18355,7 @@
 			(name "/STEAMING_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C55")
+				(ref "C56")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -18328,7 +18393,7 @@
 			(name "/STEAMING_SEC_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C57")
+				(ref "C58")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -18366,7 +18431,7 @@
 			(name "/TC_PORT_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C47")
+				(ref "C48")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -18404,7 +18469,7 @@
 			(name "/TC_PORT_SEC_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C49")
+				(ref "C50")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -18442,7 +18507,7 @@
 			(name "/TC_STBD_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C51")
+				(ref "C52")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -18480,7 +18545,7 @@
 			(name "/TC_STBD_SEC_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C53")
+				(ref "C54")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -18518,7 +18583,7 @@
 			(name "/TC_STERN_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C43")
+				(ref "C44")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -18556,7 +18621,7 @@
 			(name "/TC_STERN_SEC_JPR")
 			(class "LED_Switching,Default")
 			(node
-				(ref "C45")
+				(ref "C46")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -18691,12 +18756,12 @@
 			)
 			(node
 				(ref "C1")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C10")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -18706,7 +18771,7 @@
 			)
 			(node
 				(ref "C12")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -18721,12 +18786,12 @@
 			)
 			(node
 				(ref "C15")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C16")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -18741,7 +18806,7 @@
 			)
 			(node
 				(ref "C19")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -18751,22 +18816,22 @@
 			)
 			(node
 				(ref "C20")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C21")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C22")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C23")
+				(ref "C22")
 				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -18776,7 +18841,7 @@
 			)
 			(node
 				(ref "C25")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -18791,7 +18856,7 @@
 			)
 			(node
 				(ref "C28")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -18811,7 +18876,7 @@
 			)
 			(node
 				(ref "C31")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -18846,7 +18911,7 @@
 			)
 			(node
 				(ref "C38")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -18976,6 +19041,11 @@
 			)
 			(node
 				(ref "C61")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C62")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -19567,7 +19637,7 @@
 				(pintype "input")
 			)
 			(node
-				(ref "C27")
+				(ref "C28")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -19600,10 +19670,10 @@
 		)
 		(net
 			(code "58")
-			(name "Net-(C34-Pad1)")
+			(name "Net-(C35-Pad1)")
 			(class "Default")
 			(node
-				(ref "C34")
+				(ref "C35")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -19713,11 +19783,6 @@
 			(name "Net-(D2-K)")
 			(class "Default")
 			(node
-				(ref "C2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "C3")
 				(pin "1")
 				(pintype "passive")
@@ -19729,6 +19794,11 @@
 			)
 			(node
 				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -20282,7 +20352,7 @@
 			(name "Net-(EF1-dVdT)")
 			(class "Default")
 			(node
-				(ref "C21")
+				(ref "C22")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -20434,7 +20504,7 @@
 			(name "Net-(EF2-dVdT)")
 			(class "Default")
 			(node
-				(ref "C25")
+				(ref "C26")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -20642,12 +20712,12 @@
 			(name "Net-(FST3-Pin_2)")
 			(class "Power_3V3,Default")
 			(node
-				(ref "C12")
+				(ref "C13")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C13")
+				(ref "C14")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -21221,12 +21291,12 @@
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
-				(ref "C11")
+				(ref "C12")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C15")
+				(ref "C16")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -21259,7 +21329,7 @@
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
-				(ref "C14")
+				(ref "C15")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -21466,7 +21536,7 @@
 			(name "Net-(NFET1-D)")
 			(class "Power_24V,Default")
 			(node
-				(ref "C19")
+				(ref "C20")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -21500,7 +21570,7 @@
 			(name "Net-(NFET2-D)")
 			(class "Power_24V,Default")
 			(node
-				(ref "C23")
+				(ref "C24")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -21534,7 +21604,7 @@
 			(name "Net-(PS1-+VIN)")
 			(class "Power_24V,Default")
 			(node
-				(ref "C35")
+				(ref "C36")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -21608,7 +21678,7 @@
 			(name "Net-(VR1-VCC)")
 			(class "Power_3V3,Default")
 			(node
-				(ref "C10")
+				(ref "C11")
 				(pin "2")
 				(pintype "passive")
 			)
