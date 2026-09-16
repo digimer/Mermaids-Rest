@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-09-16T17:44:01")
+		(date "2026-09-16T18:14:46")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -3975,7 +3975,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "09f3d5e9-c002-49c1-856d-f51d4d41d973")
+			(tstamps "bd457949-9fc7-421f-b1e6-765daf198a13")
 			(units
 				(unit
 					(name "A")
@@ -3992,6 +3992,66 @@
 		)
 		(comp
 			(ref "D2")
+			(value "NRVBA340NT3G")
+			(footprint "mr-stuff:Onsemi NRVBA340NT3G")
+			(datasheet "https://www.onsemi.com/pdf/datasheet/mbra340t3-d.pdf")
+			(description "Schottky diode")
+			(fields
+				(field
+					(name "Part") "Onsemi NRVBA340NT3G")
+				(field
+					(name "Footprint") "mr-stuff:Onsemi NRVBA340NT3G")
+				(field
+					(name "Datasheet") "https://www.onsemi.com/pdf/datasheet/mbra340t3-d.pdf")
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "D_Schottky")
+				(description "Schottky diode")
+			)
+			(property
+				(name "Part")
+				(value "Onsemi NRVBA340NT3G")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "09f3d5e9-c002-49c1-856d-f51d4d41d973")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D3")
 			(value "ZLLS500QTA")
 			(footprint "mr-stuff:Diodes Inc ZLLS500")
 			(datasheet "https://www.diodes.com/assets/Datasheets/ZLLS500QTA.pdf")
@@ -13408,6 +13468,9 @@
 				(value "Masthead Controller.kicad_sch")
 			)
 			(property
+				(name "exclude_from_bom")
+			)
+			(property
 				(name "dnp")
 			)
 			(property
@@ -17071,20 +17134,16 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
 				(ref "PS1")
 				(pin "3")
 				(pinfunction "+VOUT_3")
 				(pintype "power_out")
-			)
-			(node
-				(ref "TB1")
-				(pin "3")
-				(pintype "passive")
-			)
-			(node
-				(ref "TB1")
-				(pin "4")
-				(pintype "passive")
 			)
 		)
 		(net
@@ -18552,7 +18611,7 @@
 			(name "/VBUS")
 			(class "Default")
 			(node
-				(ref "D2")
+				(ref "D3")
 				(pin "3")
 				(pinfunction "A_3")
 				(pintype "passive")
@@ -19614,10 +19673,31 @@
 		)
 		(net
 			(code "61")
-			(name "Net-(D1-A)")
+			(name "Net-(D1-K)")
 			(class "Power_24V,Default")
 			(node
 				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TB1")
+				(pin "3")
+				(pintype "passive")
+			)
+			(node
+				(ref "TB1")
+				(pin "4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "62")
+			(name "Net-(D2-A)")
+			(class "Default")
+			(node
+				(ref "D2")
 				(pin "2")
 				(pinfunction "A_2")
 				(pintype "passive")
@@ -19629,9 +19709,9 @@
 			)
 		)
 		(net
-			(code "62")
-			(name "Net-(D1-K)")
-			(class "Power_24V,Default")
+			(code "63")
+			(name "Net-(D2-K)")
+			(class "Default")
 			(node
 				(ref "C2")
 				(pin "1")
@@ -19653,13 +19733,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "D1")
+				(ref "D2")
 				(pin "1")
 				(pinfunction "K_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "D2")
+				(ref "D3")
 				(pin "1")
 				(pinfunction "C_1")
 				(pintype "passive")
@@ -19678,7 +19758,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "64")
 			(name "Net-(D4-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19706,7 +19786,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "65")
 			(name "Net-(D5-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19734,7 +19814,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "66")
 			(name "Net-(D6-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19762,7 +19842,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "67")
 			(name "Net-(D7-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19790,7 +19870,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "68")
 			(name "Net-(D8-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19818,7 +19898,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "69")
 			(name "Net-(D9-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19846,7 +19926,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "70")
 			(name "Net-(D10-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19874,7 +19954,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "71")
 			(name "Net-(D11-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19902,7 +19982,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "72")
 			(name "Net-(D12-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19930,7 +20010,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "73")
 			(name "Net-(D13-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19958,7 +20038,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "74")
 			(name "Net-(D14-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -19986,7 +20066,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "75")
 			(name "Net-(D15-A)")
 			(class "LED_Switching,Default")
 			(node
@@ -20014,7 +20094,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "76")
 			(name "Net-(DAC1-RDY{slash}*BSY)")
 			(class "Default")
 			(node
@@ -20030,7 +20110,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "77")
 			(name "Net-(DAC2-RDY{slash}*BSY)")
 			(class "Default")
 			(node
@@ -20046,7 +20126,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "78")
 			(name "Net-(DAC3-RDY{slash}*BSY)")
 			(class "Default")
 			(node
@@ -20062,7 +20142,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "79")
 			(name "Net-(EF1-!SHDN)")
 			(class "Default")
 			(node
@@ -20079,7 +20159,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "80")
 			(name "Net-(EF1-B_GATE)")
 			(class "Default")
 			(node
@@ -20102,7 +20182,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "81")
 			(name "Net-(EF1-DRV)")
 			(class "Default")
 			(node
@@ -20119,7 +20199,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "82")
 			(name "Net-(EF1-ILIM)")
 			(class "Default")
 			(node
@@ -20135,7 +20215,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "83")
 			(name "Net-(EF1-OVP)")
 			(class "Default")
 			(node
@@ -20156,7 +20236,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "84")
 			(name "Net-(EF1-PGTH)")
 			(class "Default")
 			(node
@@ -20177,7 +20257,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "85")
 			(name "Net-(EF1-UVLO)")
 			(class "Default")
 			(node
@@ -20198,7 +20278,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "86")
 			(name "Net-(EF1-dVdT)")
 			(class "Default")
 			(node
@@ -20214,7 +20294,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "87")
 			(name "Net-(EF2-!SHDN)")
 			(class "Default")
 			(node
@@ -20231,7 +20311,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "88")
 			(name "Net-(EF2-B_GATE)")
 			(class "Default")
 			(node
@@ -20254,7 +20334,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "89")
 			(name "Net-(EF2-DRV)")
 			(class "Default")
 			(node
@@ -20271,7 +20351,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "90")
 			(name "Net-(EF2-ILIM)")
 			(class "Default")
 			(node
@@ -20287,7 +20367,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "91")
 			(name "Net-(EF2-OVP)")
 			(class "Default")
 			(node
@@ -20308,7 +20388,7 @@
 			)
 		)
 		(net
-			(code "91")
+			(code "92")
 			(name "Net-(EF2-PGTH)")
 			(class "Default")
 			(node
@@ -20329,7 +20409,7 @@
 			)
 		)
 		(net
-			(code "92")
+			(code "93")
 			(name "Net-(EF2-UVLO)")
 			(class "Default")
 			(node
@@ -20350,7 +20430,7 @@
 			)
 		)
 		(net
-			(code "93")
+			(code "94")
 			(name "Net-(EF2-dVdT)")
 			(class "Default")
 			(node
@@ -20366,7 +20446,7 @@
 			)
 		)
 		(net
-			(code "94")
+			(code "95")
 			(name "Net-(FST1-Pin_1)")
 			(class "Default")
 			(node
@@ -20382,7 +20462,7 @@
 			)
 		)
 		(net
-			(code "95")
+			(code "96")
 			(name "Net-(FST1-Pin_3)")
 			(class "Default")
 			(node
@@ -20398,7 +20478,7 @@
 			)
 		)
 		(net
-			(code "96")
+			(code "97")
 			(name "Net-(FST1-Pin_5)")
 			(class "Default")
 			(node
@@ -20414,7 +20494,7 @@
 			)
 		)
 		(net
-			(code "97")
+			(code "98")
 			(name "Net-(FST1-Pin_7)")
 			(class "Default")
 			(node
@@ -20430,7 +20510,7 @@
 			)
 		)
 		(net
-			(code "98")
+			(code "99")
 			(name "Net-(FST1-Pin_9)")
 			(class "Default")
 			(node
@@ -20446,7 +20526,7 @@
 			)
 		)
 		(net
-			(code "99")
+			(code "100")
 			(name "Net-(FST1-Pin_11)")
 			(class "Default")
 			(node
@@ -20462,7 +20542,7 @@
 			)
 		)
 		(net
-			(code "100")
+			(code "101")
 			(name "Net-(FST2-Pin_2)")
 			(class "Default")
 			(node
@@ -20478,7 +20558,7 @@
 			)
 		)
 		(net
-			(code "101")
+			(code "102")
 			(name "Net-(FST2-Pin_4)")
 			(class "Default")
 			(node
@@ -20494,7 +20574,7 @@
 			)
 		)
 		(net
-			(code "102")
+			(code "103")
 			(name "Net-(FST2-Pin_6)")
 			(class "Default")
 			(node
@@ -20510,7 +20590,7 @@
 			)
 		)
 		(net
-			(code "103")
+			(code "104")
 			(name "Net-(FST2-Pin_8)")
 			(class "Default")
 			(node
@@ -20526,7 +20606,7 @@
 			)
 		)
 		(net
-			(code "104")
+			(code "105")
 			(name "Net-(FST2-Pin_10)")
 			(class "Default")
 			(node
@@ -20542,7 +20622,7 @@
 			)
 		)
 		(net
-			(code "105")
+			(code "106")
 			(name "Net-(FST2-Pin_12)")
 			(class "Default")
 			(node
@@ -20558,7 +20638,7 @@
 			)
 		)
 		(net
-			(code "106")
+			(code "107")
 			(name "Net-(FST3-Pin_2)")
 			(class "Power_3V3,Default")
 			(node
@@ -20585,7 +20665,7 @@
 			)
 		)
 		(net
-			(code "107")
+			(code "108")
 			(name "Net-(L1-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20605,7 +20685,7 @@
 			)
 		)
 		(net
-			(code "108")
+			(code "109")
 			(name "Net-(L2-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20625,7 +20705,7 @@
 			)
 		)
 		(net
-			(code "109")
+			(code "110")
 			(name "Net-(L3-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20645,7 +20725,7 @@
 			)
 		)
 		(net
-			(code "110")
+			(code "111")
 			(name "Net-(L4-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20665,7 +20745,7 @@
 			)
 		)
 		(net
-			(code "111")
+			(code "112")
 			(name "Net-(L5-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20685,7 +20765,7 @@
 			)
 		)
 		(net
-			(code "112")
+			(code "113")
 			(name "Net-(L6-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20705,7 +20785,7 @@
 			)
 		)
 		(net
-			(code "113")
+			(code "114")
 			(name "Net-(L7-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20725,7 +20805,7 @@
 			)
 		)
 		(net
-			(code "114")
+			(code "115")
 			(name "Net-(L8-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20745,7 +20825,7 @@
 			)
 		)
 		(net
-			(code "115")
+			(code "116")
 			(name "Net-(L9-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20765,7 +20845,7 @@
 			)
 		)
 		(net
-			(code "116")
+			(code "117")
 			(name "Net-(L10-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20785,7 +20865,7 @@
 			)
 		)
 		(net
-			(code "117")
+			(code "118")
 			(name "Net-(L11-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20805,7 +20885,7 @@
 			)
 		)
 		(net
-			(code "118")
+			(code "119")
 			(name "Net-(L12-Pad2)")
 			(class "LED_Switching,Default")
 			(node
@@ -20825,7 +20905,7 @@
 			)
 		)
 		(net
-			(code "119")
+			(code "120")
 			(name "Net-(LD1-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -20851,7 +20931,7 @@
 			)
 		)
 		(net
-			(code "120")
+			(code "121")
 			(name "Net-(LD2-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -20877,7 +20957,7 @@
 			)
 		)
 		(net
-			(code "121")
+			(code "122")
 			(name "Net-(LD3-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -20903,7 +20983,7 @@
 			)
 		)
 		(net
-			(code "122")
+			(code "123")
 			(name "Net-(LD4-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -20929,7 +21009,7 @@
 			)
 		)
 		(net
-			(code "123")
+			(code "124")
 			(name "Net-(LD5-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -20955,7 +21035,7 @@
 			)
 		)
 		(net
-			(code "124")
+			(code "125")
 			(name "Net-(LD6-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -20981,7 +21061,7 @@
 			)
 		)
 		(net
-			(code "125")
+			(code "126")
 			(name "Net-(LD7-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -21007,7 +21087,7 @@
 			)
 		)
 		(net
-			(code "126")
+			(code "127")
 			(name "Net-(LD8-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -21033,7 +21113,7 @@
 			)
 		)
 		(net
-			(code "127")
+			(code "128")
 			(name "Net-(LD9-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -21059,7 +21139,7 @@
 			)
 		)
 		(net
-			(code "128")
+			(code "129")
 			(name "Net-(LD10-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -21085,7 +21165,7 @@
 			)
 		)
 		(net
-			(code "129")
+			(code "130")
 			(name "Net-(LD11-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -21111,7 +21191,7 @@
 			)
 		)
 		(net
-			(code "130")
+			(code "131")
 			(name "Net-(LD12-ISENSE)")
 			(class "LED_Switching,Default")
 			(node
@@ -21137,7 +21217,7 @@
 			)
 		)
 		(net
-			(code "131")
+			(code "132")
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
@@ -21175,7 +21255,7 @@
 			)
 		)
 		(net
-			(code "132")
+			(code "133")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
@@ -21208,7 +21288,7 @@
 			)
 		)
 		(net
-			(code "133")
+			(code "134")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -21224,7 +21304,7 @@
 			)
 		)
 		(net
-			(code "134")
+			(code "135")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -21240,7 +21320,7 @@
 			)
 		)
 		(net
-			(code "135")
+			(code "136")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -21256,7 +21336,7 @@
 			)
 		)
 		(net
-			(code "136")
+			(code "137")
 			(name "Net-(MCU1-IO39)")
 			(class "Default")
 			(node
@@ -21273,7 +21353,7 @@
 			)
 		)
 		(net
-			(code "137")
+			(code "138")
 			(name "Net-(MCU1-IO40)")
 			(class "Default")
 			(node
@@ -21290,7 +21370,7 @@
 			)
 		)
 		(net
-			(code "138")
+			(code "139")
 			(name "Net-(MCU1-IO41)")
 			(class "Default")
 			(node
@@ -21307,7 +21387,7 @@
 			)
 		)
 		(net
-			(code "139")
+			(code "140")
 			(name "Net-(MCU1-IO42)")
 			(class "Default")
 			(node
@@ -21324,7 +21404,7 @@
 			)
 		)
 		(net
-			(code "140")
+			(code "141")
 			(name "Net-(MCU1-USB_D+)")
 			(class "Default")
 			(node
@@ -21353,7 +21433,7 @@
 			)
 		)
 		(net
-			(code "141")
+			(code "142")
 			(name "Net-(MCU1-USB_D-)")
 			(class "Default")
 			(node
@@ -21382,7 +21462,7 @@
 			)
 		)
 		(net
-			(code "142")
+			(code "143")
 			(name "Net-(NFET1-D)")
 			(class "Power_24V,Default")
 			(node
@@ -21416,7 +21496,7 @@
 			)
 		)
 		(net
-			(code "143")
+			(code "144")
 			(name "Net-(NFET2-D)")
 			(class "Power_24V,Default")
 			(node
@@ -21450,7 +21530,7 @@
 			)
 		)
 		(net
-			(code "144")
+			(code "145")
 			(name "Net-(PS1-+VIN)")
 			(class "Power_24V,Default")
 			(node
@@ -21471,7 +21551,7 @@
 			)
 		)
 		(net
-			(code "145")
+			(code "146")
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
@@ -21487,7 +21567,7 @@
 			)
 		)
 		(net
-			(code "146")
+			(code "147")
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
@@ -21503,7 +21583,7 @@
 			)
 		)
 		(net
-			(code "147")
+			(code "148")
 			(name "Net-(VR1-MODE{slash}SYNC)")
 			(class "Default")
 			(node
@@ -21524,7 +21604,7 @@
 			)
 		)
 		(net
-			(code "148")
+			(code "149")
 			(name "Net-(VR1-VCC)")
 			(class "Power_3V3,Default")
 			(node
@@ -21540,18 +21620,18 @@
 			)
 		)
 		(net
-			(code "149")
-			(name "unconnected-(D2-NC-Pad2)")
+			(code "150")
+			(name "unconnected-(D3-NC-Pad2)")
 			(class "Default")
 			(node
-				(ref "D2")
+				(ref "D3")
 				(pin "2")
 				(pinfunction "NC_2")
 				(pintype "no_connect")
 			)
 		)
 		(net
-			(code "150")
+			(code "151")
 			(name "unconnected-(EF1-MODE-Pad12)")
 			(class "Default")
 			(node
@@ -21562,7 +21642,7 @@
 			)
 		)
 		(net
-			(code "151")
+			(code "152")
 			(name "unconnected-(EF2-MODE-Pad12)")
 			(class "Default")
 			(node
@@ -21573,7 +21653,7 @@
 			)
 		)
 		(net
-			(code "152")
+			(code "153")
 			(name "unconnected-(LD1-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21584,7 +21664,7 @@
 			)
 		)
 		(net
-			(code "153")
+			(code "154")
 			(name "unconnected-(LD2-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21595,7 +21675,7 @@
 			)
 		)
 		(net
-			(code "154")
+			(code "155")
 			(name "unconnected-(LD3-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21606,7 +21686,7 @@
 			)
 		)
 		(net
-			(code "155")
+			(code "156")
 			(name "unconnected-(LD4-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21617,7 +21697,7 @@
 			)
 		)
 		(net
-			(code "156")
+			(code "157")
 			(name "unconnected-(LD5-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21628,7 +21708,7 @@
 			)
 		)
 		(net
-			(code "157")
+			(code "158")
 			(name "unconnected-(LD6-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21639,7 +21719,7 @@
 			)
 		)
 		(net
-			(code "158")
+			(code "159")
 			(name "unconnected-(LD7-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21650,7 +21730,7 @@
 			)
 		)
 		(net
-			(code "159")
+			(code "160")
 			(name "unconnected-(LD8-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21661,7 +21741,7 @@
 			)
 		)
 		(net
-			(code "160")
+			(code "161")
 			(name "unconnected-(LD9-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21672,7 +21752,7 @@
 			)
 		)
 		(net
-			(code "161")
+			(code "162")
 			(name "unconnected-(LD10-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21683,7 +21763,7 @@
 			)
 		)
 		(net
-			(code "162")
+			(code "163")
 			(name "unconnected-(LD11-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21694,7 +21774,7 @@
 			)
 		)
 		(net
-			(code "163")
+			(code "164")
 			(name "unconnected-(LD12-NC-Pad7)")
 			(class "Default")
 			(node
@@ -21705,7 +21785,7 @@
 			)
 		)
 		(net
-			(code "164")
+			(code "165")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -21716,7 +21796,7 @@
 			)
 		)
 		(net
-			(code "165")
+			(code "166")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -21727,7 +21807,7 @@
 			)
 		)
 		(net
-			(code "166")
+			(code "167")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -21738,7 +21818,7 @@
 			)
 		)
 		(net
-			(code "167")
+			(code "168")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -21749,7 +21829,7 @@
 			)
 		)
 		(net
-			(code "168")
+			(code "169")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -21760,7 +21840,7 @@
 			)
 		)
 		(net
-			(code "169")
+			(code "170")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -21771,7 +21851,7 @@
 			)
 		)
 		(net
-			(code "170")
+			(code "171")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -21782,7 +21862,7 @@
 			)
 		)
 		(net
-			(code "171")
+			(code "172")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -21793,7 +21873,7 @@
 			)
 		)
 		(net
-			(code "172")
+			(code "173")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -21804,7 +21884,7 @@
 			)
 		)
 		(net
-			(code "173")
+			(code "174")
 			(name "unconnected-(VR1-PGOOD-Pad1)")
 			(class "Default")
 			(node
@@ -21815,7 +21895,7 @@
 			)
 		)
 		(net
-			(code "174")
+			(code "175")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -21826,7 +21906,7 @@
 			)
 		)
 		(net
-			(code "175")
+			(code "176")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
