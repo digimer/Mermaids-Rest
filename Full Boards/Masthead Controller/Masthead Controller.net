@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-09-15T17:23:27")
+		(date "2026-09-16T14:28:08")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -10,9 +10,9 @@
 			(tstamps "/")
 			(title_block
 				(title "Masthead Controller")
-				(company "The Digital Mermaid")
+				(company "Tuskar Marine")
 				(rev "1.3.0")
-				(date "2026-09-15")
+				(date "2026-09-16")
 				(source "Masthead Controller.kicad_sch")
 				(comment
 					(number "1")
@@ -968,28 +968,28 @@
 		)
 		(comp
 			(ref "C15")
-			(value "1uF")
-			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
-			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(value "100pF")
+			(footprint "mr-stuff:Kemet C0805X")
+			(datasheet "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
+			(description "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "Kyocera 08051C105K4Z2A")
+					(name "Part") "Kemet C0805X101J5GACAUTO")
 				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+					(name "Footprint") "mr-stuff:Kemet C0805X")
 				(field
-					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+					(name "Datasheet") "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD")
 				(field
-					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+					(name "Description") "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Kyocera 08051C105K4Z2A")
-				(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+				(part "Kemet C0805X101J5GACAUTO")
+				(description "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
-				(value "Kyocera 08051C105K4Z2A")
+				(value "Kemet C0805X101J5GACAUTO")
 			)
 			(property
 				(name "Sheetname")
@@ -1011,7 +1011,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "59e60c9a-ecf7-48ff-ab48-8f83a3eec2f7")
+			(tstamps "2307bf95-5ac5-4880-9495-4e0bb79f6fe1")
 			(units
 				(unit
 					(name "A")
@@ -1071,7 +1071,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3fe23d0e-f4e2-4e5d-a8ce-4a867f9345b9")
+			(tstamps "59e60c9a-ecf7-48ff-ab48-8f83a3eec2f7")
 			(units
 				(unit
 					(name "A")
@@ -1088,28 +1088,28 @@
 		)
 		(comp
 			(ref "C17")
-			(value "0.1uF")
+			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
-			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "Kyocera 08051C104K4Z2A")
+					(name "Part") "Kyocera 08051C105K4Z2A")
 				(field
 					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
 					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
-					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "Kyocera 08051C104K4Z2A")
-				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+				(part "Kyocera 08051C105K4Z2A")
+				(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
-				(value "Kyocera 08051C104K4Z2A")
+				(value "Kyocera 08051C105K4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -1131,7 +1131,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "821a615b-11c5-496c-b08d-b28727f13421")
+			(tstamps "3fe23d0e-f4e2-4e5d-a8ce-4a867f9345b9")
 			(units
 				(unit
 					(name "A")
@@ -1191,7 +1191,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e6f9e035-598b-4867-b058-ba21ba59b0bc")
+			(tstamps "821a615b-11c5-496c-b08d-b28727f13421")
 			(units
 				(unit
 					(name "A")
@@ -1251,7 +1251,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "232d5646-575d-45a0-adea-867e4fdcc833")
+			(tstamps "e6f9e035-598b-4867-b058-ba21ba59b0bc")
 			(units
 				(unit
 					(name "A")
@@ -1268,6 +1268,66 @@
 		)
 		(comp
 			(ref "C20")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "232d5646-575d-45a0-adea-867e4fdcc833")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C21")
 			(value "0.01uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1327,7 +1387,7 @@
 			)
 		)
 		(comp
-			(ref "C21")
+			(ref "C22")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1387,7 +1447,7 @@
 			)
 		)
 		(comp
-			(ref "C22")
+			(ref "C23")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1447,7 +1507,7 @@
 			)
 		)
 		(comp
-			(ref "C23")
+			(ref "C24")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1507,7 +1567,7 @@
 			)
 		)
 		(comp
-			(ref "C24")
+			(ref "C25")
 			(value "0.047uF")
 			(footprint "mr-stuff:Murata GCJ 0805")
 			(datasheet "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ21BR72A473KA01-02D-EN_PDF_CERAMICCAPACITORSMD")
@@ -1567,7 +1627,7 @@
 			)
 		)
 		(comp
-			(ref "C25")
+			(ref "C26")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1627,7 +1687,7 @@
 			)
 		)
 		(comp
-			(ref "C26")
+			(ref "C27")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1687,7 +1747,7 @@
 			)
 		)
 		(comp
-			(ref "C27")
+			(ref "C28")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1747,7 +1807,7 @@
 			)
 		)
 		(comp
-			(ref "C28")
+			(ref "C29")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1807,7 +1867,7 @@
 			)
 		)
 		(comp
-			(ref "C29")
+			(ref "C30")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1867,7 +1927,7 @@
 			)
 		)
 		(comp
-			(ref "C30")
+			(ref "C31")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1927,7 +1987,7 @@
 			)
 		)
 		(comp
-			(ref "C31")
+			(ref "C32")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1987,7 +2047,7 @@
 			)
 		)
 		(comp
-			(ref "C32")
+			(ref "C33")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2047,7 +2107,7 @@
 			)
 		)
 		(comp
-			(ref "C33")
+			(ref "C34")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2107,7 +2167,7 @@
 			)
 		)
 		(comp
-			(ref "C34")
+			(ref "C35")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2167,7 +2227,7 @@
 			)
 		)
 		(comp
-			(ref "C35")
+			(ref "C36")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2227,7 +2287,7 @@
 			)
 		)
 		(comp
-			(ref "C36")
+			(ref "C37")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -2287,7 +2347,7 @@
 			)
 		)
 		(comp
-			(ref "C37")
+			(ref "C38")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2347,7 +2407,7 @@
 			)
 		)
 		(comp
-			(ref "C38")
+			(ref "C39")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2407,7 +2467,7 @@
 			)
 		)
 		(comp
-			(ref "C39")
+			(ref "C40")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2467,7 +2527,7 @@
 			)
 		)
 		(comp
-			(ref "C40")
+			(ref "C41")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2527,7 +2587,7 @@
 			)
 		)
 		(comp
-			(ref "C41")
+			(ref "C42")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2587,7 +2647,7 @@
 			)
 		)
 		(comp
-			(ref "C42")
+			(ref "C43")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2647,7 +2707,7 @@
 			)
 		)
 		(comp
-			(ref "C43")
+			(ref "C44")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2707,7 +2767,7 @@
 			)
 		)
 		(comp
-			(ref "C44")
+			(ref "C45")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2767,7 +2827,7 @@
 			)
 		)
 		(comp
-			(ref "C45")
+			(ref "C46")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2827,7 +2887,7 @@
 			)
 		)
 		(comp
-			(ref "C46")
+			(ref "C47")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2887,7 +2947,7 @@
 			)
 		)
 		(comp
-			(ref "C47")
+			(ref "C48")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -2947,7 +3007,7 @@
 			)
 		)
 		(comp
-			(ref "C48")
+			(ref "C49")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -5007,11 +5067,11 @@
 		(comp
 			(ref "H1")
 			(value "MountingHole_Pad")
-			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(footprint "mr-stuff:MountingHole_4.3mm_M4_with_Keepout")
 			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
+					(name "Footprint") "mr-stuff:MountingHole_4.3mm_M4_with_Keepout")
 				(field
 					(name "Datasheet")
 				)
@@ -5057,11 +5117,11 @@
 		(comp
 			(ref "H2")
 			(value "MountingHole_Pad")
-			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(footprint "mr-stuff:MountingHole_4.3mm_M4_with_Keepout")
 			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
+					(name "Footprint") "mr-stuff:MountingHole_4.3mm_M4_with_Keepout")
 				(field
 					(name "Datasheet")
 				)
@@ -5107,11 +5167,11 @@
 		(comp
 			(ref "H3")
 			(value "MountingHole_Pad")
-			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(footprint "mr-stuff:MountingHole_4.3mm_M4_with_Keepout")
 			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
+					(name "Footprint") "mr-stuff:MountingHole_4.3mm_M4_with_Keepout")
 				(field
 					(name "Datasheet")
 				)
@@ -5157,11 +5217,11 @@
 		(comp
 			(ref "H4")
 			(value "MountingHole_Pad")
-			(footprint "MountingHole:MountingHole_4.3mm_M4")
+			(footprint "mr-stuff:MountingHole_4.3mm_M4_with_Keepout")
 			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_4.3mm_M4")
+					(name "Footprint") "mr-stuff:MountingHole_4.3mm_M4_with_Keepout")
 				(field
 					(name "Datasheet")
 				)
@@ -16039,7 +16099,7 @@
 		(net
 			(code "1")
 			(name "+3.3V")
-			(class "Default")
+			(class "Power_3V3,Default")
 			(node
 				(ref "ADC1")
 				(pin "8")
@@ -16052,13 +16112,8 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C25")
+				(ref "C26")
 				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C27")
-				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -16073,11 +16128,16 @@
 			)
 			(node
 				(ref "C30")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C31")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C32")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -16168,6 +16228,11 @@
 			)
 			(node
 				(ref "R46")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -16270,14 +16335,14 @@
 		(net
 			(code "2")
 			(name "+12V_N2K")
-			(class "Default")
+			(class "Power_3V3,Default")
 			(node
-				(ref "C35")
+				(ref "C36")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C36")
+				(ref "C37")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -16301,12 +16366,7 @@
 		(net
 			(code "3")
 			(name "+24V_ISO")
-			(class "Default")
-			(node
-				(ref "C15")
-				(pin "1")
-				(pintype "passive")
-			)
+			(class "Power_24V,Default")
 			(node
 				(ref "C16")
 				(pin "1")
@@ -16318,7 +16378,12 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C21")
+				(ref "C18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -16402,15 +16467,10 @@
 		(net
 			(code "4")
 			(name "+24V_LED")
-			(class "Default")
+			(class "Power_24V,Default")
 			(node
-				(ref "C19")
+				(ref "C20")
 				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C37")
-				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -16465,6 +16525,11 @@
 			)
 			(node
 				(ref "C48")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C49")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -16699,14 +16764,14 @@
 		(net
 			(code "5")
 			(name "+24V_N2K")
-			(class "Default")
+			(class "Power_24V,Default")
 			(node
-				(ref "C23")
+				(ref "C24")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C32")
+				(ref "C33")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -16743,7 +16808,7 @@
 		(net
 			(code "6")
 			(name "/ANCHOR_PRI_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD1")
 				(pin "4")
@@ -16759,7 +16824,7 @@
 		(net
 			(code "7")
 			(name "/ANCHOR_PRI_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC3")
 				(pin "6")
@@ -16776,7 +16841,7 @@
 		(net
 			(code "8")
 			(name "/ANCHOR_SEC_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD2")
 				(pin "4")
@@ -16792,7 +16857,7 @@
 		(net
 			(code "9")
 			(name "/ANCHOR_SEC_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC3")
 				(pin "7")
@@ -17020,7 +17085,7 @@
 		(net
 			(code "16")
 			(name "/DECK_PRI_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD11")
 				(pin "4")
@@ -17036,7 +17101,7 @@
 		(net
 			(code "17")
 			(name "/DECK_PRI_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC1")
 				(pin "8")
@@ -17053,7 +17118,7 @@
 		(net
 			(code "18")
 			(name "/DECK_SEC_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD12")
 				(pin "4")
@@ -17069,7 +17134,7 @@
 		(net
 			(code "19")
 			(name "/DECK_SEC_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC1")
 				(pin "9")
@@ -17108,7 +17173,7 @@
 		(net
 			(code "21")
 			(name "/EFUSE_LED_IMON")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "ADC1")
 				(pin "4")
@@ -17174,7 +17239,7 @@
 		(net
 			(code "24")
 			(name "/EFUSE_N2K_IMON")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "ADC1")
 				(pin "5")
@@ -17420,7 +17485,7 @@
 		(net
 			(code "36")
 			(name "/STEAMING_PRI_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD9")
 				(pin "4")
@@ -17436,7 +17501,7 @@
 		(net
 			(code "37")
 			(name "/STEAMING_PRI_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC1")
 				(pin "6")
@@ -17453,7 +17518,7 @@
 		(net
 			(code "38")
 			(name "/STEAMING_SEC_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD10")
 				(pin "4")
@@ -17469,7 +17534,7 @@
 		(net
 			(code "39")
 			(name "/STEAMING_SEC_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC1")
 				(pin "7")
@@ -17486,7 +17551,7 @@
 		(net
 			(code "40")
 			(name "/TC_PORT_PRI_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD5")
 				(pin "4")
@@ -17502,7 +17567,7 @@
 		(net
 			(code "41")
 			(name "/TC_PORT_PRI_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC2")
 				(pin "6")
@@ -17519,7 +17584,7 @@
 		(net
 			(code "42")
 			(name "/TC_PORT_SEC_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD6")
 				(pin "4")
@@ -17535,7 +17600,7 @@
 		(net
 			(code "43")
 			(name "/TC_PORT_SEC_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC2")
 				(pin "7")
@@ -17552,7 +17617,7 @@
 		(net
 			(code "44")
 			(name "/TC_STBD_PRI_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD7")
 				(pin "4")
@@ -17568,7 +17633,7 @@
 		(net
 			(code "45")
 			(name "/TC_STBD_PRI_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC2")
 				(pin "8")
@@ -17585,7 +17650,7 @@
 		(net
 			(code "46")
 			(name "/TC_STBD_SEC_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD8")
 				(pin "4")
@@ -17601,7 +17666,7 @@
 		(net
 			(code "47")
 			(name "/TC_STBD_SEC_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC2")
 				(pin "9")
@@ -17618,7 +17683,7 @@
 		(net
 			(code "48")
 			(name "/TC_STERN_PRI_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD3")
 				(pin "4")
@@ -17634,7 +17699,7 @@
 		(net
 			(code "49")
 			(name "/TC_STERN_PRI_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC3")
 				(pin "8")
@@ -17651,7 +17716,7 @@
 		(net
 			(code "50")
 			(name "/TC_STERN_SEC_JPR")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD4")
 				(pin "4")
@@ -17667,7 +17732,7 @@
 		(net
 			(code "51")
 			(name "/TC_STERN_SEC_VSET")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "DAC3")
 				(pin "9")
@@ -17813,7 +17878,7 @@
 			)
 			(node
 				(ref "C15")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -17828,12 +17893,12 @@
 			)
 			(node
 				(ref "C18")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C19")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -17843,17 +17908,17 @@
 			)
 			(node
 				(ref "C20")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C21")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C22")
+				(ref "C21")
 				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -17863,7 +17928,7 @@
 			)
 			(node
 				(ref "C24")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -17878,7 +17943,7 @@
 			)
 			(node
 				(ref "C27")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -17898,7 +17963,7 @@
 			)
 			(node
 				(ref "C30")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -17933,7 +17998,7 @@
 			)
 			(node
 				(ref "C37")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -17993,6 +18058,11 @@
 			)
 			(node
 				(ref "C48")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C49")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -18586,7 +18656,7 @@
 		(net
 			(code "56")
 			(name "Net-(ADC1-AIN2)")
-			(class "Default")
+			(class "Signal_Analog,Default")
 			(node
 				(ref "ADC1")
 				(pin "6")
@@ -18594,7 +18664,7 @@
 				(pintype "input")
 			)
 			(node
-				(ref "C26")
+				(ref "C27")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -18627,10 +18697,10 @@
 		)
 		(net
 			(code "58")
-			(name "Net-(C33-Pad1)")
+			(name "Net-(C34-Pad1)")
 			(class "Default")
 			(node
-				(ref "C33")
+				(ref "C34")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -18701,7 +18771,7 @@
 		(net
 			(code "61")
 			(name "Net-(D1-A)")
-			(class "Default")
+			(class "Power_24V,Default")
 			(node
 				(ref "D1")
 				(pin "2")
@@ -18717,7 +18787,7 @@
 		(net
 			(code "62")
 			(name "Net-(D1-K)")
-			(class "Default")
+			(class "Power_24V,Default")
 			(node
 				(ref "C2")
 				(pin "1")
@@ -18766,7 +18836,7 @@
 		(net
 			(code "63")
 			(name "Net-(D4-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D4")
 				(pin "2")
@@ -18794,7 +18864,7 @@
 		(net
 			(code "64")
 			(name "Net-(D5-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D5")
 				(pin "2")
@@ -18822,7 +18892,7 @@
 		(net
 			(code "65")
 			(name "Net-(D6-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D6")
 				(pin "2")
@@ -18850,7 +18920,7 @@
 		(net
 			(code "66")
 			(name "Net-(D7-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D7")
 				(pin "2")
@@ -18878,7 +18948,7 @@
 		(net
 			(code "67")
 			(name "Net-(D8-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D8")
 				(pin "2")
@@ -18906,7 +18976,7 @@
 		(net
 			(code "68")
 			(name "Net-(D9-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D9")
 				(pin "2")
@@ -18934,7 +19004,7 @@
 		(net
 			(code "69")
 			(name "Net-(D10-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D10")
 				(pin "2")
@@ -18962,7 +19032,7 @@
 		(net
 			(code "70")
 			(name "Net-(D11-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D11")
 				(pin "2")
@@ -18990,7 +19060,7 @@
 		(net
 			(code "71")
 			(name "Net-(D12-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D12")
 				(pin "2")
@@ -19018,7 +19088,7 @@
 		(net
 			(code "72")
 			(name "Net-(D13-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D13")
 				(pin "2")
@@ -19046,7 +19116,7 @@
 		(net
 			(code "73")
 			(name "Net-(D14-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D14")
 				(pin "2")
@@ -19074,7 +19144,7 @@
 		(net
 			(code "74")
 			(name "Net-(D15-A)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "D15")
 				(pin "2")
@@ -19288,7 +19358,7 @@
 			(name "Net-(EF1-dVdT)")
 			(class "Default")
 			(node
-				(ref "C20")
+				(ref "C21")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -19440,7 +19510,7 @@
 			(name "Net-(EF2-dVdT)")
 			(class "Default")
 			(node
-				(ref "C24")
+				(ref "C25")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -19646,7 +19716,7 @@
 		(net
 			(code "106")
 			(name "Net-(FST3-Pin_2)")
-			(class "Default")
+			(class "Power_3V3,Default")
 			(node
 				(ref "C12")
 				(pin "1")
@@ -19669,16 +19739,11 @@
 				(pinfunction "3V3_2")
 				(pintype "power_in")
 			)
-			(node
-				(ref "R5")
-				(pin "1")
-				(pintype "passive")
-			)
 		)
 		(net
 			(code "107")
 			(name "Net-(L1-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L1")
 				(pin "2")
@@ -19698,7 +19763,7 @@
 		(net
 			(code "108")
 			(name "Net-(L2-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L2")
 				(pin "2")
@@ -19718,7 +19783,7 @@
 		(net
 			(code "109")
 			(name "Net-(L3-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L3")
 				(pin "2")
@@ -19738,7 +19803,7 @@
 		(net
 			(code "110")
 			(name "Net-(L4-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L4")
 				(pin "2")
@@ -19758,7 +19823,7 @@
 		(net
 			(code "111")
 			(name "Net-(L5-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L5")
 				(pin "2")
@@ -19778,7 +19843,7 @@
 		(net
 			(code "112")
 			(name "Net-(L6-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L6")
 				(pin "2")
@@ -19798,7 +19863,7 @@
 		(net
 			(code "113")
 			(name "Net-(L7-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L7")
 				(pin "2")
@@ -19818,7 +19883,7 @@
 		(net
 			(code "114")
 			(name "Net-(L8-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L8")
 				(pin "2")
@@ -19838,7 +19903,7 @@
 		(net
 			(code "115")
 			(name "Net-(L9-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L9")
 				(pin "2")
@@ -19858,7 +19923,7 @@
 		(net
 			(code "116")
 			(name "Net-(L10-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L10")
 				(pin "2")
@@ -19878,7 +19943,7 @@
 		(net
 			(code "117")
 			(name "Net-(L11-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L11")
 				(pin "2")
@@ -19898,7 +19963,7 @@
 		(net
 			(code "118")
 			(name "Net-(L12-Pad2)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "L12")
 				(pin "2")
@@ -19918,7 +19983,7 @@
 		(net
 			(code "119")
 			(name "Net-(LD1-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD1")
 				(pin "1")
@@ -19944,7 +20009,7 @@
 		(net
 			(code "120")
 			(name "Net-(LD2-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD2")
 				(pin "1")
@@ -19970,7 +20035,7 @@
 		(net
 			(code "121")
 			(name "Net-(LD3-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD3")
 				(pin "1")
@@ -19996,7 +20061,7 @@
 		(net
 			(code "122")
 			(name "Net-(LD4-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD4")
 				(pin "1")
@@ -20022,7 +20087,7 @@
 		(net
 			(code "123")
 			(name "Net-(LD5-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD5")
 				(pin "1")
@@ -20048,7 +20113,7 @@
 		(net
 			(code "124")
 			(name "Net-(LD6-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD6")
 				(pin "1")
@@ -20074,7 +20139,7 @@
 		(net
 			(code "125")
 			(name "Net-(LD7-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD7")
 				(pin "1")
@@ -20100,7 +20165,7 @@
 		(net
 			(code "126")
 			(name "Net-(LD8-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD8")
 				(pin "1")
@@ -20126,7 +20191,7 @@
 		(net
 			(code "127")
 			(name "Net-(LD9-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD9")
 				(pin "1")
@@ -20152,7 +20217,7 @@
 		(net
 			(code "128")
 			(name "Net-(LD10-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD10")
 				(pin "1")
@@ -20178,7 +20243,7 @@
 		(net
 			(code "129")
 			(name "Net-(LD11-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD11")
 				(pin "1")
@@ -20204,7 +20269,7 @@
 		(net
 			(code "130")
 			(name "Net-(LD12-ISENSE)")
-			(class "Default")
+			(class "LED_Switching,Default")
 			(node
 				(ref "LD12")
 				(pin "1")
@@ -20233,6 +20298,11 @@
 			(class "Default")
 			(node
 				(ref "C11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -20470,9 +20540,9 @@
 		(net
 			(code "142")
 			(name "Net-(NFET1-D)")
-			(class "Default")
+			(class "Power_24V,Default")
 			(node
-				(ref "C18")
+				(ref "C19")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -20504,9 +20574,9 @@
 		(net
 			(code "143")
 			(name "Net-(NFET2-D)")
-			(class "Default")
+			(class "Power_24V,Default")
 			(node
-				(ref "C22")
+				(ref "C23")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -20538,9 +20608,9 @@
 		(net
 			(code "144")
 			(name "Net-(PS1-+VIN)")
-			(class "Default")
+			(class "Power_24V,Default")
 			(node
-				(ref "C34")
+				(ref "C35")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -20612,7 +20682,7 @@
 		(net
 			(code "148")
 			(name "Net-(VR1-VCC)")
-			(class "Default")
+			(class "Power_3V3,Default")
 			(node
 				(ref "C10")
 				(pin "2")
