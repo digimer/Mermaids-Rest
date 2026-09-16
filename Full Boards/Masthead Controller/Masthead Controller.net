@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/Mermaids-Rest/Full Boards/Masthead Controller/Masthead Controller.kicad_sch")
-		(date "2026-09-16T14:28:08")
+		(date "2026-09-16T17:12:06")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -913,27 +913,27 @@
 		(comp
 			(ref "C14")
 			(value "1000pF")
-			(footprint "mr-stuff:TDK CGA 0805")
-			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "TDK CGA4F2X7R2A102K085AE")
+					(name "Part") "Kyocera 08052C102J4Z2A")
 				(field
-					(name "Footprint") "mr-stuff:TDK CGA 0805")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
-					(name "Description") "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "TDK CGA4F2X7R2A102K085AE")
-				(description "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
-				(value "TDK CGA4F2X7R2A102K085AE")
+				(value "Kyocera 08052C102J4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -944,6 +944,10 @@
 				(value "Masthead Controller.kicad_sch")
 			)
 			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
 				(name "ki_fp_filters")
 				(value "C_*")
 			)
@@ -951,7 +955,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "997d56e3-d3de-45a0-8ddf-0173799690cb")
+			(tstamps "1261955f-47fd-4cc9-9ea4-3aa639388c1e")
 			(units
 				(unit
 					(name "A")
@@ -2408,28 +2412,28 @@
 		)
 		(comp
 			(ref "C39")
-			(value "10uF")
-			(footprint "mr-stuff:TDK CGA5")
-			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+					(name "Part") "Kyocera 08052C102J4Z2A")
 				(field
-					(name "Footprint") "mr-stuff:TDK CGA5")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
-					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "TDK CGA5L1X7R1H106K160AE")
-				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
-				(value "TDK CGA5L1X7R1H106K160AE")
+				(value "Kyocera 08052C102J4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -2451,7 +2455,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "82b1ff85-adfc-451a-bfbb-9d5fdefb0ccc")
+			(tstamps "5baccc1f-27aa-4302-9187-94df6b50d539")
 			(units
 				(unit
 					(name "A")
@@ -2511,7 +2515,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "204f9f3d-bb50-4c57-a0dc-b22d2e857471")
+			(tstamps "82b1ff85-adfc-451a-bfbb-9d5fdefb0ccc")
 			(units
 				(unit
 					(name "A")
@@ -2528,28 +2532,28 @@
 		)
 		(comp
 			(ref "C41")
-			(value "10uF")
-			(footprint "mr-stuff:TDK CGA5")
-			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+					(name "Part") "Kyocera 08052C102J4Z2A")
 				(field
-					(name "Footprint") "mr-stuff:TDK CGA5")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
-					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "TDK CGA5L1X7R1H106K160AE")
-				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
-				(value "TDK CGA5L1X7R1H106K160AE")
+				(value "Kyocera 08052C102J4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -2571,7 +2575,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "eb4c62fb-1d80-4293-b421-e7b177b26b45")
+			(tstamps "a3370a29-2f98-4555-a3f6-63395906707d")
 			(units
 				(unit
 					(name "A")
@@ -2631,7 +2635,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "10a064b4-fc6e-4d88-a8ff-46d43a30c5ee")
+			(tstamps "204f9f3d-bb50-4c57-a0dc-b22d2e857471")
 			(units
 				(unit
 					(name "A")
@@ -2648,28 +2652,28 @@
 		)
 		(comp
 			(ref "C43")
-			(value "10uF")
-			(footprint "mr-stuff:TDK CGA5")
-			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+					(name "Part") "Kyocera 08052C102J4Z2A")
 				(field
-					(name "Footprint") "mr-stuff:TDK CGA5")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
-					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "TDK CGA5L1X7R1H106K160AE")
-				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
-				(value "TDK CGA5L1X7R1H106K160AE")
+				(value "Kyocera 08052C102J4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -2691,7 +2695,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "70b1c9ec-fd2b-49ec-ab03-b4a869823178")
+			(tstamps "a1a19324-d9bc-485b-b26b-069d2aae1b36")
 			(units
 				(unit
 					(name "A")
@@ -2751,7 +2755,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "401254ab-189a-4117-b955-6b91a80fcb97")
+			(tstamps "eb4c62fb-1d80-4293-b421-e7b177b26b45")
 			(units
 				(unit
 					(name "A")
@@ -2768,28 +2772,28 @@
 		)
 		(comp
 			(ref "C45")
-			(value "10uF")
-			(footprint "mr-stuff:TDK CGA5")
-			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+					(name "Part") "Kyocera 08052C102J4Z2A")
 				(field
-					(name "Footprint") "mr-stuff:TDK CGA5")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
-					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "TDK CGA5L1X7R1H106K160AE")
-				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
-				(value "TDK CGA5L1X7R1H106K160AE")
+				(value "Kyocera 08052C102J4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -2811,7 +2815,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "64514a58-5451-426b-a4f0-f8685b3dbe70")
+			(tstamps "1df2ae81-ac28-4c02-be17-1459c1435f86")
 			(units
 				(unit
 					(name "A")
@@ -2871,7 +2875,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "a6dc71ae-8bf4-465a-9cdb-c00d90ae3b11")
+			(tstamps "10a064b4-fc6e-4d88-a8ff-46d43a30c5ee")
 			(units
 				(unit
 					(name "A")
@@ -2888,28 +2892,28 @@
 		)
 		(comp
 			(ref "C47")
-			(value "10uF")
-			(footprint "mr-stuff:TDK CGA5")
-			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
-					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+					(name "Part") "Kyocera 08052C102J4Z2A")
 				(field
-					(name "Footprint") "mr-stuff:TDK CGA5")
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
-					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "TDK CGA5L1X7R1H106K160AE")
-				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
-				(value "TDK CGA5L1X7R1H106K160AE")
+				(value "Kyocera 08052C102J4Z2A")
 			)
 			(property
 				(name "Sheetname")
@@ -2931,7 +2935,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "88ae4f54-755c-458c-a9ef-0f9624e98faa")
+			(tstamps "7f6c6f76-0a38-4049-86f6-f1187698d6eb")
 			(units
 				(unit
 					(name "A")
@@ -2991,7 +2995,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "7c67fc62-09b2-471f-8af3-17f902ae22e6")
+			(tstamps "70b1c9ec-fd2b-49ec-ab03-b4a869823178")
 			(units
 				(unit
 					(name "A")
@@ -3008,6 +3012,666 @@
 		)
 		(comp
 			(ref "C49")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08052C102J4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08052C102J4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "538fa52b-12f5-4d14-83a1-849b8d61d329")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C50")
+			(value "10uF")
+			(footprint "mr-stuff:TDK CGA5")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA5")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TDK CGA5L1X7R1H106K160AE")
+				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "401254ab-189a-4117-b955-6b91a80fcb97")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C51")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08052C102J4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08052C102J4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9f977f00-c85a-4424-8739-55ddcfc0a36c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C52")
+			(value "10uF")
+			(footprint "mr-stuff:TDK CGA5")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA5")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TDK CGA5L1X7R1H106K160AE")
+				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "64514a58-5451-426b-a4f0-f8685b3dbe70")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C53")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08052C102J4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08052C102J4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "457dfb05-b3cd-4d6e-a648-706e390fe7ff")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C54")
+			(value "10uF")
+			(footprint "mr-stuff:TDK CGA5")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA5")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TDK CGA5L1X7R1H106K160AE")
+				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a6dc71ae-8bf4-465a-9cdb-c00d90ae3b11")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C55")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08052C102J4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08052C102J4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c90f7eae-70e1-4354-ae13-8fce51170a06")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C56")
+			(value "10uF")
+			(footprint "mr-stuff:TDK CGA5")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA5")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TDK CGA5L1X7R1H106K160AE")
+				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "88ae4f54-755c-458c-a9ef-0f9624e98faa")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C57")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08052C102J4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08052C102J4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "951a65de-9a51-463d-921b-2917656736cb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C58")
+			(value "10uF")
+			(footprint "mr-stuff:TDK CGA5")
+			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(fields
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA5")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TDK CGA5L1X7R1H106K160AE")
+				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "TDK CGA5L1X7R1H106K160AE")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7c67fc62-09b2-471f-8af3-17f902ae22e6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C59")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08052C102J4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08052C102J4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fd5abd75-4cf4-44bf-a0b3-4d650e56ef61")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C60")
 			(value "10uF")
 			(footprint "mr-stuff:TDK CGA5")
 			(datasheet "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
@@ -3052,6 +3716,66 @@
 				(tstamps "/")
 			)
 			(tstamps "b2e7a780-3613-4850-acb4-a83f747f03e1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C61")
+			(value "1000pF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08052C102J4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08052C102J4Z2A")
+				(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08052C102J4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Masthead Controller.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "18d47094-0f6b-46da-9d7a-bfac0f77ef2a")
 			(units
 				(unit
 					(name "A")
@@ -14518,6 +15242,41 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "Kyocera 08052C102J4Z2A")
+			(description "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(docs "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1000pF")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "1000 pF ±5% 200V Ceramic Capacitor X7R 0805 (2012 Metric)")
+				(field
+					(name "Part") "Kyocera 08052C102J4Z2A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Littelfuse_SMCJ33A")
 			(description "33V Reverse Standoff, 1500 W Peak Power")
 			(docs "https://www.littelfuse.com/assetdocs/littelfuse_tvs_diode_smcj_datasheet.pdf?assetguid=37388813-0d6d-4329-969b-1aa8b7614ac1")
@@ -15265,41 +16024,6 @@
 					(name "Description") "5.11 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 				(field
 					(name "Part") "Stackpole RNCP0805FTD5K11")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "mr-parts")
-			(part "TDK CGA4F2X7R2A102K085AE")
-			(description "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			(docs "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-			(footprints
-				(fp "C_*")
-			)
-			(fields
-				(field
-					(name "Reference") "C")
-				(field
-					(name "Value") "1000pF")
-				(field
-					(name "Footprint") "mr-stuff:TDK CGA 0805")
-				(field
-					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
-				(field
-					(name "Description") "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-				(field
-					(name "Part") "TDK CGA4F2X7R2A102K085AE")
 			)
 			(pins
 				(pin
@@ -16479,17 +17203,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C39")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "C40")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C41")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -16499,17 +17213,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C43")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "C44")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C45")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -16519,17 +17223,37 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C47")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "C48")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C49")
+				(ref "C50")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C52")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C54")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C56")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C58")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C60")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -16810,6 +17534,11 @@
 			(name "/ANCHOR_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
+				(ref "C39")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "LD1")
 				(pin "4")
 				(pinfunction "VSET_4")
@@ -16842,6 +17571,11 @@
 			(code "8")
 			(name "/ANCHOR_SEC_JPR")
 			(class "LED_Switching,Default")
+			(node
+				(ref "C41")
+				(pin "2")
+				(pintype "passive")
+			)
 			(node
 				(ref "LD2")
 				(pin "4")
@@ -17087,6 +17821,11 @@
 			(name "/DECK_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
+				(ref "C59")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "LD11")
 				(pin "4")
 				(pinfunction "VSET_4")
@@ -17119,6 +17858,11 @@
 			(code "18")
 			(name "/DECK_SEC_JPR")
 			(class "LED_Switching,Default")
+			(node
+				(ref "C61")
+				(pin "2")
+				(pintype "passive")
+			)
 			(node
 				(ref "LD12")
 				(pin "4")
@@ -17487,6 +18231,11 @@
 			(name "/STEAMING_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
+				(ref "C55")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "LD9")
 				(pin "4")
 				(pinfunction "VSET_4")
@@ -17519,6 +18268,11 @@
 			(code "38")
 			(name "/STEAMING_SEC_JPR")
 			(class "LED_Switching,Default")
+			(node
+				(ref "C57")
+				(pin "2")
+				(pintype "passive")
+			)
 			(node
 				(ref "LD10")
 				(pin "4")
@@ -17553,6 +18307,11 @@
 			(name "/TC_PORT_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
+				(ref "C47")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "LD5")
 				(pin "4")
 				(pinfunction "VSET_4")
@@ -17585,6 +18344,11 @@
 			(code "42")
 			(name "/TC_PORT_SEC_JPR")
 			(class "LED_Switching,Default")
+			(node
+				(ref "C49")
+				(pin "2")
+				(pintype "passive")
+			)
 			(node
 				(ref "LD6")
 				(pin "4")
@@ -17619,6 +18383,11 @@
 			(name "/TC_STBD_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
+				(ref "C51")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "LD7")
 				(pin "4")
 				(pinfunction "VSET_4")
@@ -17651,6 +18420,11 @@
 			(code "46")
 			(name "/TC_STBD_SEC_JPR")
 			(class "LED_Switching,Default")
+			(node
+				(ref "C53")
+				(pin "2")
+				(pintype "passive")
+			)
 			(node
 				(ref "LD8")
 				(pin "4")
@@ -17685,6 +18459,11 @@
 			(name "/TC_STERN_PRI_JPR")
 			(class "LED_Switching,Default")
 			(node
+				(ref "C43")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "LD3")
 				(pin "4")
 				(pinfunction "VSET_4")
@@ -17717,6 +18496,11 @@
 			(code "50")
 			(name "/TC_STERN_SEC_JPR")
 			(class "LED_Switching,Default")
+			(node
+				(ref "C45")
+				(pin "2")
+				(pintype "passive")
+			)
 			(node
 				(ref "LD4")
 				(pin "4")
@@ -17873,7 +18657,7 @@
 			)
 			(node
 				(ref "C14")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -18072,8 +18856,68 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C50")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C51")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C52")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C53")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C54")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C55")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C56")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C57")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C58")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C59")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "C6")
 				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C60")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C61")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -20336,7 +21180,7 @@
 			(class "Default")
 			(node
 				(ref "C14")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
