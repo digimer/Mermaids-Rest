@@ -15602,7 +15602,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PZUXB_SER.pdf"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15615,7 +15615,7 @@
 				)
 			)
 		)
-		(property "Description" "Zener Diode 15 V 310 mW ±2% Surface Mount SOD-323F"
+		(property "Description" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15628,29 +15628,10 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PZU15B2,115"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8a2aafcb-1ce1-4802-985b-972c29378bff")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/432f2028-0842-4ee5-b3ee-b8a8ab504f02")
 		(sheetname "/")
 		(sheetfile "Main Control Unit.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -15829,7 +15810,7 @@
 		)
 		(pad "1" smd roundrect
 			(at -1.1 0 90)
-			(size 0.5 0.5)
+			(size 0.75 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-K)")
@@ -15839,7 +15820,7 @@
 		)
 		(pad "2" smd roundrect
 			(at 1.1 0 90)
-			(size 0.5 0.5)
+			(size 0.75 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "M10KW_GND")
@@ -26481,7 +26462,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PZUXB_SER.pdf"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26494,7 +26475,7 @@
 				)
 			)
 		)
-		(property "Description" "Zener Diode 15 V 310 mW ±2% Surface Mount SOD-323F"
+		(property "Description" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26507,29 +26488,10 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PZU15B2,115"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "40c75a74-3e8b-46bb-a07d-d54f00ac4ac6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/8b849eac-e027-41ed-a070-6397d396b5be")
 		(sheetname "/")
 		(sheetfile "Main Control Unit.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -26708,7 +26670,7 @@
 		)
 		(pad "1" smd roundrect
 			(at -1.1 0 90)
-			(size 0.5 0.5)
+			(size 0.75 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(Q7-G)")
@@ -26718,7 +26680,7 @@
 		)
 		(pad "2" smd roundrect
 			(at 1.1 0 90)
-			(size 0.5 0.5)
+			(size 0.75 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND_SHIP")
@@ -55453,7 +55415,7 @@
 		(descr "Kemet Auto 0805 SMD")
 		(tags "C0805X101J5GACAUTO ")
 		(property "Reference" "C91"
-			(at -2.4 0.3 0)
+			(at -2.4 0.2 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "6dae03f6-a94d-4d60-9357-84ccaa56512d")
@@ -55476,8 +55438,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1062_C0G_FT-CAP_SMD"
-			(at 0 0 90)
+		(property "Datasheet" ""
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b36146b4-aa35-47bf-9793-628728c42356")
@@ -55487,8 +55449,8 @@
 				)
 			)
 		)
-		(property "Description" "100 pF ±5% 50V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)"
-			(at 0 0 90)
+		(property "Description" "Kemet Auto 0805 SMD"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1b243877-26ed-4455-8931-4672ba188c3c")
@@ -55498,29 +55460,10 @@
 				)
 			)
 		)
-		(property "Part" "Kemet C0805X101J5GACAUTO"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "03337362-246d-4577-a1a0-f1368364aec0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "C_*")
 		(path "/ebfb59fc-fffe-4d7e-9f6d-83b26d4e3c7c")
 		(sheetname "/")
 		(sheetfile "Main Control Unit.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -55696,16 +55639,16 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -0.802799 0 270)
-			(size 1.405598 1.549997)
+			(at -0.9 0 270)
+			(size 1.1 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
 			(pintype "passive")
 			(uuid "5468f187-2351-410b-ad2b-7e298be00270")
 		)
 		(pad "2" smd rect
-			(at 0.802799 0 270)
-			(size 1.405598 1.549997)
+			(at 0.9 0 270)
+			(size 1.1 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(LS1-EN)")
 			(pintype "passive")
@@ -55737,7 +55680,7 @@
 			)
 			(polygon
 				(pts
-					(xy 320.824198 237.1408) (xy 320.824198 237.2392) (xy 319.375802 237.2392) (xy 319.375802 237.1408)
+					(xy 320.824198 236.89) (xy 320.824198 237.49) (xy 319.375802 237.49) (xy 319.375802 236.89)
 				)
 			)
 		)
@@ -90628,7 +90571,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PZUXB_SER.pdf"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -90641,7 +90584,7 @@
 				)
 			)
 		)
-		(property "Description" "Zener Diode 15 V 310 mW ±2% Surface Mount SOD-323F"
+		(property "Description" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -90654,29 +90597,10 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PZU15B2,115"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1871f0f7-9dc7-4db2-bdc9-a1d3a3bdf178")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/2583612c-a086-45a5-9cfe-b5c61faa76f3")
 		(sheetname "/")
 		(sheetfile "Main Control Unit.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -90855,7 +90779,7 @@
 		)
 		(pad "1" smd roundrect
 			(at -1.1 0 90)
-			(size 0.5 0.5)
+			(size 0.75 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D1-K)")
@@ -90865,7 +90789,7 @@
 		)
 		(pad "2" smd roundrect
 			(at 1.1 0 90)
-			(size 0.5 0.5)
+			(size 0.75 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "M5KW_GND")
@@ -104238,7 +104162,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PZUXB_SER.pdf"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -104251,7 +104175,7 @@
 				)
 			)
 		)
-		(property "Description" "Zener Diode 15 V 310 mW ±2% Surface Mount SOD-323F"
+		(property "Description" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -104264,29 +104188,10 @@
 				)
 			)
 		)
-		(property "Part" "Nexperia PZU15B2,115"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f833e816-fe73-4561-bb47-66da17e7dd1f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/fb502633-2f93-4866-9bae-a47bc808ff1f")
 		(sheetname "/")
 		(sheetfile "Main Control Unit.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -104465,7 +104370,7 @@
 		)
 		(pad "1" smd roundrect
 			(at -1.1 0 90)
-			(size 0.5 0.5)
+			(size 0.75 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(Q8-G)")
@@ -104475,7 +104380,7 @@
 		)
 		(pad "2" smd roundrect
 			(at 1.1 0 90)
-			(size 0.5 0.5)
+			(size 0.75 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND_SHIP")
