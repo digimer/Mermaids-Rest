@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/digimer/github/hardware/projects/n2k-transceiver/N2K Transceiver.kicad_sch")
-		(date "2026-09-26T22:39:32")
+		(date "2026-10-15T10:46:46")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -58,7 +58,7 @@
 			(ref "C1")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
@@ -66,14 +66,14 @@
 				(field
 					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
 					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
@@ -99,7 +99,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c388eba1-92f1-450c-98c7-a7d3ff54c431")
+			(tstamps "5dd9d594-465f-442a-8237-a20a857a816b")
 			(units
 				(unit
 					(name "A")
@@ -131,9 +131,9 @@
 					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "TDK CGA5L1X7R1H106K160AE")
+				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(property
 				(name "Part")
@@ -159,7 +159,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "b6a463bf-6a77-4a19-929c-bebb030200c9")
+			(tstamps "719bf262-76cc-4a62-bd98-0cfe782fcc08")
 			(units
 				(unit
 					(name "A")
@@ -191,9 +191,9 @@
 					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "TDK CGA5L1X7R1H106K160AE")
+				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(property
 				(name "Part")
@@ -219,7 +219,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3c3deb41-490f-4cae-8e37-d413e30e96d3")
+			(tstamps "e2fe1c56-2423-42b8-a698-46465481089a")
 			(units
 				(unit
 					(name "A")
@@ -238,7 +238,7 @@
 			(ref "C4")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
@@ -246,14 +246,14 @@
 				(field
 					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
 					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
@@ -279,7 +279,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "36ab98fa-7c95-4d57-8e25-905dd5d05c39")
+			(tstamps "8260e97d-ac24-4da2-9c14-ce3f417fda77")
 			(units
 				(unit
 					(name "A")
@@ -418,7 +418,7 @@
 			(ref "C7")
 			(value "22uF")
 			(footprint "mr-stuff:Murata GCJ32ER71C")
-			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+			(datasheet "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
 			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			(fields
 				(field
@@ -426,14 +426,14 @@
 				(field
 					(name "Footprint") "mr-stuff:Murata GCJ32ER71C")
 				(field
-					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+					(name "Datasheet") "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
 				(field
 					(name "Description") "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Murata GCJ32ER71C226KE01L")
+				(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			)
 			(property
 				(name "Part")
@@ -459,7 +459,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c2e0083d-81af-4035-8d23-e710ca092aad")
+			(tstamps "648e32ec-d18b-45d3-9dbb-d4b0a0045715")
 			(units
 				(unit
 					(name "A")
@@ -478,7 +478,7 @@
 			(ref "C8")
 			(value "22uF")
 			(footprint "mr-stuff:Murata GCJ32ER71C")
-			(datasheet "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+			(datasheet "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
 			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			(fields
 				(field
@@ -486,14 +486,14 @@
 				(field
 					(name "Footprint") "mr-stuff:Murata GCJ32ER71C")
 				(field
-					(name "Datasheet") "https://www.murata.com/en-sg/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GCJ32ER71C226KE01%23")
+					(name "Datasheet") "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
 				(field
 					(name "Description") "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Murata GCJ32ER71C226KE01L")
+				(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
 			)
 			(property
 				(name "Part")
@@ -519,7 +519,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0a44ac48-2181-4181-acb5-605b723e956b")
+			(tstamps "d268b44e-9f7a-4039-ba68-f3f5e06c2252")
 			(units
 				(unit
 					(name "A")
@@ -538,7 +538,7 @@
 			(ref "C9")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
@@ -546,14 +546,14 @@
 				(field
 					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
 					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Kyocera 08051C105K4Z2A")
+				(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
@@ -579,7 +579,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c8f951ad-d22d-4c6b-b6f1-6d59e734bb67")
+			(tstamps "7f053f56-1eae-4ce0-b902-ffc96567299c")
 			(units
 				(unit
 					(name "A")
@@ -611,9 +611,9 @@
 					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "TDK CGA5L1X7R1H106K160AE")
+				(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
 			)
 			(property
 				(name "Part")
@@ -639,7 +639,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3d4e54b4-8b62-4465-9db3-a5d526f07e4d")
+			(tstamps "eeaf8ed1-b877-4814-9af3-ed7955f2e251")
 			(units
 				(unit
 					(name "A")
@@ -658,7 +658,7 @@
 			(ref "C11")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
@@ -666,14 +666,14 @@
 				(field
 					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
 					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Kyocera 08051C105K4Z2A")
+				(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
@@ -699,7 +699,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "25cc698a-4beb-4f0e-93fc-016b1b659b00")
+			(tstamps "8faba917-ce44-4f55-96bf-81c5eb4e1222")
 			(units
 				(unit
 					(name "A")
@@ -718,7 +718,7 @@
 			(ref "C12")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
@@ -726,14 +726,14 @@
 				(field
 					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
 					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
@@ -759,7 +759,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "05c8062f-cdaf-48f2-be5c-62554c462a42")
+			(tstamps "34731e56-0364-4995-b5c2-f6f9fc4a3a0e")
 			(units
 				(unit
 					(name "A")
@@ -834,7 +834,7 @@
 			(ref "C14")
 			(value "1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			(fields
 				(field
@@ -842,14 +842,14 @@
 				(field
 					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
 				(field
-					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6397/AutoMLCC-2952695-DS.pdf")
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
 				(field
 					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
+				(lib "mr-parts")
+				(part "Kyocera 08051C105K4Z2A")
+				(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 			)
 			(property
 				(name "Part")
@@ -875,7 +875,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "44c25c4d-3d08-48fa-8fe9-6afb54014bd1")
+			(tstamps "21063b7d-4d2a-4df7-8aeb-49d541f5c395")
 			(units
 				(unit
 					(name "A")
@@ -891,127 +891,7 @@
 			)
 		)
 		(comp
-			(ref "C16")
-			(value "0.1uF")
-			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			(fields
-				(field
-					(name "Part") "Kyocera 08051C104K4Z2A")
-				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
-				(field
-					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-				(field
-					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			)
-			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Part")
-				(value "Kyocera 08051C104K4Z2A")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "e7ff9f05-c4fd-4b1f-9109-8383bde3d1f6")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C17")
-			(value "0.1uF")
-			(footprint "mr-stuff:Kyocera AVX 0805")
-			(datasheet "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			(fields
-				(field
-					(name "Part") "Kyocera 08051C104K4Z2A")
-				(field
-					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
-				(field
-					(name "Datasheet") "https://datasheets.kyocera-avx.com/FlexitermMLCC.pdf")
-				(field
-					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
-			)
-			(libsource
-				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "Part")
-				(value "Kyocera 08051C104K4Z2A")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "48e424da-36d0-4220-9dab-e34e7355e1fe")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "C64")
+			(ref "C15")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1055,7 +935,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c11cb2f0-2e12-49ea-b5cb-2e8036b7603b")
+			(tstamps "d8d07994-8a2d-469d-b10a-d60ad0b1ca41")
 			(units
 				(unit
 					(name "A")
@@ -1071,7 +951,187 @@
 			)
 		)
 		(comp
-			(ref "C65")
+			(ref "C16")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6a435570-7379-471f-95be-ccb138e63158")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C17")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "196ddf54-fc11-4322-8985-af89c015e757")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C18")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a281ced5-03ab-4ecc-9320-bad53e538d8f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C20")
 			(value "0.1uF")
 			(footprint "mr-stuff:Kyocera AVX 0805")
 			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
@@ -1116,6 +1176,666 @@
 				(tstamps "/")
 			)
 			(tstamps "46c4e68f-a9ce-40fd-920e-f095d10c9716")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C21")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ff2d5e7d-7fd3-4890-8b28-e60e170b777f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C22")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "709471b7-d7f2-44a6-bcc3-b7394ad351d8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C23")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2c6aad74-b141-4198-964f-2d3d1a704537")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C24")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5a600bfe-ec09-48aa-9424-1af9c08761f3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C25")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1b51b580-96e3-4a33-a0c6-fc93de469307")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C26")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "45d4887e-0ee7-4c41-8a16-b1e4ef01e4f5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C27")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "edac73d7-5e04-4907-b625-67e7c45b74da")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C28")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "03b9ba82-613c-4f2c-a931-6db274209a3d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C29")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "146fbe83-1dfe-4503-bdd8-5ded6ebf99b2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C30")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "eef1c5da-7d57-4aae-b229-7ab2236badc4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C31")
+			(value "0.1uF")
+			(footprint "mr-stuff:Kyocera AVX 0805")
+			(datasheet "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(fields
+				(field
+					(name "Part") "Kyocera 08051C104K4Z2A")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Kyocera 08051C104K4Z2A")
+				(description "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			)
+			(property
+				(name "Part")
+				(value "Kyocera 08051C104K4Z2A")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8491be35-dd93-4d57-badc-ca958be32f44")
 			(units
 				(unit
 					(name "A")
@@ -1210,7 +1930,7 @@
 		)
 		(comp
 			(ref "CMC1")
-			(value "ACT12101012PTL00")
+			(value "ACT1210-101-2P-TL00")
 			(footprint "mr-stuff:TDK ACT12101012PTL00")
 			(datasheet "https://product.tdk.com/info/en/catalog/datasheets/cmf_automotive_signal_act1210_en.pdf?ref_disty=digikey")
 			(description "100 µH @ 100 kHz 2 Line Common Mode Choke Surface Mount 5.1 kOhms @ 10 MHz 150mA DCR 1.5Ohm")
@@ -1277,9 +1997,6 @@
 			(description "Fiducial Marker")
 			(fields
 				(field
-					(name "Sim.Pins")
-				)
-				(field
 					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
 				(field
 					(name "Datasheet")
@@ -1291,10 +2008,6 @@
 				(lib "Mechanical")
 				(part "Fiducial")
 				(description "Fiducial Marker")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "")
 			)
 			(property
 				(name "Sheetname")
@@ -1334,9 +2047,6 @@
 			(description "Fiducial Marker")
 			(fields
 				(field
-					(name "Sim.Pins")
-				)
-				(field
 					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
 				(field
 					(name "Datasheet")
@@ -1348,10 +2058,6 @@
 				(lib "Mechanical")
 				(part "Fiducial")
 				(description "Fiducial Marker")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "")
 			)
 			(property
 				(name "Sheetname")
@@ -1376,7 +2082,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "a41bab48-40a6-441d-8039-4b436e0b1480")
+			(tstamps "6c9c5bf8-21bd-4135-b74d-af69127c09c4")
 			(units
 				(unit
 					(name "A")
@@ -1391,9 +2097,6 @@
 			(description "Fiducial Marker")
 			(fields
 				(field
-					(name "Sim.Pins")
-				)
-				(field
 					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
 				(field
 					(name "Datasheet")
@@ -1405,10 +2108,6 @@
 				(lib "Mechanical")
 				(part "Fiducial")
 				(description "Fiducial Marker")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "")
 			)
 			(property
 				(name "Sheetname")
@@ -1433,7 +2132,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "a03de29b-d303-44f8-a263-8992e1267fa1")
+			(tstamps "a3af1729-8879-41bd-90dc-b7d81b186141")
 			(units
 				(unit
 					(name "A")
@@ -1443,7 +2142,7 @@
 		)
 		(comp
 			(ref "H1")
-			(value "MountingHole_Pad")
+			(value "MountingHole")
 			(footprint "MountingHole:MountingHole_4.3mm_M4")
 			(description "Mounting Hole without connection")
 			(fields
@@ -1493,7 +2192,7 @@
 		)
 		(comp
 			(ref "H2")
-			(value "MountingHole_Pad")
+			(value "MountingHole")
 			(footprint "MountingHole:MountingHole_4.3mm_M4")
 			(description "Mounting Hole without connection")
 			(fields
@@ -1533,7 +2232,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "98563d7b-602f-4dd2-a8a6-23be6cc53a55")
+			(tstamps "a00c37ce-7fe6-428a-a00a-8a990f19f38e")
 			(units
 				(unit
 					(name "A")
@@ -1543,7 +2242,7 @@
 		)
 		(comp
 			(ref "H3")
-			(value "MountingHole_Pad")
+			(value "MountingHole")
 			(footprint "MountingHole:MountingHole_4.3mm_M4")
 			(description "Mounting Hole without connection")
 			(fields
@@ -1583,7 +2282,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "1491c520-bb8a-4d57-afb7-aa0ad9279251")
+			(tstamps "671bebbe-cd99-4c73-ba0c-cd20a3c000f8")
 			(units
 				(unit
 					(name "A")
@@ -1593,7 +2292,7 @@
 		)
 		(comp
 			(ref "H4")
-			(value "MountingHole_Pad")
+			(value "MountingHole")
 			(footprint "MountingHole:MountingHole_4.3mm_M4")
 			(description "Mounting Hole without connection")
 			(fields
@@ -1633,7 +2332,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "1a72ca46-405e-49ec-b442-15b7926e3cd5")
+			(tstamps "debda3a2-1c12-4d60-a792-dfd27e48bd06")
 			(units
 				(unit
 					(name "A")
@@ -1642,8 +2341,567 @@
 			)
 		)
 		(comp
-			(ref "J1")
-			(value "JTAG")
+			(ref "HDR1")
+			(value "0022112032")
+			(footprint "mr-stuff:Molex 0022112032")
+			(datasheet "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+			(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			(fields
+				(field
+					(name "Part") "Molex 0022112032")
+				(field
+					(name "Footprint") "mr-stuff:Molex 0022112032")
+				(field
+					(name "Datasheet") "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+				(field
+					(name "Description") "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Molex 0022112032")
+				(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(property
+				(name "Part")
+				(value "Molex 0022112032")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "749cc87a-bdec-4f49-a788-afac32d37b1f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "HDR2")
+			(value "0022112032")
+			(footprint "mr-stuff:Molex 0022112032")
+			(datasheet "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+			(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			(fields
+				(field
+					(name "Part") "Molex 0022112032")
+				(field
+					(name "Footprint") "mr-stuff:Molex 0022112032")
+				(field
+					(name "Datasheet") "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+				(field
+					(name "Description") "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Molex 0022112032")
+				(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(property
+				(name "Part")
+				(value "Molex 0022112032")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9a6419ab-d312-45a0-81af-466dfbab4855")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "HDR3")
+			(value "0022112032")
+			(footprint "mr-stuff:Molex 0022112032")
+			(datasheet "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+			(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			(fields
+				(field
+					(name "Part") "Molex 0022112032")
+				(field
+					(name "Footprint") "mr-stuff:Molex 0022112032")
+				(field
+					(name "Datasheet") "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+				(field
+					(name "Description") "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Molex 0022112032")
+				(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(property
+				(name "Part")
+				(value "Molex 0022112032")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fab0ff61-ed53-43e7-8702-797b940b5b15")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "HDR4")
+			(value "0022112032")
+			(footprint "mr-stuff:Molex 0022112032")
+			(datasheet "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+			(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			(fields
+				(field
+					(name "Part") "Molex 0022112032")
+				(field
+					(name "Footprint") "mr-stuff:Molex 0022112032")
+				(field
+					(name "Datasheet") "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+				(field
+					(name "Description") "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Molex 0022112032")
+				(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(property
+				(name "Part")
+				(value "Molex 0022112032")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7d41939a-ea13-41ed-9e9b-ee455ba81a4b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "HDR5")
+			(value "0022112032")
+			(footprint "mr-stuff:Molex 0022112032")
+			(datasheet "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+			(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			(fields
+				(field
+					(name "Part") "Molex 0022112032")
+				(field
+					(name "Footprint") "mr-stuff:Molex 0022112032")
+				(field
+					(name "Datasheet") "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+				(field
+					(name "Description") "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Molex 0022112032")
+				(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(property
+				(name "Part")
+				(value "Molex 0022112032")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "07a8b127-0306-477d-b6b8-f0e0620ff844")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "HDR6")
+			(value "0022112032")
+			(footprint "mr-stuff:Molex 0022112032")
+			(datasheet "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+			(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			(fields
+				(field
+					(name "Part") "Molex 0022112032")
+				(field
+					(name "Footprint") "mr-stuff:Molex 0022112032")
+				(field
+					(name "Datasheet") "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+				(field
+					(name "Description") "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Molex 0022112032")
+				(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(property
+				(name "Part")
+				(value "Molex 0022112032")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "68439416-164a-48cd-9e9b-9b086dd28c6e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "HDR7")
+			(value "0022112032")
+			(footprint "mr-stuff:Molex 0022112032")
+			(datasheet "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+			(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			(fields
+				(field
+					(name "Part") "Molex 0022112032")
+				(field
+					(name "Footprint") "mr-stuff:Molex 0022112032")
+				(field
+					(name "Datasheet") "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+				(field
+					(name "Description") "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Molex 0022112032")
+				(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			)
+			(property
+				(name "Part")
+				(value "Molex 0022112032")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "38f1b3e9-70a0-4824-8faf-48c4582af443")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "IOX1")
+			(value "PI4IOE5V6416RQ2LEX")
+			(footprint "mr-stuff:Diodes Inc PI4IOE5V6416RQ2LEX")
+			(datasheet "https://www.diodes.com/datasheet/download/PI4IOE5V6416RQ.pdf")
+			(description "I/O Expander 16 I2C 400 kHz 24-TSSOP")
+			(fields
+				(field
+					(name "Part") "Diodes Inc PI4IOE5V6416RQ2LEX")
+				(field
+					(name "Footprint") "mr-stuff:Diodes Inc PI4IOE5V6416RQ2LEX")
+				(field
+					(name "Datasheet") "https://www.diodes.com/datasheet/download/PI4IOE5V6416RQ.pdf")
+				(field
+					(name "Description") "I/O Expander 16 I2C 400 kHz 24-TSSOP")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Diodes Inc PI4IOE5V6416RQ2LEX")
+				(description "I/O Expander 16 I2C 400 kHz 24-TSSOP")
+			)
+			(property
+				(name "Part")
+				(value "Diodes Inc PI4IOE5V6416RQ2LEX")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "eb652652-bb58-4250-adda-513f5ec11928")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "13")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JTAG1")
+			(value "Conn_01x05_Pin")
 			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
 			(description "Generic connector, single row, 01x05, script generated")
 			(fields
@@ -1667,6 +2925,9 @@
 			(property
 				(name "Sheetfile")
 				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
 			)
 			(property
 				(name "dnp")
@@ -2130,14 +3391,14 @@
 		(comp
 			(ref "MCU1")
 			(value "ESP32-S3-WROOM-1-N16R2")
-			(footprint "mr-stuff:ESP32-S3-WROOM-1")
+			(footprint "RF_Module:ESP32-S3-WROOM-1")
 			(datasheet "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf")
 			(description "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD")
 			(fields
 				(field
 					(name "Part") "Espressif ESP32-S3-WROOM-1-N16R2")
 				(field
-					(name "Footprint") "mr-stuff:ESP32-S3-WROOM-1")
+					(name "Footprint") "RF_Module:ESP32-S3-WROOM-1")
 				(field
 					(name "Datasheet") "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf")
 				(field
@@ -2359,27 +3620,27 @@
 		(comp
 			(ref "R1")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -2419,27 +3680,27 @@
 		(comp
 			(ref "R2")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -2461,7 +3722,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "eda212a1-79d9-4d95-a746-766916e06de5")
+			(tstamps "354486b9-1f92-4998-bbbc-bc33befcff6b")
 			(units
 				(unit
 					(name "A")
@@ -2486,10 +3747,6 @@
 				(field
 					(name "Part") "Vishay RCA08050000ZSEASR")
 				(field
-					(name "Alternate") "Murata LQW21FT1R5M0HL")
-				(field
-					(name "Note") "Placeholder if bench testing shows an inductor is needed for VHF noise")
-				(field
 					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
 				(field
 					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
@@ -2497,21 +3754,13 @@
 					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(libsource
-				(lib "")
-				(part "Vishay RCA08050000ZSEASR_2")
+				(lib "mr-parts")
+				(part "Vishay RCA08050000ZSEASR")
 				(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(property
 				(name "Part")
 				(value "Vishay RCA08050000ZSEASR")
-			)
-			(property
-				(name "Alternate")
-				(value "Murata LQW21FT1R5M0HL")
-			)
-			(property
-				(name "Note")
-				(value "Placeholder if bench testing shows an inductor is needed for VHF noise")
 			)
 			(property
 				(name "Sheetname")
@@ -2558,10 +3807,6 @@
 				(field
 					(name "Part") "Vishay RCA08050000ZSEASR")
 				(field
-					(name "Alternate") "Murata LQW21FT1R5M0HL")
-				(field
-					(name "Note") "Placeholder if bench testing shows an inductor is needed for VHF noise")
-				(field
 					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
 				(field
 					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
@@ -2569,21 +3814,13 @@
 					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(libsource
-				(lib "")
-				(part "Vishay RCA08050000ZSEASR_1")
+				(lib "mr-parts")
+				(part "Vishay RCA08050000ZSEASR")
 				(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(property
 				(name "Part")
 				(value "Vishay RCA08050000ZSEASR")
-			)
-			(property
-				(name "Alternate")
-				(value "Murata LQW21FT1R5M0HL")
-			)
-			(property
-				(name "Note")
-				(value "Placeholder if bench testing shows an inductor is needed for VHF noise")
 			)
 			(property
 				(name "Sheetname")
@@ -2643,9 +3880,9 @@
 					(name "Description") "470 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thick Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Wurth 560112120009")
+				(description "470 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thick Film")
 			)
 			(property
 				(name "Part")
@@ -2671,7 +3908,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9eddd782-eef4-4698-9700-f71a63f96530")
+			(tstamps "701b3064-7058-428c-af04-42c204376d0d")
 			(units
 				(unit
 					(name "A")
@@ -2703,9 +3940,9 @@
 					(name "Description") "100 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT100K-HP")
+				(description "100 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(property
 				(name "Part")
@@ -2731,7 +3968,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ffc789e0-2af6-4b35-b0d1-38d63ac17dca")
+			(tstamps "2f9cd401-483a-4623-9f19-bbbc5a422619")
 			(units
 				(unit
 					(name "A")
@@ -2756,10 +3993,6 @@
 				(field
 					(name "Part") "Vishay RCA08050000ZSEASR")
 				(field
-					(name "Alternate") "Murata LQW21FT1R5M0HL")
-				(field
-					(name "Note") "Placeholder if bench testing shows an inductor is needed for VHF noise")
-				(field
 					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
 				(field
 					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
@@ -2767,21 +4000,13 @@
 					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(libsource
-				(lib "")
-				(part "Vishay RCA08050000ZSEASR_1")
+				(lib "mr-parts")
+				(part "Vishay RCA08050000ZSEASR")
 				(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
 			)
 			(property
 				(name "Part")
 				(value "Vishay RCA08050000ZSEASR")
-			)
-			(property
-				(name "Alternate")
-				(value "Murata LQW21FT1R5M0HL")
-			)
-			(property
-				(name "Note")
-				(value "Placeholder if bench testing shows an inductor is needed for VHF noise")
 			)
 			(property
 				(name "Sheetname")
@@ -2821,27 +4046,27 @@
 		(comp
 			(ref "R8")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -2863,7 +4088,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "cbdd2032-9a3b-408f-81d1-12e0504e694d")
+			(tstamps "a0a96015-5312-4341-b36a-fe6323cd23ec")
 			(units
 				(unit
 					(name "A")
@@ -2881,27 +4106,27 @@
 		(comp
 			(ref "R9")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -2923,7 +4148,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0b14d34c-e801-4623-8922-5fff75d410bc")
+			(tstamps "10903d6b-c606-4330-adc1-f8906cdeaa7e")
 			(units
 				(unit
 					(name "A")
@@ -2941,27 +4166,27 @@
 		(comp
 			(ref "R10")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -2983,7 +4208,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9f98dcb4-e28e-4aea-ab53-154d0e6da407")
+			(tstamps "206c1dcb-22d6-4357-a9ab-7b6c6c9263ad")
 			(units
 				(unit
 					(name "A")
@@ -3001,27 +4226,27 @@
 		(comp
 			(ref "R11")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -3043,7 +4268,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ba5685f5-58bf-44a3-9742-fe78a03e7fe2")
+			(tstamps "ee421e4e-cb93-47ee-802a-06929037b91a")
 			(units
 				(unit
 					(name "A")
@@ -3061,27 +4286,27 @@
 		(comp
 			(ref "R12")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -3103,7 +4328,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3aa3c123-9471-4820-801b-c6cb82f156e8")
+			(tstamps "8fb9e201-64fa-41cc-8b27-86d0c82cf713")
 			(units
 				(unit
 					(name "A")
@@ -3121,27 +4346,27 @@
 		(comp
 			(ref "R13")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -3163,7 +4388,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3ab184e1-0cca-41b2-89c6-ab1316de09a6")
+			(tstamps "c5a70638-9279-4f32-91c8-c4a3ecce625d")
 			(units
 				(unit
 					(name "A")
@@ -3181,27 +4406,27 @@
 		(comp
 			(ref "R14")
 			(value "15kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "15 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD15K0")
+					(name "Part") "Stackpole RNCP0805FTD15K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "15 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD15K0")
+				(description "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD15K0")
+				(value "Stackpole RNCP0805FTD15K0")
 			)
 			(property
 				(name "Sheetname")
@@ -3223,7 +4448,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9901f622-423d-4c52-b6de-bebce3c2f1a5")
+			(tstamps "e06b1f53-7442-4181-851f-e7832e126030")
 			(units
 				(unit
 					(name "A")
@@ -3241,27 +4466,27 @@
 		(comp
 			(ref "R15")
 			(value "5.11kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "5.11 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "5.11 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD5K11")
+					(name "Part") "Stackpole RNCP0805FTD5K11")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "5.11 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "5.11 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD5K11")
+				(description "5.11 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD5K11")
+				(value "Stackpole RNCP0805FTD5K11")
 			)
 			(property
 				(name "Sheetname")
@@ -3283,7 +4508,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c1f162fd-b36b-4c56-8848-9732e0c35d2d")
+			(tstamps "3fac467f-8e24-4b50-91bd-32e2f7cb0c18")
 			(units
 				(unit
 					(name "A")
@@ -3301,27 +4526,27 @@
 		(comp
 			(ref "R16")
 			(value "5.11kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "5.11 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "5.11 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD5K11")
+					(name "Part") "Stackpole RNCP0805FTD5K11")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "5.11 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "5.11 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD5K11")
+				(description "5.11 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD5K11")
+				(value "Stackpole RNCP0805FTD5K11")
 			)
 			(property
 				(name "Sheetname")
@@ -3343,7 +4568,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "6f7ea1ad-c0ab-4116-b30b-ac372621228f")
+			(tstamps "a99c2242-4bfd-469e-9d49-a42b12e4d6dc")
 			(units
 				(unit
 					(name "A")
@@ -3361,27 +4586,27 @@
 		(comp
 			(ref "R17")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -3403,7 +4628,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "081f5d78-f072-4a32-9d56-92ad4607c52d")
+			(tstamps "ddd6aa99-916b-4a6e-b1b8-1aaa98ac4766")
 			(units
 				(unit
 					(name "A")
@@ -3421,27 +4646,27 @@
 		(comp
 			(ref "R18")
 			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
+			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(fields
 				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
+					(name "Part") "Stackpole RNCP0805FTD10K0")
 				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
 				(field
 					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
 				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			)
 			(property
 				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
+				(value "Stackpole RNCP0805FTD10K0")
 			)
 			(property
 				(name "Sheetname")
@@ -3463,7 +4688,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "42b54fef-0d90-4ed5-99e1-faab70e186ed")
+			(tstamps "3ecfb43b-88b1-4ec8-ba44-536da61f2d98")
 			(units
 				(unit
 					(name "A")
@@ -3779,66 +5004,6 @@
 			)
 		)
 		(comp
-			(ref "R24")
-			(value "10kR")
-			(footprint "mr-stuff:Stackpole_RNCP1206")
-			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-			(description "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
-			(fields
-				(field
-					(name "Part") "Stackpole RNCP1206FTD10K0")
-				(field
-					(name "Footprint") "mr-stuff:Stackpole_RNCP1206")
-				(field
-					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
-				(field
-					(name "Description") "10 kOhms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Anti-Sulfur Thin Film")
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Part")
-				(value "Stackpole RNCP1206FTD10K0")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "26dfa61e-defd-494d-a225-dec9a90927c6")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "R25")
 			(value "475R")
 			(footprint "mr-stuff:Stackpole RNCP0805")
@@ -4079,7 +5244,7 @@
 			)
 		)
 		(comp
-			(ref "R52")
+			(ref "R29")
 			(value "475R")
 			(footprint "mr-stuff:Stackpole RNCP0805")
 			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -4123,7 +5288,1267 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "1c50eec5-8ed4-4107-a744-3bb5c49b2419")
+			(tstamps "cfdc50d3-f907-4eff-a418-8470fbfc6633")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R30")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7151fdcc-fbb9-4278-b786-1757fcb77693")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R31")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "03e589b3-71b8-4432-9697-ed61ee1f54ae")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R32")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "17ddd616-d80e-4cf0-96b7-37a8a05e3b17")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R33")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a5e09943-ea09-480a-9a9f-66415855c870")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R34")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f4dc5d71-c238-4be0-87a9-d85dbab5b53f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R35")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f5b0e25e-301b-4631-a224-45422f817653")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R36")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "82cd1774-543d-46be-842a-fa918923d681")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R37")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "eb324c5a-d865-4d5b-a0f7-3e8efe9eb242")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R38")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2c057213-e819-49bf-9cb4-24b2382929cf")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R39")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "dd1f0247-5c28-4bcc-bed9-7b6936df6d90")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R40")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "56e54faa-9b8f-4e90-9dca-136c1919fac7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R41")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3c1885fd-5af6-424d-8cb4-ca2a4c11cf7f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R42")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "25b1c90b-9ecc-4254-bb20-af5fbbde9fc6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R43")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "108541d9-75ee-450d-9e54-ec27c9ac7f3e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R44")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a56e554a-14ef-4a67-baa9-eee3e16ff810")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R45")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f6f9afb2-e025-4dd6-8bb4-f80fcfa77e42")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R46")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1a461a92-2ca5-44c3-8ad5-ffd0604ed181")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R47")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "71a8c175-4dce-4268-8bab-0a4822ffc176")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R48")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4c9c05eb-7eaf-489b-b22f-82fba5f69b24")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R49")
+			(value "10kR")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD10K0")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD10K0")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f3952b89-6dd1-4729-a5c4-706c82064f59")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R50")
+			(value "10kR")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD10K0")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD10K0")
+				(description "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD10K0")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4010e8d4-465b-44fd-9224-e8f556600aa3")
 			(units
 				(unit
 					(name "A")
@@ -4259,6 +6684,126 @@
 			)
 		)
 		(comp
+			(ref "R55")
+			(value "475R")
+			(footprint "mr-stuff:Stackpole RNCP0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RNCP0805FTD475R")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RNCP0805FTD475R")
+				(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RNCP0805FTD475R")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0e00a3a9-470b-4147-89a6-97616ee493c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R57")
+			(value "4.7kR")
+			(footprint "mr-stuff:Stackpole RMCA0805")
+			(datasheet "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(fields
+				(field
+					(name "Part") "Stackpole RMCA0805FT4K70-HP")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "Stackpole RMCA0805FT4K70-HP")
+				(description "4.7 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			)
+			(property
+				(name "Part")
+				(value "Stackpole RMCA0805FT4K70-HP")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "64862607-9af4-462d-a9f2-dbe0a34faf85")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "ROM1")
 			(value "M24C64")
 			(footprint "mr-stuff:STM M24C64-RMN6P")
@@ -4276,7 +6821,7 @@
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "STM_M24C64-RMN6P")
+				(part "STM M24C64-RMN6P")
 				(description "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
 			)
 			(property
@@ -4346,7 +6891,7 @@
 			)
 			(libsource
 				(lib "mr-parts")
-				(part "STM_M24C64-RMN6P")
+				(part "STM M24C64-RMN6P")
 				(description "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
 			)
 			(property
@@ -4406,7 +6951,7 @@
 			(description "Diode 40 V 3A Surface Mount DO-214AC (SMA)")
 			(fields
 				(field
-					(name "Part") "Vishay VS-30MQ040-M3_5AT")
+					(name "Part") "Vishay VS-30MQ040HM3/5AT")
 				(field
 					(name "Footprint") "mr-stuff:Vishay 30MQ040")
 				(field
@@ -4421,7 +6966,7 @@
 			)
 			(property
 				(name "Part")
-				(value "Vishay VS-30MQ040-M3_5AT")
+				(value "Vishay VS-30MQ040HM3/5AT")
 			)
 			(property
 				(name "Sheetname")
@@ -4452,24 +6997,24 @@
 		)
 		(comp
 			(ref "SW1")
-			(value "SW_MEC_5G")
-			(footprint "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
+			(value "TS03-66-50-BK-160-LCR-D-67")
+			(footprint "mr-stuff:Same Sky TS03-66")
 			(datasheet "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
 			(description "Tactile Switch SPST-NO Top Actuated Through Hole")
 			(fields
 				(field
 					(name "Part") "Same Sky TS03-66-50-BK-160-LCR-D-67")
 				(field
-					(name "Footprint") "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
+					(name "Footprint") "mr-stuff:Same Sky TS03-66")
 				(field
 					(name "Datasheet") "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
 				(field
 					(name "Description") "Tactile Switch SPST-NO Top Actuated Through Hole")
 			)
 			(libsource
-				(lib "Switch")
-				(part "SW_MEC_5G")
-				(description "MEC 5G single pole normally-open tactile switch")
+				(lib "mr-parts")
+				(part "Same Sky TS03-66-50-BK-160-LCR-D-67")
+				(description "Tactile Switch SPST-NO Top Actuated Through Hole")
 			)
 			(property
 				(name "Part")
@@ -4495,7 +7040,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c8bbe66b-ca77-470d-82fe-4c19825af2b0")
+			(tstamps "2f10b3bb-2bed-4f03-8f3a-18c190d696f1")
 			(units
 				(unit
 					(name "A")
@@ -4518,24 +7063,24 @@
 		)
 		(comp
 			(ref "SW2")
-			(value "SW_MEC_5G")
-			(footprint "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
+			(value "TS03-66-50-BK-160-LCR-D-67")
+			(footprint "mr-stuff:Same Sky TS03-66")
 			(datasheet "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
 			(description "Tactile Switch SPST-NO Top Actuated Through Hole")
 			(fields
 				(field
 					(name "Part") "Same Sky TS03-66-50-BK-160-LCR-D-67")
 				(field
-					(name "Footprint") "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
+					(name "Footprint") "mr-stuff:Same Sky TS03-66")
 				(field
 					(name "Datasheet") "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
 				(field
 					(name "Description") "Tactile Switch SPST-NO Top Actuated Through Hole")
 			)
 			(libsource
-				(lib "Switch")
-				(part "SW_MEC_5G")
-				(description "MEC 5G single pole normally-open tactile switch")
+				(lib "mr-parts")
+				(part "Same Sky TS03-66-50-BK-160-LCR-D-67")
+				(description "Tactile Switch SPST-NO Top Actuated Through Hole")
 			)
 			(property
 				(name "Part")
@@ -4561,7 +7106,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9d8b872f-3ff8-4edd-9a0f-ba5dbabaa177")
+			(tstamps "ca38696e-ba84-4fbd-9d6d-b9c3b413933c")
 			(units
 				(unit
 					(name "A")
@@ -4584,24 +7129,24 @@
 		)
 		(comp
 			(ref "SW3")
-			(value "SW_MEC_5G")
-			(footprint "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
+			(value "TS03-66-50-BK-160-LCR-D-67")
+			(footprint "mr-stuff:Same Sky TS03-66")
 			(datasheet "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
 			(description "Tactile Switch SPST-NO Top Actuated Through Hole")
 			(fields
 				(field
 					(name "Part") "Same Sky TS03-66-50-BK-160-LCR-D-67")
 				(field
-					(name "Footprint") "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
+					(name "Footprint") "mr-stuff:Same Sky TS03-66")
 				(field
 					(name "Datasheet") "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
 				(field
 					(name "Description") "Tactile Switch SPST-NO Top Actuated Through Hole")
 			)
 			(libsource
-				(lib "Switch")
-				(part "SW_MEC_5G")
-				(description "MEC 5G single pole normally-open tactile switch")
+				(lib "mr-parts")
+				(part "Same Sky TS03-66-50-BK-160-LCR-D-67")
+				(description "Tactile Switch SPST-NO Top Actuated Through Hole")
 			)
 			(property
 				(name "Part")
@@ -4627,73 +7172,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "856f61e6-d599-4542-b591-af1663203595")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-						(pin
-							(num "3")
-						)
-						(pin
-							(num "4")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "SW4")
-			(value "SW_MEC_5G")
-			(footprint "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
-			(datasheet "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
-			(description "Tactile Switch SPST-NO Top Actuated Through Hole")
-			(fields
-				(field
-					(name "Part") "Same Sky TS03-66-50-BK-160-LCR-D-67")
-				(field
-					(name "Footprint") "mr-stuff:SW_TS03-66-50-BK-160-LCR-D-67")
-				(field
-					(name "Datasheet") "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
-				(field
-					(name "Description") "Tactile Switch SPST-NO Top Actuated Through Hole")
-			)
-			(libsource
-				(lib "Switch")
-				(part "SW_MEC_5G")
-				(description "MEC 5G single pole normally-open tactile switch")
-			)
-			(property
-				(name "Part")
-				(value "Same Sky TS03-66-50-BK-160-LCR-D-67")
-			)
-			(property
-				(name "Sheetname")
-				(value "N2K Transceiver")
-			)
-			(property
-				(name "Sheetfile")
-				(value "N2K Transceiver.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "switch normally-open pushbutton push-button")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "SW*MEC*5G*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "f539250a-0178-4d19-8a65-638e924aaf7e")
+			(tstamps "3fc0ec2d-ca2a-4796-bc58-8f0eb4ad5516")
 			(units
 				(unit
 					(name "A")
@@ -4792,22 +7271,22 @@
 		)
 		(comp
 			(ref "TP1")
-			(value "Comms TP")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x10, script generated")
+			(value "Power/UART Test Point")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x04, script generated")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x10, script generated")
+					(name "Description") "Generic connector, single row, 01x04, script generated")
 			)
 			(libsource
 				(lib "Connector")
-				(part "Conn_01x10_Pin")
-				(description "Generic connector, single row, 01x10, script generated")
+				(part "Conn_01x04_Pin")
+				(description "Generic connector, single row, 01x04, script generated")
 			)
 			(property
 				(name "Sheetname")
@@ -4816,6 +7295,9 @@
 			(property
 				(name "Sheetfile")
 				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
 			)
 			(property
 				(name "dnp")
@@ -4832,7 +7314,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "33480553-3144-429e-9c8d-b6305007baee")
+			(tstamps "2bfc6a8f-1cd8-48fc-a423-e770239e9632")
 			(units
 				(unit
 					(name "A")
@@ -4849,23 +7331,131 @@
 						(pin
 							(num "4")
 						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "CAN Test Point")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x04, script generated")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x04, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x04_Pin")
+				(description "Generic connector, single row, 01x04, script generated")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c1cbe36a-2dce-4a00-bd60-08c3a4206427")
+			(units
+				(unit
+					(name "A")
+					(pins
 						(pin
-							(num "5")
+							(num "1")
 						)
 						(pin
-							(num "6")
+							(num "2")
 						)
 						(pin
-							(num "7")
+							(num "3")
 						)
 						(pin
-							(num "8")
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "I2C Test Point")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x04, script generated")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x04, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Pin")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "22f76fa1-62a4-4bdc-b8b6-ae204de289ff")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
 						)
 						(pin
-							(num "9")
-						)
-						(pin
-							(num "10")
+							(num "2")
 						)
 					)
 				)
@@ -5016,6 +7606,336 @@
 				(tstamps "/")
 			)
 			(tstamps "b36ca1fd-7171-4289-a15f-da85a5d98952")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TVS4")
+			(value "TPD2E2U06QDBZRQ1")
+			(footprint "mr-stuff:TI TPD2E2U06")
+			(datasheet "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+			(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			(fields
+				(field
+					(name "Part") "TI TPD2E2U06QDBZRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPD2E2U06")
+				(field
+					(name "Datasheet") "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+				(field
+					(name "Description") "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TVS TPD2E2U06QDBZRQ1")
+				(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(property
+				(name "Part")
+				(value "TI TPD2E2U06QDBZRQ1")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1feea1f6-2184-4898-a3fb-868223a2d162")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TVS5")
+			(value "TPD2E2U06QDBZRQ1")
+			(footprint "mr-stuff:TI TPD2E2U06")
+			(datasheet "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+			(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			(fields
+				(field
+					(name "Part") "TI TPD2E2U06QDBZRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPD2E2U06")
+				(field
+					(name "Datasheet") "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+				(field
+					(name "Description") "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TVS TPD2E2U06QDBZRQ1")
+				(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(property
+				(name "Part")
+				(value "TI TPD2E2U06QDBZRQ1")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a52182a0-6f9f-4b51-8360-b39aa1ab2b84")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TVS6")
+			(value "TPD2E2U06QDBZRQ1")
+			(footprint "mr-stuff:TI TPD2E2U06")
+			(datasheet "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+			(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			(fields
+				(field
+					(name "Part") "TI TPD2E2U06QDBZRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPD2E2U06")
+				(field
+					(name "Datasheet") "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+				(field
+					(name "Description") "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TVS TPD2E2U06QDBZRQ1")
+				(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(property
+				(name "Part")
+				(value "TI TPD2E2U06QDBZRQ1")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4fb88af6-233c-48a3-bf8a-5bcff2bebb3f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TVS7")
+			(value "TPD2E2U06QDBZRQ1")
+			(footprint "mr-stuff:TI TPD2E2U06")
+			(datasheet "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+			(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			(fields
+				(field
+					(name "Part") "TI TPD2E2U06QDBZRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPD2E2U06")
+				(field
+					(name "Datasheet") "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+				(field
+					(name "Description") "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TVS TPD2E2U06QDBZRQ1")
+				(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(property
+				(name "Part")
+				(value "TI TPD2E2U06QDBZRQ1")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "86921ad7-98ee-4225-b1ae-e2ab9a0511fa")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TVS8")
+			(value "TPD2E2U06QDBZRQ1")
+			(footprint "mr-stuff:TI TPD2E2U06")
+			(datasheet "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+			(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			(fields
+				(field
+					(name "Part") "TI TPD2E2U06QDBZRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPD2E2U06")
+				(field
+					(name "Datasheet") "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+				(field
+					(name "Description") "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TVS TPD2E2U06QDBZRQ1")
+				(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(property
+				(name "Part")
+				(value "TI TPD2E2U06QDBZRQ1")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3be1a78e-465b-4c85-a9a5-c40dd5d766c9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TVS9")
+			(value "TPD2E2U06QDBZRQ1")
+			(footprint "mr-stuff:TI TPD2E2U06")
+			(datasheet "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+			(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			(fields
+				(field
+					(name "Part") "TI TPD2E2U06QDBZRQ1")
+				(field
+					(name "Footprint") "mr-stuff:TI TPD2E2U06")
+				(field
+					(name "Datasheet") "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e2u06-q1")
+				(field
+					(name "Description") "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(libsource
+				(lib "mr-parts")
+				(part "TVS TPD2E2U06QDBZRQ1")
+				(description "12.4V (Typ) Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3")
+			)
+			(property
+				(name "Part")
+				(value "TI TPD2E2U06QDBZRQ1")
+			)
+			(property
+				(name "Sheetname")
+				(value "N2K Transceiver")
+			)
+			(property
+				(name "Sheetfile")
+				(value "N2K Transceiver.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a47ef861-af22-4995-9239-8c589e4b7b6e")
 			(units
 				(unit
 					(name "A")
@@ -5231,71 +8151,79 @@
 	(variants)
 	(libparts
 		(libpart
-			(lib "")
-			(part "Vishay RCA08050000ZSEASR_1")
-			(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-			(docs "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(lib "Connector")
+			(part "Conn_01x02_Pin")
+			(description "Generic connector, single row, 01x02, script generated")
 			(footprints
-				(fp "R_*")
+				(fp "Connector*:*_1x??_*")
 			)
 			(fields
 				(field
-					(name "Reference") "R")
+					(name "Reference") "J")
 				(field
-					(name "Value") "RCA08050000ZSEASR")
+					(name "Value") "Conn_01x02_Pin")
 				(field
-					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
+					(name "Footprint")
+				)
 				(field
-					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+					(name "Datasheet")
+				)
 				(field
-					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-				(field
-					(name "Part") "Vishay RCA08050000ZSEASR")
+					(name "Description") "Generic connector, single row, 01x02, script generated")
 			)
 			(pins
 				(pin
 					(num "1")
-					(name "")
+					(name "Pin_1")
 					(type "passive")
 				)
 				(pin
 					(num "2")
-					(name "")
+					(name "Pin_2")
 					(type "passive")
 				)
 			)
 		)
 		(libpart
-			(lib "")
-			(part "Vishay RCA08050000ZSEASR_2")
-			(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-			(docs "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(lib "Connector")
+			(part "Conn_01x04_Pin")
+			(description "Generic connector, single row, 01x04, script generated")
 			(footprints
-				(fp "R_*")
+				(fp "Connector*:*_1x??_*")
 			)
 			(fields
 				(field
-					(name "Reference") "R")
+					(name "Reference") "J")
 				(field
-					(name "Value") "RCA08050000ZSEASR")
+					(name "Value") "Conn_01x04_Pin")
 				(field
-					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
+					(name "Footprint")
+				)
 				(field
-					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+					(name "Datasheet")
+				)
 				(field
-					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
-				(field
-					(name "Part") "Vishay RCA08050000ZSEASR")
+					(name "Description") "Generic connector, single row, 01x04, script generated")
 			)
 			(pins
 				(pin
 					(num "1")
-					(name "")
+					(name "Pin_1")
 					(type "passive")
 				)
 				(pin
 					(num "2")
-					(name "")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
 					(type "passive")
 				)
 			)
@@ -5345,148 +8273,6 @@
 				(pin
 					(num "5")
 					(name "Pin_5")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Connector")
-			(part "Conn_01x10_Pin")
-			(description "Generic connector, single row, 01x10, script generated")
-			(footprints
-				(fp "Connector*:*_1x??_*")
-			)
-			(fields
-				(field
-					(name "Reference") "J")
-				(field
-					(name "Value") "Conn_01x10_Pin")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x10, script generated")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "Pin_1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "Pin_2")
-					(type "passive")
-				)
-				(pin
-					(num "3")
-					(name "Pin_3")
-					(type "passive")
-				)
-				(pin
-					(num "4")
-					(name "Pin_4")
-					(type "passive")
-				)
-				(pin
-					(num "5")
-					(name "Pin_5")
-					(type "passive")
-				)
-				(pin
-					(num "6")
-					(name "Pin_6")
-					(type "passive")
-				)
-				(pin
-					(num "7")
-					(name "Pin_7")
-					(type "passive")
-				)
-				(pin
-					(num "8")
-					(name "Pin_8")
-					(type "passive")
-				)
-				(pin
-					(num "9")
-					(name "Pin_9")
-					(type "passive")
-				)
-				(pin
-					(num "10")
-					(name "Pin_10")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Device")
-			(part "C")
-			(description "Unpolarized capacitor")
-			(footprints
-				(fp "C_*")
-			)
-			(fields
-				(field
-					(name "Reference") "C")
-				(field
-					(name "Value") "C")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Unpolarized capacitor")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Device")
-			(part "R")
-			(description "Resistor")
-			(footprints
-				(fp "R_*")
-			)
-			(fields
-				(field
-					(name "Reference") "R")
-				(field
-					(name "Value") "R")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
 					(type "passive")
 				)
 			)
@@ -5764,50 +8550,6 @@
 			)
 		)
 		(libpart
-			(lib "Switch")
-			(part "SW_MEC_5G")
-			(description "MEC 5G single pole normally-open tactile switch")
-			(docs "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf")
-			(footprints
-				(fp "SW*MEC*5G*")
-			)
-			(fields
-				(field
-					(name "Reference") "SW")
-				(field
-					(name "Value") "SW_MEC_5G")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet") "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf")
-				(field
-					(name "Description") "MEC 5G single pole normally-open tactile switch")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "A")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "A")
-					(type "passive")
-				)
-				(pin
-					(num "3")
-					(name "B")
-					(type "passive")
-				)
-				(pin
-					(num "4")
-					(name "B")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
 			(lib "mr-parts")
 			(part "Bouns SMBJ20A-Q")
 			(description "32.4V Clamp 18.6A Ipp Tvs Diode Surface Mount DO-214AA (SMB)")
@@ -5836,6 +8578,148 @@
 					(num "2")
 					(name "A")
 					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Diodes Inc PI4IOE5V6416RQ2LEX")
+			(description "I/O Expander 16 I2C 400 kHz 24-TSSOP")
+			(docs "https://www.diodes.com/datasheet/download/PI4IOE5V6416RQ.pdf")
+			(fields
+				(field
+					(name "Reference") "IOX")
+				(field
+					(name "Value") "PI4IOE5V6416RQ2LEX")
+				(field
+					(name "Footprint") "mr-stuff:Diodes Inc PI4IOE5V6416RQ2LEX")
+				(field
+					(name "Datasheet") "https://www.diodes.com/datasheet/download/PI4IOE5V6416RQ.pdf")
+				(field
+					(name "Description") "I/O Expander 16 I2C 400 kHz 24-TSSOP")
+				(field
+					(name "Part") "Diodes Inc PI4IOE5V6416RQ2LEX")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "~{INT}")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "VDD^{(I2C)}")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "~{RESET}")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "P0_0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "5")
+					(name "P0_1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "6")
+					(name "P0_2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "P0_3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "8")
+					(name "P0_4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "9")
+					(name "P0_5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "10")
+					(name "P0_6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "11")
+					(name "P0_7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "12")
+					(name "VSS")
+					(type "power_in")
+				)
+				(pin
+					(num "13")
+					(name "P1_0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "14")
+					(name "P1_1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "15")
+					(name "P1_2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "16")
+					(name "P1_3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "17")
+					(name "P1_4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "18")
+					(name "P1_5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "19")
+					(name "P1_6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "20")
+					(name "P1_7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "21")
+					(name "ADDR")
+					(type "input")
+				)
+				(pin
+					(num "22")
+					(name "SCL")
+					(type "input")
+				)
+				(pin
+					(num "23")
+					(name "SDA")
+					(type "bidirectional")
+				)
+				(pin
+					(num "24")
+					(name "VDD^{(P)}")
+					(type "power_in")
 				)
 			)
 		)
@@ -6033,6 +8917,41 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "Kyocera 08051C105K4Z2A")
+			(description "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+			(docs "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1uF")
+				(field
+					(name "Footprint") "mr-stuff:Kyocera AVX 0805")
+				(field
+					(name "Datasheet") "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf")
+				(field
+					(name "Description") "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
+				(field
+					(name "Part") "Kyocera 08051C105K4Z2A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Littelfuse nanoASMDCH020F")
 			(description "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 			(docs "https://www.littelfuse.com/assetdocs/littelfuse-ptc-auto-hightemp-smd-datasheet?assetguid=eb355431-c672-4f9e-aeb0-4d3e11a483c0")
@@ -6049,6 +8968,81 @@
 					(name "Description") "Polymeric PTC Resettable Fuse 30V 200 mA Ih Surface Mount 1206 (3216 Metric), Concave")
 				(field
 					(name "Part") "Littelfuse nanoASMDCH020F")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Molex 0022112032")
+			(description "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+			(docs "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "HDR")
+				(field
+					(name "Value") "0022112032")
+				(field
+					(name "Footprint") "mr-stuff:Molex 0022112032")
+				(field
+					(name "Datasheet") "https://www.molex.com/pdm_docs/sd/022112032_sd.pdf")
+				(field
+					(name "Description") "Connector Header Through Hole 3 position 0.100\" (2.54mm)")
+				(field
+					(name "Part") "Molex 0022112032")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Murata GCJ32ER71C226KE01L")
+			(description "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
+			(docs "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "22uF")
+				(field
+					(name "Footprint") "mr-stuff:Murata GCJ32ER71C")
+				(field
+					(name "Datasheet") "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCJ32ER71C226KE01-01A-EN_PDF_CERAMICCAPACITORSMD")
+				(field
+					(name "Description") "22 µF ±10% 16V Ceramic Capacitor X7R 1210 (3225 Metric)")
+				(field
+					(name "Part") "Murata GCJ32ER71C226KE01L")
 			)
 			(pins
 				(pin
@@ -6137,14 +9131,14 @@
 		)
 		(libpart
 			(lib "mr-parts")
-			(part "STM_M24C64-RMN6P")
+			(part "STM M24C64-RMN6P")
 			(description "EEPROM Memory IC 64Kbit I2C 1 MHz 450 ns 8-SOIC")
 			(docs "https://www.st.com/content/ccc/resource/technical/document/datasheet/5c/df/52/a5/15/f2/48/bd/CD00259166.pdf/files/CD00259166.pdf/jcr:content/translations/en.CD00259166.pdf")
 			(fields
 				(field
 					(name "Reference") "ROM")
 				(field
-					(name "Value") "STM_M24C64-RMN6P")
+					(name "Value") "M24C64")
 				(field
 					(name "Footprint") "mr-stuff:STM M24C64-RMN6P")
 				(field
@@ -6194,6 +9188,86 @@
 					(num "8")
 					(name "VCC")
 					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Same Sky TS03-66-50-BK-160-LCR-D-67")
+			(description "Tactile Switch SPST-NO Top Actuated Through Hole")
+			(docs "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
+			(footprints
+				(fp "SW*MEC*5G*")
+			)
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "TS03-66-50-BK-160-LCR-D-67")
+				(field
+					(name "Footprint") "mr-stuff:Same Sky TS03-66")
+				(field
+					(name "Datasheet") "https://www.sameskydevices.com/product/resource/digikeypdf/ts03.pdf")
+				(field
+					(name "Description") "Tactile Switch SPST-NO Top Actuated Through Hole")
+				(field
+					(name "Part") "Same Sky TS03-66-50-BK-160-LCR-D-67")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "B")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "B")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Stackpole RMCA0805FT100K-HP")
+			(description "100 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(docs "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "100kR")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RMCA0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RMCA.pdf")
+				(field
+					(name "Description") "100 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+				(field
+					(name "Part") "Stackpole RMCA0805FT100K-HP")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
 				)
 			)
 		)
@@ -6269,6 +9343,41 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "Stackpole RNCP0805FTD15K0")
+			(description "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(docs "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "15kR")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "15 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+				(field
+					(name "Part") "Stackpole RNCP0805FTD15K0")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Stackpole RNCP0805FTD475R")
 			(description "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 			(docs "https://www.seielect.com/catalog/SEI-RNCP.pdf")
@@ -6288,6 +9397,41 @@
 					(name "Description") "475 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
 				(field
 					(name "Part") "Stackpole RNCP0805FTD475R")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "Stackpole RNCP0805FTD5K11")
+			(description "5.11 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+			(docs "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "5.11kR")
+				(field
+					(name "Footprint") "mr-stuff:Stackpole RNCP0805")
+				(field
+					(name "Datasheet") "https://www.seielect.com/catalog/SEI-RNCP.pdf")
+				(field
+					(name "Description") "5.11 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film")
+				(field
+					(name "Part") "Stackpole RNCP0805FTD5K11")
 			)
 			(pins
 				(pin
@@ -6365,6 +9509,41 @@
 					(name "Description") "1000 pF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)")
 				(field
 					(name "Part") "TDK CGA4F2X7R2A102K085AE")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
+			(part "TDK CGA5L1X7R1H106K160AE")
+			(description "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+			(docs "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "10uF")
+				(field
+					(name "Footprint") "mr-stuff:TDK CGA5")
+				(field
+					(name "Datasheet") "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf")
+				(field
+					(name "Description") "10 µF ±10% 50V Ceramic Capacitor X7R 1206 (3216 Metric)")
+				(field
+					(name "Part") "TDK CGA5L1X7R1H106K160AE")
 			)
 			(pins
 				(pin
@@ -6565,6 +9744,41 @@
 		)
 		(libpart
 			(lib "mr-parts")
+			(part "Vishay RCA08050000ZSEASR")
+			(description "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+			(docs "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "0R")
+				(field
+					(name "Footprint") "mr-stuff:Vishay RCA-SR e3")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20132/rca-sre3.pdf")
+				(field
+					(name "Description") "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Anti-Sulfur, Automotive AEC-Q200 Thick Film")
+				(field
+					(name "Part") "Vishay RCA08050000ZSEASR")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mr-parts")
 			(part "Vishay TLMS1101-GS15")
 			(description "Light emitting diode")
 			(docs "https://www.vishay.com/docs/83173/tlmx1100.pdf")
@@ -6669,15 +9883,46 @@
 				)
 			)
 		)
+		(libpart
+			(lib "mr-parts")
+			(part "Wurth 560112120009")
+			(description "470 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thick Film")
+			(docs "https://www.we-online.com/components/products/datasheet/560112120009.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "470kR")
+				(field
+					(name "Footprint") "mr-stuff:Wurth WRIS-RSKS")
+				(field
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/560112120009.pdf")
+				(field
+					(name "Description") "470 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thick Film")
+				(field
+					(name "Part") "Wurth 560112120009")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
 	)
 	(libraries
 		(library
 			(logical "Connector")
 			(uri "${KICAD9_SYMBOL_DIR}/Connector.kicad_sym")
-		)
-		(library
-			(logical "Device")
-			(uri "${KICAD9_SYMBOL_DIR}/Device.kicad_sym")
 		)
 		(library
 			(logical "Mechanical")
@@ -6686,10 +9931,6 @@
 		(library
 			(logical "RF_Module")
 			(uri "${KICAD9_SYMBOL_DIR}/RF_Module.kicad_sym")
-		)
-		(library
-			(logical "Switch")
-			(uri "${KICAD9_SYMBOL_DIR}/Switch.kicad_sym")
 		)
 		(library
 			(logical "mr-parts")
@@ -6703,12 +9944,12 @@
 			(class "Default")
 			(node
 				(ref "C1")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C10")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6722,13 +9963,23 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "C16")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C17")
-				(pin "2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C18")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6753,6 +10004,24 @@
 				(pintype "power_in")
 			)
 			(node
+				(ref "IOX1")
+				(pin "2")
+				(pinfunction "VDD^{(I2C)}_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "IOX1")
+				(pin "21")
+				(pinfunction "ADDR_21")
+				(pintype "input")
+			)
+			(node
+				(ref "IOX1")
+				(pin "24")
+				(pinfunction "VDD^{(P)}_24")
+				(pintype "power_in")
+			)
+			(node
 				(ref "MCU1")
 				(pin "2")
 				(pinfunction "3V3_2")
@@ -6760,7 +10029,7 @@
 			)
 			(node
 				(ref "R1")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6784,13 +10053,68 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R24")
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R3")
-				(pin "1")
+				(ref "R32")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R34")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R36")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R38")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R40")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R42")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R44")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R46")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R48")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R49")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R50")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -6799,8 +10123,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R8")
+				(ref "R57")
 				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6871,6 +10200,150 @@
 		)
 		(net
 			(code "2")
+			(name "/ANCHOR_OFF_IN")
+			(class "Default")
+			(node
+				(ref "C22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "19")
+				(pinfunction "P1_6_19")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R31")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R32")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "/ANCHOR_OFF_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR1")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R31")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS4")
+				(pin "2")
+				(pinfunction "IO2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "/ANCHOR_ON_IN")
+			(class "Default")
+			(node
+				(ref "C21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "20")
+				(pinfunction "P1_7_20")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R29")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "/ANCHOR_ON_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR1")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R29")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS4")
+				(pin "1")
+				(pinfunction "IO1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/BEACON_ON_IN")
+			(class "Default")
+			(node
+				(ref "C29")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "11")
+				(pinfunction "P0_7_11")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R45")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R46")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "/BEACON_ON_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR5")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R45")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS8")
+				(pin "1")
+				(pinfunction "IO1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
 			(name "/CAN_HIGH")
 			(class "Default")
 			(node
@@ -6886,14 +10359,14 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP1")
-				(pin "4")
-				(pinfunction "Pin_4_4")
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "3")
+			(code "9")
 			(name "/CAN_LOW")
 			(class "Default")
 			(node
@@ -6909,14 +10382,14 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP1")
-				(pin "5")
-				(pinfunction "Pin_5_5")
+				(ref "TP2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "4")
+			(code "10")
 			(name "/CAN_RX_LOCAL")
 			(class "Default")
 			(node
@@ -6932,14 +10405,14 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "TP1")
-				(pin "7")
-				(pinfunction "Pin_7_7")
+				(ref "TP2")
+				(pin "4")
+				(pinfunction "Pin_4_4")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "5")
+			(code "11")
 			(name "/CAN_STANDBY")
 			(class "Default")
 			(node
@@ -6956,12 +10429,12 @@
 			)
 			(node
 				(ref "R2")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "6")
+			(code "12")
 			(name "/CAN_TX_LOCAL")
 			(class "Default")
 			(node
@@ -6978,18 +10451,18 @@
 			)
 			(node
 				(ref "R1")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "TP1")
-				(pin "6")
-				(pinfunction "Pin_6_6")
+				(ref "TP2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "7")
+			(code "13")
 			(name "/CONFIG_SW")
 			(class "Default")
 			(node
@@ -7005,9 +10478,111 @@
 			)
 		)
 		(net
-			(code "8")
+			(code "14")
+			(name "/DECK_OFF_IN")
+			(class "Default")
+			(node
+				(ref "C28")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "13")
+				(pinfunction "P1_0_13")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R43")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R44")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "/DECK_OFF_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR4")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R43")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS7")
+				(pin "2")
+				(pinfunction "IO2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "/DECK_ON_IN")
+			(class "Default")
+			(node
+				(ref "C27")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "14")
+				(pinfunction "P1_1_14")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R41")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R42")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "/DECK_ON_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR4")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R41")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS7")
+				(pin "1")
+				(pinfunction "IO1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
 			(name "/I2C_SCL")
 			(class "Default")
+			(node
+				(ref "IOX1")
+				(pin "22")
+				(pinfunction "SCL_22")
+				(pintype "input")
+			)
 			(node
 				(ref "MCU1")
 				(pin "4")
@@ -7032,16 +10607,22 @@
 				(pintype "input")
 			)
 			(node
-				(ref "TP1")
-				(pin "8")
-				(pinfunction "Pin_8_8")
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "9")
+			(code "19")
 			(name "/I2C_SDA")
 			(class "Default")
+			(node
+				(ref "IOX1")
+				(pin "23")
+				(pinfunction "SDA_23")
+				(pintype "bidirectional")
+			)
 			(node
 				(ref "MCU1")
 				(pin "5")
@@ -7066,16 +10647,43 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "TP1")
-				(pin "9")
-				(pinfunction "Pin_9_9")
+				(ref "TP3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "10")
-			(name "/LED_ENABLE")
+			(code "20")
+			(name "/IOX1_INT")
 			(class "Default")
+			(node
+				(ref "IOX1")
+				(pin "1")
+				(pinfunction "~{INT}_1")
+				(pintype "output")
+			)
+			(node
+				(ref "MCU1")
+				(pin "21")
+				(pinfunction "IO13_21")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R50")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "/LED_ENABLE_IN")
+			(class "Default")
+			(node
+				(ref "C31")
+				(pin "1")
+				(pintype "passive")
+			)
 			(node
 				(ref "MCU1")
 				(pin "17")
@@ -7083,13 +10691,88 @@
 				(pintype "bidirectional")
 			)
 			(node
-				(ref "R52")
+				(ref "R55")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R57")
 				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "11")
+			(code "22")
+			(name "/LED_ENABLE_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR7")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R55")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS9")
+				(pin "1")
+				(pinfunction "IO1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "23")
+			(name "/LOCATE_ON_IN")
+			(class "Default")
+			(node
+				(ref "C30")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "10")
+				(pinfunction "P0_6_10")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R47")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R48")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "24")
+			(name "/LOCATE_ON_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR6")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R47")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS8")
+				(pin "2")
+				(pinfunction "IO2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "25")
 			(name "/N2K_RX_LED")
 			(class "Default")
 			(node
@@ -7105,13 +10788,13 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "26")
 			(name "/N2K_TX_LED")
 			(class "Default")
 			(node
 				(ref "MCU1")
-				(pin "6")
-				(pinfunction "IO6_6")
+				(pin "11")
+				(pinfunction "IO18_11")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7121,13 +10804,13 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "27")
 			(name "/POWER_LED")
 			(class "Default")
 			(node
 				(ref "MCU1")
-				(pin "22")
-				(pinfunction "IO14_22")
+				(pin "6")
+				(pinfunction "IO6_6")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7137,7 +10820,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "28")
 			(name "/ROM1_WP")
 			(class "Default")
 			(node
@@ -7159,7 +10842,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "29")
 			(name "/ROM2_WP")
 			(class "Default")
 			(node
@@ -7181,7 +10864,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "30")
 			(name "/RXD0")
 			(class "Default")
 			(node
@@ -7192,19 +10875,19 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "3")
-				(pinfunction "Pin_3_3")
+				(pin "4")
+				(pinfunction "Pin_4_4")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "17")
+			(code "31")
 			(name "/SRV_UP_LED")
 			(class "Default")
 			(node
 				(ref "MCU1")
-				(pin "9")
-				(pinfunction "IO16_9")
+				(pin "8")
+				(pinfunction "IO15_8")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7214,7 +10897,199 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "32")
+			(name "/STEAMING_OFF_IN")
+			(class "Default")
+			(node
+				(ref "C26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "15")
+				(pinfunction "P1_2_15")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R39")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R40")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "33")
+			(name "/STEAMING_OFF_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR3")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R39")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS6")
+				(pin "2")
+				(pinfunction "IO2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "34")
+			(name "/STEAMING_ON_IN")
+			(class "Default")
+			(node
+				(ref "C25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "16")
+				(pinfunction "P1_3_16")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R37")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R38")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "35")
+			(name "/STEAMING_ON_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R37")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS6")
+				(pin "1")
+				(pinfunction "IO1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "36")
+			(name "/TRICOLOUR_OFF_IN")
+			(class "Default")
+			(node
+				(ref "C24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "17")
+				(pinfunction "P1_4_17")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R35")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R36")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "37")
+			(name "/TRICOLOUR_OFF_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R35")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS5")
+				(pin "2")
+				(pinfunction "IO2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "38")
+			(name "/TRICOLOUR_ON_IN")
+			(class "Default")
+			(node
+				(ref "C23")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "18")
+				(pinfunction "P1_5_18")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R33")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R34")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "39")
+			(name "/TRICOLOUR_ON_PLUG")
+			(class "Default")
+			(node
+				(ref "HDR2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R33")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS5")
+				(pin "1")
+				(pinfunction "IO1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "40")
 			(name "/TXD0")
 			(class "Default")
 			(node
@@ -7225,18 +11100,18 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "2")
-				(pinfunction "Pin_2_2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "19")
+			(code "41")
 			(name "/VBUS")
 			(class "Default")
 			(node
 				(ref "R13")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -7265,34 +11140,34 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "42")
 			(name "/VBUS_MCU")
 			(class "Default")
 			(node
 				(ref "MCU1")
-				(pin "7")
-				(pinfunction "IO7_7")
+				(pin "22")
+				(pinfunction "IO14_22")
 				(pintype "bidirectional")
 			)
 			(node
 				(ref "R13")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "R14")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "21")
+			(code "43")
 			(name "/WIFI_RX_LED")
 			(class "Default")
 			(node
 				(ref "MCU1")
-				(pin "11")
-				(pinfunction "IO18_11")
+				(pin "10")
+				(pinfunction "IO17_10")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7302,13 +11177,13 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "44")
 			(name "/WIFI_TX_LED")
 			(class "Default")
 			(node
 				(ref "MCU1")
-				(pin "10")
-				(pinfunction "IO17_10")
+				(pin "9")
+				(pinfunction "IO16_9")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7318,13 +11193,13 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "45")
 			(name "/WIFI_UP_LED")
 			(class "Default")
 			(node
 				(ref "MCU1")
-				(pin "8")
-				(pinfunction "IO15_8")
+				(pin "7")
+				(pinfunction "IO7_7")
 				(pintype "bidirectional")
 			)
 			(node
@@ -7334,17 +11209,17 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "46")
 			(name "GND")
 			(class "Default")
 			(node
 				(ref "C1")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C10")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -7368,13 +11243,23 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "C16")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C17")
-				(pin "1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C18")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -7383,7 +11268,67 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C21")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C29")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "C3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C30")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C31")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7403,16 +11348,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C64")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C65")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "C7")
 				(pin "2")
 				(pintype "passive")
@@ -7424,7 +11359,7 @@
 			)
 			(node
 				(ref "C9")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -7440,7 +11375,55 @@
 				(pintype "input")
 			)
 			(node
-				(ref "J1")
+				(ref "HDR1")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "HDR2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "HDR3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "HDR4")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "HDR5")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "HDR6")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "HDR7")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IOX1")
+				(pin "12")
+				(pinfunction "VSS_12")
+				(pintype "power_in")
+			)
+			(node
+				(ref "JTAG1")
 				(pin "1")
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
@@ -7522,12 +11505,12 @@
 			)
 			(node
 				(ref "R14")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "R15")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -7537,7 +11520,7 @@
 			)
 			(node
 				(ref "R2")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -7547,7 +11530,7 @@
 			)
 			(node
 				(ref "R6")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -7605,18 +11588,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SW4")
-				(pin "3")
-				(pinfunction "B_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW4")
-				(pin "4")
-				(pinfunction "B_4")
-				(pintype "passive")
-			)
-			(node
 				(ref "TB1")
 				(pin "5")
 				(pintype "passive")
@@ -7628,8 +11599,8 @@
 			)
 			(node
 				(ref "TP1")
-				(pin "10")
-				(pinfunction "Pin_10_10")
+				(pin "2")
+				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 			(node
@@ -7645,6 +11616,42 @@
 			)
 			(node
 				(ref "TVS3")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS4")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS5")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS6")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS7")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS8")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "TVS9")
 				(pin "3")
 				(pinfunction "GND_3")
 				(pintype "passive")
@@ -7705,43 +11712,11 @@
 			)
 		)
 		(net
-			(code "25")
-			(name "Net-(C64-Pad2)")
+			(code "47")
+			(name "Net-(C20-Pad2)")
 			(class "Default")
 			(node
-				(ref "C64")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R24")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R52")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW3")
-				(pin "1")
-				(pinfunction "A_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW3")
-				(pin "2")
-				(pinfunction "A_2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "26")
-			(name "Net-(C65-Pad2)")
-			(class "Default")
-			(node
-				(ref "C65")
+				(ref "C20")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -7756,20 +11731,20 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SW4")
+				(ref "SW3")
 				(pin "1")
 				(pinfunction "A_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "SW4")
+				(ref "SW3")
 				(pin "2")
 				(pinfunction "A_2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "27")
+			(code "48")
 			(name "Net-(CMC1-O1)")
 			(class "Default")
 			(node
@@ -7795,7 +11770,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "49")
 			(name "Net-(CMC1-O2)")
 			(class "Default")
 			(node
@@ -7821,11 +11796,27 @@
 			)
 		)
 		(net
-			(code "29")
-			(name "Net-(J1-Pin_2)")
+			(code "50")
+			(name "Net-(IOX1-~{RESET})")
 			(class "Default")
 			(node
-				(ref "J1")
+				(ref "IOX1")
+				(pin "3")
+				(pinfunction "~{RESET}_3")
+				(pintype "input")
+			)
+			(node
+				(ref "R49")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "51")
+			(name "Net-(JTAG1-Pin_2)")
+			(class "Default")
+			(node
+				(ref "JTAG1")
 				(pin "2")
 				(pinfunction "Pin_2_2")
 				(pintype "passive")
@@ -7838,11 +11829,11 @@
 			)
 		)
 		(net
-			(code "30")
-			(name "Net-(J1-Pin_3)")
+			(code "52")
+			(name "Net-(JTAG1-Pin_3)")
 			(class "Default")
 			(node
-				(ref "J1")
+				(ref "JTAG1")
 				(pin "3")
 				(pinfunction "Pin_3_3")
 				(pintype "passive")
@@ -7855,11 +11846,11 @@
 			)
 		)
 		(net
-			(code "31")
-			(name "Net-(J1-Pin_4)")
+			(code "53")
+			(name "Net-(JTAG1-Pin_4)")
 			(class "Default")
 			(node
-				(ref "J1")
+				(ref "JTAG1")
 				(pin "4")
 				(pinfunction "Pin_4_4")
 				(pintype "passive")
@@ -7872,11 +11863,11 @@
 			)
 		)
 		(net
-			(code "32")
-			(name "Net-(J1-Pin_5)")
+			(code "54")
+			(name "Net-(JTAG1-Pin_5)")
 			(class "Default")
 			(node
-				(ref "J1")
+				(ref "JTAG1")
 				(pin "5")
 				(pinfunction "Pin_5_5")
 				(pintype "passive")
@@ -7889,7 +11880,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "55")
 			(name "Net-(LED1-A)")
 			(class "Default")
 			(node
@@ -7905,7 +11896,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "56")
 			(name "Net-(LED2-A)")
 			(class "Default")
 			(node
@@ -7921,7 +11912,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "57")
 			(name "Net-(LED3-A)")
 			(class "Default")
 			(node
@@ -7937,7 +11928,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "58")
 			(name "Net-(LED4-A)")
 			(class "Default")
 			(node
@@ -7953,7 +11944,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "59")
 			(name "Net-(LED5-A)")
 			(class "Default")
 			(node
@@ -7969,7 +11960,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "60")
 			(name "Net-(LED6-A)")
 			(class "Default")
 			(node
@@ -7985,7 +11976,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "61")
 			(name "Net-(LED7-A)")
 			(class "Default")
 			(node
@@ -8001,7 +11992,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "62")
 			(name "Net-(MCU1-EN)")
 			(class "Default")
 			(node
@@ -8017,7 +12008,7 @@
 			)
 			(node
 				(ref "R8")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -8034,7 +12025,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "63")
 			(name "Net-(MCU1-IO0)")
 			(class "Default")
 			(node
@@ -8067,7 +12058,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "64")
 			(name "Net-(MCU1-IO1)")
 			(class "Default")
 			(node
@@ -8083,7 +12074,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "65")
 			(name "Net-(MCU1-IO2)")
 			(class "Default")
 			(node
@@ -8099,7 +12090,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "66")
 			(name "Net-(MCU1-IO3)")
 			(class "Default")
 			(node
@@ -8115,7 +12106,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "67")
 			(name "Net-(MCU1-USB_D+)")
 			(class "Default")
 			(node
@@ -8144,7 +12135,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "68")
 			(name "Net-(MCU1-USB_D-)")
 			(class "Default")
 			(node
@@ -8173,7 +12164,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "69")
 			(name "Net-(PTC1-Pad2)")
 			(class "Default")
 			(node
@@ -8193,7 +12184,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "70")
 			(name "Net-(SD1-A)")
 			(class "Default")
 			(node
@@ -8215,12 +12206,12 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "71")
 			(name "Net-(USBRV1-CC1)")
 			(class "Default")
 			(node
 				(ref "R15")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -8231,7 +12222,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "72")
 			(name "Net-(USBRV1-CC2)")
 			(class "Default")
 			(node
@@ -8247,17 +12238,17 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "73")
 			(name "Net-(VR1-EN)")
 			(class "Default")
 			(node
 				(ref "R5")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "R6")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -8268,7 +12259,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "74")
 			(name "Net-(VR1-MODE{slash}SYNC)")
 			(class "Default")
 			(node
@@ -8289,12 +12280,12 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "75")
 			(name "Net-(VR1-VCC)")
 			(class "Default")
 			(node
 				(ref "C9")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -8305,7 +12296,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "76")
 			(name "Net-(VR1-VIN)")
 			(class "Default")
 			(node
@@ -8341,12 +12332,12 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "77")
 			(name "V_RAW")
 			(class "Default")
 			(node
 				(ref "R5")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -8362,18 +12353,106 @@
 			)
 		)
 		(net
-			(code "56")
-			(name "unconnected-(MCU1-IO13-Pad21)")
+			(code "78")
+			(name "unconnected-(HDR5-Pin_3-Pad3)")
 			(class "Default")
 			(node
-				(ref "MCU1")
-				(pin "21")
-				(pinfunction "IO13_21")
+				(ref "HDR5")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "79")
+			(name "unconnected-(HDR6-Pin_3-Pad3)")
+			(class "Default")
+			(node
+				(ref "HDR6")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "80")
+			(name "unconnected-(HDR7-Pin_3-Pad3)")
+			(class "Default")
+			(node
+				(ref "HDR7")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "81")
+			(name "unconnected-(IOX1-P0_0-Pad4)")
+			(class "Default")
+			(node
+				(ref "IOX1")
+				(pin "4")
+				(pinfunction "P0_0_4")
 				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net
-			(code "57")
+			(code "82")
+			(name "unconnected-(IOX1-P0_1-Pad5)")
+			(class "Default")
+			(node
+				(ref "IOX1")
+				(pin "5")
+				(pinfunction "P0_1_5")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "83")
+			(name "unconnected-(IOX1-P0_2-Pad6)")
+			(class "Default")
+			(node
+				(ref "IOX1")
+				(pin "6")
+				(pinfunction "P0_2_6")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "84")
+			(name "unconnected-(IOX1-P0_3-Pad7)")
+			(class "Default")
+			(node
+				(ref "IOX1")
+				(pin "7")
+				(pinfunction "P0_3_7")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "85")
+			(name "unconnected-(IOX1-P0_4-Pad8)")
+			(class "Default")
+			(node
+				(ref "IOX1")
+				(pin "8")
+				(pinfunction "P0_4_8")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "86")
+			(name "unconnected-(IOX1-P0_5-Pad9)")
+			(class "Default")
+			(node
+				(ref "IOX1")
+				(pin "9")
+				(pinfunction "P0_5_9")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "87")
 			(name "unconnected-(MCU1-IO35-Pad28)")
 			(class "Default")
 			(node
@@ -8384,7 +12463,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "88")
 			(name "unconnected-(MCU1-IO36-Pad29)")
 			(class "Default")
 			(node
@@ -8395,7 +12474,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "89")
 			(name "unconnected-(MCU1-IO37-Pad30)")
 			(class "Default")
 			(node
@@ -8406,7 +12485,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "90")
 			(name "unconnected-(MCU1-IO38-Pad31)")
 			(class "Default")
 			(node
@@ -8417,7 +12496,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "91")
 			(name "unconnected-(MCU1-IO45-Pad26)")
 			(class "Default")
 			(node
@@ -8428,7 +12507,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "92")
 			(name "unconnected-(MCU1-IO46-Pad16)")
 			(class "Default")
 			(node
@@ -8439,7 +12518,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "93")
 			(name "unconnected-(TB1-Pad1)")
 			(class "Default")
 			(node
@@ -8449,7 +12528,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "94")
 			(name "unconnected-(TB1-Pad2)")
 			(class "Default")
 			(node
@@ -8459,7 +12538,18 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "95")
+			(name "unconnected-(TVS9-IO2-Pad2)")
+			(class "Default")
+			(node
+				(ref "TVS9")
+				(pin "2")
+				(pinfunction "IO2_2")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "96")
 			(name "unconnected-(USBRV1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -8470,7 +12560,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "97")
 			(name "unconnected-(USBRV1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -8481,7 +12571,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "98")
 			(name "unconnected-(VR1-BOOT-Pad7)")
 			(class "Default")
 			(node
@@ -8492,7 +12582,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "99")
 			(name "unconnected-(VR1-PGOOD-Pad1)")
 			(class "Default")
 			(node
@@ -8503,7 +12593,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "100")
 			(name "unconnected-(VR1-SW-Pad5)")
 			(class "Default")
 			(node
@@ -8514,7 +12604,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "101")
 			(name "unconnected-(VR1-SW-Pad6)")
 			(class "Default")
 			(node
