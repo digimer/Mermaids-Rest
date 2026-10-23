@@ -496,6 +496,164 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -5044,6 +5202,141 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:Tuskar Ziptie slot 4.5x2mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "ZT"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Tuskar Ziptie Slot 4.5x2mm"
+				(at 0 -3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Tuskar Ziptie slot 4.5x2mm_1_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 1)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(arc
+					(start -1.2701 -1.2701)
+					(mid -2.1681 -0.8981)
+					(end -2.5401 -0.0001)
+					(stroke
+						(width 1)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 0)
+					(mid -2.168 0.898)
+					(end -1.27 1.27)
+					(stroke
+						(width 1)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2701 1.2701)
+					(mid 2.1681 0.8981)
+					(end 2.5401 0.0001)
+					(stroke
+						(width 1)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 0)
+					(mid 2.168 -0.898)
+					(end 1.27 -1.27)
+					(stroke
+						(width 1)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 1)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:Vishay RCA0603511KFKEA"
 			(pin_numbers
 				(hide yes)
@@ -7394,7 +7687,7 @@
 	)
 	(rectangle
 		(start 117.475 113.665)
-		(end 158.115 140.335)
+		(end 191.135 140.335)
 		(stroke
 			(width 0)
 			(type default)
@@ -7729,12 +8022,6 @@
 		(uuid "20cbbf2d-9c86-46d8-aa89-7ff806e016d2")
 	)
 	(junction
-		(at 130.81 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "22307f3b-4c0c-4c2b-ba15-1a5fa6b5aaca")
-	)
-	(junction
 		(at 55.88 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7757,6 +8044,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3acddf23-1067-4f72-8c06-84ec0ec4933b")
+	)
+	(junction
+		(at 130.81 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c063dcf-e39d-4901-a6a0-b94daaef0c83")
 	)
 	(junction
 		(at 22.86 39.37)
@@ -7819,6 +8112,12 @@
 		(uuid "7d84fadb-5ed7-482a-8108-8ddfe650f394")
 	)
 	(junction
+		(at 130.81 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "866d2a44-6941-4829-9c3b-5b41c341d66e")
+	)
+	(junction
 		(at 156.21 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7841,12 +8140,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "952ea02e-4658-4eb9-86ee-e0fb734f6395")
-	)
-	(junction
-		(at 130.81 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "adf26183-835a-4cdf-9bc7-92b05ed57c9a")
 	)
 	(junction
 		(at 176.53 93.98)
@@ -7996,7 +8289,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 90.17) (xy 130.81 90.17)
+			(xy 127 87.63) (xy 130.81 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8266,7 +8559,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 92.71) (xy 127 92.71)
+			(xy 130.81 90.17) (xy 127 90.17)
 		)
 		(stroke
 			(width 0)
@@ -8373,16 +8666,6 @@
 			(type default)
 		)
 		(uuid "496eda19-532a-42ec-a405-664869d0aaa0")
-	)
-	(wire
-		(pts
-			(xy 130.81 95.25) (xy 130.81 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49ba7cda-315c-460e-8760-0a3a5329ff78")
 	)
 	(wire
 		(pts
@@ -8586,7 +8869,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 95.25) (xy 130.81 95.25)
+			(xy 130.81 100.33) (xy 130.81 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6af4fe8b-e1c8-40ae-8c7f-5140fabfc0a3")
+	)
+	(wire
+		(pts
+			(xy 127 100.33) (xy 130.81 100.33)
 		)
 		(stroke
 			(width 0)
@@ -8703,16 +8996,6 @@
 			(type default)
 		)
 		(uuid "784333d2-f00b-4dc4-95e7-a7660a259386")
-	)
-	(wire
-		(pts
-			(xy 130.81 90.17) (xy 130.81 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bcbfbda-bd99-4813-bafb-9a705c9deffa")
 	)
 	(wire
 		(pts
@@ -8923,6 +9206,16 @@
 			(type default)
 		)
 		(uuid "961eec22-1b2a-4e49-8b3e-374e445d062b")
+	)
+	(wire
+		(pts
+			(xy 130.81 87.63) (xy 130.81 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9718e62b-1eb0-43c3-ad62-00e910446b71")
 	)
 	(wire
 		(pts
@@ -10543,6 +10836,80 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:Tuskar Ziptie slot 4.5x2mm")
+		(at 173.99 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "281b0ab5-6c6d-4043-82ec-a8f9150dad56")
+		(property "Reference" "ZT3"
+			(at 172.466 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 173.99 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Tuskar Ziptie Slot 4.5x2mm"
+			(at 173.99 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "N2K Breakwater"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "ZT3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 137.16 60.96 0)
 		(unit 1)
@@ -10691,6 +11058,80 @@
 			(project "N2K Breakwater"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Tuskar Ziptie slot 4.5x2mm")
+		(at 173.99 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "30fdbfa7-6992-4d67-a8b9-843f0cf35e5d")
+		(property "Reference" "ZT4"
+			(at 172.466 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 173.99 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Tuskar Ziptie Slot 4.5x2mm"
+			(at 173.99 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "N2K Breakwater"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "ZT4")
 					(unit 1)
 				)
 			)
@@ -11130,92 +11571,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 121.92 92.71 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "442470db-be6c-4728-a105-729e1f1205e9")
-		(property "Reference" "J4"
-			(at 121.92 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Power"
-			(at 121.92 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 121.92 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 121.92 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6c34b6a3-2626-46d5-b326-3a40a275ccc3")
-		)
-		(pin "1"
-			(uuid "f6883c51-d6c9-4afa-90dd-fb80395adbf7")
-		)
-		(pin "3"
-			(uuid "f07763f5-5f8c-4524-8280-a62fff18de6e")
-		)
-		(pin "4"
-			(uuid "47636941-463c-4827-a2cd-ea557743c263")
-		)
-		(instances
-			(project "N2K Breakwater"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "mr-parts:Vishay SQJ872EP-T1_BE3")
 		(at 143.51 44.45 0)
 		(unit 1)
@@ -11490,6 +11845,80 @@
 			(project "N2K Breakwater"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Tuskar Ziptie slot 4.5x2mm")
+		(at 182.88 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "484011ab-2972-49e4-ad44-83b7a56d95d1")
+		(property "Reference" "ZT5"
+			(at 181.356 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 182.88 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Tuskar Ziptie Slot 4.5x2mm"
+			(at 182.88 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "N2K Breakwater"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "ZT5")
 					(unit 1)
 				)
 			)
@@ -13161,6 +13590,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 121.92 87.63 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "995a2072-e7bb-4ca8-9322-5337bcb8cd23")
+		(property "Reference" "J4"
+			(at 121.92 85.344 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V_RAW"
+			(at 121.92 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 121.92 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 121.92 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4bdf1e22-3495-41ff-bd2c-c9d24c39bc8a")
+		)
+		(pin "1"
+			(uuid "987f4cba-38ac-4623-942a-1b454b8ba859")
+		)
+		(instances
+			(project "N2K Breakwater"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 166.37 102.87 0)
 		(unit 1)
@@ -13232,6 +13741,86 @@
 			(project "N2K Breakwater"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 121.92 97.79 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "9ba3f9ef-f8e8-45fd-a5b6-d99d1efe522f")
+		(property "Reference" "J5"
+			(at 121.92 95.504 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 121.92 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 121.92 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5a0e9f80-092b-4fbf-897f-74c8c1754ff1")
+		)
+		(pin "1"
+			(uuid "2f294ab4-44f9-4d5d-84a1-9e22e9004fb6")
+		)
+		(instances
+			(project "N2K Breakwater"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -14414,6 +15003,154 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:Tuskar Ziptie slot 4.5x2mm")
+		(at 182.88 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c4f66fe1-37ae-43bb-962e-3d35a9954bd2")
+		(property "Reference" "ZT6"
+			(at 181.356 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 182.88 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Tuskar Ziptie Slot 4.5x2mm"
+			(at 182.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "N2K Breakwater"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "ZT6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Tuskar Ziptie slot 4.5x2mm")
+		(at 165.1 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c72a5323-fff1-453b-89a9-bf87150eafa5")
+		(property "Reference" "ZT1"
+			(at 163.576 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 165.1 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Tuskar Ziptie Slot 4.5x2mm"
+			(at 165.1 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "N2K Breakwater"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "ZT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Yageo SMCJ18CA-AT/TR13")
 		(at 81.28 99.06 0)
 		(unit 1)
@@ -14498,6 +15235,80 @@
 			(project "N2K Breakwater"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "TVS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Tuskar Ziptie slot 4.5x2mm")
+		(at 165.1 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb1de569-4fe6-4e3c-85e4-57d7180cda17")
+		(property "Reference" "ZT2"
+			(at 163.576 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 165.1 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Tuskar Ziptie Slot 4.5x2mm"
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "N2K Breakwater"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "ZT2")
 					(unit 1)
 				)
 			)
@@ -15108,10 +15919,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "dd22b9fa-0f33-4cca-85fb-a0a867d4fe1b")
 		(property "Reference" "J3"
 			(at 19.05 58.42 0)
