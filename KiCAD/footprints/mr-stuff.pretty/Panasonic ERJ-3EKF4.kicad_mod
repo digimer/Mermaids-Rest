@@ -1,0 +1,182 @@
+(footprint "Panasonic ERJ-3EKF4"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "ERJ3EK(0603)")
+	(tags "Resistor")
+	(property "Reference" "REF**"
+		(at 0 -1.1 0)
+		(layer "F.SilkS")
+		(uuid "6cdf0354-cf2a-415d-93d7-00690f5456b7")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "Panasonic ERJ-3EKF4"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f2fde1dd-a34f-4604-be85-39f9c128f3b9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18aef3b2-0e3f-4cef-a21c-9ce68e3740a9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3eb24828-14bd-4599-8498-d501966aa341")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 0 -0.325)
+		(end 0 0.325)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fffbdf03-6d78-49c3-b0ea-2220999c8831")
+	)
+	(fp_line
+		(start -1.5 -0.75)
+		(end 1.5 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bff2612f-5153-4b9a-8482-f576571f1c3f")
+	)
+	(fp_line
+		(start -1.5 0.75)
+		(end -1.5 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7fbc56a5-2d5c-4b70-832a-906aa6725c16")
+	)
+	(fp_line
+		(start 1.5 -0.75)
+		(end 1.5 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3985ae26-e7be-4bc8-a5dd-a3cc515f3504")
+	)
+	(fp_line
+		(start 1.5 0.75)
+		(end -1.5 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f6645a7c-a1da-4df6-9f79-176c21d1bf63")
+	)
+	(fp_line
+		(start -0.8 -0.425)
+		(end 0.8 -0.425)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ec5c1c95-0cf6-4c34-b059-948e72106bed")
+	)
+	(fp_line
+		(start -0.8 0.425)
+		(end -0.8 -0.425)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f6b94619-0e38-4c4f-8ccd-a7f0a5249166")
+	)
+	(fp_line
+		(start 0.8 -0.425)
+		(end 0.8 0.425)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "acc8c2cb-719c-4f9a-aef7-a22db8637265")
+	)
+	(fp_line
+		(start 0.8 0.425)
+		(end -0.8 0.425)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1f5d82a1-c689-4e76-b0c8-9e447ca2f552")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 1.2 0)
+		(layer "F.Fab")
+		(uuid "1466e2c8-094d-485b-abc5-128e3d4f768f")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.8 0)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ea8a403e-9f43-4462-b358-60afee487b78")
+	)
+	(pad "2" smd rect
+		(at 0.8 0)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f4578998-a894-4390-9689-530a65be979f")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Panasonic ERJ-3EKF4/ERJ-3EKF4753V.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

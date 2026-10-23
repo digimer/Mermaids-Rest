@@ -1,0 +1,217 @@
+(footprint "Amphenol M12A-05PMMR-SF8001"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "02295a23-1030-4d60-bf92-b3b16003ade2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Amphenol M12A-05PMMR-SF8001"
+		(at 0.08 7.85 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b7e4a8fc-617c-4165-8dd9-9ff35a2fff9e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6451b206-3812-40ac-bb2a-26a51393e6c2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "873ceb8c-519a-4df7-8ad3-262faf765fcc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -8.1 0)
+		(end -8.1 5.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5662f43b-7616-498f-a313-41941370177c")
+	)
+	(fp_line
+		(start 5 -3.6)
+		(end -5 -3.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "10e1feb0-705a-4abe-b007-74d556e4ce8c")
+	)
+	(fp_line
+		(start 8.1 5.8)
+		(end 8.1 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "72b9aedc-b4b6-4c8f-bf28-f87ea422b338")
+	)
+	(fp_line
+		(start -10 6)
+		(end 10 6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "15d13620-a08f-4cc5-86f5-91502a878a34")
+	)
+	(fp_rect
+		(start -8.2 -3.7)
+		(end 8.2 6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7c527da5-9213-41d1-be94-187e5b41e1c4")
+	)
+	(fp_text user "PCB Edge"
+		(at 10 6 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "5dbdc378-830f-49f7-afdd-add3790a3103")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.08 9.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b1035ba9-86e0-4344-8aba-6caa64b266f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -6.3 -1.8)
+		(size 3.6 3.6)
+		(drill 3.6)
+		(layers "*.Mask")
+		(uuid "de4422a8-444e-43d4-9c2d-feb41fbaca70")
+	)
+	(pad "" np_thru_hole circle
+		(at -3.75 4)
+		(size 2.1 2.1)
+		(drill 2.1)
+		(layers "*.Mask")
+		(uuid "42c6f697-8231-418a-a631-12205d0ecd7a")
+	)
+	(pad "" np_thru_hole circle
+		(at 3.75 4)
+		(size 2.1 2.1)
+		(drill 2.1)
+		(layers "*.Mask")
+		(uuid "ddd0cf4d-0177-4202-9f7b-1f5c484b0b26")
+	)
+	(pad "" np_thru_hole circle
+		(at 6.3 -1.8)
+		(size 3.6 3.6)
+		(drill 3.6)
+		(layers "*.Mask")
+		(uuid "b0d8ae21-fcc1-4949-bfc0-46f1d68e513e")
+	)
+	(pad "1" thru_hole roundrect
+		(at 1.7678 -1.7678)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.3)
+		(chamfer bottom_left)
+		(uuid "7795b1e9-0841-4f79-9d9e-5240c855b1c4")
+	)
+	(pad "2" thru_hole circle
+		(at -1.7678 -1.7678 180)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "97e4a6dd-c569-4066-9ec7-f2f73bc17435")
+	)
+	(pad "3" thru_hole circle
+		(at -1.7678 1.7678)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2fafb427-9598-4646-9fb6-a1079d72ff0e")
+	)
+	(pad "4" thru_hole circle
+		(at 1.7678 1.7678)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2a60d0f6-11b0-4ca5-8fe8-5804e329a17b")
+	)
+	(pad "5" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2e851852-b8e9-4d99-8be4-b12000084fb7")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Amphenol M12A-05PMMR-SF8001/M12A-05PMMR-SF8001-STP.stp"
+		(offset
+			(xyz 0 3 12)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
+)

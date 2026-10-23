@@ -1,0 +1,153 @@
+(footprint "Murata GCM0805"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "2012M(0805)...")
+	(tags "Capacitor")
+	(property "Reference" "REF**"
+		(at 0 -1.2 0)
+		(layer "F.SilkS")
+		(uuid "b26e760c-5e12-4f28-ac0d-0172f0eb9e85")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "Murata GCM0805"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f1a088cc-ad1d-4646-af6e-60f7406f7d03")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ce4f24c6-2f27-46e1-8430-ff9befe5219e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3fd9fd1-2a5a-4c3d-a07c-6c9a1a05bbfd")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 0 -0.6)
+		(end 0 0.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3401cff4-6345-44bd-b898-2f3d886b18cc")
+	)
+	(fp_rect
+		(start -1.5 -0.8)
+		(end 1.5 0.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "49068796-652f-4670-b117-3e965eac36c2")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d6d7fde6-ce80-4b50-b7bb-6562702e903b")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a73043c8-a51f-4466-a0cb-3aeb6cd9a7b1")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5802b8cc-6b18-477e-a9f2-75619b6259fb")
+	)
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "360f39e9-c94b-4cf1-8a8e-74c215b6335e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 1.3 0)
+		(layer "F.Fab")
+		(uuid "1f61f7c8-2c02-49fd-b0c9-fe755c6da86f")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.9 0)
+		(size 1.1 1.43)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "61759340-bc31-4561-8ad2-98e1cac77355")
+	)
+	(pad "2" smd rect
+		(at 0.9 0)
+		(size 1.1 1.43)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9bfc3c14-4c4d-42b4-8482-b177f9e41aab")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Murata GCM0805/GCM21B5C2A183JE02L.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

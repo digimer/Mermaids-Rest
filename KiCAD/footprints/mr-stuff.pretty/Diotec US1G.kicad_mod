@@ -1,0 +1,243 @@
+(footprint "Diotec US1G"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SMA-DO-214AC")
+	(tags "Diode")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(uuid "43fd9b5f-0693-415f-9bc5-61c706ae5ceb")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "Diotec US1G"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "47160076-9ed8-417d-abee-bdd55b0ca876")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ea18cb3-eeb0-4747-86cf-b2ac3e5c9c08")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "91b91165-8f47-4eef-a491-e3ba82c93a2d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.5 -1.35)
+		(end -2.5 -0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b5dacf25-b9b5-4dea-86e7-62618573608c")
+	)
+	(fp_line
+		(start -2.5 1.35)
+		(end 2.5 1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9cf995af-5152-492a-8971-b5a84217c8fd")
+	)
+	(fp_line
+		(start -0.75 0)
+		(end 0.8 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "027d01b6-3ca2-4ea7-a5d0-b7dd2c18a204")
+	)
+	(fp_line
+		(start -0.3 -0.6)
+		(end -0.3 0.65)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6cabd091-c13c-4a2c-9411-34880fdd1d7b")
+	)
+	(fp_line
+		(start 2.5 -1.35)
+		(end -2.5 -1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "04f08b5f-b23b-42df-91c5-389f973fed86")
+	)
+	(fp_poly
+		(pts
+			(xy -0.2 0) (xy 0.45 -0.6) (xy 0.45 0.65)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "5a1e3358-1b16-4b7a-b081-715dce23e7c5")
+	)
+	(fp_line
+		(start -3.35 -1.7)
+		(end 3.35 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1fbdfe9a-e623-4cba-89b6-bf97378b6a68")
+	)
+	(fp_line
+		(start -3.35 1.7)
+		(end -3.35 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c4a4dabd-4a4a-4d9e-b98e-5d46404fa8b1")
+	)
+	(fp_line
+		(start 3.35 -1.7)
+		(end 3.35 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "10187ec0-36d9-4c14-9830-6fa8a38c57a3")
+	)
+	(fp_line
+		(start 3.35 1.7)
+		(end -3.35 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b8bedf1c-b073-434f-80d2-2b13293ff829")
+	)
+	(fp_line
+		(start -2.5 -1.35)
+		(end 2.5 -1.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7fb8cdc0-0cc9-498c-b7bc-7bfcc31a291d")
+	)
+	(fp_line
+		(start -2.5 -0.575)
+		(end -1.725 -1.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c7612eec-212d-4130-bac1-6d03d8617095")
+	)
+	(fp_line
+		(start -2.5 1.35)
+		(end -2.5 -1.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "761ece51-0b08-4cd3-b7f0-87af58bdb6e2")
+	)
+	(fp_line
+		(start 2.5 -1.35)
+		(end 2.5 1.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "56e557dd-9fc6-4154-a635-e50bd7fbe9f1")
+	)
+	(fp_line
+		(start 2.5 1.35)
+		(end -2.5 1.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a3f45e60-3ba9-473d-8115-9a140460523d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(uuid "2911d15b-ad95-4c0d-a4fc-97d5358f52e4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.1 0 90)
+		(size 1.55 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f3bdf061-aeb4-4def-80ed-f75ae5126405")
+	)
+	(pad "2" smd rect
+		(at 2.1 0 90)
+		(size 1.55 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e69fd6fc-0ac9-477e-a792-23ab27adf5bf")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Diotech US1G/US1G-AQ.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

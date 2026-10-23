@@ -954,6 +954,280 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:ADI LTC4368HMS-2#WPBF"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "PMIC"
+				(at 0 8.128 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Value" "LTC4368HMS-2#WPBF"
+				(at 0 -9.652 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Footprint" "mr-stuff:ADI LTC4368"
+				(at 0.254 -17.526 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4368.pdf"
+				(at 0 -11.938 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Overvoltage/Surge Protection IC Adjustable External Switch 10-MSOP"
+				(at 0 -14.224 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "ADI LTC4368HMS-2#WPBF"
+				(at 0 -20.066 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "ADI LTC4368HMS-2#WPBF_0_0"
+				(rectangle
+					(start -6.35 7.62)
+					(end 6.35 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ADI LTC4368HMS-2#WPBF_1_0"
+				(pin power_in line
+					(at -8.89 5.08 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 2.54 0)
+					(length 2.54)
+					(name "UV"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "OV"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "RETRY"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -8.89 -5.08 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 5.08 180)
+					(length 2.54)
+					(name "~{SHDN}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "~{FAULT}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "SENSE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 -5.08 180)
+					(length 2.54)
+					(name "GATE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:Bourns SMBJ20A-Q"
 			(pin_names
 				(hide yes)
@@ -5450,6 +5724,157 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:Stackpole RNCP0805FTD22K1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "22.1kR"
+				(at 0 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Stackpole RNCP0805"
+				(at 0 -7.366 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+				(at 0 -9.652 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "22.1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Stackpole RNCP0805FTD22K1"
+				(at 0 -12.192 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Stackpole RNCP0805FTD22K1_0_1"
+				(rectangle
+					(start 2.54 -1.016)
+					(end -2.54 1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Stackpole RNCP0805FTD22K1_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:Stackpole RNCP0805FTD475R"
 			(pin_numbers
 				(hide yes)
@@ -6176,6 +6601,172 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mr-parts:TDK CGA3E1C0G2A332J080AE"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "3300pF"
+				(at 0.254 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "mr-stuff:TDK CGA 0805"
+				(at 0 -18.034 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "3300 pF ±5% 100V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+				(at 0 -15.748 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TDK CGA3E1C0G2A332J080AE"
+				(at -0.254 -13.716 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Alt Value" "3.3nF"
+				(at 0 -20.066 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TDK CGA3E1C0G2A332J080AE_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TDK CGA3E1C0G2A332J080AE_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8413,6 +9004,672 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:Vishay SQJ872EP-T1_BE3"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 0 7.874 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "SQJ872EP-T1_BE3"
+				(at 0 -7.874 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Vishay SQJ872EP"
+				(at 0 -13.462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/76483/sqj872ep.pdf"
+				(at 0 -10.668 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" "N-Channel 150 V 24.5A (Tc) 55W (Tc) Surface Mount PowerPAK® SO-8"
+				(at 0.254 -15.748 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Vishay SQJ872EP-T1_BE3"
+				(at 0 -18.288 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Alternate" "Vishay SQJ872EP-T1_GE3"
+				(at 0 -20.828 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "PowerPAK-SO-8L_Option-2_VIS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Vishay SQJ872EP-T1_BE3_0_1"
+				(polyline
+					(pts
+						(xy -7.62 2.54) (xy -6.35 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 0) (xy -6.35 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -2.54) (xy -6.35 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 2.54) (xy -6.35 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -6.35 0)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -6.35 -2.54)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -5.08) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -3.81) (xy -5.08 1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 3.302) (xy -1.778 -0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 1.27) (xy -5.08 1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.302) (xy -1.27 2.286)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy 0.254 2.794)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.778) (xy -1.27 0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -0.508 1.778) (xy -0.508 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0.254) (xy -1.27 -0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.254) (xy 0.254 -0.254)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 1.27)
+					(radius 3.81)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 3.81) (xy 0.254 2.794)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 3.81) (xy 2.032 3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.27) (xy -0.508 1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.27) (xy 0.254 -1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.254 -0.254)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -1.27) (xy 2.032 -1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -3.81) (xy -5.08 -3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 1.27 3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 5.08 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 3.81)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 -1.27)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.762 -3.81)
+					(mid 1.27 -3.3042)
+					(end 1.778 -3.81)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -3.81) (xy 5.08 -3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 3.81) (xy 2.032 1.524)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 1.524) (xy 2.54 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 0.508)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.524) (xy 1.524 1.524)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 5.08) (xy 5.08 1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -1.27) (xy 5.08 -3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 5.08 1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Vishay SQJ872EP-T1_BE3_1_1"
+				(rectangle
+					(start -7.62 6.35)
+					(end 7.62 -6.35)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 1.27 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:Vishay TLMS1101-GS15"
 			(pin_numbers
 				(hide yes)
@@ -9284,6 +10541,217 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mr-parts:Vishay WSLP1206R0500FEA"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "0.05R"
+				(at 0 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mr-stuff:Vishay WSLP 1206 4-wire Kelvin"
+				(at 0 -9.398 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCA.pdf"
+				(at 0 -11.684 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "50 mOhms ±1% 1W Chip Resistor 1206 (3216 Metric) Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
+				(at 0 -7.112 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "Vishay WSLP1206R0500FEA"
+				(at 0 -4.826 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Vishay WSLP1206R0500FEA_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.2727 0.9992)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.2673 0.9992)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Vishay WSLP1206R0500FEA_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.27 2.54 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 2.54 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mr-parts:Wurth 560112120009"
 			(pin_numbers
 				(hide yes)
@@ -9958,7 +11426,7 @@
 	)
 	(rectangle
 		(start 15.24 166.37)
-		(end 92.71 243.84)
+		(end 92.71 248.92)
 		(stroke
 			(width 0)
 			(type default)
@@ -10017,8 +11485,8 @@
 		(uuid "536f031b-31c7-44ac-9e14-453f102365ba")
 	)
 	(rectangle
-		(start 15.24 248.285)
-		(end 59.055 275.59)
+		(start 15.24 253.365)
+		(end 59.055 280.67)
 		(stroke
 			(width 0)
 			(type default)
@@ -10108,9 +11576,9 @@
 		)
 		(uuid "14b9d166-0716-47f0-8f51-49af9c866c38")
 	)
-	(text "Silver switches allowed, TI's TIC12400QDCPRQ1 is specifically\ndesigned to address silver oxide buildup. \n\nCables use:\n* Molex 0022013037 housing\n* Molex 0008550102 contact pins\n\nWire:\n* Alpha Wire AZ221934 family\n* TE Connectivity 55A0111-22 family\nIf Substituting - ETFE jacket, 22AWG, 19/34+ fine strand, tinned\n"
+	(text "Silver switches allowed, TI's TIC12400QDCPRQ1 is\nspecifically designed to address silver oxide buildup. \n\nSwitches:\n* on-off-on: Carlingtech 2M1-SP3-T6-B1-M1QE\n * Anchor Light\n * Tricolour Light\n * Steaming Light\n * Deck Light\n* on-on: Carlingtech 2M1-SP1-T6-B1-M1QE\n * Beacon Mode\n * Locate Mode\n* on-mom: Carlingtech 2M1-SP2-T6-B1-M1QE\n * Status LEDs (possibly on-on, TBD)\n\nCables:\n* Molex 0022013037 housing\n* Molex 0008550102 contact pins\n\nWire:\n* Alpha Wire AZ221934 family\n* TE Connectivity 55A0111-22 family\nIf Substituting - ETFE jacket, 22AWG, 19/34+ fine strand, tinned\n"
 		(exclude_from_sim no)
-		(at 140.97 191.516 0)
+		(at 140.97 185.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10119,7 +11587,7 @@
 		)
 		(uuid "2b21871e-5d1d-4eda-862c-0d76e322863e")
 	)
-	(text "I^{2}C IO Expander (at 0x21h)"
+	(text "Multiple Switch Detection Interface"
 		(exclude_from_sim no)
 		(at 15.24 165.1 0)
 		(effects
@@ -10142,7 +11610,7 @@
 	)
 	(text "Test Points"
 		(exclude_from_sim no)
-		(at 20.828 247.396 0)
+		(at 20.828 252.476 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10255,6 +11723,17 @@
 		)
 		(uuid "d5f52a40-6b7b-4709-bcc6-9d4c1b0d28f8")
 	)
+	(text "ToDo: Switch to LTC4368HMS-2#WPBF, replace PTC, add SMD fuse"
+		(exclude_from_sim no)
+		(at 16.764 17.272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e3b9feb7-1f82-4e4f-80b4-cedee8f68f80")
+	)
 	(text "Light Switches ESD Protection"
 		(exclude_from_sim no)
 		(at 286.004 15.24 0)
@@ -10275,6 +11754,12 @@
 			)
 		)
 		(uuid "fce5477e-7379-4a0b-a3fe-33524193efd5")
+	)
+	(junction
+		(at -101.6 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0003d4a9-6ae3-4786-83b6-cceaf461c630")
 	)
 	(junction
 		(at 320.04 109.22)
@@ -10299,6 +11784,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "05894123-7e78-4b27-934b-31adeaca6620")
+	)
+	(junction
+		(at -66.04 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0999337e-7da4-41f7-924b-f59c6708916f")
 	)
 	(junction
 		(at 82.55 26.67)
@@ -10355,6 +11846,12 @@
 		(uuid "206bc4be-c620-4933-883f-7c4153b414be")
 	)
 	(junction
+		(at -101.6 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20cbbf2d-9c86-46d8-aa89-7ff806e016d2")
+	)
+	(junction
 		(at 104.14 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10365,6 +11862,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e246c0c-8022-4199-b6b4-d9a7832e8508")
+	)
+	(junction
+		(at -101.6 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e727e22-8eb1-4b3f-ae85-68773bc8c891")
 	)
 	(junction
 		(at 46.99 53.34)
@@ -10403,6 +11906,12 @@
 		(uuid "3a578087-a97e-4ed5-a473-e58d570c5810")
 	)
 	(junction
+		(at -101.6 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3acddf23-1067-4f72-8c06-84ec0ec4933b")
+	)
+	(junction
 		(at 240.03 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10413,12 +11922,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "441051a4-d45a-4bbd-8b87-2316007d6ec9")
-	)
-	(junction
-		(at 60.96 231.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "462f1d1e-bd76-44f6-89a8-f44ba04facaa")
 	)
 	(junction
 		(at 50.8 93.98)
@@ -10451,6 +11954,18 @@
 		(uuid "4c06f8fd-2faa-41ab-9c94-d512ca0ec160")
 	)
 	(junction
+		(at -77.47 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e6205a3-da7d-43d4-8edf-02230af921cd")
+	)
+	(junction
+		(at 71.12 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fd58d30-da2d-43e0-b162-02ac7a727937")
+	)
+	(junction
 		(at 320.04 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10479,6 +11994,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ac7a44d-5b84-43dd-b1d3-e9e52fced94c")
+	)
+	(junction
+		(at -64.77 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d471ad6-74ae-4132-b586-ededa77d9af9")
 	)
 	(junction
 		(at 320.04 40.64)
@@ -10547,7 +12068,7 @@
 		(uuid "6fe9835f-ebba-4a84-a66b-807b7942a580")
 	)
 	(junction
-		(at 52.07 234.95)
+		(at 43.18 236.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7245cfd1-7529-4e63-8e5b-b08b78207105")
@@ -10601,6 +12122,12 @@
 		(uuid "8ec00b0d-ef08-4d6f-9cdd-a370fb0af8f3")
 	)
 	(junction
+		(at 71.12 241.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90e0eb30-4b62-4b7e-9056-1b2108d3a2e0")
+	)
+	(junction
 		(at 320.04 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10629,6 +12156,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "947e6539-13db-4555-8dbf-26811da17e42")
+	)
+	(junction
+		(at -73.66 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e73fbde-da0b-41a8-9629-3a94714d56db")
 	)
 	(junction
 		(at 200.66 55.88)
@@ -10685,6 +12218,12 @@
 		(uuid "af3d00af-4c9a-4ead-8b08-630f61bc3843")
 	)
 	(junction
+		(at -55.88 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3580a1b-cb5d-44bb-b1ce-cc765a095280")
+	)
+	(junction
 		(at 210.82 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10701,6 +12240,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7256447-859c-48db-8daf-6ec75028f7e6")
+	)
+	(junction
+		(at -77.47 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba6b0275-02f6-47d0-a552-0d5e0e87a5ec")
 	)
 	(junction
 		(at 170.18 46.99)
@@ -10815,6 +12360,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb58468d-77ac-4a0c-ad89-decbdd50e778")
+	)
+	(junction
+		(at 133.35 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fee4bbd9-9ac6-448b-a9f9-4d293fef0e3b")
 	)
 	(junction
 		(at 320.04 22.86)
@@ -10944,7 +12495,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 240.03) (xy 52.07 234.95)
+			(xy 43.18 241.3) (xy 43.18 236.22)
 		)
 		(stroke
 			(width 0)
@@ -10984,7 +12535,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 257.81) (xy 27.94 260.35)
+			(xy 27.94 262.89) (xy 27.94 265.43)
 		)
 		(stroke
 			(width 0)
@@ -11034,13 +12585,23 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 231.14) (xy 77.47 231.14)
+			(xy -101.6 25.4) (xy -101.6 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "04f4827b-827b-46bd-af91-039cc183d750")
+		(uuid "05019335-8d0c-4122-a21f-1b2be2aa1f96")
+	)
+	(wire
+		(pts
+			(xy -101.6 22.86) (xy -99.06 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0573ebb1-125c-4b2c-95d4-b23251855b90")
 	)
 	(wire
 		(pts
@@ -11111,6 +12672,16 @@
 			(type default)
 		)
 		(uuid "08459ae5-1ebd-4367-b3fe-df52385c26b2")
+	)
+	(wire
+		(pts
+			(xy -55.88 81.28) (xy -64.77 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0909cb3c-6263-4618-8af8-f1ef9f6f9468")
 	)
 	(wire
 		(pts
@@ -11274,6 +12845,16 @@
 	)
 	(wire
 		(pts
+			(xy -76.2 39.37) (xy -77.47 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "159e46eb-7eeb-42fe-ac0c-83df422b53b6")
+	)
+	(wire
+		(pts
 			(xy 128.27 52.07) (xy 135.89 52.07)
 		)
 		(stroke
@@ -11364,7 +12945,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 260.35) (xy 22.86 260.35)
+			(xy 19.05 265.43) (xy 22.86 265.43)
 		)
 		(stroke
 			(width 0)
@@ -11384,17 +12965,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 26.67) (xy 124.46 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b4d3de6-02c8-456b-b849-85e86327d1ef")
-	)
-	(wire
-		(pts
-			(xy 22.86 257.81) (xy 22.86 260.35)
+			(xy 22.86 262.89) (xy 22.86 265.43)
 		)
 		(stroke
 			(width 0)
@@ -11424,6 +12995,16 @@
 	)
 	(wire
 		(pts
+			(xy -80.01 69.85) (xy -77.47 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c152500-5576-4b34-ba02-d9b6e5f0fb52")
+	)
+	(wire
+		(pts
 			(xy 189.23 38.1) (xy 189.23 35.56)
 		)
 		(stroke
@@ -11434,7 +13015,27 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 257.81) (xy 30.48 260.35)
+			(xy -64.77 81.28) (xy -64.77 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cba8cde-d103-4db7-ab7e-e58444e398bf")
+	)
+	(wire
+		(pts
+			(xy -73.66 35.56) (xy -77.47 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dcbe139-9bcd-43ad-85a7-a5f2785497f0")
+	)
+	(wire
+		(pts
+			(xy 30.48 262.89) (xy 30.48 265.43)
 		)
 		(stroke
 			(width 0)
@@ -11484,7 +13085,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 240.03) (xy 52.07 240.03)
+			(xy 40.64 241.3) (xy 43.18 241.3)
 		)
 		(stroke
 			(width 0)
@@ -11501,6 +13102,16 @@
 			(type default)
 		)
 		(uuid "209d1f84-3663-40eb-ba32-2473d0b6316d")
+	)
+	(wire
+		(pts
+			(xy -55.88 63.5) (xy -55.88 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20c89661-d6f1-4e94-bd4b-75d55c94bd73")
 	)
 	(wire
 		(pts
@@ -11574,13 +13185,23 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 237.49) (xy 88.9 237.49)
+			(xy -78.74 26.67) (xy -76.2 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "26f23dee-f5ea-475b-b744-22631da967cd")
+		(uuid "25d2b2b6-06e3-4a41-8a5d-98756698df9e")
+	)
+	(wire
+		(pts
+			(xy 66.04 236.22) (xy 71.12 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2646bd97-6fe1-493f-b999-86245e00ce5a")
 	)
 	(wire
 		(pts
@@ -11654,7 +13275,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 234.95) (xy 41.91 234.95)
+			(xy 30.48 236.22) (xy 33.02 236.22)
 		)
 		(stroke
 			(width 0)
@@ -11681,6 +13302,16 @@
 			(type default)
 		)
 		(uuid "2a488014-2ab1-4a68-9637-5f2d88941c7f")
+	)
+	(wire
+		(pts
+			(xy -55.88 64.77) (xy -55.88 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2af0320c-66f3-4fb9-a8a7-6535583a8513")
 	)
 	(wire
 		(pts
@@ -11744,7 +13375,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 257.81) (xy 25.4 266.7)
+			(xy 25.4 262.89) (xy 25.4 271.78)
 		)
 		(stroke
 			(width 0)
@@ -11761,6 +13392,16 @@
 			(type default)
 		)
 		(uuid "2d1c94b6-e14c-4384-b707-608a76360b56")
+	)
+	(wire
+		(pts
+			(xy -71.12 35.56) (xy -66.04 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e072468-1af0-465f-b08c-45cd3965db36")
 	)
 	(wire
 		(pts
@@ -11904,6 +13545,16 @@
 	)
 	(wire
 		(pts
+			(xy -77.47 35.56) (xy -77.47 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34c50086-1c62-4ce1-aae1-2e5711e7e701")
+	)
+	(wire
+		(pts
 			(xy 19.05 232.41) (xy 19.05 234.95)
 		)
 		(stroke
@@ -11964,6 +13615,16 @@
 	)
 	(wire
 		(pts
+			(xy -76.2 24.13) (xy -78.74 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3810db6f-e606-4516-b53d-680c77f2639d")
+	)
+	(wire
+		(pts
 			(xy 265.43 116.84) (xy 269.24 116.84)
 		)
 		(stroke
@@ -11971,6 +13632,16 @@
 			(type default)
 		)
 		(uuid "3836069b-392a-42fb-89ce-37573d9ebe0a")
+	)
+	(wire
+		(pts
+			(xy -67.31 72.39) (xy -64.77 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "396acfc8-c076-403d-8a1d-649c27af6e51")
 	)
 	(wire
 		(pts
@@ -12124,6 +13795,26 @@
 	)
 	(wire
 		(pts
+			(xy -66.04 39.37) (xy -66.04 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42006222-fd6e-4e02-8c25-2d3dafcf2c2e")
+	)
+	(wire
+		(pts
+			(xy -66.04 39.37) (xy -68.58 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42417d72-9a79-4f6b-a115-bc72b8b509c3")
+	)
+	(wire
+		(pts
 			(xy 87.63 149.86) (xy 90.17 149.86)
 		)
 		(stroke
@@ -12184,7 +13875,17 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 231.14) (xy 60.96 232.41)
+			(xy 133.35 36.83) (xy 133.35 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "457429b9-5fb5-49ec-9d7f-e12d137bb5c6")
+	)
+	(wire
+		(pts
+			(xy 71.12 231.14) (xy 71.12 236.22)
 		)
 		(stroke
 			(width 0)
@@ -12354,6 +14055,16 @@
 	)
 	(wire
 		(pts
+			(xy -80.01 67.31) (xy -74.93 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d80da56-120a-4370-a5a3-97fa06ac48d6")
+	)
+	(wire
+		(pts
 			(xy 17.78 100.33) (xy 20.32 100.33)
 		)
 		(stroke
@@ -12391,6 +14102,16 @@
 			(type default)
 		)
 		(uuid "4e6f25e9-77ad-4f49-86b5-a23e493a1f17")
+	)
+	(wire
+		(pts
+			(xy -80.01 64.77) (xy -55.88 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f9495ca-ca6a-4d46-9117-a044551276d5")
 	)
 	(wire
 		(pts
@@ -12494,6 +14215,16 @@
 	)
 	(wire
 		(pts
+			(xy -73.66 36.83) (xy -73.66 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55a59775-39bc-4279-a268-26b0e317ca34")
+	)
+	(wire
+		(pts
 			(xy 87.63 127) (xy 90.17 127)
 		)
 		(stroke
@@ -12594,7 +14325,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 234.95) (xy 52.07 234.95)
+			(xy 40.64 236.22) (xy 43.18 236.22)
 		)
 		(stroke
 			(width 0)
@@ -12611,6 +14342,16 @@
 			(type default)
 		)
 		(uuid "587d0881-a624-4f22-bb71-0880f3a813c9")
+	)
+	(wire
+		(pts
+			(xy -101.6 44.45) (xy -99.06 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59009284-8e84-43cd-83c2-094b9a5aaf39")
 	)
 	(wire
 		(pts
@@ -12704,6 +14445,16 @@
 	)
 	(wire
 		(pts
+			(xy -74.93 72.39) (xy -77.47 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e6ac527-c972-4d73-b13d-5a321aa34fbe")
+	)
+	(wire
+		(pts
 			(xy 102.87 54.61) (xy 102.87 48.26)
 		)
 		(stroke
@@ -12714,7 +14465,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 257.81) (xy 38.1 260.35)
+			(xy 38.1 262.89) (xy 38.1 265.43)
 		)
 		(stroke
 			(width 0)
@@ -12724,7 +14475,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 259.08) (xy 55.88 261.62)
+			(xy 55.88 264.16) (xy 55.88 266.7)
 		)
 		(stroke
 			(width 0)
@@ -12751,6 +14502,16 @@
 			(type default)
 		)
 		(uuid "60b7a6f4-70ba-4225-95f1-1ffa1e48815f")
+	)
+	(wire
+		(pts
+			(xy -101.6 44.45) (xy -101.6 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60bcbf67-44aa-4c98-b191-78143f03ee37")
 	)
 	(wire
 		(pts
@@ -12944,7 +14705,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 257.81) (xy 40.64 260.35)
+			(xy 40.64 262.89) (xy 40.64 265.43)
 		)
 		(stroke
 			(width 0)
@@ -13094,7 +14855,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 260.35) (xy 19.05 257.81)
+			(xy 19.05 265.43) (xy 19.05 262.89)
 		)
 		(stroke
 			(width 0)
@@ -13111,16 +14872,6 @@
 			(type default)
 		)
 		(uuid "6e131c44-4671-45f6-a426-c3b0eb29af57")
-	)
-	(wire
-		(pts
-			(xy 60.96 231.14) (xy 71.12 231.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e74a586-47a8-473b-a70a-f974ba99c43e")
 	)
 	(wire
 		(pts
@@ -13244,6 +14995,16 @@
 	)
 	(wire
 		(pts
+			(xy -101.6 25.4) (xy -99.06 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75803a5d-4407-4371-831a-744e8647b38c")
+	)
+	(wire
+		(pts
 			(xy 320.04 83.82) (xy 320.04 82.55)
 		)
 		(stroke
@@ -13271,6 +15032,16 @@
 			(type default)
 		)
 		(uuid "75e639ae-388b-4afd-a86f-2cb276e81ff7")
+	)
+	(wire
+		(pts
+			(xy -77.47 39.37) (xy -77.47 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77a60c82-f7bb-4021-be00-57eca9626399")
 	)
 	(wire
 		(pts
@@ -13474,7 +15245,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 259.08) (xy 53.34 261.62)
+			(xy 53.34 264.16) (xy 53.34 266.7)
 		)
 		(stroke
 			(width 0)
@@ -13541,6 +15312,16 @@
 			(type default)
 		)
 		(uuid "847fb8d8-6fcc-4900-b5df-e52212df6ca5")
+	)
+	(wire
+		(pts
+			(xy 124.46 36.83) (xy 133.35 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "854b025f-cecc-43f1-9a73-5d8a513621f2")
 	)
 	(wire
 		(pts
@@ -13654,6 +15435,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 241.3) (xy 58.42 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a4533ae-b642-4e9f-a61f-4152b0342deb")
+	)
+	(wire
+		(pts
 			(xy 114.3 130.81) (xy 114.3 133.35)
 		)
 		(stroke
@@ -13701,6 +15492,16 @@
 			(type default)
 		)
 		(uuid "8bacda9b-3bab-47e7-9e44-a64932a6300b")
+	)
+	(wire
+		(pts
+			(xy -62.23 38.1) (xy -62.23 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cd5f16f-e848-451d-8654-44faa47299d8")
 	)
 	(wire
 		(pts
@@ -13824,13 +15625,13 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 36.83) (xy 133.35 36.83)
+			(xy -78.74 45.72) (xy -76.2 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9432aebb-b49d-4151-b6a7-892b5f2848a8")
+		(uuid "94577ab4-a5a8-4d5b-8d11-3d89a71f5086")
 	)
 	(wire
 		(pts
@@ -14004,6 +15805,26 @@
 	)
 	(wire
 		(pts
+			(xy -64.77 80.01) (xy -64.77 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c82f569-13f9-4619-898d-e93488bb47a0")
+	)
+	(wire
+		(pts
+			(xy -101.6 27.94) (xy -101.6 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb0f8ce-db12-406b-84c6-1da71c8c6fd4")
+	)
+	(wire
+		(pts
 			(xy 102.87 66.04) (xy 133.35 66.04)
 		)
 		(stroke
@@ -14084,6 +15905,16 @@
 	)
 	(wire
 		(pts
+			(xy -100.33 59.69) (xy -97.79 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a482ad4b-253f-4cd0-8476-c6ccd6194c78")
+	)
+	(wire
+		(pts
 			(xy 19.05 222.25) (xy 35.56 222.25)
 		)
 		(stroke
@@ -14144,6 +15975,16 @@
 	)
 	(wire
 		(pts
+			(xy -77.47 72.39) (xy -77.47 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6ef7e10-650d-4dbe-adbc-5fbc75eb0f4f")
+	)
+	(wire
+		(pts
 			(xy 163.83 55.88) (xy 163.83 58.42)
 		)
 		(stroke
@@ -14174,7 +16015,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 257.81) (xy 45.72 260.35)
+			(xy 45.72 262.89) (xy 45.72 265.43)
 		)
 		(stroke
 			(width 0)
@@ -14194,7 +16035,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 240.03) (xy 41.91 240.03)
+			(xy 30.48 241.3) (xy 33.02 241.3)
 		)
 		(stroke
 			(width 0)
@@ -14241,6 +16082,16 @@
 			(type default)
 		)
 		(uuid "aaf7e4a0-0579-4dc3-9c7b-f98530dbc78c")
+	)
+	(wire
+		(pts
+			(xy 71.12 242.57) (xy 71.12 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab0b882b-286d-465d-bc7e-8db0816ec67e")
 	)
 	(wire
 		(pts
@@ -14321,6 +16172,16 @@
 			(type default)
 		)
 		(uuid "af9d40dd-a34f-4db9-bec7-84ac849e1357")
+	)
+	(wire
+		(pts
+			(xy -101.6 41.91) (xy -99.06 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe6f1d1-8904-4f5f-8f36-97e847c4e1ed")
 	)
 	(wire
 		(pts
@@ -14534,6 +16395,16 @@
 	)
 	(wire
 		(pts
+			(xy -73.66 33.02) (xy -73.66 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcab40e1-c55a-4d9e-affc-6d52098956d7")
+	)
+	(wire
+		(pts
 			(xy 210.82 90.17) (xy 207.01 90.17)
 		)
 		(stroke
@@ -14581,6 +16452,26 @@
 			(type default)
 		)
 		(uuid "bf199565-176f-4cba-9900-1bfbb12e8e07")
+	)
+	(wire
+		(pts
+			(xy -101.6 46.99) (xy -99.06 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfd4100d-8797-41af-93f2-0501ba227183")
+	)
+	(wire
+		(pts
+			(xy 124.46 26.67) (xy 124.46 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c02b91cf-1a6b-47b6-b2d7-18297915f32b")
 	)
 	(wire
 		(pts
@@ -14654,6 +16545,16 @@
 	)
 	(wire
 		(pts
+			(xy -71.12 35.56) (xy -71.12 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c53974b5-0272-46a6-a042-0453809e636c")
+	)
+	(wire
+		(pts
 			(xy 171.45 110.49) (xy 171.45 107.95)
 		)
 		(stroke
@@ -14704,6 +16605,16 @@
 	)
 	(wire
 		(pts
+			(xy -77.47 69.85) (xy -74.93 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6762094-fdcd-4b70-8399-f5a011cf97b7")
+	)
+	(wire
+		(pts
 			(xy 123.19 186.69) (xy 125.73 186.69)
 		)
 		(stroke
@@ -14711,6 +16622,16 @@
 			(type default)
 		)
 		(uuid "c695d9b1-ed43-40a1-993f-4815601c7c1b")
+	)
+	(wire
+		(pts
+			(xy -55.88 80.01) (xy -55.88 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6cafe94-89a6-43aa-80d1-614491faec7c")
 	)
 	(wire
 		(pts
@@ -14784,16 +16705,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 231.14) (xy 71.12 231.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb2b51f4-c436-4c05-b931-7bea940eb664")
-	)
-	(wire
-		(pts
 			(xy 49.53 81.28) (xy 57.15 81.28)
 		)
 		(stroke
@@ -14804,7 +16715,17 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 237.49) (xy 78.74 237.49)
+			(xy -66.04 39.37) (xy -62.23 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb8a3ac0-0095-4be1-aa15-ad4c7f58f083")
+	)
+	(wire
+		(pts
+			(xy 55.88 236.22) (xy 58.42 236.22)
 		)
 		(stroke
 			(width 0)
@@ -15064,6 +16985,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 231.14) (xy 83.82 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d73dfecb-679f-4760-8d31-0ed21490f87c")
+	)
+	(wire
+		(pts
 			(xy 215.9 64.77) (xy 215.9 66.04)
 		)
 		(stroke
@@ -15124,7 +17055,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 233.68) (xy 52.07 234.95)
+			(xy 43.18 234.95) (xy 43.18 236.22)
 		)
 		(stroke
 			(width 0)
@@ -15134,7 +17065,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 257.81) (xy 43.18 260.35)
+			(xy 43.18 262.89) (xy 43.18 265.43)
 		)
 		(stroke
 			(width 0)
@@ -15284,6 +17215,16 @@
 	)
 	(wire
 		(pts
+			(xy -101.6 27.94) (xy -99.06 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df14a98a-7599-4e81-b880-403446c45ccc")
+	)
+	(wire
+		(pts
 			(xy 200.66 96.52) (xy 200.66 99.06)
 		)
 		(stroke
@@ -15321,6 +17262,16 @@
 			(type default)
 		)
 		(uuid "e0ff81df-22f3-4883-9f08-e78aa5c27396")
+	)
+	(wire
+		(pts
+			(xy -77.47 43.18) (xy -78.74 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e289ad63-fe64-4ddb-8b38-d7f3fb76e317")
 	)
 	(wire
 		(pts
@@ -15624,6 +17575,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 241.3) (xy 71.12 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f600d2ba-9d0b-4cb0-8096-88f23497cb8b")
+	)
+	(wire
+		(pts
 			(xy 207.01 110.49) (xy 207.01 107.95)
 		)
 		(stroke
@@ -15631,6 +17592,16 @@
 			(type default)
 		)
 		(uuid "f630b381-3b8a-4add-9db0-3af24b10cd9e")
+	)
+	(wire
+		(pts
+			(xy 71.12 236.22) (xy 71.12 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f778addf-8096-4c6a-9b76-bbf597bc09ea")
 	)
 	(wire
 		(pts
@@ -15661,6 +17632,16 @@
 			(type default)
 		)
 		(uuid "f811143d-3408-4838-8a8f-78a3e7b49411")
+	)
+	(wire
+		(pts
+			(xy -101.6 22.86) (xy -101.6 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8da3458-d801-4431-8b4e-781c6a590dff")
 	)
 	(wire
 		(pts
@@ -15762,6 +17743,16 @@
 		)
 		(uuid "ff55ee04-a99f-48cb-94e6-7f87b7ef0bbd")
 	)
+	(wire
+		(pts
+			(xy -101.6 41.91) (xy -101.6 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffa45649-ae05-4623-98aa-0521fd965afe")
+	)
 	(label "WIFI_RX_LED"
 		(at 90.17 109.22 0)
 		(effects
@@ -15832,8 +17823,18 @@
 		)
 		(uuid "110923f5-cf52-43e3-9686-f92f0ecd4bea")
 	)
+	(label "PMIC_GATE"
+		(at -74.93 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "128b5c7e-6864-4882-9fd7-244e932d2a66")
+	)
 	(label "CAN_LOW"
-		(at 40.64 260.35 270)
+		(at 40.64 265.43 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15843,7 +17844,7 @@
 		(uuid "1430b7b9-ca34-4a66-b89f-0bf74f1d68bb")
 	)
 	(label "RXD0"
-		(at 30.48 260.35 270)
+		(at 30.48 265.43 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15852,8 +17853,18 @@
 		)
 		(uuid "1828863d-9953-4c94-8c39-23b5d87e8ce2")
 	)
+	(label "PMIC_SENSE"
+		(at -74.93 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "210b2436-c1b0-4e96-bea6-0ce38c91099c")
+	)
 	(label "TXD0"
-		(at 27.94 260.35 270)
+		(at 27.94 265.43 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16193,7 +18204,7 @@
 		(uuid "592e30de-ccaa-4de9-b10d-46b76df26246")
 	)
 	(label "SPI_CS"
-		(at 39.37 240.03 180)
+		(at 30.48 241.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16282,6 +18293,16 @@
 		)
 		(uuid "6b58c147-cd6f-472b-b56f-4b1e1cd10ec8")
 	)
+	(label "SPI_CLK"
+		(at 55.88 241.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ba46936-2dd5-40eb-bfde-94e7fb981772")
+	)
 	(label "TRICOLOUR_ON_IN"
 		(at 326.39 58.42 0)
 		(effects
@@ -16363,7 +18384,7 @@
 		(uuid "8083cce8-4e56-4f2b-be7a-3bf4e577c7d6")
 	)
 	(label "CAN_TX_LOCAL"
-		(at 43.18 260.35 270)
+		(at 43.18 265.43 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16443,7 +18464,7 @@
 		(uuid "8fc19c70-8499-4724-9761-4d4d07621335")
 	)
 	(label "I2C_SCL"
-		(at 53.34 261.62 270)
+		(at 53.34 266.7 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16532,6 +18553,16 @@
 		)
 		(uuid "a7e394f5-459a-4852-9e7b-89046a220956")
 	)
+	(label "PMIC_GATE"
+		(at -76.2 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8d1164b-0b03-4bf7-b793-2cd742870f35")
+	)
 	(label "ROM1_WP"
 		(at 199.39 92.71 180)
 		(effects
@@ -16543,7 +18574,7 @@
 		(uuid "a9298a12-948f-48b5-80d6-ec00675a6f31")
 	)
 	(label "SMI_RESET"
-		(at 76.2 237.49 180)
+		(at 55.88 236.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16563,7 +18594,7 @@
 		(uuid "ab130566-63de-4fe3-9157-dc5e8a3d1ed3")
 	)
 	(label "I2C_SDA"
-		(at 55.88 261.62 270)
+		(at 55.88 266.7 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16593,7 +18624,7 @@
 		(uuid "af4a0323-2d9f-454e-8fd3-2df091f73d78")
 	)
 	(label "CAN_HIGH"
-		(at 38.1 260.35 270)
+		(at 38.1 265.43 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16603,7 +18634,7 @@
 		(uuid "b73baac4-cc2d-4aba-b627-85609c5859f6")
 	)
 	(label "SMI_INT"
-		(at 39.37 234.95 180)
+		(at 30.48 236.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16713,7 +18744,7 @@
 		(uuid "dda70daf-6b16-4a4b-b285-d4f178ec290d")
 	)
 	(label "CAN_RX_LOCAL"
-		(at 45.72 260.35 270)
+		(at 45.72 265.43 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16801,6 +18832,26 @@
 			(justify right bottom)
 		)
 		(uuid "edaaa495-64bd-4672-8143-0dfa61068a02")
+	)
+	(label "PMIC_GATE"
+		(at -76.2 26.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0e828f6-fa40-4bc8-8f06-a3baebf6a16c")
+	)
+	(label "PMIC_SENSE"
+		(at -73.66 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1dc57e6-7caa-4b51-a05d-35890b4cdf75")
 	)
 	(label "SPI_MOSI"
 		(at 54.61 142.24 180)
@@ -17124,7 +19175,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "060e31ee-261f-497e-a2cc-44b86bc122f3")
-		(property "Reference" "R22"
+		(property "Reference" "R20"
 			(at 209.55 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17197,7 +19248,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R22")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -17399,7 +19450,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "08ef6a76-ab93-4f15-86b8-9a5c7fc2c947")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 71.374 223.774 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17485,7 +19536,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -17502,7 +19553,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "099cdbfb-8fc9-41d4-882c-5b2f31a22ec8")
-		(property "Reference" "R28"
+		(property "Reference" "R25"
 			(at 248.92 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17575,7 +19626,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R28")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -17669,7 +19720,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a84f98c-d6cf-4270-825c-1dc8bfb811f8")
-		(property "Reference" "R54"
+		(property "Reference" "R31"
 			(at 161.29 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17742,7 +19793,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R54")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -18003,7 +20054,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "13326ea9-f94e-4681-8373-974e3d51f9d2")
-		(property "Reference" "R19"
+		(property "Reference" "R17"
 			(at 261.62 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18076,7 +20127,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R19")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -18270,7 +20321,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:Stackpole RNCP0805FTD10K0")
-		(at 45.72 234.95 0)
+		(at 36.83 236.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18279,8 +20330,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1641bbde-fa56-4d54-ace6-e065f95d6651")
-		(property "Reference" "R24"
-			(at 45.72 234.95 0)
+		(property "Reference" "R26"
+			(at 36.83 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18290,7 +20341,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 45.72 232.918 0)
+			(at 36.83 234.188 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18300,7 +20351,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
-			(at 43.942 234.95 90)
+			(at 35.052 236.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18311,7 +20362,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 45.72 234.95 0)
+			(at 36.83 236.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18322,7 +20373,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 45.72 234.95 0)
+			(at 36.83 236.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18333,7 +20384,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD10K0"
-			(at 45.72 234.95 90)
+			(at 36.83 236.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18352,7 +20403,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R24")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -18446,7 +20497,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1844c777-38fe-4dd5-a891-f6287f9915a0")
-		(property "Reference" "R43"
+		(property "Reference" "R39"
 			(at 313.69 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18519,7 +20570,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R43")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -18536,7 +20587,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "18a0903d-9abf-4259-8ec7-189d3fbdde2e")
-		(property "Reference" "C42"
+		(property "Reference" "C31"
 			(at 320.548 164.084 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18622,7 +20673,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C42")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -18639,7 +20690,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a8ea4ea-a8e2-458e-8a71-d1dfcd8393fb")
-		(property "Reference" "R21"
+		(property "Reference" "R19"
 			(at 209.55 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18712,7 +20763,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R21")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -18822,6 +20873,96 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "ROM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Stackpole RNCP0805FTD10K0")
+		(at 62.23 241.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1cffac9a-ad76-4853-bd41-60f6373b3b8d")
+		(property "Reference" "R29"
+			(at 62.23 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kR"
+			(at 62.23 239.268 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
+			(at 60.452 241.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at 62.23 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
+			(at 62.23 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP0805FTD10K0"
+			(at 62.23 241.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "848b1427-5f6d-4ad2-bc7e-8675b546416a")
+		)
+		(pin "1"
+			(uuid "27f4d1c6-c07b-44ec-a335-e23c4ead0351")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -19086,7 +21227,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 53.34 254 90)
+		(at 53.34 259.08 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -19097,7 +21238,7 @@
 		(dnp yes)
 		(uuid "22f76fa1-62a4-4bdc-b8b6-ae204de289ff")
 		(property "Reference" "TP3"
-			(at 54.61 252.222 90)
+			(at 54.61 257.302 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19107,7 +21248,7 @@
 			)
 		)
 		(property "Value" "I2C Test Point"
-			(at 53.34 252.73 90)
+			(at 53.34 257.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19118,7 +21259,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 53.34 254 0)
+			(at 53.34 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19129,7 +21270,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 254 0)
+			(at 53.34 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19140,7 +21281,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 53.34 254 0)
+			(at 53.34 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19176,7 +21317,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "23425751-015c-4b4b-b4af-cdabcd2606fd")
-		(property "Reference" "R25"
+		(property "Reference" "R22"
 			(at 248.92 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19249,7 +21390,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R25")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -19410,29 +21551,18 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 25.4 252.73 90)
-		(mirror x)
+		(lib_id "power:+3.3V")
+		(at -100.33 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
-		(uuid "2bfc6a8f-1cd8-48fc-a423-e770239e9632")
-		(property "Reference" "TP1"
-			(at 26.924 250.952 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Power/UART Test Point"
-			(at 25.4 251.46 90)
+		(dnp no)
+		(uuid "2b9414fa-b65a-4bde-be52-6f504310829b")
+		(property "Reference" "#PWR049"
+			(at -100.33 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19442,8 +21572,18 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 25.4 252.73 0)
+		(property "Value" "V_RAW"
+			(at -100.33 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -100.33 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19454,7 +21594,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 252.73 0)
+			(at -100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at -100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1a94b20f-8da7-4cfc-bcd4-8374ac640913")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 25.4 257.81 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "2bfc6a8f-1cd8-48fc-a423-e770239e9632")
+		(property "Reference" "TP1"
+			(at 26.924 256.032 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Power/UART Test Point"
+			(at 25.4 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 25.4 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19465,7 +21683,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 25.4 252.73 0)
+			(at 25.4 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19953,7 +22171,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "31b6382a-6855-4ad0-a151-82673571d6c9")
-		(property "Reference" "R27"
+		(property "Reference" "R24"
 			(at 248.92 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20026,7 +22244,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R27")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -20210,7 +22428,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "33ff0471-3813-46ed-8ef1-07a4ddc33da7")
-		(property "Reference" "R33"
+		(property "Reference" "R34"
 			(at 313.69 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20283,7 +22501,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R33")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -20493,7 +22711,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "361c7a4f-ba33-4efb-af26-ddb3dad55c13")
-		(property "Reference" "R53"
+		(property "Reference" "R30"
 			(at 161.29 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20567,7 +22785,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R53")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -20745,83 +22963,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 237.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3a31e4a7-03c5-45d2-9d26-752842252ea3")
-		(property "Reference" "#PWR0253"
-			(at 88.9 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 88.9 241.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 237.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 237.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 237.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "36fc0119-f961-4488-901a-088e81aa7186")
-		)
-		(instances
-			(project "N2K Transceiver"
-				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "#PWR0253")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 320.04 171.45 0)
 		(unit 1)
 		(body_style 1)
@@ -20985,7 +23126,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ecfb43b-88b1-4ec8-ba44-536da61f2d98")
-		(property "Reference" "R18"
+		(property "Reference" "R16"
 			(at 205.74 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21058,7 +23199,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R18")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -21075,7 +23216,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3fac467f-8e24-4b50-91bd-32e2f7cb0c18")
-		(property "Reference" "R15"
+		(property "Reference" "R13"
 			(at 152.4 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21148,7 +23289,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R15")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -21339,7 +23480,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "42c54660-df9c-4f9f-8f31-3071bcae1714")
-		(property "Reference" "C44"
+		(property "Reference" "C33"
 			(at 320.548 200.914 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21425,7 +23566,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C44")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -21586,6 +23727,118 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:Vishay SQJ872EP-T1_BE3")
+		(at -88.9 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45b54075-8da9-418d-b12a-72d4cb8e9040")
+		(property "Reference" "Q2"
+			(at -88.9 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "SQJ872EP-T1_BE3"
+			(at -88.646 52.324 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Vishay SQJ872EP"
+			(at -88.9 57.912 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/76483/sqj872ep.pdf"
+			(at -88.9 55.118 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "N-Channel 150 V 24.5A (Tc) 55W (Tc) Surface Mount PowerPAK® SO-8"
+			(at -88.646 60.198 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay SQJ872EP-T1_BE3"
+			(at -88.9 62.738 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Alternate" "Vishay SQJ872EP-T1_GE3"
+			(at -88.9 65.278 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b76c4a3-97a4-4c00-aca5-b20143369f1b")
+		)
+		(pin "2"
+			(uuid "02c708d4-e4ad-463b-82a7-2888973532de")
+		)
+		(pin "3"
+			(uuid "d37b0065-1b2a-4b40-bd73-5d9c1844f61f")
+		)
+		(pin "4"
+			(uuid "3a8c2bde-3794-47e9-a520-423e8abd333f")
+		)
+		(pin "5"
+			(uuid "45bfc0bb-f27c-4168-8277-1d98caca60a1")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Kyocera 08051C104K4Z2A")
 		(at 175.26 175.26 180)
 		(unit 1)
@@ -21596,7 +23849,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "46c4e68f-a9ce-40fd-920e-f095d10c9716")
-		(property "Reference" "C20"
+		(property "Reference" "C22"
 			(at 174.752 172.974 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21682,7 +23935,103 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C20")
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Vishay WSLP1206R0500FEA")
+		(at -72.39 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "49d35aba-9f72-4506-8cb0-37b1c7202f1a")
+		(property "Reference" "R44"
+			(at -72.39 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.05R"
+			(at -72.39 41.656 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Vishay WSLP 1206 4-wire Kelvin"
+			(at -72.39 48.768 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCA.pdf"
+			(at -72.39 51.054 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50 mOhms ±1% 1W Chip Resistor 1206 (3216 Metric) Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
+			(at -72.39 46.482 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay WSLP1206R0500FEA"
+			(at -72.39 44.196 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dbda51df-fab7-4b05-8ff9-5fc54c25b45e")
+		)
+		(pin "3"
+			(uuid "8a6078c5-2250-48ef-b80e-7e04fe9952b9")
+		)
+		(pin "1"
+			(uuid "f977d9fe-ba33-4991-97aa-0c3002826f05")
+		)
+		(pin "4"
+			(uuid "702b6512-afc0-48bb-b539-a203b49be306")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -21699,7 +24048,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4c347725-f49b-4c19-82e0-c56f07f86c6b")
-		(property "Reference" "R55"
+		(property "Reference" "R42"
 			(at 313.69 199.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21772,7 +24121,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R55")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -21970,7 +24319,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "54bc1e9b-df20-4707-a1cd-e28fa19db889")
-		(property "Reference" "R23"
+		(property "Reference" "R21"
 			(at 209.55 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22043,7 +24392,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R23")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -22060,7 +24409,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "54f43686-d756-4b01-ba7c-6765d8876c0e")
-		(property "Reference" "C41"
+		(property "Reference" "C30"
 			(at 320.548 146.304 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22146,7 +24495,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C41")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -22342,7 +24691,7 @@
 				)
 			)
 		)
-		(property "Value" "V_RAW"
+		(property "Value" "V_OUT"
 			(at 46.99 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22654,7 +25003,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b9746cc-1851-4c47-ba8c-f7d9e8b678c8")
-		(property "Reference" "C38"
+		(property "Reference" "C27"
 			(at 320.548 94.234 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22740,7 +25089,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C38")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -22748,7 +25097,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 19.05 257.81 0)
+		(at 19.05 262.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22758,7 +25107,7 @@
 		(dnp no)
 		(uuid "5bca1fd4-3863-4021-9733-9d7375c6e706")
 		(property "Reference" "#PWR77"
-			(at 19.05 261.62 0)
+			(at 19.05 266.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22769,7 +25118,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 19.05 254 0)
+			(at 19.05 259.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22779,7 +25128,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 257.81 0)
+			(at 19.05 262.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22790,7 +25139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 257.81 0)
+			(at 19.05 262.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22801,7 +25150,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 19.05 257.81 0)
+			(at 19.05 262.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23867,6 +26216,118 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:Vishay SQJ872EP-T1_BE3")
+		(at -88.9 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6d52aaae-84bc-4256-ad02-c51e8f56ef1e")
+		(property "Reference" "Q1"
+			(at -88.9 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "SQJ872EP-T1_BE3"
+			(at -88.646 33.274 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Vishay SQJ872EP"
+			(at -88.9 38.862 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/76483/sqj872ep.pdf"
+			(at -88.9 36.068 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "N-Channel 150 V 24.5A (Tc) 55W (Tc) Surface Mount PowerPAK® SO-8"
+			(at -88.646 41.148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Vishay SQJ872EP-T1_BE3"
+			(at -88.9 43.688 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Alternate" "Vishay SQJ872EP-T1_GE3"
+			(at -88.9 46.228 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "809896a4-e7f6-4752-9e36-8769cb7b4846")
+		)
+		(pin "2"
+			(uuid "6a9bac34-0a23-4ebb-a8c9-c503e1112e53")
+		)
+		(pin "3"
+			(uuid "8d97c0a9-4564-4379-b777-eaa5d6584e12")
+		)
+		(pin "4"
+			(uuid "25e5eb8f-2fc9-4d27-bf12-940df9218b48")
+		)
+		(pin "5"
+			(uuid "2db3d46f-7a0f-410f-8a53-92f9c02bb2a7")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Wurth 560112120009")
 		(at 185.42 33.02 0)
 		(unit 1)
@@ -23967,7 +26428,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "709471b7-d7f2-44a6-bcc3-b7394ad351d8")
-		(property "Reference" "C22"
+		(property "Reference" "C24"
 			(at 320.548 42.164 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24053,7 +26514,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C22")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -24574,7 +27035,7 @@
 				)
 			)
 		)
-		(property "Value" "V_RAW"
+		(property "Value" "V_OUT"
 			(at 180.34 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24887,7 +27348,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e717956-92ec-4b96-a4d3-b4ad9321b669")
-		(property "Reference" "C35"
+		(property "Reference" "C18"
 			(at 19.304 226.568 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24973,7 +27434,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C35")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -25170,7 +27631,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82080f7f-92e7-41b5-81ee-d633e3a29acd")
-		(property "Reference" "C37"
+		(property "Reference" "C26"
 			(at 320.548 76.454 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25256,7 +27717,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C37")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -25443,6 +27904,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at -55.88 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "828ab027-1559-489a-9896-68c152948981")
+		(property "Reference" "#PWR069"
+			(at -55.88 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V_OUT"
+			(at -55.88 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -55.88 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at -55.88 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at -55.88 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98a0946c-b0e3-4e52-8997-6e56d2ad1748")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Kyocera 08051C104K4Z2A")
 		(at 320.04 130.81 0)
 		(unit 1)
@@ -25453,7 +27991,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83d35f6e-55d0-4813-a3d9-265a4f7c6af4")
-		(property "Reference" "C40"
+		(property "Reference" "C29"
 			(at 320.548 128.524 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25539,7 +28077,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C40")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -25715,7 +28253,7 @@
 	)
 	(symbol
 		(lib_id "mr-parts:Stackpole RNCP0805FTD10K0")
-		(at 45.72 240.03 0)
+		(at 36.83 241.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25724,8 +28262,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8f6f598e-e837-450e-a332-b69ed0633c22")
-		(property "Reference" "R51"
-			(at 45.72 240.03 0)
+		(property "Reference" "R27"
+			(at 36.83 241.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25735,7 +28273,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 45.72 237.998 0)
+			(at 36.83 239.268 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25745,7 +28283,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
-			(at 43.942 240.03 90)
+			(at 35.052 241.3 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25756,7 +28294,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 45.72 240.03 0)
+			(at 36.83 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25767,7 +28305,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 45.72 240.03 0)
+			(at 36.83 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25778,7 +28316,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD10K0"
-			(at 45.72 240.03 90)
+			(at 36.83 241.3 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25797,7 +28335,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R51")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -25917,7 +28455,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8fb9e201-64fa-41cc-8b27-86d0c82cf713")
-		(property "Reference" "R12"
+		(property "Reference" "R10"
 			(at 25.4 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25990,7 +28528,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R12")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -26073,8 +28611,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at -76.2 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "904b31c3-64f7-4ea5-b2d6-260234a55cb5")
+		(property "Reference" "#PWR048"
+			(at -76.2 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V_RAW"
+			(at -76.2 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -76.2 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at -76.2 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at -76.2 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dee641fa-7743-4247-9cb1-eb8bab996021")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Stackpole RNCP0805FTD10K0")
-		(at 82.55 237.49 0)
+		(at 62.23 236.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26083,8 +28698,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "90ead055-c47f-4b8d-bf42-1f3ec3211335")
-		(property "Reference" "R31"
-			(at 82.55 237.49 0)
+		(property "Reference" "R28"
+			(at 62.23 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26094,7 +28709,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 82.55 235.458 0)
+			(at 62.23 234.188 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26104,7 +28719,7 @@
 			)
 		)
 		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
-			(at 80.772 237.49 90)
+			(at 60.452 236.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26115,7 +28730,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
-			(at 82.55 237.49 0)
+			(at 62.23 236.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26126,7 +28741,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
-			(at 82.55 237.49 0)
+			(at 62.23 236.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26137,7 +28752,7 @@
 			)
 		)
 		(property "Part" "Stackpole RNCP0805FTD10K0"
-			(at 82.55 237.49 90)
+			(at 62.23 236.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26156,7 +28771,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R31")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -26376,7 +28991,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "94ebdb3e-dd98-4d7a-9545-14e2891847bc")
-		(property "Reference" "R29"
+		(property "Reference" "R32"
 			(at 313.69 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26449,7 +29064,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R29")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -26466,7 +29081,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "94fa2d9c-d6ce-4146-9490-d245a59e1253")
-		(property "Reference" "C34"
+		(property "Reference" "C17"
 			(at 80.264 180.848 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26552,7 +29167,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C34")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -27068,7 +29683,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 52.07 233.68 0)
+		(at 43.18 234.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27078,7 +29693,7 @@
 		(dnp no)
 		(uuid "9f3131eb-ff7b-40ee-aa17-98ae347e04b1")
 		(property "Reference" "#PWR084"
-			(at 52.07 237.49 0)
+			(at 43.18 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27089,7 +29704,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 52.07 229.87 0)
+			(at 43.18 231.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27099,7 +29714,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 233.68 0)
+			(at 43.18 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27110,7 +29725,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 233.68 0)
+			(at 43.18 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27121,7 +29736,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 52.07 233.68 0)
+			(at 43.18 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27640,7 +30255,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a8480f50-f8a0-4c8e-8a95-c5413f02b61b")
-		(property "Reference" "R39"
+		(property "Reference" "R37"
 			(at 313.69 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27713,7 +30328,84 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R39")
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at -62.23 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a8f3910a-f527-41a7-9fbe-1bfc09d83c6f")
+		(property "Reference" "#PWR070"
+			(at -62.23 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V_OUT"
+			(at -62.23 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -62.23 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at -62.23 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at -62.23 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "367a5df8-42af-4d1c-ac43-4ea10a93b4dd")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -27939,7 +30631,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a99c2242-4bfd-469e-9d49-a42b12e4d6dc")
-		(property "Reference" "R16"
+		(property "Reference" "R14"
 			(at 167.64 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28012,7 +30704,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R16")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -28130,7 +30822,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 266.7 0)
+		(at 25.4 271.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28140,7 +30832,7 @@
 		(dnp no)
 		(uuid "aa2a6ea4-f7ea-4eba-bcc0-345be4ac4cdf")
 		(property "Reference" "#PWR78"
-			(at 25.4 273.05 0)
+			(at 25.4 278.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28151,7 +30843,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 270.256 0)
+			(at 25.4 275.336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28161,7 +30853,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 266.7 0)
+			(at 25.4 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28172,7 +30864,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 266.7 0)
+			(at 25.4 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28183,7 +30875,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 266.7 0)
+			(at 25.4 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28692,7 +31384,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ae32651e-1c59-4d04-9b15-1378bb94fac6")
-		(property "Reference" "C36"
+		(property "Reference" "C25"
 			(at 320.548 59.944 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28778,7 +31470,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C36")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -28863,7 +31555,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 232.41 0)
+		(at 71.12 242.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28873,7 +31565,7 @@
 		(dnp no)
 		(uuid "b01de466-ee4e-4cbb-b8eb-283899f4577a")
 		(property "Reference" "#PWR0248"
-			(at 60.96 238.76 0)
+			(at 71.12 248.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28884,7 +31576,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 236.22 0)
+			(at 71.12 246.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28894,7 +31586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 232.41 0)
+			(at 71.12 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28905,7 +31597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 232.41 0)
+			(at 71.12 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28916,7 +31608,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 232.41 0)
+			(at 71.12 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29026,7 +31718,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b14f6534-d3a2-48ef-868a-30db0c82f194")
-		(property "Reference" "R45"
+		(property "Reference" "R40"
 			(at 313.69 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29099,7 +31791,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R45")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -29299,7 +31991,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b8599ff3-1822-4dfe-90a7-7fa93bc4c6c3")
-		(property "Reference" "C32"
+		(property "Reference" "C19"
 			(at 61.214 224.028 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29385,7 +32077,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C32")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -29540,6 +32232,96 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "#PWR189")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Stackpole RNCP0805FTD22K1")
+		(at -71.12 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb21716d-ad97-434a-8d7f-b435ee4bcd07")
+		(property "Reference" "R43"
+			(at -71.12 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22.1kR"
+			(at -71.12 74.676 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:Stackpole RNCP0805"
+			(at -71.12 79.756 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RNCP.pdf"
+			(at -71.12 82.042 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22.1 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Anti-Sulfur Thin Film"
+			(at -71.12 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Stackpole RNCP0805FTD22K1"
+			(at -71.12 84.582 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bef01e82-07d0-47c7-af31-4f8d75bdda8c")
+		)
+		(pin "1"
+			(uuid "d4155a7e-c9c8-4880-b9ad-f1b09ade480d")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -29719,6 +32501,122 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:ADI LTC4368HMS-2#WPBF")
+		(at -88.9 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bfb60708-82d4-486a-ac94-bd87e8e1f95c")
+		(property "Reference" "PMIC1"
+			(at -88.9 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTC4368HMS-2#WPBF"
+			(at -88.9 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mr-stuff:ADI LTC4368"
+			(at -88.646 82.296 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4368.pdf"
+			(at -88.9 76.708 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Overvoltage/Surge Protection IC Adjustable External Switch 10-MSOP"
+			(at -88.9 78.994 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "ADI LTC4368HMS-2#WPBF"
+			(at -88.9 84.836 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "3"
+			(uuid "af6bcbd0-060f-4fd7-be97-53192a20094f")
+		)
+		(pin "2"
+			(uuid "bee07ca3-ac78-4cd7-b65b-a2123b5c7cf6")
+		)
+		(pin "1"
+			(uuid "fa9da77a-5264-46d1-a79c-be89d6622dd9")
+		)
+		(pin "4"
+			(uuid "48818e9f-7ce2-4c8c-a6d1-2c6da5dc75a3")
+		)
+		(pin "7"
+			(uuid "05ca6e64-7b3c-4c04-94a6-0dc7b6f301ae")
+		)
+		(pin "6"
+			(uuid "8b6f8605-c8e8-40be-803f-b48e671091dd")
+		)
+		(pin "5"
+			(uuid "1a0f118f-07c7-46b3-b6cb-51e0fe4340dc")
+		)
+		(pin "9"
+			(uuid "c86acb35-b70f-4309-9a81-a377e2b60b88")
+		)
+		(pin "8"
+			(uuid "deb07d69-7170-4ab8-b083-6b69df6ea7e2")
+		)
+		(pin "10"
+			(uuid "14a4414f-bfe8-47a1-b16b-3827774b6d82")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "PMIC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 196.85 175.26 0)
 		(unit 1)
@@ -29874,7 +32772,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 40.64 252.73 90)
+		(at 40.64 257.81 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -29885,7 +32783,7 @@
 		(dnp yes)
 		(uuid "c1cbe36a-2dce-4a00-bd60-08c3a4206427")
 		(property "Reference" "TP2"
-			(at 42.164 251.206 90)
+			(at 42.164 256.286 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29895,7 +32793,7 @@
 			)
 		)
 		(property "Value" "CAN Test Point"
-			(at 40.64 251.46 90)
+			(at 40.64 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29906,7 +32804,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 40.64 252.73 0)
+			(at 40.64 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29917,7 +32815,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 252.73 0)
+			(at 40.64 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29928,7 +32826,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 40.64 252.73 0)
+			(at 40.64 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30047,7 +32945,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c5a70638-9279-4f32-91c8-c4a3ecce625d")
-		(property "Reference" "R13"
+		(property "Reference" "R11"
 			(at 33.02 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30120,7 +33018,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R13")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -30301,6 +33199,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 133.35 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb53a833-daf7-4fc1-95af-88f6296e8b04")
+		(property "Reference" "#PWR047"
+			(at 133.35 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V_RAW"
+			(at 133.35 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 133.35 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66e03343-d8b1-42f7-80b0-440417e1d798")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Kyocera 08051C104K4Z2A")
 		(at 77.47 226.06 0)
 		(unit 1)
@@ -30311,7 +33286,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb887f39-6734-44d2-9c8a-134501aaf9d5")
-		(property "Reference" "C33"
+		(property "Reference" "C21"
 			(at 77.724 224.028 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30397,7 +33372,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C33")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -30491,7 +33466,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0528705-7df7-4c32-aaee-7f8d0ee3ae85")
-		(property "Reference" "R37"
+		(property "Reference" "R36"
 			(at 313.69 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30564,7 +33539,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R37")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -30673,7 +33648,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3380a0e-5114-4cee-a504-252bf5ddd75a")
-		(property "Reference" "C39"
+		(property "Reference" "C28"
 			(at 320.548 110.744 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30759,7 +33734,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C39")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -30864,7 +33839,7 @@
 				)
 			)
 		)
-		(property "Value" "V_RAW"
+		(property "Value" "V_OUT"
 			(at 66.04 169.926 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31193,7 +34168,7 @@
 				)
 			)
 		)
-		(property "Value" "V_RAW"
+		(property "Value" "V_OUT"
 			(at 163.83 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31450,7 +34425,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ddd6aa99-916b-4a6e-b1b8-1aaa98ac4766")
-		(property "Reference" "R17"
+		(property "Reference" "R15"
 			(at 205.74 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31523,7 +34498,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R17")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -31846,7 +34821,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "df4df810-afc7-4202-b0a6-559a4bb92e46")
-		(property "Reference" "R20"
+		(property "Reference" "R18"
 			(at 261.62 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31919,7 +34894,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R20")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -32013,7 +34988,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e06b1f53-7442-4181-851f-e7832e126030")
-		(property "Reference" "R14"
+		(property "Reference" "R12"
 			(at 33.02 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32086,7 +35061,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R14")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -32195,7 +35170,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e41051cf-f721-4aa7-9e58-d48ccb7233bf")
-		(property "Reference" "R41"
+		(property "Reference" "R38"
 			(at 313.69 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32268,7 +35243,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R41")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -32376,7 +35351,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e52730d9-54a6-45f1-a4a1-7ac6d357d468")
-		(property "Reference" "R47"
+		(property "Reference" "R41"
 			(at 313.69 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32449,7 +35424,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R47")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -33065,6 +36040,109 @@
 		)
 	)
 	(symbol
+		(lib_id "mr-parts:TDK CGA3E1C0G2A332J080AE")
+		(at -64.77 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eff044e5-cb65-4527-b472-4b71179f3d12")
+		(property "Reference" "C34"
+			(at -64.516 74.168 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3300pF"
+			(at -64.516 78.486 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:TDK CGA 0805"
+			(at -64.77 94.234 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_soft_en.pdf"
+			(at -64.77 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3300 pF ±5% 100V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+			(at -64.77 91.948 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TDK CGA3E1C0G2A332J080AE"
+			(at -65.024 89.916 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Alt Value" "3.3nF"
+			(at -64.77 96.266 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11985208-57c3-4007-a6aa-071c64dfdd28")
+		)
+		(pin "2"
+			(uuid "035a59b5-01b6-4ad1-8a33-7d5c4c16f246")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mr-parts:Vishay VCAN33A2-03SHE3A08")
 		(at 115.57 57.15 0)
 		(unit 1)
@@ -33155,6 +36233,109 @@
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
 					(reference "TVS2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mr-parts:Kyocera 08051C105K4Z2A")
+		(at -55.88 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f0f85d56-9790-4833-bce3-8b395bc067d7")
+		(property "Reference" "C35"
+			(at -55.626 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at -55.372 78.486 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mr-stuff:Kyocera AVX 0805"
+			(at -55.88 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c331k4z2a-58994113.pdf"
+			(at -55.88 94.996 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at -55.88 90.424 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Kyocera 08051C105K4Z2A"
+			(at -55.88 88.138 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet2" "https://spicat.kyocera-avx.com/datasheet/08051C105K4Z2A"
+			(at -55.88 97.282 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b5d810e-e33b-4e4b-8ef1-60701e7e23c6")
+		)
+		(pin "2"
+			(uuid "8835b637-a601-493e-b90a-9c3e69094bdf")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -33402,7 +36583,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f4472886-96a8-4273-b000-6bdf9837dd00")
-		(property "Reference" "R30"
+		(property "Reference" "R33"
 			(at 313.69 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33475,7 +36656,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R30")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -33492,7 +36673,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f45e6d73-bf0e-499a-9c5d-c58f87f4e740")
-		(property "Reference" "R26"
+		(property "Reference" "R23"
 			(at 248.92 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33565,7 +36746,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "R26")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -33582,7 +36763,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f46807e1-4b45-4dc1-81b0-d375b54726f1")
-		(property "Reference" "C43"
+		(property "Reference" "C32"
 			(at 320.548 181.864 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33668,7 +36849,84 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C43")
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at -64.77 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f79a6fa3-3d86-47b9-9857-8b4d38d82c79")
+		(property "Reference" "#PWR08"
+			(at -64.77 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at -64.77 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -64.77 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at -64.77 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at -64.77 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3deab09b-5378-44d6-a7d2-5c9e9b304014")
+		)
+		(instances
+			(project "N2K Transceiver"
+				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -34163,7 +37421,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ff2d5e7d-7fd3-4890-8b28-e60e170b777f")
-		(property "Reference" "C21"
+		(property "Reference" "C23"
 			(at 320.548 24.384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34249,7 +37507,7 @@
 		(instances
 			(project "N2K Transceiver"
 				(path "/2a070473-cb6e-4844-8f2a-5ea6a35ddb49"
-					(reference "C21")
+					(reference "C23")
 					(unit 1)
 				)
 			)

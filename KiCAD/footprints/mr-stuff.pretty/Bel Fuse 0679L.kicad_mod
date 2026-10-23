@@ -1,0 +1,179 @@
+(footprint "Bel Fuse 0679L"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.1 0)
+		(layer "F.SilkS")
+		(uuid "c41db6a2-051a-4cf3-babe-ce815a5fb2e5")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "Bel Fuse 0679L"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(uuid "8500e49d-ef50-4f4c-b0e1-3f7fe5864c5b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fdd5e4d-d353-4789-b296-611d23c91a38")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3f8c5cfa-1217-4467-a253-e402f017e65b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1 -1.6)
+		(end 1 -1.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4bfaeaec-27ba-4746-a8bb-0a4071f9544a")
+	)
+	(fp_line
+		(start 1 1.6)
+		(end -1 1.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ee4237f8-372d-41e4-a95a-f0523cad5c1b")
+	)
+	(fp_line
+		(start -3.78 -1.72)
+		(end 3.78 -1.72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "67e3ce5a-fab7-4cef-a1b7-a6689ab47afb")
+	)
+	(fp_line
+		(start -3.78 1.72)
+		(end -3.78 -1.72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "49ff536a-bb41-40f6-aa66-f7dc5afc2a2b")
+	)
+	(fp_line
+		(start 3.78 -1.72)
+		(end 3.78 1.72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9f077536-70ea-4934-a6e8-fcc93c015844")
+	)
+	(fp_line
+		(start 3.78 1.72)
+		(end -3.78 1.72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a260911c-5c11-4474-ac5a-172beabb0b32")
+	)
+	(fp_line
+		(start -3.05 -1.6)
+		(end 3.05 -1.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ceccce53-bd85-4318-a608-db38501e46c2")
+	)
+	(fp_line
+		(start -3.05 1.27)
+		(end -3.05 -1.27)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9dd22719-3b02-482a-9d9f-1885fa496615")
+	)
+	(fp_line
+		(start 3.05 -1.27)
+		(end 3.05 1.27)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "41919807-356d-417a-affd-f78b7a9c19f0")
+	)
+	(fp_line
+		(start 3.05 1.6)
+		(end -3.05 1.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6ee9cb10-ea35-4aeb-8047-8c488e700249")
+	)
+	(pad "1" smd rect
+		(at -2.455 0)
+		(size 1.96 3.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "f64ad3bc-eb84-42b1-97f0-218a4fda6ed6")
+	)
+	(pad "2" smd rect
+		(at 2.455 0)
+		(size 1.96 3.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "2aabcaa1-f4e5-495d-b46f-7e642d3ae5e0")
+	)
+	(embedded_fonts no)
+	(model "${MY_3DMODELS}/Bel Fuse 0679L/0679L2000-05.STEP"
+		(offset
+			(xyz 0 -1.4 1.25)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
